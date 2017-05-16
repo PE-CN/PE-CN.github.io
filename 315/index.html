@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+    <meta name="description" content="Project Euler | 欧拉计划 中文翻译站" />
+
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+
+
+  <title> Problem 315 // Project Euler | 欧拉计划 </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Project Euler | 欧拉计划</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-problems">
+          <a href="/problems">
+            <i class="menu-item-icon icon-problems"></i> <br />
+            题目
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            <i class="menu-item-icon icon-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+<form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'z6bmYNMJM3AR1esetWJa','2.0.0');
+</script>
+
+<div class="site-search-toggle"></div>
+    </div>
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Problem 315
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2010-12-19
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/315/#comments" >
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="315/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <hr>
+<h1 id="Problem-315"><a href="#Problem-315" class="headerlink" title="Problem 315"></a><a href="https://projecteuler.net/problem=315" target="_blank" rel="external">Problem 315</a></h1><hr>
+<p><strong>Digital root clocks</strong></p>
+<center><img src="https://projecteuler.net/project/images/p315_clocks.gif"></center>
+
+<p>Sam and Max are asked to transform two digital clocks into two “digital root” clocks.<br>A digital root clock is a digital clock that calculates digital roots step by step.</p>
+<p>When a clock is fed a number, it will show it and then it will start the calculation, showing all the intermediate values until it gets to the result.<br>For example, if the clock is fed the number 137, it will show: “<strong>137</strong>“ → “<strong>11</strong>“ → “<strong>2</strong>“ and then it will go black, waiting for the next number.</p>
+<p>Every digital number consists of some light segments: three horizontal (top, middle, bottom) and four vertical (top-left, top-right, bottom-left, bottom-right).<br>Number “<strong>1</strong>“ is made of vertical top-right and bottom-right, number “<strong>4</strong>“ is made by middle horizontal and vertical top-left, top-right and bottom-right. Number “<strong>8</strong>“ lights them all.</p>
+<p>The clocks consume energy only when segments are turned on/off.<br>To turn on a “<strong>2</strong>“ will cost 5 transitions, while a “<strong>7</strong>“ will cost only 4 transitions.</p>
+<p>Sam and Max built two different clocks.</p>
+<p>Sam’s clock is fed e.g. number 137: the clock shows “<strong>137</strong>“, then the panel is turned off, then the next number (“<strong>11</strong>“) is turned on, then the panel is turned off again and finally the last number (“<strong>2</strong>“) is turned on and, after some time, off.<br>For the example, with number 137, Sam’s clock requires:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&nbsp;</th>
+<th>&nbsp;</th>
+<th style="text-align:left">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">“<strong>137</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(2 + 5 + 4) × 2 = 22 transitions (“<strong>137</strong>“ on/off).</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>11</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(2 + 2) × 2 = 8 transitions (“<strong>11</strong>“ on/off).</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>2</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(5) × 2 = 10 transitions (“<strong>2</strong>“ on/off).</td>
+</tr>
+</tbody>
+</table>
+<p>For a grand total of 40 transitions.</p>
+<p>Max’s clock works differently. Instead of turning off the whole panel, it is smart enough to turn off only those segments that won’t be needed for the next number.<br>For number 137, Max’s clock requires:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&nbsp;</th>
+<th>&nbsp;</th>
+<th style="text-align:left">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">“<strong>137</strong>“</td>
+<td>:</td>
+<td style="text-align:left">2 + 5 + 4 = 11 transitions (“<strong>137</strong>“ on)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">7 transitions (to turn off the segments that are not needed for number “<strong>11</strong>“).</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>11</strong>“</td>
+<td>:</td>
+<td style="text-align:left">0 transitions (number “<strong>11</strong>“ is already turned on correctly)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">3 transitions (to turn off the first “<strong>1</strong>“ and the bottom part of the second “<strong>1</strong>“; </td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">the top part is common with number “<strong>2</strong>“).</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>2</strong>“</td>
+<td>:</td>
+<td style="text-align:left">4 transitions (to turn on the remaining segments in order to get a “<strong>2</strong>“)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">5 transitions (to turn off number “<strong>2</strong>“).</td>
+</tr>
+</tbody>
+</table>
+<p>For a grand total of 30 transitions.</p>
+<p>Of course, Max’s clock consumes less power than Sam’s one.<br>The two clocks are fed all the prime numbers between A = 10<sup>7</sup> and B = 2×10<sup>7</sup>.<br>Find the difference between the total number of transitions needed by Sam’s clock and that needed by Max’s one.</p>
+<hr>
+<p><strong>数根时钟</strong></p>
+<center><img src="https://projecteuler.net/project/images/p315_clocks.gif"></center>
+
+<p>（左：萨姆的钟；右：马克斯的钟；下：在本题中钟面上的数字样式）</p>
+<p>萨姆和马克斯被要求将两个数字时钟改装成两个“数根”时钟。<br>所谓数根时钟就是迭代计算数字根的数字时钟。</p>
+<p>当时钟接收到一个数时，它会先显示这个数，然后开始计算，期间展示所有的中间值，直到它得到结果。<br>例如，如果时钟接收到的数是137，它会显示：”<strong>137</strong>“ → “<strong>11</strong>“ → “<strong>2</strong>“，然后它会黑屏，等待接收下一个数。</p>
+<p>每个数字在钟面上用七段数码管显示：三根水平数码管（上、中、下）和四根竖直数码管（左上、右上、左下、右下）。<br>显示数字”<strong>1</strong>“需要点亮右上和右下的竖直数码管，显示数字”<strong>4</strong>“需要点亮中间的水平数码管和左上、右上、右下的竖直数码管，显示数字”<strong>8</strong>“则需要点亮所有的数码管。</p>
+<p>只有在数码管打开或关闭时时钟才消耗能量。<br>因此，显示”<strong>2</strong>“需要5次转换，而”<strong>7</strong>“则只需要4次转换。</p>
+<p>萨姆和马克斯制作了两个不同的时钟。</p>
+<p>如果萨姆的时钟接收到一个数，比如说137：时钟先显示”<strong>137</strong>“，然后全部关掉，然后显示下一个数(“<strong>11</strong>“)，再全部关掉，然后显示最后一个数(“<strong>2</strong>“)，过一段时间后再全部关掉。<br>在这个例子中，接收到137后，萨姆的时钟需要消耗：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&nbsp;</th>
+<th>&nbsp;</th>
+<th style="text-align:left">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">“<strong>137</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(2 + 5 + 4) × 2 = 22次转换（显示和关闭”<strong>137</strong>“）。</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>11</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(2 + 2) × 2 = 8次转换（显示和关闭”<strong>11</strong>“）。</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>2</strong>“</td>
+<td>:</td>
+<td style="text-align:left">(5) × 2 = 10次转换（显示和关闭”<strong>2</strong>“）。</td>
+</tr>
+</tbody>
+</table>
+<p>总计需要40次转换。</p>
+<p>马克斯的时钟运作的方式略有不同。它会很聪明地只关掉那些显示下一个数时不再用到的数码管，而不是全部关掉。<br>接收到137后，马克斯的时钟需要消耗：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&nbsp;</th>
+<th>&nbsp;</th>
+<th style="text-align:left">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">“<strong>137</strong>“</td>
+<td>:</td>
+<td style="text-align:left">2 + 5 + 4 = 11次转换（显示”<strong>137</strong>“ on）</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">7次转换（关闭显示”<strong>11</strong>“不需要的数码管）。</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>11</strong>“</td>
+<td>:</td>
+<td style="text-align:left">0次转换（”<strong>11</strong>“已经正确显示）</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">3次转换（关闭第一个”<strong>1</strong>“和第二个”<strong>1</strong>“的下半部分； </td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">上半部分保留用于显示”<strong>2</strong>“)。</td>
+</tr>
+<tr>
+<td style="text-align:left">“<strong>2</strong>“</td>
+<td>:</td>
+<td style="text-align:left">4次转换（显示”<strong>2</strong>“的剩余部分）</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left">5次转换（关闭”<strong>2</strong>“）。</td>
+</tr>
+</tbody>
+</table>
+<p>总计需要30次转换。</p>
+<p>显然，马克斯的时钟比萨姆的时钟更节能。<br>这两个时钟随后依次接收到在A = 10<sup>7</sup>和B = 2×10<sup>7</sup>之间的所有质数。<br>求萨姆的时钟和马克斯的时钟所需要的转换次数的差。</p>
+<hr>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/314/">Problem 314</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/316/">Problem 316</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/images/avatar.png" alt="sx349" />
+          <p class="site-author-name">Leonhard Euler(1707-1783)</p>
+        </div>
+        <p class="site-description motion-element"><br>Project Euler | 欧拉计划<br>中文翻译站</p>
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name" style="font-size:14px">友情链接</p>
+            
+              <span class="links-of-author-item">
+              <a href="https://projecteuler.net" target="_blank">Project Euler</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://pe.spiritzhang.com/" target="_blank">官方汉化</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://jakwings.is-programmer.com/Project_Euler" target="_blank">饮水思源汉化</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://sx349.github.io" target="_blank">译者博客</a>
+              </span><br>
+            
+          
+        </div>
+        
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-315"><span class="nav-number">1.</span> <span class="nav-text">Problem 315</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2015 - 
+  2017
+  <span class="with-love"><i class="icon-heart"></i></span>
+  <span class="author"><a href="http://sx349.github.io">sx349</a></span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist 
+  </a>by <a href="http://notes.iissnan.com/">IIssNan</a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+  
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'pe-cn';
+      var disqus_identifier = '315/';
+      var disqus_title = 'Problem 315';
+      var disqus_url = 'http://yoursite.com/315/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,804 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+    <meta name="description" content="Project Euler | 欧拉计划 中文翻译站" />
+
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+
+
+  <title> Problem 54 // Project Euler | 欧拉计划 </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Project Euler | 欧拉计划</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-problems">
+          <a href="/problems">
+            <i class="menu-item-icon icon-problems"></i> <br />
+            题目
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            <i class="menu-item-icon icon-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+<form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'z6bmYNMJM3AR1esetWJa','2.0.0');
+</script>
+
+<div class="site-search-toggle"></div>
+    </div>
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Problem 54
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2003-10-10
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/54/#comments" >
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="54/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <hr>
+<h1 id="Problem-54"><a href="#Problem-54" class="headerlink" title="Problem 54"></a><a href="https://projecteuler.net/problem=54" target="_blank" rel="external">Problem 54</a></h1><hr>
+<p><strong>Poker hands</strong></p>
+<p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
+<ul>
+<li><strong>High Card</strong>: Highest value card.</li>
+<li><strong>One Pair</strong>: Two cards of the same value.</li>
+<li><strong>Two Pairs</strong>: Two different pairs.</li>
+<li><strong>Three of a Kind</strong>: Three cards of the same value.</li>
+<li><strong>Straight</strong>: All cards are consecutive values.</li>
+<li><strong>Flush</strong>: All cards of the same suit.</li>
+<li><strong>Full House</strong>: Three of a kind and a pair.</li>
+<li><strong>Four of a Kind</strong>: Four cards of the same value.</li>
+<li><strong>Straight Flush</strong>: All cards are consecutive values of same suit.</li>
+<li><strong>Royal Flush</strong>: Ten, Jack, Queen, King, Ace, in same suit.</li>
+</ul>
+<p>The cards are valued in the order:2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.</p>
+<p>If two players have the same ranked hands then the rank made up of the highest value wins; for example, a pair of eights beats a pair of fives (see example 1 below). But if two ranks tie, for example, both players have a pair of queens, then highest cards in each hand are compared (see example 4 below); if the highest cards tie then the next highest cards are compared, and so on.</p>
+<p>Consider the following five hands dealt to two players:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>Hand</strong></th>
+<th style="text-align:center"><strong>Player 1</strong></th>
+<th style="text-align:center"><strong>Player 2</strong></th>
+<th style="text-align:center"><strong>Winner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>1</strong></td>
+<td style="text-align:center">5H 5C 6S 7S KD</td>
+<td style="text-align:center">2C 3S 8S 8D TD</td>
+<td style="text-align:center">Player 2</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Pair of Fives</td>
+<td style="text-align:center">Pair of Eights</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>2</strong></td>
+<td style="text-align:center">5D 8C 9S JS AC</td>
+<td style="text-align:center">2C 5C 7D 8S QH</td>
+<td style="text-align:center">Player 1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Highest card Ace</td>
+<td style="text-align:center">Highest card Queen</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>3</strong></td>
+<td style="text-align:center">2D 9C AS AH AC</td>
+<td style="text-align:center">3D 6D 7D TD QD</td>
+<td style="text-align:center">Player 2</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Three Aces</td>
+<td style="text-align:center">Flush with Diamonds</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>4</strong></td>
+<td style="text-align:center">4D 6S 9H QH QC</td>
+<td style="text-align:center">3D 6D 7H QD QS</td>
+<td style="text-align:center">Player 1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Pair of Queens</td>
+<td style="text-align:center">Pair of Queens</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Highest card Nine</td>
+<td style="text-align:center">Highest card Seven</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>5</strong></td>
+<td style="text-align:center">2H 2D 4C 4D 4S</td>
+<td style="text-align:center">3C 3D 3S 9S 9D</td>
+<td style="text-align:center">Player 1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">Full House</td>
+<td style="text-align:center">Full House</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">with Three Fours</td>
+<td style="text-align:center">with Three Threes</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>The file, <a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="external">poker.txt</a>, contains one-thousand random hands dealt to two players. Each line of the file contains ten cards (separated by a single space): the first five are Player 1’s cards and the last five are Player 2’s cards. You can assume that all hands are valid (no invalid characters or repeated cards), each player’s hand is in no specific order, and in each hand there is a clear winner.</p>
+<p>How many hands does Player 1 win?</p>
+<hr>
+<p><strong>扑克手牌</strong></p>
+<p>在扑克游戏中，玩家的手牌由五张牌组成，其等级由低到高分别为：</p>
+<ul>
+<li><strong>单牌</strong>：牌面最大的一张牌。</li>
+<li><strong>对子</strong>：两张牌面一样的牌。</li>
+<li><strong>两对</strong>：两个不同的对子。</li>
+<li><strong>三条</strong>：三张牌面一样的牌。</li>
+<li><strong>顺子</strong>：五张牌的牌面是连续的。</li>
+<li><strong>同花</strong>：五张牌是同一花色。</li>
+<li><strong>葫芦</strong>：三条带一个对子。</li>
+<li><strong>四条</strong>：四张牌面一样的牌。</li>
+<li><strong>同花顺</strong>：五张牌的牌面是连续的且为同一花色。</li>
+<li><strong>同花大顺</strong>：同一花色的10、J、Q、K、A。</li>
+</ul>
+<p>牌面由小到大的顺序是：2、3、4、5、6、7、8、9、10、J、Q、K、A。</p>
+<p>如果两名玩家的手牌处于同一等级，那么牌面较大的一方获胜；例如，一对8胜过一对5（参见例1）；如果牌面相同，例如双方各有一对Q，那么就比较玩家剩余的牌中最大的牌（参见例4）；如果最大的牌相同，则比较次大的牌，依此类推。</p>
+<p>考虑以下五局游戏中双方的手牌：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>手牌</strong></th>
+<th style="text-align:center"><strong>玩家1</strong></th>
+<th style="text-align:center"><strong>玩家2</strong></th>
+<th style="text-align:center"><strong>胜者</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>1</strong></td>
+<td style="text-align:center">红桃5 草花5 黑桃6 黑桃7 方片K</td>
+<td style="text-align:center">草花2 黑桃3 黑桃8 方片8 方片10</td>
+<td style="text-align:center">玩家2</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">一对5</td>
+<td style="text-align:center">一对8</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>2</strong></td>
+<td style="text-align:center">方片5 草花8 黑桃9 黑桃J 草花A</td>
+<td style="text-align:center">草花2 草花5 方片7 黑桃8 红桃Q</td>
+<td style="text-align:center">玩家1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">单牌A</td>
+<td style="text-align:center">单牌Q</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>3</strong></td>
+<td style="text-align:center">方片2 草花9 黑桃A 红桃A 草花A</td>
+<td style="text-align:center">方片3 方片6 方片7 方片10 方片Q</td>
+<td style="text-align:center">玩家2</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">三条A</td>
+<td style="text-align:center">同花方片</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>4</strong></td>
+<td style="text-align:center">方片4 黑桃6 红桃9 红桃Q 草花Q</td>
+<td style="text-align:center">方片3 方片6 红桃7 方片Q 黑桃Q</td>
+<td style="text-align:center">玩家1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">一对Q</td>
+<td style="text-align:center">一对Q</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">最大单牌9</td>
+<td style="text-align:center">最大单牌7</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>5</strong></td>
+<td style="text-align:center">红桃2 方片2 草花4 方片4 黑桃4</td>
+<td style="text-align:center">草花3 方片3 黑桃3 黑桃9 方片9</td>
+<td style="text-align:center">玩家1</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">葫芦</td>
+<td style="text-align:center">葫芦</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">（三条4）</td>
+<td style="text-align:center">（三条3）</td>
+<td style="text-align:center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>在这个文本文件<a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="external">poker.txt</a>中，包含有两名玩家一千局的手牌。每一行包含有10张牌（均用一个空格隔开）：前5张牌属于玩家1，后5张牌属于玩家2。你可以假定所有的手牌都是有效的（没有无效的字符或是重复的牌），每个玩家的手牌不一定按顺序排列，且每一局都有确定的赢家。</p>
+<p>其中有多少局玩家1获胜？</p>
+<hr>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/53/">Problem 53</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/55/">Problem 55</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/images/avatar.png" alt="sx349" />
+          <p class="site-author-name">Leonhard Euler(1707-1783)</p>
+        </div>
+        <p class="site-description motion-element"><br>Project Euler | 欧拉计划<br>中文翻译站</p>
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name" style="font-size:14px">友情链接</p>
+            
+              <span class="links-of-author-item">
+              <a href="https://projecteuler.net" target="_blank">Project Euler</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://pe.spiritzhang.com/" target="_blank">官方汉化</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://jakwings.is-programmer.com/Project_Euler" target="_blank">饮水思源汉化</a>
+              </span><br>
+            
+              <span class="links-of-author-item">
+              <a href="http://sx349.github.io" target="_blank">译者博客</a>
+              </span><br>
+            
+          
+        </div>
+        
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-54"><span class="nav-number">1.</span> <span class="nav-text">Problem 54</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2015 - 
+  2017
+  <span class="with-love"><i class="icon-heart"></i></span>
+  <span class="author"><a href="http://sx349.github.io">sx349</a></span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist 
+  </a>by <a href="http://notes.iissnan.com/">IIssNan</a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+  
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'pe-cn';
+      var disqus_identifier = '54/';
+      var disqus_title = 'Problem 54';
+      var disqus_url = 'http://yoursite.com/54/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+</body>
+</html>
