@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 597 TorpidsThe Torpids are rowing races held annually in Oxford, following some curious rules:  A division consists of $n$ boats (typically 13), placed in order based on past performance. All">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 597">
+<meta property="og:url" content="http://yoursite.com/597/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 597 TorpidsThe Torpids are rowing races held annually in Oxford, following some curious rules:  A division consists of $n$ boats (typically 13), placed in order based on past performance. All">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2017-04-02T14:00:00.000Z">
+<meta property="article:modified_time" content="2017-05-30T06:56:45.519Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/597/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 597 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/597/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 597
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="创建时间：2017-04-02 07:00:00" itemprop="dateCreated datePublished" datetime="2017-04-02T07:00:00-07:00">2017-04-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="修改时间：2017-05-29 23:56:45" itemprop="dateModified" datetime="2017-05-29T23:56:45-07:00">2017-05-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-597"><a href="#Problem-597" class="headerlink" title="Problem 597"></a><a href="https://projecteuler.net/problem=597" target="_blank" rel="noopener">Problem 597</a></h1><hr>
+<h2 id="Torpids"><a href="#Torpids" class="headerlink" title="Torpids"></a><strong>Torpids</strong></h2><p>The Torpids are rowing races held annually in Oxford, following some curious rules:</p>
+<ul>
+<li>A division consists of $n$ boats (typically 13), placed in order based on past performance.</li>
+<li>All boats within a division start at 40 metre intervals along the river, in order with the highest-placed boat starting furthest upstream.</li>
+<li>The boats all start rowing simultaneously, upstream, trying to catch the boat in front while avoiding being caught by boats behind.</li>
+<li>Each boat continues rowing until <i>either</i> it reaches the finish line <i>or</i> it catches up with (“bumps”) a boat in front.</li>
+<li>The finish line is a distance $L$ metres (the course length, in reality about 1800 metres) upstream from the starting position of the lowest-placed boat. (Because of the staggered starting positions, higher-placed boats row a slightly shorter course than lower-placed boats.)</li>
+<li>When a “bump” occurs, the “bumping” boat takes no further part in the race. The “bumped” boat must continue, however, and may even be “bumped” again by boats that started two or more places behind it.</li>
+<li>After the race, boats are assigned new places within the division, based on the bumps that occurred. Specifically, for any boat $A$ that started in a lower place than $B$, then $A$ will be placed higher than $B$ in the new order if and only if one of the following occurred:<ol>
+<li>$A$ bumped $B$ directly </li>
+<li>$A$ bumped another boat that went on to bump $B$ </li>
+<li>$A$ bumped another boat, that bumped yet another boat, that bumped $B$ </li>
+<li>etc</li>
+</ol>
+</li>
+</ul>
+<p><b>NOTE</b>: For the purposes of this problem you may disregard the boats’ lengths, and assume that a bump occurs precisely when the two boats draw level. (In reality, a bump is awarded as soon as physical contact is made, which usually occurs when there is much less than a full boat length’s overlap.)</p>
+<p>Suppose that, in a particular race, each boat $B_j$ rows at a steady speed $v_j = - \log X_j$ metres per second, where the $X_j$ are chosen randomly (with uniform distribution) between 0 and 1, independently from one another. These speeds are relative to the riverbank: you may disregard the flow of the river.</p>
+<p>Let $p(n,L)$ be the probability that the new order is an <b>even permutation</b> of the starting order, when there are $n$ boats in the division and $L$ is the course length.</p>
+<p>For example, with $n=3$ and $L=160$, labelling the boats as $A$,$B$,$C$ in starting order with $C$ highest, the different possible outcomes of the race are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><b>Bumps occurring</b></th>
+<th align="center"><b>New order</b></th>
+<th align="center"><b>Permutation</b></th>
+<th align="center"><b>Probability</b></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">none</td>
+<td align="center">$A$, $B$, $C$</td>
+<td align="center">even</td>
+<td align="center">4/15</td>
+</tr>
+<tr>
+<td align="center">$B$ bumps $C$</td>
+<td align="center">$A$, $C$, $B$</td>
+<td align="center">odd</td>
+<td align="center">8/45</td>
+</tr>
+<tr>
+<td align="center">$A$ bumps $B$</td>
+<td align="center">$B$, $A$, $C$</td>
+<td align="center">odd</td>
+<td align="center">1/3</td>
+</tr>
+<tr>
+<td align="center">$B$ bumps $C$, then $A$ bumps $C$</td>
+<td align="center">$C$, $A$, $B$</td>
+<td align="center">even</td>
+<td align="center">4/27</td>
+</tr>
+<tr>
+<td align="center">$A$ bumps $B$, then $B$ bumps $C$</td>
+<td align="center">$C$, $B$, $A$</td>
+<td align="center">odd</td>
+<td align="center">2/27</td>
+</tr>
+</tbody></table>
+<p>Therefore, $p(3,160) = 4/15 + 4/27 = 56/135$.</p>
+<p>You are also given that $p(4,400)=0.5107843137$, rounded to 10 digits after the decimal point.</p>
+<p>Find $p(13,1800)$ rounded to 10 digits after the decimal point.</p>
+<hr>
+<h2 id="赛艇"><a href="#赛艇" class="headerlink" title="赛艇"></a><strong>赛艇</strong></h2><p>在牛津大学，每年都会举办一场规则奇特的赛艇比赛：</p>
+<ul>
+<li>每一组比赛由$n$条船进行（通常是13条），按照以往的表现决定排名。</li>
+<li>同一组中所有的船以40米的间隔沿河设定出发点，排名越高的船越靠近上游。</li>
+<li>所有的船同时向上游出发，试图追上前船同时避免被后船追上。</li>
+<li>每条船保持前进直到它到达终点线<i class=zh>或</i>它追上（“撞击”）前船。</li>
+<li>终点线距离排名最低的船的起始位置距离$L$米（航程全长在现实中通常是1800米）。（因为起始位置不同，排名高的船到终点线的距离略短于排名低的船。）</li>
+<li>当“撞击”发生时，进行“撞击”的船结束比赛。而“被撞”的船则继续前进，甚至可能被后面的船“撞击”多次。</li>
+<li>在比赛后，每一组的船会根据发生的“撞击”重新进行排名。具体来说，如果原先船$A$排名低于船$B$，则船$A$的新排名高于船$B$当且仅当以下之一发生：<ol>
+<li>$A$直接撞击$B$ </li>
+<li>$A$撞击一艘船，该船撞击$B$ </li>
+<li>$A$撞击一艘船，该船撞击另一艘船，另一艘船撞击$B$ </li>
+<li>依此类推</li>
+</ol>
+</li>
+</ul>
+<p><b>注意</b>：问题方便起见，你可以暂时忽略船的长度，并且假设撞击准确地发生在两船位置相同时。（现实中，当两船有物理上的接触时就认定发生了碰撞，通常此时两船的距离远不到一个船身长。）</p>
+<p>假设在一场特定的比赛，每条船$B_j$以固定的速度$v_j = - \log X_j$米每秒行驶，其中$X_j$从0到1上（均匀分布）随机独立地抽取。这些速度都是相对于河岸的：你可以忽略水流的速度。</p>
+<p>令$p(n,L)$表示，当每一组有$n$条船且航程全长为$L$时，新排名是原排名的<b>偶排列</b>的概率。</p>
+<p>例如，当$n=3$且$L=160$时，将三条船分别按排名标记为$A$，$B$，$C$，其中$C$的排名最高，则比赛所有可能的结果如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center"><b>发生的撞击</b></th>
+<th align="center"><b>新排名</b></th>
+<th align="center"><b>排列性质</b></th>
+<th align="center"><b>概率</b></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">未发生</td>
+<td align="center">$A$，$B$，$C$</td>
+<td align="center">偶排列</td>
+<td align="center">4/15</td>
+</tr>
+<tr>
+<td align="center">$B$撞击$C$</td>
+<td align="center">$A$，$C$，$B$</td>
+<td align="center">奇排列</td>
+<td align="center">8/45</td>
+</tr>
+<tr>
+<td align="center">$A$撞击$B$</td>
+<td align="center">$B$，$A$，$C$</td>
+<td align="center">奇排列</td>
+<td align="center">1/3</td>
+</tr>
+<tr>
+<td align="center">$B$撞击$C$，然后$A$撞击$C$</td>
+<td align="center">$C$，$A$，$B$</td>
+<td align="center">偶排列</td>
+<td align="center">4/27</td>
+</tr>
+<tr>
+<td align="center">$A$撞击$B$，然后$B$撞击$C$</td>
+<td align="center">$C$，$B$，$A$</td>
+<td align="center">奇排列</td>
+<td align="center">2/27</td>
+</tr>
+</tbody></table>
+<p>因此，$p(3,160) = 4/15 + 4/27 = 56/135$。</p>
+<p>此外还已知$p(4,400)=0.5107843137$，保留小数点后10位小数。</p>
+<p>求$p(13,1800)$并保留小数点后10位小数。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/596/" rel="prev" title="Problem 596">
+      <i class="fa fa-chevron-left"></i> Problem 596
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/598/" rel="next" title="Problem 598">
+      Problem 598 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-597"><span class="nav-number">1.</span> <span class="nav-text">Problem 597</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Torpids"><span class="nav-number">1.1.</span> <span class="nav-text">Torpids</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赛艇"><span class="nav-number">1.2.</span> <span class="nav-text">赛艇</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : '0e924e0cec9e9d26000df3f28485b5bc',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

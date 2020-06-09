@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 13 Large sumWork out the first ten digits of the sum of the following one-hundred 50-digit numbers.  37107287533902102798797998220837590246510135740250 463769376774900097126481248969700780504">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 13">
+<meta property="og:url" content="http://yoursite.com/13/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 13 Large sumWork out the first ten digits of the sum of the following one-hundred 50-digit numbers.  37107287533902102798797998220837590246510135740250 463769376774900097126481248969700780504">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2002-03-23T10:00:00.000Z">
+<meta property="article:modified_time" content="2015-07-30T01:38:10.000Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/13/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 13 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/13/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 13
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="创建时间：2002-03-23 02:00:00" itemprop="dateCreated datePublished" datetime="2002-03-23T02:00:00-08:00">2002-03-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="修改时间：2015-07-29 18:38:10" itemprop="dateModified" datetime="2015-07-29T18:38:10-07:00">2015-07-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-13"><a href="#Problem-13" class="headerlink" title="Problem 13"></a><a href="https://projecteuler.net/problem=13" target="_blank" rel="noopener">Problem 13</a></h1><hr>
+<h2 id="Large-sum"><a href="#Large-sum" class="headerlink" title="Large sum"></a><strong>Large sum</strong></h2><p>Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.</p>
+<center style="font-family:'Courier New',monospace;">
+37107287533902102798797998220837590246510135740250
+46376937677490009712648124896970078050417018260538
+74324986199524741059474233309513058123726617309629
+91942213363574161572522430563301811072406154908250
+23067588207539346171171980310421047513778063246676
+89261670696623633820136378418383684178734361726757
+28112879812849979408065481931592621691275889832738
+44274228917432520321923589422876796487670272189318
+47451445736001306439091167216856844588711603153276
+70386486105843025439939619828917593665686757934951
+62176457141856560629502157223196586755079324193331
+64906352462741904929101432445813822663347944758178
+92575867718337217661963751590579239728245598838407
+58203565325359399008402633568948830189458628227828
+80181199384826282014278194139940567587151170094390
+35398664372827112653829987240784473053190104293586
+86515506006295864861532075273371959191420517255829
+71693888707715466499115593487603532921714970056938
+54370070576826684624621495650076471787294438377604
+53282654108756828443191190634694037855217779295145
+36123272525000296071075082563815656710885258350721
+45876576172410976447339110607218265236877223636045
+17423706905851860660448207621209813287860733969412
+81142660418086830619328460811191061556940512689692
+51934325451728388641918047049293215058642563049483
+62467221648435076201727918039944693004732956340691
+15732444386908125794514089057706229429197107928209
+55037687525678773091862540744969844508330393682126
+18336384825330154686196124348767681297534375946515
+80386287592878490201521685554828717201219257766954
+78182833757993103614740356856449095527097864797581
+16726320100436897842553539920931837441497806860984
+48403098129077791799088218795327364475675590848030
+87086987551392711854517078544161852424320693150332
+59959406895756536782107074926966537676326235447210
+69793950679652694742597709739166693763042633987085
+41052684708299085211399427365734116182760315001271
+65378607361501080857009149939512557028198746004375
+35829035317434717326932123578154982629742552737307
+94953759765105305946966067683156574377167401875275
+88902802571733229619176668713819931811048770190271
+25267680276078003013678680992525463401061632866526
+36270218540497705585629946580636237993140746255962
+24074486908231174977792365466257246923322810917141
+91430288197103288597806669760892938638285025333403
+34413065578016127815921815005561868836468420090470
+23053081172816430487623791969842487255036638784583
+11487696932154902810424020138335124462181441773470
+63783299490636259666498587618221225225512486764533
+67720186971698544312419572409913959008952310058822
+95548255300263520781532296796249481641953868218774
+76085327132285723110424803456124867697064507995236
+37774242535411291684276865538926205024910326572967
+23701913275725675285653248258265463092207058596522
+29798860272258331913126375147341994889534765745501
+18495701454879288984856827726077713721403798879715
+38298203783031473527721580348144513491373226651381
+34829543829199918180278916522431027392251122869539
+40957953066405232632538044100059654939159879593635
+29746152185502371307642255121183693803580388584903
+41698116222072977186158236678424689157993532961922
+62467957194401269043877107275048102390895523597457
+23189706772547915061505504953922979530901129967519
+86188088225875314529584099251203829009407770775672
+11306739708304724483816533873502340845647058077308
+82959174767140363198008187129011875491310547126581
+97623331044818386269515456334926366572897563400500
+42846280183517070527831839425882145521227251250327
+55121603546981200581762165212827652751691296897789
+32238195734329339946437501907836945765883352399886
+75506164965184775180738168837861091527357929701337
+62177842752192623401942399639168044983993173312731
+32924185707147349566916674687634660915035914677504
+99518671430235219628894890102423325116913619626622
+73267460800591547471830798392868535206946944540724
+76841822524674417161514036427982273348055556214818
+97142617910342598647204516893989422179826088076852
+87783646182799346313767754307809363333018982642090
+10848802521674670883215120185883543223812876952786
+71329612474782464538636993009049310363619763878039
+62184073572399794223406235393808339651327408011116
+66627891981488087797941876876144230030984490851411
+60661826293682836764744779239180335110989069790714
+85786944089552990653640447425576083659976645795096
+66024396409905389607120198219976047599490197230297
+64913982680032973156037120041377903785566085089252
+16730939319872750275468906903707539413042652315011
+94809377245048795150954100921645863754710598436791
+78639167021187492431995700641917969777599028300699
+15368713711936614952811305876380278410754449733078
+40789923115535562561142322423255033685442488917353
+44889911501440648020369068063960672322193204149535
+41503128880339536053299340368006977710650566631954
+81234880673210146739058568557934581403627822703280
+82616570773948327592232845941706525094512325230608
+22918802058777319719839450180888072429661980811197
+77158542502016545090413245809786882778948721859617
+72107838435069186155435662884062257473692284509516
+20849603980134001723930671666823555245252804609722
+53503534226472524250874054075591789781264330331690
+</center>
+
+<hr>
+<h2 id="大和"><a href="#大和" class="headerlink" title="大和"></a><strong>大和</strong></h2><p>计算出以下一百个50位数的和的前十位数字。</p>
+<center style="font-family:'Courier New',monospace;">
+37107287533902102798797998220837590246510135740250
+46376937677490009712648124896970078050417018260538
+74324986199524741059474233309513058123726617309629
+91942213363574161572522430563301811072406154908250
+23067588207539346171171980310421047513778063246676
+89261670696623633820136378418383684178734361726757
+28112879812849979408065481931592621691275889832738
+44274228917432520321923589422876796487670272189318
+47451445736001306439091167216856844588711603153276
+70386486105843025439939619828917593665686757934951
+62176457141856560629502157223196586755079324193331
+64906352462741904929101432445813822663347944758178
+92575867718337217661963751590579239728245598838407
+58203565325359399008402633568948830189458628227828
+80181199384826282014278194139940567587151170094390
+35398664372827112653829987240784473053190104293586
+86515506006295864861532075273371959191420517255829
+71693888707715466499115593487603532921714970056938
+54370070576826684624621495650076471787294438377604
+53282654108756828443191190634694037855217779295145
+36123272525000296071075082563815656710885258350721
+45876576172410976447339110607218265236877223636045
+17423706905851860660448207621209813287860733969412
+81142660418086830619328460811191061556940512689692
+51934325451728388641918047049293215058642563049483
+62467221648435076201727918039944693004732956340691
+15732444386908125794514089057706229429197107928209
+55037687525678773091862540744969844508330393682126
+18336384825330154686196124348767681297534375946515
+80386287592878490201521685554828717201219257766954
+78182833757993103614740356856449095527097864797581
+16726320100436897842553539920931837441497806860984
+48403098129077791799088218795327364475675590848030
+87086987551392711854517078544161852424320693150332
+59959406895756536782107074926966537676326235447210
+69793950679652694742597709739166693763042633987085
+41052684708299085211399427365734116182760315001271
+65378607361501080857009149939512557028198746004375
+35829035317434717326932123578154982629742552737307
+94953759765105305946966067683156574377167401875275
+88902802571733229619176668713819931811048770190271
+25267680276078003013678680992525463401061632866526
+36270218540497705585629946580636237993140746255962
+24074486908231174977792365466257246923322810917141
+91430288197103288597806669760892938638285025333403
+34413065578016127815921815005561868836468420090470
+23053081172816430487623791969842487255036638784583
+11487696932154902810424020138335124462181441773470
+63783299490636259666498587618221225225512486764533
+67720186971698544312419572409913959008952310058822
+95548255300263520781532296796249481641953868218774
+76085327132285723110424803456124867697064507995236
+37774242535411291684276865538926205024910326572967
+23701913275725675285653248258265463092207058596522
+29798860272258331913126375147341994889534765745501
+18495701454879288984856827726077713721403798879715
+38298203783031473527721580348144513491373226651381
+34829543829199918180278916522431027392251122869539
+40957953066405232632538044100059654939159879593635
+29746152185502371307642255121183693803580388584903
+41698116222072977186158236678424689157993532961922
+62467957194401269043877107275048102390895523597457
+23189706772547915061505504953922979530901129967519
+86188088225875314529584099251203829009407770775672
+11306739708304724483816533873502340845647058077308
+82959174767140363198008187129011875491310547126581
+97623331044818386269515456334926366572897563400500
+42846280183517070527831839425882145521227251250327
+55121603546981200581762165212827652751691296897789
+32238195734329339946437501907836945765883352399886
+75506164965184775180738168837861091527357929701337
+62177842752192623401942399639168044983993173312731
+32924185707147349566916674687634660915035914677504
+99518671430235219628894890102423325116913619626622
+73267460800591547471830798392868535206946944540724
+76841822524674417161514036427982273348055556214818
+97142617910342598647204516893989422179826088076852
+87783646182799346313767754307809363333018982642090
+10848802521674670883215120185883543223812876952786
+71329612474782464538636993009049310363619763878039
+62184073572399794223406235393808339651327408011116
+66627891981488087797941876876144230030984490851411
+60661826293682836764744779239180335110989069790714
+85786944089552990653640447425576083659976645795096
+66024396409905389607120198219976047599490197230297
+64913982680032973156037120041377903785566085089252
+16730939319872750275468906903707539413042652315011
+94809377245048795150954100921645863754710598436791
+78639167021187492431995700641917969777599028300699
+15368713711936614952811305876380278410754449733078
+40789923115535562561142322423255033685442488917353
+44889911501440648020369068063960672322193204149535
+41503128880339536053299340368006977710650566631954
+81234880673210146739058568557934581403627822703280
+82616570773948327592232845941706525094512325230608
+22918802058777319719839450180888072429661980811197
+77158542502016545090413245809786882778948721859617
+72107838435069186155435662884062257473692284509516
+20849603980134001723930671666823555245252804609722
+53503534226472524250874054075591789781264330331690
+</center>
+
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/12/" rel="prev" title="Problem 12">
+      <i class="fa fa-chevron-left"></i> Problem 12
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/14/" rel="next" title="Problem 14">
+      Problem 14 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-13"><span class="nav-number">1.</span> <span class="nav-text">Problem 13</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Large-sum"><span class="nav-number">1.1.</span> <span class="nav-text">Large sum</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大和"><span class="nav-number">1.2.</span> <span class="nav-text">大和</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : '4aa865d087f29f02aaae30c5bc6512fd',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

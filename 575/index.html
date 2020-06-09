@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 575 Wandering RobotsIt was quite an ordinary day when a mysterious alien vessel appeared as if from nowhere. After waiting several hours and receiving no response it is decided to send a team">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 575">
+<meta property="og:url" content="http://yoursite.com/575/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 575 Wandering RobotsIt was quite an ordinary day when a mysterious alien vessel appeared as if from nowhere. After waiting several hours and receiving no response it is decided to send a team">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_1_5x5.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_2_fixed.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_3_dynamic.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_1_5x5.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_2_fixed.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p575_wandering_robot_3_dynamic.png">
+<meta property="article:published_time" content="2016-10-22T20:00:00.000Z">
+<meta property="article:modified_time" content="2017-05-29T04:41:29.463Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://projecteuler.net/project/images/p575_wandering_robot_1_5x5.png">
+
+<link rel="canonical" href="http://yoursite.com/575/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 575 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/575/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 575
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="创建时间：2016-10-22 13:00:00" itemprop="dateCreated datePublished" datetime="2016-10-22T13:00:00-07:00">2016-10-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="修改时间：2017-05-28 21:41:29" itemprop="dateModified" datetime="2017-05-28T21:41:29-07:00">2017-05-28</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-575"><a href="#Problem-575" class="headerlink" title="Problem 575"></a><a href="https://projecteuler.net/problem=575" target="_blank" rel="noopener">Problem 575</a></h1><hr>
+<h2 id="Wandering-Robots"><a href="#Wandering-Robots" class="headerlink" title="Wandering Robots"></a><strong>Wandering Robots</strong></h2><p>It was quite an ordinary day when a mysterious alien vessel appeared as if from nowhere. After waiting several hours and receiving no response it is decided to send a team to investigate, of which you are included. Upon entering the vessel you are met by a friendly holographic figure, Katharina, who explains the purpose of the vessel, Eulertopia.</p>
+<p>She claims that Eulertopia is almost older than time itself. Its mission was to take advantage of a combination of incredible computational power and vast periods of time to discover the answer to life, the universe, and everything. Hence the resident cleaning robot, Leonhard, along with his housekeeping responsibilities, was built with a powerful computational matrix to ponder the meaning of life as he wanders through a massive 1000 by 1000 square grid of rooms. She goes on to explain that the rooms are numbered sequentially from left to right, row by row. So, for example, if Leonhard was wandering around a 5 by 5 grid then the rooms would be numbered in the following way.</p>
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_1_5x5.png" alt="p575_wandering_robot_1_5x5.png"></center>
+
+<p>Many millenia ago Leonhard reported to Katharina to have found the answer and he is willing to share it with any life form who proves to be worthy of such knowledge.</p>
+<p>Katharina further explains that the designers of Leonhard were given instructions to program him with equal probability of remaining in the same room or travelling to an adjacent room. However, it was not clear to them if this meant (i) an equal probability being split equally between remaining in the room and the number of available routes, or, (ii) an equal probability (50%) of remaining in the same room and then the other 50% was to be split equally between the number of available routes.</p>
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_2_fixed.png" alt="p575_wandering_robot_2_fixed.png"><br>
+<i>(i) Probability of remaining related to number of exits</i></center>
+
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_3_dynamic.png" alt="p575_wandering_robot_3_dynamic.png"><br>
+<i>(ii) Fixed 50% probability of remaining</i></center>
+
+<p>The records indicate that they decided to flip a coin. Heads would mean that the probability of remaining was dynamically related to the number of exits whereas tails would mean that they program Leonhard with a fixed 50% probability of remaining in a particular room. Unfortunately there is no record of the outcome of the coin, so without further information we would need to assume that there is equal probability of either of the choices being implemented.</p>
+<p>Katharina suggests it should not be too challenging to determine that the probability of finding him in a square numbered room in a 5 by 5 grid after unfathomable periods of time would be approximately 0.177976190476 [12 d.p.].</p>
+<p>In order to prove yourself worthy of visiting the great oracle you must calculate the probability of finding him in a square numbered room in the 1000 by 1000 lair in which he has been wandering.<br>(Give your answer rounded to 12 decimal places)</p>
+<hr>
+<h2 id="游荡的机器人"><a href="#游荡的机器人" class="headerlink" title="游荡的机器人"></a><strong>游荡的机器人</strong></h2><p>在一个相当平常的日子里，一艘神秘的外星飞船突然不知从何出现并降临到地球上。在等待了数小时没有收到应答之后，包括你在内的一支调查队被派上外星飞船。进入飞船之后，你碰到了一个友善的全息智能，自称叫“凯瑟琳”，她向你解释了这艘飞船“欧拉邦”号的目的。</p>
+<p>她说，欧拉邦号比时间的存在还要久远。它的使命是将一种不可思议的计算能力和漫长的时间相结合，以探求生命、宇宙和一切的答案。飞船上的常驻清洁机器人“莱昂哈德”，除了清洁飞船的职能之外，还内置了一个强大的计算矩阵，使得其在庞大的1000乘1000方形网格房间中四处游荡清扫时能够思考生命的意义。她进一步解释说，这些房间是按照行从上至下，从左至右的顺序进行编号的。举例来说，如果莱昂哈德是在5乘5的方形网格房间中四处游荡，那么这些房间的编号如下所示：</p>
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_1_5x5.png" alt="p575_wandering_robot_1_5x5.png"></center>
+
+<p>数百万年前，莱昂哈德曾经向凯瑟琳报告说已经找到了答案，并且他愿意将其分享给能够证明其值得拥有这份知识的任意生命形式。</p>
+<p>凯瑟琳又解释道，莱昂哈德的设计者们接受到的指令说，要让他以相等的概率停留在当前房间或移动到相邻的房间。但是，设计者们不知道这句话到底指的是(i)将概率平均分配给停留在当前房间和所有其它可行的路径上，还是(ii)将相等的概率(50%)分配给停留在当前房间，再将剩下的50%平均分给所有其它可行的路径上。</p>
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_2_fixed.png" alt="p575_wandering_robot_2_fixed.png"><br>
+<i class=zh>(i)停留的概率与出口的数目有关</i></center>
+
+<center><img src="https://projecteuler.net/project/images/p575_wandering_robot_3_dynamic.png" alt="p575_wandering_robot_3_dynamic.png"><br>
+<i class=zh>(ii)总是以50%的概率停留</i></center>
+
+<p>记录显示，设计者们决定用抛硬币的方式决定如何给他编写程序。正面向上意味着停留的概率由出口的数目动态地决定，而反面向上意味着莱昂哈德以固定的50%的概率停留在当前房间。不幸的是，抛掷硬币的结果并没有被记录，因此在缺乏更多信息的情况下，我们只能假设这两种选择以相同的概率被执行。</p>
+<p>凯瑟琳表示，很容易计算得出，如果是5乘5的方形网格房间，那么经过充分长的时间后，在编号为平方数的房间中找到莱昂哈德的概率大约为0.177976190476（保留12位小数）。</p>
+<p>为了证明你有获取这份神谕的价值，你必须计算出，如果莱昂哈德是在1000乘1000的方形网格中四处游荡，在编号为平方数的房间中找到他的概率。<br>（将你的答案保留12位小数）</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/574/" rel="prev" title="Problem 574">
+      <i class="fa fa-chevron-left"></i> Problem 574
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/576/" rel="next" title="Problem 576">
+      Problem 576 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-575"><span class="nav-number">1.</span> <span class="nav-text">Problem 575</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Wandering-Robots"><span class="nav-number">1.1.</span> <span class="nav-text">Wandering Robots</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#游荡的机器人"><span class="nav-number">1.2.</span> <span class="nav-text">游荡的机器人</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : '06f7fbf47f51f42ea0f1cc6c107a6e34',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

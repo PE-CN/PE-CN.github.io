@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 315 Digital root clocks   Sam and Max are asked to transform two digital clocks into two “digital root” clocks.A digital root clock is a digital clock that calculates digital roots step by st">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 315">
+<meta property="og:url" content="http://yoursite.com/315/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 315 Digital root clocks   Sam and Max are asked to transform two digital clocks into two “digital root” clocks.A digital root clock is a digital clock that calculates digital roots step by st">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://projecteuler.net/project/images/p315_clocks.gif">
+<meta property="og:image" content="https://projecteuler.net/project/images/p315_clocks.gif">
+<meta property="article:published_time" content="2010-12-19T18:00:00.000Z">
+<meta property="article:modified_time" content="2015-10-25T06:45:32.000Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://projecteuler.net/project/images/p315_clocks.gif">
+
+<link rel="canonical" href="http://yoursite.com/315/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 315 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/315/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 315
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="创建时间：2010-12-19 10:00:00" itemprop="dateCreated datePublished" datetime="2010-12-19T10:00:00-08:00">2010-12-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="修改时间：2015-10-24 23:45:32" itemprop="dateModified" datetime="2015-10-24T23:45:32-07:00">2015-10-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-315"><a href="#Problem-315" class="headerlink" title="Problem 315"></a><a href="https://projecteuler.net/problem=315" target="_blank" rel="noopener">Problem 315</a></h1><hr>
+<p><strong>Digital root clocks</strong></p>
+<center><img src="https://projecteuler.net/project/images/p315_clocks.gif"></center>
+
+<p>Sam and Max are asked to transform two digital clocks into two “digital root” clocks.<br>A digital root clock is a digital clock that calculates digital roots step by step.</p>
+<p>When a clock is fed a number, it will show it and then it will start the calculation, showing all the intermediate values until it gets to the result.<br>For example, if the clock is fed the number 137, it will show: “<strong>137</strong>“ → “<strong>11</strong>“ → “<strong>2</strong>“ and then it will go black, waiting for the next number.</p>
+<p>Every digital number consists of some light segments: three horizontal (top, middle, bottom) and four vertical (top-left, top-right, bottom-left, bottom-right).<br>Number “<strong>1</strong>“ is made of vertical top-right and bottom-right, number “<strong>4</strong>“ is made by middle horizontal and vertical top-left, top-right and bottom-right. Number “<strong>8</strong>“ lights them all.</p>
+<p>The clocks consume energy only when segments are turned on/off.<br>To turn on a “<strong>2</strong>“ will cost 5 transitions, while a “<strong>7</strong>“ will cost only 4 transitions.</p>
+<p>Sam and Max built two different clocks.</p>
+<p>Sam’s clock is fed e.g. number 137: the clock shows “<strong>137</strong>“, then the panel is turned off, then the next number (“<strong>11</strong>“) is turned on, then the panel is turned off again and finally the last number (“<strong>2</strong>“) is turned on and, after some time, off.<br>For the example, with number 137, Sam’s clock requires:</p>
+<table>
+<thead>
+<tr>
+<th align="left">&nbsp;</th>
+<th>&nbsp;</th>
+<th align="left">&nbsp;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">“<strong>137</strong>“</td>
+<td>:</td>
+<td align="left">(2 + 5 + 4) × 2 = 22 transitions (“<strong>137</strong>“ on/off).</td>
+</tr>
+<tr>
+<td align="left">“<strong>11</strong>“</td>
+<td>:</td>
+<td align="left">(2 + 2) × 2 = 8 transitions (“<strong>11</strong>“ on/off).</td>
+</tr>
+<tr>
+<td align="left">“<strong>2</strong>“</td>
+<td>:</td>
+<td align="left">(5) × 2 = 10 transitions (“<strong>2</strong>“ on/off).</td>
+</tr>
+</tbody></table>
+<p>For a grand total of 40 transitions.</p>
+<p>Max’s clock works differently. Instead of turning off the whole panel, it is smart enough to turn off only those segments that won’t be needed for the next number.<br>For number 137, Max’s clock requires:</p>
+<table>
+<thead>
+<tr>
+<th align="left">&nbsp;</th>
+<th>&nbsp;</th>
+<th align="left">&nbsp;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">“<strong>137</strong>“</td>
+<td>:</td>
+<td align="left">2 + 5 + 4 = 11 transitions (“<strong>137</strong>“ on)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">7 transitions (to turn off the segments that are not needed for number “<strong>11</strong>“).</td>
+</tr>
+<tr>
+<td align="left">“<strong>11</strong>“</td>
+<td>:</td>
+<td align="left">0 transitions (number “<strong>11</strong>“ is already turned on correctly)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">3 transitions (to turn off the first “<strong>1</strong>“ and the bottom part of the second “<strong>1</strong>“;</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">the top part is common with number “<strong>2</strong>“).</td>
+</tr>
+<tr>
+<td align="left">“<strong>2</strong>“</td>
+<td>:</td>
+<td align="left">4 transitions (to turn on the remaining segments in order to get a “<strong>2</strong>“)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">5 transitions (to turn off number “<strong>2</strong>“).</td>
+</tr>
+</tbody></table>
+<p>For a grand total of 30 transitions.</p>
+<p>Of course, Max’s clock consumes less power than Sam’s one.<br>The two clocks are fed all the prime numbers between A = 10<sup>7</sup> and B = 2×10<sup>7</sup>.<br>Find the difference between the total number of transitions needed by Sam’s clock and that needed by Max’s one.</p>
+<hr>
+<p><strong>数根时钟</strong></p>
+<center><img src="https://projecteuler.net/project/images/p315_clocks.gif"></center>
+
+<p>（左：萨姆的钟；右：马克斯的钟；下：在本题中钟面上的数字样式）</p>
+<p>萨姆和马克斯被要求将两个数字时钟改装成两个“数根”时钟。<br>所谓数根时钟就是迭代计算数字根的数字时钟。</p>
+<p>当时钟接收到一个数时，它会先显示这个数，然后开始计算，期间展示所有的中间值，直到它得到结果。<br>例如，如果时钟接收到的数是137，它会显示：”<strong>137</strong>“ → “<strong>11</strong>“ → “<strong>2</strong>“，然后它会黑屏，等待接收下一个数。</p>
+<p>每个数字在钟面上用七段数码管显示：三根水平数码管（上、中、下）和四根竖直数码管（左上、右上、左下、右下）。<br>显示数字”<strong>1</strong>“需要点亮右上和右下的竖直数码管，显示数字”<strong>4</strong>“需要点亮中间的水平数码管和左上、右上、右下的竖直数码管，显示数字”<strong>8</strong>“则需要点亮所有的数码管。</p>
+<p>只有在数码管打开或关闭时时钟才消耗能量。<br>因此，显示”<strong>2</strong>“需要5次转换，而”<strong>7</strong>“则只需要4次转换。</p>
+<p>萨姆和马克斯制作了两个不同的时钟。</p>
+<p>如果萨姆的时钟接收到一个数，比如说137：时钟先显示”<strong>137</strong>“，然后全部关掉，然后显示下一个数(“<strong>11</strong>“)，再全部关掉，然后显示最后一个数(“<strong>2</strong>“)，过一段时间后再全部关掉。<br>在这个例子中，接收到137后，萨姆的时钟需要消耗：</p>
+<table>
+<thead>
+<tr>
+<th align="left">&nbsp;</th>
+<th>&nbsp;</th>
+<th align="left">&nbsp;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">“<strong>137</strong>“</td>
+<td>:</td>
+<td align="left">(2 + 5 + 4) × 2 = 22次转换（显示和关闭”<strong>137</strong>“）。</td>
+</tr>
+<tr>
+<td align="left">“<strong>11</strong>“</td>
+<td>:</td>
+<td align="left">(2 + 2) × 2 = 8次转换（显示和关闭”<strong>11</strong>“）。</td>
+</tr>
+<tr>
+<td align="left">“<strong>2</strong>“</td>
+<td>:</td>
+<td align="left">(5) × 2 = 10次转换（显示和关闭”<strong>2</strong>“）。</td>
+</tr>
+</tbody></table>
+<p>总计需要40次转换。</p>
+<p>马克斯的时钟运作的方式略有不同。它会很聪明地只关掉那些显示下一个数时不再用到的数码管，而不是全部关掉。<br>接收到137后，马克斯的时钟需要消耗：</p>
+<table>
+<thead>
+<tr>
+<th align="left">&nbsp;</th>
+<th>&nbsp;</th>
+<th align="left">&nbsp;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">“<strong>137</strong>“</td>
+<td>:</td>
+<td align="left">2 + 5 + 4 = 11次转换（显示”<strong>137</strong>“ on）</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">7次转换（关闭显示”<strong>11</strong>“不需要的数码管）。</td>
+</tr>
+<tr>
+<td align="left">“<strong>11</strong>“</td>
+<td>:</td>
+<td align="left">0次转换（”<strong>11</strong>“已经正确显示）</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">3次转换（关闭第一个”<strong>1</strong>“和第二个”<strong>1</strong>“的下半部分；</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">上半部分保留用于显示”<strong>2</strong>“)。</td>
+</tr>
+<tr>
+<td align="left">“<strong>2</strong>“</td>
+<td>:</td>
+<td align="left">4次转换（显示”<strong>2</strong>“的剩余部分）</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+<td align="left">5次转换（关闭”<strong>2</strong>“）。</td>
+</tr>
+</tbody></table>
+<p>总计需要30次转换。</p>
+<p>显然，马克斯的时钟比萨姆的时钟更节能。<br>这两个时钟随后依次接收到在A = 10<sup>7</sup>和B = 2×10<sup>7</sup>之间的所有质数。<br>求萨姆的时钟和马克斯的时钟所需要的转换次数的差。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/314/" rel="prev" title="Problem 314">
+      <i class="fa fa-chevron-left"></i> Problem 314
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/316/" rel="next" title="Problem 316">
+      Problem 316 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-315"><span class="nav-number">1.</span> <span class="nav-text">Problem 315</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : 'd67c682355226721d5de9587b581ce1b',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
