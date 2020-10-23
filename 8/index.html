@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 8 Largest product in a seriesThe four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 &#x3D; 5832.  73167176531330624919225119674426574742355349194934 969">
+  <meta name="description" content="Problem 8 Largest product in a seriesThe four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times  9 &#x3D; 5832$.  7316717653133062491922511967442657">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 8">
 <meta property="og:url" content="http://yoursite.com/8/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 8 Largest product in a seriesThe four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 &#x3D; 5832.  73167176531330624919225119674426574742355349194934 969">
+<meta property="og:description" content="Problem 8 Largest product in a seriesThe four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times  9 &#x3D; 5832$.  7316717653133062491922511967442657">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2002-01-12T10:00:00.000Z">
-<meta property="article:modified_time" content="2015-07-30T01:31:36.000Z">
+<meta property="article:modified_time" content="2020-10-23T04:51:02.808Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="创建时间：2002-01-12 02:00:00" itemprop="dateCreated datePublished" datetime="2002-01-12T02:00:00-08:00">2002-01-12</time>
+              <time title="发布时间：2002-01-12 02:00:00" itemprop="dateCreated datePublished" datetime="2002-01-12T02:00:00-08:00">2002-01-12</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="修改时间：2015-07-29 18:31:36" itemprop="dateModified" datetime="2015-07-29T18:31:36-07:00">2015-07-29</time>
+                <time title="更新时间：2020-10-22 21:51:02" itemprop="dateModified" datetime="2020-10-22T21:51:02-07:00">2020-10-22</time>
               </span>
 
           
@@ -227,7 +227,7 @@
       
         <hr>
 <h1 id="Problem-8"><a href="#Problem-8" class="headerlink" title="Problem 8"></a><a href="https://projecteuler.net/problem=8" target="_blank" rel="noopener">Problem 8</a></h1><hr>
-<h2 id="Largest-product-in-a-series"><a href="#Largest-product-in-a-series" class="headerlink" title="Largest product in a series"></a><strong>Largest product in a series</strong></h2><p>The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.</p>
+<h2 id="Largest-product-in-a-series"><a href="#Largest-product-in-a-series" class="headerlink" title="Largest product in a series"></a><strong>Largest product in a series</strong></h2><p>The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times  9 = 5832$.</p>
 <center style="font-family:'Courier New',monospace">
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -251,9 +251,9 @@
 71636269561882670428252483600823257530420752963450
 </center>
 
-<p>Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?</p>
+<p>Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?</p>
 <hr>
-<h2 id="连续数字最大乘积"><a href="#连续数字最大乘积" class="headerlink" title="连续数字最大乘积"></a><strong>连续数字最大乘积</strong></h2><p>在下面这个1000位正整数中，连续4个数字的最大乘积是 9 × 9 × 8 × 9 = 5832。</p>
+<h2 id="连续数字最大乘积"><a href="#连续数字最大乘积" class="headerlink" title="连续数字最大乘积"></a><strong>连续数字最大乘积</strong></h2><p>在如下的$1000$位数中，连续四个数字的最大乘积是 $9 \times 9 \times 8 \times 9 = 5832$。</p>
 <center style="font-family:'Courier New',monospace">
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -277,7 +277,7 @@
 71636269561882670428252483600823257530420752963450
 </center>
 
-<p>找出这个1000位正整数中乘积最大的连续13个数字。它们的乘积是多少？</p>
+<p>求这个$1000$位数中连续十三个数字的最大乘积。</p>
 <hr>
 
     </div>

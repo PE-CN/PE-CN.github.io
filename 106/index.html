@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 106 Special subset sums: meta-testing Let S(A) represent the sum of elements in set A of size n. We shall call it a special sum set if for any two non-empty disjoint subsets, B and C, the fol">
+  <meta name="description" content="Problem 106 Special subset sums: meta-testingLet $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 106">
 <meta property="og:url" content="http://yoursite.com/106/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 106 Special subset sums: meta-testing Let S(A) represent the sum of elements in set A of size n. We shall call it a special sum set if for any two non-empty disjoint subsets, B and C, the fol">
+<meta property="og:description" content="Problem 106 Special subset sums: meta-testingLet $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2005-10-08T01:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-10T16:25:46.000Z">
+<meta property="article:modified_time" content="2020-09-21T00:33:48.637Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="创建时间：2005-10-07 18:00:00" itemprop="dateCreated datePublished" datetime="2005-10-07T18:00:00-07:00">2005-10-07</time>
+              <time title="发布时间：2005-10-07 18:00:00" itemprop="dateCreated datePublished" datetime="2005-10-07T18:00:00-07:00">2005-10-07</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="修改时间：2015-10-10 09:25:46" itemprop="dateModified" datetime="2015-10-10T09:25:46-07:00">2015-10-10</time>
+                <time title="更新时间：2020-09-20 17:33:48" itemprop="dateModified" datetime="2020-09-20T17:33:48-07:00">2020-09-20</time>
               </span>
 
           
@@ -227,27 +227,25 @@
       
         <hr>
 <h1 id="Problem-106"><a href="#Problem-106" class="headerlink" title="Problem 106"></a><a href="https://projecteuler.net/problem=106" target="_blank" rel="noopener">Problem 106</a></h1><hr>
-<p><strong>Special subset sums: meta-testing</strong></p>
-<p>Let S(A) represent the sum of elements in set A of size <i>n</i>. We shall call it a special sum set if for any two non-empty disjoint subsets, B and C, the following properties are true:</p>
+<h2 id="Special-subset-sums-meta-testing"><a href="#Special-subset-sums-meta-testing" class="headerlink" title="Special subset sums: meta-testing"></a><strong>Special subset sums: meta-testing</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
 <ol>
-<li>S(B) ≠ S(C); that is, sums of subsets cannot be equal.</li>
-<li>If B contains more elements than C then S(B) &gt; S(C).</li>
+<li>$S(B) \neq S(C)$; that is, sums of subsets cannot be equal.</li>
+<li>If $B$ contains more elements than $C$ then $S(B) &gt; S(C)$.</li>
 </ol>
 <p>For this problem we shall assume that a given set contains n strictly increasing elements and it already satisfies the second rule.</p>
-<p>Surprisingly, out of the 25 possible subset pairs that can be obtained from a set for which n = 4, only 1 of these pairs need to be tested for equality (first rule). Similarly, when n = 7, only 70 out of the 966 subset pairs need to be tested.</p>
-<p>For n = 12, how many of the 261625 subset pairs that can be obtained need to be tested for equality?</p>
-<p>NOTE: This problem is related to <a href="/Problem101-125/#Problem_103">Problem 103</a> and <a href="/Problem101-125/#Problem_105">Problem 105</a>.</p>
+<p>Surprisingly, out of the $25$ possible subset pairs that can be obtained from a set for which $n = 4$, only $1$ of these pairs need to be tested for equality (first rule). Similarly, when $n = 7$, only $70$ out of the $966$ subset pairs need to be tested.</p>
+<p>For $n = 12$, how many of the $261625$ subset pairs that can be obtained need to be tested for equality?</p>
+<p>NOTE: This problem is related to <a href="/103">Problem 103</a> and <a href="/105">Problem 105</a>.</p>
 <hr>
-<p><strong>特殊的子集和：元检验</strong></p>
-<p>记S(A)是大小为n的集合A中所有元素的和。若任取A的任意两个非空且不相交的子集B和C都满足下列条件，我们称A是一个特殊的和集：</p>
+<h2 id="特殊的子集和：元检验"><a href="#特殊的子集和：元检验" class="headerlink" title="特殊的子集和：元检验"></a><strong>特殊的子集和：元检验</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若任取$A$的任意两个非空且不相交的子集$B$和$C$都满足下列条件，我们称$A$是一个特殊的和集：</p>
 <ol>
-<li>S(B) ≠ S(C)；也就是说，任意子集的和不相同。</li>
-<li>如果B中的元素比C多，则S(B) &gt; S(C)。</li>
+<li>$S(B) \neq S(C)$；也就是说，任意子集的和不相同。</li>
+<li>如果$B$中的元素比$C$多，则$S(B) &gt; S(C)$。</li>
 </ol>
-<p>在这个问题中我们假定集合中包含有n个严格单调递增的元素，并且已知其满足第二个条件。</p>
-<p>令人惊奇的是，当n = 4时，在所有可能的25组子集对中只有1组需要检验子集和是否相等（第一个条件）。同样地，当n = 7时，在所有可能的966组子集对中只有70组需要检验。</p>
-<p>当n = 12时，在所有可能的261625组子集对中有多少组需要检验？</p>
-<p>注意：此题和<a href="/Problem101-125/#Problem_103">第103题</a>及<a href="/Problem101-125/#Problem_105">第105题</a>有关。</p>
+<p>在这个问题中我们假定集合中包含有$n$个严格单调递增的元素，并且已知其满足第二个条件。</p>
+<p>令人惊奇的是，当$n = 4$时，在所有可能的$25$组子集对中只有$1$组需要检验子集和是否相等（第一个条件）。同样地，当$n = 7$时，在所有可能的$966$组子集对中只有$70$组需要检验。</p>
+<p>当$n = 12$时，在所有可能的$261625$组子集对中有多少组需要检验？</p>
+<p>注意：此题和<a href="/103">第103题</a>及<a href="/105">第105题</a>有关。</p>
 <hr>
 
     </div>
@@ -330,7 +328,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-106"><span class="nav-number">1.</span> <span class="nav-text">Problem 106</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-106"><span class="nav-number">1.</span> <span class="nav-text">Problem 106</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-subset-sums-meta-testing"><span class="nav-number">1.1.</span> <span class="nav-text">Special subset sums: meta-testing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊的子集和：元检验"><span class="nav-number">1.2.</span> <span class="nav-text">特殊的子集和：元检验</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
