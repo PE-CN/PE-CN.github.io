@@ -26,7 +26,7 @@
 <meta property="og:description" content="Problem 666 Polymorphic BacteriaMembers of a species of bacteria occur in two different types: $\alpha$ and $\beta$. Individual bacteria are capable of multiplying and mutating between the types acco">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-04-20T20:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-21T06:24:52.413Z">
+<meta property="article:modified_time" content="2020-10-23T05:21:34.712Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2020-10-20 23:24:52" itemprop="dateModified" datetime="2020-10-20T23:24:52-07:00">2020-10-20</time>
+                <time title="更新时间：2020-10-22 22:21:34" itemprop="dateModified" datetime="2020-10-22T22:21:34-07:00">2020-10-22</time>
               </span>
 
           
@@ -242,7 +242,7 @@
 </li>
 </ul>
 <p>If a population starts with a single bacterium of type $\alpha$, then it can be shown that there is a $0.07243802$ probability that the population will eventually die out, and a $0.92756198$ probability that the population will last forever. These probabilities are given rounded to $8$ decimal places.</p>
-<p>Now consider another species of bacteria, $S_{k,m}$ (where $k$ and $m$ are positive integers), which occurs in $k$ different types $\alpha_i$ for $0\le i&lt; k$. The rules governing this species’ lifecycle involve the sequence $r_n$ defined by:<br>    $r_0 = 306$<br>    $r_{n+1} = r_n^2 \bmod 10,007$</p>
+<p>Now consider another species of bacteria, $S_{k,m}$ (where $k$ and $m$ are positive integers), which occurs in $k$ different types $\alpha_i$ for $0\le i&lt; k$. The rules governing this species’ lifecycle involve the sequence $r_n$ defined by:<br>    $r_0 = 306$<br>    $r_{n+1} = r_n^2 \bmod 10\ 007$</p>
 <p>Every minute, for each $i$, each bacterium $A$ of type $\alpha_i$ will independently choose an integer $j$ uniformly at random in the range $0\le j&lt;m$. What it then does depends on $q = r_{im+j} \bmod 5$:</p>
 <ul>
 <li>If $q=0$, $A$ dies.</li>
@@ -270,7 +270,7 @@
 </li>
 </ul>
 <p>如果一个细胞族群一开始只包含一个$\alpha$型细菌，可以算出，有$0.07243802$的概率这个族群会最终全部死亡，而有$0.92756198$的概率这个族群将永远存续下去，上述概率均保留$8$位小数。</p>
-<p>现在考虑另一种细菌$S_{k,m}$（其中$k$和$m$均为正整数），这种细菌有$k$种不同的形态，分别用$\alpha_i$表示，其中$0\le i&lt;k$。这种细菌的生命周期取决于如下定义的序列$r_n$:<br>    $r_0 = 306$<br>    $r_{n+1} = r_n^2 \bmod 10,007$</p>
+<p>现在考虑另一种细菌$S_{k,m}$（其中$k$和$m$均为正整数），这种细菌有$k$种不同的形态，分别用$\alpha_i$表示，其中$0\le i&lt;k$。这种细菌的生命周期取决于如下定义的序列$r_n$:<br>    $r_0 = 306$<br>    $r_{n+1} = r_n^2 \bmod 10\ 007$</p>
 <p>每一分钟，每个$\alpha_i$型的细菌个体$A$会独立地在$0\le j&lt;m$的范围内均匀随机地选择一个整数$j$，并根据$q = r_{im+j} \bmod 5$选择其行动：:</p>
 <ul>
 <li>如果$q=0$，则$A$死亡。</li>
