@@ -3313,10 +3313,10 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <content><![CDATA[<hr>
 <h1 id="Problem-16"><a href="#Problem-16" class="headerlink" title="Problem 16"></a><a href="https://projecteuler.net/problem=16" target="_blank" rel="noopener">Problem 16</a></h1><hr>
 <h2 id="Power-digit-sum"><a href="#Power-digit-sum" class="headerlink" title="Power digit sum"></a><strong>Power digit sum</strong></h2><p>$2^{15}=32768$ and the sum of its digits is $3 + 2 + 7 + 6 + 8 = 26$.</p>
-<p>What is the sum of the digits of the number $2^{100}$?</p>
+<p>What is the sum of the digits of the number $2^{1000}$?</p>
 <hr>
 <h2 id="幂的数字和"><a href="#幂的数字和" class="headerlink" title="幂的数字和"></a><strong>幂的数字和</strong></h2><p>$2^{15}=32768$，而$32768$的各位数字之和是 $3 + 2 + 7 + 6 + 8 = 26$。</p>
-<p>$2^{100}$的各位数字之和是多少？</p>
+<p>$2^{1000}$的各位数字之和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22281,6 +22281,319 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>然而，想要验证632382<sup>518061</sup> &gt; 519432<sup>525806</sup>就会变得非常困难，因为这两个数都包含有超过三百万位数字。</p>
 <p>22K的文本文件<a href="https://projecteuler.net/project/resources/p099_base_exp.txt" target="_blank" rel="noopener">base_exp.txt</a>（右击并选择“目标另存为……”）有一千行，每一行有一对底数和指数，找出哪一行给出的幂的值最大。</p>
 <p>注意：文件的前两行就是上述两个例子。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 727</title>
+    <url>/727/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-727"><a href="#Problem-727" class="headerlink" title="Problem 727"></a><a href="https://projecteuler.net/problem=727" target="_blank" rel="noopener">Problem 727</a></h1><hr>
+<h2 id="Triangle-of-Circular-Arcs"><a href="#Triangle-of-Circular-Arcs" class="headerlink" title="Triangle of Circular Arcs"></a><strong>Triangle of Circular Arcs</strong></h2><p>Let $r_a$, $r_b$ and $r_c$ be the radii of three circles that are mutually and externally tangent to each other. The three circles then form a <i>triangle of circular arcs</i> between their tangency points as shown for the three blue circles in the picture below.</p>
+<p><img src="https://projecteuler.net/project/images/p727_circular_arcs.jpg" alt="CircularArcs"></p>
+<p>Define the circumcircle of this triangle to be the red circle, with centre $D$, passing through their tangency points. Further define the incircle of this triangle to be the green circle, with centre $E$, that is mutually and externally tangent to all the three blue circles. Let $d=\vert DE \vert$ be the distance between the centres of the circumcircle and the incircle.</p>
+<p>Let $\mathbb{E}(d)$ be the expected value of $d$ when $r_a$, $r_b$ and $r_c$ are integers chosen uniformly such that $1\leq r_a&lt;r_b&lt;r_c \le 100$ and $\text{gcd}(r_a,r_b,r_c)=1$.</p>
+<p>Find $\mathbb{E}(d)$, rounded to eight places after the decimal point.</p>
+<hr>
+<h2 id="圆弧三角形"><a href="#圆弧三角形" class="headerlink" title="圆弧三角形"></a><strong>圆弧三角形</strong></h2><p>三个半径为$r_a$、$r_b$和$r_c$的圆两两外切，在切点之间构成了一个<i class=zh>圆弧三角形</i>，如下图的三个蓝色圆所示。</p>
+<p><img src="https://projecteuler.net/project/images/p727_circular_arcs.jpg" alt="圆弧"></p>
+<p>记圆弧三角形的外接圆为上图中的红色圆，圆心点为$D$且过三个切点。再记圆弧三角形的内切圆为上图中的绿色圆，圆心点为$E$且与三个蓝色圆外切。记$d=\vert DE \vert$为外接圆和内切圆的圆心距。</p>
+<p>若$r_a$、$r_b$和$r_c$均为在$1\leq r_a&lt;r_b&lt;r_c \le 100$范围内随机均匀抽取的整数且满足$\text{gcd}(r_a,r_b,r_c)=1$，记$\mathbb{E}(d)$为$d$的期望值。</p>
+<p>求$\mathbb{E}(d)$并保留小数点后八位数字。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 730</title>
+    <url>/730/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-730"><a href="#Problem-730" class="headerlink" title="Problem 730"></a><a href="https://projecteuler.net/problem=730" target="_blank" rel="noopener">Problem 730</a></h1><hr>
+<h2 id="Shifted-Pythagorean-Triples"><a href="#Shifted-Pythagorean-Triples" class="headerlink" title="Shifted Pythagorean Triples"></a><strong>Shifted Pythagorean Triples</strong></h2><p>For a non-negative integer $k$, the triple $(p,q,r)$ of positive integers is called a <i>$k$-shifted Pythagorean triple</i> if $$p^2 + q^2 + k = r^2$$</p>
+<p>$(p, q, r)$ is said to be primitive if $\gcd(p, q, r)=1$.</p>
+<p>Let $P_k(n)$ be the number of primitive k-shifted Pythagorean triples such that $1 \le p \le q \le r$ and $p + q + r \le n$.<br>For example, $P_0(10^4) = 703$ and $P_{20}(10^4) = 1979$. </p>
+<p>Define<br>$$\displaystyle S(m,n)=\sum_{k=0}^{m}P_k(n)$$<br>You are given that $S(10,10^4) = 10956$. </p>
+<p>Find $S(10^2,10^8)$.</p>
+<hr>
+<h2 id="移位勾股数"><a href="#移位勾股数" class="headerlink" title="移位勾股数"></a><strong>移位勾股数</strong></h2><p>对于非负整数$k$，若正整数三元组$(p,q,r)$满足<br>$$p^2 + q^2 + k = r^2$$<br>则称之为<i class=zh>$k$-移位勾股数</i>。若进一步地$(p, q, r)$满足$\gcd(p, q, r)=1$，则称为$k$-移位本原勾股数。</p>
+<p>记$P_k(n)$为满足$1 \le p \le q \le r$和$p + q + r \le n$的$k$-移位本原勾股数的数目。<br>例如，$P_0(10^4) = 703$，$P_{20}(10^4) = 1979$。</p>
+<p>记<br>$$\displaystyle S(m,n)=\sum_{k=0}^{m}P_k(n)$$<br>已知$S(10,10^4) = 10956$。</p>
+<p>求$S(10^2,10^8)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 729</title>
+    <url>/729/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-729"><a href="#Problem-729" class="headerlink" title="Problem 729"></a><a href="https://projecteuler.net/problem=729" target="_blank" rel="noopener">Problem 729</a></h1><hr>
+<h2 id="Range-of-periodic-sequence"><a href="#Range-of-periodic-sequence" class="headerlink" title="Range of periodic sequence"></a><strong>Range of periodic sequence</strong></h2><p>Consider the sequence of real numbers $a_n$ defined by the starting value $a_0$ and the recurrence $\displaystyle a_{n+1}=a_n-\frac 1 {a_n}$ for any $n  \ge 0$.</p>
+<p>For some starting values $a_0$ the sequence will be periodic. For example, $a_0=\sqrt{\frac 1 2}$ yields the sequence: $\sqrt{\frac 1 2},-\sqrt{\frac 1 2},\sqrt{\frac 1 2}, \dots$</p>
+<p>We are interested in the range of such a periodic sequence which is the difference between the maximum and minimum of the sequence. For example, the range of the sequence above would be $\sqrt{\frac 1 2}-(-\sqrt{\frac 1 2})=\sqrt{ 2}$.</p>
+<p>Let $S(P)$ be the sum of the ranges of all such periodic sequences with a period not exceeding $P$.<br>For example, $S(2)=2\sqrt{2} \approx 2.8284$, being the sum of the ranges of the two sequences starting with $a_0=\sqrt{\frac 1 2}$ and $a_0=-\sqrt{\frac 1 2}$.<br>You are given $S(3) \approx 14.6461$ and $S(5) \approx 124.1056$.</p>
+<p>Find $S(25)$, rounded to $4$ decimal places.</p>
+<hr>
+<h2 id="周期数列的极差"><a href="#周期数列的极差" class="headerlink" title="周期数列的极差"></a><strong>周期数列的极差</strong></h2><p>考虑实数数列$a_n$，初值为$a_0$，对于任意$n  \ge 0$的递推式为$\displaystyle a_{n+1}=a_n-\frac 1 {a_n}$。</p>
+<p>对于某些初值$a_0$，该数列为周期数列。例如，若$a_0=\sqrt{\frac 1 2}$，则数列为：$\sqrt{\frac 1 2},-\sqrt{\frac 1 2},\sqrt{\frac 1 2}, \dots$</p>
+<p>我们希望研究这类周期数列的极差，也即数列中的最大值和最小值之差。例如，在上述数列中，极差是$\sqrt{\frac 1 2}-(-\sqrt{\frac 1 2})=\sqrt{ 2}$。</p>
+<p>记$S(P)$为所有周期不超过$P$的周期数列的极差之和。<br>例如，$S(2)=2\sqrt{2} \approx 2.8284$，对应的周期数列初值分别是$a_0=\sqrt{\frac 1 2}$和$a_0=-\sqrt{\frac 1 2}$。<br>已知$S(3) \approx 14.6461$，$S(5) \approx 124.1056$。</p>
+<p>求$S(25)$，并保留$4$位小数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 732</title>
+    <url>/732/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-732"><a href="#Problem-732" class="headerlink" title="Problem 732"></a><a href="https://projecteuler.net/problem=732" target="_blank" rel="noopener">Problem 732</a></h1><hr>
+<h2 id="Standing-on-the-shoulders-of-trolls"><a href="#Standing-on-the-shoulders-of-trolls" class="headerlink" title="Standing on the shoulders of trolls"></a><strong>Standing on the shoulders of trolls</strong></h2><p>$N$ trolls are in a hole that is $D_N$ cm deep. The $n$-th troll is characterized by:</p>
+<ul>
+<li>the distance from his feet to his shoulders in cm, $h_n$</li>
+<li>the length of his arms in cm, $l_n$</li>
+<li>his IQ (Irascibility Quotient), $q_n$.</li>
+</ul>
+<p>Trolls can pile up on top of each other, with each troll standing on the shoulders of the one below him. A troll can climb out of the hole and escape if his hands can reach to the surface. Once a troll escapes he cannot participate any further in the escaping effort.</p>
+<p>The trolls execute an optimal strategy for maximizing the total IQ of the escaping trolls, defined as $Q(N)$.</p>
+<p>Let<br>$r_n = \left[ \left( 5^n \bmod (10^9 + 7) \right) \bmod 101 \right] + 50$<br>$h_n = r_{3n}$<br>$l_n = r_{3n+1}$<br>$q_n = r_{3n+2}$<br>$D_N = \frac{1}{\sqrt{2}} \sum_{n=0}^{N-1} h_n$.</p>
+<p>For example, the first troll ($n=0$) is $51$cm tall to his shoulders, has $55$cm long arms, and has an IQ of $75$.</p>
+<p>You are given that $Q(5) = 401$ and $Q(15)=941$.</p>
+<p>Find $Q(1000)$.</p>
+<hr>
+<h2 id="站在巨魔的肩膀上"><a href="#站在巨魔的肩膀上" class="headerlink" title="站在巨魔的肩膀上"></a><strong>站在巨魔的肩膀上</strong></h2><p>$N$只巨魔（编号为$0$至$N-1$）掉进了深度为$D_N$厘米的洞中，其中编号为$n$的巨魔有三项特征：</p>
+<ul>
+<li>他的肩高为$h_n$厘米；</li>
+<li>他的臂长为$l_n$厘米；</li>
+<li>他的怒商（怒气商数，简称IQ）为$q_n$。</li>
+</ul>
+<p>巨魔们可以通过站在别的巨魔的肩膀上来搭起人梯，只要人梯最上方的巨魔的手臂能够够到地表，这只巨魔就能逃生。已经逃生的巨魔不能回洞中继续帮助其他巨魔逃生。</p>
+<p>假设巨魔采用了能够使得所有逃出巨魔的IQ之和最高的策略，并记该策略下IQ之和为$Q(N)$。</p>
+<p>记<br>$r_n = \left[ \left( 5^n \bmod (10^9 + 7) \right) \bmod 101 \right] + 50$<br>$h_n = r_{3n}$<br>$l_n = r_{3n+1}$<br>$q_n = r_{3n+2}$<br>$D_N = \frac{1}{\sqrt{2}} \sum_{n=0}^{N-1} h_n$.</p>
+<p>例如，第一只（编号为$n=0$）巨魔的肩高为$51$厘米，臂长为$55$厘米，IQ为$75$。</p>
+<p>已知$Q(5) = 401$，$Q(15)=941$。</p>
+<p>求$Q(1000)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 731</title>
+    <url>/731/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-731"><a href="#Problem-731" class="headerlink" title="Problem 731"></a><a href="https://projecteuler.net/problem=731" target="_blank" rel="noopener">Problem 731</a></h1><hr>
+<h2 id="A-Stoneham-Number"><a href="#A-Stoneham-Number" class="headerlink" title="A Stoneham Number"></a><strong>A Stoneham Number</strong></h2><p>$$A=\sum_{i=1}^{\infty} \frac{1}{3^i 10^{3^i}}$$</p>
+<p>Define $A(n)$ to be the $10$ decimal digits from the $n$th digit onward. For example, $A(100) = 4938271604$ and $A(10^8)=2584642393$.</p>
+<p>Find $A(10^{16})$.</p>
+<hr>
+<h2 id="斯托纳姆数"><a href="#斯托纳姆数" class="headerlink" title="斯托纳姆数"></a><strong>斯托纳姆数</strong></h2><p>$$A=\sum_{i=1}^{\infty} \frac{1}{3^i 10^{3^i}}$$</p>
+<p>记$A(n)$为从$A$的小数点后$n$位开始的$10$个数字。例如，$A(100) = 4938271604$，$A(10^8)=2584642393$。</p>
+<p>求$A(10^{16})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 733</title>
+    <url>/733/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-733"><a href="#Problem-733" class="headerlink" title="Problem 733"></a><a href="https://projecteuler.net/problem=733" target="_blank" rel="noopener">Problem 733</a></h1><hr>
+<h2 id="Ascending-subsequences"><a href="#Ascending-subsequences" class="headerlink" title="Ascending subsequences"></a><strong>Ascending subsequences</strong></h2><p>Let $a_i$ be the sequence defined by $a_i=153^i \bmod 10\ 000\ 019$ for $i \ge 1$.<br>The first terms of $a_i$ are: $153, 23409, 3581577, 7980255, 976697, 9434375, \dots$</p>
+<p>Consider the subsequences consisting of $4$ terms in ascending order. For the part of the sequence shown above, these are:<br>$153, 23409, 3581577, 7980255$<br>$153, 23409, 3581577, 9434375$<br>$153, 23409, 7980255, 9434375$<br>$153, 23409, 976697, 9434375$<br>$153, 3581577, 7980255, 9434375$ and<br>$23409, 3581577, 7980255, 9434375$.</p>
+<p>Define $S(n)$ to be the sum of the terms for all such subsequences within the first $n$ terms of $a_i$. Thus $S(6)=94513710$.<br>You are given that $S(100)=4465488724217$.</p>
+<p>Find $S(10^6)$ modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="递增子序列"><a href="#递增子序列" class="headerlink" title="递增子序列"></a><strong>递增子序列</strong></h2><p>对于任意$i \ge 1$，序列$a_i$满足$a_i=153^i \bmod 10\ 000\ 019$。<br>该序列的一开始几项为：$153, 23409, 3581577, 7980255, 976697, 9434375, \dots$</p>
+<p>考虑该序列长度为$4$的递增子序列。只看上面列出的几项，这样的子序列包括：<br>$153, 23409, 3581577, 7980255$<br>$153, 23409, 3581577, 9434375$<br>$153, 23409, 7980255, 9434375$<br>$153, 23409, 976697, 9434375$<br>$153, 3581577, 7980255, 9434375$<br>$23409, 3581577, 7980255, 9434375$</p>
+<p>记$S(n)$为序列$a_i$的前$n$项中所包含的此类子序列的数目。因此$S(6)=94513710$。<br>已知$S(100)=4465488724217$。</p>
+<p>求$S(10^6)$并对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 734</title>
+    <url>/734/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-734"><a href="#Problem-734" class="headerlink" title="Problem 734"></a><a href="https://projecteuler.net/problem=734" target="_blank" rel="noopener">Problem 734</a></h1><hr>
+<h2 id="A-bit-of-prime"><a href="#A-bit-of-prime" class="headerlink" title="A bit of prime"></a><strong>A bit of prime</strong></h2><p>The <i>logical-OR</i> of two bits is $0$ if both bits are $0$, otherwise it is $1$.<br>The <i>bitwise-OR</i> of two positive integers performs a <i>logical OR</i> operation on each pair of corresponding bits in the binary expansion of its inputs.</p>
+<p>For example, the bitwise-OR of $10$ and $6$ is $14$ because $10 = 1010_2$, $6 = 0110_2$ and $14 = 1110_2$.</p>
+<p>Let $T(n, k)$ be the number of $k$-tuples $(x_1, x_2,\cdots,x_k)$ such that</p>
+<ul>
+<li>every $x_i$ is a prime $\leq n$</li>
+<li>the bitwise-OR of the tuple is a prime $\leq n$</li>
+</ul>
+<p>For example, $T(5, 2)=5$. The five $2$-tuples are $(2, 2)$, $(2, 3)$, $(3, 2)$, $(3, 3)$ and $(5, 5)$.</p>
+<p>You are given $T(100, 3) = 3355$ and $T(1000, 10) \equiv 2071632 \pmod{1\ 000\ 000\ 007}$.</p>
+<p>Find $T(10^6,999983)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="质数与位运算"><a href="#质数与位运算" class="headerlink" title="质数与位运算"></a><strong>质数与位运算</strong></h2><p>在数的二进制表示下，每一位数字称为一个比特。两个比特之间的<i class-zh>逻辑或</i>定义如下：若这两个比特均为$0$，则结果为$0$，否则结果为$1$。<br>两个正整数的<i class=zh>按位或</i>定义如下：将这两个正整数表示成二进制，并将对应位置的比特进行<i class=zh>逻辑或</i>运算。</p>
+<p>例如，$10$和$6$的按位或结果为$14$，这是因为$10 = 1010_2$，$6 = 0110_2$，而$14 = 1110_2$。</p>
+<p>记$T(n, k)$为满足以下条件的$k$-元组$(x_1, x_2,\cdots,x_k)$的数目：</p>
+<ul>
+<li>每个$x_i$均为小于等于$n$的质数；</li>
+<li>元组中所有数按位或的结果是一个小于等于$n$的质数。</li>
+</ul>
+<p>例如，$T(5, 2)=5$，这五个$2$-元组分别是$(2, 2)$、$(2, 3)$、$(3, 2)$、$(3, 3)$和$(5, 5)$。</p>
+<p>已知$T(100, 3) = 3355$，$T(1000, 10) \equiv 2071632 \pmod{1\ 000\ 000\ 007}$。</p>
+<p>求$T(10^6,999983)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 735</title>
+    <url>/735/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-735"><a href="#Problem-735" class="headerlink" title="Problem 735"></a><a href="https://projecteuler.net/problem=735" target="_blank" rel="noopener">Problem 735</a></h1><hr>
+<h2 id="Divisors-of-2n-2"><a href="#Divisors-of-2n-2" class="headerlink" title="Divisors of $2n^2$"></a><strong>Divisors of $2n^2$</strong></h2><p>Let $f(n)$ be the number of divisors of $2n^2$ that are no greater than $n$. For example, $f(15)=8$ because there are $8$ such divisors: $1,2,3,5,6,9,10,15$. Note that $18$ is also a divisor of $2\times 15^2$ but it is not counted because it is greater than $15$.</p>
+<p>Let $\displaystyle F(N) = \sum_{n=1}^N f(n)$. You are given $F(15)=63$, and $F(1000)=15066$.</p>
+<p>Find $F(10^{12})$.</p>
+<hr>
+<h2 id="2n-2-的约数"><a href="#2n-2-的约数" class="headerlink" title="$2n^2$的约数"></a><strong>$2n^2$的约数</strong></h2><p>记$f(n)$为$2n^2$的不超过$n$的约数数目。例如，$f(15)=8$因为有$8$个满足条件的约数：$1,2,3,5,6,9,10,15$。注意尽管$18$也是$2\times 15^2$的约数，但是因为它大于$15$因此不被计算在内。</p>
+<p>记$\displaystyle F(N) = \sum_{n=1}^N f(n)$。已知$F(15)=63$，$F(1000)=15066$。</p>
+<p>求$F(10^{12})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 728</title>
+    <url>/728/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-728"><a href="#Problem-728" class="headerlink" title="Problem 728"></a><a href="https://projecteuler.net/problem=728" target="_blank" rel="noopener">Problem 728</a></h1><hr>
+<h2 id="Circle-of-Coins"><a href="#Circle-of-Coins" class="headerlink" title="Circle of Coins"></a><strong>Circle of Coins</strong></h2><p>Consider $n$ coins arranged in a circle where each coin shows heads or tails. A move consists of turning over $k$ consecutive coins: tail-head or head-tail. Using a sequence of these moves the objective is to get all the coins showing heads.</p>
+<p>Consider the example, shown below, where $n=8$ and $k=3$ and the initial state is one coin showing tails (black). The example shows a solution for this state.</p>
+<p><img src="https://projecteuler.net/project/images/p728_coin_circle.jpg" alt=""></p>
+<p>For given values of $n$ and $k$ not all states are solvable.  Let $F(n,k)$ be the number of states that are solvable. You are given that $F(3,2) = 4$, $F(8,3) = 256$ and $F(9,3) = 128$.</p>
+<p>Further define:<br>$$\displaystyle S(N) = \sum_{n=1}^N\sum_{k=1}^n F(n,k)$$</p>
+<p>You are also given that $S(3) = 22$, $S(10) = 10444$ and $S(10^3) \equiv 853837042 \pmod{1\ 000\ 000\ 007}$.</p>
+<p>Find $S(10^7)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="硬币圈"><a href="#硬币圈" class="headerlink" title="硬币圈"></a><strong>硬币圈</strong></h2><p>$n$枚硬币摆成一圈，初始状态下硬币任意地正面或反面朝上。每一次行动可以将相邻的$k$枚硬币翻面：正面变为反面，反面变为正面。最终目标是通过一系列行动将所有的硬币翻为正面朝上。</p>
+<p>考虑如下所示这个例子，其中$n=8$，$k=3$，初始状态下只有一枚硬币为反面（用黑色表示）。下图展示了其中一种将初始状态变为全正面朝上的解法。</p>
+<p><img src="https://projecteuler.net/project/images/p728_coin_circle.jpg" alt=""></p>
+<p>对于给定的$n$和$k$的取值，不是所有的初始状态都能够完成目标。记$F(n,k)$为所有能够完成目标的初始状态数目。已知$F(3,2) = 4$，$F(8,3) = 256$，$F(9,3) = 128$。</p>
+<p>进一步地，记<br>$$\displaystyle S(N) = \sum_{n=1}^N\sum_{k=1}^n F(n,k)$$</p>
+<p>已知$S(3) = 22$，$S(10) = 10444$，$S(10^3) \equiv 853837042 \pmod{1\ 000\ 000\ 007}$。</p>
+<p>求$S(10^7)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 737</title>
+    <url>/737/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-737"><a href="#Problem-737" class="headerlink" title="Problem 737"></a><a href="https://projecteuler.net/problem=737" target="_blank" rel="noopener">Problem 737</a></h1><hr>
+<h2 id="Coin-Loops"><a href="#Coin-Loops" class="headerlink" title="Coin Loops"></a><strong>Coin Loops</strong></h2><p>A game is played with many identical, round coins on a flat table.</p>
+<p>Consider a line perpendicular to the table.<br>The first coin is placed on the table touching the line.<br>Then, one by one, the coins are placed horizontally on top of the previous coin and touching the line.<br>The complete stack of coins must be balanced after every placement.</p>
+<p>The diagram below [not to scale] shows a possible placement of $8$ coins where point $P$ represents the line.</p>
+<p><img src="https://projecteuler.net/project/images/p737_coinloop.jpg" alt=""></p>
+<p>It is found that a minimum of $31$ coins are needed to form a <i>coin loop</i> around the line, i.e. if in the projection of the coins on the table the centre of the $n$th coin is rotated $\theta_n$, about the line, from the centre of the $(n-1)$th coin then the sum of $\displaystyle\sum_{k=2}^n \theta_k$ is first larger than $360^\circ$ when $n=31$. In general, to loop $k$ times, $n$ is the smallest number for which the sum is greater than $360^\circ k$.</p>
+<p>Also, $154$ coins are needed to loop two times around the line, and $6947$ coins to loop ten times.</p>
+<p>Calculate the number of coins needed to loop $2020$ times around the line.</p>
+<hr>
+<h2 id="硬币环绕"><a href="#硬币环绕" class="headerlink" title="硬币环绕"></a><strong>硬币环绕</strong></h2><p>如下游戏需要一张平整的桌子和许多相同大小的圆形硬币。</p>
+<p>想象在桌面上有一条竖直的线。<br>紧贴竖直线，在桌面上平放第一枚硬币。<br>接着，不断地在上一枚硬币上平放一枚硬币，新的硬币也必须紧贴竖直线。<br>在每次放上新的硬币时，堆叠的硬币必须始终保持平衡。</p>
+<p>如下图展示了摆放$8$枚硬币的俯视示意图（并未精确绘制，仅供参考），其中点$P$表示竖直线。</p>
+<p><img src="https://projecteuler.net/project/images/p737_coinloop.jpg" alt=""></p>
+<p>已知，为了沿着竖直线让<i class=zh>硬币环绕</i>一整圈，至少需要$31$枚硬币，也就是说，在俯视图中，记第$n$枚硬币的圆心相对第$n-1$枚硬币绕着竖直线转过的角度为$\theta_n$，则当$n=31$时，$\displaystyle\sum_{k=2}^n \theta_k$第一次大于$360^\circ$。一般地，说需要$n$枚硬币以环绕竖直线$k$圈，表示$n$是使上述求和第一次大于$360^\circ k$的整数。</p>
+<p>又已知，环绕竖直线两圈需要$154$枚硬币，环绕竖直线十圈需要$6947$枚硬币。</p>
+<p>求环绕竖直线$2020$圈需要的硬币数目。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 736</title>
+    <url>/736/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-736"><a href="#Problem-736" class="headerlink" title="Problem 736"></a><a href="https://projecteuler.net/problem=736" target="_blank" rel="noopener">Problem 736</a></h1><hr>
+<h2 id="Paths-to-Equality"><a href="#Paths-to-Equality" class="headerlink" title="Paths to Equality"></a><strong>Paths to Equality</strong></h2><p>Define two functions on lattice points:<br>$$r(x,y) = (x+1,2y)$$<br>$$s(x,y) = (2x,y+1)$$</p>
+<p>A <i>path to equality</i> of length $n$ for a pair $(a,b)$ is a sequence $\Big((a_1,b_1),(a_2,b_2),\ldots,(a_n,b_n)\Big)$, where:</p>
+<ul>
+<li>$(a_1,b_1) = (a,b)$</li>
+<li>$(a_k,b_k) = r(a_{k-1},b_{k-1})$ or $(a_k,b_k) = s(a_{k-1},b_{k-1})$ for $k &gt;1$</li>
+<li>$a_k \ne b_k$ for $k&lt;n$</li>
+<li>$a_n = b_n$</li>
+</ul>
+<p>$a_n = b_n$ is called the <i>final value</i>.</p>
+<p>For example,<br>$$(45,90)\xrightarrow{r} (46,180)\xrightarrow{s}(92,181)\xrightarrow{s}(184,182)\xrightarrow{s}(368,183)\xrightarrow{s}(736,184)\xrightarrow{r}$$<br>$$(737,368)\xrightarrow{s}(1474,369)\xrightarrow{r}(1475,738)\xrightarrow{r}(1476,1476)$$</p>
+<p>This is a path to equality for $(45,90)$ and is of length $10$ with final value $1476$. There is no path to equality of $(45,90)$ with smaller length.</p>
+<p>Find the unique path to equality for $(45,90)$ with smallest <strong>odd</strong> length. Enter the final value as your answer.</p>
+<hr>
+<h2 id="趋等路径"><a href="#趋等路径" class="headerlink" title="趋等路径"></a><strong>趋等路径</strong></h2><p>对格点定义如下两个函数：<br>$$r(x,y) = (x+1,2y)$$<br>$$s(x,y) = (2x,y+1)$$</p>
+<p>对于数对$(a,b)$，一条长度为$n$的<i class=zh>趋等路径</i>是指满足如下条件的序列$\Big((a_1,b_1),(a_2,b_2),\ldots,(a_n,b_n)\Big)$：</p>
+<ul>
+<li>$(a_1,b_1) = (a,b)$</li>
+<li>对于所有$k&gt;1$，$(a_k,b_k) = r(a_{k-1},b_{k-1})$或$(a_k,b_k) = s(a_{k-1},b_{k-1})$</li>
+<li>对于所有$k&lt;n$，$a_k \ne b_k$</li>
+<li>$a_n = b_n$</li>
+</ul>
+<p>$a_n = b_n$被称为该路径的<i class=zh>终值</i>。</p>
+<p>例如，<br>$$(45,90)\xrightarrow{r} (46,180)\xrightarrow{s}(92,181)\xrightarrow{s}(184,182)\xrightarrow{s}(368,183)\xrightarrow{s}(736,184)\xrightarrow{r}$$<br>$$(737,368)\xrightarrow{s}(1474,369)\xrightarrow{r}(1475,738)\xrightarrow{r}(1476,1476)$$<br>这是数对$(45,90)$的一条趋等路径，其长度为$10$，终值为$1476$。对于数对$(45,90)$，不存在更短的趋等路径。</p>
+<p>对于数对$(45,90)$，求其长度为<strong>奇数</strong>的趋等路径中唯一最短的那条，并将其终值作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 738</title>
+    <url>/738/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-738"><a href="#Problem-738" class="headerlink" title="Problem 738"></a><a href="https://projecteuler.net/problem=738" target="_blank" rel="noopener">Problem 738</a></h1><hr>
+<h2 id="Counting-Ordered-Factorisations"><a href="#Counting-Ordered-Factorisations" class="headerlink" title="Counting Ordered Factorisations"></a><strong>Counting Ordered Factorisations</strong></h2><p>Define $d(n,k)$ to be the number of ways to write $n$ as a product of $k$ ordered integers<br>$$n = x_1\times x_2\times x_3\times \ldots\times x_k\qquad 1\le x_1\le x_2\le\ldots\le x_k$$</p>
+<p>Further define $D(N,K)$ to be the sum of $d(n,k)$ for $1\le n\le N$ and $1\le k\le K$.</p>
+<p>You are given that $D(10, 10) = 153$ and $D(100, 100) = 35384$.</p>
+<p>Find $D(10^{10},10^{10})$ giving your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="有序因数分解计数"><a href="#有序因数分解计数" class="headerlink" title="有序因数分解计数"></a><strong>有序因数分解计数</strong></h2><p>记$d(n,k)$为将$n$表示为$k$个递增整数之积的方式数<br>$$n = x_1\times x_2\times x_3\times \ldots\times x_k\qquad 1\le x_1\le x_2\le\ldots\le x_k$$</p>
+<p>再记$D(N,K)$为所有$1\le n\le N$和$1\le k\le K$对应的$d(n,k)$之和。</p>
+<p>已知$D(10, 10) = 153$，$D(100, 100) = 35384$。</p>
+<p>求$D(10^{10},10^{10})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 739</title>
+    <url>/739/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-739"><a href="#Problem-739" class="headerlink" title="Problem 739"></a><a href="https://projecteuler.net/problem=739" target="_blank" rel="noopener">Problem 739</a></h1><hr>
+<h2 id="Summation-of-Summations"><a href="#Summation-of-Summations" class="headerlink" title="Summation of Summations"></a><strong>Summation of Summations</strong></h2><p>Take a sequence of length $n$. Discard the first term then make a sequence of the partial summations. Continue to do this over and over until we are left with a single term. We define this to be $f(n)$.</p>
+<p>Consider the example where we start with a sequence of length $8$:</p>
+<p>$$<br>\begin{array}{rrrrrrrr}<br>1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\<br>  &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;  6  &amp; 7\<br>  &amp;   &amp; 2 &amp; 5 &amp; 9 &amp; 14 &amp; 20 &amp; 27\<br>  &amp;   &amp;   &amp; 5 &amp; 14 &amp; 28 &amp; 48 &amp; 75\<br>  &amp;   &amp;   &amp;   &amp; 14 &amp; 42 &amp; 90 &amp; 165\<br>  &amp;   &amp;   &amp;   &amp;   &amp;  42  &amp;  132  &amp;  297\<br>  &amp;   &amp;   &amp;   &amp;   &amp;   &amp;  132  &amp; 429\<br>  &amp;   &amp;   &amp;   &amp;   &amp;   &amp;   &amp; 429\<br>\end{array}<br>$$</p>
+<p>Then the final number is $429$, so $f(8) = 429$.</p>
+<p>For this problem we start with the sequence $1,3,4,7,11,18,29,47,\ldots$<br>This is the Lucas sequence where two terms are added to get the next term.<br>Applying the same process as above we get $f(8) = 2663$.<br>You are also given $f(20) \equiv 742296999 \bmod 1\ 000\ 000\ 007$.</p>
+<p>Find $f(10^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="求和再求和"><a href="#求和再求和" class="headerlink" title="求和再求和"></a><strong>求和再求和</strong></h2><p>考虑一个长度为$n$的数列，先去掉第一项并求部分和，再对部分和序列不断重复同样的操作，直到只剩下一项。我们记剩下的这一项为$f(n)$。</p>
+<p>如下展示的例子中，初始序列为$8$个$1$：</p>
+<p>$$<br>\begin{array}{rrrrrrrr}<br>1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\<br>  &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;  6  &amp; 7\<br>  &amp;   &amp; 2 &amp; 5 &amp; 9 &amp; 14 &amp; 20 &amp; 27\<br>  &amp;   &amp;   &amp; 5 &amp; 14 &amp; 28 &amp; 48 &amp; 75\<br>  &amp;   &amp;   &amp;   &amp; 14 &amp; 42 &amp; 90 &amp; 165\<br>  &amp;   &amp;   &amp;   &amp;   &amp;  42  &amp;  132  &amp;  297\<br>  &amp;   &amp;   &amp;   &amp;   &amp;   &amp;  132  &amp; 429\<br>  &amp;   &amp;   &amp;   &amp;   &amp;   &amp;   &amp; 429\<br>\end{array}<br>$$</p>
+<p>最后剩下的一项为$429$，因此该序列对应的$f(8) = 429$。</p>
+<p>在本题中，我们选择的初始序列为$1,3,4,7,11,18,29,47,\ldots$<br>这一类每一项是前两项之和的序列统称卢卡斯序列。<br>按照上述步骤可得该数列对应的$f(8) = 2663$。<br>已知$f(20) \equiv 742296999 \bmod 1\ 000\ 000\ 007$。</p>
+<p>求$f(10^8)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 741</title>
+    <url>/741/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-741"><a href="#Problem-741" class="headerlink" title="Problem 741"></a><a href="https://projecteuler.net/problem=741" target="_blank" rel="noopener">Problem 741</a></h1><hr>
+<h2 id="Binary-grid-colouring"><a href="#Binary-grid-colouring" class="headerlink" title="Binary grid colouring"></a><strong>Binary grid colouring</strong></h2><p>Let $f(n)$ be the number of ways an $n\times n$ square grid can be coloured, each cell either black or white, such that each row and each column contains exactly two black cells.<br>For example, $f(4)=90$, $f(7) = 3110940$ and $f(8) = 187530840$.</p>
+<p>Let $g(n)$ be the number of colourings in $f(n)$ that are unique up to rotations and reflections.<br>You are given $g(4)=20$, $g(7) = 390816$ and $g(8) = 23462347$ giving $g(7)+g(8) = 23853163$.</p>
+<p>Find $g(7^7) + g(8^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="网格黑白染色"><a href="#网格黑白染色" class="headerlink" title="网格黑白染色"></a><strong>网格黑白染色</strong></h2><p>对$n\times n$的网格进行黑白染色，记使得每行和每列都恰好有两个黑格的染色方法数目为$f(n)$。<br>例如，$f(4)=90$，$f(7) = 3110940$，$f(8) = 187530840$。</p>
+<p>在$f(n)$中，将所有旋转或翻转后可重合的染色方法视为相同的方法，记不同染色方法数目为$g(n)$。<br>已知$g(4)=20$，$g(7) = 390816$，$g(8) = 23462347$，因此$g(7)+g(8) = 23853163$。</p>
+<p>求$g(7^7) + g(8^8)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 740</title>
+    <url>/740/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-740"><a href="#Problem-740" class="headerlink" title="Problem 740"></a><a href="https://projecteuler.net/problem=740" target="_blank" rel="noopener">Problem 740</a></h1><hr>
+<h2 id="Secret-Santa"><a href="#Secret-Santa" class="headerlink" title="Secret Santa"></a><strong>Secret Santa</strong></h2><p>Secret Santa is a process that allows $n$ people to give each other presents, so that each person gives a single present and receives a single present. At the beginning each of the $n$ people write their name on a slip of paper and put the slip into a hat. Each person takes a random slip from the hat. If the slip has their name they draw another random slip from the hat and then put the slip with their name back into the hat. At the end everyone buys a Christmas present for the person whose name is on the slip they are holding. This process will fail if the last person draws their own name.</p>
+<p>In this variation each of the $n$ people gives and receives two presents. At the beginning each of the $n$ people writes their name on two slips of paper and puts the slips into a hat (there will be $2n$ slips of paper in the hat). As before each person takes from the hat a random slip that does not contain their own name. Then the same person repeats this process thus ending up with two slips, neither of which contains that person’s own name. Then the next person draws two slips in the same way, and so on. The process will fail if the last person gets at least one slip with their own name. </p>
+<p>Define $q(n)$ to be the probability of this happening. You are given $q(3) = 0.3611111111$ and $q(5) = 0.2476095994$ both rounded to $10$ decimal places.</p>
+<p>Find $q(100)$ rounded to $10$ decimal places.</p>
+<hr>
+<h2 id="神秘圣诞老人"><a href="#神秘圣诞老人" class="headerlink" title="神秘圣诞老人"></a><strong>神秘圣诞老人</strong></h2><p>神秘圣诞老人是一种$n$个人互送圣诞礼物的节日传统活动，其中每个人送出一份礼物并收到一份礼物。这个活动的流程如下：首先，$n$个参与活动的人各自在一张纸条上写上自己的名字，然后将所有这些纸条放进一个帽子里；然后，每个人依次从帽子中随机抽出一张纸条，若抽到自己的名字，则把纸条放回去并重新再抽；最后，每个人买一份圣诞礼物，送给自己抽到的纸条上写名字的那个人。可以看出，如果最后一个抽纸条的人不幸抽到了自己的名字，这个活动就失败了。</p>
+<p>考虑上述活动的一个变种，其中每个人送出并收到两份礼物。首先，$n$个参与活动的人各自在两张纸条上写上自己的名字，然后将所有这些纸条放进一个帽子里（这样一来帽子中总共有$2n$张纸条）。然后，每个人依次从帽子中随机抽出两张纸条，若抽到自己的名字，则把纸条放回去重新再抽。在该变种中，如果最后一个抽纸条的人抽到至少一张有自己名字的纸条，就认为这个活动失败了。</p>
+<p>记$q(n)$为活动失败的概率。已知$q(3) = 0.3611111111$，$q(5) = 0.2476095994$，均保留小数点后$10$位小数。</p>
+<p>求$q(100)$，并保留小数点后$10$位小数。</p>
 <hr>
 ]]></content>
   </entry>
