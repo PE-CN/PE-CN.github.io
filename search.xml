@@ -1733,7 +1733,7 @@
 </center>
 
 <hr>
-<h2 id="大和"><a href="#大和" class="headerlink" title="大和"></a><strong>大和</strong></h2><p>求以下一百个$50$位数的和的前十位数字。</p>
+<h2 id="大和"><a href="#大和" class="headerlink" title="大和"></a><strong>大和</strong></h2><p>求以下一百个$50$位数之和的前十位数字。</p>
 <center style="font-family:'Courier New',monospace;">
 37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
@@ -3548,7 +3548,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>If all the numbers from $1$ to $1000$ (one thousand) inclusive were written out in words, how many letters would be used? </p>
 <p><strong>NOTE:</strong> Do not count spaces or hyphens. For example, $342$ (three hundred and forty-two) contains $23$ letters and $115$ (one hundred and fifteen) contains $20$ letters. The use of “and” when writing out numbers is in compliance with British usage.</p>
 <hr>
-<h2 id="表达数字的英文字母计数"><a href="#表达数字的英文字母计数" class="headerlink" title="表达数字的英文字母计数"></a><strong>表达数字的英文字母计数</strong></h2><p>把$1$到$5$写成英文单词分别是：one，two，three，four，five。这些单词一共用了$3 + 3 + 5 + 4 + 4 = 19$个字母。</p>
+<h2 id="表达数字的英文字母计数"><a href="#表达数字的英文字母计数" class="headerlink" title="表达数字的英文字母计数"></a><strong>表达数字的英文字母计数</strong></h2><p>把$1$到$5$写成英文单词分别是：one、two、three、four、five。这些单词一共用了$3 + 3 + 5 + 4 + 4 = 19$个字母。</p>
 <p>如果把$1$到$1000$都写成英文单词，一共要用多少个字母？</p>
 <p><strong>注意：</strong> 不要算上空格和连字符。例如，$342$（three hundred and forty-two）包含$23$个字母，而$115$（one hundred and fifteen）包含$20$个字母。单词“and”的使用方式遵循英式英语的规则。</p>
 <hr>
@@ -4190,7 +4190,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 </ul>
 <p>How many Sundays fell on the first of the month during the twentieth century ($1$ Jan $1901$ to $31$ Dec $2000$)?</p>
 <hr>
-<h2 id="周日计数"><a href="#周日计数" class="headerlink" title="周日计数"></a><strong>周日计数</strong></h2><p>下列信息是已知的，当然你也不妨自己再验证一下。</p>
+<h2 id="周日计数"><a href="#周日计数" class="headerlink" title="周日计数"></a><strong>周日计数</strong></h2><p>下列信息是已知的，当然你也不妨自己再验证一下：</p>
 <ul>
 <li>$1900$年$1$月$1$日是周一。</li>
 <li>三十天在九月中，<br>四六十一也相同。<br>剩下都是三十一，<br>除去二月不统一。<br>二十八天平常年，<br>多加一天在闰年。</li>
@@ -4755,7 +4755,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p><strong>广义汉明数</strong></p>
 <p>若一个正整数的所有质因数均不超过5，则被称为汉明数。<br>前几个汉明数分别是1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15。<br>在不超过10<sup>8</sup>的正整数中，一共有1105个汉明数。</p>
 <p>若一个正整数的所有质因数均不超过n，则被称为n型广义汉明数。<br>因此本来的汉明数就是5型广义汉明数。</p>
-<p>在不超过10<sup>9</sup>的整整书中，一共有多少个100型广义汉明数？</p>
+<p>在不超过10<sup>9</sup>的正整数中，一共有多少个100型广义汉明数？</p>
 <hr>
 ]]></content>
   </entry>
@@ -6504,17 +6504,15 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <url>/26/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-26"><a href="#Problem-26" class="headerlink" title="Problem 26"></a><a href="https://projecteuler.net/problem=26" target="_blank" rel="noopener">Problem 26</a></h1><hr>
-<p><strong>Reciprocal cycles</strong></p>
-<p>A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:</p>
-<p><sup>1</sup>/<sub>2</sub>=&nbsp;0.5<br><sup>1</sup>/<sub>3</sub>=&nbsp;0.(3)<br><sup>1</sup>/<sub>4</sub>=&nbsp;0.25<br><sup>1</sup>/<sub>5</sub>=&nbsp;0.2<br><sup>1</sup>/<sub>6</sub>=&nbsp;0.1(6)<br><sup>1</sup>/<sub>7</sub>=&nbsp;0.(142857)<br><sup>1</sup>/<sub>8</sub>=&nbsp;0.125<br><sup>1</sup>/<sub>9</sub>=&nbsp;0.(1)<br><sup>1</sup>/<sub>10</sub>=&nbsp;0.1</p>
-<p>Where 0.1(6) means 0.166666…, and has a 1-digit recurring cycle. It can be seen that <sup>1</sup>/<sub>7</sub> has a 6-digit recurring cycle.</p>
-<p>Find the value of d &lt; 1000 for which <sup>1</sup>/<sub><i>d</i></sub> contains the longest recurring cycle in its decimal fraction part.</p>
+<h2 id="Reciprocal-cycles"><a href="#Reciprocal-cycles" class="headerlink" title="Reciprocal cycles"></a><strong>Reciprocal cycles</strong></h2><p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
+<p>$$\frac 1 2 = 0.5$$<br>$$\frac 1 3 = 0.(3)$$<br>$$\frac 1 4 = 0.25$$<br>$$\frac 1 5 = 0.2$$<br>$$\frac 1 6 = 0.1(6)$$<br>$$\frac 1 7 = 0.(142857)$$<br>$$\frac 1 8 = 0.125$$<br>$$\frac 1 9 = 0.(1)$$<br>$$\frac 1 {10} = 0.1$$</p>
+<p>Where $0.1(6)$ means $0.166666\ldots$, and has a $1$-digit recurring cycle. It can be seen that $\frac{1}{7}$ has a $6$-digit recurring cycle.</p>
+<p>Find the value of $d&lt;1000$ for which $\frac{1}{d}$ contains the longest recurring cycle in its decimal fraction part.</p>
 <hr>
-<p><strong>倒数的循环节</strong></p>
-<p>单位分数指分子为1的分数。分母为2至10的单位分数的十进制表示如下所示：</p>
-<p><sup>1</sup>/<sub>2</sub>=&nbsp;0.5<br><sup>1</sup>/<sub>3</sub>=&nbsp;0.(3)<br><sup>1</sup>/<sub>4</sub>=&nbsp;0.25<br><sup>1</sup>/<sub>5</sub>=&nbsp;0.2<br><sup>1</sup>/<sub>6</sub>=&nbsp;0.1(6)<br><sup>1</sup>/<sub>7</sub>=&nbsp;0.(142857)<br><sup>1</sup>/<sub>8</sub>=&nbsp;0.125<br><sup>1</sup>/<sub>9</sub>=&nbsp;0.(1)<br><sup>1</sup>/<sub>10</sub>=&nbsp;0.1</p>
-<p>这里0.1(6)表示0.166666…，括号内表示有一位循环节。可以看出，<sup>1</sup>/<sub>7</sub>有六位循环节。</p>
-<p>找出正整数d &lt; 1000，其倒数的十进制表示小数部分有最长的循环节。</p>
+<h2 id="倒数的循环节"><a href="#倒数的循环节" class="headerlink" title="倒数的循环节"></a><strong>倒数的循环节</strong></h2><p>单位分数指分子为$1$的分数。分母为$2$至$10$的单位分数的十进制表示如下所示：</p>
+<p>$$\frac 1 2 = 0.5$$<br>$$\frac 1 3 = 0.(3)$$<br>$$\frac 1 4 = 0.25$$<br>$$\frac 1 5 = 0.2$$<br>$$\frac 1 6 = 0.1(6)$$<br>$$\frac 1 7 = 0.(142857)$$<br>$$\frac 1 8 = 0.125$$<br>$$\frac 1 9 = 0.(1)$$<br>$$\frac 1 {10} = 0.1$$</p>
+<p>这里括号表示循环节，如$0.1(6)$就是指$0.166666\ldots$，循环节的长度为$1$。可以看出，$\frac{1}{7}$的循环节长度为$6$。</p>
+<p>在所有满足$d&lt;1000$的数中，求使得其倒数$\frac{1}{d}$的十进制表示中循环节最长的$d$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -6788,35 +6786,19 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/27/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-27"><a href="#Problem-27" class="headerlink" title="Problem 27"></a><a href="https://projecteuler.net/problem=27" target="_blank" rel="noopener">Problem 27</a></h1><hr>
-<p><strong>Quadratic primes</strong></p>
-<p>Euler discovered the remarkable quadratic formula:</p>
-<center>n<sup>2</sup> + n + 41</center>
-
-<p>It turns out that the formula will produce 40 primes for the consecutive values n = 0 to 39. However, when n = 40, 40<sup>2</sup> + 40 + 41 = 40(40 + 1) + 41 is divisible by 41, and certainly when n = 41, 41<sup>2</sup> + 41 + 41 is clearly divisible by 41.</p>
-<p>The incredible formula n<sup>2</sup> − 79n + 1601 was discovered, which produces 80 primes for the consecutive values n = 0 to 79. The product of the coefficients, −79 and 1601, is −126479.</p>
-<p>Considering quadratics of the form:</p>
-<ul>
-<li><p>n<sup>2</sup> + an + b, where |a| &lt; 1000 and |b| &lt; 1000</p>
-</li>
-<li><p>where |n| is the modulus/absolute value of n<br>e.g. |11| = 11 and |−4| = 4</p>
-</li>
-</ul>
-<p>Find the product of the coefficients, <i>a</i> and <i>b</i>, for the quadratic expression that produces the maximum number of primes for consecutive values of <i>n</i>, starting with <i>n</i> = 0.</p>
+<h2 id="Quadratic-primes"><a href="#Quadratic-primes" class="headerlink" title="Quadratic primes"></a><strong>Quadratic primes</strong></h2><p>Euler discovered the remarkable quadratic formula:</p>
+<p>$$n^2 + n + 41$$</p>
+<p>It turns out that the formula will produce $40$ primes for the consecutive integer values $0 \le n \le 39$. However, when $n = 40$, $40^2 + 40 + 41 = 40(40 + 1) + 41$ is divisible by $41$, and certainly when $n = 41$, $41^2 + 41 + 41$ is clearly divisible by $41$.</p>
+<p>The incredible formula $n^2 - 79n + 1601$ was discovered, which produces $80$ primes for the consecutive values $0 \le n \le 79$. The product of the coefficients, $−79$ and $1601$, is $−126479$.</p>
+<p>Considering quadratics of the form:<br>$n^2 + an + b$, where $|a|&lt;1000$ and $|b| \le 1000$;<br>where $|n|$ is the modulus/absolute value of $n$, e.g. $|11| = 11$ and $|-4| = 4$.</p>
+<p>Find the product of the coefficients, $a$ and $b$, for the quadratic expression that produces the maximum number of primes for consecutive values of $n$, starting with $n = 0$.</p>
 <hr>
-<p><strong>二次“素数生成”多项式</strong></p>
-<p>欧拉发现了这个著名的二次多项式：</p>
-<center>n<sup>2</sup> + n + 41</center>
-
-<p>对于连续的整数n从0到39，这个二次多项式生成了40个素数。然而，当n = 40时，40<sup>2</sup> + 40 + 41 = 40(40 + 1) + 41能够被41整除，同时显然当n = 41时，41<sup>2</sup> + 41 + 41也能被41整除。</p>
-<p>随后，另一个神奇的多项式n<sup>2</sup> − 79n + 1601被发现了，对于连续的整数n从0到79，它生成了80个素数。这个多项式的系数-79和1601的乘积为-126479。</p>
-<p>考虑以下形式的二次多项式：</p>
-<ul>
-<li><p>n<sup>2</sup> + an + b, 满足|a| &lt; 1000且|b| &lt; 1000</p>
-</li>
-<li><p>其中|n|指n的模或绝对值<br>例如|11| = 11以及|−4| = 4</p>
-</li>
-</ul>
-<p>这其中存在某个二次多项式能够对从0开始尽可能多的连续整数n都生成素数，求其系数a和b的乘积。</p>
+<h2 id="素数生成二次多项式"><a href="#素数生成二次多项式" class="headerlink" title="素数生成二次多项式"></a><strong>素数生成二次多项式</strong></h2><p>欧拉发现了这个著名的二次多项式：</p>
+<p>$$n^2 + n + 41$$</p>
+<p>对$0\le n\le39$范围内的所有整数，这个多项式可以生成$40$个质数。但是，当$n=40$时，$40^2 + 40 + 41 = 40(40 + 1) + 41$能够被$41$整除，而当$n=41$时，$41^2 + 41 + 41$显然也能够被$41$整除。</p>
+<p>之后，又一个神奇的多项式$n^2 - 79n + 1601$被发现了，这个多项式能够对$0\le n\le79$范围内的所有整数生成$80$个质数。这个二次多项式的系数分别是$-79$和$1601$，其乘积为$-126479$。</p>
+<p>考虑所有如下形式的二次多项式：<br>$n^2 + an + b$，其中$|a|&lt;1000$，$|b| \le 1000$；<br>这里$|n|$表示$n$的绝对值，例如$|11| = 11$，$|-4| = 4$。</p>
+<p>找出其中能够从$n=0$开始连续生成最多素数的二次多项式表达式，并给出其系数$a$和$b$的乘积。</p>
 <hr>
 ]]></content>
   </entry>
@@ -7089,29 +7071,29 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/28/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-28"><a href="#Problem-28" class="headerlink" title="Problem 28"></a><a href="https://projecteuler.net/problem=28" target="_blank" rel="noopener">Problem 28</a></h1><hr>
-<p><strong>Number spiral diagonals</strong></p>
-<p>Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:s</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;">**21**</span> 22 23 24 <span style="color:#ff0000;">**25**</span>
-20 &nbsp;<span style="color:#ff0000;">**7**</span> &nbsp;8 &nbsp;<span style="color:#ff0000;">**9**</span> 10
-19 &nbsp;6 &nbsp;<span style="color:#ff0000;">**1**</span> &nbsp;2 11
-18 &nbsp;<span style="color:#ff0000;">**5**</span> &nbsp;4 &nbsp;<span style="color:#ff0000;">**3**</span> 12
-<span style="color:#ff0000;">**17**</span> 16 15 14 <span style="color:#ff0000;">**13**</span>
+<h2 id="Number-spiral-diagonals"><a href="#Number-spiral-diagonals" class="headerlink" title="Number spiral diagonals"></a><strong>Number spiral diagonals</strong></h2><p>Starting with the number $1$ and moving to the right in a clockwise direction a $5$ by $5$ spiral is formed as follows:</p>
+<center style="font-family: 'Lucida Consolas', 'Consolas', 'Courier New', monospace">
+<span style="color:red"><b>21</b></span> 22 23 24 <span style="color:red"><b>25</b></span><br />
+20 &nbsp;<span style="color:red"><b>7</b></span> &nbsp;8  <span style="color:red"><b>&nbsp;9</b></span> 10<br />
+19  &nbsp;6  &nbsp;<span style="color:red"><b>1</b></span>  &nbsp;2 11<br />
+18  &nbsp;<span style="color:red"><b>5</b></span>  &nbsp;4  &nbsp;<span style="color:red"><b>3</b></span> 12<br />
+<span style="color:red"><b>17</b></span> 16 15 14 <span style="color:red"><b>13</b></span>
 </center>
 
-<p>It can be verified that the sum of the numbers on the diagonals is 101.</p>
-<p>What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?</p>
+<p>It can be verified that the sum of the numbers on the diagonals is $101$.</p>
+<p>What is the sum of the numbers on the diagonals in a $1001$ by $1001$ spiral formed in the same way?</p>
 <hr>
-<p><strong>螺旋数阵对角线</strong></p>
-<p>从1开始，按顺时针顺序向右铺开的5 × 5螺旋数阵如下所示：</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;">**21**</span> 22 23 24 <span style="color:#ff0000;">**25**</span>
-20 &nbsp;<span style="color:#ff0000;">**7**</span> &nbsp;8 &nbsp;<span style="color:#ff0000;">**9**</span> 10
-19 &nbsp;6 &nbsp;<span style="color:#ff0000;">**1**</span> &nbsp;2 11
-18 &nbsp;<span style="color:#ff0000;">**5**</span> &nbsp;4 &nbsp;<span style="color:#ff0000;">**3**</span> 12
-<span style="color:#ff0000;">**17**</span> 16 15 14 <span style="color:#ff0000;">**13**</span>
+<h2 id="螺旋数阵对角线"><a href="#螺旋数阵对角线" class="headerlink" title="螺旋数阵对角线"></a><strong>螺旋数阵对角线</strong></h2><p>从$1$开始，按顺时针顺序铺开的$5 \times 5$螺旋数阵如下所示：</p>
+<center style="font-family: 'Lucida Consolas', 'Consolas', 'Courier New', monospace">
+<span style="color:red"><b>21</b></span> 22 23 24 <span style="color:red"><b>25</b></span><br />
+20 &nbsp;<span style="color:red"><b>7</b></span> &nbsp;8  <span style="color:red"><b>&nbsp;9</b></span> 10<br />
+19  &nbsp;6  &nbsp;<span style="color:red"><b>1</b></span>  &nbsp;2 11<br />
+18  &nbsp;<span style="color:red"><b>5</b></span>  &nbsp;4  &nbsp;<span style="color:red"><b>3</b></span> 12<br />
+<span style="color:red"><b>17</b></span> 16 15 14 <span style="color:red"><b>13</b></span>
 </center>
 
-<p>可以验证，该数阵对角线上的数之和是101。</p>
-<p>以同样方式构成的1001 × 1001螺旋数阵对角线上的数之和是多少？</p>
+<p>可以看出，该数阵对角线上的数之和是$101$。</p>
+<p>以同样方式构成的$1001 \times 1001$螺旋数阵对角线上的数之和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -7282,25 +7264,17 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/29/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-29"><a href="#Problem-29" class="headerlink" title="Problem 29"></a><a href="https://projecteuler.net/problem=29" target="_blank" rel="noopener">Problem 29</a></h1><hr>
-<p><strong>Distinct powers</strong></p>
-<p>Consider all integer combinations of a<sup>b</sup> for 2 ≤ a ≤ 5 and 2 ≤ b ≤ 5:</p>
-<blockquote>
-<p>2<sup>2</sup>=4, 2<sup>3</sup>=8, 2<sup>4</sup>=16, 2<sup>5</sup>=32<br>3<sup>2</sup>=9, 3<sup>3</sup>=27, 3<sup>4</sup>=81, 3<sup>5</sup>=243<br>4<sup>2</sup>=16, 4<sup>3</sup>=64, 4<sup>4</sup>=256, 4<sup>5</sup>=1024<br>5<sup>2</sup>=25, 5<sup>3</sup>=125, 5<sup>4</sup>=625, 5<sup>5</sup>=3125</p>
-</blockquote>
-<p>If they are then placed in numerical order, with any repeats removed, we get the following sequence of 15 distinct terms:</p>
-<center>4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125</center>
-
-<p>How many distinct terms are in the sequence generated by a<sup>b</sup> for 2 ≤ a ≤ 100 and 2 ≤ b ≤ 100?</p>
+<h2 id="Distinct-powers"><a href="#Distinct-powers" class="headerlink" title="Distinct powers"></a><strong>Distinct powers</strong></h2><p>Consider all integer combinations of $a^b$ for $2 \le a \le 5$ and $2 \le b \le 5$:</p>
+<p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
+<p>If they are then placed in numerical order, with any repeats removed, we get the following sequence of $15$ distinct terms:</p>
+<p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
+<p>How many distinct terms are in the sequence generated by $a^b$ for $2\le a \le 100$ and 2 \le  b \le 100$?</p>
 <hr>
-<p><strong>不同的幂</strong></p>
-<p>考虑所有满足2 ≤ a ≤ 5和2 ≤ b ≤ 5的整数组合生成的幂a<sup>b</sup>：</p>
-<blockquote>
-<p>2<sup>2</sup>=4, 2<sup>3</sup>=8, 2<sup>4</sup>=16, 2<sup>5</sup>=32<br>3<sup>2</sup>=9, 3<sup>3</sup>=27, 3<sup>4</sup>=81, 3<sup>5</sup>=243<br>4<sup>2</sup>=16, 4<sup>3</sup>=64, 4<sup>4</sup>=256, 4<sup>5</sup>=1024<br>5<sup>2</sup>=25, 5<sup>3</sup>=125, 5<sup>4</sup>=625, 5<sup>5</sup>=3125</p>
-</blockquote>
-<p>如果把这些幂按照大小排列并去重，我们得到以下由15个不同的项组成的序列：</p>
-<center>4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125</center>
-
-<p>在所有满足2 ≤ a ≤ 100和2 ≤ b ≤ 100的整数组合生成的幂a<sup>b</sup>排列并去重所得到的序列中，有多少个不同的项？</p>
+<h2 id="不同的幂"><a href="#不同的幂" class="headerlink" title="不同的幂"></a><strong>不同的幂</strong></h2><p>考虑所有满足$2 \le a \le 5$和$2 \le b \le 5$的整数组合所生成的幂$a^b$：</p>
+<p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
+<p>如果把这些幂从小到大排列并去重，我们得到以下由$15$个不同的项组成的序列：</p>
+<p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
+<p>考虑所有满足$2 \le a \le 100$和$2 \le b \le 100$的整数组合所生成的幂$a^b$，将它们排列并去重所得到的序列有多少个不同的项？</p>
 <hr>
 ]]></content>
   </entry>
@@ -15692,7 +15666,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>349 + 943 = 1292<br>1292 + 2921 = 4213<br>4213 + 3124 = 7337</p>
 <p>也就是说，349需要迭代三次才能变成回文数。</p>
 <p>尽管尚未被证实，但有些数，例如196，被认为永远不可能变成回文数。如果一个数永远不可能通过倒序并相加变成回文数，就被称为利克瑞尔数。出于理论的限制和问题的要求，在未被证否之前，我们姑且就认为这些数确实是利克瑞尔数。除此之外，已知对于任意一个小于一万的数，它要么在迭代50次以内变成回文数，要么就是没有人能够利用现今所有的计算能力将其迭代变成回文数。事实上，10677是第一个需要超过50次迭代变成回文数的数，这个回文数是<br>4668731596684224866951378664（53次迭代，28位数）。</p>
-<p>令人惊讶的是，有些回文数本身也是利克瑞尔数数；第一个例子是4994。</p>
+<p>令人惊讶的是，有些回文数本身也是利克瑞尔数；第一个例子是4994。</p>
 <p>小于一万的数中有多少利克瑞尔数？</p>
 <p>注意：2007年4月24日，题目略作修改，以强调目前利克瑞尔数理论的限制。</p>
 <hr>
@@ -22594,6 +22568,263 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>考虑上述活动的一个变种，其中每个人送出并收到两份礼物。首先，$n$个参与活动的人各自在两张纸条上写上自己的名字，然后将所有这些纸条放进一个帽子里（这样一来帽子中总共有$2n$张纸条）。然后，每个人依次从帽子中随机抽出两张纸条，若抽到自己的名字，则把纸条放回去重新再抽。在该变种中，如果最后一个抽纸条的人抽到至少一张有自己名字的纸条，就认为这个活动失败了。</p>
 <p>记$q(n)$为活动失败的概率。已知$q(3) = 0.3611111111$，$q(5) = 0.2476095994$，均保留小数点后$10$位小数。</p>
 <p>求$q(100)$，并保留小数点后$10$位小数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 745</title>
+    <url>/745/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-745"><a href="#Problem-745" class="headerlink" title="Problem 745"></a><a href="https://projecteuler.net/problem=745" target="_blank" rel="noopener">Problem 745</a></h1><hr>
+<h2 id="Sum-of-Squares"><a href="#Sum-of-Squares" class="headerlink" title="Sum of Squares"></a><strong>Sum of Squares</strong></h2><p>For a positive integer, $n$, define $g(n)$ to be the maximum perfect square that divides $n$.<br>For example, $g(18) = 9$, $g(19) = 1$.</p>
+<p>Also define<br>$$\displaystyle    S(N) = \sum_{n=1}^N g(n)$$</p>
+<p>For example, $S(10) = 24$ and $S(100) = 767$.</p>
+<p>Find $S(10^{14})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="平方和"><a href="#平方和" class="headerlink" title="平方和"></a><strong>平方和</strong></h2><p>对于正整数$n$，记$g(n)$为整除$n$的最大完全平方数。<br>例如，$g(18) = 9$，$g(19) = 1$。</p>
+<p>另记<br>$$\displaystyle    S(N) = \sum_{n=1}^N g(n)$$</p>
+<p>例如，$S(10) = 24$，$S(100) = 767$。</p>
+<p>求$S(10^{14})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 742</title>
+    <url>/742/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-742"><a href="#Problem-742" class="headerlink" title="Problem 742"></a><a href="https://projecteuler.net/problem=742" target="_blank" rel="noopener">Problem 742</a></h1><hr>
+<h2 id="Minimum-area-of-a-convex-grid-polygon"><a href="#Minimum-area-of-a-convex-grid-polygon" class="headerlink" title="Minimum area of a convex grid polygon"></a><strong>Minimum area of a convex grid polygon</strong></h2><p>A <i>symmetrical convex grid polygon</i> is a polygon such that:</p>
+<ul>
+<li>All its vertices have integer coordinates.</li>
+<li>All its internal angles are strictly smaller than $180^\circ$.</li>
+<li>It has both horizontal and vertical symmetry.</li>
+</ul>
+<p>For example, the left polygon is a convex grid polygon which has neither horizontal nor vertical symmetry, while the right one is a valid symmetrical convex grid polygon with six vertices:</p>
+<p><img src="https://projecteuler.net/project/images/p742_hexagons.jpg" alt=""></p>
+<p>Define $A(N)$, the minimum area of a symmetrical convex grid polygon with $N$ vertices.</p>
+<p>You are given $A(4) = 1$, $A(8) = 7$, $A(40) = 1039$ and $A(100) = 17473$.</p>
+<p>Find $A(1000)$.</p>
+<hr>
+<h2 id="格点凸多边形的最小面积"><a href="#格点凸多边形的最小面积" class="headerlink" title="格点凸多边形的最小面积"></a><strong>格点凸多边形的最小面积</strong></h2><p><i class=zh>对称格点凸多边形</i>是指满足以下条件的多边形：</p>
+<ul>
+<li>所有顶点的坐标均为整数。</li>
+<li>所有内角严格小于$180^\circ$。</li>
+<li>在水平和竖直方向上对称。</li>
+</ul>
+<p>例如，下图左的多边形是格点凸多边形，但是在水平和竖直方向上均不对称；而下图右的多边形则是一个有六个顶点的对称格点凸多边形：</p>
+<p><img src="https://projecteuler.net/project/images/p742_hexagons.jpg" alt=""></p>
+<p>记$A(N)$为所有有$N$个顶点的对称格点凸多边形的最小面积。</p>
+<p>已知$A(4) = 1$，$A(8) = 7$，$A(40) = 1039$，$A(100) = 17473$。</p>
+<p>求$A(1000)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 743</title>
+    <url>/743/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-743"><a href="#Problem-743" class="headerlink" title="Problem 743"></a><a href="https://projecteuler.net/problem=743" target="_blank" rel="noopener">Problem 743</a></h1><hr>
+<h2 id="Window-into-a-Matrix"><a href="#Window-into-a-Matrix" class="headerlink" title="Window into a Matrix"></a><strong>Window into a Matrix</strong></h2><p>A window into a matrix is a contiguous sub matrix.</p>
+<p>Consider a $2\times n$ matrix where every entry is either $0$ or $1$.<br>Let $A(k,n)$ be the total number of these matrices such that the sum of the entries in every $2\times k$ window is $k$.</p>
+<p>You are given that $A(3,9) = 560$ and $A(4,20) = 1060870$.</p>
+<p>Find $A(10^8,10^{16})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="矩阵窗口"><a href="#矩阵窗口" class="headerlink" title="矩阵窗口"></a><strong>矩阵窗口</strong></h2><p>矩阵窗口是指矩阵中一个连续的子矩阵。</p>
+<p>考虑一个$2\times n$的矩阵，其中的元素只能是$0$或$1$。<br>若矩阵中任意一个$2\times k$的窗口中元素之和都为$k$，记所有这样的矩阵数目为$A(k,n)$。</p>
+<p>已知$A(3,9) = 560$，$A(4,20) = 1060870$。</p>
+<p>求$A(10^8,10^{16})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 744</title>
+    <url>/744/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-744"><a href="#Problem-744" class="headerlink" title="Problem 744"></a><a href="https://projecteuler.net/problem=744" target="_blank" rel="noopener">Problem 744</a></h1><hr>
+<h2 id="What-Where-When"><a href="#What-Where-When" class="headerlink" title="What? Where? When?"></a><strong>What? Where? When?</strong></h2><p>“What? Where? When?” is an TV game show in which an expert attempts to answer questions.</p>
+<p>It begins with $2n+1$ envelopes. $2n$ of them contain a question and one contains a RED card.</p>
+<p>In each round one of the remaining envelopes is randomly chosen. If the envelope contains the RED card the game ends. If the envelope contains a question the expert gives their answer. If their answer is correct they earn one point, otherwise the viewers earn one point. The game ends normally when either the expert obtains $n$ points or the viewers obtain $n$ points.</p>
+<p>Assuming that the expert provides the correct answer with a fixed probability $p$, let $f(n,p)$ be the probability that the game ends normally (i.e. RED card never turns up).</p>
+<p>You are given (rounded to $10$ decimal places) that<br>$f(6,\frac{1}{2})=0.2851562500$,<br>$f(10,\frac{3}{7})=0.2330040743$,<br>$f(10^4,0.3)=0.2857499982$.</p>
+<p>Find $f(10^{11},0.4999)$. Give your answer rounded to $10$ places behind the decimal point.</p>
+<hr>
+<h2 id="什么？哪儿？啥时候？"><a href="#什么？哪儿？啥时候？" class="headerlink" title="什么？哪儿？啥时候？"></a><strong>什么？哪儿？啥时候？</strong></h2><p>“什么？哪儿？啥时候？”是一款专家与观众对抗的问答类真人秀电视节目。</p>
+<p>节目开始时有$2n+1$个信封，其中$2n$个信封中装有问题，剩下的信封中装有一张红牌。</p>
+<p>每一轮随机抽取一个未拆封的信封，如果信封里装有红牌，则游戏结束，若装有问题，则专家必须回答这个问题，答对则专家加一分，答错则观众加一分。如果一直没有抽到红牌，则当专家或观众任意一方获得$n$分时，游戏正常结束。</p>
+<p>假设专家答对的概率为固定值$p$，并记$f(n,p)$为游戏正常结束的概率（也即游戏结束前未抽到红牌）。</p>
+<p>已知（保留小数点后$10$位）<br>$f(6,\frac{1}{2})=0.2851562500$，<br>$f(10,\frac{3}{7})=0.2330040743$，<br>$f(10^4,0.3)=0.2857499982$。</p>
+<p>求$f(10^{11},0.4999)$，并保留小数点后$10$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 750</title>
+    <url>/750/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-750"><a href="#Problem-750" class="headerlink" title="Problem 750"></a><a href="https://projecteuler.net/problem=750" target="_blank" rel="noopener">Problem 750</a></h1><hr>
+<h2 id="Optimal-Card-Stacking"><a href="#Optimal-Card-Stacking" class="headerlink" title="Optimal Card Stacking"></a><strong>Optimal Card Stacking</strong></h2><p>Card Stacking is a game on a computer starting with an array of $N$ cards labelled $1,2,\ldots,N$.<br>A stack of cards can be moved by dragging horizontally with the mouse to another stack but only when the resulting stack is in sequence. The goal of the game is to combine the cards into a single stack using minimal total drag distance.</p>
+<p><img src="https://projecteuler.net/project/images/p750_optimal_card_stacking.png" alt=""></p>
+<p>For the given arrangement of $6$ cards the minimum total distance is $1 + 3 + 1 + 1 + 2 = 8$.</p>
+<p>For $N$ cards, the cards are arranged so that the card at position $n$ is $3^n\bmod(N+1), 1\le n\le N$.</p>
+<p>We define $G(N)$ to be the minimal total drag distance to arrange these cards into a single sequence.<br>For example, when $N = 6$ we get the sequence $3,2,6,4,5,1$ and $G(6) = 8$.<br>You are given $G(16) = 47$.</p>
+<p>Find $G(976)$.</p>
+<p>Note: $G(N)$ is not defined for all values of $N$.</p>
+<hr>
+<h2 id="最优卡牌堆叠"><a href="#最优卡牌堆叠" class="headerlink" title="最优卡牌堆叠"></a><strong>最优卡牌堆叠</strong></h2><p>卡牌堆叠是一款电脑游戏，初始状态为$N$张标记有$1,2,\ldots,N$并随机排列的卡牌，每一张卡牌视为一堆。每次行动时，可以将一堆卡牌横向移动到另一堆卡牌上，但移动后组成的新一堆卡牌必须从大到小有序排列。游戏的目标是将所有卡牌合并为一堆，且总的移动距离最小。</p>
+<p><img src="https://projecteuler.net/project/images/p750_optimal_card_stacking.png" alt=""></p>
+<p>对如上图所示的$6$张卡牌，最小总移动距离为$1 + 3 + 1 + 1 + 2 = 8$。</p>
+<p>对于$N$张卡牌，我们要求位于第$n$位的卡牌标记为$3^n\bmod(N+1), 1\le n\le N$。</p>
+<p>记$G(N)$为将这些卡牌合并为一堆所需的最小总移动距离。<br>例如，当$N = 6$时，卡牌标记依次为$3,2,6,4,5,1$，因此$G(6) = 8$。<br>已知$G(16) = 47$。</p>
+<p>求$G(976)$。</p>
+<p>注：并非所有的$N$都有对应的$G(N)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 751</title>
+    <url>/751/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-751"><a href="#Problem-751" class="headerlink" title="Problem 751"></a><a href="https://projecteuler.net/problem=751" target="_blank" rel="noopener">Problem 751</a></h1><hr>
+<h2 id="Concatenation-Coincidence"><a href="#Concatenation-Coincidence" class="headerlink" title="Concatenation Coincidence"></a><strong>Concatenation Coincidence</strong></h2><p>A non-decreasing sequence of integers $a_n$ can be generated from any positive real value $\theta$ by the following procedure:</p>
+<p>$$b_1=\theta$$<br>$$b_n = \left\lfloor b_{n-1} \right\rfloor \left(b_{n-1} - \left\lfloor b_{n-1} \right\rfloor + 1\right)\ \forall n\ge 2$$<br>$$a_n=\left\lfloor b_{n} \right\rfloor$$<br>Where $\left\lfloor . \right\rfloor$ is the floor function.</p>
+<p>For example, $\theta=2.956938891377988\ldots$ generates the Fibonacci sequence: $2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots$</p>
+<p>The <i>concatenation</i> of a sequence of positive integers $a_n$ is a real value denoted $\tau$ constructed by concatenating the elements of the sequence after the decimal point, starting at $a_1$: $a_1.a_2a_3a_4\ldots$</p>
+<p>For example, the Fibonacci sequence constructed from $\theta=2.956938891377988\ldots$ yields the concatenation $\tau=2.3581321345589\ldots$ Clearly, $\tau \neq \theta$ for this value of $\theta$.</p>
+<p>Find the only value of $\theta$ for which the generated sequence starts at $a_1=2$ and the concatenation of the generated sequence equals the original value: $\tau = \theta$. Give your answer rounded to $24$ places after the decimal point.</p>
+<hr>
+<h2 id="拼接巧合"><a href="#拼接巧合" class="headerlink" title="拼接巧合"></a><strong>拼接巧合</strong></h2><p>给定任意正实数$\theta$，根据以下过程可以生成一个不下降的整数序列$a_n$：</p>
+<p>$$b_1=\theta$$<br>$$b_n = \left\lfloor b_{n-1} \right\rfloor \left(b_{n-1} - \left\lfloor b_{n-1} \right\rfloor + 1\right)\ \forall n\ge 2$$<br>$$a_n=\left\lfloor b_{n} \right\rfloor$$<br>其中$\left\lfloor . \right\rfloor$表示下取整函数。</p>
+<p>例如，$\theta=2.956938891377988\ldots$能够生成斐波那契数列：$2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots$</p>
+<p>数列$a_n$的<i class=zh>拼接</i>是指将$a_1$作为整数部分、将序列的其它元素拼接作为小数部分所生成的实数，记为$\tau$。</p>
+<p>例如，由$\theta=2.956938891377988\ldots$构造的斐波那契数列，其拼接即为$\tau=2.3581321345589\ldots$。显然，对于$\theta$的这一取值，有$\tau \neq \theta$。</p>
+<p>对于所有生成序列中$a_1=2$的$\theta$，求出唯一使得生成序列的拼接恰好等于原实数，也即使得$\tau = \theta$的$\theta$的取值，并将你的答案保留小数点后$24$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 747</title>
+    <url>/747/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-747"><a href="#Problem-747" class="headerlink" title="Problem 747"></a><a href="https://projecteuler.net/problem=747" target="_blank" rel="noopener">Problem 747</a></h1><hr>
+<h2 id="Triangular-Pizza"><a href="#Triangular-Pizza" class="headerlink" title="Triangular Pizza"></a><strong>Triangular Pizza</strong></h2><p>Mamma Triangolo baked a triangular pizza. She wants to cut the pizza into $n$ pieces. She first chooses a point $P$ in the interior (not boundary) of the triangle pizza, and then performs $n$ cuts, which all start from $P$ and extend straight to the boundary of the pizza so that the $n$ pieces are all triangles and all have the same area.</p>
+<p>Let $\psi(n)$ be the number of different ways for Mamma Triangolo to cut the pizza, subject to the constraints.<br>For example, $\psi(3)=7$.</p>
+<p><img src="https://projecteuler.net/project/images/p747_PizzaDiag.jpg" alt=""></p>
+<p>Also $\psi(6)=34$, and $\psi(10)=90$.</p>
+<p>Let $\Psi(m)=\displaystyle\sum_{n=3}^m \psi(n)$. You are given $\Psi(10)=345$ and $\Psi(1000)=172166601$.</p>
+<p>Find $\Psi(10^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="三角形披萨"><a href="#三角形披萨" class="headerlink" title="三角形披萨"></a><strong>三角形披萨</strong></h2><p>特莱格伦夫人打算把一块三角形的披萨分成$n$片。她先在三角形披萨的内部（而非边缘）选择一个点$P$，然后从点$P$出发切$n$刀至披萨边缘，将披萨分成$n$个面积相同的小三角形。</p>
+<p>记$\psi(n)$为满足特莱格伦夫人上述要求的披萨切法。<br>例如，$\psi(3)=7$。</p>
+<p><img src="https://projecteuler.net/project/images/p747_PizzaDiag.jpg" alt=""></p>
+<p>此外，$\psi(6)=34$，$\psi(10)=90$。</p>
+<p>记$\Psi(m)=\displaystyle\sum_{n=3}^m \psi(n)$。已知$\Psi(10)=345$，$\Psi(1000)=172166601$。</p>
+<p>求$\Psi(10^8)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 746</title>
+    <url>/746/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-746"><a href="#Problem-746" class="headerlink" title="Problem 746"></a><a href="https://projecteuler.net/problem=746" target="_blank" rel="noopener">Problem 746</a></h1><hr>
+<h2 id="A-Messy-Dinner"><a href="#A-Messy-Dinner" class="headerlink" title="A Messy Dinner"></a><strong>A Messy Dinner</strong></h2><p>$n$ families, each with four members, a father, a mother, a son and a daughter, were invited to a restaurant. They were all seated at a large circular table with $4n$ seats such that men and women alternate.</p>
+<p>Let $M(n)$ be the number of ways the families can be seated such that none of the families were seated together. A family is considered to be seated together only when all the members of a family sit next to each other.</p>
+<p>For example, $M(1)=0$, $M(2)=896$, $M(3)=890880$ and $M(10) \equiv 170717180 \pmod {1\ 000\ 000\ 007}$.</p>
+<p>Let $S(n)=\displaystyle \sum_{k=2}^nM(k)$.</p>
+<p>For example, $S(10) \equiv 399291975 \pmod {1\ 000\ 000\ 007}$.</p>
+<p>Find $S(2021)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="麻烦的晚餐"><a href="#麻烦的晚餐" class="headerlink" title="麻烦的晚餐"></a><strong>麻烦的晚餐</strong></h2><p>$n$个四口之家受邀到一家餐厅就餐，每个家庭都由父亲、母亲、儿子、女儿组成。他们围坐在一张有$4n$个座位的圆桌边，且男性和女性总是交替就座。</p>
+<p>我们进一步要求同一家庭的四名成员不能坐在一起，并记所有满足条件的就座方式数为$M(n)$。</p>
+<p>例如，$M(1)=0$，$M(2)=896$，$M(3)=890880$，$M(10) \equiv 170717180 \pmod {1\ 000\ 000\ 007}$。</p>
+<p>记$S(n)=\displaystyle \sum_{k=2}^nM(k)$。</p>
+<p>例如，$S(10) \equiv 399291975 \pmod {1\ 000\ 000\ 007}$。</p>
+<p>求$S(2021)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 752</title>
+    <url>/752/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-752"><a href="#Problem-752" class="headerlink" title="Problem 752"></a><a href="https://projecteuler.net/problem=752" target="_blank" rel="noopener">Problem 752</a></h1><hr>
+<h2 id="Powers-of-1-sqrt-7"><a href="#Powers-of-1-sqrt-7" class="headerlink" title="Powers of $1+\sqrt{7}$"></a><strong>Powers of $1+\sqrt{7}$</strong></h2><p>When $(1+\sqrt 7)$ is raised to an integral power, $n$, we always get a number of the form $(a+b\sqrt 7)$.<br>We write $(1+\sqrt 7)^n = \alpha(n) + \beta(n)\sqrt 7$.</p>
+<p>For a given number $x$ we define $g(x)$ to be the smallest positive integer $n$ such that:<br>$$\alpha(n) \equiv 1 \pmod x\quad \text{and}\quad \beta(n) \equiv 0 \pmod x$$<br>and $g(x) = 0$ if there is no such value of $n$. For example, $g(3) = 0$, $g(5) = 12$.</p>
+<p>Further define<br>$$G(N) = \displaystyle \sum_{x=2}^{N} g(x)$$<br>You are given $G(10^2) = 28891$ and $G(10^3)  = 13131583$.</p>
+<p>Find $G(10^6)$.</p>
+<hr>
+<h2 id="1-sqrt-7-的幂"><a href="#1-sqrt-7-的幂" class="headerlink" title="$1+\sqrt{7}$的幂"></a><strong>$1+\sqrt{7}$的幂</strong></h2><p>对于任意正整数$n$，$(1+\sqrt 7)$的$n$次幂总能写成$(a+b\sqrt 7)$的形式。<br>我们记$(1+\sqrt 7)^n = \alpha(n) + \beta(n)\sqrt 7$。</p>
+<p>给定正整数$x$，我们记$g(x)$为满足下列条件的最小正整数$n$：<br>$$\alpha(n) \equiv 1 \pmod x\quad \text{and}\quad \beta(n) \equiv 0 \pmod x$$<br>若不存在这样的$n$，则$g(x) = 0$。例如，$g(3) = 0$，$g(5) = 12$。</p>
+<p>进一步记<br>$$G(N) = \displaystyle \sum_{x=2}^{N} g(x)$$<br>已知$G(10^2) = 28891$，$G(10^3)  = 13131583$。</p>
+<p>求$G(10^6)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 753</title>
+    <url>/753/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-753"><a href="#Problem-753" class="headerlink" title="Problem 753"></a><a href="https://projecteuler.net/problem=753" target="_blank" rel="noopener">Problem 753</a></h1><hr>
+<h2 id="Fermat-Equation"><a href="#Fermat-Equation" class="headerlink" title="Fermat Equation"></a><strong>Fermat Equation</strong></h2><p>Fermat’s Last Theorem states that no three positive integers $a$, $b$, $c$ satisfy the equation<br>$$a^n+b^n=c^n$$<br>for any integer value of $n$ greater than $2$.</p>
+<p>For this problem we are only considering the case $n=3$. For certain values of $p$, it is possible to solve the congruence equation:<br>$$a^3+b^3 \equiv c^3 \pmod{p}$$</p>
+<p>For a prime $p$, we define $F(p)$ as the number of integer solutions to this equation for $1 \le a,b,c &lt; p$.</p>
+<p>You are given $F(5) = 12$ and $F(7) = 0$.</p>
+<p>Find the sum of $F(p)$ over all primes $p$ less than $6\ 000\ 000$.</p>
+<hr>
+<h2 id="费马方程"><a href="#费马方程" class="headerlink" title="费马方程"></a><strong>费马方程</strong></h2><p>费马大定理指出，不存在正整数$a$、$b$、$c$满足方程<br>$$a^n+b^n=c^n$$<br>其中$n$为大于$2$的正整数。</p>
+<p>在本题中我们只考虑$n=3$的情况。对于特定的$p$，如下的同余方程可能有解：<br>$$a^3+b^3 \equiv c^3 \pmod{p}$$</p>
+<p>对于素数$p$，我们记$F(p)$为上述同余方程满足$1 \le a,b,c &lt; p$的整数解的数目。</p>
+<p>已知$F(5) = 12$，$F(7) = 0$。</p>
+<p>求出所有小于$6\ 000\ 000$的素数$p$所对应$F(p)$之和。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 748</title>
+    <url>/748/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-748"><a href="#Problem-748" class="headerlink" title="Problem 748"></a><a href="https://projecteuler.net/problem=748" target="_blank" rel="noopener">Problem 748</a></h1><hr>
+<h2 id="Upside-down-Diophantine-equation"><a href="#Upside-down-Diophantine-equation" class="headerlink" title="Upside down Diophantine equation"></a><strong>Upside down Diophantine equation</strong></h2><p>Upside Down is a modification of the famous Pythagorean equation:<br>$$\frac{1}{x^2}+\frac{1}{y^2}=\frac{13}{z^2}$$</p>
+<p>A solution $(x,y,z)$  to this equation with $x,y$ and $z$ positive integers is a primitive solution if $\gcd(x,y,z)=1$.</p>
+<p>Let $S(N)$ be the sum of $x+y+z$ over primitive Upside Down solutions such that $1 \leq x,y,z \leq N$ and $x \le y$.<br>For $N=100$ the primitive solutions are $(2,3,6)$ and $(5,90,18)$, thus $S(10^2)=124$.<br>It can be checked that $S(10^3)=1470$ and $S(10^5)=2340084$.</p>
+<p>Find $S(10^{16})$ and give the last $9$ digits as your answer.</p>
+<hr>
+<h2 id="颠倒不定方程"><a href="#颠倒不定方程" class="headerlink" title="颠倒不定方程"></a><strong>颠倒不定方程</strong></h2><p>把著名的毕达哥拉斯方程稍加修改就得到了如下的颠倒不定方程：<br>$$\frac{1}{x^2}+\frac{1}{y^2}=\frac{13}{z^2}$$</p>
+<p>若上述方程的一组正整数解$(x,y,z)$满足$\gcd(x,y,z)=1$，则称之为该方程的本原解。</p>
+<p>考虑该方程的所有本原解，并记$S(N)$为所有满足$1 \leq x,y,z \leq N$和$x \le y$的本原解对应$x+y+z$之和。<br>对于$N=100$，满足条件的本原解包括$(2,3,6)$和$(5,90,18)$，因此$S(10^2)=124$。<br>可以验证，$S(10^3)=1470$，$S(10^5)=2340084$。</p>
+<p>求$S(10^{16})$，并给出最后$9$位数字作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 754</title>
+    <url>/754/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-754"><a href="#Problem-754" class="headerlink" title="Problem 754"></a><a href="https://projecteuler.net/problem=754" target="_blank" rel="noopener">Problem 754</a></h1><hr>
+<h2 id="Product-of-Gauss-Factorials"><a href="#Product-of-Gauss-Factorials" class="headerlink" title="Product of Gauss Factorials"></a><strong>Product of Gauss Factorials</strong></h2><p>The <b>Gauss Factorial</b> of a number $n$ is defined as the product of all positive numbers $\leq n$ that are relatively prime to $n$. For example $g(10)=1\times 3\times 7\times 9 = 189$. </p>
+<p>Also we define<br>$$\displaystyle G(n) = \prod_{i=1}^{n}g(i)$$</p>
+<p>You are given $G(10) = 23044331520000$.</p>
+<p>Find $G(10^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="高斯阶乘之积"><a href="#高斯阶乘之积" class="headerlink" title="高斯阶乘之积"></a><strong>高斯阶乘之积</strong></h2><p>整数$n$的<b>高斯阶乘</b>是指所有小于等于$n$且与$n$互质的正整数的乘积。例如，$g(10)=1\times 3\times 7\times 9 = 189$。</p>
+<p>记<br>$$\displaystyle G(n) = \prod_{i=1}^{n}g(i)$$</p>
+<p>已知$G(10) = 23044331520000$。</p>
+<p>求$G(10^8)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 749</title>
+    <url>/749/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-749"><a href="#Problem-749" class="headerlink" title="Problem 749"></a><a href="https://projecteuler.net/problem=749" target="_blank" rel="noopener">Problem 749</a></h1><hr>
+<h2 id="Near-Power-Sums"><a href="#Near-Power-Sums" class="headerlink" title="Near Power Sums"></a><strong>Near Power Sums</strong></h2><p>A positive integer, $n$, is a <i>near power sum</i> if there exists a positive integer, $k$, such that the sum of the $k$th powers of the digits in its decimal representation is equal to either $n+1$ or $n-1$. For example $35$ is a near power sum number because $3^2+5^2 = 34$.</p>
+<p>Define $S(d)$ to be the sum of all near power sum numbers of $d$ digits or less.<br>Then $S(2) = 110$ and $S(6) = 2562701$.</p>
+<p>Find $S(16)$.</p>
+<hr>
+<h2 id="近幂和数"><a href="#近幂和数" class="headerlink" title="近幂和数"></a><strong>近幂和数</strong></h2><p>对于正整数$n$，若存在正整数$k$使得$n$的各位数字的$k$次幂之和等于$n+1$或$n-1$，则我们称$n$为<i class=zh>近幂和数</i>。例如，$35$是近幂和数，因为$3^2+5^2 = 34$。</p>
+<p>记$S(d)$为所有至多$d$位数字的近幂和数之和。<br>已知$S(2) = 110$，$S(6) = 2562701$。</p>
+<p>求$S(16)$。</p>
 <hr>
 ]]></content>
   </entry>
