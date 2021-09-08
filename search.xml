@@ -5068,7 +5068,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>Consider the set S(r) of points (x,y) with integer coordinates satisfying |x| + |y| ≤ r.<br>Let O be the point (0,0) and C the point (r/4,r/4).<br>Let N(r) be the number of points B in S(r), so that the triangle OBC has an obtuse angle, i.e. the largest angle α satisfies 90°&lt;α&lt;180°.<br>So, for example, N(4)=24 and N(8)=100.</p>
 <p>What is N(1,000,000,000)?</p>
 <hr>
-<p><strong>锐角三角形</strong></p>
+<p><strong>钝角三角形</strong></p>
 <p>点集S(r)包含了所有坐标为整数且|x| + |y| ≤ r的点(x,y)。<br>记O为原点(0,0)，C为点(r/4,r/4)。<br>在S(r)中取一点B，使得三角形OBC有一个钝角，也即这个三角形的最大角α满足90°&lt;α&lt;180°，记所有这样的点B的数目为N(r)。<br>例如，N(4)=24以及N(8)=100。</p>
 <p>求问N(1,000,000,000)是多少？</p>
 <hr>
@@ -5242,7 +5242,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>For example, when the list is sorted into alphabetical order, COLIN, which is worth $3 + 15 + 12 + 9 + 14 = 53$, is the $938$th name in the list. So, COLIN would obtain a score of $938 \times 53 = 49714$.</p>
 <p>What is the total of all the name scores in the file?</p>
 <hr>
-<h2 id="名字打分"><a href="#名字打分" class="headerlink" title="名字打分"></a><strong>名字打分</strong></h2><p>在这个46K的文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>（右击并选择“目标另存为……”）中包含了五千多个名字。首先将它们按照字母序排列，然后计算出每个名字的字母价值，乘以它在按字母顺序排列后的位置，就算出了这个名字的得分。</p>
+<h2 id="名字打分"><a href="#名字打分" class="headerlink" title="名字打分"></a><strong>名字打分</strong></h2><p>在文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>（右击并选择“目标另存为……”）中包含了五千多个名字。首先将它们按照字母序排列，然后计算出每个名字的字母价值，乘以它在按字母顺序排列后的位置，就算出了这个名字的得分。</p>
 <p>例如，按照字母序排列后，位于第$938$位的名字是COLIN，它的字母价值是$3 + 15 + 12 + 9 + 14 = 53$。因此，COLIN这个名字的得分是$938 \times 53 = 49714$。</p>
 <p>上述文本文件中，所有名字的得分之和是多少？</p>
 <hr>
@@ -6098,13 +6098,13 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
     <url>/25/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-25"><a href="#Problem-25" class="headerlink" title="Problem 25"></a><a href="https://projecteuler.net/problem=25" target="_blank" rel="noopener">Problem 25</a></h1><hr>
-<h2 id="1000-digit-Fibonacci-number"><a href="#1000-digit-Fibonacci-number" class="headerlink" title="$1000$-digit Fibonacci number"></a><strong>$1000$-digit Fibonacci number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_1 = 1\ F_2= 1$<br>$F_n = F_{n-1} + F_{n-2}$</p>
-<p>Hence the first 12 terms will be:<br>$F_1=1$<br>$F_2=1$<br>$F_3=2$<br>$F_4=3$<br>$F_5=5$<br>$F_6=8$<br>$F_7=13$<br>$F_8=21$<br>$F_9=34$<br>$F_{10}=55$<br>$F_{11}=89$<br>$F_{12}=144$</p>
+<h2 id="1000-digit-Fibonacci-number"><a href="#1000-digit-Fibonacci-number" class="headerlink" title="$1000$-digit Fibonacci number"></a><strong>$1000$-digit Fibonacci number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$$F_1 = 1\quad F_2= 1$$<br>$$F_n = F_{n-1} + F_{n-2}$$</p>
+<p>Hence the first 12 terms will be:<br>$$\begin{aligned}<br>F_1&amp;=1\\<br>F_2&amp;=1\\<br>F_3&amp;=2\\<br>F_4&amp;=3\\<br>F_5&amp;=5\\<br>F_6&amp;=8\\<br>F_7&amp;=13\\<br>F_8&amp;=21\\<br>F_9&amp;=34\\<br>F_{10}&amp;=55\\<br>F_{11}&amp;=89\\<br>F_{12}&amp;=144\\<br>\end{aligned}$$</p>
 <p>The $12$th term, $F_{12}$, is the first term to contain three digits.</p>
 <p>What is the first term in the Fibonacci sequence to contain $1000$ digits?</p>
 <hr>
-<h2 id="1000-位斐波那契数"><a href="#1000-位斐波那契数" class="headerlink" title="$1000$位斐波那契数"></a><strong>$1000$位斐波那契数</strong></h2><p>斐波那契数列是按如下递归定义的数列：<br>$F_1 = 1\ F_2= 1$<br>$F_n = F_{n-1} + F_{n-2}$</p>
-<p>因此斐波那契数列的前12项分别是：<br>$F_1=1$<br>$F_2=1$<br>$F_3=2$<br>$F_4=3$<br>$F_5=5$<br>$F_6=8$<br>$F_7=13$<br>$F_8=21$<br>$F_9=34$<br>$F_{10}=55$<br>$F_{11}=89$<br>$F_{12}=144$</p>
+<h2 id="1000-位斐波那契数"><a href="#1000-位斐波那契数" class="headerlink" title="$1000$位斐波那契数"></a><strong>$1000$位斐波那契数</strong></h2><p>斐波那契数列是按如下递归定义的数列：<br>$$F_1 = 1\quad F_2= 1$$<br>$$F_n = F_{n-1} + F_{n-2}$$</p>
+<p>因此斐波那契数列的前12项分别是：<br>$$\begin{aligned}<br>F_1&amp;=1\\<br>F_2&amp;=1\\<br>F_3&amp;=2\\<br>F_4&amp;=3\\<br>F_5&amp;=5\\<br>F_6&amp;=8\\<br>F_7&amp;=13\\<br>F_8&amp;=21\\<br>F_9&amp;=34\\<br>F_{10}&amp;=55\\<br>F_{11}&amp;=89\\<br>F_{12}&amp;=144\\<br>\end{aligned}$$</p>
 <p>第一个包含三位数字的是第$12$项$F_{12}$。</p>
 <p>在斐波那契数列中，第一个包含$1000$位数字的是第几项？</p>
 <hr>
@@ -6505,12 +6505,12 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <content><![CDATA[<hr>
 <h1 id="Problem-26"><a href="#Problem-26" class="headerlink" title="Problem 26"></a><a href="https://projecteuler.net/problem=26" target="_blank" rel="noopener">Problem 26</a></h1><hr>
 <h2 id="Reciprocal-cycles"><a href="#Reciprocal-cycles" class="headerlink" title="Reciprocal cycles"></a><strong>Reciprocal cycles</strong></h2><p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
-<p>$$\frac 1 2 = 0.5$$<br>$$\frac 1 3 = 0.(3)$$<br>$$\frac 1 4 = 0.25$$<br>$$\frac 1 5 = 0.2$$<br>$$\frac 1 6 = 0.1(6)$$<br>$$\frac 1 7 = 0.(142857)$$<br>$$\frac 1 8 = 0.125$$<br>$$\frac 1 9 = 0.(1)$$<br>$$\frac 1 {10} = 0.1$$</p>
+<p>$$\begin{aligned}<br>\frac 1 2 &amp;= 0.5\\<br>\frac 1 3 &amp;= 0.(3)\\<br>\frac 1 4 &amp;= 0.25\\<br>\frac 1 5 &amp;= 0.2\\<br>\frac 1 6 &amp;= 0.1(6)\\<br>\frac 1 7 &amp;= 0.(142857)\\<br>\frac 1 8 &amp;= 0.125\\<br>\frac 1 9 &amp;= 0.(1)\\<br>\frac 1 {10} &amp;= 0.1\\<br>\end{aligned}$$</p>
 <p>Where $0.1(6)$ means $0.166666\ldots$, and has a $1$-digit recurring cycle. It can be seen that $\frac{1}{7}$ has a $6$-digit recurring cycle.</p>
 <p>Find the value of $d&lt;1000$ for which $\frac{1}{d}$ contains the longest recurring cycle in its decimal fraction part.</p>
 <hr>
 <h2 id="倒数的循环节"><a href="#倒数的循环节" class="headerlink" title="倒数的循环节"></a><strong>倒数的循环节</strong></h2><p>单位分数指分子为$1$的分数。分母为$2$至$10$的单位分数的十进制表示如下所示：</p>
-<p>$$\frac 1 2 = 0.5$$<br>$$\frac 1 3 = 0.(3)$$<br>$$\frac 1 4 = 0.25$$<br>$$\frac 1 5 = 0.2$$<br>$$\frac 1 6 = 0.1(6)$$<br>$$\frac 1 7 = 0.(142857)$$<br>$$\frac 1 8 = 0.125$$<br>$$\frac 1 9 = 0.(1)$$<br>$$\frac 1 {10} = 0.1$$</p>
+<p>$$\begin{aligned}<br>\frac 1 2 &amp;= 0.5\\<br>\frac 1 3 &amp;= 0.(3)\\<br>\frac 1 4 &amp;= 0.25\\<br>\frac 1 5 &amp;= 0.2\\<br>\frac 1 6 &amp;= 0.1(6)\\<br>\frac 1 7 &amp;= 0.(142857)\\<br>\frac 1 8 &amp;= 0.125\\<br>\frac 1 9 &amp;= 0.(1)\\<br>\frac 1 {10} &amp;= 0.1\\<br>\end{aligned}$$</p>
 <p>这里括号表示循环节，如$0.1(6)$就是指$0.166666\ldots$，循环节的长度为$1$。可以看出，$\frac{1}{7}$的循环节长度为$6$。</p>
 <p>在所有满足$d&lt;1000$的数中，求使得其倒数$\frac{1}{d}$的十进制表示中循环节最长的$d$。</p>
 <hr>
@@ -6796,7 +6796,7 @@ A(9, 2), B(2, -9), C(-6, 7)
 <h2 id="素数生成二次多项式"><a href="#素数生成二次多项式" class="headerlink" title="素数生成二次多项式"></a><strong>素数生成二次多项式</strong></h2><p>欧拉发现了这个著名的二次多项式：</p>
 <p>$$n^2 + n + 41$$</p>
 <p>对$0\le n\le39$范围内的所有整数，这个多项式可以生成$40$个质数。但是，当$n=40$时，$40^2 + 40 + 41 = 40(40 + 1) + 41$能够被$41$整除，而当$n=41$时，$41^2 + 41 + 41$显然也能够被$41$整除。</p>
-<p>之后，又一个神奇的多项式$n^2 - 79n + 1601$被发现了，这个多项式能够对$0\le n\le79$范围内的所有整数生成$80$个质数。这个二次多项式的系数分别是$-79$和$1601$，其乘积为$-126479$。</p>
+<p>之后，人们又发现了一个神奇的多项式$n^2 - 79n + 1601$，这个多项式能够对$0\le n\le79$范围内的所有整数生成$80$个质数。这个二次多项式的系数分别是$-79$和$1601$，其乘积为$-126479$。</p>
 <p>考虑所有如下形式的二次多项式：<br>$n^2 + an + b$，其中$|a|&lt;1000$，$|b| \le 1000$；<br>这里$|n|$表示$n$的绝对值，例如$|11| = 11$，$|-4| = 4$。</p>
 <p>找出其中能够从$n=0$开始连续生成最多素数的二次多项式表达式，并给出其系数$a$和$b$的乘积。</p>
 <hr>
@@ -7268,7 +7268,7 @@ A(9, 2), B(2, -9), C(-6, 7)
 <p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
 <p>If they are then placed in numerical order, with any repeats removed, we get the following sequence of $15$ distinct terms:</p>
 <p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
-<p>How many distinct terms are in the sequence generated by $a^b$ for $2\le a \le 100$ and 2 \le  b \le 100$?</p>
+<p>How many distinct terms are in the sequence generated by $a^b$ for $2\le a \le 100$ and $2 \le  b \le 100$?</p>
 <hr>
 <h2 id="不同的幂"><a href="#不同的幂" class="headerlink" title="不同的幂"></a><strong>不同的幂</strong></h2><p>考虑所有满足$2 \le a \le 5$和$2 \le b \le 5$的整数组合所生成的幂$a^b$：</p>
 <p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
@@ -7724,23 +7724,15 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/30/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-30"><a href="#Problem-30" class="headerlink" title="Problem 30"></a><a href="https://projecteuler.net/problem=30" target="_blank" rel="noopener">Problem 30</a></h1><hr>
-<p><strong>Digit fifth powers</strong></p>
-<p>Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:</p>
-<blockquote>
-<p>1634 = 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup><br>8208 = 8<sup>4</sup> + 2<sup>4</sup> + 0<sup>4</sup> + 8<sup>4</sup><br>9474 = 9<sup>4</sup> + 4<sup>4</sup> + 7<sup>4</sup> + 4<sup>4</sup></p>
-</blockquote>
-<p>As 1 = 1<sup>4</sup> is not a sum it is not included.</p>
-<p>The sum of these numbers is 1634 + 8208 + 9474 = 19316.</p>
+<h2 id="Digit-fifth-powers"><a href="#Digit-fifth-powers" class="headerlink" title="Digit fifth powers"></a><strong>Digit fifth powers</strong></h2><p>Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:<br>$$1634=1^4+6^4+3^4+4^4$$<br>$$8208=8^4+2^4+0^4+8^4$$<br>$$9474=9^4+4^4+7^4+4^4$$</p>
+<p>As $1 = 1^4$ is not a sum it is not included.</p>
+<p>The sum of these numbers is $1634 + 8208 + 9474 = 19316$.</p>
 <p>Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.</p>
 <hr>
-<p><strong>各位数字的五次幂</strong></p>
-<p>令人惊讶的是，只有三个数可以写成它们各位数字的四次幂之和：</p>
-<blockquote>
-<p>1634 = 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup><br>8208 = 8<sup>4</sup> + 2<sup>4</sup> + 0<sup>4</sup> + 8<sup>4</sup><br>9474 = 9<sup>4</sup> + 4<sup>4</sup> + 7<sup>4</sup> + 4<sup>4</sup></p>
-</blockquote>
-<p>由于1 = 1<sup>4</sup>不是一个和，所以这里并没有把它包括进去。</p>
-<p>这些数的和是1634 + 8208 + 9474 = 19316。</p>
-<p>找出所有可以写成它们各位数字的五次幂之和的数，并求这些数的和。</p>
+<h2 id="各位数字的五次幂"><a href="#各位数字的五次幂" class="headerlink" title="各位数字的五次幂"></a><strong>各位数字的五次幂</strong></h2><p>令人惊讶的是，只有三个数可以写成其各位数字的四次幂之和：<br>$$1634=1^4+6^4+3^4+4^4$$<br>$$8208=8^4+2^4+0^4+8^4$$<br>$$9474=9^4+4^4+7^4+4^4$$</p>
+<p>由于$1 = 1^4$并不是求和，所以这里不计入内。</p>
+<p>上面这三个数的和是$1634 + 8208 + 9474 = 19316$。</p>
+<p>找出所有可以写成其各位数字的五次幂之和的数，并求这些数的和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -8040,27 +8032,13 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/31/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-31"><a href="#Problem-31" class="headerlink" title="Problem 31"></a><a href="https://projecteuler.net/problem=31" target="_blank" rel="noopener">Problem 31</a></h1><hr>
-<p><strong>Coin sums</strong></p>
-<p>In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:</p>
-<blockquote>
-<p>1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), £2 (200p)</p>
-</blockquote>
-<p>It is possible to make £2 in the following way:</p>
-<blockquote>
-<p>1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p</p>
-</blockquote>
-<p>How many different ways can £2 be made using any number of coins?</p>
+<h2 id="Coin-sums"><a href="#Coin-sums" class="headerlink" title="Coin sums"></a><strong>Coin sums</strong></h2><p>In England the currency is made up of pound, $\it\unicode{xA3}$, and pence, $p$, and there are eight coins in general circulation:<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p)$$</p>
+<p>It is possible to make ${\it\unicode{xA3}}2$ in the following way:<br>$$1\times {\it\unicode{xA3}}1+ 1\times 50p + 2 \times 20 p+1\times 5p+ 1\times 2p+3\times 1p$$</p>
+<p>How many different ways can ${\it\unicode{xA3}}2$ be made using any number of coins?</p>
 <hr>
-<p><strong>硬币求和</strong></p>
-<p>英国的货币单位包括英镑£和便士p，在流通中的硬币一共有八种：</p>
-<blockquote>
-<p>1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), £2 (200p)</p>
-</blockquote>
-<p>以下是组成£2的其中一种可行方式：</p>
-<blockquote>
-<p>1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p</p>
-</blockquote>
-<p>不限定使用的硬币数目，组成£2有多少种不同的方式？</p>
+<h2 id="硬币求和"><a href="#硬币求和" class="headerlink" title="硬币求和"></a><strong>硬币求和</strong></h2><p>英国的货币单位分英镑$\it\unicode{xA3}$和便士$p$，目前流通的硬币一共有八种面值：<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p)$$</p>
+<p>想要凑出${\it\unicode{xA3}}2$，其中一种做法是：<br>$$1\times {\it\unicode{xA3}}1+ 1\times 50p + 2 \times 20 p+1\times 5p+ 1\times 2p+3\times 1p$$</p>
+<p>不限制硬币数量，凑出${\it\unicode{xA3}}2$有多少种不同的做法？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22825,6 +22803,98 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="近幂和数"><a href="#近幂和数" class="headerlink" title="近幂和数"></a><strong>近幂和数</strong></h2><p>对于正整数$n$，若存在正整数$k$使得$n$的各位数字的$k$次幂之和等于$n+1$或$n-1$，则我们称$n$为<i class=zh>近幂和数</i>。例如，$35$是近幂和数，因为$3^2+5^2 = 34$。</p>
 <p>记$S(d)$为所有至多$d$位数字的近幂和数之和。<br>已知$S(2) = 110$，$S(6) = 2562701$。</p>
 <p>求$S(16)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 757</title>
+    <url>/757/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-757"><a href="#Problem-757" class="headerlink" title="Problem 757"></a><a href="https://projecteuler.net/problem=757" target="_blank" rel="noopener">Problem 757</a></h1><hr>
+<h2 id="Stealthy-Numbers"><a href="#Stealthy-Numbers" class="headerlink" title="Stealthy Numbers"></a><strong>Stealthy Numbers</strong></h2><p>A positive integer $N$ is <i>stealthy</i>, if there exist positive integers $a$, $b$, $c$, $d$ such that $ab = cd = N$ and $a+b = c+d+1$.<br>For example, $36 = 4\times 9 = 6\times 6$ is stealthy.</p>
+<p>You are also given that there are $2851$ stealthy numbers not exceeding $10^6$.</p>
+<p>How many stealthy numbers are there that don’t exceed $10^{14}$?</p>
+<hr>
+<h2 id="隐匿数"><a href="#隐匿数" class="headerlink" title="隐匿数"></a><strong>隐匿数</strong></h2><p>对于正整数$N$，若存在正整数$a$、$b$、$c$、$d$使得$ab=cd=N$且$a+b=c+d+1$，则称$N$为<i class=zh>隐匿数</i> 。<br>例如，$36 = 4\times 9 = 6\times 6$是一个隐匿数。</p>
+<p>已知在不超过$10^6$的范围内有$2851$个隐匿数。</p>
+<p>在不超过$10^{14}$的范围内，有多少个隐匿数？</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 755</title>
+    <url>/755/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-755"><a href="#Problem-755" class="headerlink" title="Problem 755"></a><a href="https://projecteuler.net/problem=755" target="_blank" rel="noopener">Problem 755</a></h1><hr>
+<h2 id="Not-Zeckendorf"><a href="#Not-Zeckendorf" class="headerlink" title="Not Zeckendorf"></a><strong>Not Zeckendorf</strong></h2><p>Consider the Fibonacci sequence ${1,2,3,5,8,13,21,\ldots}$.</p>
+<p>We let $f(n)$ be the number of ways of representing an integer $n\ge 0$ as the sum of different Fibonacci numbers.<br>For example, $16 = 3+13 = 1+2+13 = 3+5+8 = 1+2+5+8$ and hence $f(16) = 4$. By convention $f(0) = 1$.</p>
+<p>Further we define<br>$$\displaystyle S(n) = \sum_{k=0}^n f(k)$$<br>You are given $S(100) = 415$ and $S(10^4) = 312807$.</p>
+<p>Find $\displaystyle S(10^{13})$.</p>
+<hr>
+<h2 id="非齐肯多夫表示"><a href="#非齐肯多夫表示" class="headerlink" title="非齐肯多夫表示"></a><strong>非齐肯多夫表示</strong></h2><p>考虑斐波那契数列${1,2,3,5,8,13,21,\ldots}$。</p>
+<p>记$f(n)$为将整数$n\ge 0$表示为不同斐波那契数之和的方法数。<br>例如，$16 = 3+13 = 1+2+13 = 3+5+8 = 1+2+5+8$，因此$f(16) = 4$。按照惯例，记$f(0) = 1$。</p>
+<p>我们进一步定义<br>$$\displaystyle S(n) = \sum_{k=0}^n f(k)$$<br>已知$S(100) = 415$，$S(10^4) = 312807$。</p>
+<p>求$\displaystyle S(10^{13})$。</p>
+<p><i class=zh>译注</i>：齐肯多夫表示是指将一个整数表示为<i class=zh>不连续</i>的不同斐波那契数之和，根据齐肯多夫定理可知该表示唯一；而本题不要求不连续。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 758</title>
+    <url>/758/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-758"><a href="#Problem-758" class="headerlink" title="Problem 758"></a><a href="https://projecteuler.net/problem=758" target="_blank" rel="noopener">Problem 758</a></h1><hr>
+<h2 id="Buckets-of-Water"><a href="#Buckets-of-Water" class="headerlink" title="Buckets of Water"></a><strong>Buckets of Water</strong></h2><p>There are 3 buckets labelled $S$ (small) of $3$ litres, $M$ (medium) of $5$ litres and $L$ (large) of $8$ litres.<br>Initially $S$ and $M$ are full of water and $L$ is empty. By pouring water between the buckets exactly one litre of water can be measured.<br>Since there is no other way to measure, once a pouring starts it cannot stop until either the source bucket is empty or the destination bucket is full.<br>At least four pourings are needed to get one litre:</p>
+<p>$$(3,5,0)\xrightarrow{M\to L} (3,0,5) \xrightarrow{S\to M} (0,3,5) \xrightarrow{L\to S}(3,3,2)<br>\xrightarrow{S\to M}(1,5,2)$$</p>
+<p>After these operations, there is exactly one litre in bucket $S$.</p>
+<p>In general the sizes of the buckets $S, M, L$ are $a$, $b$, $a + b$ litres, respectively. Initially $S$ and $M$ are full and $L$ is empty. If the above rule of pouring still applies and $a$ and $b$ are two coprime positive integers with $a\leq b$ then it is always possible to measure one litre in finitely many steps.</p>
+<p>Let $P(a,b)$ be the minimal number of pourings needed to get one litre. Thus $P(3,5)=4$.<br>Also, $P(7, 31)=20$ and $P(1234, 4321)=2780$.</p>
+<p>Find the sum of $P(2^{p^5}-1, 2^{q^5}-1)$ for all pairs of prime numbers $p,q$ such that $p &lt; q &lt; 1000$.<br>Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="水桶倒水"><a href="#水桶倒水" class="headerlink" title="水桶倒水"></a><strong>水桶倒水</strong></h2><p>现有三个水桶，标记$S$的小水桶可以装$3$升水，标记$M$的中水桶可以装$5$升水，标记$L$的大水桶可以装$8$升水。<br>一开始，小水桶和中水桶均装满了水，而大水桶则是空的。通过在水桶间互相倒水，我们希望量出恰好一升水。由于我们缺乏其他的测量手段，在倒水时只能要么将倒出的水桶倒空要么将倒入的水桶装满。<br>为了量出恰好一升水，至少需要倒四次：</p>
+<p>$$(3,5,0)\xrightarrow{M\to L} (3,0,5) \xrightarrow{S\to M} (0,3,5) \xrightarrow{L\to S}(3,3,2)<br>\xrightarrow{S\to M}(1,5,2)$$</p>
+<p>经过这些操作后，在小水桶中恰好有一升水。</p>
+<p>考虑一般情况，即小、中、大水桶的容积分别为$a$、$b$和$a+b$升。一开始小水桶和中水桶均装满了水而大水桶是空的。采用相同的倒水规则，若$a$和$b$是两个互质的正整数且满足$a\leq b$，那么在有限步内总是能够量出恰好一升水。</p>
+<p>记$P(a,b)$为量出一升水所需的最少倒水次数，因此$P(3,5)=4$。<br>此外，$P(7, 31)=20$，$P(1234, 4321)=2780$。</p>
+<p>对于所有满足$p &lt; q &lt; 1000$的素数对$p, q$，求$P(2^{p^5}-1, 2^{q^5}-1)$之和，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 756</title>
+    <url>/756/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-756"><a href="#Problem-756" class="headerlink" title="Problem 756"></a><a href="https://projecteuler.net/problem=756" target="_blank" rel="noopener">Problem 756</a></h1><hr>
+<h2 id="Approximating-a-Sum"><a href="#Approximating-a-Sum" class="headerlink" title="Approximating a Sum"></a><strong>Approximating a Sum</strong></h2><p>Consider a function $f(k)$ defined for all positive integers $k&gt;0$. Let $S$ be the sum of the first $n$ values of $f$. That is,<br>$$\displaystyle S=f(1)+f(2)+f(3)+\cdots+f(n)=\sum_{k=1}^n f(k)$$</p>
+<p>In this problem, we employ randomness to approximate this sum. That is, we choose a random, uniformly distributed, $m$-tuple of positive integers $(X_1,X_2,X_3,\cdots,X_m)$ such that $0=X_0 &lt; X_1 &lt; X_2&lt; \cdots &lt; X_m \le n$ and calculate a modified sum $S^*$ as follows.<br>$$\displaystyle S^* = \sum_{i=1}^m f(X_i)(X_i-X_{i-1})$$</p>
+<p>We now define the error of this approximation to be $\Delta=S-S^*$.</p>
+<p>Let $\mathbb{E}(\Delta|f(k),n,m)$ be the expected value of the error given the function $f(k)$, the number of terms $n$ in the sum and the length of random sample $m$.</p>
+<p>For example, $\mathbb{E}(\Delta|k,100,50) = 2525/1326 \approx 1.904223$ and $\mathbb{E}(\Delta|\varphi(k),10^4,10^2)\approx 5842.849907$, where $\varphi(k)$ is Euler’s totient function.</p>
+<p>Find $\mathbb{E}(\Delta|\varphi(k),12345678,12345)$ rounded to six places after the decimal point.</p>
+<hr>
+<h2 id="近似求和"><a href="#近似求和" class="headerlink" title="近似求和"></a><strong>近似求和</strong></h2><p>考虑定义在所有正整数$k&gt;0$上的函数$f(k)$。记$S$为函数$f$在前$n$个正整数上的取值之和。也就是说，<br>$$\displaystyle S=f(1)+f(2)+f(3)+\cdots+f(n)=\sum_{k=1}^n f(k)$$</p>
+<p>在本题中，我们加入一些随机性来近似地求和。换言之，我们均匀地随机生成一个$m$元正整数组$(X_1,X_2,X_3,\cdots,X_m)$，且该数组满足$0=X_0 &lt; X_1 &lt; X_2&lt; \cdots &lt; X_m \le n$，然后按照以下方式求出近似和$S^*$。<br>$$\displaystyle S^* = \sum_{i=1}^m f(X_i)(X_i-X_{i-1})$$</p>
+<p>我们定义近似误差为$\Delta=S-S^*$。</p>
+<p>给定函数$f(k)$、所需计算的项数$n$和随机数组的长度$m$，记$\mathbb{E}(\Delta|f(k),n,m)$为近似误差的期望值。</p>
+<p>例如，$\mathbb{E}(\Delta|k,100,50) = 2525/1326 \approx 1.904223$，$\mathbb{E}(\Delta|\varphi(k),10^4,10^2)\approx 5842.849907$，其中$\varphi(k)$为欧拉总计函数。</p>
+<p>求$\mathbb{E}(\Delta|\varphi(k),12345678,12345)$，并将你的答案保留小数点后六位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 759</title>
+    <url>/759/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-759"><a href="#Problem-759" class="headerlink" title="Problem 759"></a><a href="https://projecteuler.net/problem=759" target="_blank" rel="noopener">Problem 759</a></h1><hr>
+<h2 id="A-squared-recurrence-relation"><a href="#A-squared-recurrence-relation" class="headerlink" title="A squared recurrence relation"></a><strong>A squared recurrence relation</strong></h2><p>The function $f$ is defined for all positive integers as follows:<br>$$f(1)=1$$<br>$$f(2n)=2f(n)$$<br>$$f(2n+1)=2n+1+2f(n)+\frac{1}{n}f(n)$$<br>It can be proven that $f(n)$ is integer for all values of $n$.</p>
+<p>The function $S(n)$ is defined as $S(n) = \displaystyle \sum_{i=1}^n f(i) ^2$.</p>
+<p>For example, $S(10)=1530$ and $S(10^2)=4798445$.</p>
+<p>Find $S(10^{16})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="递推数列的平方和"><a href="#递推数列的平方和" class="headerlink" title="递推数列的平方和"></a><strong>递推数列的平方和</strong></h2><p>定义在正整数上的函数$f$满足以下递推关系：<br>$$f(1)=1$$<br>$$f(2n)=2f(n)$$<br>$$f(2n+1)=2n+1+2f(n)+\frac{1}{n}f(n)$$<br>可以证明，对于任意$n$，$f(n)$的取值均为整数。</p>
+<p>再定义函数$S(n)$为$S(n) = \displaystyle \sum_{i=1}^n f(i) ^2$。</p>
+<p>例如，$S(10)=1530$，$S(10^2)=4798445$。</p>
+<p>求$S(10^{16})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 ]]></content>
   </entry>
