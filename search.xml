@@ -434,7 +434,7 @@
 <p>For n = 4 there are exactly three distinct solutions:</p>
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
 <p>What is the least value of n for which the number of distinct solutions exceeds one-thousand?</p>
-<p>NOTE: This problem is an easier version of <a href="/Problem101-125/#Problem_110">Problem 110</a>; it is strongly advised that you solve this one first.</p>
+<p>NOTE: This problem is an easier version of <a href="/110">Problem 110</a>; it is strongly advised that you solve this one first.</p>
 <hr>
 <p><strong>丢番图倒数I</strong></p>
 <p>在如下方程中，x、y、n均为正整数。</p>
@@ -442,7 +442,7 @@
 <p>对于n = 4，上述方程恰好有3个不同的解：</p>
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
 <p>使得不同的解的数目超过1000的最小n值是多少？</p>
-<p>注意：这个问题是<a href="/Problem101-125/#Problem_110">第110题</a>的简单版本；强烈推荐先解决这一题。</p>
+<p>注意：这个问题是<a href="/110">第110题</a>的简单版本；强烈推荐先解决这一题。</p>
 <hr>
 ]]></content>
   </entry>
@@ -751,7 +751,7 @@
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
 <p>It can be verified that when n = 1260 there are 113 distinct solutions and this is the least value of n for which the total number of distinct solutions exceeds one hundred.</p>
 <p>What is the least value of n for which the number of distinct solutions exceeds four million?</p>
-<p>NOTE: This problem is a much more difficult version of <a href="/Problem101-125/#Problem_108">Problem 108</a> and as it is well beyond the limitations of a brute force approach it requires a clever implementation.</p>
+<p>NOTE: This problem is a much more difficult version of <a href="/108">Problem 108</a> and as it is well beyond the limitations of a brute force approach it requires a clever implementation.</p>
 <hr>
 <p><strong>丢番图倒数II</strong></p>
 <p>在如下方程中，x、y、n均为正整数。</p>
@@ -760,7 +760,7 @@
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
 <p>可以验证当n = 1260时，恰好有113种不同的解，这也是不同的解的总数超过一百种的最小n值。</p>
 <p>不同的解的总数超过四百万种的最小n值是多少？</p>
-<p>注意：这是<a href="/Problem101-125/#Problem_108">第108题</a>一个极其困难的版本，而且远远超过暴力解法的能力范围，因此需要更加聪明的手段。</p>
+<p>注意：这是<a href="/108">第108题</a>一个极其困难的版本，而且远远超过暴力解法的能力范围，因此需要更加聪明的手段。</p>
 <hr>
 ]]></content>
   </entry>
@@ -6604,7 +6604,7 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
 <center><img src="https://projecteuler.net/project/images/p262_formula1.gif"></center>
 
 <p>一只蚊子试图从点A(200,200)飞往点B(1400,1400)，但不能离开0&nbsp;≤&nbsp;x,&nbsp;y&nbsp;≤&nbsp;1600的这片区域。</p>
-<p>为了避免地貌的影响，它先竖直向上飞到一点A’，其还把为f。然后，它保持海拔高度f不变，绕过所有障碍，直到它到达B点正上方的一点B’。</p>
+<p>为了避免地貌的影响，它先竖直向上飞到一点A’，其海拔为f。然后，它保持海拔高度f不变，绕过所有障碍，直到它到达B点正上方的一点B’。</p>
 <p>首先，找出在给定区域内存在由A至B路径的最小海拔高度f<sub>min</sub>。<br>其次，找出A’到B’的最短路径长度，路径上的海拔高度始终为常数f<sub>min</sub>。</p>
 <p>给出最短路径长度并四舍五入至三位小数作为你的答案。</p>
 <p><u>注意</u>：方便起见，上述海拔函数在下面按照方便大多数编程语言习惯的方式重写为：<br>h=(5000-0.005*(x*x+y*y+x*y)+12.5*(x+y))*exp(-abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7))</p>
@@ -13854,13 +13854,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h1 id="Problem-504"><a href="#Problem-504" class="headerlink" title="Problem 504"></a><a href="https://projecteuler.net/problem=504" target="_blank" rel="noopener">Problem 504</a></h1><hr>
 <p><strong>Square on the Inside</strong></p>
 <p>Let ABCD be a quadrilateral whose vertices are lattice points lying on the coordinate axes as follows:</p>
-<p>A(a, 0), B(0, b), C(?c, 0), D(0, ?d), where 1 ≤ a, b, c, d ≤ m and a, b, c, d, m are integers.</p>
+<p>A(a, 0), B(0, b), C(-c, 0), D(0, -d), where 1 ≤ a, b, c, d ≤ m and a, b, c, d, m are integers.</p>
 <p>It can be shown that for m = 4 there are exactly 256 valid ways to construct ABCD. Of these 256 quadrilaterals, 42 of them <u>strictly</u> contain a square number of lattice points.</p>
 <p>How many quadrilaterals ABCD strictly contain a square number of lattice points for m = 100?</p>
 <hr>
 <p><strong>平方数个内部格点</strong></p>
 <p>四边形ABCD的四个顶点都是坐标轴上的格点，其坐标分别是：</p>
-<p>A(a, 0), B(0, b), C(?c, 0), D(0, ?d)，其中1 ≤ a, b, c, d ≤ m，且a, b, c, d, m均为整数。</p>
+<p>A(a, 0), B(0, b), C(-c, 0), D(0, -d)，其中1 ≤ a, b, c, d ≤ m，且a, b, c, d, m均为整数。</p>
 <p>可以验证，对于m = 4，有256种构造ABCD的方式，在这256个四边形中，有42个<u>严格地</u>包含了平方数个格点在其内部。</p>
 <p>对于m = 100，有多少个四边形ABCD严格地包含了平方数个格点在其内部？</p>
 <hr>
@@ -14982,7 +14982,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <p><strong>卡迈克尔函数的最小值</strong></p>
 <p><b>卡迈克尔函数</b> λ(n)被定义为使得所有与n互质的整数a都满足在同余意义下a<sup>m</sup> = 1的最小正整数m。<br>例如，λ(8) = 2，而λ(240) = 4。</p>
-<p>记L(n)是最小的满足下列条件的正整数m：对于所有k&nbsp;≥&nbsp;都有λ(k)&nbsp;≥&nbsp;n。<br>例如，L(6) = 241，而L(100) = 20 174 525 281。</p>
+<p>记L(n)是最小的满足下列条件的正整数m：对于所有k&nbsp;≥&nbsp;m都有λ(k)&nbsp;≥&nbsp;n。<br>例如，L(6) = 241，而L(100) = 20 174 525 281。</p>
 <p>求L(20 000 000)。给出其最后9位数字作为你的答案。</p>
 <hr>
 ]]></content>
@@ -18355,7 +18355,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>If we continue we would get the following expansion:</p>
 <p>$$\sqrt{N}=4+\frac{1}{1+\frac{1}{3+\frac{1}{1+\frac{1}{8+…}}}}$$</p>
 <p>The process can be summarised as follows:</p>
-<p>$$a_0=4 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_1=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_2=2 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_3=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$<br>$$a_4=8 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_5=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_6=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_7=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$</p>
+<p>$$a_0=4 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_1=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_2=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_3=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$<br>$$a_4=8 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_5=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_6=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_7=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$</p>
 <p>It can be seen that the sequence is repeating. For conciseness, we use the notation √23 = [4;(1,3,1,8)], to indicate that the block (1,3,1,8) repeats indefinitely.</p>
 <p>The first ten continued fraction representations of (irrational) square roots are:</p>
 <p>√2=[1;(2)], period=1<br>√3=[1;(1,2)], period=2<br>√5=[2;(4)], period=1<br>√6=[2;(2,4)], period=2<br>√7=[2;(1,1,1,4)], period=4<br>√8=[2;(1,4)], period=2<br>√10=[3;(6)], period=1<br>√11=[3;(3,6)], period=2<br>√12= [3;(2,6)], period=2<br>√13=[3;(1,1,1,1,6)], period=5</p>
@@ -18370,7 +18370,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>如果我们继续这个过程，我们会得到如下的展开：</p>
 <p>$$\sqrt{N}=4+\frac{1}{1+\frac{1}{3+\frac{1}{1+\frac{1}{8+…}}}}$$</p>
 <p>这个过程可以总结如下：</p>
-<p>$$a_0=4 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_1=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_2=2 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_3=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$<br>$$a_4=8 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_5=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_6=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_7=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$</p>
+<p>$$a_0=4 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_1=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_2=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_3=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$<br>$$a_4=8 \text{, } \frac{1}{\sqrt{23}-4}=\frac{\sqrt{23}+4}{7}=1+\frac{\sqrt{23}-3}{7}$$<br>$$a_5=1 \text{, } \frac{7}{\sqrt{23}-3}=\frac{7(\sqrt{23}+3)}{14}=3+\frac{\sqrt{23}-3}{2}$$<br>$$a_6=3 \text{, } \frac{2}{\sqrt{23}-3}=\frac{2(\sqrt{23}+3)}{14}=1+\frac{\sqrt{23}-4}{7}$$<br>$$a_7=1 \text{, } \frac{7}{\sqrt{23}-4}=\frac{7(\sqrt{23}+4)}{7}=8+\sqrt{23}-4$$</p>
 <p>可以看出序列正在重复。我们将其简记为√23 = [4;(1,3,1,8)]，表示在此之后(1,3,1,8)无限循环。</p>
 <p>前10个（无理数）平方根的连分数表示是：</p>
 <p>√2=[1;(2)]，周期=1<br>√3=[1;(1,2)]，周期=2<br>√5=[2;(4)]，周期=1<br>√6=[2;(2,4)]，周期=2<br>√7=[2;(1,1,1,4)]，周期=4<br>√8=[2;(1,4)]，周期=2<br>√10=[3;(6)]，周期=1<br>√11=[3;(3,6)]，周期=2<br>√12= [3;(2,6)]，周期=2<br>√13=[3;(1,1,1,1,6)]，周期=5</p>
@@ -20289,7 +20289,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="3-似数"><a href="#3-似数" class="headerlink" title="$3$似数"></a><strong>$3$似数</strong></h2><p>将正整数$n$视为数字串，记$f(n)$为能被$3$整除的$n$的非空子串数目。例如，数字串”$2573$”有$10$个非空子串，其中有三个能被$3$整除，分别是$57$、$573$和$3$，因此$f(2573) = 3$。</p>
 <p>如果$f(n)$能被$3$整除，则称$n$为<i class=zh>$3$似数</i>。</p>
-<p>记$F(d)$为$d$位暑中$3$似数的个数。例如，$F(2) = 30$，$F(6) = 290898$。</p>
+<p>记$F(d)$为$d$位数中$3$似数的个数。例如，$F(2) = 30$，$F(6) = 290898$。</p>
 <p>求$F(10^5)$并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 ]]></content>
@@ -22895,6 +22895,65 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>再定义函数$S(n)$为$S(n) = \displaystyle \sum_{i=1}^n f(i) ^2$。</p>
 <p>例如，$S(10)=1530$，$S(10^2)=4798445$。</p>
 <p>求$S(10^{16})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 762</title>
+    <url>/762/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-762"><a href="#Problem-762" class="headerlink" title="Problem 762"></a><a href="https://projecteuler.net/problem=762" target="_blank" rel="noopener">Problem 762</a></h1><hr>
+<h2 id="Amoebas-in-a-2D-grid"><a href="#Amoebas-in-a-2D-grid" class="headerlink" title="Amoebas in a 2D grid"></a><strong>Amoebas in a 2D grid</strong></h2><p>Consider a two dimensional grid of squares. The grid has $4$ rows but infinitely many columns.</p>
+<p>An amoeba in square $(x, y)$ can divide itself into two amoebas to occupy the squares $(x+1,y)$ and $(x+1,(y+1) \bmod 4)$, provided these squares are empty.</p>
+<p>The following diagrams show two cases of an amoeba placed in square <b>A</b> of each grid. When it divides, it is replaced with two amoebas, one at each of the squares marked with <b>B</b>:</p>
+<p><img src="https://projecteuler.net/project/images/p762_table_a.png" alt=""><br><img src="https://projecteuler.net/project/images/p762_table_b.png" alt=""></p>
+<p>Originally there is only one amoeba in the square $(0, 0)$. After $N$ divisions there will be $N+1$ amoebas arranged in the grid. An arrangement may be reached in several different ways but it is only counted once. Let $C(N)$ be the number of different possible arrangements after $N$ divisions.</p>
+<p>For example, $C(2) = 2$, $C(10) = 1301$, $C(20)=5895236$ and the last nine digits of $C(100)$ are $125923036$.</p>
+<p>Find $C(100\ 000)$, enter the last nine digits as your answer.</p>
+<hr>
+<h2 id="二维格阵中的阿米巴原虫"><a href="#二维格阵中的阿米巴原虫" class="headerlink" title="二维格阵中的阿米巴原虫"></a><strong>二维格阵中的阿米巴原虫</strong></h2><p>考虑一个有$4$行、无穷列的二维格阵。</p>
+<p>原本位于方格$(x,y)$中的一只阿米巴原虫，在目标方格没有被占据的情况下，可以将自身分裂成两只阿米巴原虫，并分别占据方格$(x+1,y)$和$(x+1,(y+1) \bmod 4)$。</p>
+<p>在下图所示的两种情况中，一只阿米巴原虫原本位于方格<b>A</b>。在分裂为两只阿米巴原虫后，则分别占据了两个标记有<b>B</b>的方格：</p>
+<p><img src="https://projecteuler.net/project/images/p762_table_a.png" alt=""><br><img src="https://projecteuler.net/project/images/p762_table_b.png" alt=""></p>
+<p>一开始只有一只阿米巴原虫位于方格$(0, 0)$。经过$N$次分裂之后，格阵中将会分布有$N+1$只阿米巴原虫。不同的分裂顺序可能形成相同的分布情况，这些分布均算作相同的分布。记$C(N)$为经过$N$次分裂后所有可能的不同分布的总数。</p>
+<p>例如，$C(2) = 2$，$C(10) = 1301$，$C(20)=5895236$，而$C(100)$的最后九位数字是$125923036$。</p>
+<p>求$C(100\ 000)$，并将其最后九位数字作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 761</title>
+    <url>/761/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-761"><a href="#Problem-761" class="headerlink" title="Problem 761"></a><a href="https://projecteuler.net/problem=761" target="_blank" rel="noopener">Problem 761</a></h1><hr>
+<h2 id="Runner-and-Swimmer"><a href="#Runner-and-Swimmer" class="headerlink" title="Runner and Swimmer"></a><strong>Runner and Swimmer</strong></h2><p>Two friends, a runner and a swimmer, are playing a sporting game: The swimmer is swimming within a circular pool while the runner moves along the pool edge. While the runner tries to catch the swimmer at the very moment that the swimmer leaves the pool, the swimmer tries to reach the edge before the runner arrives there. They start the game with the swimmer located in the middle of the pool, while the runner is located anywhere at the edge of the pool.</p>
+<p>We assume that the swimmer can move with any velocity up to $1$ in any direction and the runner can move with any velocity up to $v$ in either direction around the edge of the pool. Moreover we assume that both players can react immediately to any change of movement of their opponent.</p>
+<p>Assuming optimal strategy of both players, it can be shown that the swimmer can always win by escaping the pool at some point at the edge before the runner gets there, if $v$ is less than the critical speed $V_{Circle} \approx 4.60333885$ and can never win if $v&gt;V_{Circle}$.</p>
+<p>Now the two players play the game in a perfectly square pool. Again the swimmer starts in the middle of the pool, while the runner starts at the midpoint of one of the edges of the pool. It can be shown that the critical maximal speed of the runner below which the swimmer can always escape and above which the runner can always catch the swimmer when trying to leave the pool is $V_{Square} \approx 5.78859314$.</p>
+<p>At last, both players decide to play the game in a pool in the form of regular hexagon. Giving the same conditions as above, with the swimmer starting in the middle of the pool and the runner at the midpoint of one of the edges of the pool, find the critical maximal speed $V_{Hexagon}$ of the runner, below which the swimmer can always escape and above which the runner can always catch the swimmer. Give your answer rounded to $8$ digits after the decimal point.</p>
+<hr>
+<h2 id="跑者与泳者"><a href="#跑者与泳者" class="headerlink" title="跑者与泳者"></a><strong>跑者与泳者</strong></h2><p>跑者与泳者这对好朋友正在进行一场运动比赛：泳者在一个圆形泳池中游泳，而跑者则沿着泳池边缘跑步；跑者试图在泳者离开泳池的瞬间抓住泳者，而泳者则努力在跑者到达之前抵达泳池边缘。比赛开始时，泳者位于泳池的正中心，而跑者则位于泳池边缘的任意位置。</p>
+<p>我们假设泳者向任意方向游泳时的最高速率为$1$，而跑者沿着泳池边缘跑步的最高速率为$v$。我们进一步假设双方都能即时地根据对方的行动作出反应。</p>
+<p>假设双方都采取最优策略，可以证明，如果$v$小于某个阈值$V_{Circle} \approx 4.60333885$，则泳者总是能够在跑者到达前抵达泳池边缘并离开，反之若$v&gt;V_{Circle}$，则泳者永远不可能获胜。</p>
+<p>接着，双方在一个正方形泳池中再次进行比赛。同样地，比赛开始时，泳者位于泳池的正中心，但这次跑者位于泳池任意一条边的中点。可以计算出，此时决定跑者能否获胜的最高速率阈值为$V_{Square} \approx 5.78859314$。</p>
+<p>最后，双方决定再到一个正六边形泳池中进行比赛。和之前的条件一样，比赛开始时，泳者位于泳池的正中心，跑者位于泳池任意一条边的重点，求此时跑者的最高速率的阈值$V_{Hexagon}$，并将你的答案保留小数点后$8$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 760</title>
+    <url>/760/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-760"><a href="#Problem-760" class="headerlink" title="Problem 760"></a><a href="https://projecteuler.net/problem=760" target="_blank" rel="noopener">Problem 760</a></h1><hr>
+<h2 id="Sum-over-Bitwise-Operators"><a href="#Sum-over-Bitwise-Operators" class="headerlink" title="Sum over Bitwise Operators"></a><strong>Sum over Bitwise Operators</strong></h2><p>Define<br>$$\displaystyle g(m,n) = (m\oplus n)+(m\vee n)+(m\wedge n)$$<br>where $\oplus, \vee, \wedge$ are the bitwise XOR, OR and AND operator respectively.</p>
+<p>Also set<br>$$\displaystyle G(N) = \sum_{n=0}^N\sum_{k=0}^n g(k,n-k)$$</p>
+<p>For example, $G(10) = 754$ and $G(10^2) = 583766$.</p>
+<p>Find $G(10^{18})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="位运算求和"><a href="#位运算求和" class="headerlink" title="位运算求和"></a><strong>位运算求和</strong></h2><p>记<br>$$\displaystyle g(m,n) = (m\oplus n)+(m\vee n)+(m\wedge n)$$<br>其中$\oplus, \vee, \wedge$分别代表“按位异或”、“按位或”和“按位与”运算。</p>
+<p>再记<br>$$\displaystyle G(N) = \sum_{n=0}^N\sum_{k=0}^n g(k,n-k)$$</p>
+<p>例如，$G(10) = 754$，$G(10^2) = 583766$。</p>
+<p>求$G(10^{18})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 ]]></content>
   </entry>
