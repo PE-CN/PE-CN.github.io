@@ -1415,7 +1415,7 @@
 <h1 id="Problem-126"><a href="#Problem-126" class="headerlink" title="Problem 126"></a><a href="https://projecteuler.net/problem=126" target="_blank" rel="noopener">Problem 126</a></h1><hr>
 <p><strong>Cuboid layers</strong></p>
 <p>The minimum number of cubes to cover every visible face on a cuboid measuring 3&nbsp;x&nbsp;2&nbsp;x&nbsp;1 is twenty-two.</p>
-<center><img src="https://projecteuler.net/project/images/p126.gif" width="499" height="247" alt=""></center>
+<center><img src="https://projecteuler.net/project/images/p126.png" alt=""></center>
 
 <p>If we then add a second layer to this solid it would require forty-six cubes to cover every visible face, the third layer would require seventy-eight cubes, and the fourth layer would require one-hundred and eighteen cubes to cover every visible face.</p>
 <p>However, the first layer on a cuboid measuring 5&nbsp;x&nbsp;1&nbsp;x&nbsp;1 also requires twenty-two cubes; similarly the first layer on cuboids measuring 5&nbsp;x&nbsp;3&nbsp;x&nbsp;1, 7&nbsp;x&nbsp;2&nbsp;x&nbsp;1, and 11&nbsp;x&nbsp;1&nbsp;x&nbsp;1 all contain forty-six cubes.</p>
@@ -1425,9 +1425,9 @@
 <hr>
 <p><strong>立方体层</strong></p>
 <p>要完全包住一个3x2x1的长方体的表面，最少需要的立方体数目为22。</p>
-<center><img src="https://projecteuler.net/project/images/p126.gif" width="499" height="247" alt=""></center>
+<center><img src="https://projecteuler.net/project/images/p126.png" alt=""></center>
 
-<p>如果我们要再包一层，需要46个立方体才能挡住所有表面，而第三层需要78个立方体，第4层则需要180个立方体。</p>
+<p>如果我们要再包一层，需要46个立方体才能挡住所有表面，而第三层需要78个立方体，第4层则需要118个立方体。</p>
 <p>同样地，要完全包住一个5x1x1的长方体的表面也需要22个立方体。而要包住5x3x1或是7x2x1或是11x1x1的长方体表面，第一层就需要46个立方体。</p>
 <p>记C(n)是在任意一层中需要n个立方体的长方体数目。所以C(22) = 2，C(46) = 4，C(78) = 5，C(118) = 8。</p>
 <p>可以验证154是第一个使得C(n) = 10的n。</p>
@@ -3409,7 +3409,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>考虑以下三条线段L<sub>1</sub>，L<sub>2</sub>和L<sub>3</sub>：</p>
 <p>L<sub>1</sub>: (27, 44) to (12, 32)<br>L<sub>2</sub>: (46, 53) to (17, 62)<br>L<sub>3</sub>: (46, 70) to (22, 40)</p>
 <p>可以验证，线段L<sub>2</sub>和L<sub>3</sub>有一个真交点。注意到L<sub>3</sub>的一个端点(22,40)恰好在L<sub>1</sub>上，因此这不是一个真交点。L<sub>1</sub>和L<sub>2</sub>则没有交点。因此在这三条线段中，一共有一个真交点。</p>
-<p>现在我们来对5000条线段求真交点数。首先，我们用“布鲁姆-布鲁姆-舒布”伪随机数生成算法生成2000个数。</p>
+<p>现在我们来对5000条线段求真交点数。首先，我们用“布鲁姆-布鲁姆-舒布”伪随机数生成算法生成20000个数。</p>
 <p>s<sub>0</sub> = 290797<br>s<sub>n+1</sub> = s<sub>n</sub>×s<sub>n</sub> (modulo 50515093)<br>t<sub>n</sub> = s<sub>n</sub> (modulo 500)</p>
 <p>为了生成每一条线段，我们使用t<sub>n</sub>的连续四项，也就是说，第一条线段是：</p>
 <p>(t<sub>1</sub>, t<sub>2</sub>)至(t<sub>3</sub>, t<sub>4</sub>)</p>
@@ -8687,20 +8687,20 @@ A(9, 2), B(2, -9), C(-6, 7)
     <content><![CDATA[<hr>
 <h1 id="Problem-330"><a href="#Problem-330" class="headerlink" title="Problem 330"></a><a href="https://projecteuler.net/problem=330" target="_blank" rel="noopener">Problem 330</a></h1><hr>
 <p><strong>Euler’s Number</strong></p>
-<p>An infinite sequence of real numbers a(n) is defined for all integers n as follows:</p>
+<p>An infinite sequence of real numbers $a(n)$ is defined for all integers $n$ as follows:</p>
 <center><img src="https://projecteuler.net/project/images/p330_formula.gif"></center>
 
-<p>For example,<br>a(0)=$\frac{1}{1!}$+$\frac{1}{2!}$+$\frac{1}{3!}$+…=e-1<br>a(1)=$\frac{1}{1!}$+$\frac{1}{2!}$+$\frac{1}{3!}$+…=e-1<br>a(2)=$\frac{2e-3}{1!}$+$\frac{e-1}{2!}$+$\frac{1}{3!}$+…=$\frac{7}{2}$e-6<br>with e = 2.7182818… being Euler’s constant.</p>
-<p>It can be shown that a(n) is of the form $\frac{A(n)e+B(n)}{n!}$ for integers A(n) and B(n).<br>For example a(10) = $\frac{328161643 e − 652694486}{10!}$.</p>
-<p>Find A(10<sup>9</sup>) + B(10<sup>9</sup>) and give your answer mod 77 777 777.</p>
+<p>For example,<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>with $e = 2.7182818\ldots$ being Euler’s constant.</p>
+<p>It can be shown that $a(n)$ is of the form $\frac{A(n)e+B(n)}{n!}$ for integers $A(n)$ and $B(n)$.<br>For example $a(10) = \frac{328161643 e − 652694486}{10!}$.</p>
+<p>Find $A(10^9) + B(10^9)$ and give your answer mod $77\ 777\ 777$.</p>
 <hr>
 <p><strong>欧拉数</strong></p>
-<p>无穷实数序列a(n)按如下方式定义:</p>
+<p>无穷实数序列$a(n)$按如下方式定义:</p>
 <center><img src="https://projecteuler.net/project/images/p330_formula.gif"></center>
 
-<p>例如，<br>a(0)=$\frac{1}{1!}$+$\frac{1}{2!}$+$\frac{1}{3!}$+…=e-1<br>a(1)=$\frac{1}{1!}$+$\frac{1}{2!}$+$\frac{1}{3!}$+…=e-1<br>a(2)=$\frac{2e-3}{1!}$+$\frac{e-1}{2!}$+$\frac{1}{3!}$+…=$\frac{7}{2}$e-6<br>其中e = 2.7182818… 是欧拉常数。</p>
-<p>可以发现a(n)总是可以表达为$\frac{A(n)e+B(n)}{n!}$的形式，其中A(n)和B(n)均为整数。<br>例如a(10) = $\frac{328161643 e − 652694486}{10!}$。</p>
-<p>求A(10<sup>9</sup>) + B(10<sup>9</sup>)，并将你的答案模77 777 777取余。</p>
+<p>例如，<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>其中$e = 2.7182818\ldots$是欧拉常数。</p>
+<p>可以发现$a(n)$总是可以表达为$\frac{A(n)e+B(n)}{n!}$的形式，其中$A(n)$和$B(n)$均为整数。<br>例如$a(10) = \frac{328161643 e − 652694486}{10!}$。</p>
+<p>求$A(10^9) + B(10^9)$，并将你的答案模$77\ 777\ 777$取余。</p>
 <hr>
 ]]></content>
   </entry>
@@ -12750,10 +12750,10 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>Find f(10&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
 <hr>
 <p><strong>超级整数</strong></p>
-<p>整数s被称为是另一个整数n的<em class="zh">超级整数</em>，当且仅当n的数字串是s的数字串的<dfn title="从一个串中去掉一部分元素而不改变剩下元素顺序，所得的称为子串。">子串</dfn>。<br>例如2718281828是18828的超级整数，而314159不是151的超级整数。</p>
+<p>整数s被称为是另一个整数n的<em class="zh">超级整数</em>，当且仅当n的数字串是s的数字串的<dfn title="从一个串中去掉一部分元素而不改变剩下元素顺序，所得的称为子序列。">子序列</dfn>。<br>例如2718281828是18828的超级整数，而314159不是151的超级整数。</p>
 <p>记p(n)是第n个质数，而c(n) 是第n个合数。例如p(1) = 2，p(10) = 29，c(1) = 4，而c(10) = 18。<br>{p(i) : i ≥ 1} = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, …}<br>{c(i) : i ≥ 1} = {4, 6, 8, 9, 10, 12, 14, 15, 16, 18, …}</p>
-<p>记P<sup>D</sup> 是{p(i)}中各项的<strong>数字根</strong>组成的序列（C<sup>D</sup>同理）：<br>{p(i) : i ≥ 1} = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, …}<br>{c(i) : i ≥ 1} = {4, 6, 8, 9, 10, 12, 14, 15, 16, 18, …}</p>
-<p>记P<sub>n</sub>是将P<sup>D</sup>的前n项连接起来所得的整数（C<sub>n</sub>同理）。<br>P<sup>D</sup> = {2, 3, 5, 7, 2, 4, 8, 1, 5, 2, …}<br>C<sup>D</sup> = {4, 6, 8, 9, 1, 3, 5, 6, 7, 9, …}</p>
+<p>记P<sup>D</sup> 是{p(i)}中各项的<strong>数字根</strong>组成的序列（C<sup>D</sup>同理）：<br>P<sup>D</sup> = {2, 3, 5, 7, 2, 4, 8, 1, 5, 2, …}<br>C<sup>D</sup> = {4, 6, 8, 9, 1, 3, 5, 6, 7, 9, …}</p>
+<p>记P<sub>n</sub>是将P<sup>D</sup>的前n项连接起来所得的整数（C<sub>n</sub>同理）。<br>P<sub>10</sub> = 2357248152<br>C<sub>10</sub> = 4689135679</p>
 <p>记f(n)是P<sub>n</sub>和C<sub>n</sub>的最小公共超级整数。<br>例如，f(10) = 2357246891352679，而f(100) mod 1&nbsp;000&nbsp;000&nbsp;007 = 771661825。</p>
 <p>求f(10&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007。</p>
 <hr>
@@ -14227,12 +14227,22 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <content><![CDATA[<hr>
 <h1 id="Problem-517"><a href="#Problem-517" class="headerlink" title="Problem 517"></a><a href="https://projecteuler.net/problem=517" target="_blank" rel="noopener">Problem 517</a></h1><hr>
 <p><strong>A real recursion</strong></p>
-<p>For every real number $a&gt;1$ is given the sequence $g_a$ by:<br>$g_a(x)=1$ for $x&lt;a$<br>$g_a(x)=g_a(x?1)+g_a(x?a)$ for $x≥a$<br>$G(n)=g_{\sqrt{n}}(n)$<br>$G(90)=7564511$.</p>
-<p>Find $\Sigma G(p)$ for $p$ prime and $10000000&lt;p&lt;10010000$<br>Give your answer modulo 1000000007.</p>
+<p>For every real number $a&gt;1$ is given the sequence $g_a$ by:</p>
+<p>$g_a(x)=1$ for $x&lt;a$</p>
+<p>$g_a(x)=g_a(x-1)+g_a(x-a)$ for $x\ge a$</p>
+<p>$G(n)=g_{\sqrt{n}}(n)$</p>
+<p>$G(90)=7564511$.</p>
+<p>Find $\Sigma G(p)$ for $p$ prime and $10000000&lt;p&lt;10010000$</p>
+<p>Give your answer modulo $1000000007$.</p>
 <hr>
 <p><strong>实数递归</strong></p>
-<p>对于任意实数$a&gt;1$，我们可以根据以下规则写出序列$g_a$：<br>若$x&lt;a$，则$g_a(x)=1$<br>若$x≥a$，则$g_a(x)=g_a(x?1)+g_a(x?a)$<br>$G(n)=g_{\sqrt{n}}(n)$<br>已知$G(90)=7564511$。</p>
-<p>对于所有素数$10000000&lt;p&lt;10010000$，求$\Sigma G(p)$。<br>将其模1000000007取余作为你的答案。</p>
+<p>对于任意实数$a&gt;1$，我们可以根据以下规则写出序列$g_a$：</p>
+<p>若$x&lt;a$，则$g_a(x)=1$ </p>
+<p>若$x\ge a$，则$g_a(x)=g_a(x-1)+g_a(x-a)$</p>
+<p>$G(n)=g_{\sqrt{n}}(n)$</p>
+<p>已知$G(90)=7564511$。</p>
+<p>对于所有素数$10000000&lt;p&lt;10010000$，求$\Sigma G(p)$。</p>
+<p>将其模$1000000007$取余作为你的答案。</p>
 <hr>
 ]]></content>
   </entry>
