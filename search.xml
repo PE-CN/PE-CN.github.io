@@ -5818,14 +5818,14 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
     <content><![CDATA[<hr>
 <h1 id="Problem-240"><a href="#Problem-240" class="headerlink" title="Problem 240"></a><a href="https://projecteuler.net/problem=240" target="_blank" rel="noopener">Problem 240</a></h1><hr>
 <p><strong>Top Dice</strong></p>
-<p>There are 1111 ways in which five 6-sided dice (sides numbered 1 to 6) can be rolled so that the top three sum to 15. Some examples are:</p>
-<p>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 4,3,6,3,5<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 4,3,3,5,6<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 3,3,3,6,6<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 6,6,3,3,3</p>
-<p>In how many ways can twenty 12-sided dice (sides numbered 1 to 12) be rolled so that the top ten sum to 70?</p>
+<p>There are $1111$ ways in which five $6$-sided dice (sides numbered $1$ to $6$) can be rolled so that the top three sum to $15$. Some examples are:</p>
+<p>$$<br>\begin{equation}<br>\begin{aligned}<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 4,3,6,3,5\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 4,3,3,5,6\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 3,3,3,6,6\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 6,6,3,3,3\\\<br>\end{aligned} \notag<br>\end{equation}<br>$$</p>
+<p>In how many ways can twenty $12$-sided dice (sides numbered $1$ to $12$) be rolled so that the top ten sum to $70$?</p>
 <hr>
 <p><strong>点数最大的骰子</strong></p>
-<p>扔出5个六面骰子（面上分别标有1至6），其中三个最大的点数之和为15，一共有1111种方式。其中的一些例子为：</p>
-<p>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 4,3,6,3,5<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 4,3,3,5,6<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 3,3,3,6,6<br>D<sub>1</sub>,D<sub>2</sub>,D<sub>3</sub>,D<sub>4</sub>,D<sub>5</sub> = 6,6,3,3,3</p>
-<p>扔出12个12面骰子（面上分别标有1至12），其中十个最大的点数之和为70，一共有多少种方式？</p>
+<p>扔出$5$个六面骰子（面上分别标有$1$至$6$），其中三个最大的点数之和为$15$，一共有$1111$种方式。其中的一些例子为：</p>
+<p>$$<br>\begin{equation}<br>\begin{aligned}<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 4,3,6,3,5\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 4,3,3,5,6\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 3,3,3,6,6\\\<br>&amp;&amp;D_1,D_2,D_3,D_4,D_5 &amp;= 6,6,3,3,3\\\<br>\end{aligned} \notag<br>\end{equation}<br>$$</p>
+<p>扔出$20$个$12$面骰子（面上分别标有$1$至$12$），其中十个最大的点数之和为$70$，一共有多少种方式？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22964,6 +22964,57 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>再记<br>$$\displaystyle G(N) = \sum_{n=0}^N\sum_{k=0}^n g(k,n-k)$$</p>
 <p>例如，$G(10) = 754$，$G(10^2) = 583766$。</p>
 <p>求$G(10^{18})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 763</title>
+    <url>/763/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-763"><a href="#Problem-763" class="headerlink" title="Problem 763"></a><a href="https://projecteuler.net/problem=763" target="_blank" rel="noopener">Problem 763</a></h1><hr>
+<h2 id="Amoebas-in-a-3D-grid"><a href="#Amoebas-in-a-3D-grid" class="headerlink" title="Amoebas in a 3D grid"></a><strong>Amoebas in a 3D grid</strong></h2><p>Consider a three dimensional grid of cubes. An amoeba in cube $(x, y, z)$ can divide itself into three amoebas to occupy the cubes $(x + 1, y, z)$, $(x, y + 1, z)$ and $(x, y, z + 1)$, provided these cubes are empty.</p>
+<p>Originally there is only one amoeba in the cube $(0, 0, 0)$. After $N$ divisions there will be $2N+1$ amoebas arranged in the grid. An arrangement may be reached in several different ways but it is only counted once. Let $D(N)$ be the number of different possible arrangements after $N$ divisions.</p>
+<p>For example, $D(2) = 3$, $D(10) = 44499$, $D(20)=9204559704$ and the last nine digits of $D(100)$ are $780166455$.</p>
+<p>Find $D(10\ 000)$, enter the last nine digits as your answer.</p>
+<hr>
+<h2 id="三维格阵中的阿米巴原虫"><a href="#三维格阵中的阿米巴原虫" class="headerlink" title="三维格阵中的阿米巴原虫"></a><strong>三维格阵中的阿米巴原虫</strong></h2><p>考虑一个三维格阵。原本位于方格$(x,y,z)$中的一只阿米巴原虫，在目标方格没有被占据的情况下，可以将自身分裂成三只阿米巴原虫，并分别占据方格$(x+1,y,z)$，$(x,y+1,z)$和$(x,y,z+1)$。</p>
+<p>一开始只有一只阿米巴原虫位于方格$(0, 0,0)$。经过$N$次分裂之后，格阵中将会分布有$2N+1$只阿米巴原虫。不同的分裂顺序可能形成相同的分布情况，这些分布均算作相同的分布。记$D(N)$为经过$N$次分裂后所有可能的不同分布的总数。</p>
+<p>例如，$D(2) = 3$，$D(10) = 44499$，$D(20)=9204559704$，而$D(100)$的最后九位数字是$780166455$。</p>
+<p>求$D(10\ 000)$，并将其最后九位数字作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 764</title>
+    <url>/764/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-764"><a href="#Problem-764" class="headerlink" title="Problem 764"></a><a href="https://projecteuler.net/problem=764" target="_blank" rel="noopener">Problem 764</a></h1><hr>
+<h2 id="Asymmetric-Diophantine-Equation"><a href="#Asymmetric-Diophantine-Equation" class="headerlink" title="Asymmetric Diophantine Equation"></a><strong>Asymmetric Diophantine Equation</strong></h2><p>Consider the following Diophantine equation:<br>$$16x^2+y^4=z^2$$<br>where $x$, $y$ and $z$ are positive integers.</p>
+<p>Let $S(N) = \displaystyle{\sum(x+y+z)}$ where the sum is over all solutions $(x,y,z)$ such that $1 \leq x,y,z \leq N$ and $\gcd(x,y,z)=1$. </p>
+<p>For $N=100$, there are only two such solutions: $(3,4,20)$ and $(10,3,41)$. So $S(10^2)=81$.</p>
+<p>You are also given that $S(10^4)=112851$ (with $26$ solutions), and $S(10^7)\equiv 248876211 \pmod{10^9}$.</p>
+<p>Find $S(10^{16})$. Give your answer modulo $10^9$.</p>
+<hr>
+<h2 id="不对称丢番图方程"><a href="#不对称丢番图方程" class="headerlink" title="不对称丢番图方程"></a><strong>不对称丢番图方程</strong></h2><p>考虑如下的丢番图方程：<br>$$16x^2+y^4=z^2$$<br>其中$x$、$y$和$z$均为正整数。</p>
+<p>考虑所有满足$1 \leq x,y,z \leq N$和$\gcd(x,y,z)=1$的解$(x,y,z)$，记$S(N) = \displaystyle{\sum(x+y+z)}$在这些解上求和。</p>
+<p>对于$N=100$，只有两组满足上述条件的解，分别是$(3,4,20)$和$(10,3,41)$，因此$S(10^2)=81$。</p>
+<p>已知$S(10^4)=112851$（共有$26$组解），以及$S(10^7)\equiv 248876211 \pmod{10^9}$。</p>
+<p>求$S(10^{16})$，并将你的答案对$10^9$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 765</title>
+    <url>/765/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-765"><a href="#Problem-765" class="headerlink" title="Problem 765"></a><a href="https://projecteuler.net/problem=765" target="_blank" rel="noopener">Problem 765</a></h1><hr>
+<h2 id="Trillionaire"><a href="#Trillionaire" class="headerlink" title="Trillionaire"></a><strong>Trillionaire</strong></h2><p>Starting with $1$ gram of gold you play a game. Each round you bet a certain amount of your gold: if you have $x$ grams you can bet $b$ grams for any $0 \le b \le x$. You then toss an unfair coin: with a probability of $0.6$ you double your bet (so you now have $x+b$), otherwise you lose your bet (so you now have $x-b$).</p>
+<p>Choosing your bets to maximize your probability of having at least a trillion $(10^{12})$ grams of gold after $1000$ rounds, what is the probability that you become a trillionaire?</p>
+<p>All computations are assumed to be exact (no rounding), but give your answer rounded to $10$ digits behind the decimal point.</p>
+<hr>
+<h2 id="万亿富翁"><a href="#万亿富翁" class="headerlink" title="万亿富翁"></a><strong>万亿富翁</strong></h2><p>你正在玩一个游戏，游戏开始时你拥有$1$克黄金。每一轮，如果你拥有$x$克黄金，那么你可以下注任意$0 \le b \le x$克黄金，然后抛掷一枚不公平硬币：有$0.6$的概率你的赌注双倍奉还（此时你拥有$x+b$克黄金），其余的情况下则丧失你的赌注（此时你拥有$x-b$克黄金）。</p>
+<p>你将进行$1000$轮游戏，而你的目标是最大化游戏结束时你拥有至少一万亿（$10^{12}$）克黄金的概率。请问在最优策略下，这个最大化的概率是多少？</p>
+<p>假设游戏过程中的每次赌注计算都是精确的（没有四舍五入），但你的答案应当四舍五入至小数点后$10$位。</p>
 <hr>
 ]]></content>
   </entry>
