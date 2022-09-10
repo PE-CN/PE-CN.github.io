@@ -22617,8 +22617,8 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>You are given that $A(3,9) = 560$ and $A(4,20) = 1060870$.</p>
 <p>Find $A(10^8,10^{16})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
 <hr>
-<h2 id="矩阵窗口"><a href="#矩阵窗口" class="headerlink" title="矩阵窗口"></a><strong>矩阵窗口</strong></h2><p>矩阵窗口是指矩阵中一个连续的子矩阵。</p>
-<p>考虑一个$2\times n$的矩阵，其中的元素只能是$0$或$1$。<br>若矩阵中任意一个$2\times k$的窗口中元素之和都为$k$，记所有这样的矩阵数目为$A(k,n)$。</p>
+<h2 id="矩阵窗口"><a href="#矩阵窗口" class="headerlink" title="矩阵窗口"></a><strong>矩阵窗口</strong></h2><p>矩阵的窗口是指矩阵中一个连续的子矩阵。</p>
+<p>考虑一个$2\times n$的矩阵，其中的元素均为$0$或$1$。<br>若矩阵中任意一个$2\times k$的窗口中元素之和都为$k$，记所有这样的矩阵数目为$A(k,n)$。</p>
 <p>已知$A(3,9) = 560$，$A(4,20) = 1060870$。</p>
 <p>求$A(10^8,10^{16})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
@@ -23015,6 +23015,63 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="万亿富翁"><a href="#万亿富翁" class="headerlink" title="万亿富翁"></a><strong>万亿富翁</strong></h2><p>你正在玩一个游戏，游戏开始时你拥有$1$克黄金。每一轮，如果你拥有$x$克黄金，那么你可以下注任意$0 \le b \le x$克黄金，然后抛掷一枚不公平硬币：有$0.6$的概率你的赌注双倍奉还（此时你拥有$x+b$克黄金），其余的情况下则丧失你的赌注（此时你拥有$x-b$克黄金）。</p>
 <p>你将进行$1000$轮游戏，而你的目标是最大化游戏结束时你拥有至少一万亿（$10^{12}$）克黄金的概率。请问在最优策略下，这个最大化的概率是多少？</p>
 <p>假设游戏过程中的每次赌注计算都是精确的（没有四舍五入），但你的答案应当四舍五入至小数点后$10$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 766</title>
+    <url>/766/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-766"><a href="#Problem-766" class="headerlink" title="Problem 766"></a><a href="https://projecteuler.net/problem=766" target="_blank" rel="noopener">Problem 766</a></h1><hr>
+<h2 id="Sliding-Block-Puzzle"><a href="#Sliding-Block-Puzzle" class="headerlink" title="Sliding Block Puzzle"></a><strong>Sliding Block Puzzle</strong></h2><p>A <strong>sliding block puzzle</strong> is a puzzle where pieces are confined to a grid and by sliding the pieces a final configuration is reached. In this problem the pieces can only be slid in multiples of one unit in the directions up, down, left, right. </p>
+<p>A <em>reachable configuration</em> is any arrangement of the pieces that can be achieved by sliding the pieces from the initial configuration.</p>
+<p>Two configurations are identical if the same shape pieces occupy the same position in the grid. So in the case below the red squares are indistinguishable. For this example the number of reachable configurations is $208$.</p>
+<p><img src="https://projecteuler.net/project/images/p766_SlidingBlock1.jpg" alt=""></p>
+<p>Find the number of reachable configurations for the puzzle below. Note that the red L-shaped pieces are considered different from the green L-shaped pieces.</p>
+<p><img src="https://projecteuler.net/project/images/p766_SlidingBlock2.jpg" alt=""></p>
+<hr>
+<h2 id="滑块谜题"><a href="#滑块谜题" class="headerlink" title="滑块谜题"></a><strong>滑块谜题</strong></h2><p><strong>滑块谜题</strong>是一种在指定范围内滑动滑块以达成特定布局的谜题。在本题中，我们要求滑块每次向上、向下、向左或向右滑动时，必须移动单位距离的整数倍。</p>
+<p>从初始布局出发，通过滑动滑块所能达成的布局统称为<i class=zh>可达布局</i>。</p>
+<p>如果两个布局中，所有相同形状的滑块均占据相同的位置，则视为相同的布局。如下图所示，所有由红色标记的正方形滑块都是不可区分的，最终以此为初始布局的可达布局共有$208$种。</p>
+<p><img src="https://projecteuler.net/project/images/p766_SlidingBlock1.jpg" alt=""></p>
+<p>求以下图为初始布局的可达布局的总数。注意，由红色标记的L形滑块和由绿色标记的L形滑块应视为不同形状的滑块。</p>
+<p><img src="https://projecteuler.net/project/images/p766_SlidingBlock2.jpg" alt=""></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 767</title>
+    <url>/767/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-767"><a href="#Problem-767" class="headerlink" title="Problem 767"></a><a href="https://projecteuler.net/problem=767" target="_blank" rel="noopener">Problem 767</a></h1><hr>
+<h2 id="Window-into-a-Matrix-II"><a href="#Window-into-a-Matrix-II" class="headerlink" title="Window into a Matrix II"></a><strong>Window into a Matrix II</strong></h2><p>A window into a matrix is a contiguous sub matrix.</p>
+<p>Consider a $16\times n$ matrix where every entry is either $0$ or $1$.<br>Let $B(k,n)$ be the total number of these matrices such that the sum of the entries in every $2\times k$ window is $k$.</p>
+<p>You are given that $B(2,4) = 65550$ and $B(3,9) \equiv 87273560 \pmod{1\ 000\ 000\ 007}$.</p>
+<p>Find $B(10^5,10^{16})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="矩阵窗口II"><a href="#矩阵窗口II" class="headerlink" title="矩阵窗口II"></a><strong>矩阵窗口II</strong></h2><p>矩阵的窗口是指矩阵中一个连续的子矩阵。</p>
+<p>考虑一个$16\times n$的矩阵，其中的元素均为$0$或$1$。<br>若矩阵中任意一个$2\times k$的窗口中元素之和都为$k$，记所有这样的矩阵数目为$B(k,n)$。</p>
+<p>已知$B(2,4) = 65550$以及$B(3,9) \equiv 87273560 \pmod{1\ 000\ 000\ 007}$。</p>
+<p>求$B(10^5,10^{16})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 768</title>
+    <url>/768/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-768"><a href="#Problem-768" class="headerlink" title="Problem 768"></a><a href="https://projecteuler.net/problem=768" target="_blank" rel="noopener">Problem 768</a></h1><hr>
+<h2 id="Chandelier"><a href="#Chandelier" class="headerlink" title="Chandelier"></a><strong>Chandelier</strong></h2><p>A certain type of chandelier contains a circular ring of $n$ evenly spaced candleholders.<br><br>If only one candle is fitted, then the chandelier will be imbalanced. However, if a second identical candle is placed in the opposite candleholder (assuming $n$ is even) then perfect balance will be achieved and the chandelier will hang level.</p>
+<p>Let $f(n,m)$ be the number of ways of arranging $m$ identical candles in distinct sockets of a chandelier with $n$ candleholders such that the chandelier is perfectly balanced.</p>
+<p>For example, $f(4, 2) = 2$: assuming the chandelier’s four candleholders are aligned with the compass points, the two valid arrangements are “North &amp; South” and “East &amp; West”. Note that these are considered to be different arrangements even though they are related by rotation.</p>
+<p>You are given that $f(12,4) = 15$ and $f(36, 6) = 876$.</p>
+<p>Find $f(360, 20)$.</p>
+<hr>
+<h2 id="枝形吊灯"><a href="#枝形吊灯" class="headerlink" title="枝形吊灯"></a><strong>枝形吊灯</strong></h2><p>某种枝形吊灯上等距离安置了一圈共$n$个烛台。<br><br>如果只摆上一根蜡烛，那么吊灯将会失去平衡。必须在与第一根蜡烛相对的烛台上（假设$n$是偶数）摆上第二根完全相同的蜡烛，才能让吊灯保持平衡。</p>
+<p>对于安置有$n$个烛台的吊灯，记$f(n,m)$为在不同的烛台上摆上共$m$根完全相同的蜡烛且仍能让吊灯保持平衡的方案总数。</p>
+<p>例如，$f(4, 2) = 2$：不妨假设吊灯上的四个烛台恰好指向正东、正西、正南、正北方向，那么符合要求的两种方案是“正北和正南”以及“正东和正西”。注意尽管这两种方案可以经过旋转重合，但仍视为不同的方案。</p>
+<p>此外，还已知$f(12,4) = 15$以及$f(36, 6) = 876$。</p>
+<p>求$f(360, 20)$。</p>
 <hr>
 ]]></content>
   </entry>
