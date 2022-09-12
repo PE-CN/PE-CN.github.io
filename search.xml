@@ -16482,15 +16482,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/586/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-586"><a href="#Problem-586" class="headerlink" title="Problem 586"></a><a href="https://projecteuler.net/problem=586" target="_blank" rel="noopener">Problem 586</a></h1><hr>
-<h2 id="Binary-Quadratic-Form"><a href="#Binary-Quadratic-Form" class="headerlink" title="Binary Quadratic Form"></a><strong>Binary Quadratic Form</strong></h2><p>The number 209 can be expressed as $a^2 + 3ab + b^2$ in two distinct ways:</p>
-<p>$\qquad 209 = 8^2 + 3\cdot 8\cdot 5 + 5^2$<br>$\qquad 209 = 13^2 + 3\cdot13\cdot 1 + 1^2$</p>
+<h2 id="Binary-Quadratic-Form"><a href="#Binary-Quadratic-Form" class="headerlink" title="Binary Quadratic Form"></a><strong>Binary Quadratic Form</strong></h2><p>The number $209$ can be expressed as $a^2 + 3ab + b^2$ in two distinct ways:</p>
+<p>$$\begin{aligned}<br>209 &amp;= 8^2 + 3\cdot 8\cdot 5 + 5^2 \\<br>209 &amp;= 13^2 + 3\cdot13\cdot 1 + 1^2<br>\end{aligned}<br>$$</p>
 <p>Let $f(n,r)$ be the number of integers $k$ not exceeding $n$ that can be expressed as $k=a^2 + 3ab + b^2$, with $a\gt b&gt;0$ integers, in exactly $r$ different ways.</p>
 <p>You are given that $f(10^5, 4) = 237$ and $f(10^8, 6) = 59517$.</p>
 <p>Find $f(10^{15}, 40)$.</p>
 <hr>
-<h2 id="双重二次型"><a href="#双重二次型" class="headerlink" title="双重二次型"></a><strong>双重二次型</strong></h2><p>数209可以用两种方式表达为$a^2 + 3ab + b^2$：</p>
-<p>$\qquad 209 = 8^2 + 3\cdot 8\cdot 5 + 5^2$<br>$\qquad 209 = 13^2 + 3\cdot13\cdot 1 + 1^2$</p>
-<p>记$f(n,r)$为不超过$n$且恰好可以用$r$种方式表达为$k=a^2 + 3ab + b^2$的整数$k$的数目,其中整数$a\gt b&gt;0$。</p>
+<h2 id="二元二次型"><a href="#二元二次型" class="headerlink" title="二元二次型"></a><strong>二元二次型</strong></h2><p>数$209$可以用两种方式表达为$a^2 + 3ab + b^2$：</p>
+<p>$$\begin{aligned}<br>209 &amp;= 8^2 + 3\cdot 8\cdot 5 + 5^2 \\<br>209 &amp;= 13^2 + 3\cdot13\cdot 1 + 1^2<br>\end{aligned}<br>$$</p>
+<p>记$f(n,r)$为不超过$n$且恰好可以用$r$种方式表达为$k=a^2 + 3ab + b^2$的整数$k$的数目，其中整数$a\gt b&gt;0$。</p>
 <p>已知$f(10^5, 4) = 237$以及$f(10^8, 6) = 59517$。</p>
 <p>求$f(10^{15}, 40)$。</p>
 <hr>
@@ -23072,6 +23072,140 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>例如，$f(4, 2) = 2$：不妨假设吊灯上的四个烛台恰好指向正东、正西、正南、正北方向，那么符合要求的两种方案是“正北和正南”以及“正东和正西”。注意尽管这两种方案可以经过旋转重合，但仍视为不同的方案。</p>
 <p>此外，还已知$f(12,4) = 15$以及$f(36, 6) = 876$。</p>
 <p>求$f(360, 20)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 769</title>
+    <url>/769/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-769"><a href="#Problem-769" class="headerlink" title="Problem 769"></a><a href="https://projecteuler.net/problem=769" target="_blank" rel="noopener">Problem 769</a></h1><hr>
+<h2 id="Binary-Quadratic-Form-II"><a href="#Binary-Quadratic-Form-II" class="headerlink" title="Binary Quadratic Form II"></a><strong>Binary Quadratic Form II</strong></h2><p>Consider the following binary quadratic form:</p>
+<p>$$f(x,y)=x^2+5xy+3y^2$$</p>
+<p>A positive integer $q$ has a primitive representation if there exist positive integers $x$ and $y$ such that $q = f(x,y)$ and $\gcd(x,y)=1$.</p>
+<p>We are interested in primitive representations of perfect squares. For example: <br /><br>$17^2=f(1,9)$ <br /><br>$87^2=f(13,40) = f(46,19)$</p>
+<p>Define $C(N)$ as the total number of primitive representations of $z^2$ for $0 &lt; z \leq N$.<br /><br>Multiple representations are counted separately, so for example $z=87$ is counted twice.</p>
+<p>You are given $C(10^3)=142$ and $C(10^{6})=142463$. </p>
+<p>Find $C(10^{14})$.</p>
+<hr>
+<h2 id="二元二次型II"><a href="#二元二次型II" class="headerlink" title="二元二次型II"></a><strong>二元二次型II</strong></h2><p>考虑如下二元二次型：</p>
+<p>$$f(x,y)=x^2+5xy+3y^2$$</p>
+<p>对于正整数$q$，若存在正整数$x$和$y$使得$q=f(x,y)$且$\gcd(x,y)=1$，则称之为$q$的本原表达式。</p>
+<p>我们感兴趣的是完全平方数的本原表达式。例如：<br /><br>$17^2=f(1,9)$ <br /><br>$87^2=f(13,40) = f(46,19)$</p>
+<p>记$C(N)$为所有满足$0 &lt; z \leq N$的完全平方数$z^2$的本原表达式数目之和。<br /><br>同一个数的不同本原表达式单独计入，因此如$z=87$就有两组本原表达式。</p>
+<p>已知$C(10^3)=142$和$C(10^{6})=142463$。</p>
+<p>求$C(10^{14})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 770</title>
+    <url>/770/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-770"><a href="#Problem-770" class="headerlink" title="Problem 770"></a><a href="https://projecteuler.net/problem=770" target="_blank" rel="noopener">Problem 770</a></h1><hr>
+<h2 id="Delphi-Flip"><a href="#Delphi-Flip" class="headerlink" title="Delphi Flip"></a><strong>Delphi Flip</strong></h2><p>A and B play a game. A has originally $1$ gram of gold and B has an unlimited amount. Each round goes as follows:</p>
+<ul>
+<li>A chooses and displays, $x$, a nonnegative real number no larger than the amount of gold that A has.</li>
+<li>Either B chooses to TAKE. Then A gives B $x$ grams of gold.</li>
+<li>Or B chooses to GIVE. Then B gives A $x$ grams of gold.</li>
+</ul>
+<p>B TAKEs $n$ times and GIVEs $n$ times after which the game finishes.</p>
+<p>Define $g(X)$ to be the smallest value of $n$ so that A can guarantee to have at least $X$ grams of gold at the end of the game. You are given $g(1.7) = 10$.</p>
+<p>Find $g(1.9999)$.</p>
+<hr>
+<h2 id="狡诈的先知"><a href="#狡诈的先知" class="headerlink" title="狡诈的先知"></a><strong>狡诈的先知</strong></h2><p>A和B正在玩一个游戏。游戏开始时，A持有$1$克黄金，而B则持有无穷的黄金。在每一轮游戏中：</p>
+<ul>
+<li>A选择并展示一个非负数实数$x$，且$x$不超过A持有的黄金数量。</li>
+<li>B可以选择<i class=zh>拿走</i>，此时A必须将$x$克黄金交给B。</li>
+<li>B也可以选择<i class=zh>赠予</i>，此时B必须将$x$克黄金交给A。</li>
+</ul>
+<p>当B选择了恰好各$n$次<i class=zh>拿走</i>和<i class=zh>赠予</i>后，游戏结束。</p>
+<p>记$g(X)$为最小的$n$，使得A能保证游戏结束时至少持有$X$克黄金。已知$g(1.7) = 10$。</p>
+<p>求$g(1.9999)$。</p>
+<p><i class=zh>译注：本题源自《科学美国人》2001年8月刊同名谜题，大意是赌徒向先知请教接下来数次硬币抛掷的结果，先知虽然能够准确预测未来，但偶尔也会撒谎，赌徒需要决定如何下注以最大化收益。</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 771</title>
+    <url>/771/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-771"><a href="#Problem-771" class="headerlink" title="Problem 771"></a><a href="https://projecteuler.net/problem=771" target="_blank" rel="noopener">Problem 771</a></h1><hr>
+<h2 id="Pseudo-Geometric-Sequences"><a href="#Pseudo-Geometric-Sequences" class="headerlink" title="Pseudo Geometric Sequences"></a><strong>Pseudo Geometric Sequences</strong></h2><p>We define a <i>pseudo-geometric sequence</i> to be a finite sequence $a_0, a_1, \ldots, a_n$ of positive integers, satisfying the following conditions:</p>
+<ul>
+<li>$n \geq 4$, i.e. the sequence has at least 5 terms.</li>
+<li>$0 &lt; a_0 &lt; a_1 &lt; \ldots &lt; a_n$, i.e. the sequence is strictly increasing.</li>
+<li>$| a_i^2 - a_{i - 1}a_{i + 1} | \le 2$ for $1 \le i \le n-1$.</li>
+</ul>
+<p>Let $G(N)$ be the number of different pseudo-geometric sequences whose terms do not exceed $N$.<br /><br>For example, $G(6) = 4$, as the following $4$ sequences give a complete list:</p>
+<p>$$1, 2, 3, 4, 5 \qquad 1, 2, 3, 4, 6 \qquad 2, 3, 4, 5, 6 \qquad 1, 2, 3, 4, 5, 6$$</p>
+<p>Also, $G(10) = 26$, $G(100) = 4710$ and $G(1000) = 496805$.</p>
+<p>Find $G(10^{18})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="伪等比数列"><a href="#伪等比数列" class="headerlink" title="伪等比数列"></a><strong>伪等比数列</strong></h2><p>我们定义满足如下条件的有限正整数数列$a_0, a_1, \ldots, a_n$为<i class=zh>伪等比数列</i>：</p>
+<ul>
+<li>$n \geq 4$，即数列至少有5项。</li>
+<li>$0 &lt; a_0 &lt; a_1 &lt; \ldots &lt; a_n$，即数列严格递增。</li>
+<li>对于$1 \le i \le n-1$，均有$| a_i^2 - a_{i - 1}a_{i + 1} | \le 2$。</li>
+</ul>
+<p>记$G(N)$为各项均不超过$N$的不同伪等比数列的总数。<br /><br>例如，$G(6) = 4$，这$4$种数列如下所示：</p>
+<p>$$1, 2, 3, 4, 5 \qquad 1, 2, 3, 4, 6 \qquad 2, 3, 4, 5, 6 \qquad 1, 2, 3, 4, 5, 6$$</p>
+<p>此外还已知$G(10) = 26$，$G(100) = 4710$以及$G(1000) = 496805$。</p>
+<p>求$G(10^{18})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 772</title>
+    <url>/772/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-772"><a href="#Problem-772" class="headerlink" title="Problem 772"></a><a href="https://projecteuler.net/problem=772" target="_blank" rel="noopener">Problem 772</a></h1><hr>
+<h2 id="Balanceable-k-bounded-partitions"><a href="#Balanceable-k-bounded-partitions" class="headerlink" title="Balanceable $k$-bounded partitions"></a><strong>Balanceable $k$-bounded partitions</strong></h2><p>A $k$-bounded partition of a positive integer $N$ is a way of writing $N$ as a sum of positive integers not exceeding $k$.</p>
+<p>A balanceable partition is a partition that can be further divided into two parts of equal sums.</p>
+<p>For example, $3 + 2 + 2 + 2 + 2 + 1$ is a balanceable $3$-bounded partition of $12$ since $3 + 2 + 1 = 2 + 2 + 2$. Conversely, $3 + 3 + 3 + 1$ is a $3$-bounded partition of $10$ which is not balanceable.</p>
+<p>Let $f(k)$ be the smallest positive integer $N$ all of whose $k$-bounded partitions are balanceable. For example, $f(3) = 12$ and $f(30) \equiv 179092994 \pmod {1\ 000\ 000\ 007}$.</p>
+<p>Find $f(10^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="可平衡-k-有界分拆"><a href="#可平衡-k-有界分拆" class="headerlink" title="可平衡$k$-有界分拆"></a><strong>可平衡$k$-有界分拆</strong></h2><p>正整数$N$的分拆是指将$N$写作一系列正整数之和。若这些正整数均不超过$k$，则称之为$k$-有界分拆。若这些正整数能分成和相同的两组，则称之为可平衡分拆。</p>
+<p>例如，$3 + 2 + 2 + 2 + 2 + 1$是$12$的一种可平衡$3$-有界分拆，因为$3 + 2 + 1 = 2 + 2 + 2$。反之，$3 + 3 + 3 + 1$是$10$的一种$3$-有界分拆，但不是可平衡分拆。</p>
+<p>记$f(k)$是最小的正整数$N$，使得其所有的$k$-有界分拆都是可平衡分拆。例如，$f(3) = 12$，$f(30) \equiv 179092994 \pmod {1\ 000\ 000\ 007}$。</p>
+<p>求$f(10^8)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 773</title>
+    <url>/773/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-773"><a href="#Problem-773" class="headerlink" title="Problem 773"></a><a href="https://projecteuler.net/problem=773" target="_blank" rel="noopener">Problem 773</a></h1><hr>
+<h2 id="Ruff-Numbers"><a href="#Ruff-Numbers" class="headerlink" title="Ruff Numbers"></a><strong>Ruff Numbers</strong></h2><p>Let $S_k$ be the set containing $2$ and $5$ and the first $k$ primes that end in $7$. For example, $S_3 = \{2,5,7,17,37\}$.</p>
+<p>Define a $k$-<i>Ruff</i> number to be one that is not divisible by any element in $S_k$.</p>
+<p>If $N_k$ is the product of the numbers in $S_k$ then define $F(k)$ to be the sum of all $k$-Ruff numbers less than $N_k$ that have last digit $7$. You are given $F(3) = 76101452$.</p>
+<p>Find $F(97)$, give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="仿粗糙数"><a href="#仿粗糙数" class="headerlink" title="仿粗糙数"></a><strong>仿粗糙数</strong></h2><p>记$S_k$为$2$、$5$和前$k$个以$7$结尾的素数所构成的集合。例如，$S_3 = \{2,5,7,17,37\}$。</p>
+<p>如果一个数不能被$S_k$中的任意元素整除，则称之为$k$-<i class=zh>仿粗糙数</i>。</p>
+<p>若$N_k$为$S_k$中的元素之积，则定义$F(k)$为所有小于$N_k$且以$7$结尾的$k$-仿粗糙数之和。已知$F(3) = 76101452$。</p>
+<p>求$F(97)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 774</title>
+    <url>/774/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-774"><a href="#Problem-774" class="headerlink" title="Problem 774"></a><a href="https://projecteuler.net/problem=774" target="_blank" rel="noopener">Problem 774</a></h1><hr>
+<h2 id="Conjunctive-Sequences"><a href="#Conjunctive-Sequences" class="headerlink" title="Conjunctive Sequences"></a><strong>Conjunctive Sequences</strong></h2><p>$\&amp;$ denote the bitwise AND operation.<br><br>For example, $10\ \&amp;\ 12 = 1010_2\ \&amp;\ 1100_2 = 1000_2 = 8$.</p>
+<p>We shall call a finite sequence of non-negative integers $(a_1, a_2, \ldots, a_n)$ <i>conjunctive</i> if $a_i\ \&amp;\ a_{i+1} \neq 0$ for all $i=1\ldots n-1$.</p>
+<p>Define $c(n,b)$ to be the number of conjunctive sequences of length $n$ in which all terms are $\le b$.</p>
+<p>You are given that $c(3,4)=18$, $c(10,6)=2496120$, and $c(100,200) \equiv 268159379 \pmod {998244353}$.</p>
+<p>Find $c(123,123456789)$. Give your answer modulo $998244353$.</p>
+<hr>
+<h2 id="合取数列"><a href="#合取数列" class="headerlink" title="合取数列"></a><strong>合取数列</strong></h2><p>$\&amp;$表示按位与操作。<br><br>例如，$10\ \&amp;\ 12 = 1010_2\ \&amp;\ 1100_2 = 1000_2 = 8$。</p>
+<p>若有限非负整数列$(a_1, a_2, \ldots, a_n)$满足，对所有$i=1\ldots n-1$均有$a_i\ \&amp;\ a_{i+1} \neq 0$，则称之为<i class=zh>合取</i>数列。</p>
+<p>记$c(n,b)$为所有长度为$n$且各项均$\le b$的合取数列的数目。</p>
+<p>已知$c(3,4)=18$，$c(10,6)=2496120$，以及$c(100,200) \equiv 268159379 \pmod {998244353}$。</p>
+<p>求$c(123,123456789)$，并将你的答案对$998244353$取余。</p>
 <hr>
 ]]></content>
   </entry>
