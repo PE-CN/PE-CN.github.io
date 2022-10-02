@@ -23336,4 +23336,206 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 781</title>
+    <url>/781/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-781"><a href="#Problem-781" class="headerlink" title="Problem 781"></a><a href="https://projecteuler.net/problem=781" target="_blank" rel="noopener">Problem 781</a></h1><hr>
+<h2 id="Feynman-Diagrams"><a href="#Feynman-Diagrams" class="headerlink" title="Feynman Diagrams"></a><strong>Feynman Diagrams</strong></h2><p>Let $F(n)$ be the number of connected graphs with blue edges (directed) and red edges (undirected) containing:</p>
+<ul>
+<li>two vertices of degree $1$, one with a single outgoing blue edge and the other with a single incoming blue edge.</li>
+<li>$n$ vertices of degree $3$, each of which has an incoming blue edge, a <b>different</b> outgoing blue edge and a red edge.</li>
+</ul>
+<p>For example, $F(4)=5$ because there are $5$ graphs with these properties:</p>
+<p><img src="https://projecteuler.net/project/images/p781_feynman_diagrams.jpg" alt=""></p>
+<p>You are also given $F(8)=319$.</p>
+<p>Find $F(50\ 000)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<p>NOTE: Feynman diagrams are a way of visualising the forces between elementary particles. Vertices represent interactions. The blue edges in our diagrams represent matter particles (e.g. electrons or positrons) with the arrow representing the flow of charge. The red edges (normally wavy lines) represent the force particles (e.g. photons). Feynman diagrams are used to predict the strength of particle interactions.</p>
+<hr>
+<h2 id="费曼图"><a href="#费曼图" class="headerlink" title="费曼图"></a><strong>费曼图</strong></h2><p>考虑由蓝色边（有向）和红色边（无向）组成的连通图，记$F(n)$为其中满足如下条件的图的数目：</p>
+<ul>
+<li>有两个度为$1$的顶点，其中一个只有一条蓝色出边，另一个只有一条蓝色入边。</li>
+<li>有$n$个度为$3$的顶点，每一个均有一条蓝色入边，<b>另一条</b>蓝色出边，和一条红边。</li>
+</ul>
+<p>例如，$F(4)=5$，因为有$5$种满足上述条件的图：</p>
+<p><img src="https://projecteuler.net/project/images/p781_feynman_diagrams.jpg" alt=""></p>
+<p>已知$F(8)=319$。</p>
+<p>求$F(50\ 000)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<p>注：费曼图是一种形象化展示基本粒子之间相互作用的方法，其中：顶点代表相互作用；蓝色边代表实物粒子（例如电子和正电子），其方向表示电荷的移动方向；红色边（通常用曲线表示）代表力场粒子（例如光子）。费曼图通常用于预测粒子间相互作用的强度。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 782</title>
+    <url>/782/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-782"><a href="#Problem-782" class="headerlink" title="Problem 782"></a><a href="https://projecteuler.net/problem=782" target="_blank" rel="noopener">Problem 782</a></h1><hr>
+<h2 id="Distinct-Rows-and-Columns"><a href="#Distinct-Rows-and-Columns" class="headerlink" title="Distinct Rows and Columns"></a><strong>Distinct Rows and Columns</strong></h2><p>The <i>complexity</i> of an $n\times n$ binary matrix is the number of distinct rows and columns.</p>
+<p>For example, consider the $3\times 3$ matrices<br>$$        \mathbf{A} = \begin{pmatrix} 1 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 0\\1 &amp; 0 &amp; 1\end{pmatrix}    \quad<br>        \mathbf{B} = \begin{pmatrix} 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1\end{pmatrix}    $$<br>$\mathbf{A}$ has complexity $2$ because the set of rows and columns is ${000,101}$.<br /><br>$\mathbf{B}$ has complexity $3$ because the set of rows and columns is ${000,001,111}$.</p>
+<p>For $0 \le k \le n^2$, let $c(n, k)$ be the <b>minimum</b> complexity of an $n\times n$ binary matrix with exactly $k$ ones.</p>
+<p>Let<br>$$C(n) = \sum_{k=0}^{n^2} c(n, k)$$<br>For example, $C(2) = c(2, 0) + c(2, 1) + c(2, 2) + c(2, 3) + c(2, 4) = 1 + 2 + 2 + 2 + 1 = 8$.<br /><br>You are given $C(5) = 64$, $C(10) = 274$ and $C(20) = 1150$.</p>
+<p>Find $C(10^4)$.</p>
+<hr>
+<h2 id="不同的行与列"><a href="#不同的行与列" class="headerlink" title="不同的行与列"></a><strong>不同的行与列</strong></h2><p>对于一个$n\times n$的$01$矩阵，其<i class=zh>复杂度</i>等于其不同的行与列的数量。</p>
+<p>例如，考虑如下的$3\times 3$矩阵<br>$$        \mathbf{A} = \begin{pmatrix} 1 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 0\\1 &amp; 0 &amp; 1\end{pmatrix}    \quad<br>        \mathbf{B} = \begin{pmatrix} 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1\end{pmatrix}    $$<br>$\mathbf{A}$的复杂度为$2$，因为它不同的行与列构成的集合为${000,101}$。<br /><br>$\mathbf{B}$的复杂度为$3$，因为它不同的行与列构成的集合为${000,001,111}$。</p>
+<p>对于$0 \le k \le n^2$，记$c(n, k)$为$n\times n$的$01$矩阵中，包含恰好$k$个$1$的此类矩阵的<b>最小</b>复杂度。</p>
+<p>记<br>$$C(n) = \sum_{k=0}^{n^2} c(n, k)$$<br>例如，$C(2) = c(2, 0) + c(2, 1) + c(2, 2) + c(2, 3) + c(2, 4) = 1 + 2 + 2 + 2 + 1 = 8$。<br/><br>已知$C(5) = 64$，$C(10) = 274$，$C(20) = 1150$。</p>
+<p>求$C(10^4)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 785</title>
+    <url>/785/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-785"><a href="#Problem-785" class="headerlink" title="Problem 785"></a><a href="https://projecteuler.net/problem=785" target="_blank" rel="noopener">Problem 785</a></h1><hr>
+<h2 id="Symmetric-Diophantine-equation"><a href="#Symmetric-Diophantine-equation" class="headerlink" title="Symmetric Diophantine equation"></a><strong>Symmetric Diophantine equation</strong></h2><p>Consider the following Diophantine equation:<br>$$15  (x^2 + y^2 + z^2) = 34  (xy + yz + zx)$$<br>where $x$, $y$ and $z$ are positive integers.</p>
+<p>Let $S(N)$ be the sum of all solutions, $(x,y,z)$, of this equation such that, $1 \le x \le y \le z \le N$ and $\gcd(x, y, z) = 1$.</p>
+<p>For $N = 10^2$, there are three such solutions - $(1, 7, 16), (8, 9, 39), (11, 21, 72)$. So $S(10^2) = 184$.</p>
+<p>Find $S(10^9)$.</p>
+<hr>
+<h2 id="对称丢番图方程"><a href="#对称丢番图方程" class="headerlink" title="对称丢番图方程"></a><strong>对称丢番图方程</strong></h2><p>考虑如下丢番图方程：<br>$$15  (x^2 + y^2 + z^2) = 34  (xy + yz + zx)$$<br>其中$x$、$y$、$z$均为正整数。</p>
+<p>对于上述方程满足$1 \le x \le y \le z \le N$和$\gcd(x, y, z) = 1$的解$(x,y,z)$，记$S(N)$为所有这些解之和。</p>
+<p>对于$N = 10^2$，共有三组这样的解：$(1, 7, 16), (8, 9, 39), (11, 21, 72)$，因此$S(10^2) = 184$。</p>
+<p>求$S(10^9)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 783</title>
+    <url>/783/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-783"><a href="#Problem-783" class="headerlink" title="Problem 783"></a><a href="https://projecteuler.net/problem=783" target="_blank" rel="noopener">Problem 783</a></h1><hr>
+<h2 id="Urns"><a href="#Urns" class="headerlink" title="Urns"></a><strong>Urns</strong></h2><p>Given $n$ and $k$ two positive integers we begin with an urn that contains $kn$ white balls. We then proceed through $n$ turns where on each turn $k$ black balls are added to the urn and then $2k$ random balls are removed from the urn.</p>
+<p>We let $B_t(n,k)$ be the number of black balls that are removed on turn $t$.</p>
+<p>Further define $E(n,k)$ as the expectation of $\displaystyle \sum_{t=1}^n B_t(n,k)^2$.</p>
+<p>You are given $E(2,2) = 9.6$</p>
+<p>Find $E(10^6,10)$. Round your answer to the nearest whole number.</p>
+<hr>
+<h2 id="罐子"><a href="#罐子" class="headerlink" title="罐子"></a><strong>罐子</strong></h2><p>对于给定的正整数$n$和$k$，考虑一个一开始装有$kn$个白球的罐子。在之后的$n$轮中，每一轮我们向罐中加入$k$个黑球，再随机拿出$2k$个任意颜色的球，</p>
+<p>记$B_t(n,k)$为在第$t$轮拿出的黑球的数目。</p>
+<p>再记$E(n,k)$为$\displaystyle \sum_{t=1}^n B_t(n,k)^2$的期望值。</p>
+<p>已知$E(2,2) = 9.6$。</p>
+<p>求$E(10^6,10)$，并将你的答案四舍五入至整数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 784</title>
+    <url>/784/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-784"><a href="#Problem-784" class="headerlink" title="Problem 784"></a><a href="https://projecteuler.net/problem=784" target="_blank" rel="noopener">Problem 784</a></h1><hr>
+<h2 id="Reciprocal-Pairs"><a href="#Reciprocal-Pairs" class="headerlink" title="Reciprocal Pairs"></a><strong>Reciprocal Pairs</strong></h2><p>Let’s call a pair of positive integers $p$, $q$ ($p \lt q$) <i>reciprocal</i>, if there is a positive integer $r\lt p$ such that $r$ equals both the inverse of $p$ modulo $q$ and the inverse of $q$ modulo $p$.</p>
+<p>For example, $(3,5)$ is one reciprocal pair for $r=2$. <br /><br>Let $F(N)$ be the total sum of $p+q$ for all reciprocal pairs $(p,q)$ where $p \le N$.</p>
+<p>$F(5)=59$ due to these four reciprocal pairs $(3,5)$, $(4,11)$, $(5,7)$ and $(5,19)$. <br /><br>You are also given $F(10^2) = 697317$.</p>
+<p>Find $F(2\cdot 10^6)$.</p>
+<hr>
+<h2 id="模倒数对"><a href="#模倒数对" class="headerlink" title="模倒数对"></a><strong>模倒数对</strong></h2><p>对于正整数$p$和$q$（满足$p \lt q$），若存在正整数$r \lt p$使得$r$同时是$p$同余$q$的逆元和$q$同余$p$的逆元，则称这两个正整数互为<i class=zh>模倒数</i>。</p>
+<p>例如，$(3,5)$是一组模倒数对，其对应的$r=2$。<br /><br>对所有满足$p\le N$的模倒数对$(p,q)$，记$F(N)$为所有$p+q$之和。</p>
+<p>例如，$F(5)=59$，因为共有四组模倒数对$(3,5)$、$(4,11)$、$(5,7)$和$(5,19)$。<br /><br>已知$F(10^2) = 697317$。</p>
+<p>求$F(2\cdot 10^6)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 786</title>
+    <url>/786/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-786"><a href="#Problem-786" class="headerlink" title="Problem 786"></a><a href="https://projecteuler.net/problem=786" target="_blank" rel="noopener">Problem 786</a></h1><hr>
+<h2 id="Billiard"><a href="#Billiard" class="headerlink" title="Billiard"></a><strong>Billiard</strong></h2><p>The following diagram shows a billiard table of a special quadrilateral shape. The four angles $A, B, C, D$ are $120^\circ, 90^\circ, 60^\circ, 90^\circ$ respectively, and the lengths $AB$ and $AD$ are equal.</p>
+<p><img src="https://projecteuler.net/project/images/p786_billiard_shape.jpg" alt=""></p>
+<p>The diagram on the left shows the trace of an infinitesimally small billiard ball, departing from point $A$, bouncing twice on the edges of the table, and finally returning back to point $A$. The diagram on the right shows another such trace, but this time bouncing eight times:</p>
+<p><img src="https://projecteuler.net/project/images/p786_billiard_traces.jpg" alt=""></p>
+<p>The table has no friction and all bounces are perfect elastic collisions.<br>Note that no bounce should happen on any of the corners, as the behaviour would be unpredictable.</p>
+<p>Let $B(N)$ be the number of possible traces of the ball, departing from point $A$, bouncing at most $N$ times on the edges and returning back to point $A$.</p>
+<p>For example, $B(10) = 6$, $B(100) = 478$, $B(1000) = 45790$.</p>
+<p>Find $B(10^9)$.</p>
+<hr>
+<h2 id="台球"><a href="#台球" class="headerlink" title="台球"></a><strong>台球</strong></h2><p>下图展示了一张特别的四边形台球桌。其四个角$A, B, C, D$分别为$120^\circ, 90^\circ, 60^\circ, 90^\circ$，且边$AB$和$AD$等长。</p>
+<p><img src="https://projecteuler.net/project/images/p786_billiard_shape.jpg" alt=""></p>
+<p>下图左侧展示了由$A$点出发的一颗任意小的台球，沿桌边反弹两次后回到$A$点的路径。下图右侧则展示了另一条从$A$点出发反弹八次回到起点的路径。</p>
+<p><img src="https://projecteuler.net/project/images/p786_billiard_traces.jpg" alt=""></p>
+<p>假设桌面没有摩擦，且每次反弹均是完美碰撞。<br>注意反弹不能发生在任意一个角上，因为此时台球的运动行为将会无法预测。</p>
+<p>记$B(N)$为台球从$A$点出发，反弹至多$N$次后返回$A$点的所有可能的路径数目。</p>
+<p>例如，$B(10) = 6$，$B(100) = 478$，$B(1000) = 45790$。</p>
+<p>求$B(10^9)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 787</title>
+    <url>/787/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-787"><a href="#Problem-787" class="headerlink" title="Problem 787"></a><a href="https://projecteuler.net/problem=787" target="_blank" rel="noopener">Problem 787</a></h1><hr>
+<h2 id="Bezout’s-Game"><a href="#Bezout’s-Game" class="headerlink" title="Bézout’s Game"></a><strong>Bézout’s Game</strong></h2><p>Two players play a game with two piles of stones. They take alternating turns. If there are currently $a$ stones in the first pile and $b$ stones in the second, a turn consists of removing $c\ge 0$ stones from the first pile and $d\ge 0$ from the second in such a way that $ad-bc=\pm1$. The winner is the player who first empties one of the piles.</p>
+<p>Note that the game is only playable if the sizes of the two piles are coprime.</p>
+<p>A game state $(a, b)$ is a winning position if the next player can guarantee a win with optimal play. Define $H(N)$ to be the number of winning positions $(a, b)$ with $\gcd(a,b)=1$, $a &gt; 0$, $b &gt; 0$ and $a+b \leq N$. Note the order matters, so for example $(2,1)$ and $(1,2)$ are distinct positions.</p>
+<p>You are given $H(4)=5$ and $H(100)=2043$.</p>
+<p>Find $H(10^9)$.</p>
+<hr>
+<h2 id="裴蜀游戏"><a href="#裴蜀游戏" class="headerlink" title="裴蜀游戏"></a><strong>裴蜀游戏</strong></h2><p>两名玩家正在用两堆石子玩游戏。他们轮流行动，若当前第一堆有$a$枚石子而第二堆有$b$枚，则这一轮的玩家可以从第一堆移除$c \ge 0$枚石子并从第二堆移除$d \ge 0$枚石子且满足$ad-bc=\pm 1$。首先将其中一堆石子清空的玩家获胜。</p>
+<p>注意这个游戏只有在两堆石子的数目互质时才能进行。</p>
+<p>若玩家面对游戏状态$(a,b)$时按照最优策略必定获胜，则称该游戏状态为必胜态。记$H(N)$为满足$\gcd(a,b)=1$，$a&gt;0$，$b&gt;0$和$a+b \leq N$的必胜态$(a,b)$的数目。在计算数目时需要注意顺序，例如$(2,1)$和$(1,2)$应视为不同的游戏状态。</p>
+<p>已知$H(4)=5$和$H(100)=2043$。</p>
+<p>求$H(10^9)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 789</title>
+    <url>/789/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-789"><a href="#Problem-789" class="headerlink" title="Problem 789"></a><a href="https://projecteuler.net/problem=789" target="_blank" rel="noopener">Problem 789</a></h1><hr>
+<h2 id="Minimal-pairing-modulo-p"><a href="#Minimal-pairing-modulo-p" class="headerlink" title="Minimal pairing modulo $p$"></a><strong>Minimal pairing modulo $p$</strong></h2><p>Given an odd prime $p$, put the numbers $1, \ldots, p-1$ into $\frac{p-1}{2}$ pairs such that each number appears exactly once. Each pair $(a,b)$ has a cost of $ab \bmod p$. For example, if $p=5$ the pair $(3,4)$ has a cost of $12 \bmod 5 = 2$.</p>
+<p>The <i>total cost</i> of a pairing is the sum of the costs of its pairs. We say that such pairing is optimal if its total cost is minimal for that $p$.</p>
+<p>For example, if $p = 5$, then there is a unique optimal pairing: $(1, 2), (3, 4)$, with total cost of $2 + 2 = 4$.</p>
+<p>The <i>cost product</i> of a pairing is the product of the costs of its pairs. For example, the cost product of the optimal pairing for $p = 5$ is $2 \cdot 2 = 4$.</p>
+<p>It turns out that all optimal pairings for $p = 2\ 000\ 000\ 011$ have the same cost product.</p>
+<p>Find the value of this product.</p>
+<hr>
+<h2 id="模-p-余数的最优配对"><a href="#模-p-余数的最优配对" class="headerlink" title="模$p$余数的最优配对"></a><strong>模$p$余数的最优配对</strong></h2><p>对于给定的奇质数$p$，将整数$1, \ldots, p-1$分成$\frac{p-1}{2}$对并保证每个整数只出现一次。每一对$(a,b)$的成本为$ab \bmod p$。例如，若$p=5$，那么整数对$(3,4)$的成本为$12 \bmod 5 = 2$。</p>
+<p>一组配对的<i class=zh>总成本</i>是其中每一整数对的成本之和。对于$p$，我们称总成本最小的配对为最优配对。</p>
+<p>例如，若$p = 5$，存在唯一的最优配对$(1, 2), (3, 4)$，其总成本为$2 + 2 = 4$。</p>
+<p>一组配对的<i class=zh>成本积</i>是其中每一整数对的成本的乘积。例如，上述$p=5$的最优配对的成本积是$2 \cdot 2 = 4$。</p>
+<p>已知$p = 2\ 000\ 000\ 011$的所有最优配对都有相同的成本积。</p>
+<p>求该成本积的值。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 788</title>
+    <url>/788/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-788"><a href="#Problem-788" class="headerlink" title="Problem 788"></a><a href="https://projecteuler.net/problem=788" target="_blank" rel="noopener">Problem 788</a></h1><hr>
+<h2 id="Dominating-Numbers"><a href="#Dominating-Numbers" class="headerlink" title="Dominating Numbers"></a><strong>Dominating Numbers</strong></h2><p>A <i>dominating number</i> is a positive integer that has more than half of its digits equal.</p>
+<p>For example, $2022$ is a dominating number because three of its four digits are equal to $2$. But $2021$ is not a dominating number.</p>
+<p>Let $D(N)$ be how many dominating numbers are less than $10^N$. For example, $D(4) = 603$ and $D(10) = 21893256$.</p>
+<p>Find $D(2022)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="支配数"><a href="#支配数" class="headerlink" title="支配数"></a><strong>支配数</strong></h2><p><i class=zh>支配数</i>是指有一半以上数字相同的正整数。</p>
+<p>例如，$2022$是支配数，因为其四个数字中有三个是$2$。反之，$2021$不是一个支配数。</p>
+<p>记$D(N)$为小于$10^N$的支配数的数目。例如，$D(4) = 603$，$D(10) = 21893256$。</p>
+<p>求$D(2022)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 790</title>
+    <url>/790/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-790"><a href="#Problem-790" class="headerlink" title="Problem 790"></a><a href="https://projecteuler.net/problem=790" target="_blank" rel="noopener">Problem 790</a></h1><hr>
+<h2 id="Clock-Grid"><a href="#Clock-Grid" class="headerlink" title="Clock Grid"></a><strong>Clock Grid</strong></h2><p>There is a grid of length and width $50515093$ points. A clock is placed on each grid point. The clocks are all analogue showing a single hour hand initially pointing at $12$.</p>
+<p>A sequence $S_t$ is created where:<br>$$<br>\begin{aligned}<br>S_0 &amp; = 290797 &amp;\\<br>S_t &amp; = S_{t-1}^2 \bmod 50515093 &amp; t&gt;0<br>\end{aligned}<br>$$<br>The four numbers $N_t = (S_{4t-4}, S_{4t-3}, S_{4t-2}, S_{4t-1})$ represent a range within the grid, with the first pair of numbers representing the x-bounds and the second pair representing the y-bounds. For example, if $N_t = (3,9,47,20)$, the range would be $3\le x\le 9$ and $20\le y\le47$, and would include $196$ clocks.</p>
+<p>For each $t$ $(t&gt;0)$, the clocks within the range represented by $N_t$ are moved to the next hour $12\rightarrow 1\rightarrow 2\rightarrow \cdots $.</p>
+<p>We define $C(t)$ to be the sum of the hours that the clock hands are pointing to after timestep $t$.<br>You are given $C(0) = 30621295449583788$, $C(1) =  30613048345941659$, $C(10) = 21808930308198471$ and $C(100) = 16190667393984172$.</p>
+<p>Find $C(10^5)$.</p>
+<hr>
+<h2 id="时钟格阵"><a href="#时钟格阵" class="headerlink" title="时钟格阵"></a><strong>时钟格阵</strong></h2><p>考虑一个长和宽均包含$50515093$个点的格阵，每个格点上都放置有一台时钟。所有的时钟盘面上都只包含一根时针，且在开始时时针均指向$12$。</p>
+<p>序列$S_t$按如下方式定义：<br>$$<br>\begin{aligned}<br>S_0 &amp; = 290797 &amp;\\<br>S_t &amp; = S_{t-1}^2 \bmod 50515093 &amp; t&gt;0<br>\end{aligned}<br>$$<br>四个数$N_t = (S_{4t-4}, S_{4t-3}, S_{4t-2}, S_{4t-1})$代表了格阵的一部分，其中第一对数表示横轴的范围，第二对数表示纵轴的范围。例如，若$N_t = (3,9,47,20)$，相应的格阵范围满足$3\le x\le 9$和$20\le y\le47$，其中包含$196$个时钟。</p>
+<p>对于每个$t$ $(t&gt;0)$，包含在上述由$N_t$描述的格阵范围内的所有时钟均往后拨一小时，也即$12\rightarrow 1\rightarrow 2\rightarrow \cdots $。</p>
+<p>记$C(t)$为经过第$t$步后，所有时钟时针所指向的数之和。<br>已知$C(0) = 30621295449583788$，$C(1) =  30613048345941659$，$C(10) = 21808930308198471$，$C(100) = 16190667393984172$。</p>
+<p>求$C(10^5)$。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
