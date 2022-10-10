@@ -17437,13 +17437,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>Note that even though such a sequence is uniquely determined by $n,e$ and $a_0$, for most values such a sequence does not exist. For example, no $(n,e)$-MPS exists for $n&lt;6$.</p>
 <p>Define $C(n)$ to be the number of $(n,e)$-MPS for some $e$, and $D(N)=\sum_{n=2}^NC(n)$. </p>
 <p>You are given that $D(10)=2$, $D(100)=21$, $D(1000)=69$, $D(10^6)=1303$ and D$(10^{12})=1014800$.</p>
-<p>Find $D(10^18)$.</p>
+<p>Find $D(10^{18})$.</p>
 <hr>
 <h2 id="镜像幂序列"><a href="#镜像幂序列" class="headerlink" title="镜像幂序列"></a><strong>镜像幂序列</strong></h2><p>对于两个整数$n,e&gt;1$，我们定义满足如下条件的无穷整数序列$(a_i)_i\ge0$为$(n,e)$-<i class=zh>MPS（镜像幂序列）</i>：对于所有$i\ge0$，都有$a_{i+1}=\min(a^e_i,n−a^e_i)$以及 $a_i&gt;1$。<br>这类序列的例子包括两个由交替的2和4构成的(18,2)-MPS。</p>
 <p>注意到，尽管这样的序列总是被$n$，$e$和$a_0$唯一确定，但对于大多数的取值这样的序列并不存在。例如，不存在任何$n&lt;6$的$(n,e)$-MPS。</p>
 <p>记$C(n)$为$e$可以任意选择时所有$(n,e)$-MPS的数量，并记$D(N)=\sum_{n=2}^NC(n)$。</p>
 <p>已知$D(10)=2$，$D(100)=21$，$D(1000)=69$，$D(10^6)=1303$以及$D(10^{12})=1014800$。</p>
-<p>求$D(10^18)$。</p>
+<p>求$D(10^{18})$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -17504,8 +17504,8 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>For example, $G(9)=7$, as 9 can be expressed as: 3+3+3, 0+3+6, 0+6+3, 3+0+6, 3+6+0, 6+0+3, 6+3+0.<br>You are given $G(1000)=78$ and $G(10^6)=2106$.</p>
 <p>Find $G(17526\times10^9)$.</p>
 <hr>
-<h1 id="将整数表示为三角形数的和"><a href="#将整数表示为三角形数的和" class="headerlink" title="将整数表示为三角形数的和"></a><strong>将整数表示为三角形数的和</strong></h1><p>众所周知高斯证明了任意正整数可以被表示为三个三角形数（包括0这一最小的三角形数）。事实上大多数整数可以以多种方式被表达为三个三角形数的和。</p>
-<p>记$G(n)$为将$n$表达为三个三角形数的方式数目，不同的排列视为不同的方式。</p>
+<h1 id="将整数表示为三角形数的和"><a href="#将整数表示为三角形数的和" class="headerlink" title="将整数表示为三角形数的和"></a><strong>将整数表示为三角形数的和</strong></h1><p>众所周知高斯证明了任意正整数可以被表示为三个三角形数的和（包括0这一最小的三角形数）。事实上大多数整数可以以多种方式被表示为三个三角形数的和。</p>
+<p>记$G(n)$为将$n$表示为三个三角形数的方式数目，不同的排列视为不同的方式。</p>
 <p>例如，$G(9)=7$，因为9可以被表示成：3+3+3，0+3+6，0+6+3，3+0+6，3+6+0，6+0+3，6+3+0。<br>已知$G(1000)=78$以及$G(10^6)=2106$。</p>
 <p>求$G(17526\times10^9)$。</p>
 <hr>
@@ -23535,6 +23535,107 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>对于每个$t$ $(t&gt;0)$，包含在上述由$N_t$描述的格阵范围内的所有时钟均往后拨一小时，也即$12\rightarrow 1\rightarrow 2\rightarrow \cdots $。</p>
 <p>记$C(t)$为经过第$t$步后，所有时钟时针所指向的数之和。<br>已知$C(0) = 30621295449583788$，$C(1) =  30613048345941659$，$C(10) = 21808930308198471$，$C(100) = 16190667393984172$。</p>
 <p>求$C(10^5)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 791</title>
+    <url>/791/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-791"><a href="#Problem-791" class="headerlink" title="Problem 791"></a><a href="https://projecteuler.net/problem=791" target="_blank" rel="noopener">Problem 791</a></h1><hr>
+<h2 id="Average-and-Variance"><a href="#Average-and-Variance" class="headerlink" title="Average and Variance"></a><strong>Average and Variance</strong></h2><p>Denote the average of $k$ numbers $x_1, …, x_k$ by $\bar{x} = \frac{1}{k} \sum_i x_i$. Their variance is defined as $\frac{1}{k} \sum_i \left( x_i - \bar{x} \right) ^ 2$.</p>
+<p>Let $S(n)$ be the sum of all quadruples of integers $(a,b,c,d)$ satisfying $1 \leq a \leq b \leq c \leq d \leq n$ such that their average is exactly twice their variance.</p>
+<p>For $n=5$, there are $5$ such quadruples, namely: $(1, 1, 1, 3), (1, 1, 3, 3), (1, 2, 3, 4), (1, 3, 4, 4), (2, 2, 3, 5)$.</p>
+<p>Hence $S(5)=48$. You are also given $S(10^3)=37048340$.</p>
+<p>Find $S(10^8)$. Give your answer modulo $433494437$.</p>
+<hr>
+<h2 id="均值与方差"><a href="#均值与方差" class="headerlink" title="均值与方差"></a><strong>均值与方差</strong></h2><p>记$k$个数$x_1, …, x_k$的均值为$\bar{x} = \frac{1}{k} \sum_i x_i$，并记其方差为$\frac{1}{k} \sum_i \left( x_i - \bar{x} \right) ^ 2$。</p>
+<p>考虑所有满足$1 \leq a \leq b \leq c \leq d \leq n$的整数四元组$(a,b,c,d)$，记$S(n)$为其中均值恰好为方差两倍的四元组之和。</p>
+<p>对于$n=5$，共有$5$个满足上述条件的四元组，分别是$(1, 1, 1, 3), (1, 1, 3, 3), (1, 2, 3, 4), (1, 3, 4, 4), (2, 2, 3, 5)$。</p>
+<p>因此，$S(5)=48$。已知$S(10^3)=37048340$。</p>
+<p>求$S(10^8)$，并将你的答案对$433494437$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 792</title>
+    <url>/792/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-792"><a href="#Problem-792" class="headerlink" title="Problem 792"></a><a href="https://projecteuler.net/problem=792" target="_blank" rel="noopener">Problem 792</a></h1><hr>
+<h2 id="Too-Many-Twos"><a href="#Too-Many-Twos" class="headerlink" title="Too Many Twos"></a><strong>Too Many Twos</strong></h2><p>We define $\nu_2(n)$ to be the largest integer $r$ such that $2^r$ divides $n$. For example, $\nu_2(24) = 3$.</p>
+<p>Define $\displaystyle S(n)  = \sum_{k = 1}^n (-2)^k\binom{2k}k$ and $u(n) = \nu_2\Big(3S(n)+4\Big)$.</p>
+<p>For example, when $n = 4$ then $S(4) = 980$ and $3S(4) + 4 = 2944 = 2^7 \cdot 23$, hence $u(4) = 7$.<br /><br>You are also given $u(20) = 24$.</p>
+<p>Also define $\displaystyle U(N) = \sum_{n = 1}^N u(n^3)$. You are given $U(5) = 241$.</p>
+<p>Find $U(10^4)$.</p>
+<hr>
+<h2 id="太多个二"><a href="#太多个二" class="headerlink" title="太多个二"></a><strong>太多个二</strong></h2><p>记$\nu_2(n)$为使得$2^r$整除$n$的最大整数$r$。例如，$\nu_2(24) = 3$。</p>
+<p>定义函数$\displaystyle S(n)  = \sum_{k = 1}^n (-2)^k\binom{2k}k$和$u(n) = \nu_2\Big(3S(n)+4\Big)$。</p>
+<p>例如，当$n = 4$时，有$S(4) = 980$，$3S(4) + 4 = 2944 = 2^7 \cdot 23$，因此$u(4) = 7$。<br /><br>已知$u(20) = 24$。</p>
+<p>再定义函数$\displaystyle U(N) = \sum_{n = 1}^N u(n^3)$。已知$U(5) = 241$。</p>
+<p>求$U(10^4)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 793</title>
+    <url>/793/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-793"><a href="#Problem-793" class="headerlink" title="Problem 793"></a><a href="https://projecteuler.net/problem=793" target="_blank" rel="noopener">Problem 793</a></h1><hr>
+<h2 id="Median-of-Products"><a href="#Median-of-Products" class="headerlink" title="Median of Products"></a><strong>Median of Products</strong></h2><p>Let $S_i$ be an integer sequence produced with the following pseudo-random number generator:</p>
+<ul>
+<li>$S_0 = 290797$</li>
+<li>$S_{i+1} = S_i ^2 \bmod 50515093$</li>
+</ul>
+<p>Let $M(n)$ be the median of the pairwise products $ S_i S_j $ for $0 \le i \lt j \lt n$.</p>
+<p>You are given $M(3) = 3878983057768$ and $M(103) = 492700616748525$.</p>
+<p>Find $M(1\ 000\ 003)$.</p>
+<hr>
+<h2 id="乘积的中位数"><a href="#乘积的中位数" class="headerlink" title="乘积的中位数"></a><strong>乘积的中位数</strong></h2><p>记$S_i$为由如下伪随机数生成器给出的整数列：</p>
+<ul>
+<li>$S_0 = 290797$</li>
+<li>$S_{i+1} = S_i ^2 \bmod 50515093$</li>
+</ul>
+<p>对于任意$0 \le i \lt j \lt n$，记$M(n)$为所有乘积$ S_i S_j $的中位数。</p>
+<p>已知$M(3) = 3878983057768$，$M(103) = 492700616748525$。</p>
+<p>求$M(1\ 000\ 003)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 794</title>
+    <url>/794/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-794"><a href="#Problem-794" class="headerlink" title="Problem 794"></a><a href="https://projecteuler.net/problem=794" target="_blank" rel="noopener">Problem 794</a></h1><hr>
+<h2 id="Seventeen-Points"><a href="#Seventeen-Points" class="headerlink" title="Seventeen Points"></a><strong>Seventeen Points</strong></h2><p>This problem uses half open interval notation where $[a,b)$ represents $a \le x \lt b$.</p>
+<p>A real number, $x_1$, is chosen in the interval $[0,1)$.<br /><br>A second real number, $x_2$, is chosen such that each of $[0,\frac{1}{2})$ and $[\frac{1}{2},1)$ contains exactly one of $(x_1, x_2)$.<br /><br>Continue such that on the $n$-th step a real number, $x_n$, is chosen so that each of the intervals $[\frac{k-1}{n}, \frac{k}{n})$ for $k \in {1, …, n}$ contains exactly one of $(x_1, x_2, …, x_n)$.</p>
+<p>Define $F(n)$ to be the minimal value of the sum $x_1 + x_2 + … + x_n$ of a tuple $(x_1, x_2, …, x_n)$ chosen by such a procedure. For example, $F(4) = 1.5$ obtained with $(x_1, x_2, x_3, x_4) = (0, 0.75, 0.5, 0.25)$.</p>
+<p>Surprisingly, no more than $17$ points can be chosen by this procedure. </p>
+<p>Find $F(17)$ and give your answer rounded to $12$ decimal places.</p>
+<hr>
+<h2 id="十七个点"><a href="#十七个点" class="headerlink" title="十七个点"></a><strong>十七个点</strong></h2><p>本题中使用的左闭右开区间记号$[a,b)$指的是满足$a \le x \lt b$的区间。</p>
+<p>在区间$[0,1)$中选择第一个实数$x_1$。<br /><br>再选择第二个实数$x_2$，满足在区间$[0,\frac{1}{2})$和$[\frac{1}{2},1)$上各包含$(x_1, x_2)$中的恰好一个实数。<br /><br>继续这一选择过程，并始终满足在第$n$步时选择实数$x_n$，使得对于$k \in {1, …, n}$，每个区间$[\frac{k-1}{n}, \frac{k}{n})$都各包含$(x_1, x_2, …, x_n)$中的恰好一个实数。</p>
+<p>记$F(n)$为根据上述流程选择的元组$(x_1, x_2, …, x_n)$之和$x_1 + x_2 + … + x_n$的最小值。例如，$F(4) = 1.5$，其对应的元组为$(x_1, x_2, x_3, x_4) = (0, 0.75, 0.5, 0.25)$。</p>
+<p>令人惊奇的是，上述流程最多只能选择$17$个实数。</p>
+<p>求$F(17)$，并将你的答案保留$12$位小数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 795</title>
+    <url>/795/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-795"><a href="#Problem-795" class="headerlink" title="Problem 795"></a><a href="https://projecteuler.net/problem=795" target="_blank" rel="noopener">Problem 795</a></h1><hr>
+<h2 id="Alternating-GCD-Sum"><a href="#Alternating-GCD-Sum" class="headerlink" title="Alternating GCD Sum"></a><strong>Alternating GCD Sum</strong></h2><p>For a positive integer $n$, the function $g(n)$ is defined as</p>
+<p>$$\displaystyle g(n)=\sum_{i=1}^{n} (-1)^i \gcd \left(n,i^2\right)$$</p>
+<p>For example, $g(4) = -\gcd \left(4,1^2\right) + \gcd \left(4,2^2\right) - \gcd \left(4,3^2\right) + \gcd \left(4,4^2\right) = -1+4-1+4=6$.<br /><br>You are also given $g(1234)=1233$.</p>
+<p>Let $\displaystyle G(N) = \sum_{n=1}^N g(n)$. You are given $G(1234) = 2194708$.</p>
+<p>Find $G(12345678)$.</p>
+<hr>
+<h2 id="交错最小公约数求和"><a href="#交错最小公约数求和" class="headerlink" title="交错最小公约数求和"></a><strong>交错最小公约数求和</strong></h2><p>对于正整数$n$，定义函数$g(n)$为</p>
+<p>$$\displaystyle g(n)=\sum_{i=1}^{n} (-1)^i \gcd \left(n,i^2\right)$$</p>
+<p>例如，$g(4) = -\gcd \left(4,1^2\right) + \gcd \left(4,2^2\right) - \gcd \left(4,3^2\right) + \gcd \left(4,4^2\right) = -1+4-1+4=6$。<br /><br>已知$g(1234)=1233$。</p>
+<p>记$\displaystyle G(N) = \sum_{n=1}^N g(n)$。已知$G(1234) = 2194708$。</p>
+<p>求$G(12345678)$。</p>
 <hr>
 ]]></content>
   </entry>
