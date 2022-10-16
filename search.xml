@@ -23639,4 +23639,194 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 796</title>
+    <url>/796/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-796"><a href="#Problem-796" class="headerlink" title="Problem 796"></a><a href="https://projecteuler.net/problem=796" target="_blank" rel="noopener">Problem 796</a></h1><hr>
+<h2 id="A-Grand-Shuffle"><a href="#A-Grand-Shuffle" class="headerlink" title="A Grand Shuffle"></a><strong>A Grand Shuffle</strong></h2><p>A standard $52$ card deck comprises thirteen ranks in four suits. However, modern decks have two additional Jokers, which neither have a suit nor a rank, for a total of $54$ cards. If we shuffle such a deck and draw cards without replacement, then we would need, on average, approximately $29.05361725$ cards so that we have at least one card for each rank.</p>
+<p>Now, assume you have $10$ such decks, each with a different back design. We shuffle all $10 \times 54$ cards together and draw cards without replacement. What is the expected number of cards needed so every suit, rank and deck design have at least one card?</p>
+<p>Give your answer rounded to eight places after the decimal point.</p>
+<hr>
+<h2 id="大洗牌"><a href="#大洗牌" class="headerlink" title="大洗牌"></a><strong>大洗牌</strong></h2><p>一副标准扑克牌包含$52$张点数牌，分为四个花色、十三种点数，另外还会有两张鬼牌（大小王），鬼牌不计花色和点数，共计$54$张牌。如果我们随机洗牌并不放回地抽牌，我们需要抽平均约$29.05361725$张牌才能抽齐每一种点数。</p>
+<p>现在假设你有$10$副牌，每一副牌的背面花纹都不同。我们将全部共$10 \times 54$张扑克牌随机洗开，然后不放回地抽牌。为了抽齐每一种花色、点数和背面花纹，平均需要抽多少张牌？</p>
+<p>将你的答案保留小数点后八位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 797</title>
+    <url>/797/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-797"><a href="#Problem-797" class="headerlink" title="Problem 797"></a><a href="https://projecteuler.net/problem=797" target="_blank" rel="noopener">Problem 797</a></h1><hr>
+<h2 id="Cyclogenic-Polynomials"><a href="#Cyclogenic-Polynomials" class="headerlink" title="Cyclogenic Polynomials"></a><strong>Cyclogenic Polynomials</strong></h2><p>A <b>monic polynomial</b> is a single-variable polynomial in which the coefficient of highest degree is equal to $1$.</p>
+<p>Define $\mathcal{F}$ to be the set of all monic polynomials with integer coefficients (including the constant polynomial $p(x)=1$). A polynomial $p(x)\in\mathcal{F}$ is <i>cyclogenic</i> if there exists $q(x)\in\mathcal{F}$ and a positive integer $n$ such that $p(x)q(x)=x^n-1$. If $n$ is the smallest such positive integer then $p(x)$ is $n$<i>-cyclogenic</i>.</p>
+<p>Define $P_n(x)$ to be the sum of all $n$-cyclogenic polynomials. For example, there exist ten $6$-cyclogenic polynomials (which divide $x^6-1$ and no smaller $x^k-1$):<br>$$\begin{aligned}<br>&amp; x^6-1               &amp; &amp; x^4+x^3-x-1 &amp; &amp; x^3+2x^2+2x+1 &amp; &amp; x^2-x+1\\<br>&amp; x^5+x^4+x^3+x^2+x+1 &amp; &amp; x^4-x^3+x-1 &amp; &amp; x^3-2x^2+2x-1 &amp; &amp; \\<br>&amp; x^5-x^4+x^3-x^2+x-1 &amp; &amp; x^4+x^2+1   &amp; &amp; x^3+1         &amp; &amp; 、、<br>\end{aligned}$$<br>giving<br>$$P_6(x)=x^6+2x^5+3x^4+5x^3+2x^2+5x$$<br>Also define<br>$$Q_N(x)=\sum_{n=1}^N P_n(x)$$<br>It’s given that $Q_{10}(x)=x^{10}+3x^9+3x^8+7x^7+8x^6+14x^5+11x^4+18x^3+12x^2+23x$ and $Q_{10}(2) = 5598$.</p>
+<p>Find $Q_{10^7}(2)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="成圆多项式"><a href="#成圆多项式" class="headerlink" title="成圆多项式"></a><strong>成圆多项式</strong></h2><p><b>首一多项式</b>是指最高次项系数为$1$的单变量多项式。</p>
+<p>定义$\mathcal{F}$为所有整系数首一多项式（包括常数多项式$p(x)=1$）构成的集合。对于多项式$p(x)\in\mathcal{F}$，若存在$q(x)\in\mathcal{F}$和正整数$n$使得$p(x)q(x)=x^n-1$，则称$p(x)$为<i class=zh>成圆多项式</i>。若$n$是满足上述条件的最小正整数，则称$p(x)$是$n$<i class=zh>-成圆多项式</i>。</p>
+<p>定义$P_n(x)$为所有$n$-成圆多项式的和。例如，总共有十个$6$-成圆多项式（整除$x^6-1$但不整除任意更小的$x^k-1$）：<br>$$\begin{aligned}<br>&amp; x^6-1               &amp; &amp; x^4+x^3-x-1 &amp; &amp; x^3+2x^2+2x+1 &amp; &amp; x^2-x+1\\<br>&amp; x^5+x^4+x^3+x^2+x+1 &amp; &amp; x^4-x^3+x-1 &amp; &amp; x^3-2x^2+2x-1 &amp; &amp; \\<br>&amp; x^5-x^4+x^3-x^2+x-1 &amp; &amp; x^4+x^2+1   &amp; &amp; x^3+1         &amp; &amp;<br>\end{aligned}$$<br>因此<br>$$P_6(x)=x^6+2x^5+3x^4+5x^3+2x^2+5x$$<br>再定义<br>$$Q_N(x)=\sum_{n=1}^N P_n(x)$$<br>已知$Q_{10}(x)=x^{10}+3x^9+3x^8+7x^7+8x^6+14x^5+11x^4+18x^3+12x^2+23x$和$Q_{10}(2) = 5598$。</p>
+<p>求$Q_{10^7}(2)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 798</title>
+    <url>/798/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-798"><a href="#Problem-798" class="headerlink" title="Problem 798"></a><a href="https://projecteuler.net/problem=798" target="_blank" rel="noopener">Problem 798</a></h1><hr>
+<h2 id="Card-Stacking-Game"><a href="#Card-Stacking-Game" class="headerlink" title="Card Stacking Game"></a><strong>Card Stacking Game</strong></h2><p>Two players play a game with a deck of cards which contains $s$ suits with each suit containing $n$ cards numbered from $1$ to $n$.</p>
+<p>Before the game starts, a set of cards (which may be empty) is picked from the deck and placed face-up on the table, with no overlap. These are called the visible cards.</p>
+<p>The players then make moves in turn.<br>A move consists of choosing a card X from the rest of the deck and placing it face-up on top of a visible card Y, subject to the following restrictions:</p>
+<ul>
+<li>X and Y must be the same suit;</li>
+<li>the value of X must be larger than the value of Y.</li>
+</ul>
+<p>The card X then covers the card Y and replaces Y as a visible card.<br>The player unable to make a valid move loses and play stops.</p>
+<p>Let $C(n, s)$ be the number of different initial sets of cards for which the first player will lose given best play for both players.</p>
+<p>For example, $C(3, 2) = 26$ and $C(13, 4) \equiv 540318329 \pmod {1\ 000\ 000\ 007}$.</p>
+<p>Find $C(10^7, 10^7)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="叠卡游戏"><a href="#叠卡游戏" class="headerlink" title="叠卡游戏"></a><strong>叠卡游戏</strong></h2><p>两位玩家正在玩一个游戏，这个游戏需要用到一副有$n$个花色、每个花色包含$1$到$n$共$n$种点数的牌。</p>
+<p>在游戏开始前，从这副牌中拿出一部分（可以不拿），并将其面朝上互不接触地放在桌面上。这些牌被称为可见牌。</p>
+<p>此后，两名玩家轮流行动。每一轮行动，玩家必须从剩下的牌中选择一张牌X，并将其面朝上放在一张可见牌Y上，且X和Y需要满足：</p>
+<ul>
+<li>X和Y的花色必须相同；</li>
+<li>X的点数必须大于Y的点数。</li>
+</ul>
+<p>X会完全覆盖Y并取代Y成为可见牌。<br>首先无法进行合法行动的玩家失败，游戏结束。</p>
+<p>若两位玩家均采取最优策略，记$C(n, s)$为先手玩家必败的可见牌布置局面的数目。</p>
+<p>例如，$C(3, 2) = 26$，$C(13, 4) \equiv 540318329 \pmod {1\ 000\ 000\ 007}$。</p>
+<p>求$C(10^7, 10^7)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 804</title>
+    <url>/804/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-804"><a href="#Problem-804" class="headerlink" title="Problem 804"></a><a href="https://projecteuler.net/problem=804" target="_blank" rel="noopener">Problem 804</a></h1><hr>
+<h2 id="Counting-Binary-Quadratic-Representations"><a href="#Counting-Binary-Quadratic-Representations" class="headerlink" title="Counting Binary Quadratic Representations"></a><strong>Counting Binary Quadratic Representations</strong></h2><p>Let $g(n)$ denote the number of ways a positive integer $n$ can be represented in the form:<br>$$x^2+xy+41y^2$$<br>where $x$ and $y$ are integers. For example, $g(53)=4$ due to $(x,y) \in {(-4,1),(-3,-1),(3,1),(4,-1)}$.</p>
+<p>Define $\displaystyle T(N)=\sum_{n=1}^{N}g(n)$. You are given $T(10^3)=474$ and $T(10^6)=492128$.</p>
+<p>Find $T(10^{16})$.</p>
+<hr>
+<h2 id="二元二次型表示计数"><a href="#二元二次型表示计数" class="headerlink" title="二元二次型表示计数"></a><strong>二元二次型表示计数</strong></h2><p>记$g(n)$为将正整数$n$表示成如下二元二次型的方式数目：<br>$$x^2+xy+41y^2$$<br>其中$x$和$y$均为整数。例如，$g(53)=4$，对应的方式为$(x,y) \in {(-4,1),(-3,-1),(3,1),(4,-1)}$。</p>
+<p>定义$\displaystyle T(N)=\sum_{n=1}^{N}g(n)$。已知$T(10^3)=474$，$T(10^6)=492128$。</p>
+<p>求$T(10^{16})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 799</title>
+    <url>/799/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-799"><a href="#Problem-799" class="headerlink" title="Problem 799"></a><a href="https://projecteuler.net/problem=799" target="_blank" rel="noopener">Problem 799</a></h1><hr>
+<h2 id="Pentagonal-Puzzle"><a href="#Pentagonal-Puzzle" class="headerlink" title="Pentagonal Puzzle"></a><strong>Pentagonal Puzzle</strong></h2><p>Pentagonal numbers are generated by the formula: $P_n = \tfrac{1}{2} n(3n-1)$ giving the sequence:</p>
+<p>$$1,5,12,22,35, 51,70,92,\ldots $$</p>
+<p>Some pentagonal numbers can be expressed as the sum of two other pentagonal numbers.<br>For example:</p>
+<p>$$P_8 = 92 = 22 + 70 = P_4 + P_7$$</p>
+<p>$3577$ is the smallest pentagonal number that can be expressed as the sum of two pentagonal numbers in two different ways:</p>
+<p>$$<br>\begin{aligned}<br>P_{49} = 3577 &amp; = 3432 + 145 = P_{48} + P_{10} \\<br>              &amp; = 3290 + 287 = P_{47} + P_{14}<br>\end{aligned}<br>$$</p>
+<p>$107602$ is the smallest pentagonal number that can be expressed as the sum of two pentagonal numbers in three different ways.</p>
+<p>Find the smallest pentagonal number that can be expressed as the sum of two pentagonal numbers in over $100$ different ways.</p>
+<hr>
+<h2 id="五边形谜题"><a href="#五边形谜题" class="headerlink" title="五边形谜题"></a><strong>五边形谜题</strong></h2><p>五边形数由公式$P_n = \tfrac{1}{2} n(3n-1)$生成：</p>
+<p>$$1,5,12,22,35, 51,70,92,\ldots $$</p>
+<p>有些五边形数可以表示成另外两个五边形数之和。<br>例如：</p>
+<p>$$P_8 = 92 = 22 + 70 = P_4 + P_7$$</p>
+<p>$3577$是最小的可以用两种不同方式表示成两个五边形数之和的五边形数：</p>
+<p>$$<br>\begin{aligned}<br>P_{49} = 3577 &amp; = 3432 + 145 = P_{48} + P_{10} \\<br>              &amp; = 3290 + 287 = P_{47} + P_{14}<br>\end{aligned}<br>$$</p>
+<p>$107602$是最小的可以用三种不同方式表示成两个五边形数之和的五边形数。</p>
+<p>求最小的可以用超过$100$种不同方式表示成两个五边形数之和的五边形数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 800</title>
+    <url>/800/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-800"><a href="#Problem-800" class="headerlink" title="Problem 800"></a><a href="https://projecteuler.net/problem=800" target="_blank" rel="noopener">Problem 800</a></h1><hr>
+<h2 id="Hybrid-Integers"><a href="#Hybrid-Integers" class="headerlink" title="Hybrid Integers"></a><strong>Hybrid Integers</strong></h2><p>An integer of the form $p^q q^p$ with prime numbers $p \neq q$ is called a <i>hybrid-integer</i>.<br>For example, $800 = 2^5 5^2$ is a hybrid-integer.</p>
+<p>We define $C(n)$ to be the number of hybrid-integers less than or equal to $n$.<br /><br>You are given $C(800) = 2$ and $C(800^{800}) = 10790$.</p>
+<p>Find $C(800800^{800800})$.</p>
+<hr>
+<h2 id="混合整数"><a href="#混合整数" class="headerlink" title="混合整数"></a><strong>混合整数</strong></h2><p>若一个整数可以表示为$p^q q^p$的形式，且$p \neq q$均为质数，则称其为<i class=zh>混合整数</i>。<br>例如，$800 = 2^5 5^2$是一个混合整数。</p>
+<p>定义$C(n)$为小于等于$n$的所有混合整数之和。<br /><br>已知$C(800) = 2$和$C(800^{800}) = 10790$。</p>
+<p>求$C(800800^{800800})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 805</title>
+    <url>/805/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-805"><a href="#Problem-805" class="headerlink" title="Problem 805"></a><a href="https://projecteuler.net/problem=805" target="_blank" rel="noopener">Problem 805</a></h1><hr>
+<h2 id="Shifted-Multiples"><a href="#Shifted-Multiples" class="headerlink" title="Shifted Multiples"></a><strong>Shifted Multiples</strong></h2><p>For a positive integer $n$, let $s(n)$ be the integer obtained by shifting the leftmost digit of the decimal representation of $n$ to the rightmost position.<br /><br>For example, $s(142857)=428571$ and $s(10)=1$.</p>
+<p>For a positive rational number $r$, we define $N(r)$ as the smallest positive integer $n$ such that $s(n)=r\cdot n$.<br /><br>If no such integer exists, then $N(r)$ is defined as zero.<br /><br>For example, $N(3)=142857$, $N(\tfrac 1{10})=10$ and $N(2) = 0$.</p>
+<p>Let $T(M)$ be the sum of $N(u^3/v^3)$ where $(u,v)$ ranges over all ordered pairs of coprime positive integers not exceeding $M$.<br /><br>For example, $T(3)\equiv 262429173 \pmod {1\ 000\ 000\ 007}$.</p>
+<p>Find $T(200)$. Give your answer modulo $1\ 000\ 000\ 007$. </p>
+<hr>
+<h2 id="数字轮转倍数"><a href="#数字轮转倍数" class="headerlink" title="数字轮转倍数"></a><strong>数字轮转倍数</strong></h2><p>对于正整数$n$，记$s(n)$为将$n$的十进制表示下最左侧数字移到最右侧所得到的数。<br /><br>例如，$s(142857)=428571$，$s(10)=1$。</p>
+<p>对于正有理数$r$，定义$N(r)$为满足$s(n)=r\cdot n$的最小正整数$n$。<br /><br>若不存在这样的正整数，则$N(r)$取零。<br /><br>例如，$N(3)=142857$，$N(\tfrac 1{10})=10$，$N(2) = 0$。</p>
+<p>对于所有不超过$M$的互质正整数对$(u,v)$，记$T(M)$为所有$N(u^3/v^3)$之和。<br /><br>例如，$T(3)\equiv 262429173 \pmod {1\ 000\ 000\ 007}$。</p>
+<p>求$T(200)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 801</title>
+    <url>/801/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-801"><a href="#Problem-801" class="headerlink" title="Problem 801"></a><a href="https://projecteuler.net/problem=801" target="_blank" rel="noopener">Problem 801</a></h1><hr>
+<h2 id="x-y-equiv-y-x"><a href="#x-y-equiv-y-x" class="headerlink" title="$x^y\equiv y^x$"></a><strong>$x^y\equiv y^x$</strong></h2><p>The positive integral solutions of the equation $x^y=y^x$ are $(2,4)$, $(4,2)$ and $(k,k)$ for all $k&gt;0$.</p>
+<p>For a given positive integer $n$, let $f(n)$ be the number of integral values $0&lt;x,y \le n^2-n$ such that<br>$$x^y\equiv y^x \pmod n$$<br>For example, $f(5)=104$ and $f(97)=1614336$.</p>
+<p>Let $S(M,N)=\sum f(p)$ where the sum is taken over all primes $p$ satisfying $M\le p\le N$.</p>
+<p>You are given $S(1,10^2)=7381000$ and $S(1,10^5) \equiv 701331986 \pmod{993353399}$.</p>
+<p>Find $S(10^{16}, 10^{16}+10^6)$. Give your answer modulo $993353399$.</p>
+<hr>
+<h2 id="x-y-equiv-y-x-1"><a href="#x-y-equiv-y-x-1" class="headerlink" title="$x^y\equiv y^x$"></a><strong>$x^y\equiv y^x$</strong></h2><p>方程$x^y=y^x$的正整数解有$(2,4)$、$(4,2)$和满足$k&gt;0$的任意$(k,k)$。</p>
+<p>对于给定的正整数$n$，记$f(n)$为下列同余方程满足$0&lt;x,y \le n^2-n$的正整数解的数目：<br>$$x^y\equiv y^x \pmod n$$<br>例如，$f(5)=104$，$f(97)=1614336$。</p>
+<p>对于所有满足$M\le p\le N$的质数$p$，记$S(M,N)=\sum f(p)$。</p>
+<p>已知$S(1,10^2)=7381000$，$S(1,10^5) \equiv 701331986 \pmod{993353399}$。</p>
+<p>求$S(10^{16}, 10^{16}+10^6)$，并将你的答案对$993353399$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 802</title>
+    <url>/802/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-802"><a href="#Problem-802" class="headerlink" title="Problem 802"></a><a href="https://projecteuler.net/problem=802" target="_blank" rel="noopener">Problem 802</a></h1><hr>
+<h2 id="Iterated-Composition"><a href="#Iterated-Composition" class="headerlink" title="Iterated Composition"></a><strong>Iterated Composition</strong></h2><p>Let $\Bbb R^2$ be the set of pairs of real numbers $(x, y)$. Let $\pi = 3.14159\cdots$.</p>
+<p>Consider the function $f$ from $\Bbb R^2$ to $\Bbb R^2$ defined by $f(x, y) = (x^2 - x - y^2, 2xy - y + \pi)$, and its $n$-th iterated composition $f^{(n)}(x, y) = f(f(\cdots f(x, y)\cdots))$. For example $f^{(3)}(x, y) = f(f(f(x, y)))$. A pair $(x, y)$ is said to have period $n$ if $n$ is the smallest positive integer such that $f^{(n)}(x, y) = (x, y)$.</p>
+<p>Let $P(n)$ denote the sum of $x$-coordinates of all points having period not exceeding $n$. Interestingly, $P(n)$ is always an integer. For example, $P(1) = 2$, $P(2) = 2$, $P(3) = 4$.</p>
+<p>Find $P(10^7)$ and give your answer modulo $1\ 020\ 340\ 567$.</p>
+<hr>
+<h2 id="迭代复合函数"><a href="#迭代复合函数" class="headerlink" title="迭代复合函数"></a><strong>迭代复合函数</strong></h2><p>记$\Bbb R^2$为所有实数对$(x, y)$构成的集合。记$\pi = 3.14159\cdots$。</p>
+<p>考虑由$\Bbb R^2$映射到$\Bbb R^2$的函数$f$，其定义为$f(x, y) = (x^2 - x - y^2, 2xy - y + \pi)$，以及其$n$次迭代复合函数$f^{(n)}(x, y) = f(f(\cdots f(x, y)\cdots))$。举例来说，$f^{(3)}(x, y) = f(f(f(x, y)))$。对于实数对$(x, y)$，若存在最小的正整数$n$使得$f^{(n)}(x, y) = (x, y)$，则称该实数对的周期为$n$。</p>
+<p>记$P(n)$为所有周期不超过$n$的实数对的$x$轴坐标之和。有趣的是，$P(n)$始终是整数。例如，$P(1) = 2$，$P(2) = 2$，$P(3) = 4$。</p>
+<p>求$P(10^7)$并将你的答案对$1\ 020\ 340\ 567$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 803</title>
+    <url>/803/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-803"><a href="#Problem-803" class="headerlink" title="Problem 803"></a><a href="https://projecteuler.net/problem=803" target="_blank" rel="noopener">Problem 803</a></h1><hr>
+<h2 id="Pseudorandom-sequence"><a href="#Pseudorandom-sequence" class="headerlink" title="Pseudorandom sequence"></a><strong>Pseudorandom sequence</strong></h2><p><b>Rand48</b> is a pseudorandom number generator used by some programming languages. It generates a sequence from any given integer $0 \le a_0 &lt; 2^{48}$ using the rule $a_n = (25214903917 \cdot a_{n - 1} + 11) \bmod 2^{48}$.</p>
+<p>Let $b_n = \lfloor a_n / 2^{16} \rfloor \bmod 52$. The sequence $b_0, b_1, \dots$ is translated to an infinite string $c = c_0c_1\dots$ via the rule:<br /><br>$0 \rightarrow$ a, $1\rightarrow$ b, $\dots$, $25 \rightarrow$ z, $26 \rightarrow$ A, $27 \rightarrow$ B, $\dots$, $51 \rightarrow$ Z.</p>
+<p>For example, if we choose $a_0 = 123456$, then the string $c$ starts with: “bQYicNGCY$\dots$”.<br /><br>Moreover, starting from index $100$, we encounter the substring “RxqLBfWzv” for the first time.</p>
+<p>Alternatively, if $c$ starts with “EULERcats$\dots$”, then $a_0$ must be $78580612777175$.</p>
+<p>Now suppose that the string $c$ starts with “PuzzleOne$\dots$”.<br /><br>Find the starting index of the first occurrence of the substring “LuckyText” in $c$.</p>
+<hr>
+<h2 id="伪随机序列"><a href="#伪随机序列" class="headerlink" title="伪随机序列"></a><strong>伪随机序列</strong></h2><p>许多编程语言都使用<b>Rand48</b>这种伪随机数生成器。对于任意给定整数$0 \le a_0 &lt; 2^{48}$，它会按照规则$a_n = (25214903917 \cdot a_{n - 1} + 11) \bmod 2^{48}$生成一组伪随机序列。</p>
+<p>记$b_n = \lfloor a_n / 2^{16} \rfloor \bmod 52$。序列$b_0, b_1, \dots$会进一步按照以下规则翻译为无限长字符串$c = c_0c_1\dots$：<br /><br>$0 \rightarrow$ a，$1\rightarrow$ b，$\dots$，$25 \rightarrow$ z，$26 \rightarrow$ A，$27 \rightarrow$ B，$\dots$，$51 \rightarrow$ Z。</p>
+<p>例如，如果我们选择$a_0 = 123456$，那么字符串$c$的开头部分为：”bQYicNGCY$\dots$”。<br /><br>进一步地，在字符串下标为$100$的位置，我们第一次得到子串”RxqLBfWzv”。</p>
+<p>另一方面，如果我们希望字符串$c$的开头部分为”EULERcats$\dots$”，那么$a_0$必须选定为$78580612777175$。</p>
+<p>现在假设字符串$c$的开头部分为”PuzzleOne$\dots$”。<br /><br>求我们第一次在字符串$c$中得到子串”LuckyText”的起始位置下标。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
