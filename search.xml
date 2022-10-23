@@ -23829,4 +23829,161 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 806</title>
+    <url>/806/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-806"><a href="#Problem-806" class="headerlink" title="Problem 806"></a><a href="https://projecteuler.net/problem=806" target="_blank" rel="noopener">Problem 806</a></h1><hr>
+<h2 id="Nim-on-Towers-of-Hanoi"><a href="#Nim-on-Towers-of-Hanoi" class="headerlink" title="Nim on Towers of Hanoi"></a><strong>Nim on Towers of Hanoi</strong></h2><p>This problem combines the game of Nim with the Towers of Hanoi. For a brief introduction to the rules of these games, please refer to <a href="/301">Problem 301</a> and <a href="/497">Problem 497</a>, respectively.</p>
+<p>The unique shortest solution to the Towers of Hanoi problem with $n$ disks and $3$ pegs requires $2^n-1$ moves. Number the positions in the solution from index $0$ (starting position, all disks on the first peg) to index $2^n-1$ (final position, all disks on the third peg).</p>
+<p>Each of these $2^n$ positions can be considered as the starting configuration for a game of Nim, in which two players take turns to select a peg and remove any positive number of disks from it. The winner is the player who removes the last disk.</p>
+<p>We define $f(n)$ to be the sum of the indices of those positions for which, when considered as a Nim game, the first player will lose (assuming an optimal strategy from both players).</p>
+<p>For $n=4$, the indices of losing positions in the shortest solution are $3$,$6$,$9$ and $12$. So we have $f(4) = 30$.</p>
+<p>You are given that $f(10) = 67518$.</p>
+<p>Find $f(10^5)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="汉诺塔取石子游戏"><a href="#汉诺塔取石子游戏" class="headerlink" title="汉诺塔取石子游戏"></a><strong>汉诺塔取石子游戏</strong></h2><p>本题结合了“取石子游戏”和“汉诺塔”这两种游戏，其规则介绍请分别参见<a href="/301">第301题</a>和<a href="/497">第497题</a>。</p>
+<p>对于包含$n$个盘子和$3$根柱子的标准汉诺塔问题，其唯一的最优解法共需$2^n-1$步。将该解法中出现的所有状态分别编号，初始状态（所有盘子都在第一根柱子上）编号为$0$，最终状态（所有盘子都在第三根柱子上）编号为$2^n-1$。</p>
+<p>这$2^n$种状态中的每一种都可以视为取石子游戏的一个初始布局。由此布局开始，两名玩家轮流选择一根柱子，并从中移走任意数量为正的盘子。移走最后一个盘子的玩家获胜。</p>
+<p>考虑所有作为取石子游戏初始布局时先手玩家必败的状态（假设两名玩家均采用最优策略），记$f(n)$为这些状态的编号之和。</p>
+<p>对于$n=4$，所有必败初始状态的编号为$3$、$6$、$9$和$12$，因此$f(4) = 30$。</p>
+<p>已知$f(10) = 67518$。</p>
+<p>求$f(10^5)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 807</title>
+    <url>/807/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-807"><a href="#Problem-807" class="headerlink" title="Problem 807"></a><a href="https://projecteuler.net/problem=807" target="_blank" rel="noopener">Problem 807</a></h1><hr>
+<h2 id="Loops-of-Ropes"><a href="#Loops-of-Ropes" class="headerlink" title="Loops of Ropes"></a><strong>Loops of Ropes</strong></h2><p>Given a circle $C$ and an integer $n &gt; 1$, we perform the following operations.</p>
+<p>In step $0$, we choose two uniformly random points $R_0$ and $B_0$ on $C$.<br /><br>In step $i$ ($1 \leq i &lt; n$), we first choose a uniformly random point $R_i$ on $C$ and connect the points $R_{i - 1}$ and $R_i$ with a red rope; then choose a uniformly random point $B_i$ on $C$ and connect the points $B_{i - 1}$ and $B_i$ with a blue rope.<br /><br>In step $n$, we first connect the points $R_{n - 1}$ and $R_0$ with a red rope; then connect the points $B_{n - 1}$ and $B_0$ with a blue rope.<br /><br>Each rope is straight between its two end points, and lies above all previous ropes.</p>
+<p>After step $n$, we get a loop of red ropes, and a loop of blue ropes.<br /><br>Sometimes the two loops can be separated, as in the left figure below; sometimes they are “linked”, hence cannot be separated, as in the middle and right figures below.</p>
+<p><img src="https://projecteuler.net/project/images/p807.jpg" alt=""></p>
+<p>Let $P(n)$ be the probability that the two loops can be separated.<br /><br>For example, $P(3) = \frac{11}{20}$ and $P(5) \approx 0.4304177690$.</p>
+<p>Find $P(80)$, rounded to $10$ digits after decimal point.</p>
+<hr>
+<h2 id="绳环"><a href="#绳环" class="headerlink" title="绳环"></a><strong>绳环</strong></h2><p>考虑圆$C$和整数$n&gt;1$，我们进行如下操作。</p>
+<p>在第$0$步，我们在圆$C$上均匀随机地选择两个点$R_0$和$B_0$。<br /><br>在第$i$步($1 \leq i &lt; n$）， 我们先在圆$C$上均匀随机地选择一个点$R_i$并将点$R_{i-1}$和点$R_i$用红绳连接，再在圆$C$上均匀随机地选择一个点$B_i$，并将点$B_{i-1}$和点$B_i$用蓝绳连接。<br /><br>在第$n$步，我们先将点$R_{n-1}$和点$R_0$用红绳连接，再将点$B_{n-1}$和点$B_0$用蓝绳连接。<br /><br>每条绳在其连接的端点之间都是直线，且都位于所有现有绳的上方。</p>
+<p>在完成第$n$步之后，我们得到了一个红绳环和一个蓝绳环。<br /><br>有时这两个绳环可以拆开，如下图左所示。有时这两个绳环相互缠绕，无法拆开，如下图中和下图右所示。</p>
+<p><img src="https://projecteuler.net/project/images/p807.jpg" alt=""></p>
+<p>记$P(n)$为两个绳环可以拆开的概率。<br /><br>例如，$P(3) = \frac{11}{20}$，$P(5) \approx 0.4304177690$。</p>
+<p>求$P(80)$，并将你的答案保留小数点后$10$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 809</title>
+    <url>/809/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-809"><a href="#Problem-809" class="headerlink" title="Problem 809"></a><a href="https://projecteuler.net/problem=809" target="_blank" rel="noopener">Problem 809</a></h1><hr>
+<h2 id="Rational-Recurrence-Relation"><a href="#Rational-Recurrence-Relation" class="headerlink" title="Rational Recurrence Relation"></a><strong>Rational Recurrence Relation</strong></h2><p>The following is a function defined for all positive rational values of $x$.<br>$$    f(x)=\begin{cases} x  &amp; x\text{ is integral}\\<br>                    f(\frac 1{1-x})    &amp; x \lt 1\\<br>                    f\Big(\frac 1{\lceil x\rceil -x}-1+f(x-1)\Big)    &amp; \text{otherwise}\end{cases}    $$</p>
+<p>For example, $f(3/2)=3$, $f(1/6) = 65533$ and $f(13/10) = 7625597484985$.</p>
+<p>Find $f(22/7)$. Give your answer modulo $10^{15}$.</p>
+<hr>
+<h2 id="有理数递归关系式"><a href="#有理数递归关系式" class="headerlink" title="有理数递归关系式"></a><strong>有理数递归关系式</strong></h2><p>如下是定义在所有正有理数$x$上的函数：<br>$$    f(x)=\begin{cases} x  &amp; \text{若}x\text{是整数}\\<br>                    f(\frac 1{1-x})    &amp; \text{若}x \lt 1\\<br>                    f\Big(\frac 1{\lceil x\rceil -x}-1+f(x-1)\Big)    &amp; \text{其余情况}\end{cases}    $$</p>
+<p>例如，$f(3/2)=3$，$f(1/6) = 65533$，$f(13/10) = 7625597484985$。</p>
+<p>求$f(22/7)$，并将你的答案对$10^{15}$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 811</title>
+    <url>/811/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-811"><a href="#Problem-811" class="headerlink" title="Problem 811"></a><a href="https://projecteuler.net/problem=811" target="_blank" rel="noopener">Problem 811</a></h1><hr>
+<h2 id="Bitwise-Recursion"><a href="#Bitwise-Recursion" class="headerlink" title="Bitwise Recursion"></a><strong>Bitwise Recursion</strong></h2><p>Let $b(n)$ be the largest power of $2$ that divides $n$. For example $b(24) = 8$.</p>
+<p>Define the recursive function:<br>\begin{aligned}<br>\begin{split}<br>A(0) &amp; = 1\\<br>A(2n) &amp; = 3A(n) + 5A\big(2n - b(n)\big)  \qquad n \gt 0\\<br>A(2n+1) &amp; = A(n)<br>\end{split}<br>\end{aligned}<br>and let $H(t,r) = A\big((2^t+1)^r\big)$.</p>
+<p>You are given $H(3,2) = A(81) = 636056$.</p>
+<p>Find $H(10^{14}+31,62)$. Give your answer modulo $1\ 000\ 062\ 031$. </p>
+<hr>
+<h2 id="按位递归"><a href="#按位递归" class="headerlink" title="按位递归"></a><strong>按位递归</strong></h2><p>记$b(n)$为最大的整除$n$的$2$的幂，例如$b(24) = 8$。</p>
+<p>定义如下递归关系式：<br>\begin{aligned}<br>\begin{split}<br>A(0) &amp; = 1\\<br>A(2n) &amp; = 3A(n) + 5A\big(2n - b(n)\big)  \qquad n \gt 0\\<br>A(2n+1) &amp; = A(n)<br>\end{split}<br>\end{aligned}<br>并记$H(t,r) = A\big((2^t+1)^r\big)$。</p>
+<p>已知$H(3,2) = A(81) = 636056$。</p>
+<p>求$H(10^{14}+31,62)$，并将你的答案对$1\ 000\ 062\ 031$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 808</title>
+    <url>/808/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-808"><a href="#Problem-808" class="headerlink" title="Problem 808"></a><a href="https://projecteuler.net/problem=808" target="_blank" rel="noopener">Problem 808</a></h1><hr>
+<h2 id="Reversible-prime-squares"><a href="#Reversible-prime-squares" class="headerlink" title="Reversible prime squares"></a><strong>Reversible prime squares</strong></h2><p>Both $169$ and $961$ are the square of a prime. $169$ is the reverse of $961$.</p>
+<p>We call a number a <i>reversible prime square </i> if:</p>
+<ol>
+<li>It is not a palindrome, and</li>
+<li>It is the square of a prime, and</li>
+<li>Its reverse is also the square of a prime.</li>
+</ol>
+<p>$169$ and $961$ are not palindromes, so both are reversible prime squares.</p>
+<p>Find the sum of the first $50$ reversible prime squares.</p>
+<hr>
+<h2 id="可反转质数平方"><a href="#可反转质数平方" class="headerlink" title="可反转质数平方"></a><strong>可反转质数平方</strong></h2><p>$169$和$961$都是质数的平方，且将$169$的数字反转即可得到$961$。</p>
+<p>我们称一个数为<i class=zh>可反转质数平方</i>，若其满足以下条件：</p>
+<ol>
+<li>它不是回文数，且</li>
+<li>它是质数的平方，且</li>
+<li>将它的数字反转所得的数也是指数的平方。</li>
+</ol>
+<p>$169$和$961$都不是回文数，因此它们都是可反转质数平方。</p>
+<p>求前$50$个可反转质数平方的和。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 812</title>
+    <url>/812/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-812"><a href="#Problem-812" class="headerlink" title="Problem 812"></a><a href="https://projecteuler.net/problem=812" target="_blank" rel="noopener">Problem 812</a></h1><hr>
+<h2 id="Dynamical-Polynomials"><a href="#Dynamical-Polynomials" class="headerlink" title="Dynamical Polynomials"></a><strong>Dynamical Polynomials</strong></h2><p>A <i>dynamical polynomial</i> is a monic polynomial $f(x)$ with integer coefficients such that $f(x)$ divides $f(x^2-2)$.</p>
+<p>For example, $f(x) = x^2 - x - 2$ is a dynamical polynomial because $f(x^2-2) = x^4-5x^2+4 = (x^2 + x -2)f(x)$.</p>
+<p>Let $S(n)$ be the number of dynamical polynomials of degree $n$.<br /><br>For example, $S(2)=6$, as there are six dynamical polynomials of degree 2:<br>$$ x^2-4x+4 \quad x^2-x-2 \quad x^2-4 \quad x^2-1 \quad x^2+x-1 \quad x^2+2x+1 $$<br>Also, $S(5)=58$ and $S(20)=122087$.</p>
+<p>Find $S(10\ 000)$. Give your answer modulo $998244353$.</p>
+<hr>
+<h2 id="动态多项式"><a href="#动态多项式" class="headerlink" title="动态多项式"></a><strong>动态多项式</strong></h2><p>若首一整系数多项式$f(x)$整除$f(x^2-2)$，则称之为<i class=zh>动态多项式</i>。</p>
+<p>例如，$f(x) = x^2 - x - 2$是动态多项式，因为$f(x^2-2) = x^4-5x^2+4 = (x^2 + x -2)f(x)$。</p>
+<p>记$S(n)$为最高次数为$n$的动态多项式的数目。<br /><br>例如，$S(2)=6$，因为共有六个最高次数为$2$的动态多项式：<br>$$ x^2-4x+4 \quad x^2-x-2 \quad x^2-4 \quad x^2-1 \quad x^2+x-1 \quad x^2+2x+1 $$<br>已知$S(5)=58$，$S(20)=122087$。</p>
+<p>求$S(10\ 000)$，并将你的答案对$998244353$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 810</title>
+    <url>/810/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-810"><a href="#Problem-810" class="headerlink" title="Problem 810"></a><a href="https://projecteuler.net/problem=810" target="_blank" rel="noopener">Problem 810</a></h1><hr>
+<h2 id="XOR-Primes"><a href="#XOR-Primes" class="headerlink" title="XOR-Primes"></a><strong>XOR-Primes</strong></h2><p>We use $x\oplus y$ for the bitwise XOR of $x$ and $y$.</p>
+<p>Define the <i>XOR-product</i> of $x$ and $y$, denoted by $x \otimes y$, similar to a long multiplication in base $2$, except that the intermediate results are XORed instead of the usual integer addition.</p>
+<p>For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:</p>
+<p>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$</p>
+<p>An <i>XOR-prime</i> is an integer $n$ greater than $1$ that is not an XOR-product of two integers greater than $1$. The above example shows that $9$ is not an XOR-prime. Similarly, $5 = 3 \otimes 3$ is not an XOR-prime. The first few XOR-primes are $2, 3, 7, 11, 13, …$ and the $10$th XOR-prime is $41$.</p>
+<p>Find the $5\ 000\ 000$th XOR-prime.</p>
+<hr>
+<h2 id="异或质数"><a href="#异或质数" class="headerlink" title="异或质数"></a><strong>异或质数</strong></h2><p>记$x\oplus y$为$x$和$y$按位异或的结果。</p>
+<p>我们定义一种新运算，称为$x$和$y$的<i class=zh>异或积</i>并记作$x \otimes y$。这种运算类似于对$x$和$y$的二进制表示做长乘法，但是将其中的相加替换为异或。</p>
+<p>例如，$7 \otimes 3 = 9$，或用二进制表示写作$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$</p>
+<p>若大于$1$的整数$n$不是任意两个大于$1$的整数的异或积，则称之为<i class=zh>异或质数</i>。上面的例子说明$9$不是一个异或质数。类似地，$5 = 3 \otimes 3$也不是一个异或质数。较小的异或质数包括$2, 3, 7, 11, 13, …$，而第$10$个异或质数是$41$。</p>
+<p>求第$5\ 000\ 000$个异或质数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 813</title>
+    <url>/813/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-813"><a href="#Problem-813" class="headerlink" title="Problem 813"></a><a href="https://projecteuler.net/problem=813" target="_blank" rel="noopener">Problem 813</a></h1><hr>
+<h2 id="XOR-Powers"><a href="#XOR-Powers" class="headerlink" title="XOR-Powers"></a><strong>XOR-Powers</strong></h2><p>We use $x\oplus y$ to be the bitwise XOR of $x$ and $y$.</p>
+<p>Define the <i>XOR-product</i> of $x$ and $y$, denoted by $x \otimes y$, similar to a long multiplication in base $2$, except that the intermediate results are XORed instead of the usual integer addition.</p>
+<p>For example, $11 \otimes 11 = 69$, or in base $2$, $1011_2 \otimes 1011_2 = 1000101_2$:<br>$$<br>\begin{aligned}<br>\phantom{\otimes 1111} 1011_2 \\<br>\otimes \phantom{1111} 1011_2 \\<br>\hline<br>\phantom{\otimes 1111} 1011_2 \\<br>\phantom{\otimes 111} 1011_2 \phantom{9} \\<br>\oplus \phantom{1} 1011_2  \phantom{999} \\<br>\hline<br>\phantom{\otimes 11} 1000101_2 \\<br>\end{aligned}<br>$$<br>Further we define $P(n) = 11^{\otimes n} = \overbrace{11\otimes 11\otimes \ldots \otimes 11}^n$. For example $P(2)=69$.</p>
+<p>Find $P(8^{12}\cdot 12^8)$. Give your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="异或幂"><a href="#异或幂" class="headerlink" title="异或幂"></a><strong>异或幂</strong></h2><p>记$x\oplus y$为$x$和$y$按位异或的结果。</p>
+<p>我们定义一种新运算，称为$x$和$y$的<i class=zh>异或积</i>并记作$x \otimes y$。这种运算类似于对$x$和$y$的二进制表示做长乘法，但是将其中的相加替换为异或。</p>
+<p>例如，$11 \otimes 11 = 69$，或用二进制表示写作$1011_2 \otimes 1011_2 = 1000101_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 1111} 1011_2 \\<br>\otimes \phantom{1111} 1011_2 \\<br>\hline<br>\phantom{\otimes 1111} 1011_2 \\<br>\phantom{\otimes 111} 1011_2 \phantom{9} \\<br>\oplus \phantom{1} 1011_2  \phantom{999} \\<br>\hline<br>\phantom{\otimes 11} 1000101_2 \\<br>\end{aligned}<br>$$<br>进一步定义$P(n) = 11^{\otimes n} = \overbrace{11\otimes 11\otimes \ldots \otimes 11}^n$，例如$P(2)=69$。</p>
+<p>求$P(8^{12}\cdot 12^8)$，并将你的答案对$10^9+7$取余。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
