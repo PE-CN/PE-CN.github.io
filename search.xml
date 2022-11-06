@@ -18,11 +18,12 @@
     <url>/1/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem 1"></a><a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener">Problem 1</a></h1><hr>
-<h2 id="Multiples-of-3-and-5"><a href="#Multiples-of-3-and-5" class="headerlink" title="Multiples of 3 and 5"></a><strong>Multiples of 3 and 5</strong></h2><p>If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3$, $5$, $6$ and $9$. The sum of these multiples is $23$.</p>
+<h2 id="Multiples-of-3-or-5"><a href="#Multiples-of-3-or-5" class="headerlink" title="Multiples of $3$ or $5$"></a><strong>Multiples of $3$ or $5$</strong></h2><p>If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3$, $5$, $6$ and $9$. The sum of these multiples is $23$.</p>
 <p>Find the sum of all the multiples of $3$ or $5$ below $1000$.</p>
 <hr>
-<h2 id="3或5的倍数"><a href="#3或5的倍数" class="headerlink" title="3或5的倍数"></a><strong>3或5的倍数</strong></h2><p>在小于$10$的自然数中，$3$或$5$的倍数有$3$、$5$、$6$和$9$，这些数之和是$23$。</p>
+<h2 id="3-或-5-的倍数"><a href="#3-或-5-的倍数" class="headerlink" title="$3$或$5$的倍数"></a><strong>$3$或$5$的倍数</strong></h2><p>在小于$10$的自然数中，$3$或$5$的倍数有$3$、$5$、$6$和$9$，这些数之和是$23$。</p>
 <p>求小于$1000$的自然数中所有$3$或$5$的倍数之和。</p>
+<p><i class=zh>译注：自然数是否包含$0$目前仍有争议，出题人应当是选择了不包含$0$的定义，但所幸本题的结果并不受此定义影响。</i></p>
 <hr>
 ]]></content>
   </entry>
@@ -453,25 +454,25 @@
 <h1 id="Problem-11"><a href="#Problem-11" class="headerlink" title="Problem 11"></a><a href="https://projecteuler.net/problem=11" target="_blank" rel="noopener">Problem 11</a></h1><hr>
 <h2 id="Largest-product-in-a-grid"><a href="#Largest-product-in-a-grid" class="headerlink" title="Largest product in a grid"></a><strong>Largest product in a grid</strong></h2><p>In the $20\times 20$ grid below, four numbers along a diagonal line have been marked in red.</p>
 <center style="font-family:'Courier New',monospace;">
-08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
-49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
-81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
-52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
-22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
-24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
-32 98 81 28 64 23 67 10 <span style="color:#ff0000;"><b>26</b></span> 38 40 67 59 54 70 66 18 38 64 70
-67 26 20 68 02 62 12 20 95 <span style="color:#ff0000;"><b>63</b></span> 94 39 63 08 40 91 66 49 94 21
-24 55 58 05 66 73 99 26 97 17 <span style="color:#ff0000;"><b>78</b></span> 78 96 83 14 88 34 89 63 72
-21 36 23 09 75 00 76 44 20 45 35 <span style="color:#ff0000;"><b>14</b></span> 00 61 33 97 34 31 33 95
-78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
-16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
-86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
-19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
-04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
-88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
-04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
-20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
-20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
+08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08<br />
+49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00<br />
+81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65<br />
+52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91<br />
+22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80<br />
+24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50<br />
+32 98 81 28 64 23 67 10 <span style="color:#ff0000;"><b>26</b></span> 38 40 67 59 54 70 66 18 38 64 70<br />
+67 26 20 68 02 62 12 20 95 <span style="color:#ff0000;"><b>63</b></span> 94 39 63 08 40 91 66 49 94 21<br />
+24 55 58 05 66 73 99 26 97 17 <span style="color:#ff0000;"><b>78</b></span> 78 96 83 14 88 34 89 63 72<br />
+21 36 23 09 75 00 76 44 20 45 35 <span style="color:#ff0000;"><b>14</b></span> 00 61 33 97 34 31 33 95<br />
+78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92<br />
+16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57<br />
+86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58<br />
+19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40<br />
+04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66<br />
+88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69<br />
+04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36<br />
+20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16<br />
+20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54<br />
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </center>
 
@@ -480,25 +481,25 @@
 <hr>
 <h2 id="方阵中的最大乘积"><a href="#方阵中的最大乘积" class="headerlink" title="方阵中的最大乘积"></a><strong>方阵中的最大乘积</strong></h2><p>在如下的$20\times20$方阵中，有四个呈对角线排列的数被标记为红色。</p>
 <center style="font-family:'Courier New',monospace;">
-08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
-49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
-81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
-52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
-22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
-24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
-32 98 81 28 64 23 67 10 <span style="color:#ff0000;"><b>26</b></span> 38 40 67 59 54 70 66 18 38 64 70
-67 26 20 68 02 62 12 20 95 <span style="color:#ff0000;"><b>63</b></span> 94 39 63 08 40 91 66 49 94 21
-24 55 58 05 66 73 99 26 97 17 <span style="color:#ff0000;"><b>78</b></span> 78 96 83 14 88 34 89 63 72
-21 36 23 09 75 00 76 44 20 45 35 <span style="color:#ff0000;"><b>14</b></span> 00 61 33 97 34 31 33 95
-78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
-16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
-86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
-19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
-04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
-88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
-04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
-20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
-20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
+08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08<br />
+49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00<br />
+81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65<br />
+52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91<br />
+22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80<br />
+24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50<br />
+32 98 81 28 64 23 67 10 <span style="color:#ff0000;"><b>26</b></span> 38 40 67 59 54 70 66 18 38 64 70<br />
+67 26 20 68 02 62 12 20 95 <span style="color:#ff0000;"><b>63</b></span> 94 39 63 08 40 91 66 49 94 21<br />
+24 55 58 05 66 73 99 26 97 17 <span style="color:#ff0000;"><b>78</b></span> 78 96 83 14 88 34 89 63 72<br />
+21 36 23 09 75 00 76 44 20 45 35 <span style="color:#ff0000;"><b>14</b></span> 00 61 33 97 34 31 33 95<br />
+78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92<br />
+16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57<br />
+86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58<br />
+19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40<br />
+04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66<br />
+88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69<br />
+04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36<br />
+20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16<br />
+20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54<br />
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </center>
 
@@ -985,16 +986,16 @@
 <h2 id="Highly-divisible-triangular-number"><a href="#Highly-divisible-triangular-number" class="headerlink" title="Highly divisible triangular number"></a><strong>Highly divisible triangular number</strong></h2><p>The sequence of triangle numbers is generated by adding the natural numbers. So the $7$<sup>th</sup> triangle number would be $1 + 2 + 3 + 4 + 5 + 6 + 7 = 28$. The first ten terms would be:</p>
 <p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots $$</p>
 <p>Let us list the factors of the first seven triangle numbers:</p>
-<p>$$\begin{aligned}<br>\bf{1:} &amp; 1\<br>\bf{3:} &amp; 1,3\<br>\bf{6:} &amp; 1,2,3,6 \<br>\bf{10:} &amp; 1,2,5,10 \<br>\bf{15:} &amp; 1,3,5,15 \<br>\bf{21:} &amp; 1,3,7,21 \<br>\bf{28:} &amp; 1,2,4,7,14,28 \<br>\end{aligned}$$</p>
+<p>$$\begin{aligned}<br>\bf{1:}\ &amp; 1\\<br>\bf{3:}\ &amp; 1,3\\<br>\bf{6:}\ &amp; 1,2,3,6 \\<br>\bf{10:}\ &amp; 1,2,5,10 \\<br>\bf{15:}\ &amp; 1,3,5,15 \\<br>\bf{21:}\ &amp; 1,3,7,21 \\<br>\bf{28:}\ &amp; 1,2,4,7,14,28 \\<br>\end{aligned}$$</p>
 <p>We can see that $28$ is the first triangle number to have over five divisors.</p>
 <p>What is the value of the first triangle number to have over five hundred divisors?</p>
 <hr>
-<h2 id="多约数的三角形数"><a href="#多约数的三角形数" class="headerlink" title="多约数的三角形数"></a><strong>多约数的三角形数</strong></h2><p>三角形数可以由累加自然数来生成。例如，第$7$个三角形数是$1 + 2 + 3 + 4 + 5 + 6 + 7 = 28$。前十个三角形数分别是：</p>
+<h2 id="有很多约数的三角形数"><a href="#有很多约数的三角形数" class="headerlink" title="有很多约数的三角形数"></a><strong>有很多约数的三角形数</strong></h2><p>三角形数是通过累加自然数所得到的数。例如，第$7$个三角形数是$1 + 2 + 3 + 4 + 5 + 6 + 7 = 28$。前十个三角形数分别是：</p>
 <p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots $$</p>
 <p>列举出前七个三角形数的所有约数：</p>
-<p>$$\begin{aligned}<br>\bf{1:} &amp; 1\<br>\bf{3:} &amp; 1,3\<br>\bf{6:} &amp; 1,2,3,6 \<br>\bf{10:} &amp; 1,2,5,10 \<br>\bf{15:} &amp; 1,3,5,15 \<br>\bf{21:} &amp; 1,3,7,21 \<br>\bf{28:} &amp; 1,2,4,7,14,28 \<br>\end{aligned}$$</p>
-<p>可以看出，$28$是第一个拥有超过五个约数的三角形数。</p>
-<p>第一个拥有超过五百个约数的三角形数是多少？</p>
+<p>$$\begin{aligned}<br>\bf{1:}\ &amp; 1\\<br>\bf{3:}\ &amp; 1,3\\<br>\bf{6:}\ &amp; 1,2,3,6 \\<br>\bf{10:}\ &amp; 1,2,5,10 \\<br>\bf{15:}\ &amp; 1,3,5,15 \\<br>\bf{21:}\ &amp; 1,3,7,21 \\<br>\bf{28:}\ &amp; 1,2,4,7,14,28 \\<br>\end{aligned}$$</p>
+<p>可以看出，$28$是第一个约数数量超过五的三角形数。</p>
+<p>第一个约数数量超过五百的三角形数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -2170,7 +2171,7 @@
     <content><![CDATA[<hr>
 <h1 id="Problem-14"><a href="#Problem-14" class="headerlink" title="Problem 14"></a><a href="https://projecteuler.net/problem=14" target="_blank" rel="noopener">Problem 14</a></h1><hr>
 <h2 id="Longest-Collatz-sequence"><a href="#Longest-Collatz-sequence" class="headerlink" title="Longest Collatz sequence"></a><strong>Longest Collatz sequence</strong></h2><p>The following iterative sequence is defined for the set of positive integers:</p>
-<p>$n \rightarrow n/2$ ($n$ is even)<br>$n \rightarrow 3n + 1$ ($n$ is odd)</p>
+<p>$n \rightarrow n/2$ ($n$ is even)<br /><br>$n \rightarrow 3n + 1$ ($n$ is odd)</p>
 <p>Using the rule above and starting with $13$, we generate the following sequence:</p>
 <p>$$13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$$</p>
 <p>It can be seen that this sequence (starting at $13$ and finishing at $1$) contains $10$ terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at $1$.</p>
@@ -2178,10 +2179,10 @@
 <p><strong>NOTE:</strong> Once the chain starts the terms are allowed to go above one million.</p>
 <hr>
 <h2 id="最长考拉兹序列"><a href="#最长考拉兹序列" class="headerlink" title="最长考拉兹序列"></a><strong>最长考拉兹序列</strong></h2><p>考虑如下定义在正整数集上的迭代规则：</p>
-<p>$n \rightarrow n/2$ （若$n$为偶数）<br>$n \rightarrow 3n + 1$ （若$n$为奇数）</p>
+<p>$n \rightarrow n/2$ （若$n$为偶数）<br /><br>$n \rightarrow 3n + 1$ （若$n$为奇数）</p>
 <p>从$13$开始，可以迭代生成如下的序列：</p>
 <p>$$13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$$</p>
-<p>可以看出这个序列（从$13$开始到$1$结束）共有$10$项。尽管还未被证明，但普遍认为，从任何数开始最终都能回到$1$（这被称为“考拉兹猜想”）。</p>
+<p>可以看出这个序列（从$13$开始到$1$结束）共有$10$项。尽管还未被证明，但普遍认为，从任何数开始最终都能抵达$1$并结束（这被称为“考拉兹猜想”）。</p>
 <p>在小于一百万的数中，从哪个数开始迭代生成的序列最长？</p>
 <p><strong>注：</strong> 在迭代过程中允许出现超过一百万的项。</p>
 <hr>
@@ -3548,9 +3549,9 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>If all the numbers from $1$ to $1000$ (one thousand) inclusive were written out in words, how many letters would be used? </p>
 <p><strong>NOTE:</strong> Do not count spaces or hyphens. For example, $342$ (three hundred and forty-two) contains $23$ letters and $115$ (one hundred and fifteen) contains $20$ letters. The use of “and” when writing out numbers is in compliance with British usage.</p>
 <hr>
-<h2 id="表达数字的英文字母计数"><a href="#表达数字的英文字母计数" class="headerlink" title="表达数字的英文字母计数"></a><strong>表达数字的英文字母计数</strong></h2><p>把$1$到$5$写成英文单词分别是：one、two、three、four、five。这些单词一共用了$3 + 3 + 5 + 4 + 4 = 19$个字母。</p>
+<h2 id="整数英文表达的字母计数"><a href="#整数英文表达的字母计数" class="headerlink" title="整数英文表达的字母计数"></a><strong>整数英文表达的字母计数</strong></h2><p>把$1$到$5$写成英文单词分别是：one、two、three、four、five。这些单词一共用了$3 + 3 + 5 + 4 + 4 = 19$个字母。</p>
 <p>如果把$1$到$1000$都写成英文单词，一共要用多少个字母？</p>
-<p><strong>注意：</strong> 不要算上空格和连字符。例如，$342$（three hundred and forty-two）包含$23$个字母，而$115$（one hundred and fifteen）包含$20$个字母。单词“and”的使用方式遵循英式英语的规则。</p>
+<p><strong>注意：</strong> 不计入空格和连字符：例如，$342$（three hundred and forty-two）包含$23$个字母，而$115$（one hundred and fifteen）包含$20$个字母。单词“and”的使用方式遵循英式英语的规则。</p>
 <hr>
 ]]></content>
   </entry>
@@ -3814,7 +3815,8 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 
 <p>That is, $3 + 7 + 4 + 9 = 23$.</p>
 <p>Find the maximum total from top to bottom of the triangle below:</p>
-<center style="font-family:'Courier New',monospace;">75<br />
+<center style="font-family:'Courier New',monospace;">
+75<br />
 95 64<br />
 17 47 82<br />
 18 35 87 10<br />
@@ -3833,7 +3835,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 
 <p><strong>NOTE:</strong> As there are only $16384$ routes, it is possible to solve this problem by trying every route. However, <a href="/67">Problem 67</a>, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)</p>
 <hr>
-<h2 id="最大路径和-I"><a href="#最大路径和-I" class="headerlink" title="最大路径和 I"></a><strong>最大路径和 I</strong></h2><p>从如下的数字三角形的顶端出发，不断移动到下一行与其相邻的元素，所能得到的最大路径和是$23$。</p>
+<h2 id="最大路径和-I"><a href="#最大路径和-I" class="headerlink" title="最大路径和 I"></a><strong>最大路径和 I</strong></h2><p>从如下数字三角形的顶端出发，不断移动到下一行与其相邻的数直至到达底部，所能得到的最大路径和是$23$。</p>
 <center style="font-family:'Courier New',monospace;"><span style="color:#ff0000;"><b>3</b></span><br />
 <span style="color:#ff0000;"><b>7</b></span> 4<br />
 2 <span style="color:#ff0000;"><b>4</b></span> 6<br />
@@ -3841,8 +3843,9 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 </center>
 
 <p>如上图，最大路径和为$3 + 7 + 4 + 9 = 23$。</p>
-<p>从如下的数字三角形顶端出发到达底部，求所能得到的最大路径和。</p>
-<center style="font-family:'Courier New',monospace;">75<br />
+<p>从如下数字三角形的顶端出发到达底部，求所能得到的最大路径和。</p>
+<center style="font-family:'Courier New',monospace;">
+75<br />
 95 64<br />
 17 47 82<br />
 18 35 87 10<br />
@@ -3859,7 +3862,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23<br />
 </center>
 
-<p><strong>注意：</strong> 在这个问题中，由于只有$16384$条路径，通过穷举所有的路径来解决问题是可行的。但是，对于<a href="/67">第67题</a>，虽然是一道相同类型的题目，但是其中的数字三角形将拥有一百行，就不再能够通过暴力破解来解决，而需要一个更加聪明的办法！;o)</p>
+<p><strong>注意：</strong> 在这个问题中，由于只有$16384$条路径，通过穷举所有的路径来解决问题是可行的。然而，对于<a href="/67">第67题</a>，虽然是一道相同类型的题目，但是其中的数字三角形将拥有一百行，就不再能够通过暴力枚举的方法来解决，而需要一个更加聪明的办法！;o)</p>
 <hr>
 ]]></content>
   </entry>
@@ -10731,8 +10734,8 @@ A(9, 2), B(2, -9), C(-6, 7)
 <h2 id="Largest-palindrome-product"><a href="#Largest-palindrome-product" class="headerlink" title="Largest palindrome product"></a><strong>Largest palindrome product</strong></h2><p>A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009 = 91 \times 99$.</p>
 <p>Find the largest palindrome made from the product of two $3$-digit numbers.</p>
 <hr>
-<h2 id="最大回文乘积"><a href="#最大回文乘积" class="headerlink" title="最大回文乘积"></a><strong>最大回文乘积</strong></h2><p>回文数就是从前往后读和从后往前读都一样的数。由两个$2$位数相乘得到的最大的回文数是 $9009 = 91 \times 99$。</p>
-<p>求由两个$3$位数相乘得到的最大的回文数。</p>
+<h2 id="最大回文乘积"><a href="#最大回文乘积" class="headerlink" title="最大回文乘积"></a><strong>最大回文乘积</strong></h2><p>回文数是指从前往后读和从后往前读都一样的数。由两个$2$位数相乘得到的回文数中，最大的是 $9009 = 91 \times 99$。</p>
+<p>求最大的由两个$3$位数相乘得到的回文数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -13693,9 +13696,9 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <content><![CDATA[<hr>
 <h1 id="Problem-5"><a href="#Problem-5" class="headerlink" title="Problem 5"></a><a href="https://projecteuler.net/problem=5" target="_blank" rel="noopener">Problem 5</a></h1><hr>
 <h2 id="Smallest-multiple"><a href="#Smallest-multiple" class="headerlink" title="Smallest multiple"></a><strong>Smallest multiple</strong></h2><p>$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.</p>
-<p>What is the smallest positive number that is <dfn title="divisible with no remainder">evenly divisible</dfn> by all of the numbers from $1$ to $20$?</p>
+<p>What is the smallest positive number that is evenly divisible by all of the numbers from $1$ to $20$?</p>
 <hr>
-<h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a><strong>最小公倍数</strong></h2><p>$2520$是最小的能够被$1$到$10$整除的数。</p>
+<h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a><strong>最小公倍数</strong></h2><p>$2520$是最小的能够被$1$到$10$整除的正数。</p>
 <p>最小的能够被$1$到$20$整除的正数是多少？</p>
 <hr>
 ]]></content>
@@ -17020,12 +17023,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025 − 385 = 2640$.</p>
 <p>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
 <hr>
-<h2 id="平方的和与和的平方之差"><a href="#平方的和与和的平方之差" class="headerlink" title="平方的和与和的平方之差"></a><strong>平方的和与和的平方之差</strong></h2><p>前十个自然数的平方的和是</p>
+<h2 id="平方和与和平方之差"><a href="#平方和与和平方之差" class="headerlink" title="平方和与和平方之差"></a><strong>平方和与和平方之差</strong></h2><p>前十个自然数的平方的和是</p>
 <p>$$1^2+2^2+\ldots +10^2=385$$</p>
 <p>前十个自然数的和的平方是</p>
 <p>$$(1+2+\ldots+10)^2 = 55^2 = 3025$$</p>
-<p>因此，前十个数的平方的和与和的平方之差是$3025 − 385 = 2640$。</p>
-<p>求前一百个数的平方的和与和的平方之差。</p>
+<p>因此，前十个自然数的平方和与和平方之差是$3025 − 385 = 2640$。</p>
+<p>求前一百个自然数的平方的与和平方之差。</p>
+<p><i class=zh>译注：注意此处出题人使用的自然数定义不包含$0$。</i></p>
 <hr>
 ]]></content>
   </entry>
@@ -23925,7 +23929,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <ol>
 <li>它不是回文数，且</li>
 <li>它是质数的平方，且</li>
-<li>将它的数字反转所得的数也是指数的平方。</li>
+<li>将它的数字反转所得的数也是质数的平方。</li>
 </ol>
 <p>$169$和$961$都不是回文数，因此它们都是可反转质数平方。</p>
 <p>求前$50$个可反转质数平方的和。</p>
