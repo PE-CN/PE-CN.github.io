@@ -5211,13 +5211,13 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/21/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-21"><a href="#Problem-21" class="headerlink" title="Problem 21"></a><a href="https://projecteuler.net/problem=21" target="_blank" rel="noopener">Problem 21</a></h1><hr>
-<h2 id="Amicable-numbers"><a href="#Amicable-numbers" class="headerlink" title="Amicable numbers"></a><strong>Amicable numbers</strong></h2><p>Let $d(n)$ be defined as the sum of proper divisors of $n$ (numbers less than $n$ which divide evenly into $n$).<br>If $d(a) = b$ and $d(b) = a$, where $a \neq b$, then $a$ and $b$ are an amicable pair and each of $a$ and $b$ are called amicable numbers.</p>
+<h2 id="Amicable-numbers"><a href="#Amicable-numbers" class="headerlink" title="Amicable numbers"></a><strong>Amicable numbers</strong></h2><p>Let $d(n)$ be defined as the sum of proper divisors of $n$ (numbers less than $n$ which divide evenly into $n$).<br /><br>If $d(a) = b$ and $d(b) = a$, where $a \neq b$, then $a$ and $b$ are an amicable pair and each of $a$ and $b$ are called amicable numbers.</p>
 <p>For example, the proper divisors of $220$ are $1$, $2$, $4$, $5$, $10$, $11$, $20$, $22$, $44$, $55$ and $110$; therefore $d(220) = 284$. The proper divisors of $284$ are $1$, $2$, $4$, $71$ and $142$; so $d(284) = 220$.</p>
 <p>Evaluate the sum of all the amicable numbers under $10000$.</p>
 <hr>
-<h2 id="亲和数"><a href="#亲和数" class="headerlink" title="亲和数"></a><strong>亲和数</strong></h2><p>记$d(n)$为$n$的所有真约数（小于$n$且整除$n$的正整数）之和。<br>如果$d(a) = b$且$d(b) = a$，且$a\neq b$，那么$a$和$b$构成一个亲和数对，$a$和$b$被称为亲和数。</p>
+<h2 id="亲和数"><a href="#亲和数" class="headerlink" title="亲和数"></a><strong>亲和数</strong></h2><p>记$d(n)$为$n$的所有真约数（小于$n$且整除$n$的正整数）之和。<br /><br>如果$d(a) = b$，$d(b) = a$，而且$a\neq b$，那么$a$和$b$构成一个亲和数对，$a$和$b$都被称为亲和数。</p>
 <p>例如，$220$的真因数包括$1$、$2$、$4$、$5$、$10$、$11$、$20$、$22$、$44$、$55$和$110$，因此$d(220) = 284$；而$284$的真因数包括$1$、$2$、$4$、$71$和$142$，因此$d(284) = 220$。</p>
-<p>求所有小于$10000$的亲和数的和。</p>
+<p>求所有小于$10000$的亲和数之和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -5245,9 +5245,9 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>For example, when the list is sorted into alphabetical order, COLIN, which is worth $3 + 15 + 12 + 9 + 14 = 53$, is the $938$th name in the list. So, COLIN would obtain a score of $938 \times 53 = 49714$.</p>
 <p>What is the total of all the name scores in the file?</p>
 <hr>
-<h2 id="名字打分"><a href="#名字打分" class="headerlink" title="名字打分"></a><strong>名字打分</strong></h2><p>在文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>（右击并选择“目标另存为……”）中包含了五千多个名字。首先将它们按照字母序排列，然后计算出每个名字的字母价值，乘以它在按字母顺序排列后的位置，就算出了这个名字的得分。</p>
-<p>例如，按照字母序排列后，位于第$938$位的名字是COLIN，它的字母价值是$3 + 15 + 12 + 9 + 14 = 53$。因此，COLIN这个名字的得分是$938 \times 53 = 49714$。</p>
-<p>上述文本文件中，所有名字的得分之和是多少？</p>
+<h2 id="英文名得分"><a href="#英文名得分" class="headerlink" title="英文名得分"></a><strong>英文名得分</strong></h2><p>在文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>（右击并选择“目标另存为……”）中有五千多个英文名。首先将这些英文名按照字母序排序，然后计算出每个英文名的字母价值，乘以它在按字母序排序后的位置，得到的就是这个英文名的得分。</p>
+<p>例如，按照字母序排序后，位于第$938$位的名字是COLIN，它的字母价值是$3 + 15 + 12 + 9 + 14 = 53$。因此，COLIN这个英文名的得分是$938 \times 53 = 49714$。</p>
+<p>上述文本文件中，所有英文名的得分之和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -5484,8 +5484,8 @@ $y_k= \text{sin(}\frac{2k-1}{n} \times 180^\circ \text{)}$
 <hr>
 <h2 id="非盈数和"><a href="#非盈数和" class="headerlink" title="非盈数和"></a><strong>非盈数和</strong></h2><p>完全数是指真约数之和等于自身的数。例如，$28$的真约数之和为$1 + 2 + 4 + 7 + 14 = 28$，因此$28$是一个完全数。</p>
 <p>若一个数$n$的真约数之和小于$n$，则称之为亏数；反之，则称之为盈数。</p>
-<p>由于$12$是最小的盈数，它的真约数之和为$1 + 2 + 3 + 4 + 6 = 16$，所以最小的能够表示成两个盈数之和的数是$24$。通过数学分析可以得出，所有大于$28123$的数都可以被写成两个盈数的和；尽管已知最大的不能被写成两个盈数之和的数要小于这个值，但这是仅通过分析所能得到的最好上界。</p>
-<p>求所有不能被写成两个盈数之和的正整数之和。</p>
+<p>由于$12$是最小的盈数（它的真约数之和为$1 + 2 + 3 + 4 + 6 = 16$），所以能够表示成两个盈数之和的最小数是$24$。通过数学分析可以得出，所有大于$28123$的数都可以被表示成两个盈数的和。但是，这仅仅是通过数学分析所能得到的最好上界，而实际上不能被表示成两个盈数之和的最大数要小于这个值。</p>
+<p>求所有不能被表示成两个盈数之和的正整数之和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -5841,7 +5841,7 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
 <p>$$012 \quad 021 \quad 102 \quad 120 \quad 201 \quad 210$$</p>
 <p>What is the millionth lexicographic permutation of the digits $0$, $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$ and $9$?</p>
 <hr>
-<h2 id="字典序排列"><a href="#字典序排列" class="headerlink" title="字典序排列"></a><strong>字典序排列</strong></h2><p>排列指的是将一组物体放置为特定的顺序。例如，$3124$是数字$1$、$2$、$3$、$4$的一个排列。将所有排列按照数字大小或字母先后进行排序称为字典序。数字$0$、$1$、$2$的字典序排列是：</p>
+<h2 id="字典序排列"><a href="#字典序排列" class="headerlink" title="字典序排列"></a><strong>字典序排列</strong></h2><p>排列指的是将一组对象放置为特定的顺序。例如，$3124$是数字$1$、$2$、$3$、$4$的一个排列。将所有排列按照数字大小或字母先后进行排序称为字典序。数字$0$、$1$、$2$的字典序排列是：</p>
 <p>$$012 \quad 021 \quad 102 \quad 120 \quad 201 \quad 210$$</p>
 <p>在数字$0$、$1$、$2$、$3$、$4$、$5$、$6$、$7$、$8$、$9$的字典序排列中，处于第一百万位的排列是什么？</p>
 <hr>
@@ -6101,14 +6101,14 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
     <url>/25/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-25"><a href="#Problem-25" class="headerlink" title="Problem 25"></a><a href="https://projecteuler.net/problem=25" target="_blank" rel="noopener">Problem 25</a></h1><hr>
-<h2 id="1000-digit-Fibonacci-number"><a href="#1000-digit-Fibonacci-number" class="headerlink" title="$1000$-digit Fibonacci number"></a><strong>$1000$-digit Fibonacci number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$$F_1 = 1\quad F_2= 1$$<br>$$F_n = F_{n-1} + F_{n-2}$$</p>
+<h2 id="1000-digit-Fibonacci-number"><a href="#1000-digit-Fibonacci-number" class="headerlink" title="$1000$-digit Fibonacci number"></a><strong>$1000$-digit Fibonacci number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n = F_{n-1} + F_{n-2}$, where $F_1 = 1$ and $F_2 = 1$.</p>
 <p>Hence the first 12 terms will be:<br>$$\begin{aligned}<br>F_1&amp;=1\\<br>F_2&amp;=1\\<br>F_3&amp;=2\\<br>F_4&amp;=3\\<br>F_5&amp;=5\\<br>F_6&amp;=8\\<br>F_7&amp;=13\\<br>F_8&amp;=21\\<br>F_9&amp;=34\\<br>F_{10}&amp;=55\\<br>F_{11}&amp;=89\\<br>F_{12}&amp;=144\\<br>\end{aligned}$$</p>
 <p>The $12$th term, $F_{12}$, is the first term to contain three digits.</p>
 <p>What is the first term in the Fibonacci sequence to contain $1000$ digits?</p>
 <hr>
-<h2 id="1000-位斐波那契数"><a href="#1000-位斐波那契数" class="headerlink" title="$1000$位斐波那契数"></a><strong>$1000$位斐波那契数</strong></h2><p>斐波那契数列是按如下递归定义的数列：<br>$$F_1 = 1\quad F_2= 1$$<br>$$F_n = F_{n-1} + F_{n-2}$$</p>
+<h2 id="1000-位斐波那契数"><a href="#1000-位斐波那契数" class="headerlink" title="$1000$位斐波那契数"></a><strong>$1000$位斐波那契数</strong></h2><p>斐波那契数列是按如下递归定义的数列：<br>$F_n = F_{n-1} + F_{n-2}$，且$F_1 = 1$，$F_2 = 1$。</p>
 <p>因此斐波那契数列的前12项分别是：<br>$$\begin{aligned}<br>F_1&amp;=1\\<br>F_2&amp;=1\\<br>F_3&amp;=2\\<br>F_4&amp;=3\\<br>F_5&amp;=5\\<br>F_6&amp;=8\\<br>F_7&amp;=13\\<br>F_8&amp;=21\\<br>F_9&amp;=34\\<br>F_{10}&amp;=55\\<br>F_{11}&amp;=89\\<br>F_{12}&amp;=144\\<br>\end{aligned}$$</p>
-<p>第一个包含三位数字的是第$12$项$F_{12}$。</p>
+<p>在斐波那契数列中，第一个包含三位数字的是第$12$项$F_{12}$。</p>
 <p>在斐波那契数列中，第一个包含$1000$位数字的是第几项？</p>
 <hr>
 ]]></content>
@@ -6508,14 +6508,14 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <content><![CDATA[<hr>
 <h1 id="Problem-26"><a href="#Problem-26" class="headerlink" title="Problem 26"></a><a href="https://projecteuler.net/problem=26" target="_blank" rel="noopener">Problem 26</a></h1><hr>
 <h2 id="Reciprocal-cycles"><a href="#Reciprocal-cycles" class="headerlink" title="Reciprocal cycles"></a><strong>Reciprocal cycles</strong></h2><p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
-<p>$$\begin{aligned}<br>\frac 1 2 &amp;= 0.5\\<br>\frac 1 3 &amp;= 0.(3)\\<br>\frac 1 4 &amp;= 0.25\\<br>\frac 1 5 &amp;= 0.2\\<br>\frac 1 6 &amp;= 0.1(6)\\<br>\frac 1 7 &amp;= 0.(142857)\\<br>\frac 1 8 &amp;= 0.125\\<br>\frac 1 9 &amp;= 0.(1)\\<br>\frac 1 {10} &amp;= 0.1\\<br>\end{aligned}$$</p>
-<p>Where $0.1(6)$ means $0.166666\ldots$, and has a $1$-digit recurring cycle. It can be seen that $\frac{1}{7}$ has a $6$-digit recurring cycle.</p>
-<p>Find the value of $d&lt;1000$ for which $\frac{1}{d}$ contains the longest recurring cycle in its decimal fraction part.</p>
+<p>$$\begin{aligned}<br>1/2 &amp;= 0.5\\<br>1/3 &amp;= 0.(3)\\<br>1/4 &amp;= 0.25\\<br>1/5 &amp;= 0.2\\<br>1/6 &amp;= 0.1(6)\\<br>1/7 &amp;= 0.(142857)\\<br>1/8 &amp;= 0.125\\<br>1/9 &amp;= 0.(1)\\<br>1/10 &amp;= 0.1\\<br>\end{aligned}$$</p>
+<p>Where $0.1(6)$ means $0.166666\ldots$, and has a $1$-digit recurring cycle. It can be seen that $1/7$ has a $6$-digit recurring cycle.</p>
+<p>Find the value of $d&lt;1000$ for which $1/d$ contains the longest recurring cycle in its decimal fraction part.</p>
 <hr>
 <h2 id="倒数的循环节"><a href="#倒数的循环节" class="headerlink" title="倒数的循环节"></a><strong>倒数的循环节</strong></h2><p>单位分数指分子为$1$的分数。分母为$2$至$10$的单位分数的十进制表示如下所示：</p>
-<p>$$\begin{aligned}<br>\frac 1 2 &amp;= 0.5\\<br>\frac 1 3 &amp;= 0.(3)\\<br>\frac 1 4 &amp;= 0.25\\<br>\frac 1 5 &amp;= 0.2\\<br>\frac 1 6 &amp;= 0.1(6)\\<br>\frac 1 7 &amp;= 0.(142857)\\<br>\frac 1 8 &amp;= 0.125\\<br>\frac 1 9 &amp;= 0.(1)\\<br>\frac 1 {10} &amp;= 0.1\\<br>\end{aligned}$$</p>
-<p>这里括号表示循环节，如$0.1(6)$就是指$0.166666\ldots$，循环节的长度为$1$。可以看出，$\frac{1}{7}$的循环节长度为$6$。</p>
-<p>在所有满足$d&lt;1000$的数中，求使得其倒数$\frac{1}{d}$的十进制表示中循环节最长的$d$。</p>
+<p>$$\begin{aligned}<br>1/2 &amp;= 0.5\\<br>1/3 &amp;= 0.(3)\\<br>1/4 &amp;= 0.25\\<br>1/5 &amp;= 0.2\\<br>1/6 &amp;= 0.1(6)\\<br>1/7 &amp;= 0.(142857)\\<br>1/8 &amp;= 0.125\\<br>1/9 &amp;= 0.(1)\\<br>1/10 &amp;= 0.1\\<br>\end{aligned}$$</p>
+<p>其中，括号表示循环节，如$0.1(6)$就是指$0.166666\ldots$，循环节的长度为$1$。可以看出，$1/7$的循环节长度为$6$。</p>
+<p>在所有满足$d&lt;1000$的数中，求使得其倒数$1/d$的十进制表示中循环节最长的$d$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -6793,15 +6793,18 @@ A(9, 2), B(2, -9), C(-6, 7)
 <p>$$n^2 + n + 41$$</p>
 <p>It turns out that the formula will produce $40$ primes for the consecutive integer values $0 \le n \le 39$. However, when $n = 40$, $40^2 + 40 + 41 = 40(40 + 1) + 41$ is divisible by $41$, and certainly when $n = 41$, $41^2 + 41 + 41$ is clearly divisible by $41$.</p>
 <p>The incredible formula $n^2 - 79n + 1601$ was discovered, which produces $80$ primes for the consecutive values $0 \le n \le 79$. The product of the coefficients, $−79$ and $1601$, is $−126479$.</p>
-<p>Considering quadratics of the form:<br>$n^2 + an + b$, where $|a|&lt;1000$ and $|b| \le 1000$;<br>where $|n|$ is the modulus/absolute value of $n$, e.g. $|11| = 11$ and $|-4| = 4$.</p>
+<p>Considering quadratics of the form:</p>
+<p>$n^2 + an + b$, where $|a|&lt;1000$ and $|b| \le 1000$,</p>
+<p>where $|n|$ is the modulus/absolute value of $n$, e.g. $|11| = 11$ and $|-4| = 4$.</p>
 <p>Find the product of the coefficients, $a$ and $b$, for the quadratic expression that produces the maximum number of primes for consecutive values of $n$, starting with $n = 0$.</p>
 <hr>
 <h2 id="素数生成二次多项式"><a href="#素数生成二次多项式" class="headerlink" title="素数生成二次多项式"></a><strong>素数生成二次多项式</strong></h2><p>欧拉发现了这个著名的二次多项式：</p>
 <p>$$n^2 + n + 41$$</p>
-<p>对$0\le n\le39$范围内的所有整数，这个多项式可以生成$40$个质数。但是，当$n=40$时，$40^2 + 40 + 41 = 40(40 + 1) + 41$能够被$41$整除，而当$n=41$时，$41^2 + 41 + 41$显然也能够被$41$整除。</p>
-<p>之后，人们又发现了一个神奇的多项式$n^2 - 79n + 1601$，这个多项式能够对$0\le n\le79$范围内的所有整数生成$80$个质数。这个二次多项式的系数分别是$-79$和$1601$，其乘积为$-126479$。</p>
-<p>考虑所有如下形式的二次多项式：<br>$n^2 + an + b$，其中$|a|&lt;1000$，$|b| \le 1000$；<br>这里$|n|$表示$n$的绝对值，例如$|11| = 11$，$|-4| = 4$。</p>
-<p>找出其中能够从$n=0$开始连续生成最多素数的二次多项式表达式，并给出其系数$a$和$b$的乘积。</p>
+<p>对$0\le n\le39$范围内的所有整数，这个多项式可以连续生成$40$个质数。但是，当$n=40$时，$40^2 + 40 + 41 = 40(40 + 1) + 41$能够被$41$整除，而当$n=41$时，$41^2 + 41 + 41$显然也能够被$41$整除。</p>
+<p>之后，人们又发现了一个神奇的多项式$n^2 - 79n + 1601$，这个多项式能够对$0\le n\le79$范围内的所有整数连续生成$80$个质数。这个二次多项式的系数分别是$-79$和$1601$，其乘积为$-126479$。</p>
+<p>考虑所有如下形式的二次多项式：<br>$n^2 + an + b$，其中$|a|&lt;1000$，$|b| \le 1000$。</p>
+<p>这里$|n|$表示$n$的绝对值，例如，$|11| = 11$，$|-4| = 4$。</p>
+<p>找出其中能够从$n=0$开始连续生成最多素数的二次多项式，求其系数$a$和$b$的乘积。</p>
 <hr>
 ]]></content>
   </entry>
@@ -7074,7 +7077,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/28/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-28"><a href="#Problem-28" class="headerlink" title="Problem 28"></a><a href="https://projecteuler.net/problem=28" target="_blank" rel="noopener">Problem 28</a></h1><hr>
-<h2 id="Number-spiral-diagonals"><a href="#Number-spiral-diagonals" class="headerlink" title="Number spiral diagonals"></a><strong>Number spiral diagonals</strong></h2><p>Starting with the number $1$ and moving to the right in a clockwise direction a $5$ by $5$ spiral is formed as follows:</p>
+<h2 id="Number-spiral-diagonals"><a href="#Number-spiral-diagonals" class="headerlink" title="Number spiral diagonals"></a><strong>Number spiral diagonals</strong></h2><p>Starting with the number $1$ and moving to the right in a clockwise direction, a $5$ by $5$ spiral is formed as follows:</p>
 <center style="font-family: 'Lucida Consolas', 'Consolas', 'Courier New', monospace">
 <span style="color:red"><b>21</b></span> 22 23 24 <span style="color:red"><b>25</b></span><br />
 20 &nbsp;<span style="color:red"><b>7</b></span> &nbsp;8  <span style="color:red"><b>&nbsp;9</b></span> 10<br />
@@ -7096,7 +7099,7 @@ A(9, 2), B(2, -9), C(-6, 7)
 </center>
 
 <p>可以看出，该数阵对角线上的数之和是$101$。</p>
-<p>以同样方式构成的$1001 \times 1001$螺旋数阵对角线上的数之和是多少？</p>
+<p>考虑以同样方式构成的$1001 \times 1001$螺旋数阵，其对角线上的数之和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -7268,16 +7271,15 @@ A(9, 2), B(2, -9), C(-6, 7)
     <content><![CDATA[<hr>
 <h1 id="Problem-29"><a href="#Problem-29" class="headerlink" title="Problem 29"></a><a href="https://projecteuler.net/problem=29" target="_blank" rel="noopener">Problem 29</a></h1><hr>
 <h2 id="Distinct-powers"><a href="#Distinct-powers" class="headerlink" title="Distinct powers"></a><strong>Distinct powers</strong></h2><p>Consider all integer combinations of $a^b$ for $2 \le a \le 5$ and $2 \le b \le 5$:</p>
-<p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
+<p>$$\begin{aligned}<br>&amp; 2^2=4, 2^3=8, 2^4=16, 2^5=32\\<br>&amp; 3^2=9, 3^3=27, 3^4=81, 3^5=243\\<br>&amp; 4^2=16, 4^3=64, 4^4=256, 4^5=1024\\<br>&amp; 5^2=25, 5^3=125, 5^4=625, 5^5=3125\\<br>\end{aligned}$$</p>
 <p>If they are then placed in numerical order, with any repeats removed, we get the following sequence of $15$ distinct terms:</p>
 <p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
 <p>How many distinct terms are in the sequence generated by $a^b$ for $2\le a \le 100$ and $2 \le  b \le 100$?</p>
 <hr>
-<h2 id="不同的幂"><a href="#不同的幂" class="headerlink" title="不同的幂"></a><strong>不同的幂</strong></h2><p>考虑所有满足$2 \le a \le 5$和$2 \le b \le 5$的整数组合所生成的幂$a^b$：</p>
-<p>$$2^2=4, 2^3=8, 2^4=16, 2^5=32$$<br>$$3^2=9, 3^3=27, 3^4=81, 3^5=243$$<br>$$4^2=16, 4^3=64, 4^4=256, 4^5=1024$$<br>$$5^2=25, 5^3=125, 5^4=625, 5^5=3125$$</p>
-<p>如果把这些幂从小到大排列并去重，我们得到以下由$15$个不同的项组成的序列：</p>
+<h2 id="不同的幂"><a href="#不同的幂" class="headerlink" title="不同的幂"></a><strong>不同的幂</strong></h2><p>考虑所有满足$2 \le a \le 5$和$2 \le b \le 5$的幂$a^b$：</p>
+<p>$$\begin{aligned}<br>&amp; 2^2=4, 2^3=8, 2^4=16, 2^5=32\\<br>&amp; 3^2=9, 3^3=27, 3^4=81, 3^5=243\\<br>&amp; 4^2=16, 4^3=64, 4^4=256, 4^5=1024\\<br>&amp; 5^2=25, 5^3=125, 5^4=625, 5^5=3125\\<br>\end{aligned}$$<br>如果把这些幂从小到大排列并去重，可以得到如下由$15$个不同的项组成的数列：</p>
 <p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
-<p>考虑所有满足$2 \le a \le 100$和$2 \le b \le 100$的整数组合所生成的幂$a^b$，将它们排列并去重所得到的序列有多少个不同的项？</p>
+<p>考虑所有满足$2 \le a \le 100$和$2 \le b \le 100$的幂$a^b$，将它们排列并去重所得到的数列有多少个不同的项？</p>
 <hr>
 ]]></content>
   </entry>
