@@ -8037,11 +8037,11 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/31/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-31"><a href="#Problem-31" class="headerlink" title="Problem 31"></a><a href="https://projecteuler.net/problem=31" target="_blank" rel="noopener">Problem 31</a></h1><hr>
-<h2 id="Coin-sums"><a href="#Coin-sums" class="headerlink" title="Coin sums"></a><strong>Coin sums</strong></h2><p>In England the currency is made up of pound, $\it\unicode{xA3}$, and pence, $p$, and there are eight coins in general circulation:<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p)$$</p>
+<h2 id="Coin-sums"><a href="#Coin-sums" class="headerlink" title="Coin sums"></a><strong>Coin sums</strong></h2><p>In the United Kingdom the currency is made up of pound ($\it\unicode{xA3}$) and pence ($p$). There are eight coins in general circulation:<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p).$$</p>
 <p>It is possible to make ${\it\unicode{xA3}}2$ in the following way:<br>$$1\times {\it\unicode{xA3}}1+ 1\times 50p + 2 \times 20 p+1\times 5p+ 1\times 2p+3\times 1p$$</p>
 <p>How many different ways can ${\it\unicode{xA3}}2$ be made using any number of coins?</p>
 <hr>
-<h2 id="硬币求和"><a href="#硬币求和" class="headerlink" title="硬币求和"></a><strong>硬币求和</strong></h2><p>英国的货币单位分英镑$\it\unicode{xA3}$和便士$p$，目前流通的硬币一共有八种面值：<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p)$$</p>
+<h2 id="硬币求和"><a href="#硬币求和" class="headerlink" title="硬币求和"></a><strong>硬币求和</strong></h2><p>英国的货币单位分为英镑（$\it\unicode{xA3}$）和便士（$p$）。目前流通的硬币一共有八种面值：<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p).$$</p>
 <p>想要凑出${\it\unicode{xA3}}2$，其中一种做法是：<br>$$1\times {\it\unicode{xA3}}1+ 1\times 50p + 2 \times 20 p+1\times 5p+ 1\times 2p+3\times 1p$$</p>
 <p>不限制硬币数量，凑出${\it\unicode{xA3}}2$有多少种不同的做法？</p>
 <hr>
@@ -8402,16 +8402,14 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/32/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-32"><a href="#Problem-32" class="headerlink" title="Problem 32"></a><a href="https://projecteuler.net/problem=32" target="_blank" rel="noopener">Problem 32</a></h1><hr>
-<p><strong>Pandigital products</strong></p>
-<p>We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.</p>
-<p>The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.</p>
-<p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.</p>
+<h2 id="Pandigital-products"><a href="#Pandigital-products" class="headerlink" title="Pandigital products"></a><strong>Pandigital products</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through $5$ pandigital.</p>
+<p>The product $7254$ is unusual, as the identity, $39\times186 = 7254$, containing multiplicand, multiplier, and product is $1$ through $9$ pandigital.</p>
+<p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a $1$ through $9$ pandigital.</p>
 <p>HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.</p>
 <hr>
-<p><strong>全数字的乘积</strong></p>
-<p>如果一个n位数包含了1至n的所有数字恰好一次，我们称它为全数字的；例如，五位数15234就是1至5全数字的。</p>
-<p>7254是一个特殊的乘积，因为在等式39 × 186 = 7254中，被乘数、乘数和乘积恰好是1至9全数字的。</p>
-<p>找出所有被乘数、乘数和乘积恰好是1至9全数字的乘法等式，并求出这些等式中乘积的和。</p>
+<h2 id="全数字的乘积"><a href="#全数字的乘积" class="headerlink" title="全数字的乘积"></a><strong>全数字的乘积</strong></h2><p>如果一个$n$位数包含了$1$至$n$的所有数字恰好一次，我们称它为全数字的；例如，五位数$15234$就是$1$至$5$全数字的。</p>
+<p>$7254$是一个特殊的乘积，因为在等式$39 \times 186 = 7254$中，被乘数、乘数和乘积恰好是$1$至$9$全数字的。</p>
+<p>找出所有被乘数、乘数和乘积恰好是$1$至$9$全数字的乘法等式，并求出这些等式中乘积的和。</p>
 <p>注意：有些乘积可能从多个乘法等式中得到，但在求和的时候只计算一次。</p>
 <hr>
 ]]></content>
@@ -8653,17 +8651,15 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/33/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-33"><a href="#Problem-33" class="headerlink" title="Problem 33"></a><a href="https://projecteuler.net/problem=33" target="_blank" rel="noopener">Problem 33</a></h1><hr>
-<p><strong>Digit cancelling fractions</strong></p>
-<p>The fraction <sup>49</sup>/<sub>98</sub> is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that <sup>49</sup>/<sub>98</sub> = <sup>4</sup>/<sub>8</sub>, which is correct, is obtained by cancelling the 9s.</p>
-<p>We shall consider fractions like, <sup>30</sup>/<sub>50</sub> = <sup>3</sup>/<sub>5</sub>, to be trivial examples.</p>
+<h2 id="Digit-cancelling-fractions"><a href="#Digit-cancelling-fractions" class="headerlink" title="Digit cancelling fractions"></a><strong>Digit cancelling fractions</strong></h2><p>The fraction $49/98$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $49/98=4/8$, which is correct, is obtained by cancelling the $9$s.</p>
+<p>We shall consider fractions like, $30/50=3/5$, to be trivial examples.</p>
 <p>There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.</p>
 <p>If the product of these four fractions is given in its lowest common terms, find the value of the denominator.</p>
 <hr>
-<p><strong>消去数字的分数</strong></p>
-<p><sup>49</sup>/<sub>98</sub>是一个有趣的分数，因为缺乏经验的数学家可能在约简时错误地认为，等式<sup>49</sup>/<sub>98</sub> = <sup>4</sup>/<sub>8</sub>之所以成立，是因为在分数线上下同时抹除了9的缘故。</p>
-<p>我们也会想到，存在诸如<sup>30</sup>/<sub>50</sub> = <sup>3</sup>/<sub>5</sub>这样的平凡解。</p>
-<p>这类有趣的分数恰好有四个非平凡的例子，它们的分数值小于1，且分子和分母都是两位数。</p>
-<p>将这四个分数的乘积写成最简分数，求此时分母的值。</p>
+<h2 id="消去数字的分数"><a href="#消去数字的分数" class="headerlink" title="消去数字的分数"></a><strong>消去数字的分数</strong></h2><p>$49/98$是一个有趣的分数，因为缺乏经验的数学家可能在约简时错误地认为，等式$49/98=4/8$之所以成立，是因为在分数线上下同时消去了$9$的缘故。</p>
+<p>显然，存在诸如$30/50=3/5$这样的平凡解。</p>
+<p>除此之外，在所有值小于$1$且分子和分母都是两位数的分数中，恰好有四个非平凡解。</p>
+<p>将这四个分数的乘积写成最简分数，并求此时分母的值。</p>
 <hr>
 ]]></content>
   </entry>
@@ -8989,15 +8985,13 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/34/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-34"><a href="#Problem-34" class="headerlink" title="Problem 34"></a><a href="https://projecteuler.net/problem=34" target="_blank" rel="noopener">Problem 34</a></h1><hr>
-<p><strong>Digit factorials</strong></p>
-<p>145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.</p>
+<h2 id="Digit-factorials"><a href="#Digit-factorials" class="headerlink" title="Digit factorials"></a><strong>Digit factorials</strong></h2><p>$145$ is a curious number, as $1! + 4! + 5! = 1 + 24 + 120 = 145$.</p>
 <p>Find the sum of all numbers which are equal to the sum of the factorial of their digits.</p>
-<p>Note: as 1! = 1 and 2! = 2 are not sums they are not included.</p>
+<p>Note: as $1! = 1$ and $2! = 2$ are not sums they are not included.</p>
 <hr>
-<p><strong>各位数字的阶乘</strong></p>
-<p>145是个有趣的数，因为1! + 4! + 5! = 1 + 24 + 120 = 145。</p>
+<h2 id="数字阶乘和"><a href="#数字阶乘和" class="headerlink" title="数字阶乘和"></a><strong>数字阶乘和</strong></h2><p>$145$是个有趣的数，因为$1! + 4! + 5! = 1 + 24 + 120 = 145$。</p>
 <p>找出所有各位数字的阶乘和等于其本身的数，并求它们的和。</p>
-<p>注意：因为1! = 1和2! = 2不是和的形式，所以它们并不在讨论范围内。</p>
+<p>注意：因为$1! = 1$和$2! = 2$不是和的形式，所以它们并不在讨论范围内。</p>
 <hr>
 ]]></content>
   </entry>
@@ -9279,14 +9273,12 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/35/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-35"><a href="#Problem-35" class="headerlink" title="Problem 35"></a><a href="https://projecteuler.net/problem=35" target="_blank" rel="noopener">Problem 35</a></h1><hr>
-<p><strong>Circular primes</strong></p>
-<p>The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.</p>
-<p>There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.</p>
+<h2 id="Circular-primes"><a href="#Circular-primes" class="headerlink" title="Circular primes"></a><strong>Circular primes</strong></h2><p>The number, $197$, is called a circular prime because all rotations of the digits: $197$, $971$, and $719$, are themselves prime.</p>
+<p>There are thirteen such primes below $100$: $2$, $3$, $5$, $7$, $11$, $13$, $17$, $31$, $37$, $71$, $73$, $79$, and $97$.</p>
 <p>How many circular primes are there below one million?</p>
 <hr>
-<p><strong>圆周素数</strong></p>
-<p>197被称为圆周素数，因为将它逐位旋转所得到的数：197/971和719都是素数。</p>
-<p>小于100的圆周素数有十三个：2、3、5、7、11、13、17、31、37、71、73、79和97。</p>
+<h2 id="圆周素数"><a href="#圆周素数" class="headerlink" title="圆周素数"></a><strong>圆周素数</strong></h2><p>$197$被称为圆周素数，因为将它逐位轮转所得到的数：$197$、$971$和$719$都是素数。</p>
+<p>小于$100$的圆周素数有十三个：$2$、$3$、$5$、$7$、$11$、$13$、$17$、$31$、$37$、$71$、$73$、$79$和$97$。</p>
 <p>小于一百万的圆周素数有多少个？</p>
 <hr>
 ]]></content>
@@ -9592,13 +9584,11 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/36/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-36"><a href="#Problem-36" class="headerlink" title="Problem 36"></a><a href="https://projecteuler.net/problem=36" target="_blank" rel="noopener">Problem 36</a></h1><hr>
-<p><strong>Double-base palindromes</strong></p>
-<p>The decimal number, 585 = 1001001001<sub>2</sub> (binary), is palindromic in both bases.</p>
-<p>Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.</p>
+<h2 id="Double-base-palindromes"><a href="#Double-base-palindromes" class="headerlink" title="Double-base palindromes"></a><strong>Double-base palindromes</strong></h2><p>The decimal number, $585 = 1001001001_2$ (binary), is palindromic in both bases.</p>
+<p>Find the sum of all numbers, less than one million, which are palindromic in base $10$ and base $2$.</p>
 <p>(Please note that the palindromic number, in either base, may not include leading zeros.)</p>
 <hr>
-<p><strong>双进制回文数</strong></p>
-<p>十进制数585 = 1001001001<sub>2</sub>（二进制表示），因此它在这两种进制下都是回文数。</p>
+<h2 id="双进制回文数"><a href="#双进制回文数" class="headerlink" title="双进制回文数"></a><strong>双进制回文数</strong></h2><p>十进制数$585 = 1001001001_2$（二进制表示），因此它在这两种进制下都是回文数。</p>
 <p>找出所有小于一百万，且在十进制和二进制下均回文的数，并求它们的和。</p>
 <p>（请注意，无论在哪种进制下，回文数均不考虑前导零。）</p>
 <hr>
@@ -9919,15 +9909,13 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/37/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-37"><a href="#Problem-37" class="headerlink" title="Problem 37"></a><a href="https://projecteuler.net/problem=37" target="_blank" rel="noopener">Problem 37</a></h1><hr>
-<p><strong>Truncatable primes</strong></p>
-<p>The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.</p>
+<h2 id="Truncatable-primes"><a href="#Truncatable-primes" class="headerlink" title="Truncatable primes"></a><strong>Truncatable primes</strong></h2><p>The number $3797$ has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: $3797$, $797$, $97$, and $7$. Similarly we can work from right to left: $3797$, $379$, $37$, and $3$.</p>
 <p>Find the sum of the only eleven primes that are both truncatable from left to right and right to left.</p>
-<p>NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.</p>
+<p>NOTE: $2$, $3$, $5$, and $7$ are not considered to be truncatable primes.</p>
 <hr>
-<p><strong>可截素数</strong></p>
-<p>3797有着奇特的性质。不仅它本身是一个素数，而且如果从左往右逐一截去数字，剩下的仍然都是素数：3797、797、97和7；同样地，如果从右往左逐一截去数字，剩下的也依然都是素数：3797、379、37和3。</p>
-<p>只有11个素数，无论从左往右还是从右往左逐一截去数字，剩下的仍然都是素数，求这些数的和。</p>
-<p>注意：2、3、5和7不被视为可截素数。</p>
+<h2 id="可截素数"><a href="#可截素数" class="headerlink" title="可截素数"></a><strong>可截素数</strong></h2><p>$3797$有着奇特的性质。它本身是一个素数；如果从左往右逐一截去数字，剩下的仍然都是素数：$3797$、$797$、$97$和$7$；如果从右往左逐一截去数字，剩下的也仍然都是素数：$3797$、$379$、$37$和$3$。</p>
+<p>如果一个素数满足，无论从左往右还是从右往左逐一截去数字，剩下的仍然都是素数，则称之为可截素数。已知总共有十一个可截素数，求这些数的和。</p>
+<p>注意：$2$、$3$、$5$和$7$不被视为可截素数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -10150,23 +10138,21 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/38/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-38"><a href="#Problem-38" class="headerlink" title="Problem 38"></a><a href="https://projecteuler.net/problem=38" target="_blank" rel="noopener">Problem 38</a></h1><hr>
-<p><strong>Pandigital multiples</strong></p>
-<p>Take the number 192 and multiply it by each of 1, 2, and 3:</p>
+<h2 id="Pandigital-multiples"><a href="#Pandigital-multiples" class="headerlink" title="Pandigital multiples"></a><strong>Pandigital multiples</strong></h2><p>Take the number $192$ and multiply it by each of $1$, $2$, and $3$:</p>
 <blockquote>
-<p>192 × 1 = 192<br>192 × 2 = 384<br>192 × 3 = 576</p>
+<p>$192 × 1 = 192$<br /><br>$192 × 2 = 384$<br /><br>$192 × 3 = 576$</p>
 </blockquote>
-<p>By concatenating each product we get the 1 to 9 pandigital, 192384576. We will call 192384576 the concatenated product of 192 and (1,2,3)</p>
-<p>The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4, and 5, giving the pandigital, 918273645, which is the concatenated product of 9 and (1,2,3,4,5).</p>
-<p>What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated product of an integer with (1,2, … ,n) where n &gt; 1?</p>
+<p>By concatenating each product we get the $1$ to $9$ pandigital, $192384576$. We will call $192384576$ the concatenated product of $192$ and $(1,2,3)$</p>
+<p>The same can be achieved by starting with $9$ and multiplying by $1$, $2$, $3$, $4$, and $5$, giving the pandigital, $918273645$, which is the concatenated product of $9$ and $(1,2,3,4,5)$.</p>
+<p>What is the largest $1$ to $9$ pandigital 9-digit number that can be formed as the concatenated product of an integer with $(1,2, … ,n)$ where $n&gt;1$?</p>
 <hr>
-<p><strong>全数字的倍数</strong></p>
-<p>将192分别与1、2、3相乘：</p>
+<h2 id="全数字的倍数"><a href="#全数字的倍数" class="headerlink" title="全数字的倍数"></a><strong>全数字的倍数</strong></h2><p>将$192$分别与$1$、$2$、$3$相乘：</p>
 <blockquote>
-<p>192 × 1 = 192<br>192 × 2 = 384<br>192 × 3 = 576</p>
+<p>$192 × 1 = 192$<br /><br>$192 × 2 = 384$<br /><br>$192 × 3 = 576$</p>
 </blockquote>
-<p>连接这些乘积，我们得到一个1至9全数字的数192384576。我们称192384576为192和(1,2,3)的连接乘积。</p>
-<p>同样地，将9分别与1、2、3、4、5相乘，得到1至9全数字的数918273645，即是9和(1,2,3,4,5)的连接乘积。</p>
-<p>对于n &gt; 1，所有某个整数和(1,2, … ,n)的连接乘积所构成的数中，最大的1至9全数字的数是多少？</p>
+<p>将这些乘积拼接起来，可以得到一个$1$至$9$全数字的数$192384576$，因此称$192384576$为$192$和$(1,2,3)$的拼接乘积。</p>
+<p>类似地，将$9$分别与$1$、$2$、$3$、$4$、$5$相乘，可以得到$1$至$9$全数字的数$918273645$，并称之为$9$和$(1,2,3,4,5)$的拼接乘积。</p>
+<p>考虑所有$n&gt;1$时某个整数和$(1,2, … ,n)$的拼接乘积，其中最大的$1$至$9$全数字的数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -10477,17 +10463,13 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/39/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-39"><a href="#Problem-39" class="headerlink" title="Problem 39"></a><a href="https://projecteuler.net/problem=39" target="_blank" rel="noopener">Problem 39</a></h1><hr>
-<p><strong>Integer right triangles</strong></p>
-<p>If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.</p>
-<center>{20,48,52}, {24,45,51}, {30,40,50}</center>
-
-<p>For which value of p ≤ 1000, is the number of solutions maximised?</p>
+<h2 id="Integer-right-triangles"><a href="#Integer-right-triangles" class="headerlink" title="Integer right triangles"></a><strong>Integer right triangles</strong></h2><p>If $p$ is the perimeter of a right angle triangle with integral length sides, $\{a,b,c\}$, there are exactly three solutions for $p = 120$.</p>
+<p>$$\{20,48,52\}, \{24,45,51\}, \{30,40,50\}$$</p>
+<p>For which value of $p \le 1000$, is the number of solutions maximised?</p>
 <hr>
-<p><strong>整数边长直角三角形</strong></p>
-<p>若三边长{a,b,c}均为整数的直角三角形周长为p，当p = 120时，恰好存在三个不同的解：</p>
-<center>{20,48,52}, {24,45,51}, {30,40,50}</center>
-
-<p>在所有的p ≤ 1000中，p取何值时有解的数目最多？</p>
+<h2 id="整数边长直角三角形"><a href="#整数边长直角三角形" class="headerlink" title="整数边长直角三角形"></a><strong>整数边长直角三角形</strong></h2><p>考虑三边长$\{a,b,c\}$均为整数的直角三角形，并记其周长为$p$，当$p = 120$时，恰好存在三个不同的解：</p>
+<p>$$\{20,48,52\}, \{24,45,51\}, \{30,40,50\}$$</p>
+<p>在所有的$p \le 1000$中，$p$取何值时有最多个解？</p>
 <hr>
 ]]></content>
   </entry>
@@ -10809,23 +10791,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/40/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-40"><a href="#Problem-40" class="headerlink" title="Problem 40"></a><a href="https://projecteuler.net/problem=40" target="_blank" rel="noopener">Problem 40</a></h1><hr>
-<p><strong>Champernowne’s constant</strong></p>
-<p>An irrational decimal fraction is created by concatenating the positive integers:</p>
-<center>0.12345678910<span style="color:#dd0000;font-size:14pt;">1</span>112131415161718192021...</center>
-
-<p>It can be seen that the 12<sup>th</sup> digit of the fractional part is 1.</p>
-<p>If d<sub>n</sub> represents the n<sup>th</sup> digit of the fractional part, find the value of the following expression.</p>
-<center>d<sub>1</sub> × d<sub>10</sub> × d<sub>100</sub> × d<sub>1000</sub> × d<sub>10000</sub> × d<sub>100000</sub> × d<sub>1000000</sub></center>
-
+<h2 id="Champernowne’s-constant"><a href="#Champernowne’s-constant" class="headerlink" title="Champernowne’s constant"></a><strong>Champernowne’s constant</strong></h2><p>An irrational decimal fraction is created by concatenating the positive integers:</p>
+<p>$$0.12345678910{\color{red}1}112131415161718192021…$$</p>
+<p>It can be seen that the $12$<sup>th</sup> digit of the fractional part is $1$.</p>
+<p>If $d_n$ represents the $n$<sup>th</sup> digit of the fractional part, find the value of the following expression.</p>
+<p>$$d_1 \times d_{10} \times d_{100} \times d_{1000} \times d_{10000} \times d_{100000} \times d_{1000000}$$</p>
 <hr>
-<p><strong>钱珀瑙恩常数</strong></p>
-<p>将所有正整数连接起来构造的一个十进制无理数如下所示：</p>
-<center>0.12345678910<span style="color:#dd0000;font-size:14pt;">1</span>112131415161718192021...</center>
-
-<p>可以看出小数点后第12位数字是1。</p>
-<p>如果d<sub>n</sub>表示上述无理数小数点后的第n位数字，求下式的值：</p>
-<center>d<sub>1</sub> × d<sub>10</sub> × d<sub>100</sub> × d<sub>1000</sub> × d<sub>10000</sub> × d<sub>100000</sub> × d<sub>1000000</sub></center>
-
+<h2 id="钱珀瑙恩常数"><a href="#钱珀瑙恩常数" class="headerlink" title="钱珀瑙恩常数"></a><strong>钱珀瑙恩常数</strong></h2><p>将所有正整数连接起来构造的一个十进制无理数如下所示：</p>
+<p>$$0.12345678910{\color{red}1}112131415161718192021…$$</p>
+<p>可以看出小数点后第$12$位数字是$1$。</p>
+<p>如果$d_n$表示上述无理数小数点后的第$n$位数字，求下式的值：</p>
+<p>$$d_1 \times d_{10} \times d_{100} \times d_{1000} \times d_{10000} \times d_{100000} \times d_{1000000}$$</p>
 <hr>
 ]]></content>
   </entry>

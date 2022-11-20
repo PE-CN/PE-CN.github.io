@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 32 Pandigital products We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigit">
+  <meta name="description" content="Problem 32 Pandigital productsWe shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 32">
 <meta property="og:url" content="http://yoursite.com/32/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 32 Pandigital products We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigit">
+<meta property="og:description" content="Problem 32 Pandigital productsWe shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2002-12-07T10:00:00.000Z">
-<meta property="article:modified_time" content="2015-07-31T14:11:00.000Z">
+<meta property="article:published_time" content="2002-12-07T07:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-20T18:42:17.321Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2002-12-07 05:00:00" itemprop="dateCreated datePublished" datetime="2002-12-07T05:00:00-05:00">2002-12-07</time>
+              <time title="发布时间：2002-12-07 02:00:00" itemprop="dateCreated datePublished" datetime="2002-12-07T02:00:00-05:00">2002-12-07</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-07-31 10:11:00" itemprop="dateModified" datetime="2015-07-31T10:11:00-04:00">2015-07-31</time>
+                <time title="更新时间：2022-11-20 13:42:17" itemprop="dateModified" datetime="2022-11-20T13:42:17-05:00">2022-11-20</time>
               </span>
 
           
@@ -227,16 +227,14 @@
       
         <hr>
 <h1 id="Problem-32"><a href="#Problem-32" class="headerlink" title="Problem 32"></a><a href="https://projecteuler.net/problem=32" target="_blank" rel="noopener">Problem 32</a></h1><hr>
-<p><strong>Pandigital products</strong></p>
-<p>We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.</p>
-<p>The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.</p>
-<p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.</p>
+<h2 id="Pandigital-products"><a href="#Pandigital-products" class="headerlink" title="Pandigital products"></a><strong>Pandigital products</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through $5$ pandigital.</p>
+<p>The product $7254$ is unusual, as the identity, $39\times186 = 7254$, containing multiplicand, multiplier, and product is $1$ through $9$ pandigital.</p>
+<p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a $1$ through $9$ pandigital.</p>
 <p>HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.</p>
 <hr>
-<p><strong>全数字的乘积</strong></p>
-<p>如果一个n位数包含了1至n的所有数字恰好一次，我们称它为全数字的；例如，五位数15234就是1至5全数字的。</p>
-<p>7254是一个特殊的乘积，因为在等式39 × 186 = 7254中，被乘数、乘数和乘积恰好是1至9全数字的。</p>
-<p>找出所有被乘数、乘数和乘积恰好是1至9全数字的乘法等式，并求出这些等式中乘积的和。</p>
+<h2 id="全数字的乘积"><a href="#全数字的乘积" class="headerlink" title="全数字的乘积"></a><strong>全数字的乘积</strong></h2><p>如果一个$n$位数包含了$1$至$n$的所有数字恰好一次，我们称它为全数字的；例如，五位数$15234$就是$1$至$5$全数字的。</p>
+<p>$7254$是一个特殊的乘积，因为在等式$39 \times 186 = 7254$中，被乘数、乘数和乘积恰好是$1$至$9$全数字的。</p>
+<p>找出所有被乘数、乘数和乘积恰好是$1$至$9$全数字的乘法等式，并求出这些等式中乘积的和。</p>
 <p>注意：有些乘积可能从多个乘法等式中得到，但在求和的时候只计算一次。</p>
 <hr>
 
@@ -320,7 +318,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-32"><span class="nav-text">Problem 32</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-32"><span class="nav-text">Problem 32</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandigital-products"><span class="nav-text">Pandigital products</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全数字的乘积"><span class="nav-text">全数字的乘积</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

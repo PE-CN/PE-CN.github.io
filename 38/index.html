@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 38 Pandigital multiples Take the number 192 and multiply it by each of 1, 2, and 3:  192 × 1 &#x3D; 192192 × 2 &#x3D; 384192 × 3 &#x3D; 576  By concatenating each product we get the 1 to 9 pandigital, 19238">
+  <meta name="description" content="Problem 38 Pandigital multiplesTake the number $192$ and multiply it by each of $1$, $2$, and $3$:  $192 × 1 &#x3D; 192$$192 × 2 &#x3D; 384$$192 × 3 &#x3D; 576$  By concatenating each product we get the $1$ to $9$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 38">
 <meta property="og:url" content="http://yoursite.com/38/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 38 Pandigital multiples Take the number 192 and multiply it by each of 1, 2, and 3:  192 × 1 &#x3D; 192192 × 2 &#x3D; 384192 × 3 &#x3D; 576  By concatenating each product we get the 1 to 9 pandigital, 19238">
+<meta property="og:description" content="Problem 38 Pandigital multiplesTake the number $192$ and multiply it by each of $1$, $2$, and $3$:  $192 × 1 &#x3D; 192$$192 × 2 &#x3D; 384$$192 × 3 &#x3D; 576$  By concatenating each product we get the $1$ to $9$">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-03-01T10:00:00.000Z">
-<meta property="article:modified_time" content="2015-07-31T14:21:54.000Z">
+<meta property="article:published_time" content="2003-03-01T07:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-20T19:11:51.447Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-03-01 05:00:00" itemprop="dateCreated datePublished" datetime="2003-03-01T05:00:00-05:00">2003-03-01</time>
+              <time title="发布时间：2003-03-01 02:00:00" itemprop="dateCreated datePublished" datetime="2003-03-01T02:00:00-05:00">2003-03-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-07-31 10:21:54" itemprop="dateModified" datetime="2015-07-31T10:21:54-04:00">2015-07-31</time>
+                <time title="更新时间：2022-11-20 14:11:51" itemprop="dateModified" datetime="2022-11-20T14:11:51-05:00">2022-11-20</time>
               </span>
 
           
@@ -227,23 +227,21 @@
       
         <hr>
 <h1 id="Problem-38"><a href="#Problem-38" class="headerlink" title="Problem 38"></a><a href="https://projecteuler.net/problem=38" target="_blank" rel="noopener">Problem 38</a></h1><hr>
-<p><strong>Pandigital multiples</strong></p>
-<p>Take the number 192 and multiply it by each of 1, 2, and 3:</p>
+<h2 id="Pandigital-multiples"><a href="#Pandigital-multiples" class="headerlink" title="Pandigital multiples"></a><strong>Pandigital multiples</strong></h2><p>Take the number $192$ and multiply it by each of $1$, $2$, and $3$:</p>
 <blockquote>
-<p>192 × 1 = 192<br>192 × 2 = 384<br>192 × 3 = 576</p>
+<p>$192 × 1 = 192$<br /><br>$192 × 2 = 384$<br /><br>$192 × 3 = 576$</p>
 </blockquote>
-<p>By concatenating each product we get the 1 to 9 pandigital, 192384576. We will call 192384576 the concatenated product of 192 and (1,2,3)</p>
-<p>The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4, and 5, giving the pandigital, 918273645, which is the concatenated product of 9 and (1,2,3,4,5).</p>
-<p>What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated product of an integer with (1,2, … ,n) where n &gt; 1?</p>
+<p>By concatenating each product we get the $1$ to $9$ pandigital, $192384576$. We will call $192384576$ the concatenated product of $192$ and $(1,2,3)$</p>
+<p>The same can be achieved by starting with $9$ and multiplying by $1$, $2$, $3$, $4$, and $5$, giving the pandigital, $918273645$, which is the concatenated product of $9$ and $(1,2,3,4,5)$.</p>
+<p>What is the largest $1$ to $9$ pandigital 9-digit number that can be formed as the concatenated product of an integer with $(1,2, … ,n)$ where $n&gt;1$?</p>
 <hr>
-<p><strong>全数字的倍数</strong></p>
-<p>将192分别与1、2、3相乘：</p>
+<h2 id="全数字的倍数"><a href="#全数字的倍数" class="headerlink" title="全数字的倍数"></a><strong>全数字的倍数</strong></h2><p>将$192$分别与$1$、$2$、$3$相乘：</p>
 <blockquote>
-<p>192 × 1 = 192<br>192 × 2 = 384<br>192 × 3 = 576</p>
+<p>$192 × 1 = 192$<br /><br>$192 × 2 = 384$<br /><br>$192 × 3 = 576$</p>
 </blockquote>
-<p>连接这些乘积，我们得到一个1至9全数字的数192384576。我们称192384576为192和(1,2,3)的连接乘积。</p>
-<p>同样地，将9分别与1、2、3、4、5相乘，得到1至9全数字的数918273645，即是9和(1,2,3,4,5)的连接乘积。</p>
-<p>对于n &gt; 1，所有某个整数和(1,2, … ,n)的连接乘积所构成的数中，最大的1至9全数字的数是多少？</p>
+<p>将这些乘积拼接起来，可以得到一个$1$至$9$全数字的数$192384576$，因此称$192384576$为$192$和$(1,2,3)$的拼接乘积。</p>
+<p>类似地，将$9$分别与$1$、$2$、$3$、$4$、$5$相乘，可以得到$1$至$9$全数字的数$918273645$，并称之为$9$和$(1,2,3,4,5)$的拼接乘积。</p>
+<p>考虑所有$n&gt;1$时某个整数和$(1,2, … ,n)$的拼接乘积，其中最大的$1$至$9$全数字的数是多少？</p>
 <hr>
 
     </div>
@@ -326,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-38"><span class="nav-text">Problem 38</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-38"><span class="nav-text">Problem 38</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandigital-multiples"><span class="nav-text">Pandigital multiples</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全数字的倍数"><span class="nav-text">全数字的倍数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
