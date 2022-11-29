@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 48 Self powers The series, 11 + 22 + 33 + … + 1010 &#x3D; 10405071317. Find the last ten digits of the series, 11 + 22 + 33 + … + 10001000.  自幂 十项的自幂级数求和为 11 + 22 + 33 + … + 1010 &#x3D; 10405071317。 求如">
+  <meta name="description" content="Problem 48 Self powersThe series, $1^1+2^2+3^3 +\ldots + 10^{10} &#x3D; 10405071317$. Find the last ten digits of the series, $1^1+2^2+3^3 +\ldots + 1000^{1000}$.  自幂自幂级数的前十项求和为$1^1+2^2+3^3 +\ldots + 10^{">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 48">
 <meta property="og:url" content="http://yoursite.com/48/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 48 Self powers The series, 11 + 22 + 33 + … + 1010 &#x3D; 10405071317. Find the last ten digits of the series, 11 + 22 + 33 + … + 10001000.  自幂 十项的自幂级数求和为 11 + 22 + 33 + … + 1010 &#x3D; 10405071317。 求如">
+<meta property="og:description" content="Problem 48 Self powersThe series, $1^1+2^2+3^3 +\ldots + 10^{10} &#x3D; 10405071317$. Find the last ten digits of the series, $1^1+2^2+3^3 +\ldots + 1000^{1000}$.  自幂自幂级数的前十项求和为$1^1+2^2+3^3 +\ldots + 10^{">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-07-19T08:00:00.000Z">
-<meta property="article:modified_time" content="2015-07-31T14:31:36.000Z">
+<meta property="article:published_time" content="2003-07-19T05:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-29T17:57:05.802Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-07-19 04:00:00" itemprop="dateCreated datePublished" datetime="2003-07-19T04:00:00-04:00">2003-07-19</time>
+              <time title="发布时间：2003-07-19 01:00:00" itemprop="dateCreated datePublished" datetime="2003-07-19T01:00:00-04:00">2003-07-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-07-31 10:31:36" itemprop="dateModified" datetime="2015-07-31T10:31:36-04:00">2015-07-31</time>
+                <time title="更新时间：2022-11-29 12:57:05" itemprop="dateModified" datetime="2022-11-29T12:57:05-05:00">2022-11-29</time>
               </span>
 
           
@@ -227,13 +227,11 @@
       
         <hr>
 <h1 id="Problem-48"><a href="#Problem-48" class="headerlink" title="Problem 48"></a><a href="https://projecteuler.net/problem=48" target="_blank" rel="noopener">Problem 48</a></h1><hr>
-<p><strong>Self powers</strong></p>
-<p>The series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 10<sup>10</sup> = 10405071317.</p>
-<p>Find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 1000<sup>1000</sup>.</p>
+<h2 id="Self-powers"><a href="#Self-powers" class="headerlink" title="Self powers"></a><strong>Self powers</strong></h2><p>The series, $1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$.</p>
+<p>Find the last ten digits of the series, $1^1+2^2+3^3 +\ldots + 1000^{1000}$.</p>
 <hr>
-<p><strong>自幂</strong></p>
-<p>十项的自幂级数求和为 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 10<sup>10</sup> = 10405071317。</p>
-<p>求如下一千项的自幂级数求和的最后10位数字：1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 1000<sup>1000</sup>。</p>
+<h2 id="自幂"><a href="#自幂" class="headerlink" title="自幂"></a><strong>自幂</strong></h2><p>自幂级数的前十项求和为$1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$。</p>
+<p>求自幂级数的前一千项求和，即$1^1+2^2+3^3 +\ldots + 1000^{1000}$，并给出其最后十个数字作为答案。</p>
 <hr>
 
     </div>
@@ -316,7 +314,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-48"><span class="nav-text">Problem 48</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-48"><span class="nav-text">Problem 48</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Self-powers"><span class="nav-text">Self powers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自幂"><span class="nav-text">自幂</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

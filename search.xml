@@ -10958,13 +10958,11 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/41/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-41"><a href="#Problem-41" class="headerlink" title="Problem 41"></a><a href="https://projecteuler.net/problem=41" target="_blank" rel="noopener">Problem 41</a></h1><hr>
-<p><strong>Pandigital prime</strong></p>
-<p>We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.</p>
-<p>What is the largest n-digit pandigital prime that exists?</p>
+<h2 id="Pandigital-prime"><a href="#Pandigital-prime" class="headerlink" title="Pandigital prime"></a><strong>Pandigital prime</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once. For example, $2143$ is a $4$-digit pandigital and is also prime.</p>
+<p>What is the largest $n$-digit pandigital prime that exists?</p>
 <hr>
-<p><strong>全数字的素数</strong></p>
-<p>如果一个n位数恰好使用了1至n每个数字各一次，我们就称其为全数字的。例如，2143就是一个4位全数字数，同时它恰好也是一个素数。</p>
-<p>最大的全数字的素数是多少？</p>
+<h2 id="全数字素数"><a href="#全数字素数" class="headerlink" title="全数字素数"></a><strong>全数字素数</strong></h2><p>如果一个$n$位数恰好使用了$1$至$n$每个数字各一次，则称为全数字数。例如，$2143$就是一个$4$位全数字数，同时它也是一个素数。</p>
+<p>最大的全数字素数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -11360,19 +11358,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/42/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-42"><a href="#Problem-42" class="headerlink" title="Problem 42"></a><a href="https://projecteuler.net/problem=42" target="_blank" rel="noopener">Problem 42</a></h1><hr>
-<p><strong>Coded triangle numbers</strong></p>
-<p>The n<sup>th</sup> term of the sequence of triangle numbers is given by, t<sub>n</sub> = <sup>1</sup>/<sub>2</sub>n(n+1); so the first ten triangle numbers are:</p>
-<center>1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...</center>
-
-<p>By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is 19 + 11 + 25 = 55 = t<sub>10</sub>. If the word value is a triangle number then we shall call the word a triangle word.</p>
+<h2 id="Coded-triangle-numbers"><a href="#Coded-triangle-numbers" class="headerlink" title="Coded triangle numbers"></a><strong>Coded triangle numbers</strong></h2><p>The $n$<sup>th</sup> term of the sequence of triangle numbers is given by, $t_n=n (n+1)/2$; so the first ten triangle numbers are:</p>
+<p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots$$</p>
+<p>By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is $19 + 11 + 25 = 55 = t_{10}$. If the word value is a triangle number then we shall call the word a triangle word.</p>
 <p>Using <a href="https://projecteuler.net/project/resources/p042_words.txt" target="_blank" rel="noopener">words.txt</a>(right click and ‘Save Link/Target As…’), a 16K text file containing nearly two-thousand common English words, how many are triangle words?</p>
 <hr>
-<p><strong>编码三角形数</strong></p>
-<p>三角形数序列的第n项由公式t<sub>n</sub> = <sup>1</sup>/<sub>2</sub>n(n+1)给出；因此前十个三角形数是：</p>
-<center>1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...</center>
-
-<p>将一个单词的每个字母分别转化为其在字母表中的顺序并相加，我们可以计算出一个单词的值。例如，单词SKY的值就是 19 + 11 + 25 = 55 = t<sub>10</sub>。如果一个单词的值是一个三角形数，我们就称这个单词为三角形单词。</p>
-<p>在这个16K的文本文件<a href="https://projecteuler.net/project/resources/p042_words.txt" target="_blank" rel="noopener">words.txt</a> （右击并选择“目标另存为……”）中包含有将近两千个常用英文单词，这其中有多少个三角形单词？</p>
+<h2 id="编码三角形数"><a href="#编码三角形数" class="headerlink" title="编码三角形数"></a><strong>编码三角形数</strong></h2><p>三角形数序列的第$n$项由公式$t_n=n (n+1)/2$给出。前十个三角形数是：</p>
+<p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots$$</p>
+<p>将一个单词的每个字母分别转化为其在字母表中的顺序并相加，所得结果即为这个单词的价值。例如，单词SKY的价值是$19 + 11 + 25 = 55 = t_{10}$。如果一个单词的价值是一个三角形数，称这个单词为三角形单词。</p>
+<p>在这个16K的文本文件<a href="https://projecteuler.net/project/resources/p042_words.txt" target="_blank" rel="noopener">words.txt</a> （右击并选择“目标另存为……”）中包含有将近两千个常用英文单词，其中有多少个三角形单词？</p>
 <hr>
 ]]></content>
   </entry>
@@ -11540,33 +11534,31 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/43/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-43"><a href="#Problem-43" class="headerlink" title="Problem 43"></a><a href="https://projecteuler.net/problem=43" target="_blank" rel="noopener">Problem 43</a></h1><hr>
-<p><strong>Sub-string divisibility</strong></p>
-<p>The number, 1406357289, is a 0 to 9 pandigital number because it is made up of each of the digits 0 to 9 in some order, but it also has a rather interesting sub-string divisibility property.</p>
-<p>Let d<sub>1</sub> be the 1<sup>st</sup> digit, d<sub>2</sub> be the 2<sup>nd</sup> digit, and so on. In this way, we note the following:</p>
+<h2 id="Sub-string-divisibility"><a href="#Sub-string-divisibility" class="headerlink" title="Sub-string divisibility"></a><strong>Sub-string divisibility</strong></h2><p>The number, $1406357289$, is a $0$ to $9$ pandigital number because it is made up of each of the digits $0$ to $9$ in some order, but it also has a rather interesting sub-string divisibility property.</p>
+<p>Let $d_1$ be the $1$<sup>st</sup> digit, $d_2$ be the $2$<sup>nd</sup> digit, and so on. In this way, we note the following:</p>
 <ul>
-<li>d<sub>2</sub>d<sub>3</sub>d<sub>4</sub>=406 is divisible by 2</li>
-<li>d<sub>3</sub>d<sub>4</sub>d<sub>5</sub>=063 is divisible by 3</li>
-<li>d<sub>4</sub>d<sub>5</sub>d<sub>6</sub>=635 is divisible by 5</li>
-<li>d<sub>5</sub>d<sub>6</sub>d<sub>7</sub>=357 is divisible by 7</li>
-<li>d<sub>6</sub>d<sub>7</sub>d<sub>8</sub>=572 is divisible by 11</li>
-<li>d<sub>7</sub>d<sub>8</sub>d<sub>9</sub>=728 is divisible by 13</li>
-<li>d<sub>8</sub>d<sub>9</sub>d<sub>10</sub>=289 is divisible by 17</li>
+<li>$d_2d_3d_4=406$ is divisible by $2$</li>
+<li>$d_3d_4d_5=063$ is divisible by $3$</li>
+<li>$d_4d_5d_6=635$ is divisible by $5$</li>
+<li>$d_5d_6d_7=357$ is divisible by $7$</li>
+<li>$d_6d_7d_8=572$ is divisible by $11$</li>
+<li>$d_7d_8d_9=728$ is divisible by $13$</li>
+<li>$d_8d_9d_{10}=289$ is divisible by $17$</li>
 </ul>
-<p>Find the sum of all 0 to 9 pandigital numbers with this property.</p>
+<p>Find the sum of all $0$ to $9$ pandigital numbers with this property.</p>
 <hr>
-<p><strong>子串的可整除性</strong></p>
-<p>1406357289是一个0至9全数字数，因为它由0到9这十个数字排列而成；但除此之外，它还有一个有趣的性质：子串的可整除性。</p>
-<p>记d<sub>1</sub>是它的第一个数字，d<sub>2</sub>是第二个数字，依此类推，我们注意到：</p>
+<h2 id="子串的可整除性"><a href="#子串的可整除性" class="headerlink" title="子串的可整除性"></a><strong>子串的可整除性</strong></h2><p>$1406357289$是一个$0$至$9$全数字数，因为它由$0$到$9$这十个数字排列而成；但除此之外，它还有一个有趣的性质：子串的可整除性。</p>
+<p>记$d_1$是它的第$1$个数字，$d_2$是第$2$个数字，依此类推，注意到：</p>
 <ul>
-<li>d<sub>2</sub>d<sub>3</sub>d<sub>4</sub>=406能被2整除</li>
-<li>d<sub>3</sub>d<sub>4</sub>d<sub>5</sub>=063能被3整除</li>
-<li>d<sub>4</sub>d<sub>5</sub>d<sub>6</sub>=635能被5整除</li>
-<li>d<sub>5</sub>d<sub>6</sub>d<sub>7</sub>=357能被7整除</li>
-<li>d<sub>6</sub>d<sub>7</sub>d<sub>8</sub>=572能被11整除</li>
-<li>d<sub>7</sub>d<sub>8</sub>d<sub>9</sub>=728能被13整除</li>
-<li>d<sub>8</sub>d<sub>9</sub>d<sub>10</sub>=289能被17整除</li>
+<li>$d_2d_3d_4=406$能被$2$整除</li>
+<li>$d_3d_4d_5=063$能被$3$整除</li>
+<li>$d_4d_5d_6=635$能被$5$整除</li>
+<li>$d_5d_6d_7=357$能被$7$整除</li>
+<li>$d_6d_7d_8=572$能被$11$整除</li>
+<li>$d_7d_8d_9=728$能被$13$整除</li>
+<li>$d_8d_9d_{10}=289$能被$17$整除</li>
 </ul>
-<p>找出所有满足同样性质的0至9全数字数，并求它们的和。</p>
+<p>找出所有满足同样性质的$0$至$9$全数字数，并求它们的和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -11837,19 +11829,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/44/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-44"><a href="#Problem-44" class="headerlink" title="Problem 44"></a><a href="https://projecteuler.net/problem=44" target="_blank" rel="noopener">Problem 44</a></h1><hr>
-<p><strong>Pentagon numbers</strong></p>
-<p>Pentagonal numbers are generated by the formula, P<sub>n</sub>=n(3n−1)/2. The first ten pentagonal numbers are:</p>
-<center>1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ...</center>
-
-<p>It can be seen that P<sub>4</sub> + P<sub>7</sub> = 22 + 70 = 92 = P<sub>8</sub>. However, their difference, 70 − 22 = 48, is not pentagonal.</p>
-<p>Find the pair of pentagonal numbers, P<sub>j</sub> and P<sub>k</sub>, for which their sum and difference are pentagonal and D = |P<sub>k</sub> − P<sub>j</sub>| is minimised; what is the value of D?</p>
+<h2 id="Pentagon-numbers"><a href="#Pentagon-numbers" class="headerlink" title="Pentagon numbers"></a><strong>Pentagon numbers</strong></h2><p>Pentagonal numbers are generated by the formula, $P_n=n(3n−1)/2$. The first ten pentagonal numbers are:</p>
+<p>$$1, 5, 12, 22, 35, 51, 70, 92, 117, 145, \ldots $$</p>
+<p>It can be seen that $P_4 + P_7 = 22 + 70 = 92 = P_8$. However, their difference, $70 − 22 = 48$, is not pentagonal.</p>
+<p>Find the pair of pentagonal numbers, $P_j$ and $P_k$, for which their sum and difference are pentagonal and $D = |P_k − P_j|$ is minimised; what is the value of $D$?</p>
 <hr>
-<p><strong>五边形数</strong></p>
-<p>五边形数由公式P<sub>n</sub>=n(3n−1)/2生成。前十个五边形数是：</p>
-<center>1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ...</center>
-
-<p>可以看出P<sub>4</sub> + P<sub>7</sub> = 22 + 70 = 92 = P<sub>8</sub>。然而，它们的差70 − 22 = 48并不是五边形数。</p>
-<p>在所有和差均为五边形数的五边形数对P<sub>j</sub>和P<sub>k</sub>中，找出使D = |P<sub>k</sub> − P<sub>j</sub>|最小的一对；此时D的值是多少？</p>
+<h2 id="五边形数"><a href="#五边形数" class="headerlink" title="五边形数"></a><strong>五边形数</strong></h2><p>五边形数由公式$P_n=n(3n−1)/2$给出。前十个五边形数是：</p>
+<p>$$1, 5, 12, 22, 35, 51, 70, 92, 117, 145, \ldots $$</p>
+<p>可以看出$P_4 + P_7 = 22 + 70 = 92 = P_8$。然而，它们的差$70 − 22 = 48$并不是五边形数。</p>
+<p>在所有和差均为五边形数的五边形数对$P_j$和$P_k$中，找出使$D = |P_k − P_j|$最小的一对；此时$D$的值是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -12210,63 +12198,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/45/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-45"><a href="#Problem-45" class="headerlink" title="Problem 45"></a><a href="https://projecteuler.net/problem=45" target="_blank" rel="noopener">Problem 45</a></h1><hr>
-<p><strong>Triangular, pentagonal, and hexagonal</strong></p>
-<p>Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Triangle</td>
-<td>T<sub>n</sub>=n(n+1)/2</td>
-<td>1, 3, 6, 10, 15, …</td>
-</tr>
-<tr>
-<td>Pentagonal</td>
-<td>P<sub>n</sub>=n(3n−1)/2</td>
-<td>1, 5, 12, 22, 35, …</td>
-</tr>
-<tr>
-<td>Hexagonal</td>
-<td>H<sub>n</sub>=n(2n−1)</td>
-<td>1, 6, 15, 28, 45, …</td>
-</tr>
-</tbody></table>
-<p>It can be verified that T<sub>285</sub> = P<sub>165</sub> = H<sub>143</sub> = 40755.</p>
+<h2 id="Triangular-pentagonal-and-hexagonal"><a href="#Triangular-pentagonal-and-hexagonal" class="headerlink" title="Triangular, pentagonal, and hexagonal"></a><strong>Triangular, pentagonal, and hexagonal</strong></h2><p>Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:</p>
+<p>$$<br>\begin{aligned}<br>&amp;\text{Triangle}   &amp;&amp;  T_n=n(n+1)/2  &amp;&amp; 1, 3, 6,  10, 15, \ldots \\<br>&amp;\text{Pentagonal} &amp;&amp;  P_n=n(3n−1)/2 &amp;&amp; 1, 5, 12, 22, 35, \ldots \\<br>&amp;\text{Hexagonal}  &amp;&amp;  H_n=n(2n−1)   &amp;&amp; 1, 6, 15, 28, 45, \ldots<br>\end{aligned}<br>$$</p>
+<p>It can be verified that $T_{285} = P_{165} = H_{143} = 40755$.</p>
 <p>Find the next triangle number that is also pentagonal and hexagonal.</p>
 <hr>
-<p><strong>三角形数、五边形数和六角形数</strong></p>
-<p>三角形数、五边形数和六角形数分别由以下公式给出：</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>三角形数</td>
-<td>T<sub>n</sub>=n(n+1)/2</td>
-<td>1, 3, 6, 10, 15, …</td>
-</tr>
-<tr>
-<td>五边形数</td>
-<td>P<sub>n</sub>=n(3n−1)/2</td>
-<td>1, 5, 12, 22, 35, …</td>
-</tr>
-<tr>
-<td>六边形数</td>
-<td>H<sub>n</sub>=n(2n−1)</td>
-<td>1, 6, 15, 28, 45, …</td>
-</tr>
-</tbody></table>
-<p>可以验证，T<sub>285</sub> = P<sub>165</sub> = H<sub>143</sub> = 40755。</p>
-<p>找出下一个同时是三角形数、五边形数和六角形数的数。</p>
+<h2 id="三角形数、五边形数和六边形数"><a href="#三角形数、五边形数和六边形数" class="headerlink" title="三角形数、五边形数和六边形数"></a><strong>三角形数、五边形数和六边形数</strong></h2><p>三角形数、五边形数和六边形数分别由以下公式给出：</p>
+<p>$$<br>\begin{aligned}<br>&amp;\text{三角形数} &amp;&amp;  T_n=n(n+1)/2  &amp;&amp; 1, 3, 6,  10, 15, \ldots \\<br>&amp;\text{五边形数} &amp;&amp;  P_n=n(3n−1)/2 &amp;&amp; 1, 5, 12, 22, 35, \ldots \\<br>&amp;\text{六边形数} &amp;&amp;  H_n=n(2n−1)   &amp;&amp; 1, 6, 15, 28, 45, \ldots<br>\end{aligned}<br>$$</p>
+<p>可以验证，$T_{285} = P_{165} = H_{143} = 40755$。</p>
+<p>找出下一个同时是三角形数、五边形数和六边形数的数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -12554,21 +12494,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/46/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-46"><a href="#Problem-46" class="headerlink" title="Problem 46"></a><a href="https://projecteuler.net/problem=46" target="_blank" rel="noopener">Problem 46</a></h1><hr>
-<p><strong>Goldbach’s other conjecture</strong></p>
-<p>It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.</p>
+<h2 id="Goldbach’s-other-conjecture"><a href="#Goldbach’s-other-conjecture" class="headerlink" title="Goldbach’s other conjecture"></a><strong>Goldbach’s other conjecture</strong></h2><p>It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.</p>
 <blockquote>
-<p>9 = 7 + 2×1<sup>2</sup><br>15 = 7 + 2×2<sup>2</sup><br>21 = 3 + 2×3<sup>2</sup><br>25 = 7 + 2×3<sup>2</sup><br>27 = 19 + 2×2<sup>2</sup><br>33 = 31 + 2×1<sup>2</sup></p>
+<p>$9  = 7  + 2\times 1^2$ <br /><br>$15 = 7  + 2\times 2^2$ <br /><br>$21 = 3  + 2\times 3^2$ <br /><br>$25 = 7  + 2\times 3^2$ <br /><br>$27 = 19 + 2\times 2^2$ <br /><br>$33 = 31 + 2\times 1^2$ <br /></p>
 </blockquote>
 <p>It turns out that the conjecture was false.</p>
 <p>What is the smallest odd composite that cannot be written as the sum of a prime and twice a square?</p>
 <hr>
-<p><strong>哥德巴赫的另一个猜想</strong></p>
-<p>克里斯蒂安·哥德巴赫曾经猜想，每个奇合数可以写成一个素数和一个平方的两倍之和。</p>
+<h2 id="哥德巴赫的另一个猜想"><a href="#哥德巴赫的另一个猜想" class="headerlink" title="哥德巴赫的另一个猜想"></a><strong>哥德巴赫的另一个猜想</strong></h2><p>克里斯蒂安·哥德巴赫曾经猜想，每个奇合数都可以写成一个素数和一个平方的两倍之和。</p>
 <blockquote>
-<p>9 = 7 + 2×1<sup>2</sup><br>15 = 7 + 2×2<sup>2</sup><br>21 = 3 + 2×3<sup>2</sup><br>25 = 7 + 2×3<sup>2</sup><br>27 = 19 + 2×2<sup>2</sup><br>33 = 31 + 2×1<sup>2</sup></p>
+<p>$9  = 7  + 2\times 1^2$ <br /><br>$15 = 7  + 2\times 2^2$ <br /><br>$21 = 3  + 2\times 3^2$ <br /><br>$25 = 7  + 2\times 3^2$ <br /><br>$27 = 19 + 2\times 2^2$ <br /><br>$33 = 31 + 2\times 1^2$ <br /></p>
 </blockquote>
 <p>最终这个猜想被推翻了。</p>
-<p>最小的不能写成一个素数和一个平方的两倍之和的奇合数是多少？</p>
+<p>不能写成一个素数和一个平方的两倍之和的最小奇合数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -12895,32 +12833,12 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/47/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-47"><a href="#Problem-47" class="headerlink" title="Problem 47"></a><a href="https://projecteuler.net/problem=47" target="_blank" rel="noopener">Problem 47</a></h1><hr>
-<p><strong>Distinct primes factors</strong></p>
-<p>The first two consecutive numbers to have two distinct prime factors are:</p>
-<center>14 = 2 × 7
-15 = 3 × 5
-</center>
-
-<p>The first three consecutive numbers to have three distinct prime factors are:</p>
-<center>644 = 2<sup>2</sup> × 7 × 23
-645 = 3 × 5 × 43
-646 = 2 × 17 × 19
-</center>
-
+<h2 id="Distinct-primes-factors"><a href="#Distinct-primes-factors" class="headerlink" title="Distinct primes factors"></a><strong>Distinct primes factors</strong></h2><p>The first two consecutive numbers to have two distinct prime factors are:<br>$$<br>\begin{aligned}<br>14 &amp;= 2 × 7 \\<br>15 &amp;= 3 × 5<br>\end{aligned}<br>$$</p>
+<p>The first three consecutive numbers to have three distinct prime factors are:<br>$$<br>\begin{aligned}<br>644 &amp;= 2^2 × 7 × 23 \\<br>645 &amp;= 3 × 5 × 43   \\<br>646 &amp;= 2 × 17 × 19<br>\end{aligned}<br>$$</p>
 <p>Find the first four consecutive integers to have four distinct prime factors. What is the first of these numbers?</p>
 <hr>
-<p><strong>不同的质因数</strong></p>
-<p>首次出现连续两个数均有两个不同的质因数是在：</p>
-<center>14 = 2 × 7
-15 = 3 × 5
-</center>
-
-<p>首次出现连续三个数均有三个不同的质因数是在：</p>
-<center>644 = 2<sup>2</sup> × 7 × 23
-645 = 3 × 5 × 43
-646 = 2 × 17 × 19
-</center>
-
+<h2 id="不同的质因数"><a href="#不同的质因数" class="headerlink" title="不同的质因数"></a><strong>不同的质因数</strong></h2><p>首次出现连续两个数均有两个不同的质因数是在：<br>$$<br>\begin{aligned}<br>14 &amp;= 2 × 7 \\<br>15 &amp;= 3 × 5<br>\end{aligned}<br>$$</p>
+<p>首次出现连续三个数均有三个不同的质因数是在：<br>$$<br>\begin{aligned}<br>644 &amp;= 2^2 × 7 × 23 \\<br>645 &amp;= 3 × 5 × 43   \\<br>646 &amp;= 2 × 17 × 19<br>\end{aligned}<br>$$</p>
 <p>首次出现连续四个数均有四个不同的质因数时，其中的第一个数是多少？</p>
 <hr>
 ]]></content>
@@ -13129,13 +13047,11 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/48/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-48"><a href="#Problem-48" class="headerlink" title="Problem 48"></a><a href="https://projecteuler.net/problem=48" target="_blank" rel="noopener">Problem 48</a></h1><hr>
-<p><strong>Self powers</strong></p>
-<p>The series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 10<sup>10</sup> = 10405071317.</p>
-<p>Find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 1000<sup>1000</sup>.</p>
+<h2 id="Self-powers"><a href="#Self-powers" class="headerlink" title="Self powers"></a><strong>Self powers</strong></h2><p>The series, $1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$.</p>
+<p>Find the last ten digits of the series, $1^1+2^2+3^3 +\ldots + 1000^{1000}$.</p>
 <hr>
-<p><strong>自幂</strong></p>
-<p>十项的自幂级数求和为 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 10<sup>10</sup> = 10405071317。</p>
-<p>求如下一千项的自幂级数求和的最后10位数字：1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + … + 1000<sup>1000</sup>。</p>
+<h2 id="自幂"><a href="#自幂" class="headerlink" title="自幂"></a><strong>自幂</strong></h2><p>自幂级数的前十项求和为$1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$。</p>
+<p>求自幂级数的前一千项求和，即$1^1+2^2+3^3 +\ldots + 1000^{1000}$，并给出其最后十个数字作为答案。</p>
 <hr>
 ]]></content>
   </entry>
@@ -13501,15 +13417,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/49/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-49"><a href="#Problem-49" class="headerlink" title="Problem 49"></a><a href="https://projecteuler.net/problem=49" target="_blank" rel="noopener">Problem 49</a></h1><hr>
-<p><strong>Prime permutations</strong></p>
-<p>The arithmetic sequence, 1487, 4817, 8147, in which each of the terms increases by 3330, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the 4-digit numbers are permutations of one another.</p>
-<p>There are no arithmetic sequences made up of three 1-, 2-, or 3-digit primes, exhibiting this property, but there is one other 4-digit increasing sequence.</p>
-<p>What 12-digit number do you form by concatenating the three terms in this sequence?</p>
+<h2 id="Prime-permutations"><a href="#Prime-permutations" class="headerlink" title="Prime permutations"></a><strong>Prime permutations</strong></h2><p>The arithmetic sequence, $1487$, $4817$, $8147$, in which each of the terms increases by $3330$, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the $4$-digit numbers are permutations of one another.</p>
+<p>There are no arithmetic sequences made up of three $1$-, $2$-, or $3$-digit primes, exhibiting this property, but there is one other $4$-digit increasing sequence.</p>
+<p>What $12$-digit number do you form by concatenating the three terms in this sequence?</p>
 <hr>
-<p><strong>素数重排</strong></p>
-<p>公差为3330的三项等差序列1487、4817、8147在两个方面非常特别：其一，每一项都是素数；其二，两两都是重新排列的关系。</p>
-<p>一位素数、两位素数和三位素数都无法构成满足这些性质的数列，但存在另一个由四位素数构成的递增序列也满足这些性质。</p>
-<p>将这个数列的三项连接起来得到的12位数是多少？</p>
+<h2 id="素数重排"><a href="#素数重排" class="headerlink" title="素数重排"></a><strong>素数重排</strong></h2><p>公差为$3330$的三项等差数列$1487$、$4817$、$8147$在两个方面非常特别：其一，每一项都是素数；其二，两两都是重新排列的关系。</p>
+<p>不存在由一位、两位或三位素数构成的三项等差数列同时满足上述性质，但存在另一个由四位素数构成的此类递增等差数列。</p>
+<p>将这个数列的三项连接起来得到的$12$位数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -13754,20 +13668,16 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/50/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-50"><a href="#Problem-50" class="headerlink" title="Problem 50"></a><a href="https://projecteuler.net/problem=50" target="_blank" rel="noopener">Problem 50</a></h1><hr>
-<p><strong>Consecutive prime sum</strong></p>
-<p>The prime 41, can be written as the sum of six consecutive primes:</p>
-<center>41 = 2 + 3 + 5 + 7 + 11 + 13</center>
-
+<h2 id="Consecutive-prime-sum"><a href="#Consecutive-prime-sum" class="headerlink" title="Consecutive prime sum"></a><strong>Consecutive prime sum</strong></h2><p>The prime $41$, can be written as the sum of six consecutive primes:</p>
+<p>$$41 = 2 + 3 + 5 + 7 + 11 + 13$$</p>
 <p>This is the longest sum of consecutive primes that adds to a prime below one-hundred.</p>
-<p>The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.</p>
+<p>The longest sum of consecutive primes below one-thousand that adds to a prime, contains $21$ terms, and is equal to $953$.</p>
 <p>Which prime, below one-million, can be written as the sum of the most consecutive primes?</p>
 <hr>
-<p><strong>连续素数的和</strong></p>
-<p>素数41可以写成六个连续素数的和：</p>
-<center>41 = 2 + 3 + 5 + 7 + 11 + 13</center>
-
-<p>在小于一百的素数中，41能够被写成最多的连续素数的和。</p>
-<p>在小于一千的素数中，953能够被写成最多的连续素数的和，共包含连续21个素数。</p>
+<h2 id="连续素数的和"><a href="#连续素数的和" class="headerlink" title="连续素数的和"></a><strong>连续素数的和</strong></h2><p>素数$41$可以写成六个连续素数的和：</p>
+<p>$$41 = 2 + 3 + 5 + 7 + 11 + 13$$</p>
+<p>在小于一百的素数中，$41$能够被写成最多的连续素数的和。</p>
+<p>在小于一千的素数中，$953$能够被写成最多的连续素数的和，共包含连续$21$个素数。</p>
 <p>在小于一百万的素数中，哪个素数能够被写成最多的连续素数的和？</p>
 <hr>
 ]]></content>
