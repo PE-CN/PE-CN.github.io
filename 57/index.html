@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 57 Square root convergents It is possible to show that the square root of two can be expressed as an infinite continued fraction. √ 2 &#x3D; 1 + 1&#x2F;(2 + 1&#x2F;(2 + 1&#x2F;(2 + ... ))) &#x3D; 1.414213...  By expa">
+  <meta name="description" content="Problem 57 Square root convergentsIt is possible to show that the square root of two can be expressed as an infinite continued fraction. $$\sqrt 2 &#x3D;1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$ B">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 57">
 <meta property="og:url" content="http://yoursite.com/57/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 57 Square root convergents It is possible to show that the square root of two can be expressed as an infinite continued fraction. √ 2 &#x3D; 1 + 1&#x2F;(2 + 1&#x2F;(2 + 1&#x2F;(2 + ... ))) &#x3D; 1.414213...  By expa">
+<meta property="og:description" content="Problem 57 Square root convergentsIt is possible to show that the square root of two can be expressed as an infinite continued fraction. $$\sqrt 2 &#x3D;1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$ B">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-11-22T02:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:20:06.000Z">
+<meta property="article:published_time" content="2003-11-21T23:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T19:31:16.567Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-11-21 21:00:00" itemprop="dateCreated datePublished" datetime="2003-11-21T21:00:00-05:00">2003-11-21</time>
+              <time title="发布时间：2003-11-21 18:00:00" itemprop="dateCreated datePublished" datetime="2003-11-21T18:00:00-05:00">2003-11-21</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:20:06" itemprop="dateModified" datetime="2015-08-10T12:20:06-04:00">2015-08-10</time>
+                <time title="更新时间：2022-12-11 14:31:16" itemprop="dateModified" datetime="2022-12-11T14:31:16-05:00">2022-12-11</time>
               </span>
 
           
@@ -227,22 +227,19 @@
       
         <hr>
 <h1 id="Problem-57"><a href="#Problem-57" class="headerlink" title="Problem 57"></a><a href="https://projecteuler.net/problem=57" target="_blank" rel="noopener">Problem 57</a></h1><hr>
-<p><strong>Square root convergents</strong></p>
-<p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
-<center>√ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...</center>
-
+<h2 id="Square-root-convergents"><a href="#Square-root-convergents" class="headerlink" title="Square root convergents"></a><strong>Square root convergents</strong></h2><p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
+<p>$$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$</p>
 <p>By expanding this for the first four iterations, we get:</p>
-<p>1 + 1/2 = 3/2 = 1.5<br>1 + 1/(2 + 1/2) = 7/5 = 1.4<br>1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666…<br>1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379…</p>
-<p>The next three expansions are 99/70, 239/169, and 577/408, but the eighth expansion, 1393/985, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.</p>
+<p>$1 + \frac 1 2 = \frac  32 = 1.5$<br /><br>$1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$</p>
+<p>The next three expansions are $\frac{99}{70}$, $\frac{239}{169}$, and $\frac{577}{408}$, but the eighth expansion, $\frac{1393}{985}$, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.</p>
 <p>In the first one-thousand expansions, how many fractions contain a numerator with more digits than denominator?</p>
 <hr>
-<p><strong>平方根逼近</strong><br>2的平方根可以用一个无限连分数表示：</p>
-<center>√ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...</center>
-
-<p>将连分数计算取前四次迭代展开式分别是：</p>
-<p>1 + 1/2 = 3/2 = 1.5<br>1 + 1/(2 + 1/2) = 7/5 = 1.4<br>1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666…<br>1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379…</p>
-<p>接下来的三个迭代展开式分别是99/70、239/169和577/408，但是直到第八个迭代展开式1393/985，分子的位数第一次超过分母的位数。</p>
-<p>在前一千个迭代展开式中，有多少个分数分子的位数多于分母的位数？</p>
+<h2 id="平方根逼近"><a href="#平方根逼近" class="headerlink" title="平方根逼近"></a><strong>平方根逼近</strong></h2><p>$2$的平方根可以表示为如下无限连分数：</p>
+<p>$$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$</p>
+<p>将这个连分数进行四次迭代展开，分别可以得到：</p>
+<p>$1 + \frac 1 2 = \frac  32 = 1.5$<br /><br>$1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$</p>
+<p>接下来的三次迭代展开得到的分别是$\frac{99}{70}$、$\frac{239}{169}$和$\frac{577}{408}$，直到第八次迭代展开$\frac{1393}{985}$，分子的位数第一次超过分母的位数。</p>
+<p>在前一千次迭代展开中，有多少个分数满足分子的位数多于分母的位数？</p>
 <hr>
 
     </div>
@@ -325,7 +322,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-57"><span class="nav-text">Problem 57</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-57"><span class="nav-text">Problem 57</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Square-root-convergents"><span class="nav-text">Square root convergents</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平方根逼近"><span class="nav-text">平方根逼近</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

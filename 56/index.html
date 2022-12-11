@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 56 Powerful Digit Sum A googol (10100) is a massive number: one followed by one-hundred zeros; 100100 is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the">
+  <meta name="description" content="Problem 56 Powerful digit sumA googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 56">
 <meta property="og:url" content="http://yoursite.com/56/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 56 Powerful Digit Sum A googol (10100) is a massive number: one followed by one-hundred zeros; 100100 is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the">
+<meta property="og:description" content="Problem 56 Powerful digit sumA googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their s">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-11-08T02:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:19:30.000Z">
+<meta property="article:published_time" content="2003-11-07T23:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T19:22:48.381Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-11-07 21:00:00" itemprop="dateCreated datePublished" datetime="2003-11-07T21:00:00-05:00">2003-11-07</time>
+              <time title="发布时间：2003-11-07 18:00:00" itemprop="dateCreated datePublished" datetime="2003-11-07T18:00:00-05:00">2003-11-07</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:19:30" itemprop="dateModified" datetime="2015-08-10T12:19:30-04:00">2015-08-10</time>
+                <time title="更新时间：2022-12-11 14:22:48" itemprop="dateModified" datetime="2022-12-11T14:22:48-05:00">2022-12-11</time>
               </span>
 
           
@@ -227,13 +227,11 @@
       
         <hr>
 <h1 id="Problem-56"><a href="#Problem-56" class="headerlink" title="Problem 56"></a><a href="https://projecteuler.net/problem=56" target="_blank" rel="noopener">Problem 56</a></h1><hr>
-<p><strong>Powerful Digit Sum</strong></p>
-<p>A googol (10<sup>100</sup>) is a massive number: one followed by one-hundred zeros; 100<sup>100</sup> is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.</p>
-<p>Considering natural numbers of the form, a<sup>b</sup>, where a, b &lt; 100, what is the maximum digital sum?</p>
+<h2 id="Powerful-digit-sum"><a href="#Powerful-digit-sum" class="headerlink" title="Powerful digit sum"></a><strong>Powerful digit sum</strong></h2><p>A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only $1$.</p>
+<p>Considering natural numbers of the form, $a^b$, where $a, b&lt;100$, what is the maximum digital sum?</p>
 <hr>
-<p><strong>幂的数字和</strong></p>
-<p>一古戈尔（10<sup>100</sup>）是一个巨大的数字：一后面跟着一百个零。100<sup>100</sup>则更是无法想像地巨大：一后面跟着两百个零。然而，尽管这两个数如此巨大，各位数字和却都只有1。</p>
-<p>若a, b &lt; 100，所有能表示为a<sup>b</sup>的自然数中，最大的各位数字和是多少？</p>
+<h2 id="幂的数字和"><a href="#幂的数字和" class="headerlink" title="幂的数字和"></a><strong>幂的数字和</strong></h2><p>一古戈尔（$10^{100}$）是一个巨大的数字：一后面跟着一百个零。$100^{100}$则更是无法想像地巨大：一后面跟着两百个零。然而，尽管这两个数如此巨大，各位数字和却都只有$1$。</p>
+<p>对于$a, b&lt;100$，考虑所有能表示为$a^b$的自然数，其中最大的各位数字和是多少？</p>
 <hr>
 
     </div>
@@ -316,7 +314,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-56"><span class="nav-text">Problem 56</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-56"><span class="nav-text">Problem 56</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Powerful-digit-sum"><span class="nav-text">Powerful digit sum</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#幂的数字和"><span class="nav-text">幂的数字和</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

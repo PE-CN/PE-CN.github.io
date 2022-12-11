@@ -13944,15 +13944,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/51/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-51"><a href="#Problem-51" class="headerlink" title="Problem 51"></a><a href="https://projecteuler.net/problem=51" target="_blank" rel="noopener">Problem 51</a></h1><hr>
-<p><strong>Prime digit replacements</strong></p>
-<p>By replacing the 1<sup>st</sup> digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.</p>
-<p>By replacing the 3<sup>rd</sup> and 4<sup>th</sup> digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.</p>
+<h2 id="Prime-digit-replacements"><a href="#Prime-digit-replacements" class="headerlink" title="Prime digit replacements"></a><strong>Prime digit replacements</strong></h2><p>By replacing the $1$<sup>st</sup> digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all prime.</p>
+<p>By replacing the $3$<sup>rd</sup> and $4$<sup>th</sup> digits of $56\text{**}3$ with the same digit, this $5$-digit number is the first example having seven primes among the ten generated numbers, yielding the family: $56003$, $56113$, $56333$, $56443$, $56663$, $56773$, and $56993$. Consequently $56003$, being the first member of this family, is the smallest prime with this property.</p>
 <p>Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.</p>
 <hr>
-<p><strong>素数数字替换</strong></p>
-<p>将两位数*3的第一个数字代换为任意数字，在九个可能值中有六个是素数：13、23、43、53、73和83。</p>
-<p>将五位数56**3的第三和第四位数字代换为相同的任意数字，就得到了十个可能值中有七个是素数的最小例子，这个素数族是：56003、56113、56333、56443、56663、56773和56993。56003作为这一族中最小的成员，也是最小的满足这个性质的素数。</p>
-<p>通过将部分数字（不一定相邻）代换为相同的任意数字，有时能够得到八个素数，求满足这一性质的最小素数。</p>
+<h2 id="素数数字替换"><a href="#素数数字替换" class="headerlink" title="素数数字替换"></a><strong>素数数字替换</strong></h2><p>将两位数$\text{*}3$的第一位数字替换为任意数字，在九个可能值中有六个是素数：$13$、$23$、$43$、$53$、$73$和$83$。</p>
+<p>将五位数$56\text{**}3$的第三和第四位数字替换为相同的任意数字，在十个可能值中有七个是素数，这也是同类例子中最小的一个。这些素数分别是：$56003$、$56113$、$56333$、$56443$、$56663$、$56773$和$56993$。$56003$作为其中最小的数，也就是最小的满足这个性质的素数。</p>
+<p>通过将部分数字（不一定相邻）替换为相同的任意数字，有时能够得到八个素数，求满足这一性质的最小素数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -14102,13 +14100,11 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/52/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-52"><a href="#Problem-52" class="headerlink" title="Problem 52"></a><a href="https://projecteuler.net/problem=52" target="_blank" rel="noopener">Problem 52</a></h1><hr>
-<p><strong>Permuted multiples</strong></p>
-<p>It can be seen that the number, 125874, and its double, 251748, contain exactly the same digits, but in a different order.</p>
-<p>Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.</p>
+<h2 id="Permuted-multiples"><a href="#Permuted-multiples" class="headerlink" title="Permuted multiples"></a><strong>Permuted multiples</strong></h2><p>It can be seen that the number, $125874$, and its double, $251748$, contain exactly the same digits, but in a different order.</p>
+<p>Find the smallest positive integer, $x$, such that $2x$, $3x$, $4x$, $5x$, and $6x$, contain the same digits.</p>
 <hr>
-<p><strong>重排的倍数</strong></p>
-<p>可以看出，125874和它的两倍251748拥有同样的数字，只是排列顺序不同。</p>
-<p>有些正整数x满足2x、3x、4x、5x和6x都拥有相同的数字，求其中最小的正整数。</p>
+<h2 id="重排的倍数"><a href="#重排的倍数" class="headerlink" title="重排的倍数"></a><strong>重排的倍数</strong></h2><p>可以看出，$125874$和它的两倍$251748$拥有同样的数字，只是排列顺序不同。</p>
+<p>有些正整数$x$满足$2x$、$3x$、$4x$、$5x$和$6x$都拥有与$x$相同的数字，求其中最小的正整数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -14803,25 +14799,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/53/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-53"><a href="#Problem-53" class="headerlink" title="Problem 53"></a><a href="https://projecteuler.net/problem=53" target="_blank" rel="noopener">Problem 53</a></h1><hr>
-<p><strong>Combinatoric selections</strong></p>
-<p>There are exactly ten ways of selecting three from five, 12345:</p>
-<center>123, 124, 125, 134, 135, 145, 234, 235, 245, and 345</center>
-
-<p>In combinatorics, we use the notation, <sup>5</sup>C<sub>3</sub> = 10.</p>
-<p>In general,</p>
-<p><sup>n</sup>C<sub>r</sub>=$\frac{n!}{r!(n-r)!}$, where r ≤ n, n! = n×(n−1)×…×3×2×1, and 0! = 1.</p>
-<p>It is not until n = 23, that a value exceeds one-million: <sup>23</sup>C<sub>10</sub> = 1144066.</p>
-<p>How many, not necessarily distinct, values of &nbsp;<sup>n</sup>C<sub>r</sub>, for 1 ≤ n ≤ 100, are greater than one-million?</p>
+<h2 id="Combinatoric-selections"><a href="#Combinatoric-selections" class="headerlink" title="Combinatoric selections"></a><strong>Combinatoric selections</strong></h2><p>There are exactly ten ways of selecting three from five, $12345$:</p>
+<p>$$123, 124, 125, 134, 135, 145, 234, 235, 245,\text{ and }345$$</p>
+<p>In combinatorics, we use the notation, $\displaystyle \binom 5 3 = 10$.</p>
+<p>In general, $\displaystyle \binom n r = \frac{n!}{r!(n-r)!}$, where $r \le n$, $n!=n\times(n-1)\times \ldots \times 3\times 2\times1$, and $0!=1$. </p>
+<p>It is not until $n = 23$, that a value exceeds one-million:<br>$\displaystyle \binom{23}{10}=1144066$.</p>
+<p>How many, not necessarily distinct, values of $\displaystyle \binom n r$, for $1 \le n \le 100$, are greater than one-million?</p>
 <hr>
-<p><strong>组合数选择</strong></p>
-<p>从五个数12345中选择三个恰好有十种方式，分别是：</p>
-<center>123、124、125、134、135、145、234、235、245和345</center>
-
-<p>在组合数学中，我们记作：<sup>5</sup>C<sub>3</sub> = 10。</p>
-<p>一般来说，</p>
-<p><sup>n</sup>C<sub>r</sub>=$\frac{n!}{r!(n-r)!}$，其中r ≤ n，n! = n×(n−1)×…×3×2×1，且0! = 1。</p>
-<p>直到n = 23时，才出现了超出一百万的组合数：<sup>23</sup>C<sub>10</sub> = 1144066。</p>
-<p>若数值相等形式不同也视为不同，对于1 ≤ n ≤ 100，有多少个组合数<sup>n</sup>C<sub>r</sub>超过一百万？</p>
+<h2 id="组合选择"><a href="#组合选择" class="headerlink" title="组合选择"></a><strong>组合选择</strong></h2><p>从五个数$12345$中选择三个恰好有十种方式，分别是：</p>
+<p>$$123, 124, 125, 134, 135, 145, 234, 235, 245\text{和}345$$</p>
+<p>在组合数学中，我们记作：$\displaystyle \binom 5 3 = 10$。</p>
+<p>一般来说，$\displaystyle \binom n r = \frac{n!}{r!(n-r)!}$，其中$r \le n$，$n! = n\times (n−1)\times \ldots \times 3 \times 2 \times 1$，且$0! = 1$。</p>
+<p>在$n = 23$时，首次出现超出一百万的组合数：$\displaystyle \binom{23}{10}=1144066$。</p>
+<p>对于$1 \le n \le 100$，有多少个不同形式的组合数$\displaystyle \binom n r$超过一百万？</p>
 <hr>
 ]]></content>
   </entry>
@@ -15056,8 +15046,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/54/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-54"><a href="#Problem-54" class="headerlink" title="Problem 54"></a><a href="https://projecteuler.net/problem=54" target="_blank" rel="noopener">Problem 54</a></h1><hr>
-<p><strong>Poker hands</strong></p>
-<p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
+<h2 id="Poker-hands"><a href="#Poker-hands" class="headerlink" title="Poker hands"></a><strong>Poker hands</strong></h2><p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
 <ul>
 <li><strong>High Card</strong>: Highest value card.</li>
 <li><strong>One Pair</strong>: Two cards of the same value.</li>
@@ -15158,8 +15147,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>The file, <a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="noopener">poker.txt</a>, contains one-thousand random hands dealt to two players. Each line of the file contains ten cards (separated by a single space): the first five are Player 1’s cards and the last five are Player 2’s cards. You can assume that all hands are valid (no invalid characters or repeated cards), each player’s hand is in no specific order, and in each hand there is a clear winner.</p>
 <p>How many hands does Player 1 win?</p>
 <hr>
-<p><strong>扑克手牌</strong></p>
-<p>在扑克游戏中，玩家的手牌由五张牌组成，其等级由低到高分别为：</p>
+<h2 id="扑克手牌"><a href="#扑克手牌" class="headerlink" title="扑克手牌"></a><strong>扑克手牌</strong></h2><p>在扑克游戏中，玩家的手牌由五张牌组成，其等级由低到高分别为：</p>
 <ul>
 <li><strong>单牌</strong>：牌面最大的一张牌。</li>
 <li><strong>对子</strong>：两张牌面一样的牌。</li>
@@ -15170,10 +15158,10 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <li><strong>葫芦</strong>：三条带一个对子。</li>
 <li><strong>四条</strong>：四张牌面一样的牌。</li>
 <li><strong>同花顺</strong>：五张牌的牌面是连续的且为同一花色。</li>
-<li><strong>同花大顺</strong>：同一花色的10、J、Q、K、A。</li>
+<li><strong>皇家同花顺</strong>：同一花色的10、J、Q、K、A。</li>
 </ul>
 <p>牌面由小到大的顺序是：2、3、4、5、6、7、8、9、10、J、Q、K、A。</p>
-<p>如果两名玩家的手牌处于同一等级，那么牌面较大的一方获胜；例如，一对8胜过一对5（参见例1）；如果牌面相同，例如双方各有一对Q，那么就比较玩家剩余的牌中最大的牌（参见例4）；如果最大的牌相同，则比较次大的牌，依此类推。</p>
+<p>如果两名玩家的手牌处于同一等级，那么组成该等级的牌中牌面较大的一方获胜；例如，一对8胜过一对5（参见例1）；如果这些牌的牌面相同，例如双方各有一对Q，那么就比较玩家手牌中牌面最大的牌（参见例4）；如果最大的牌相同，则比较次大的牌，依此类推。</p>
 <p>考虑以下五局游戏中双方的手牌：</p>
 <table>
 <thead>
@@ -15257,7 +15245,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <td align="center">&nbsp;</td>
 </tr>
 </tbody></table>
-<p>在这个文本文件<a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="noopener">poker.txt</a>中，包含有两名玩家一千局的手牌。每一行包含有10张牌（均用一个空格隔开）：前5张牌属于玩家1，后5张牌属于玩家2。你可以假定所有的手牌都是有效的（没有无效的字符或是重复的牌），每个玩家的手牌不一定按顺序排列，且每一局都有确定的赢家。</p>
+<p>在这个文本文件<a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="noopener">poker.txt</a>中，包含有两名玩家进行一千局扑克游戏的手牌。每一行包含有10张牌（均用一个空格隔开）：前5张牌属于玩家1，后5张牌属于玩家2。你可以假定所有的手牌都是有效的（没有无效的字符或是重复的牌），每个玩家的手牌不一定按顺序排列，且每一局都有确定的赢家。</p>
 <p>其中有多少局玩家1获胜？</p>
 <hr>
 ]]></content>
@@ -15529,23 +15517,21 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/55/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-55"><a href="#Problem-55" class="headerlink" title="Problem 55"></a><a href="https://projecteuler.net/problem=55" target="_blank" rel="noopener">Problem 55</a></h1><hr>
-<p><strong>Lychrel numbers</strong></p>
-<p>If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.</p>
+<h2 id="Lychrel-numbers"><a href="#Lychrel-numbers" class="headerlink" title="Lychrel numbers"></a><strong>Lychrel numbers</strong></h2><p>If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.</p>
 <p>Not all numbers produce palindromes so quickly. For example,</p>
-<p>349 + 943 = 1292<br>1292 + 2921 = 4213<br>4213 + 3124 = 7337</p>
-<p>That is, 349 took three iterations to arrive at a palindrome.</p>
-<p>Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, 10677 is the first number to be shown to require over fifty iterations before producing a palindrome:<br>4668731596684224866951378664 (53 iterations, 28-digits).</p>
-<p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994.</p>
+<p>$$<br>\begin{aligned}<br>&amp;349 + 943 = 1292\\<br>&amp;1292 + 2921 = 4213\\<br>&amp;4213 + 3124 = 7337\\<br>\end{aligned}<br>$$</p>
+<p>That is, $349$ took three iterations to arrive at a palindrome.</p>
+<p>Although no one has proved it yet, it is thought that some numbers, like $196$, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, $10677$ is the first number to be shown to require over fifty iterations before producing a palindrome:<br>$4668731596684224866951378664$ ($53$ iterations, $28$-digits).</p>
+<p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is $4994$.</p>
 <p>How many Lychrel numbers are there below ten-thousand?</p>
 <p>NOTE: Wording was modified slightly on 24 April 2007 to emphasise the theoretical nature of Lychrel numbers.</p>
 <hr>
-<p><strong>利克瑞尔数</strong></p>
-<p>将47倒序并相加得到47 + 74 = 121，是一个回文数。</p>
+<h2 id="利克瑞尔数"><a href="#利克瑞尔数" class="headerlink" title="利克瑞尔数"></a><strong>利克瑞尔数</strong></h2><p>将$47$倒序并相加得到$47 + 74 = 121$，是一个回文数。</p>
 <p>不是所有的数都能像这样迅速地变成回文数。例如，</p>
-<p>349 + 943 = 1292<br>1292 + 2921 = 4213<br>4213 + 3124 = 7337</p>
-<p>也就是说，349需要迭代三次才能变成回文数。</p>
-<p>尽管尚未被证实，但有些数，例如196，被认为永远不可能变成回文数。如果一个数永远不可能通过倒序并相加变成回文数，就被称为利克瑞尔数。出于理论的限制和问题的要求，在未被证否之前，我们姑且就认为这些数确实是利克瑞尔数。除此之外，已知对于任意一个小于一万的数，它要么在迭代50次以内变成回文数，要么就是没有人能够利用现今所有的计算能力将其迭代变成回文数。事实上，10677是第一个需要超过50次迭代变成回文数的数，这个回文数是<br>4668731596684224866951378664（53次迭代，28位数）。</p>
-<p>令人惊讶的是，有些回文数本身也是利克瑞尔数；第一个例子是4994。</p>
+<p>$$<br>\begin{aligned}<br>&amp;349 + 943 = 1292\\<br>&amp;1292 + 2921 = 4213\\<br>&amp;4213 + 3124 = 7337\\<br>\end{aligned}<br>$$</p>
+<p>也就是说，$349$需要迭代三次才能变成回文数。</p>
+<p>尽管尚未被证实，但有些数，例如$196$，被认为永远不可能变成回文数。如果一个数永远不可能通过倒序并相加变成回文数，就被称为利克瑞尔数。出于理论的限制和问题的要求，我们姑且假设，对于任意一个数，除非已经通过计算证否，否则就是利克瑞尔数。此外，已知对于任意一个小于一万的数，它要么在迭代五十次以内变成回文数，要么就是没有人能够利用现今所有的计算能力将其迭代变成回文数。事实上，$10677$是第一个需要超过五十次迭代变成回文数的数，这个回文数是<br>$4668731596684224866951378664$（$53$次迭代，$28$位数）。</p>
+<p>令人惊讶的是，有些回文数本身也是利克瑞尔数；第一个例子是$4994$。</p>
 <p>小于一万的数中有多少利克瑞尔数？</p>
 <p>注意：2007年4月24日，题目略作修改，以强调目前利克瑞尔数理论的限制。</p>
 <hr>
@@ -15732,13 +15718,11 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/56/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-56"><a href="#Problem-56" class="headerlink" title="Problem 56"></a><a href="https://projecteuler.net/problem=56" target="_blank" rel="noopener">Problem 56</a></h1><hr>
-<p><strong>Powerful Digit Sum</strong></p>
-<p>A googol (10<sup>100</sup>) is a massive number: one followed by one-hundred zeros; 100<sup>100</sup> is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.</p>
-<p>Considering natural numbers of the form, a<sup>b</sup>, where a, b &lt; 100, what is the maximum digital sum?</p>
+<h2 id="Powerful-digit-sum"><a href="#Powerful-digit-sum" class="headerlink" title="Powerful digit sum"></a><strong>Powerful digit sum</strong></h2><p>A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only $1$.</p>
+<p>Considering natural numbers of the form, $a^b$, where $a, b&lt;100$, what is the maximum digital sum?</p>
 <hr>
-<p><strong>幂的数字和</strong></p>
-<p>一古戈尔（10<sup>100</sup>）是一个巨大的数字：一后面跟着一百个零。100<sup>100</sup>则更是无法想像地巨大：一后面跟着两百个零。然而，尽管这两个数如此巨大，各位数字和却都只有1。</p>
-<p>若a, b &lt; 100，所有能表示为a<sup>b</sup>的自然数中，最大的各位数字和是多少？</p>
+<h2 id="幂的数字和"><a href="#幂的数字和" class="headerlink" title="幂的数字和"></a><strong>幂的数字和</strong></h2><p>一古戈尔（$10^{100}$）是一个巨大的数字：一后面跟着一百个零。$100^{100}$则更是无法想像地巨大：一后面跟着两百个零。然而，尽管这两个数如此巨大，各位数字和却都只有$1$。</p>
+<p>对于$a, b&lt;100$，考虑所有能表示为$a^b$的自然数，其中最大的各位数字和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -15998,22 +15982,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/57/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-57"><a href="#Problem-57" class="headerlink" title="Problem 57"></a><a href="https://projecteuler.net/problem=57" target="_blank" rel="noopener">Problem 57</a></h1><hr>
-<p><strong>Square root convergents</strong></p>
-<p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
-<center>√ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...</center>
-
+<h2 id="Square-root-convergents"><a href="#Square-root-convergents" class="headerlink" title="Square root convergents"></a><strong>Square root convergents</strong></h2><p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
+<p>$$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$</p>
 <p>By expanding this for the first four iterations, we get:</p>
-<p>1 + 1/2 = 3/2 = 1.5<br>1 + 1/(2 + 1/2) = 7/5 = 1.4<br>1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666…<br>1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379…</p>
-<p>The next three expansions are 99/70, 239/169, and 577/408, but the eighth expansion, 1393/985, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.</p>
+<p>$1 + \frac 1 2 = \frac  32 = 1.5$<br /><br>$1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$</p>
+<p>The next three expansions are $\frac{99}{70}$, $\frac{239}{169}$, and $\frac{577}{408}$, but the eighth expansion, $\frac{1393}{985}$, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.</p>
 <p>In the first one-thousand expansions, how many fractions contain a numerator with more digits than denominator?</p>
 <hr>
-<p><strong>平方根逼近</strong><br>2的平方根可以用一个无限连分数表示：</p>
-<center>√ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...</center>
-
-<p>将连分数计算取前四次迭代展开式分别是：</p>
-<p>1 + 1/2 = 3/2 = 1.5<br>1 + 1/(2 + 1/2) = 7/5 = 1.4<br>1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666…<br>1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379…</p>
-<p>接下来的三个迭代展开式分别是99/70、239/169和577/408，但是直到第八个迭代展开式1393/985，分子的位数第一次超过分母的位数。</p>
-<p>在前一千个迭代展开式中，有多少个分数分子的位数多于分母的位数？</p>
+<h2 id="平方根逼近"><a href="#平方根逼近" class="headerlink" title="平方根逼近"></a><strong>平方根逼近</strong></h2><p>$2$的平方根可以表示为如下无限连分数：</p>
+<p>$$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$</p>
+<p>将这个连分数进行四次迭代展开，分别可以得到：</p>
+<p>$1 + \frac 1 2 = \frac  32 = 1.5$<br /><br>$1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$</p>
+<p>接下来的三次迭代展开得到的分别是$\frac{99}{70}$、$\frac{239}{169}$和$\frac{577}{408}$，直到第八次迭代展开$\frac{1393}{985}$，分子的位数第一次超过分母的位数。</p>
+<p>在前一千次迭代展开中，有多少个分数满足分子的位数多于分母的位数？</p>
 <hr>
 ]]></content>
   </entry>
@@ -16284,32 +16265,31 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/58/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-58"><a href="#Problem-58" class="headerlink" title="Problem 58"></a><a href="https://projecteuler.net/problem=58" target="_blank" rel="noopener">Problem 58</a></h1><hr>
-<p><strong>Spiral primes</strong></p>
-<p>Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;">**37**</span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;">**31**</span>
-38 <span style="color:#ff0000;font-family:courier new;">**17**</span> 16 15 14 <span style="color:#ff0000;font-family:courier new;">**13**</span> 30
-39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;**5**</span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;**3**</span> 12 29
-40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28
-41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;**7**</span> &nbsp;8 &nbsp;9 10 27
-42 21 22 23 24 25 26
-<span style="color:#ff0000;font-family:courier new;">**43**</span> 44 45 46 47 48 49
+<h2 id="Spiral-primes"><a href="#Spiral-primes" class="headerlink" title="Spiral primes"></a><strong>Spiral primes</strong></h2><p>Starting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed.</p>
+<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;"><b>37</b></span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;"><b>31</b></span><br />
+38 <span style="color:#ff0000;font-family:courier new;"><b>17</b></span> 16 15 14 <span style="color:#ff0000;font-family:courier new;"><b>13</b></span> 30<br />
+39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>5</b></span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>3</b></span> 12 29<br />
+40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28<br />
+41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>7</b></span> &nbsp;8 &nbsp;9 10 27<br />
+42 21 22 23 24 25 26<br />
+<span style="color:#ff0000;font-family:courier new;"><b>43</b></span> 44 45 46 47 48 49<br />
 </center>
 
-<p>It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.</p>
-<p>If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?</p>
+<p>It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that $8$ out of the $13$ numbers lying along both diagonals are prime; that is, a ratio of $8/13 \approx 62\%$.</p>
+<p>If one complete new layer is wrapped around the spiral above, a square spiral with side length $9$ will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below $10\%$?</p>
 <hr>
-<p><strong>螺旋素数</strong><br>从1开始逆时针螺旋着摆放自然数，我们可以构造出一个边长为7的螺旋数阵。</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;">**37**</span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;">**31**</span>
-38 <span style="color:#ff0000;font-family:courier new;">**17**</span> 16 15 14 <span style="color:#ff0000;font-family:courier new;">**13**</span> 30
-39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;**5**</span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;**3**</span> 12 29
-40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28
-41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;**7**</span> &nbsp;8 &nbsp;9 10 27
-42 21 22 23 24 25 26
-<span style="color:#ff0000;font-family:courier new;">**43**</span> 44 45 46 47 48 49
+<h2 id="螺旋素数"><a href="#螺旋素数" class="headerlink" title="螺旋素数"></a><strong>螺旋素数</strong></h2><p>从$1$开始按照逆时针方向摆放自然数，可以构造出如下边长为$7$的螺旋数阵。</p>
+<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;"><b>37</b></span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;"><b>31</b></span><br />
+38 <span style="color:#ff0000;font-family:courier new;"><b>17</b></span> 16 15 14 <span style="color:#ff0000;font-family:courier new;"><b>13</b></span> 30<br />
+39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>5</b></span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>3</b></span> 12 29<br />
+40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28<br />
+41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>7</b></span> &nbsp;8 &nbsp;9 10 27<br />
+42 21 22 23 24 25 26<br />
+<span style="color:#ff0000;font-family:courier new;"><b>43</b></span> 44 45 46 47 48 49<br />
 </center>
 
-<p>可以发现，所有的奇数平方都在这个螺旋方针的右下对角线上，更有趣的是，在所有对角线上一共有8个素数，比例达到8/13 ≈ 62%。</p>
-<p>在这个方阵外面完整地再加上一层，就能构造出一个边长为9的螺旋方阵。如果不断重复这个过程，当对角线上素数的比例第一次低于10%时，螺旋数阵的边长是多少？</p>
+<p>有趣的是，所有的奇数平方都在这个螺旋方阵的右下对角线上，更有趣的是，在两条对角线上的$13$个数中一共有$8$个素数，比例达到$8/13 \approx 62\%$。</p>
+<p>在这个方阵外面完整地加上一层，就能构造出一个边长为$9$的螺旋方阵。不断重复这个过程，当对角线上素数的比例第一次低于$10\%$时，螺旋数阵的边长是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -16516,19 +16496,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/59/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-59"><a href="#Problem-59" class="headerlink" title="Problem 59"></a><a href="https://projecteuler.net/problem=59" target="_blank" rel="noopener">Problem 59</a></h1><hr>
-<p><strong>XOR decryption</strong></p>
-<p>Each character on a computer is assigned a unique code and the preferred standard is ASCII (American Standard Code for Information Interchange). For example, uppercase A = 65, asterisk (*) = 42, and lowercase k = 107.</p>
-<p>A modern encryption method is to take a text file, convert the bytes to ASCII, then XOR each byte with a given value, taken from a secret key. The advantage with the XOR function is that using the same encryption key on the cipher text, restores the plain text; for example, 65 XOR 42 = 107, then 107 XOR 42 = 65.</p>
+<h2 id="XOR-decryption"><a href="#XOR-decryption" class="headerlink" title="XOR decryption"></a><strong>XOR decryption</strong></h2><p>Each character on a computer is assigned a unique code and the preferred standard is ASCII (American Standard Code for Information Interchange). For example, uppercase $A = 65$, asterisk (*) $= 42$, and lowercase $k = 107$.</p>
+<p>A modern encryption method is to take a text file, convert the bytes to ASCII, then XOR each byte with a given value, taken from a secret key. The advantage with the XOR function is that using the same encryption key on the cipher text, restores the plain text; for example, $65$ XOR $42 = 107$, then $107$ XOR $42 = 65$.</p>
 <p>For unbreakable encryption, the key is the same length as the plain text message, and the key is made up of random bytes. The user would keep the encrypted message and the encryption key in different locations, and without both “halves”, it is impossible to decrypt the message.</p>
 <p>Unfortunately, this method is impractical for most users, so the modified method is to use a password as a key. If the password is shorter than the message, which is likely, the key is repeated cyclically throughout the message. The balance for this method is using a sufficiently long password key for security, but short enough to be memorable.</p>
 <p>Your task has been made easy, as the encryption key consists of three lower case characters. Using <a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a> (right click and ‘Save Link/Target As…’), a file containing the encrypted ASCII codes, and the knowledge that the plain text must contain common English words, decrypt the message and find the sum of the ASCII values in the original text.</p>
 <hr>
-<p><strong>异或解密</strong></p>
-<p>计算机上的每个字符都被指定了一个独特的代码，其中被广泛使用的一种是ASCII码（美国信息交换标准代码）。例如，大写字母A = 65，星号（*） = 42，小写字母k = 107。</p>
-<p>一种现代加密方法是将一个文本文档中的符号先转化为ASCII码，然后将每个字节异或一个根据密钥确定的值。使用异或进行加密的好处在于，只需对密文使用相同的密钥再加密一次就能得到明文，例如，65 XOR 42 = 107，而107 XOR 42 = 65。</p>
-<p>为了使加密难以破解，密钥要和明文一样长，由随机的字节构成。用户会把加密过的信息和密钥放置在不同的地方，解密时二者缺一不可。</p>
-<p>不幸的是，这种方法对大多数人来说并不实用，因此一个略有改进的方法是使用一个密码作为密钥。密码的长度很有可能比信息要短，这时候就循环重复使用这个密码进行加密。这种方法需要达到一种平衡，一方面密码要足够长才能保证安全，另一方面需要充分短以方便记忆。</p>
-<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文档<a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a>（右击并选择“目标另存为……”）中包含了加密后的ASCII码，并且已知明文包含的一定是常见的英文单词，解密这条消息并求出原文的ASCII码之和。</p>
+<h2 id="异或解密"><a href="#异或解密" class="headerlink" title="异或解密"></a><strong>异或解密</strong></h2><p>计算机上的每个字符都被指定了一个独特的代码，其中被广泛使用的一种是ASCII码（美国信息交换标准代码）。例如，大写字母$A = 65$，星号（*）$ = 42$，小写字母$k = 107$。</p>
+<p>一种现代加密方法是将一个文本文档中的字符先转化为ASCII码，然后将其与一个根据密钥确定的值进行异或操作。使用异或进行加密的好处在于，只需对密文使用相同的密钥再加密一次就能得到明文，例如，$65$ XOR $42 = 107$，而$107$ XOR $42 = 65$。</p>
+<p>为了使加密难以破解，密钥应当和明文一样长，由随机的字节构成。用户会把加密过的信息和密钥放置在不同的地方，解密时二者缺一不可。</p>
+<p>不幸的是，这种方法对大多数人来说并不实用，因此一个略有改进的方法是使用一个口令作为密钥。口令的长度很有可能比信息要短，这时候就循环重复使用这个口令进行加密。这种方法需要达到一种平衡，一方面口令要足够长才能保证安全，另一方面需要充分短以方便记忆。</p>
+<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文档<a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a>（右击并选择“目标另存为……”）中包含了加密后的ASCII码，并且已知明文包含的都是常见的英文单词。解密这条消息并求出原文的ASCII码之和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -16830,12 +16808,10 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/60/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-60"><a href="#Problem-60" class="headerlink" title="Problem 60"></a><a href="https://projecteuler.net/problem=60" target="_blank" rel="noopener">Problem 60</a></h1><hr>
-<p><strong>Prime pair sets</strong></p>
-<p>The primes 3, 7, 109, and 673, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking 7 and 109, both 7109 and 1097 are prime. The sum of these four primes, 792, represents the lowest sum for a set of four primes with this property.</p>
+<h2 id="Prime-pair-sets"><a href="#Prime-pair-sets" class="headerlink" title="Prime pair sets"></a><strong>Prime pair sets</strong></h2><p>The primes $3$, $7$, $109$, and $673$, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking $7$ and $109$, both $7109$ and $1097$ are prime. The sum of these four primes, $792$, represents the lowest sum for a set of four primes with this property.</p>
 <p>Find the lowest sum for a set of five primes for which any two primes concatenate to produce another prime.</p>
 <hr>
-<p><strong>素数对的集合</strong></p>
-<p>3、7、109和673是非常特别的一组素数。任取其中的两个并且以任意顺序连接起来，其结果仍然是个素数。例如，选择7和109，我们得到7109和1097均为素数。这四个素数的和是792，这是满足这个性质的一组四个素数的最小和。</p>
+<h2 id="素数对集合"><a href="#素数对集合" class="headerlink" title="素数对集合"></a><strong>素数对集合</strong></h2><p>$3$、$7$、$109$和$673$是非常特别的一组素数。任取其中的两个并且以任意顺序连接起来，其结果仍然是个素数。例如，选择$7$和$109$，得到$7109$和$1097$均为素数。这四个素数的和是$792$，而且是满足这个性质的一组四个素数的最小和。</p>
 <p>若有一组五个素数，任取其中的两个并且以任意顺序连接起来，其结果仍然是个素数，求这样一组素数的最小和。</p>
 <hr>
 ]]></content>

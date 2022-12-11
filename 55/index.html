@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 55 Lychrel numbers If we take 47, reverse and add, 47 + 74 &#x3D; 121, which is palindromic. Not all numbers produce palindromes so quickly. For example, 349 + 943 &#x3D; 12921292 + 2921 &#x3D; 42134213 + 3">
+  <meta name="description" content="Problem 55 Lychrel numbersIf we take $47$, reverse and add, $47 + 74 &#x3D; 121$, which is palindromic. Not all numbers produce palindromes so quickly. For example, $$\begin{aligned}&amp;349 + 943 &#x3D; 1292\">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 55">
 <meta property="og:url" content="http://yoursite.com/55/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 55 Lychrel numbers If we take 47, reverse and add, 47 + 74 &#x3D; 121, which is palindromic. Not all numbers produce palindromes so quickly. For example, 349 + 943 &#x3D; 12921292 + 2921 &#x3D; 42134213 + 3">
+<meta property="og:description" content="Problem 55 Lychrel numbersIf we take $47$, reverse and add, $47 + 74 &#x3D; 121$, which is palindromic. Not all numbers produce palindromes so quickly. For example, $$\begin{aligned}&amp;349 + 943 &#x3D; 1292\">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-10-25T01:00:00.000Z">
-<meta property="article:modified_time" content="2021-04-07T21:38:37.811Z">
+<meta property="article:published_time" content="2003-10-24T22:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T19:19:15.693Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-10-24 21:00:00" itemprop="dateCreated datePublished" datetime="2003-10-24T21:00:00-04:00">2003-10-24</time>
+              <time title="发布时间：2003-10-24 18:00:00" itemprop="dateCreated datePublished" datetime="2003-10-24T18:00:00-04:00">2003-10-24</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2021-04-07 17:38:37" itemprop="dateModified" datetime="2021-04-07T17:38:37-04:00">2021-04-07</time>
+                <time title="更新时间：2022-12-11 14:19:15" itemprop="dateModified" datetime="2022-12-11T14:19:15-05:00">2022-12-11</time>
               </span>
 
           
@@ -227,23 +227,21 @@
       
         <hr>
 <h1 id="Problem-55"><a href="#Problem-55" class="headerlink" title="Problem 55"></a><a href="https://projecteuler.net/problem=55" target="_blank" rel="noopener">Problem 55</a></h1><hr>
-<p><strong>Lychrel numbers</strong></p>
-<p>If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.</p>
+<h2 id="Lychrel-numbers"><a href="#Lychrel-numbers" class="headerlink" title="Lychrel numbers"></a><strong>Lychrel numbers</strong></h2><p>If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.</p>
 <p>Not all numbers produce palindromes so quickly. For example,</p>
-<p>349 + 943 = 1292<br>1292 + 2921 = 4213<br>4213 + 3124 = 7337</p>
-<p>That is, 349 took three iterations to arrive at a palindrome.</p>
-<p>Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, 10677 is the first number to be shown to require over fifty iterations before producing a palindrome:<br>4668731596684224866951378664 (53 iterations, 28-digits).</p>
-<p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994.</p>
+<p>$$<br>\begin{aligned}<br>&amp;349 + 943 = 1292\\<br>&amp;1292 + 2921 = 4213\\<br>&amp;4213 + 3124 = 7337\\<br>\end{aligned}<br>$$</p>
+<p>That is, $349$ took three iterations to arrive at a palindrome.</p>
+<p>Although no one has proved it yet, it is thought that some numbers, like $196$, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, $10677$ is the first number to be shown to require over fifty iterations before producing a palindrome:<br>$4668731596684224866951378664$ ($53$ iterations, $28$-digits).</p>
+<p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is $4994$.</p>
 <p>How many Lychrel numbers are there below ten-thousand?</p>
 <p>NOTE: Wording was modified slightly on 24 April 2007 to emphasise the theoretical nature of Lychrel numbers.</p>
 <hr>
-<p><strong>利克瑞尔数</strong></p>
-<p>将47倒序并相加得到47 + 74 = 121，是一个回文数。</p>
+<h2 id="利克瑞尔数"><a href="#利克瑞尔数" class="headerlink" title="利克瑞尔数"></a><strong>利克瑞尔数</strong></h2><p>将$47$倒序并相加得到$47 + 74 = 121$，是一个回文数。</p>
 <p>不是所有的数都能像这样迅速地变成回文数。例如，</p>
-<p>349 + 943 = 1292<br>1292 + 2921 = 4213<br>4213 + 3124 = 7337</p>
-<p>也就是说，349需要迭代三次才能变成回文数。</p>
-<p>尽管尚未被证实，但有些数，例如196，被认为永远不可能变成回文数。如果一个数永远不可能通过倒序并相加变成回文数，就被称为利克瑞尔数。出于理论的限制和问题的要求，在未被证否之前，我们姑且就认为这些数确实是利克瑞尔数。除此之外，已知对于任意一个小于一万的数，它要么在迭代50次以内变成回文数，要么就是没有人能够利用现今所有的计算能力将其迭代变成回文数。事实上，10677是第一个需要超过50次迭代变成回文数的数，这个回文数是<br>4668731596684224866951378664（53次迭代，28位数）。</p>
-<p>令人惊讶的是，有些回文数本身也是利克瑞尔数；第一个例子是4994。</p>
+<p>$$<br>\begin{aligned}<br>&amp;349 + 943 = 1292\\<br>&amp;1292 + 2921 = 4213\\<br>&amp;4213 + 3124 = 7337\\<br>\end{aligned}<br>$$</p>
+<p>也就是说，$349$需要迭代三次才能变成回文数。</p>
+<p>尽管尚未被证实，但有些数，例如$196$，被认为永远不可能变成回文数。如果一个数永远不可能通过倒序并相加变成回文数，就被称为利克瑞尔数。出于理论的限制和问题的要求，我们姑且假设，对于任意一个数，除非已经通过计算证否，否则就是利克瑞尔数。此外，已知对于任意一个小于一万的数，它要么在迭代五十次以内变成回文数，要么就是没有人能够利用现今所有的计算能力将其迭代变成回文数。事实上，$10677$是第一个需要超过五十次迭代变成回文数的数，这个回文数是<br>$4668731596684224866951378664$（$53$次迭代，$28$位数）。</p>
+<p>令人惊讶的是，有些回文数本身也是利克瑞尔数；第一个例子是$4994$。</p>
 <p>小于一万的数中有多少利克瑞尔数？</p>
 <p>注意：2007年4月24日，题目略作修改，以强调目前利克瑞尔数理论的限制。</p>
 <hr>
@@ -328,7 +326,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-55"><span class="nav-text">Problem 55</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-55"><span class="nav-text">Problem 55</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lychrel-numbers"><span class="nav-text">Lychrel numbers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利克瑞尔数"><span class="nav-text">利克瑞尔数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

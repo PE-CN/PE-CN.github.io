@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 58 Spiral primes Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed. **37** 36 35 34 33 32 **31** 38 **17** 16 15 14 **13** 30 39">
+  <meta name="description" content="Problem 58 Spiral primesStarting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed. 37 36 35 34 33 32 31 38 17 16 15 14 13 30 39 18 &amp;nbsp;5 &amp;n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 58">
 <meta property="og:url" content="http://yoursite.com/58/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 58 Spiral primes Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed. **37** 36 35 34 33 32 **31** 38 **17** 16 15 14 **13** 30 39">
+<meta property="og:description" content="Problem 58 Spiral primesStarting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed. 37 36 35 34 33 32 31 38 17 16 15 14 13 30 39 18 &amp;nbsp;5 &amp;n">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-12-06T02:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:47:56.000Z">
+<meta property="article:published_time" content="2003-12-05T23:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T19:42:08.818Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-12-05 21:00:00" itemprop="dateCreated datePublished" datetime="2003-12-05T21:00:00-05:00">2003-12-05</time>
+              <time title="发布时间：2003-12-05 18:00:00" itemprop="dateCreated datePublished" datetime="2003-12-05T18:00:00-05:00">2003-12-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:47:56" itemprop="dateModified" datetime="2015-08-10T12:47:56-04:00">2015-08-10</time>
+                <time title="更新时间：2022-12-11 14:42:08" itemprop="dateModified" datetime="2022-12-11T14:42:08-05:00">2022-12-11</time>
               </span>
 
           
@@ -227,32 +227,31 @@
       
         <hr>
 <h1 id="Problem-58"><a href="#Problem-58" class="headerlink" title="Problem 58"></a><a href="https://projecteuler.net/problem=58" target="_blank" rel="noopener">Problem 58</a></h1><hr>
-<p><strong>Spiral primes</strong></p>
-<p>Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;">**37**</span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;">**31**</span>
-38 <span style="color:#ff0000;font-family:courier new;">**17**</span> 16 15 14 <span style="color:#ff0000;font-family:courier new;">**13**</span> 30
-39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;**5**</span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;**3**</span> 12 29
-40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28
-41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;**7**</span> &nbsp;8 &nbsp;9 10 27
-42 21 22 23 24 25 26
-<span style="color:#ff0000;font-family:courier new;">**43**</span> 44 45 46 47 48 49
+<h2 id="Spiral-primes"><a href="#Spiral-primes" class="headerlink" title="Spiral primes"></a><strong>Spiral primes</strong></h2><p>Starting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed.</p>
+<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;"><b>37</b></span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;"><b>31</b></span><br />
+38 <span style="color:#ff0000;font-family:courier new;"><b>17</b></span> 16 15 14 <span style="color:#ff0000;font-family:courier new;"><b>13</b></span> 30<br />
+39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>5</b></span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>3</b></span> 12 29<br />
+40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28<br />
+41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>7</b></span> &nbsp;8 &nbsp;9 10 27<br />
+42 21 22 23 24 25 26<br />
+<span style="color:#ff0000;font-family:courier new;"><b>43</b></span> 44 45 46 47 48 49<br />
 </center>
 
-<p>It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.</p>
-<p>If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?</p>
+<p>It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that $8$ out of the $13$ numbers lying along both diagonals are prime; that is, a ratio of $8/13 \approx 62\%$.</p>
+<p>If one complete new layer is wrapped around the spiral above, a square spiral with side length $9$ will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below $10\%$?</p>
 <hr>
-<p><strong>螺旋素数</strong><br>从1开始逆时针螺旋着摆放自然数，我们可以构造出一个边长为7的螺旋数阵。</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;">**37**</span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;">**31**</span>
-38 <span style="color:#ff0000;font-family:courier new;">**17**</span> 16 15 14 <span style="color:#ff0000;font-family:courier new;">**13**</span> 30
-39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;**5**</span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;**3**</span> 12 29
-40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28
-41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;**7**</span> &nbsp;8 &nbsp;9 10 27
-42 21 22 23 24 25 26
-<span style="color:#ff0000;font-family:courier new;">**43**</span> 44 45 46 47 48 49
+<h2 id="螺旋素数"><a href="#螺旋素数" class="headerlink" title="螺旋素数"></a><strong>螺旋素数</strong></h2><p>从$1$开始按照逆时针方向摆放自然数，可以构造出如下边长为$7$的螺旋数阵。</p>
+<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;"><b>37</b></span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;"><b>31</b></span><br />
+38 <span style="color:#ff0000;font-family:courier new;"><b>17</b></span> 16 15 14 <span style="color:#ff0000;font-family:courier new;"><b>13</b></span> 30<br />
+39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>5</b></span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>3</b></span> 12 29<br />
+40 19 &nbsp;6 &nbsp;1 &nbsp;2 11 28<br />
+41 20 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>7</b></span> &nbsp;8 &nbsp;9 10 27<br />
+42 21 22 23 24 25 26<br />
+<span style="color:#ff0000;font-family:courier new;"><b>43</b></span> 44 45 46 47 48 49<br />
 </center>
 
-<p>可以发现，所有的奇数平方都在这个螺旋方针的右下对角线上，更有趣的是，在所有对角线上一共有8个素数，比例达到8/13 ≈ 62%。</p>
-<p>在这个方阵外面完整地再加上一层，就能构造出一个边长为9的螺旋方阵。如果不断重复这个过程，当对角线上素数的比例第一次低于10%时，螺旋数阵的边长是多少？</p>
+<p>有趣的是，所有的奇数平方都在这个螺旋方阵的右下对角线上，更有趣的是，在两条对角线上的$13$个数中一共有$8$个素数，比例达到$8/13 \approx 62\%$。</p>
+<p>在这个方阵外面完整地加上一层，就能构造出一个边长为$9$的螺旋方阵。不断重复这个过程，当对角线上素数的比例第一次低于$10\%$时，螺旋数阵的边长是多少？</p>
 <hr>
 
     </div>
@@ -335,7 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-58"><span class="nav-text">Problem 58</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-58"><span class="nav-text">Problem 58</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Spiral-primes"><span class="nav-text">Spiral primes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#螺旋素数"><span class="nav-text">螺旋素数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

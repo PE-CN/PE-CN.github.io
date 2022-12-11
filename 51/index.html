@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 51 Prime digit replacements By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime. By replacing the">
+  <meta name="description" content="Problem 51 Prime digit replacementsBy replacing the $1$st digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 51">
 <meta property="og:url" content="http://yoursite.com/51/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 51 Prime digit replacements By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime. By replacing the">
+<meta property="og:description" content="Problem 51 Prime digit replacementsBy replacing the $1$st digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2003-08-30T01:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:15:56.000Z">
+<meta property="article:published_time" content="2003-08-29T22:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T17:11:39.226Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2003-08-29 21:00:00" itemprop="dateCreated datePublished" datetime="2003-08-29T21:00:00-04:00">2003-08-29</time>
+              <time title="发布时间：2003-08-29 18:00:00" itemprop="dateCreated datePublished" datetime="2003-08-29T18:00:00-04:00">2003-08-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:15:56" itemprop="dateModified" datetime="2015-08-10T12:15:56-04:00">2015-08-10</time>
+                <time title="更新时间：2022-12-11 12:11:39" itemprop="dateModified" datetime="2022-12-11T12:11:39-05:00">2022-12-11</time>
               </span>
 
           
@@ -227,15 +227,13 @@
       
         <hr>
 <h1 id="Problem-51"><a href="#Problem-51" class="headerlink" title="Problem 51"></a><a href="https://projecteuler.net/problem=51" target="_blank" rel="noopener">Problem 51</a></h1><hr>
-<p><strong>Prime digit replacements</strong></p>
-<p>By replacing the 1<sup>st</sup> digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.</p>
-<p>By replacing the 3<sup>rd</sup> and 4<sup>th</sup> digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.</p>
+<h2 id="Prime-digit-replacements"><a href="#Prime-digit-replacements" class="headerlink" title="Prime digit replacements"></a><strong>Prime digit replacements</strong></h2><p>By replacing the $1$<sup>st</sup> digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all prime.</p>
+<p>By replacing the $3$<sup>rd</sup> and $4$<sup>th</sup> digits of $56\text{**}3$ with the same digit, this $5$-digit number is the first example having seven primes among the ten generated numbers, yielding the family: $56003$, $56113$, $56333$, $56443$, $56663$, $56773$, and $56993$. Consequently $56003$, being the first member of this family, is the smallest prime with this property.</p>
 <p>Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.</p>
 <hr>
-<p><strong>素数数字替换</strong></p>
-<p>将两位数*3的第一个数字代换为任意数字，在九个可能值中有六个是素数：13、23、43、53、73和83。</p>
-<p>将五位数56**3的第三和第四位数字代换为相同的任意数字，就得到了十个可能值中有七个是素数的最小例子，这个素数族是：56003、56113、56333、56443、56663、56773和56993。56003作为这一族中最小的成员，也是最小的满足这个性质的素数。</p>
-<p>通过将部分数字（不一定相邻）代换为相同的任意数字，有时能够得到八个素数，求满足这一性质的最小素数。</p>
+<h2 id="素数数字替换"><a href="#素数数字替换" class="headerlink" title="素数数字替换"></a><strong>素数数字替换</strong></h2><p>将两位数$\text{*}3$的第一位数字替换为任意数字，在九个可能值中有六个是素数：$13$、$23$、$43$、$53$、$73$和$83$。</p>
+<p>将五位数$56\text{**}3$的第三和第四位数字替换为相同的任意数字，在十个可能值中有七个是素数，这也是同类例子中最小的一个。这些素数分别是：$56003$、$56113$、$56333$、$56443$、$56663$、$56773$和$56993$。$56003$作为其中最小的数，也就是最小的满足这个性质的素数。</p>
+<p>通过将部分数字（不一定相邻）替换为相同的任意数字，有时能够得到八个素数，求满足这一性质的最小素数。</p>
 <hr>
 
     </div>
@@ -318,7 +316,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-51"><span class="nav-text">Problem 51</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-51"><span class="nav-text">Problem 51</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Prime-digit-replacements"><span class="nav-text">Prime digit replacements</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#素数数字替换"><span class="nav-text">素数数字替换</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
