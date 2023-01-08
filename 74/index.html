@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 74 Digit factorial chains The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145: 1! + 4! + 5! &#x3D; 1 + 24 + 120 &#x3D; 145 Perhaps less well known">
+  <meta name="description" content="Problem 74 Digit factorial chainsThe number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$: $$1! + 4! + 5! &#x3D; 1 + 24 + 120 &#x3D; 145$$ Perhaps less well">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 74">
 <meta property="og:url" content="http://yoursite.com/74/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 74 Digit factorial chains The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145: 1! + 4! + 5! &#x3D; 1 + 24 + 120 &#x3D; 145 Perhaps less well known">
+<meta property="og:description" content="Problem 74 Digit factorial chainsThe number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$: $$1! + 4! + 5! &#x3D; 1 + 24 + 120 &#x3D; 145$$ Perhaps less well">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2004-07-17T01:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:51:00.000Z">
+<meta property="article:published_time" content="2004-07-16T22:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-08T23:45:20.927Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2004-07-16 21:00:00" itemprop="dateCreated datePublished" datetime="2004-07-16T21:00:00-04:00">2004-07-16</time>
+              <time title="发布时间：2004-07-16 18:00:00" itemprop="dateCreated datePublished" datetime="2004-07-16T18:00:00-04:00">2004-07-16</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:51:00" itemprop="dateModified" datetime="2015-08-10T12:51:00-04:00">2015-08-10</time>
+                <time title="更新时间：2023-01-08 18:45:20" itemprop="dateModified" datetime="2023-01-08T18:45:20-05:00">2023-01-08</time>
               </span>
 
           
@@ -227,25 +227,23 @@
       
         <hr>
 <h1 id="Problem-74"><a href="#Problem-74" class="headerlink" title="Problem 74"></a><a href="https://projecteuler.net/problem=74" target="_blank" rel="noopener">Problem 74</a></h1><hr>
-<p><strong>Digit factorial chains</strong></p>
-<p>The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145:</p>
-<p>1! + 4! + 5! = 1 + 24 + 120 = 145</p>
-<p>Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such loops that exist:</p>
-<p>169 → 363601 → 1454 → 169<br>871 → 45361 → 871<br>872 → 45362 → 872</p>
+<h2 id="Digit-factorial-chains"><a href="#Digit-factorial-chains" class="headerlink" title="Digit factorial chains"></a><strong>Digit factorial chains</strong></h2><p>The number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$:</p>
+<p>$$1! + 4! + 5! = 1 + 24 + 120 = 145$$</p>
+<p>Perhaps less well known is $169$, in that it produces the longest chain of numbers that link back to $169$; it turns out that there are only three such loops that exist:</p>
+<p>$$\begin{aligned}<br>&amp;169 \rightarrow 363601 \rightarrow 1454 \rightarrow 169\\<br>&amp;871 \rightarrow 45361 \rightarrow 871\\<br>&amp;872 \rightarrow 45362 \rightarrow 872\\<br>\end{aligned}$$</p>
 <p>It is not difficult to prove that EVERY starting number will eventually get stuck in a loop. For example,</p>
-<p>69 → 363600 → 1454 → 169 → 363601 (→ 1454)<br>78 → 45360 → 871 → 45361 (→ 871)<br>540 → 145 (→ 145)</p>
-<p>Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
+<p>$$\begin{aligned}<br>&amp;69 \rightarrow 363600 \rightarrow 1454 \rightarrow 169 \rightarrow 363601 (\rightarrow 1454)\\<br>&amp;78 \rightarrow 45360 \rightarrow 871 \rightarrow 45361 (\rightarrow 871)\\<br>&amp;540 \rightarrow 145 (\rightarrow 145)\\<br>\end{aligned}$$</p>
+<p>Starting with $69$ produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
 <p>How many chains, with a starting number below one million, contain exactly sixty non-repeating terms?</p>
 <hr>
-<p><strong>数字阶乘链</strong></p>
-<p>145之所以广为人知，是因为它的各位数字的阶乘之和恰好等于本身：</p>
-<p>1! + 4! + 5! = 1 + 24 + 120 = 145</p>
-<p>而169则可能不太为人所知，尽管从169开始不断地取各位数字的阶乘之和构成了最长的循环回到169；事实上，只存在三个这样的循环：</p>
-<p>169 → 363601 → 1454 → 169<br>871 → 45361 → 871<br>872 → 45362 → 872</p>
-<p>不难证明，从<em>任意数字</em>出发最终都会陷入循环。例如，</p>
-<p>69 → 363600 → 1454 → 169 → 363601 (→ 1454)<br>78 → 45360 → 871 → 45361 (→ 871)<br>540 → 145 (→ 145)</p>
-<p>从69开始可以得到一个拥有五个不重复项的链，但是从一个小于一百万的数出发能够得到的最长的无重复项链包含有60项。</p>
-<p>从小于一百万的数出发，有多少条链恰好包含有60个不重复项？</p>
+<h2 id="数字阶乘链"><a href="#数字阶乘链" class="headerlink" title="数字阶乘链"></a><strong>数字阶乘链</strong></h2><p>众所周知，$145$的各位数字的阶乘之和恰好等于本身：</p>
+<p>$$1! + 4! + 5! = 1 + 24 + 120 = 145$$</p>
+<p>但很少有人注意到，从$169$开始不断地取各位数字的阶乘之和，将会进入循环回到$169$，而且这是所有循环中最长的一个。事实上，只存在三个这样的循环：</p>
+<p>$$\begin{aligned}<br>&amp;169 \rightarrow 363601 \rightarrow 1454 \rightarrow 169\\<br>&amp;871 \rightarrow 45361 \rightarrow 871\\<br>&amp;872 \rightarrow 45362 \rightarrow 872\\<br>\end{aligned}$$</p>
+<p>不难证明，从<i class=zh>任意数字</i>出发最终都会陷入循环。例如，</p>
+<p>$$\begin{aligned}<br>&amp;69 \rightarrow 363600 \rightarrow 1454 \rightarrow 169 \rightarrow 363601 (\rightarrow 1454)\\<br>&amp;78 \rightarrow 45360 \rightarrow 871 \rightarrow 45361 (\rightarrow 871)\\<br>&amp;540 \rightarrow 145 (\rightarrow 145)\\<br>\end{aligned}$$</p>
+<p>从$69$开始直到进入循环，会得到五个不同的项，而从任意一个小于一百万的数开始，最多能够得到六十个不同的项。</p>
+<p>有多少个小于一百万的数满足，从这些数开始不断地取各位数字的阶乘之和，恰好能够得到六十个不同的项？</p>
 <hr>
 
     </div>
@@ -328,7 +326,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-74"><span class="nav-text">Problem 74</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-74"><span class="nav-text">Problem 74</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Digit-factorial-chains"><span class="nav-text">Digit factorial chains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数字阶乘链"><span class="nav-text">数字阶乘链</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -380,7 +378,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

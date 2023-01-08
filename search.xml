@@ -18697,26 +18697,23 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/66/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-66"><a href="#Problem-66" class="headerlink" title="Problem 66"></a><a href="https://projecteuler.net/problem=66" target="_blank" rel="noopener">Problem 66</a></h1><hr>
-<p><strong>Diophantine equation</strong></p>
-<p>Consider quadratic Diophantine equations of the form:</p>
-<center>x<sup>2</sup> – Dy<sup>2</sup> = 1</center>
-
-<p>For example, when D=13, the minimal solution in x is 649<sup>2</sup> – 13×180<sup>2</sup> = 1.</p>
-<p>It can be assumed that there are no solutions in positive integers when D is square.</p>
-<p>By finding minimal solutions in x for D = {2, 3, 5, 6, 7}, we obtain the following:</p>
-<p>3<sup>2</sup> – 2×2<sup>2</sup> = 1<br>2<sup>2</sup> – 3×1<sup>2</sup> = 1<br><span style="color:#dd0000;font-weight:bold;">9</span><sup>2</sup> – 5×4<sup>2</sup> = 1<br>5<sup>2</sup> – 6×2<sup>2</sup> = 1<br>8<sup>2</sup> – 7×3<sup>2</sup> = 1</p>
-<p>Hence, by considering minimal solutions in x for D ≤ 7, the largest x is obtained when D=5.</p>
-<p>Find the value of D ≤ 1000 in minimal solutions of x for which the largest value of x is obtained.</p>
+<h2 id="Diophantine-equation"><a href="#Diophantine-equation" class="headerlink" title="Diophantine equation"></a><strong>Diophantine equation</strong></h2><p>Consider quadratic Diophantine equations of the form:</p>
+<p>$$x^2-Dy^2=1$$</p>
+<p>For example, when $D=13$, the minimal solution in $x$ is $649^2 – 13\times 180^2 = 1$.</p>
+<p>It can be assumed that there are no solutions in positive integers when $D$ is square.</p>
+<p>By finding minimal solutions in $x$ for $D = \{2, 3, 5, 6, 7\}$, we obtain the following:</p>
+<p>$$\begin{aligned}<br>3^2 - 2\times 2^2 &amp;= 1 \\<br>2^2 - 3\times 1^2 &amp;= 1 \\<br>{\color{red}9}^2 - 5\times 4^2 &amp;= 1 \\<br>5^2 - 6\times 2^2 &amp;= 1 \\<br>8^2 - 7\times 3^2 &amp;= 1 \\<br>\end{aligned}$$</p>
+<p>Hence, by considering minimal solutions in $x$ for $D \le 7$, the largest $x$ is obtained when $D=5$.</p>
+<p>Find the value of $D \le 1000$ in minimal solutions of $x$ for which the largest value of $x$ is obtained.</p>
 <hr>
-<p><strong>丢番图方程</strong><br>考虑如下形式的二次丢番图方程：</p>
-<center>x<sup>2</sup> – Dy<sup>2</sup> = 1</center>
-
-<p>举例而言，当D=13时，x的最小值出现在649<sup>2</sup> – 13×180<sup>2</sup> = 1。</p>
-<p>可以断定，当D是平方数时，这个方程不存在正整数解。</p>
-<p>对于D= {2, 3, 5, 6, 7}分别求出x取最小值的解，我们得到：</p>
-<p>3<sup>2</sup> – 2×2<sup>2</sup> = 1<br>2<sup>2</sup> – 3×1<sup>2</sup> = 1<br><span style="color:#dd0000;font-weight:bold;">9</span><sup>2</sup> – 5×4<sup>2</sup> = 1<br>5<sup>2</sup> – 6×2<sup>2</sup> = 1<br>8<sup>2</sup> – 7×3<sup>2</sup> = 1</p>
-<p>因此，对于所有D ≤ 7，当D=5时x的最小值最大。</p>
-<p>对于D ≤ 1000，求使得x的最小值最大的D值。</p>
+<h2 id="丢番图方程"><a href="#丢番图方程" class="headerlink" title="丢番图方程"></a><strong>丢番图方程</strong></h2><p>考虑如下形式的二次丢番图方程：</p>
+<p>$$x^2-Dy^2=1$$</p>
+<p>举例而言，当$D=13$时，$x$的最小值出现在$649^2 – 13\times 180^2 = 1$。</p>
+<p>可以断定，当$D$是平方数时，这个方程不存在正整数解。</p>
+<p>对于$D= \{2, 3, 5, 6, 7\}$，$x$取最小值的解分别是：</p>
+<p>$$\begin{aligned}<br>3^2 - 2\times 2^2 &amp;= 1 \\<br>2^2 - 3\times 1^2 &amp;= 1 \\<br>{\color{red}9}^2 - 5\times 4^2 &amp;= 1 \\<br>5^2 - 6\times 2^2 &amp;= 1 \\<br>8^2 - 7\times 3^2 &amp;= 1 \\<br>\end{aligned}$$</p>
+<p>因此，对于所有$D \le 7$，当$D=5$时$x$的最小值最大。</p>
+<p>对于所有$D \le 1000$，求使得$x$的最小值最大时$D$的取值。</p>
 <hr>
 ]]></content>
   </entry>
@@ -18955,27 +18952,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/67/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-67"><a href="#Problem-67" class="headerlink" title="Problem 67"></a><a href="https://projecteuler.net/problem=67" target="_blank" rel="noopener">Problem 67</a></h1><hr>
-<p><strong>Maximum path sum II</strong></p>
-<p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;">**3**</span>
-<span style="color:#ff0000;">**7**</span> 4
-2 <span style="color:#ff0000;">**4**</span> 6
-8 5 <span style="color:#ff0000;">**9**</span> 3</center>
-
-<p>That is, 3 + 7 + 4 + 9 = 23.</p>
+<h2 id="Maximum-path-sum-II"><a href="#Maximum-path-sum-II" class="headerlink" title="Maximum path sum II"></a><strong>Maximum path sum II</strong></h2><p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
+<p>$$<br>\begin{aligned}<br>&amp;{\color{red}3}\\<br>{\color{red}7}&amp;\ \ 4\\<br>2\ \ &amp;{\color{red}4}\ \ 6\\<br>8\ \ 5&amp;\ \ {\color{red}9}\ \ 3\\<br>\end{aligned}<br>$$</p>
+<p>That is, $3 + 7 + 4 + 9 = 23$.</p>
 <p>Find the maximum total from top to bottom in <a href="https://projecteuler.net/project/resources/p067_triangle.txt" target="_blank" rel="noopener">triangle.txt</a>(right click and ‘Save Link/Target As…’), a 15K text file containing a triangle with one-hundred rows.</p>
-<p><strong>NOTE:</strong> This is a much more difficult version of <a href="/18">Problem 18</a>. It is not possible to try every route to solve this problem, as there are 2<sup>99</sup> altogether! If you could check one trillion (10<sup>12</sup>) routes every second it would take over twenty billion years to check them all. There is an efficient algorithm to solve it. ;o)</p>
+<p><strong>NOTE:</strong> This is a much more difficult version of <a href="/18">Problem 18</a>. It is not possible to try every route to solve this problem, as there are $2^{99}$ altogether! If you could check one trillion ($10^{12}$) routes every second it would take over twenty billion years to check them all. There is an efficient algorithm to solve it. ;o)</p>
 <hr>
-<p><strong>最大路径和 II</strong></p>
-<p>从下面展示的三角形的顶端出发，不断移动到在下一行与其相邻的元素，能够得到的最大路径和是23。</p>
-<center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;">**3**</span>
-<span style="color:#ff0000;">**7**</span> 4
-2 <span style="color:#ff0000;">**4**</span> 6
-8 5 <span style="color:#ff0000;">**9**</span> 3</center>
-
-<p>如上图，最大路径和为 3 + 7 + 4 + 9 = 23。</p>
-<p>在这个15K的文本文件<a href="https://projecteuler.net/project/resources/p067_triangle.txt" target="_blank" rel="noopener">triangle.txt</a>（右击并选择“目标另存为……”）中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。</p>
-<p><strong>注意：</strong>这是<a href="/18">第18题</a>的强化版。由于总路径一共有2<sup>99</sup>条，穷举每条路经来解决这个问题是不可能的！即使你每秒钟能够检查一万亿（10<sup>12</sup>）条路径，全部检查完也需要两千万年。存在一个非常高效的算法能解决这个问题。;o)</p>
+<h2 id="最大路径和-II"><a href="#最大路径和-II" class="headerlink" title="最大路径和 II"></a><strong>最大路径和 II</strong></h2><p>从下面展示的三角形的顶端出发，不断移动到在下一行与其相邻的元素，能够得到的最大路径和是$23$。</p>
+<p>$$<br>\begin{aligned}<br>&amp;{\color{red}3}\\<br>{\color{red}7}&amp;\ \ 4\\<br>2\ \ &amp;{\color{red}4}\ \ 6\\<br>8\ \ 5&amp;\ \ {\color{red}9}\ \ 3\\<br>\end{aligned}<br>$$</p>
+<p>如上图，最大路径和为$3 + 7 + 4 + 9 = 23$。</p>
+<p>在这个15K的文本文件[triangle.txt] (<a href="https://projecteuler.net/project/resources/p067_triangle.txt)（右击并选择“目标另存为……”）中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。" target="_blank" rel="noopener">https://projecteuler.net/project/resources/p067_triangle.txt)（右击并选择“目标另存为……”）中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。</a></p>
+<p><strong>注意：</strong>这是<a href="/18">第18题</a>的强化版。由于总路径一共有$2^{99}$条，穷举每条路经来解决这个问题是不可能的！即使你每秒钟能够检查一万亿（$10^{12}$）条路径，全部检查完也需要两千万年。存在一个非常高效的算法能解决这个问题。;o)</p>
 <hr>
 ]]></content>
   </entry>
@@ -19286,12 +19273,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/68/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-68"><a href="#Problem-68" class="headerlink" title="Problem 68"></a><a href="https://projecteuler.net/problem=68" target="_blank" rel="noopener">Problem 68</a></h1><hr>
-<p><strong>Magic 5-gon ring</strong></p>
-<p>Consider the following “magic” 3-gon ring, filled with the numbers 1 to 6, and each line adding to nine.</p>
-<center><img src="https://projecteuler.net/project/images/p068_1.gif" alt=""></center>
+<h2 id="Magic-5-gon-ring"><a href="#Magic-5-gon-ring" class="headerlink" title="Magic 5-gon ring"></a><strong>Magic 5-gon ring</strong></h2><p>Consider the following “magic” $3$-gon ring, filled with the numbers $1$ to $6$, and each line adding to nine.</p>
+<center>
+<img src="https://projecteuler.net/project/images/p068_1.png" alt="" style="display:inline">
+</center>
 
-<p>Working <strong>clockwise</strong>, and starting from the group of three with the numerically lowest external node (4,3,2 in this example), each solution can be described uniquely. For example, the above solution can be described by the set: 4,3,2; 6,2,1; 5,1,3.</p>
-<p>It is possible to complete the ring with four different totals: 9, 10, 11, and 12. There are eight solutions in total.</p>
+<p>Working <strong>clockwise</strong>, and starting from the group of three with the numerically lowest external node ($4,3,2$ in this example), each solution can be described uniquely. For example, the above solution can be described by the set: $4,3,2; 6,2,1; 5,1,3$.</p>
+<p>It is possible to complete the ring with four different totals: $9$, $10$, $11$, and $12$. There are eight solutions in total.</p>
 <table>
 <thead>
 <tr>
@@ -19300,49 +19288,48 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">9</td>
-<td align="center">4,2,3; 5,3,1; 6,1,2</td>
+<td align="center">$9$</td>
+<td align="center">$4,2,3; 5,3,1; 6,1,2$</td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">4,3,2; 6,2,1; 5,1,3</td>
+<td align="center">$9$</td>
+<td align="center">$4,3,2; 6,2,1; 5,1,3$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">2,3,5; 4,5,1; 6,1,3</td>
+<td align="center">$10$</td>
+<td align="center">$2,3,5; 4,5,1; 6,1,3$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">2,5,3; 6,3,1; 4,1,5</td>
+<td align="center">$10$</td>
+<td align="center">$2,5,3; 6,3,1; 4,1,5$</td>
 </tr>
 <tr>
-<td align="center">11</td>
-<td align="center">1,4,6; 3,6,2; 5,2,4</td>
+<td align="center">$11$</td>
+<td align="center">$1,4,6; 3,6,2; 5,2,4$</td>
 </tr>
 <tr>
-<td align="center">11</td>
-<td align="center">1,6,4; 5,4,2; 3,2,6</td>
+<td align="center">$11$</td>
+<td align="center">$1,6,4; 5,4,2; 3,2,6$</td>
 </tr>
 <tr>
-<td align="center">12</td>
-<td align="center">1,5,6; 2,6,4; 3,4,5</td>
+<td align="center">$12$</td>
+<td align="center">$1,5,6; 2,6,4; 3,4,5$</td>
 </tr>
 <tr>
-<td align="center">12</td>
-<td align="center">1,6,5; 3,5,4; 2,4,6</td>
+<td align="center">$12$</td>
+<td align="center">$1,6,5; 3,5,4; 2,4,6$</td>
 </tr>
 </tbody></table>
-<p>By concatenating each group it is possible to form 9-digit strings; the maximum string for a 3-gon ring is 432621513.</p>
-<p>Using the numbers 1 to 10, and depending on arrangements, it is possible to form 16- and 17-digit strings. What is the maximum <strong>16-digit</strong> string for a “magic” 5-gon ring?</p>
-<center><img src="https://projecteuler.net/project/images/p068_2.gif" alt=""></center>
+<p>By concatenating each group it is possible to form $9$-digit strings; the maximum string for a $3$-gon ring is $432621513$.</p>
+<p>Using the numbers $1$ to $10$, and depending on arrangements, it is possible to form $16$- and $17$-digit strings. What is the maximum <strong>$16$-digit</strong> string for a “magic” $5$-gon ring?</p>
+<center><img src="https://projecteuler.net/project/images/p068_2.png" alt="" style="display:inline"></center>
 
 <hr>
-<p><strong>魔力五边形环</strong></p>
-<p>考虑下面这个“魔力”三角形环，在其中填入1至6这6个数，每条线上的三个数加起来都是9。</p>
-<center><img src="https://projecteuler.net/project/images/p068_1.gif" alt=""></center>
+<h2 id="魔力五边形环"><a href="#魔力五边形环" class="headerlink" title="魔力五边形环"></a><strong>魔力五边形环</strong></h2><p>考虑下面这个“魔力”三角形环，在其中填入$1$至$6$这$6$个数，每条线上的三个数加起来都是$9$。</p>
+<center><img src="https://projecteuler.net/project/images/p068_1.png" alt="" style="display:inline"></center>
 
-<p>从最外侧结点所填的数最小的线（在这个例子中是4,3,2）开始，按<strong>顺时针</strong>方向，每个解都能被唯一表述。例如，上面这个解可以记作解集：4,3,2; 6,2,1; 5,1,3。</p>
-<p>将环填满后，每条线上的总和一共有四种可能：9、10、11和12。总共有8种填法：</p>
+<p>从最外侧结点所填的数最小的线（在这个例子中是$4,3,2$）开始，按<strong>顺时针</strong>方向，每个解都能被唯一表述。例如，上面这个解可以记作解集：$4,3,2; 6,2,1; 5,1,3$。</p>
+<p>将环填满后，每条线上的总和一共有四种可能：$9$、$10$、$11$和$12$。总共有$8$种填法：</p>
 <table>
 <thead>
 <tr>
@@ -19351,41 +19338,41 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">9</td>
-<td align="center">4,2,3; 5,3,1; 6,1,2</td>
+<td align="center">$9$</td>
+<td align="center">$4,2,3; 5,3,1; 6,1,2$</td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">4,3,2; 6,2,1; 5,1,3</td>
+<td align="center">$9$</td>
+<td align="center">$4,3,2; 6,2,1; 5,1,3$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">2,3,5; 4,5,1; 6,1,3</td>
+<td align="center">$10$</td>
+<td align="center">$2,3,5; 4,5,1; 6,1,3$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">2,5,3; 6,3,1; 4,1,5</td>
+<td align="center">$10$</td>
+<td align="center">$2,5,3; 6,3,1; 4,1,5$</td>
 </tr>
 <tr>
-<td align="center">11</td>
-<td align="center">1,4,6; 3,6,2; 5,2,4</td>
+<td align="center">$11$</td>
+<td align="center">$1,4,6; 3,6,2; 5,2,4$</td>
 </tr>
 <tr>
-<td align="center">11</td>
-<td align="center">1,6,4; 5,4,2; 3,2,6</td>
+<td align="center">$11$</td>
+<td align="center">$1,6,4; 5,4,2; 3,2,6$</td>
 </tr>
 <tr>
-<td align="center">12</td>
-<td align="center">1,5,6; 2,6,4; 3,4,5</td>
+<td align="center">$12$</td>
+<td align="center">$1,5,6; 2,6,4; 3,4,5$</td>
 </tr>
 <tr>
-<td align="center">12</td>
-<td align="center">1,6,5; 3,5,4; 2,4,6</td>
+<td align="center">$12$</td>
+<td align="center">$1,6,5; 3,5,4; 2,4,6$</td>
 </tr>
 </tbody></table>
-<p>把解集中的数字连接起来，可以构造一个9位数字串；对于三角形环来说，最大的数字串是432621513。</p>
-<p>在如下的“魔力”五边形环中，在其中填入1至10这10个数，根据不同的填写方式，可以组成16位或17位数字串。在“魔力”五边形环中，最大的<strong>16位</strong>数字串是多少？</p>
-<center><img src="https://projecteuler.net/project/images/p068_2.gif" alt=""></center>
+<p>把解集中的数字连接起来，可以构造一个$9$位数字串；对于三角形环来说，最大的数字串是$432621513$。</p>
+<p>在如下的“魔力”五边形环中，在其中填入$1$至$10$这$10$个数，根据不同的填写方式，可以组成$16$位或$17$位数字串。在“魔力”五边形环中，最大的<strong>$16$位</strong>数字串是多少？</p>
+<center><img src="https://projecteuler.net/project/images/p068_2.png" alt="" style="display:inline"></center>
 
 <hr>
 ]]></content>
@@ -19571,143 +19558,141 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/69/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-69"><a href="#Problem-69" class="headerlink" title="Problem 69"></a><a href="https://projecteuler.net/problem=69" target="_blank" rel="noopener">Problem 69</a></h1><hr>
-<p><strong>Totient maximum</strong></p>
-<p>Euler’s Totient function, φ(n) [sometimes called the phi function], is used to determine the number of numbers less than n which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, φ(9)=6.</p>
+<h2 id="Totient-maximum"><a href="#Totient-maximum" class="headerlink" title="Totient maximum"></a><strong>Totient maximum</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of numbers less than $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
 <table>
 <thead>
 <tr>
-<th align="center"><strong>n</strong></th>
+<th align="center"><strong>$n$</strong></th>
 <th align="center"><strong>Relatively Prime</strong></th>
-<th align="center"><strong>φ(n)</strong></th>
-<th align="center"><strong>n/φ(n)</strong></th>
+<th align="center"><strong>$\varphi(n)$</strong></th>
+<th align="center"><strong>$n/\varphi(n)$</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">2</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">2</td>
+<td align="center">$2$</td>
+<td align="center">$1$</td>
+<td align="center">$1$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">1,2</td>
-<td align="center">2</td>
-<td align="center">1.5</td>
+<td align="center">$3$</td>
+<td align="center">$1,2$</td>
+<td align="center">$2$</td>
+<td align="center">$1.5$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">1,3</td>
-<td align="center">2</td>
-<td align="center">2</td>
+<td align="center">$4$</td>
+<td align="center">$1,3$</td>
+<td align="center">$2$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">1,2,3,4</td>
-<td align="center">4</td>
-<td align="center">1.25</td>
+<td align="center">$5$</td>
+<td align="center">$1,2,3,4$</td>
+<td align="center">$4$</td>
+<td align="center">$1.25$</td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">1,5</td>
-<td align="center">2</td>
-<td align="center">3</td>
+<td align="center">$6$</td>
+<td align="center">$1,5$</td>
+<td align="center">$2$</td>
+<td align="center">$3$</td>
 </tr>
 <tr>
-<td align="center">7</td>
-<td align="center">1,2,3,4,5,6</td>
-<td align="center">6</td>
-<td align="center">1.1666…</td>
+<td align="center">$7$</td>
+<td align="center">$1,2,3,4,5,6$</td>
+<td align="center">$6$</td>
+<td align="center">$1.1666\ldots$</td>
 </tr>
 <tr>
-<td align="center">8</td>
-<td align="center">1,3,5,7</td>
-<td align="center">4</td>
-<td align="center">2</td>
+<td align="center">$8$</td>
+<td align="center">$1,3,5,7$</td>
+<td align="center">$4$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">1,2,4,5,7,8</td>
-<td align="center">6</td>
-<td align="center">1.5</td>
+<td align="center">$9$</td>
+<td align="center">$1,2,4,5,7,8$</td>
+<td align="center">$6$</td>
+<td align="center">$1.5$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">1,3,7,9</td>
-<td align="center">4</td>
-<td align="center">2.5</td>
+<td align="center">$10$</td>
+<td align="center">$1,3,7,9$</td>
+<td align="center">$4$</td>
+<td align="center">$2.5$</td>
 </tr>
 </tbody></table>
-<p>It can be seen that n=6 produces a maximum n/φ(n) for n ≤ 10.</p>
-<p>Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.</p>
+<p>It can be seen that $n=6$ produces a maximum $n/\varphi(n)$ for $n \le 10$.</p>
+<p>Find the value of $n \le 1,000,000$ for which $n/\varphi(n)$ is a maximum.</p>
 <hr>
-<p><strong>欧拉总计函数与最大值</strong></p>
-<p>在小于n的数中，与n互质的数的数目记为欧拉总计函数φ(n)（有时也称为φ函数）。例如，因为1、2、4、5、7和8均小于9且与9互质，故φ(9)=6。</p>
+<h2 id="欧拉总计函数与最大值"><a href="#欧拉总计函数与最大值" class="headerlink" title="欧拉总计函数与最大值"></a><strong>欧拉总计函数与最大值</strong></h2><p>小于$n$且与$n$互质的正整数的数量记为欧拉总计函数$\varphi(n)$。例如，$1$、$2$、$4$、$5$、$7$和$8$均小于$9$且与$9$互质，因此$\varphi(9)=6$。</p>
 <table>
 <thead>
 <tr>
-<th align="center"><strong>n</strong></th>
+<th align="center"><strong>$n$</strong></th>
 <th align="center"><strong>互质的数</strong></th>
-<th align="center"><strong>φ(n)</strong></th>
-<th align="center"><strong>n/φ(n)</strong></th>
+<th align="center"><strong>$\varphi(n)$</strong></th>
+<th align="center"><strong>$n/\varphi(n)$</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">2</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">2</td>
+<td align="center">$2$</td>
+<td align="center">$1$</td>
+<td align="center">$1$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">1,2</td>
-<td align="center">2</td>
-<td align="center">1.5</td>
+<td align="center">$3$</td>
+<td align="center">$1,2$</td>
+<td align="center">$2$</td>
+<td align="center">$1.5$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">1,3</td>
-<td align="center">2</td>
-<td align="center">2</td>
+<td align="center">$4$</td>
+<td align="center">$1,3$</td>
+<td align="center">$2$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">1,2,3,4</td>
-<td align="center">4</td>
-<td align="center">1.25</td>
+<td align="center">$5$</td>
+<td align="center">$1,2,3,4$</td>
+<td align="center">$4$</td>
+<td align="center">$1.25$</td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">1,5</td>
-<td align="center">2</td>
-<td align="center">3</td>
+<td align="center">$6$</td>
+<td align="center">$1,5$</td>
+<td align="center">$2$</td>
+<td align="center">$3$</td>
 </tr>
 <tr>
-<td align="center">7</td>
-<td align="center">1,2,3,4,5,6</td>
-<td align="center">6</td>
-<td align="center">1.1666…</td>
+<td align="center">$7$</td>
+<td align="center">$1,2,3,4,5,6$</td>
+<td align="center">$6$</td>
+<td align="center">$1.1666\ldots$</td>
 </tr>
 <tr>
-<td align="center">8</td>
-<td align="center">1,3,5,7</td>
-<td align="center">4</td>
-<td align="center">2</td>
+<td align="center">$8$</td>
+<td align="center">$1,3,5,7$</td>
+<td align="center">$4$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">1,2,4,5,7,8</td>
-<td align="center">6</td>
-<td align="center">1.5</td>
+<td align="center">$9$</td>
+<td align="center">$1,2,4,5,7,8$</td>
+<td align="center">$6$</td>
+<td align="center">$1.5$</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">1,3,7,9</td>
-<td align="center">4</td>
-<td align="center">2.5</td>
+<td align="center">$10$</td>
+<td align="center">$1,3,7,9$</td>
+<td align="center">$4$</td>
+<td align="center">$2.5$</td>
 </tr>
 </tbody></table>
-<p>可以看出，对于n ≤ 10，当n=6时n/φ(n)取得最大值。</p>
-<p>当n ≤ 1,000,000时，求使得n/φ(n)取得最大值的n。</p>
+<p>可以看出，对于$n \le 10$，当$n=6$时$n/\varphi(n)$取得最大值。</p>
+<p>对于$n \le 1,000,000$，求使得$n/\varphi(n)$取得最大值的$n$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -19964,17 +19949,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/70/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-70"><a href="#Problem-70" class="headerlink" title="Problem 70"></a><a href="https://projecteuler.net/problem=70" target="_blank" rel="noopener">Problem 70</a></h1><hr>
-<p><strong>Totient permutation</strong></p>
-<p>Euler’s Totient function, φ(n) [sometimes called the phi function], is used to determine the number of numbers less than n which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, φ(9)=6.</p>
-<p>The number 1 is considered to be relatively prime to every positive number, so φ(1)=1.</p>
-<p>Interestingly, φ(87109)=79180, and it can be seen that 87109 is a permutation of 79180.</p>
-<p>Find the value of n, 1 &lt; n &lt; 10<sup>7</sup>, for which φ(n) is a permutation of n and the ratio n/φ(n) produces a minimum.</p></p>
+<h2 id="Totient-permutation"><a href="#Totient-permutation" class="headerlink" title="Totient permutation"></a><strong>Totient permutation</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
+<p>The number $1$ is considered to be relatively prime to every positive number, so $\varphi(1)=1$.</p>
+<p>Interestingly, $\varphi(87109)=79180$, and it can be seen that $87109$ is a permutation of $79180$.</p>
+<p>Find the value of $n$, $1&lt;n&lt;10^7$, for which $\varphi(n)$ is a permutation of $n$ and the ratio $n/\varphi(n)$ produces a minimum.</p>
 <hr>
-<p><strong>欧拉总计函数与重排</strong></p>
-<p>在小于n的数中，与n互质的数的数目记为欧拉总计函数φ(n)（有时也称为φ函数）。例如，因为1、2、4、5、7和8均小于9且与9互质，故φ(9)=6。</p>
-<p>1被认为和任意正整数互质，所以φ(1)=1。</p>
-<p>有趣的是，φ(87109)=79180，而79180恰好是87109的一个重排。</p>
-<p>在1 &lt; n &lt; 10<sup>7</sup>中，有些n满足φ(n)是n的一个重排，求这些取值中使n/φ(n)最小的一个。</p></p>
+<h2 id="欧拉总计函数与重排"><a href="#欧拉总计函数与重排" class="headerlink" title="欧拉总计函数与重排"></a><strong>欧拉总计函数与重排</strong></h2><p>小于或等于$n$且与$n$互质的正整数的数量记为欧拉总计函数$\varphi(n)$。例如，$1$、$2$、$4$、$5$、$7$和$8$均小于$9$且与$9$互质，因此$\varphi(9)=6$。</p>
+<p>$1$和任意正整数互质，所以$\varphi(1)=1$。</p>
+<p>有趣的是，$\varphi(87109)=79180$，而$79180$恰好是$87109$的一个重排。</p>
+<p>在$1&lt;n&lt;10^7$中，有些$n$满足$\varphi(n)$是$n$的一个重排，求这些取值中使$n/\varphi(n)$最小的一个。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20243,21 +20226,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/71/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-71"><a href="#Problem-71" class="headerlink" title="Problem 71"></a><a href="https://projecteuler.net/problem=71" target="_blank" rel="noopener">Problem 71</a></h1><hr>
-<p><strong>Ordered fractions</strong></p>
-<p>Consider the fraction, n/d, where n and d are positive integers. If n &lt; d and HCF(n,d)=1, it is called a reduced proper fraction.</p>
-<p>If we list the set of reduced proper fractions for d ≤ 8 in ascending order of size, we get:</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, **2/5**, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>It can be seen that 2/5 is the fraction immediately to the left of 3/7.</p>
-<p>By listing the set of reduced proper fractions for d ≤ 1,000,000 in ascending order of size, find the numerator of the fraction immediately to the left of 3/7.</p>
+<h2 id="Ordered-fractions"><a href="#Ordered-fractions" class="headerlink" title="Ordered fractions"></a><strong>Ordered fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, \textbf{2/5}, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>It can be seen that $2/5$ is the fraction immediately to the left of $3/7$.</p>
+<p>By listing the set of reduced proper fractions for $d \le 1,000,000$ in ascending order of size, find the numerator of the fraction immediately to the left of $3/7$.</p>
 <hr>
-<p><strong>有序分数</strong></p>
-<p>考虑形如n/d的分数，其中n和d均为正整数。如果n &lt; d且其最大公约数为1，则该分数称为最简真分数。</p>
-<p>如果我们将d ≤ 8的最简真分数构成的集合按大小升序列出，我们得到：</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, **2/5**, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>可以看出2/5是3/7直接左邻的分数。</p>
-<p>将所有d ≤ 1,000,000的最简真分数按大小升序排列，求此时3/7直接左邻的分数的分子。</p>
+<h2 id="有序分数"><a href="#有序分数" class="headerlink" title="有序分数"></a><strong>有序分数</strong></h2><p>考虑形如$n/d$的分数，其中$n$和$d$均为正整数。如果$n&lt;d$且其最大公约数为$1$，则称该分数为最简真分数。</p>
+<p>将所有$d\le8$的最简真分数构成的集合按大小升序排列：</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, \textbf{2/5}, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>可以看出$2/5$是$3/7$直接左邻的分数。</p>
+<p>将所有$d \le 1,000,000$的最简真分数按大小升序排列，求此时$3/7$直接左邻的分数的分子。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20392,21 +20371,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/72/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-72"><a href="#Problem-72" class="headerlink" title="Problem 72"></a><a href="https://projecteuler.net/problem=72" target="_blank" rel="noopener">Problem 72</a></h1><hr>
-<p><strong>Counting fractions</strong></p>
-<p>Consider the fraction, n/d, where n and d are positive integers. If n &lt; d and HCF(n,d)=1, it is called a reduced proper fraction.</p>
-<p>If we list the set of reduced proper fractions for d ≤ 8 in ascending order of size, we get:</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>It can be seen that there are 21 elements in this set.</p>
-<p>How many elements would be contained in the set of reduced proper fractions for d ≤ 1,000,000?</p>
+<h2 id="Counting-fractions"><a href="#Counting-fractions" class="headerlink" title="Counting fractions"></a><strong>Counting fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>It can be seen that there are $21$ elements in this set.</p>
+<p>How many elements would be contained in the set of reduced proper fractions for $d \le 1,000,000$?</p>
 <hr>
-<p><strong>分数计数</strong></p>
-<p>考虑形如n/d的分数，其中n和d均为正整数。如果n &lt; d且其最大公约数为1，则该分数称为最简真分数。</p>
-<p>如果我们将d ≤ 8的最简真分数构成的集合按大小升序列出，我们得到：</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>可以看出该集合中共有21个元素。</p>
-<p>d ≤ 1,000,000的最简真分数构成的集合中共有多少个元素？</p>
+<h2 id="分数计数"><a href="#分数计数" class="headerlink" title="分数计数"></a><strong>分数计数</strong></h2><p>考虑形如$n/d$的分数，其中$n$和$d$均为正整数。如果$n&lt;d$且其最大公约数为$1$，则称该分数为最简真分数。</p>
+<p>将所有$d\le8$的最简真分数构成的集合按大小升序排列：</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>可以看出该集合中共有$21$个元素。</p>
+<p>所有$d \le 1,000,000$的最简真分数构成的集合中共有多少个元素？</p>
 <hr>
 ]]></content>
   </entry>
@@ -20550,19 +20525,25 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/75/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-75"><a href="#Problem-75" class="headerlink" title="Problem 75"></a><a href="https://projecteuler.net/problem=75" target="_blank" rel="noopener">Problem 75</a></h1><hr>
-<p><strong>Singular integer right triangles</strong></p>
-<p>It turns out that 12 cm is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.</p>
-<p><strong>12 cm</strong>: (3,4,5)<br><strong>24 cm</strong>: (6,8,10)<br><strong>30 cm</strong>: (5,12,13)<br><strong>36 cm</strong>: (9,12,15)<br><strong>40 cm</strong>: (8,15,17)<br><strong>48 cm</strong>: (12,16,20)</p>
-<p>In contrast, some lengths of wire, like 20 cm, cannot be bent to form an integer sided right angle triangle, and other lengths allow more than one solution to be found; for example, using 120 cm it is possible to form exactly three different integer sided right angle triangles.</p>
-<p><strong>120 cm</strong>: (30,40,50), (20,48,52), (24,45,51)</p>
-<p>Given that L is the length of the wire, for how many values of L ≤ 1,500,000 can exactly one integer sided right angle triangle be formed?</p>
+<h2 id="Singular-integer-right-triangles"><a href="#Singular-integer-right-triangles" class="headerlink" title="Singular integer right triangles"></a><strong>Singular integer right triangles</strong></h2><p>It turns out that $12$ cm is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.</p>
+<blockquote>
+<p><strong>$12$ cm</strong>: $(3,4,5)$<br /><br><strong>$24$ cm</strong>: $(6,8,10)$<br /><br><strong>$30$ cm</strong>: $(5,12,13)$<br /><br><strong>$36$ cm</strong>: $(9,12,15)$<br /><br><strong>$40$ cm</strong>: $(8,15,17)$<br /><br><strong>$48$ cm</strong>: $(12,16,20)$<br /></p>
+</blockquote>
+<p>In contrast, some lengths of wire, like $20$ cm, cannot be bent to form an integer sided right angle triangle, and other lengths allow more than one solution to be found; for example, using $120$ cm it is possible to form exactly three different integer sided right angle triangles.</p>
+<blockquote>
+<p><strong>$120$ cm</strong>: $(30,40,50), (20,48,52), (24,45,51)$</p>
+</blockquote>
+<p>Given that $L$ is the length of the wire, for how many values of $L \le 1,500,000$ can exactly one integer sided right angle triangle be formed?</p>
 <hr>
-<p><strong>唯一的整数边直角三角形</strong></p>
-<p>只能唯一地弯折成整数边直角三角形的电线最短长度是12厘米；当然，还有很多长度的电线都只能唯一地弯折成整数边直角三角形，例如：</p>
-<p><strong>12厘米</strong>: (3,4,5)<br><strong>24厘米</strong>: (6,8,10)<br><strong>30厘米</strong>: (5,12,13)<br><strong>36厘米</strong>: (9,12,15)<br><strong>40厘米</strong>: (8,15,17)<br><strong>48厘米</strong>: (12,16,20)</p>
-<p>相反地，有些长度的电线，比如20厘米，不可能弯折成任何整数边直角三角形，而另一些长度则有多个解；例如，120厘米的电线可以弯折成三个不同的整数边直角三角形。</p>
-<p><strong>120厘米</strong>: (30,40,50), (20,48,52), (24,45,51)</p>
-<p>记电线长度为L，对于L ≤ 1,500,000，有多少种取值只能唯一地弯折成整数边直角三角形？</p>
+<h2 id="唯一的整数边直角三角形"><a href="#唯一的整数边直角三角形" class="headerlink" title="唯一的整数边直角三角形"></a><strong>唯一的整数边直角三角形</strong></h2><p>若电线只能以唯一方式弯折成整数边直角三角形，则电线的最短长度是$12$厘米；当然，还有很多种长度的电线都只能以唯一方式弯折成整数边直角三角形，例如：</p>
+<blockquote>
+<p><strong>$12$厘米</strong>: $(3,4,5)$<br /><br><strong>$24$厘米</strong>: $(6,8,10)$<br /><br><strong>$30$厘米</strong>: $(5,12,13)$<br /><br><strong>$36$厘米</strong>: $(9,12,15)$<br /><br><strong>$40$厘米</strong>: $(8,15,17)$<br /><br><strong>$48$厘米</strong>: $(12,16,20)$<br /></p>
+</blockquote>
+<p>相反地，有些长度的电线，比如$20$厘米，不可能弯折成任何整数边直角三角形，而另一些长度的电线则有多种解法；例如，$120$厘米的电线可以弯折成三个不同的整数边直角三角形。</p>
+<blockquote>
+<p><strong>$120$厘米</strong>: $(30,40,50), (20,48,52), (24,45,51)$</p>
+</blockquote>
+<p>记电线长度为$L$，对于$L \le 1,500,000$，有多少种电线长度只能以唯一方式弯折成整数边直角三角形？</p>
 <hr>
 ]]></content>
   </entry>
@@ -20657,25 +20638,23 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/74/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-74"><a href="#Problem-74" class="headerlink" title="Problem 74"></a><a href="https://projecteuler.net/problem=74" target="_blank" rel="noopener">Problem 74</a></h1><hr>
-<p><strong>Digit factorial chains</strong></p>
-<p>The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145:</p>
-<p>1! + 4! + 5! = 1 + 24 + 120 = 145</p>
-<p>Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such loops that exist:</p>
-<p>169 → 363601 → 1454 → 169<br>871 → 45361 → 871<br>872 → 45362 → 872</p>
+<h2 id="Digit-factorial-chains"><a href="#Digit-factorial-chains" class="headerlink" title="Digit factorial chains"></a><strong>Digit factorial chains</strong></h2><p>The number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$:</p>
+<p>$$1! + 4! + 5! = 1 + 24 + 120 = 145$$</p>
+<p>Perhaps less well known is $169$, in that it produces the longest chain of numbers that link back to $169$; it turns out that there are only three such loops that exist:</p>
+<p>$$\begin{aligned}<br>&amp;169 \rightarrow 363601 \rightarrow 1454 \rightarrow 169\\<br>&amp;871 \rightarrow 45361 \rightarrow 871\\<br>&amp;872 \rightarrow 45362 \rightarrow 872\\<br>\end{aligned}$$</p>
 <p>It is not difficult to prove that EVERY starting number will eventually get stuck in a loop. For example,</p>
-<p>69 → 363600 → 1454 → 169 → 363601 (→ 1454)<br>78 → 45360 → 871 → 45361 (→ 871)<br>540 → 145 (→ 145)</p>
-<p>Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
+<p>$$\begin{aligned}<br>&amp;69 \rightarrow 363600 \rightarrow 1454 \rightarrow 169 \rightarrow 363601 (\rightarrow 1454)\\<br>&amp;78 \rightarrow 45360 \rightarrow 871 \rightarrow 45361 (\rightarrow 871)\\<br>&amp;540 \rightarrow 145 (\rightarrow 145)\\<br>\end{aligned}$$</p>
+<p>Starting with $69$ produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
 <p>How many chains, with a starting number below one million, contain exactly sixty non-repeating terms?</p>
 <hr>
-<p><strong>数字阶乘链</strong></p>
-<p>145之所以广为人知，是因为它的各位数字的阶乘之和恰好等于本身：</p>
-<p>1! + 4! + 5! = 1 + 24 + 120 = 145</p>
-<p>而169则可能不太为人所知，尽管从169开始不断地取各位数字的阶乘之和构成了最长的循环回到169；事实上，只存在三个这样的循环：</p>
-<p>169 → 363601 → 1454 → 169<br>871 → 45361 → 871<br>872 → 45362 → 872</p>
-<p>不难证明，从<em>任意数字</em>出发最终都会陷入循环。例如，</p>
-<p>69 → 363600 → 1454 → 169 → 363601 (→ 1454)<br>78 → 45360 → 871 → 45361 (→ 871)<br>540 → 145 (→ 145)</p>
-<p>从69开始可以得到一个拥有五个不重复项的链，但是从一个小于一百万的数出发能够得到的最长的无重复项链包含有60项。</p>
-<p>从小于一百万的数出发，有多少条链恰好包含有60个不重复项？</p>
+<h2 id="数字阶乘链"><a href="#数字阶乘链" class="headerlink" title="数字阶乘链"></a><strong>数字阶乘链</strong></h2><p>众所周知，$145$的各位数字的阶乘之和恰好等于本身：</p>
+<p>$$1! + 4! + 5! = 1 + 24 + 120 = 145$$</p>
+<p>但很少有人注意到，从$169$开始不断地取各位数字的阶乘之和，将会进入循环回到$169$，而且这是所有循环中最长的一个。事实上，只存在三个这样的循环：</p>
+<p>$$\begin{aligned}<br>&amp;169 \rightarrow 363601 \rightarrow 1454 \rightarrow 169\\<br>&amp;871 \rightarrow 45361 \rightarrow 871\\<br>&amp;872 \rightarrow 45362 \rightarrow 872\\<br>\end{aligned}$$</p>
+<p>不难证明，从<i class=zh>任意数字</i>出发最终都会陷入循环。例如，</p>
+<p>$$\begin{aligned}<br>&amp;69 \rightarrow 363600 \rightarrow 1454 \rightarrow 169 \rightarrow 363601 (\rightarrow 1454)\\<br>&amp;78 \rightarrow 45360 \rightarrow 871 \rightarrow 45361 (\rightarrow 871)\\<br>&amp;540 \rightarrow 145 (\rightarrow 145)\\<br>\end{aligned}$$</p>
+<p>从$69$开始直到进入循环，会得到五个不同的项，而从任意一个小于一百万的数开始，最多能够得到六十个不同的项。</p>
+<p>有多少个小于一百万的数满足，从这些数开始不断地取各位数字的阶乘之和，恰好能够得到六十个不同的项？</p>
 <hr>
 ]]></content>
   </entry>
@@ -20701,21 +20680,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/73/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-73"><a href="#Problem-73" class="headerlink" title="Problem 73"></a><a href="https://projecteuler.net/problem=73" target="_blank" rel="noopener">Problem 73</a></h1><hr>
-<p><strong>Counting fractions in a range</strong></p>
-<p>Consider the fraction, n/d, where n and d are positive integers. If n &lt; d and HCF(n,d)=1, it is called a reduced proper fraction.</p>
-<p>If we list the set of reduced proper fractions for d ≤ 8 in ascending order of size, we get:</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, **3/8, 2/5, 3/7**, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>It can be seen that there are 3 fractions between 1/3 and 1/2.</p>
-<p>How many fractions lie between 1/3 and 1/2 in the sorted set of reduced proper fractions for d ≤ 12,000?</p>
+<h2 id="Counting-fractions-in-a-range"><a href="#Counting-fractions-in-a-range" class="headerlink" title="Counting fractions in a range"></a><strong>Counting fractions in a range</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, \textbf{3/8, 2/5, 3/7}, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>It can be seen that there are $3$ fractions between $1/3$ and $1/2$.</p>
+<p>How many fractions lie between $1/3$ and $1/2$ in the sorted set of reduced proper fractions for $d \le 12,000$?</p>
 <hr>
-<p><strong>分数有范围计数</strong></p>
-<p>考虑形如n/d的分数，其中n和d均为正整数。如果n &lt; d且其最大公约数为1，则该分数称为最简真分数。</p>
-<p>如果我们将d ≤ 8的最简真分数构成的集合按大小升序列出，我们得到：</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, **3/8, 2/5, 3/7**, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>可以看出在1/3和1/2之间有3个分数。</p>
-<p>将d ≤ 12,000的最简真分数构成的集合排序后，在1/3和1/2之间有多少个分数？</p>
+<h2 id="分数有范围计数"><a href="#分数有范围计数" class="headerlink" title="分数有范围计数"></a><strong>分数有范围计数</strong></h2><p>考虑形如$n/d$的分数，其中$n$和$d$均为正整数。如果$n&lt;d$且其最大公约数为$1$，则称该分数为最简真分数。</p>
+<p>将所有$d\le8$的最简真分数构成的集合按大小升序排列：</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, \textbf{3/8, 2/5, 3/7}, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>可以看出在$1/3$和$1/2$之间有$3$个分数。</p>
+<p>将$d \le 12,000$的最简真分数构成的集合排序后，在$1/3$和$1/2$之间有多少个分数？</p>
 <hr>
 ]]></content>
   </entry>

@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 72 Counting fractions Consider the fraction, n&#x2F;d, where n and d are positive integers. If n &lt; d and HCF(n,d)&#x3D;1, it is called a reduced proper fraction. If we list the set of reduced proper">
+  <meta name="description" content="Problem 72 Counting fractionsConsider the fraction, $n&#x2F;d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)&#x3D;1$, it is called a reduced proper fraction. If we list the set of reduc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 72">
 <meta property="og:url" content="http://yoursite.com/72/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 72 Counting fractions Consider the fraction, n&#x2F;d, where n and d are positive integers. If n &lt; d and HCF(n,d)&#x3D;1, it is called a reduced proper fraction. If we list the set of reduced proper">
+<meta property="og:description" content="Problem 72 Counting fractionsConsider the fraction, $n&#x2F;d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)&#x3D;1$, it is called a reduced proper fraction. If we list the set of reduc">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2004-06-19T01:00:00.000Z">
-<meta property="article:modified_time" content="2015-08-10T16:29:42.000Z">
+<meta property="article:published_time" content="2004-06-18T22:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-08T23:26:15.549Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -204,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2004-06-18 21:00:00" itemprop="dateCreated datePublished" datetime="2004-06-18T21:00:00-04:00">2004-06-18</time>
+              <time title="发布时间：2004-06-18 18:00:00" itemprop="dateCreated datePublished" datetime="2004-06-18T18:00:00-04:00">2004-06-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-08-10 12:29:42" itemprop="dateModified" datetime="2015-08-10T12:29:42-04:00">2015-08-10</time>
+                <time title="更新时间：2023-01-08 18:26:15" itemprop="dateModified" datetime="2023-01-08T18:26:15-05:00">2023-01-08</time>
               </span>
 
           
@@ -227,21 +227,17 @@
       
         <hr>
 <h1 id="Problem-72"><a href="#Problem-72" class="headerlink" title="Problem 72"></a><a href="https://projecteuler.net/problem=72" target="_blank" rel="noopener">Problem 72</a></h1><hr>
-<p><strong>Counting fractions</strong></p>
-<p>Consider the fraction, n/d, where n and d are positive integers. If n &lt; d and HCF(n,d)=1, it is called a reduced proper fraction.</p>
-<p>If we list the set of reduced proper fractions for d ≤ 8 in ascending order of size, we get:</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>It can be seen that there are 21 elements in this set.</p>
-<p>How many elements would be contained in the set of reduced proper fractions for d ≤ 1,000,000?</p>
+<h2 id="Counting-fractions"><a href="#Counting-fractions" class="headerlink" title="Counting fractions"></a><strong>Counting fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>It can be seen that there are $21$ elements in this set.</p>
+<p>How many elements would be contained in the set of reduced proper fractions for $d \le 1,000,000$?</p>
 <hr>
-<p><strong>分数计数</strong></p>
-<p>考虑形如n/d的分数，其中n和d均为正整数。如果n &lt; d且其最大公约数为1，则该分数称为最简真分数。</p>
-<p>如果我们将d ≤ 8的最简真分数构成的集合按大小升序列出，我们得到：</p>
-<center>1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8</center>
-
-<p>可以看出该集合中共有21个元素。</p>
-<p>d ≤ 1,000,000的最简真分数构成的集合中共有多少个元素？</p>
+<h2 id="分数计数"><a href="#分数计数" class="headerlink" title="分数计数"></a><strong>分数计数</strong></h2><p>考虑形如$n/d$的分数，其中$n$和$d$均为正整数。如果$n&lt;d$且其最大公约数为$1$，则称该分数为最简真分数。</p>
+<p>将所有$d\le8$的最简真分数构成的集合按大小升序排列：</p>
+<p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
+<p>可以看出该集合中共有$21$个元素。</p>
+<p>所有$d \le 1,000,000$的最简真分数构成的集合中共有多少个元素？</p>
 <hr>
 
     </div>
@@ -324,7 +320,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-72"><span class="nav-text">Problem 72</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-72"><span class="nav-text">Problem 72</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Counting-fractions"><span class="nav-text">Counting fractions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分数计数"><span class="nav-text">分数计数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -376,7 +372,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>
