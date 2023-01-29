@@ -18,17 +18,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 84 Monopoly odds In the game, Monopoly, the standard board is set up in the following way:    &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;    GO A1 CC1 A2 T1 R">
+  <meta name="description" content="Problem 84 Monopoly oddsIn the game, Monopoly, the standard board is set up in the following way:     A player starts on the GO square and adds the scores on two $6$-sided dice to determine the numbe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 84">
 <meta property="og:url" content="http://yoursite.com/84/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 84 Monopoly odds In the game, Monopoly, the standard board is set up in the following way:    &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;    GO A1 CC1 A2 T1 R">
+<meta property="og:description" content="Problem 84 Monopoly oddsIn the game, Monopoly, the standard board is set up in the following way:     A player starts on the GO square and adds the scores on two $6$-sided dice to determine the numbe">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2004-12-04T02:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-07T15:49:36.000Z">
+<meta property="og:image" content="https://projecteuler.net/project/images/p084_monopoly_board.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p084_monopoly_board.png">
+<meta property="article:published_time" content="2004-12-03T23:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-29T22:59:07.310Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://projecteuler.net/project/images/p084_monopoly_board.png">
 
 <link rel="canonical" href="http://yoursite.com/84/">
 
@@ -204,14 +207,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2004-12-03 21:00:00" itemprop="dateCreated datePublished" datetime="2004-12-03T21:00:00-05:00">2004-12-03</time>
+              <time title="发布时间：2004-12-03 18:00:00" itemprop="dateCreated datePublished" datetime="2004-12-03T18:00:00-05:00">2004-12-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-07 11:49:36" itemprop="dateModified" datetime="2015-10-07T11:49:36-04:00">2015-10-07</time>
+                <time title="更新时间：2023-01-29 17:59:07" itemprop="dateModified" datetime="2023-01-29T17:59:07-05:00">2023-01-29</time>
               </span>
 
           
@@ -227,178 +230,21 @@
       
         <hr>
 <h1 id="Problem-84"><a href="#Problem-84" class="headerlink" title="Problem 84"></a><a href="https://projecteuler.net/problem=84" target="_blank" rel="noopener">Problem 84</a></h1><hr>
-<p><strong>Monopoly odds</strong></p>
-<p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">GO</td>
-<td align="center">A1</td>
-<td align="center">CC1</td>
-<td align="center">A2</td>
-<td align="center">T1</td>
-<td align="center">R1</td>
-<td align="center">B1</td>
-<td align="center">CH1</td>
-<td align="center">B2</td>
-<td align="center">B3</td>
-<td align="center">JAIL</td>
-</tr>
-<tr>
-<td align="center">H2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C1</td>
-</tr>
-<tr>
-<td align="center">T2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">U1</td>
-</tr>
-<tr>
-<td align="center">H1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C2</td>
-</tr>
-<tr>
-<td align="center">CH3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C3</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">R2</td>
-</tr>
-<tr>
-<td align="center">G3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D1</td>
-</tr>
-<tr>
-<td align="center">CC3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">CC2</td>
-</tr>
-<tr>
-<td align="center">G2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D2</td>
-</tr>
-<tr>
-<td align="center">G1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D3</td>
-</tr>
-<tr>
-<td align="center">G2J</td>
-<td align="center">F3</td>
-<td align="center">U2</td>
-<td align="center">F2</td>
-<td align="center">F1</td>
-<td align="center">R3</td>
-<td align="center">E3</td>
-<td align="center">E2</td>
-<td align="center">CH2</td>
-<td align="center">E1</td>
-<td align="center">FP</td>
-</tr>
-</tbody></table>
-<p>A player starts on the GO square and adds the scores on two 6-sided dice to determine the number of squares they advance in a clockwise direction. Without any further rules we would expect to visit each square with equal probability: 2.5%. However, landing on G2J (Go To Jail), CC (community chest), and CH (chance) changes this distribution.</p>
-<p>In addition to G2J, and one card from each of CC and CH, that orders the player to go directly to jail, if a player rolls three consecutive doubles, they do not advance the result of their 3rd roll. Instead they proceed directly to jail.</p>
+<h2 id="Monopoly-odds"><a href="#Monopoly-odds" class="headerlink" title="Monopoly odds"></a><strong>Monopoly odds</strong></h2><p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
+<center>
+<img src="https://projecteuler.net/project/images/p084_monopoly_board.png" />
+</center>
+
+<p>A player starts on the GO square and adds the scores on two $6$-sided dice to determine the number of squares they advance in a clockwise direction. Without any further rules we would expect to visit each square with equal probability: $2.5\%$. However, landing on G2J (Go To Jail), CC (community chest), and CH (chance) changes this distribution.</p>
+<p>In addition to G2J, and one card from each of CC and CH, that orders the player to go directly to jail, if a player rolls three consecutive doubles, they do not advance the result of their $3$rd roll. Instead they proceed directly to jail.</p>
 <p>At the beginning of the game, the CC and CH cards are shuffled. When a player lands on CC or CH they take a card from the top of the respective pile and, after following the instructions, it is returned to the bottom of the pile. There are sixteen cards in each pile, but for the purpose of this problem we are only concerned with cards that order a movement; any instruction not concerned with movement will be ignored and the player will remain on the CC/CH square.</p>
 <ul>
-<li>Community Chest (2/16 cards):<ol>
+<li>Community Chest ($2/16$ cards):<ol>
 <li>Advance to GO</li>
 <li>Go to JAIL</li>
 </ol>
 </li>
-<li>Chance (10/16 cards)<ol>
+<li>Chance ($10/16$ cards)<ol>
 <li>Advance to GO</li>
 <li>Go to JAIL</li>
 <li>Go to C1</li>
@@ -408,204 +254,47 @@
 <li>Go to next R (railway company)</li>
 <li>Go to next R</li>
 <li>Go to next U (utility company)</li>
-<li>Go back 3 squares</li>
+<li>Go back $3$ squares</li>
 </ol>
 </li>
 </ul>
-<p>The heart of this problem concerns the likelihood of visiting a particular square. That is, the probability of finishing at that square after a roll. For this reason it should be clear that, with the exception of G2J for which the probability of finishing on it is zero, the CH squares will have the lowest probabilities, as 5/8 request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between “Just Visiting” and being sent to JAIL, and we shall also ignore the rule about requiring a double to “get out of jail”, assuming that they pay to get out on their next turn.</p>
-<p>By starting at GO and numbering the squares sequentially from 00 to 39 we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.</p>
-<p>Statistically it can be shown that the three most popular squares, in order, are JAIL (6.24%) = Square 10, E3 (3.18%) = Square 24, and GO (3.09%) = Square 00. So these three most popular squares can be listed with the six-digit modal string: 102400.</p>
-<p>If, instead of using two 6-sided dice, two 4-sided dice are used, find the six-digit modal string.</p>
+<p>The heart of this problem concerns the likelihood of visiting a particular square. That is, the probability of finishing at that square after a roll. For this reason it should be clear that, with the exception of G2J for which the probability of finishing on it is zero, the CH squares will have the lowest probabilities, as $5/8$ request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between “Just Visiting” and being sent to JAIL, and we shall also ignore the rule about requiring a double to “get out of jail”, assuming that they pay to get out on their next turn.</p>
+<p>By starting at GO and numbering the squares sequentially from $00$ to $39$ we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.</p>
+<p>Statistically it can be shown that the three most popular squares, in order, are JAIL ($6.24\%$) = Square $10$, E3 ($3.18\%$) = Square $24$, and GO ($3.09\%$) = Square $00$. So these three most popular squares can be listed with the six-digit modal string: $102400$.</p>
+<p>If, instead of using two $6$-sided dice, two $4$-sided dice are used, find the six-digit modal string.</p>
 <hr>
-<p><strong>大富翁几率</strong></p>
-<p><i class=zh>大富翁</i>游戏的标准棋盘大致如下图所示：</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">GO</td>
-<td align="center">A1</td>
-<td align="center">CC1</td>
-<td align="center">A2</td>
-<td align="center">T1</td>
-<td align="center">R1</td>
-<td align="center">B1</td>
-<td align="center">CH1</td>
-<td align="center">B2</td>
-<td align="center">B3</td>
-<td align="center">JAIL</td>
-</tr>
-<tr>
-<td align="center">H2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C1</td>
-</tr>
-<tr>
-<td align="center">T2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">U1</td>
-</tr>
-<tr>
-<td align="center">H1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C2</td>
-</tr>
-<tr>
-<td align="center">CH3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C3</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">R2</td>
-</tr>
-<tr>
-<td align="center">G3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D1</td>
-</tr>
-<tr>
-<td align="center">CC3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">CC2</td>
-</tr>
-<tr>
-<td align="center">G2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D2</td>
-</tr>
-<tr>
-<td align="center">G1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D3</td>
-</tr>
-<tr>
-<td align="center">G2J</td>
-<td align="center">F3</td>
-<td align="center">U2</td>
-<td align="center">F2</td>
-<td align="center">F1</td>
-<td align="center">R3</td>
-<td align="center">E3</td>
-<td align="center">E2</td>
-<td align="center">CH2</td>
-<td align="center">E1</td>
-<td align="center">FP</td>
-</tr>
-</tbody></table>
-<p>玩家从标记有“GO”的方格出发，掷两个六面的骰子并将点数和相加，作为本轮他们前进的步数。如果没有其它规则，那么落在每一格上的概率应该是2.5%。但是，由于“G2J”（入狱）、“CC”（宝箱卡）和“CH”（机会卡）的存在，这个分布会有所改变。</p>
-<p>除了落在“G2J”上，或者在“CC”或“CH”上抽到入狱卡之外，如果玩家连续三次都掷出两个相同的点数，则在第三次时将会直接入狱。</p>
-<p>游戏开始时，“CC”和“CH”所需的卡片将被洗牌打乱。当一个玩家落在“CC”或“CH”上时，他们从宝箱卡和机会卡的牌堆最上方取一张卡并遵循指令行事，并将该卡再放回牌堆的最下方。宝箱卡和机会卡都各有16张，但我们只关心会影响到移动的卡片，其它的卡片我们都将无视它们的效果。</p>
+<h2 id="大富翁几率"><a href="#大富翁几率" class="headerlink" title="大富翁几率"></a><strong>大富翁几率</strong></h2><p><i class=zh>大富翁</i>游戏的标准棋盘大致如下图所示：</p>
+<center>
+<img src="https://projecteuler.net/project/images/p084_monopoly_board.png" />
+</center>
+
+<p>玩家从起点GO出发，掷两个六面的骰子并将点数和相加，作为本轮前进的步数。如果没有其它规则，那么落在每一格上的概率应该是$2.5\%$。但是，由于G2J（入狱）、CC（宝箱卡）和CH（机会卡）的存在，这个分布会有所改变。</p>
+<p>除了落在G2J上，或者在CC或CH上抽到入狱卡之外，如果玩家连续三次都掷出两个相同的点数，则在第三次时将会直接入狱。</p>
+<p>游戏开始时，宝箱卡和机会卡将被洗牌打乱。当一个玩家落在CC或CH上时，他们从宝箱卡和机会卡的牌堆最上方取一张卡，遵循指令行动，并将该卡放回牌堆的最下方。宝箱卡和机会卡都各有$16$张，但我们只关心会移动位置的卡片，其它的卡片我们都将无视它们的效果。</p>
 <ul>
-<li>宝箱卡 (2/16 张卡):<ul>
-<li>回到起点“GO”</li>
-<li>进入监狱“JAIL”</li>
+<li>宝箱卡 ($2/16$ 张卡):<ul>
+<li>回到起点GO</li>
+<li>进入监狱JAIL</li>
 </ul>
 </li>
-<li>机会卡 (10/16 张卡):<ul>
-<li>回到起点“GO”</li>
-<li>进入监狱“JAIL”</li>
-<li>移动到“C1”</li>
-<li>移动到“E3”</li>
-<li>移动到“H2”</li>
-<li>移动到“R1”</li>
-<li>移动到下一个“R”（铁路公司）</li>
-<li>移动到下一个“R”</li>
-<li>移动到下一个“U”（公共服务公司）</li>
+<li>机会卡 ($10/16$ 张卡):<ul>
+<li>回到起点GO</li>
+<li>进入监狱JAIL</li>
+<li>移动到C1</li>
+<li>移动到E3</li>
+<li>移动到H2</li>
+<li>移动到R1</li>
+<li>移动到下一个R（铁路公司）</li>
+<li>移动到下一个R</li>
+<li>移动到下一个U（公共服务公司）</li>
 <li>后退三步</li>
 </ul>
 </li>
 </ul>
-<p>这道题主要考察掷出骰子后停在某个特定方格上的概率。显然，除了停在“G2J”上的可能性为0之外，停在“CH”格的可能性最小，因为有5/8的情况下玩家会移动到另一格。我们不区分是被送进监狱还是恰好落在监狱“JAIL”这一格，而且不考虑需要掷出两个相同的点数才能出狱的要求，而是假定进入监狱的第二轮就会自动出狱。</p>
-<p>从起点“GO”出发，并将方格依次标记00到39，我们可以将这些两位数连接起来表示方格的序列。</p>
-<p>统计学上来说，三个最有可能停下的方格分别是“JAIL”（6.24%）或方格10，E3（3.18%）或方格24以及“GO”（3.09%）或方格00。这三个方格可以用一个六位数字串表示：102400。</p>
-<p>如果我们不用两个六面的骰子而是用两个四面的骰子，求出三个最有可能停下的方格构成的数字串。</p>
+<p>这道题主要考察掷出骰子后停在某个特定方格上的概率。显然，除了停在G2J上的可能性为$0$之外，停在CH格的可能性最小，因为有$5/8$的情况下玩家会移动到另一格。我们不区分是被送进监狱还是恰好移动到监狱这一格，而且不考虑需要掷出两个相同的点数才能出狱的要求，而是假定进入监狱的第二轮就会自动出狱。</p>
+<p>从起点GO开始，将方格依次标记$00$到$39$，我们就可以将这些两位数连接起来表示方格的序列。</p>
+<p>统计学上来说，三个最有可能停下的方格分别是JAIL（$6.24\%$）或方格$10$，E3（$3.18\%$）或方格$24$，以及GO（$3.09\%$）或方格$00$。这三个方格可以用一个六位数字串表示：$102400$。</p>
+<p>假设我们不用两个六面的骰子，而是用两个四面的骰子进行游戏，求出三个最有可能停下的方格所构成的六位数字串。</p>
 <hr>
 
     </div>
@@ -688,7 +377,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-84"><span class="nav-text">Problem 84</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-84"><span class="nav-text">Problem 84</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Monopoly-odds"><span class="nav-text">Monopoly odds</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大富翁几率"><span class="nav-text">大富翁几率</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

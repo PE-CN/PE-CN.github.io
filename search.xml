@@ -2667,11 +2667,17 @@
     <content><![CDATA[<hr>
 <h1 id="Problem-15"><a href="#Problem-15" class="headerlink" title="Problem 15"></a><a href="https://projecteuler.net/problem=15" target="_blank" rel="noopener">Problem 15</a></h1><hr>
 <h2 id="Lattice-paths"><a href="#Lattice-paths" class="headerlink" title="Lattice paths"></a><strong>Lattice paths</strong></h2><p>Starting in the top left corner of a $2\times2$ grid, and only being able to move to the right and down, there are exactly $6$ routes to the bottom right corner.</p>
-<p><img src="https://projecteuler.net/project/images/p015.png" alt=""></p>
+<center>
+<img src="https://projecteuler.net/project/images/p015.png" />
+</center>
+
 <p>How many such routes are there through a $20\times20$ grid?</p>
 <hr>
 <h2 id="网格路径"><a href="#网格路径" class="headerlink" title="网格路径"></a><strong>网格路径</strong></h2><p>从一个$2\times2$网格的左上角出发，若只允许向右或向下移动，则恰好有$6$条抵达右下角的路径。</p>
-<p><img src="https://projecteuler.net/project/images/p015.png" alt=""></p>
+<center>
+<img src="https://projecteuler.net/project/images/p015.png" />
+</center>
+
 <p>对于$20\times20$网格，这样的路径有多少条？</p>
 <hr>
 ]]></content>
@@ -19275,7 +19281,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h1 id="Problem-68"><a href="#Problem-68" class="headerlink" title="Problem 68"></a><a href="https://projecteuler.net/problem=68" target="_blank" rel="noopener">Problem 68</a></h1><hr>
 <h2 id="Magic-5-gon-ring"><a href="#Magic-5-gon-ring" class="headerlink" title="Magic 5-gon ring"></a><strong>Magic 5-gon ring</strong></h2><p>Consider the following “magic” $3$-gon ring, filled with the numbers $1$ to $6$, and each line adding to nine.</p>
 <center>
-<img src="https://projecteuler.net/project/images/p068_1.png" alt="" style="display:inline">
+<img src="https://projecteuler.net/project/images/p068_1.png" />
 </center>
 
 <p>Working <strong>clockwise</strong>, and starting from the group of three with the numerically lowest external node ($4,3,2$ in this example), each solution can be described uniquely. For example, the above solution can be described by the set: $4,3,2; 6,2,1; 5,1,3$.</p>
@@ -19322,11 +19328,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </tbody></table>
 <p>By concatenating each group it is possible to form $9$-digit strings; the maximum string for a $3$-gon ring is $432621513$.</p>
 <p>Using the numbers $1$ to $10$, and depending on arrangements, it is possible to form $16$- and $17$-digit strings. What is the maximum <strong>$16$-digit</strong> string for a “magic” $5$-gon ring?</p>
-<center><img src="https://projecteuler.net/project/images/p068_2.png" alt="" style="display:inline"></center>
+<center>
+<img src="https://projecteuler.net/project/images/p068_2.png">
+</center>
 
 <hr>
 <h2 id="魔力五边形环"><a href="#魔力五边形环" class="headerlink" title="魔力五边形环"></a><strong>魔力五边形环</strong></h2><p>考虑下面这个“魔力”三角形环，在其中填入$1$至$6$这$6$个数，每条线上的三个数加起来都是$9$。</p>
-<center><img src="https://projecteuler.net/project/images/p068_1.png" alt="" style="display:inline"></center>
+<center>
+<img src="https://projecteuler.net/project/images/p068_1.png">
+</center>
 
 <p>从最外侧结点所填的数最小的线（在这个例子中是$4,3,2$）开始，按<strong>顺时针</strong>方向，每个解都能被唯一表述。例如，上面这个解可以记作解集：$4,3,2; 6,2,1; 5,1,3$。</p>
 <p>将环填满后，每条线上的总和一共有四种可能：$9$、$10$、$11$和$12$。总共有$8$种填法：</p>
@@ -19372,7 +19382,9 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </tbody></table>
 <p>把解集中的数字连接起来，可以构造一个$9$位数字串；对于三角形环来说，最大的数字串是$432621513$。</p>
 <p>在如下的“魔力”五边形环中，在其中填入$1$至$10$这$10$个数，根据不同的填写方式，可以组成$16$位或$17$位数字串。在“魔力”五边形环中，最大的<strong>$16$位</strong>数字串是多少？</p>
-<center><img src="https://projecteuler.net/project/images/p068_2.png" alt="" style="display:inline"></center>
+<center>
+<img src="https://projecteuler.net/project/images/p068_2.png">
+</center>
 
 <hr>
 ]]></content>
@@ -20569,15 +20581,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/76/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-76"><a href="#Problem-76" class="headerlink" title="Problem 76"></a><a href="https://projecteuler.net/problem=76" target="_blank" rel="noopener">Problem 76</a></h1><hr>
-<p><strong>Counting summations</strong></p>
-<p>It is possible to write five as a sum in exactly six different ways:</p>
-<p>4 + 1<br>3 + 2<br>3 + 1 + 1<br>2 + 2 + 1<br>2 + 1 + 1 + 1<br>1 + 1 + 1 + 1 + 1</p>
+<h2 id="Counting-summations"><a href="#Counting-summations" class="headerlink" title="Counting summations"></a><strong>Counting summations</strong></h2><p>It is possible to write five as a sum in exactly six different ways:</p>
+<p>$$<br>\begin{aligned}<br>&amp;4 + 1\\<br>&amp;3 + 2\\<br>&amp;3 + 1 + 1\\<br>&amp;2 + 2 + 1\\<br>&amp;2 + 1 + 1 + 1\\<br>&amp;1 + 1 + 1 + 1 + 1<br>\end{aligned}<br>$$</p>
 <p>How many different ways can one hundred be written as a sum of at least two positive integers?</p>
 <hr>
-<p><strong>加和计数</strong></p>
-<p>将5写成整数的和有6种不同的方式：</p>
-<p>4 + 1<br>3 + 2<br>3 + 1 + 1<br>2 + 2 + 1<br>2 + 1 + 1 + 1<br>1 + 1 + 1 + 1 + 1</p>
-<p>将100写成整数的和有多少种不同的方式？</p>
+<h2 id="加和计数"><a href="#加和计数" class="headerlink" title="加和计数"></a><strong>加和计数</strong></h2><p>将$5$写成至少两个正整数的和，有$6$种不同的方式：</p>
+<p>$$<br>\begin{aligned}<br>&amp;4 + 1\\<br>&amp;3 + 2\\<br>&amp;3 + 1 + 1\\<br>&amp;2 + 2 + 1\\<br>&amp;2 + 1 + 1 + 1\\<br>&amp;1 + 1 + 1 + 1 + 1<br>\end{aligned}<br>$$</p>
+<p>将$100$写成至少两个正整数的和，有多少种不同的方式？</p>
 <hr>
 ]]></content>
   </entry>
@@ -20621,15 +20631,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/78/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-78"><a href="#Problem-78" class="headerlink" title="Problem 78"></a><a href="https://projecteuler.net/problem=78" target="_blank" rel="noopener">Problem 78</a></h1><hr>
-<p><strong>Coin partitions</strong></p>
-<p>Let p(n) represent the number of different ways in which n coins can be separated into piles. For example, five coins can separated into piles in exactly seven different ways, so p(5)=7.</p>
-<p>OOOOO<br>OOOO O<br>OOO OO<br>OOO O O<br>OO OO O<br>OO O O O<br>O O O O O</p>
-<p>Find the least value of n for which p(n) is divisible by one million.</p>
+<h2 id="Coin-partitions"><a href="#Coin-partitions" class="headerlink" title="Coin partitions"></a><strong>Coin partitions</strong></h2><p>Let $p(n)$ represent the number of different ways in which $n$ coins can be separated into piles. For example, five coins can separated into piles in exactly seven different ways, so $p(5)=7$.</p>
+<p>$$<br>\begin{aligned}<br>&amp;\text{OOOOO}\\<br>&amp;\text{OOOO   O}\\<br>&amp;\text{OOO   OO}\\<br>&amp;\text{OOO   O   O}\\<br>&amp;\text{OO   OO   O}\\<br>&amp;\text{OO   O   O   O}\\<br>&amp;\text{O   O   O   O   O}<br>\end{aligned}<br>$$</p>
+<p>Find the least value of $n$ for which $p(n)$ is divisible by one million.</p>
 <hr>
-<p><strong>硬币分拆</strong></p>
-<p>记p(n)是将n枚硬币分拆成堆的不同方式数。例如，五枚硬币有7种分拆成堆的不同方式，因此p(5)=7。</p>
-<p>OOOOO<br>OOOO O<br>OOO OO<br>OOO O O<br>OO OO O<br>OO O O O<br>O O O O O</p>
-<p>找出使p(n)能被一百万整除的最小n值。</p>
+<h2 id="硬币分拆"><a href="#硬币分拆" class="headerlink" title="硬币分拆"></a><strong>硬币分拆</strong></h2><p>记$p(n)$是将$n$枚硬币分拆成堆的不同方式数。例如，$5$枚硬币分拆成堆有$7$种的不同方式，因此$p(5)=7$。</p>
+<p>$$<br>\begin{aligned}<br>&amp;\text{OOOOO}\\<br>&amp;\text{OOOO   O}\\<br>&amp;\text{OOO   OO}\\<br>&amp;\text{OOO   O   O}\\<br>&amp;\text{OO   OO   O}\\<br>&amp;\text{OO   O   O   O}\\<br>&amp;\text{O   O   O   O   O}<br>\end{aligned}<br>$$</p>
+<p>求最小的使$p(n)$能被一百万整除的$n$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20663,15 +20671,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/77/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-77"><a href="#Problem-77" class="headerlink" title="Problem 77"></a><a href="https://projecteuler.net/problem=77" target="_blank" rel="noopener">Problem 77</a></h1><hr>
-<p><strong>Prime summations</strong></p>
-<p>It is possible to write ten as the sum of primes in exactly five different ways:</p>
-<p>7 + 3<br>5 + 5<br>5 + 3 + 2<br>3 + 3 + 2 + 2<br>2 + 2 + 2 + 2 + 2</p>
+<h2 id="Prime-summations"><a href="#Prime-summations" class="headerlink" title="Prime summations"></a><strong>Prime summations</strong></h2><p>It is possible to write ten as the sum of primes in exactly five different ways:</p>
+<p>$$<br>\begin{aligned}<br>&amp;7 + 3\\<br>&amp;5 + 5\\<br>&amp;5 + 3 + 2\\<br>&amp;3 + 3 + 2 + 2\\<br>&amp;2 + 2 + 2 + 2 + 2<br>\end{aligned}<br>$$</p>
 <p>What is the first value which can be written as the sum of primes in over five thousand different ways?</p>
 <hr>
-<p><strong>素数加和</strong></p>
-<p>将10写成素数的和有5种不同的方式：</p>
-<p>7 + 3<br>5 + 5<br>5 + 3 + 2<br>3 + 3 + 2 + 2<br>2 + 2 + 2 + 2 + 2</p>
-<p>写成素数的和有超过五千种不同的方式的数最小是多少？</p>
+<h2 id="素数加和"><a href="#素数加和" class="headerlink" title="素数加和"></a><strong>素数加和</strong></h2><p>将$10$写成素数的和，有$5$种不同的方式：</p>
+<p>$$<br>\begin{aligned}<br>&amp;7 + 3\\<br>&amp;5 + 5\\<br>&amp;5 + 3 + 2\\<br>&amp;3 + 3 + 2 + 2\\<br>&amp;2 + 2 + 2 + 2 + 2<br>\end{aligned}<br>$$</p>
+<p>最小的能以超过$5000$种不同的方式写成素数之和的数是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -20699,105 +20705,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/81/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-81"><a href="#Problem-81" class="headerlink" title="Problem 81"></a><a href="https://projecteuler.net/problem=81" target="_blank" rel="noopener">Problem 81</a></h1><hr>
-<p><strong>Path sum: two ways</strong></p>
-<p>In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by <strong>only moving to the right and down</strong>, is indicated in bold red and is equal to 2427.</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><span style="color: red;">131</span></td>
-<td align="center">673</td>
-<td align="center">234</td>
-<td align="center">103</td>
-<td align="center">18</td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center">150</td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center"><span style="color: red;">746</span></td>
-<td align="center"><span style="color: red;">422</span></td>
-<td align="center">111</td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center"><span style="color: red;">121</span></td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center"><span style="color: red;">37</span></td>
-<td align="center"><span style="color: red;">331</span></td>
-</tr>
-</tbody></table>
-<p>Find the minimal path sum, in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by only moving right and down.</p>
+<h2 id="Path-sum-two-ways"><a href="#Path-sum-two-ways" class="headerlink" title="Path sum: two ways"></a><strong>Path sum: two ways</strong></h2><p>In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by <strong>only moving to the right and down</strong>, is indicated in bold red and is equal to $2427$.</p>
+<p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; 234 &amp; 103 &amp; 18\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; \color{red}{746} &amp; \color{red}{422} &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
+<p>Find the minimal path sum from the top left to the bottom right by only moving right and down in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
 <hr>
-<p><strong>路径和：两个方向</strong></p>
-<p>在如下的5乘5矩阵中，从左上方到右下方<strong>始终只向右或向下移动</strong>的最小路径和为2427，由标注红色的路径给出。</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><span style="color: red;">131</span></td>
-<td align="center">673</td>
-<td align="center">234</td>
-<td align="center">103</td>
-<td align="center">18</td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center">150</td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center"><span style="color: red;">746</span></td>
-<td align="center"><span style="color: red;">422</span></td>
-<td align="center">111</td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center"><span style="color: red;">121</span></td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center"><span style="color: red;">37</span></td>
-<td align="center"><span style="color: red;">331</span></td>
-</tr>
-</tbody></table>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个80乘80的矩阵，求出从该矩阵的左上方到右下方始终只向右和向下移动的最小路径和。</p>
+<h2 id="路径和：两个方向"><a href="#路径和：两个方向" class="headerlink" title="路径和：两个方向"></a><strong>路径和：两个方向</strong></h2><p>在如下的$5 \times 5$矩阵中，从左上方到右下方<strong>始终只向右或向下移动</strong>的最小路径和为$2427$，由标注红色的路径给出。</p>
+<p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; 234 &amp; 103 &amp; 18\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; \color{red}{746} &amp; \color{red}{422} &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
+<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80 \times 80$的矩阵，求从该矩阵的左上方到右下方始终只向右或向下移动的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20806,15 +20720,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/79/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-79"><a href="#Problem-79" class="headerlink" title="Problem 79"></a><a href="https://projecteuler.net/problem=79" target="_blank" rel="noopener">Problem 79</a></h1><hr>
-<p><strong>Passcode derivation</strong></p>
-<p>A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was 531278, they may ask for the 2nd, 3rd, and 5th characters; the expected reply would be: 317.</p>
+<h2 id="Passcode-derivation"><a href="#Passcode-derivation" class="headerlink" title="Passcode derivation"></a><strong>Passcode derivation</strong></h2><p>A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was $531278$, they may ask for the $2$nd, $3$rd, and $5$th characters; the expected reply would be: $317$.</p>
 <p>The text file, <a href="https://projecteuler.net/project/resources/p079_keylog.txt" target="_blank" rel="noopener">keylog.txt</a>, contains fifty successful login attempts.</p>
 <p>Given that the three characters are always asked for in order, analyse the file so as to determine the shortest possible secret passcode of unknown length.</p>
 <hr>
-<p><strong>密码推断</strong></p>
-<p>网上银行常用的一种密保手段是向用户询问密码中的随机三位字符。例如，如果密码是531278，询问第2、3、5位字符，正确的回复应当是317。</p>
-<p>在文本文件<a href="https://projecteuler.net/project/resources/p079_keylog.txt" target="_blank" rel="noopener">keylog.txt</a>中包含了50次成功登陆的正确回复。</p>
-<p>假设三个字符总是按顺序询问的，分析这个文本文件，给出这个未知长度的密码最短的一种可能。</p>
+<h2 id="密码推断"><a href="#密码推断" class="headerlink" title="密码推断"></a><strong>密码推断</strong></h2><p>网上银行常用的一种密保手段是向用户询问密码中的随机三位字符。例如，如果密码是$531278$，询问第$2$、$3$、$5$位字符时，正确的回答应当是$317$。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p079_keylog.txt" target="_blank" rel="noopener">keylog.txt</a>中包含了$50$次成功登陆的正确回答。</p>
+<p>假设三个字符总是按顺序询问的，分析这个文本文件并求出最短的密码。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20823,107 +20735,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/82/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-82"><a href="#Problem-82" class="headerlink" title="Problem 82"></a><a href="https://projecteuler.net/problem=82" target="_blank" rel="noopener">Problem 82</a></h1><hr>
-<p><strong>Path sum: three ways</strong></p>
-<p>NOTE: This problem is a more challenging version of <a href="/81">Problem 81</a>.</p>
-<p>The minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to 994.</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">131</td>
-<td align="center">673</td>
-<td align="center"><span style="color: red;">234</span></td>
-<td align="center"><span style="color: red;">103</span></td>
-<td align="center"><span style="color: red;">18</span></td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center">150</td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center">746</td>
-<td align="center">422</td>
-<td align="center">111</td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center">121</td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center">37</td>
-<td align="center">331</td>
-</tr>
-</tbody></table>
-<p>Find the minimal path sum, in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a 80 by 80 matrix, from the left column to the right column.</p>
+<h2 id="Path-sum-three-ways"><a href="#Path-sum-three-ways" class="headerlink" title="Path sum: three ways"></a><strong>Path sum: three ways</strong></h2><p>NOTE: This problem is a more challenging version of <a href="/81">Problem 81</a>.</p>
+<p>The minimal path sum in the $5$ by $5$ matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to $994$.</p>
+<p>$$<br>\begin{pmatrix}<br>131 &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; 746 &amp; 422 &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; 121 &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; 37 &amp; 331<br>\end{pmatrix}<br>$$</p>
+<p>Find the minimal path sum from the left column to the right column in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
 <hr>
-<p><strong>路径和：三个方向</strong></p>
-<p>注意：这是<a href="/81">第81题</a>的一个更具挑战性的版本。</p>
-<p>在如下的5乘5矩阵中，从最左栏任意一格出发，始终只向右、向上或向下移动，到最右栏任意一格结束的最小路径和为994，由标注红色的路径给出。</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">131</td>
-<td align="center">673</td>
-<td align="center"><span style="color: red;">234</span></td>
-<td align="center"><span style="color: red;">103</span></td>
-<td align="center"><span style="color: red;">18</span></td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center">150</td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center">746</td>
-<td align="center">422</td>
-<td align="center">111</td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center">121</td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center">37</td>
-<td align="center">331</td>
-</tr>
-</tbody></table>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个80乘80的矩阵，求出从最左栏到最右栏的最小路径和。</p>
+<h2 id="路径和：三个方向"><a href="#路径和：三个方向" class="headerlink" title="路径和：三个方向"></a><strong>路径和：三个方向</strong></h2><p>注意：本题是<a href="/81">第81题</a>的升级版。</p>
+<p>在如下的$5\times 5$矩阵中，从最左栏任意一格出发，始终只向右、向上或向下移动，到最右栏任意一格结束的最小路径和为$994$，由标注红色的路径给出。</p>
+<p>$$<br>\begin{pmatrix}<br>131 &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; 746 &amp; 422 &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; 121 &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; 37 &amp; 331<br>\end{pmatrix}<br>$$</p>
+<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80\times80$的矩阵，求从该矩阵的最左栏到最右栏的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20995,9 +20815,9 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>The square root of two is $1.41421356237309504880\ldots$, and the digital sum of the first one hundred decimal digits is $475$.</p>
 <p>For the first one hundred natural numbers, find the total of the digital sums of the first one hundred decimal digits for all the irrational square roots.</p>
 <hr>
-<h2 id="平方根数字展开"><a href="#平方根数字展开" class="headerlink" title="平方根数字展开"></a><strong>平方根数字展开</strong></h2><p>众所周知，如果一个自然数的平方根不是整数，那么就一定是无理数，也即无限不循环小数。</p>
-<p>$2$的平方根为$1.41421356237309504880\ldots$，它的前一百个数字（包括小数点前的$1$）的和是$475$。</p>
-<p>考虑前一百个自然数的平方根，求其中所有无理数的前一百个数字的总和。</p>
+<h2 id="平方根数字展开"><a href="#平方根数字展开" class="headerlink" title="平方根数字展开"></a><strong>平方根数字展开</strong></h2><p>众所周知，如果一个自然数的算术平方根不是整数，那么就一定是无理数，也即无限不循环小数。</p>
+<p>$2$的算术平方根为$1.41421356237309504880\ldots$，它的前一百个数字（包括小数点前的$1$）的和是$475$。</p>
+<p>考虑前一百个自然数的算术平方根，求其中所有无理数的前一百个数字的总和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -21023,17 +20843,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/85/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-85"><a href="#Problem-85" class="headerlink" title="Problem 85"></a><a href="https://projecteuler.net/problem=85" target="_blank" rel="noopener">Problem 85</a></h1><hr>
-<p><strong>Counting rectangles</strong></p>
-<p>By counting carefully it can be seen that a rectangular grid measuring 3 by 2 contains eighteen rectangles:</p>
-<center><img src="https://projecteuler.net/project/images/p085.gif" alt=""></center>
+<h2 id="Counting-rectangles"><a href="#Counting-rectangles" class="headerlink" title="Counting rectangles"></a><strong>Counting rectangles</strong></h2><p>By counting carefully it can be seen that a rectangular grid measuring $3$ by $2$ contains eighteen rectangles:</p>
+<center>
+<img src="https://projecteuler.net/project/images/p085.png" />
+</center>
 
 <p>Although there exists no rectangular grid that contains exactly two million rectangles, find the area of the grid with the nearest solution.</p>
 <hr>
-<p><strong>数长方形</strong></p>
-<p>如果数得足够仔细，能看出在一个3乘2的长方形网格中包含有18个不同大小的长方形，如下图所示：</p>
-<center><img src="https://projecteuler.net/project/images/p085.gif" alt=""></center>
+<h2 id="数长方形"><a href="#数长方形" class="headerlink" title="数长方形"></a><strong>数长方形</strong></h2><p>在一个$3\times2$的长方形网格中包含有$18$个不同大小的长方形，如下图所示：</p>
+<center>
+<img src="https://projecteuler.net/project/images/p085.png" />
+</center>
 
-<p>尽管没有一个长方形网格中包含有恰好两百万个长方形，但有许多长方形网格中包含的长方形数目接近两百万，求其中最接近这一数目的长方形网格的面积。</p>
+<p>不存在任意大小的长方形网格中包含有恰好两百万个长方形。求包含长方形的数目最接近两百万的长方形网格的面积。</p>
 <hr>
 ]]></content>
   </entry>
@@ -21042,107 +20864,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/83/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-83"><a href="#Problem-83" class="headerlink" title="Problem 83"></a><a href="https://projecteuler.net/problem=83" target="_blank" rel="noopener">Problem 83</a></h1><hr>
-<p><strong>Path sum: four ways</strong></p>
-<p>NOTE: This problem is a significantly more challenging version of <a href="/81">Problem 81</a>.</p>
-<p>In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to 2297.</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><span style="color: red;">131</span></td>
-<td align="center">673</td>
-<td align="center"><span style="color: red;">234</span></td>
-<td align="center"><span style="color: red;">103</span></td>
-<td align="center"><span style="color: red;">18</span></td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center"><span style="color: red;">150</span></td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center">746</td>
-<td align="center"><span style="color: red;">422</span></td>
-<td align="center"><span style="color: red;">111</span></td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center"><span style="color: red;">121</span></td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center"><span style="color: red;">37</span></td>
-<td align="center"><span style="color: red;">331</span></td>
-</tr>
-</tbody></table>
-<p>Find the minimal path sum, in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by moving left, right, up, and down.</p>
+<h2 id="Path-sum-four-ways"><a href="#Path-sum-four-ways" class="headerlink" title="Path sum: four ways"></a><strong>Path sum: four ways</strong></h2><p>NOTE: This problem is a significantly more challenging version of <a href="/81">Problem 81</a>.</p>
+<p>In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to $2297$.</p>
+<p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; \color{red}{150}\\<br>630 &amp; 803 &amp; 746 &amp; \color{red}{422} &amp; \color{red}{111}\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
+<p>Find the minimal path sum from the top left to the bottom right by moving left, right, up, and down in <a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
 <hr>
-<p><strong>路径和：四个方向</strong></p>
-<p>注意：这是<a href="/81">第81题</a>的一个极具挑战性的版本。</p>
-<p>在如下的5乘5矩阵中，从左上角到右下角任意地向上、向下、向左或向右移动的最小路径和为2297，由标注红色的路径给出。</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><span style="color: red;">131</span></td>
-<td align="center">673</td>
-<td align="center"><span style="color: red;">234</span></td>
-<td align="center"><span style="color: red;">103</span></td>
-<td align="center"><span style="color: red;">18</span></td>
-</tr>
-<tr>
-<td align="center"><span style="color: red;">201</span></td>
-<td align="center"><span style="color: red;">96</span></td>
-<td align="center"><span style="color: red;">342</span></td>
-<td align="center">965</td>
-<td align="center"><span style="color: red;">150</span></td>
-</tr>
-<tr>
-<td align="center">630</td>
-<td align="center">803</td>
-<td align="center">746</td>
-<td align="center"><span style="color: red;">422</span></td>
-<td align="center"><span style="color: red;">111</span></td>
-</tr>
-<tr>
-<td align="center">537</td>
-<td align="center">699</td>
-<td align="center">497</td>
-<td align="center"><span style="color: red;">121</span></td>
-<td align="center">956</td>
-</tr>
-<tr>
-<td align="center">805</td>
-<td align="center">732</td>
-<td align="center">524</td>
-<td align="center"><span style="color: red;">37</span></td>
-<td align="center"><span style="color: red;">331</span></td>
-</tr>
-</tbody></table>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个80乘80的矩阵，求出从左上角到右下角任意地向上、向下、向左或向右移动的最小路径和。</p>
+<h2 id="路径和：四个方向"><a href="#路径和：四个方向" class="headerlink" title="路径和：四个方向"></a><strong>路径和：四个方向</strong></h2><p>注意：这是<a href="/81">第81题</a>的究极升级版。</p>
+<p>在如下的$5\times 5$矩阵中，从左上角到右下角任意地向上、向下、向左或向右移动的最小路径和为$2297$，由标注红色的路径给出。</p>
+<p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; \color{red}{150}\\<br>630 &amp; 803 &amp; 746 &amp; \color{red}{422} &amp; \color{red}{111}\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
+<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80\times80$的矩阵，求从该矩阵的左上角到右下角任意地向上、向下、向左或向右移动的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -21151,178 +20881,21 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/84/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-84"><a href="#Problem-84" class="headerlink" title="Problem 84"></a><a href="https://projecteuler.net/problem=84" target="_blank" rel="noopener">Problem 84</a></h1><hr>
-<p><strong>Monopoly odds</strong></p>
-<p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">GO</td>
-<td align="center">A1</td>
-<td align="center">CC1</td>
-<td align="center">A2</td>
-<td align="center">T1</td>
-<td align="center">R1</td>
-<td align="center">B1</td>
-<td align="center">CH1</td>
-<td align="center">B2</td>
-<td align="center">B3</td>
-<td align="center">JAIL</td>
-</tr>
-<tr>
-<td align="center">H2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C1</td>
-</tr>
-<tr>
-<td align="center">T2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">U1</td>
-</tr>
-<tr>
-<td align="center">H1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C2</td>
-</tr>
-<tr>
-<td align="center">CH3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C3</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">R2</td>
-</tr>
-<tr>
-<td align="center">G3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D1</td>
-</tr>
-<tr>
-<td align="center">CC3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">CC2</td>
-</tr>
-<tr>
-<td align="center">G2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D2</td>
-</tr>
-<tr>
-<td align="center">G1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D3</td>
-</tr>
-<tr>
-<td align="center">G2J</td>
-<td align="center">F3</td>
-<td align="center">U2</td>
-<td align="center">F2</td>
-<td align="center">F1</td>
-<td align="center">R3</td>
-<td align="center">E3</td>
-<td align="center">E2</td>
-<td align="center">CH2</td>
-<td align="center">E1</td>
-<td align="center">FP</td>
-</tr>
-</tbody></table>
-<p>A player starts on the GO square and adds the scores on two 6-sided dice to determine the number of squares they advance in a clockwise direction. Without any further rules we would expect to visit each square with equal probability: 2.5%. However, landing on G2J (Go To Jail), CC (community chest), and CH (chance) changes this distribution.</p>
-<p>In addition to G2J, and one card from each of CC and CH, that orders the player to go directly to jail, if a player rolls three consecutive doubles, they do not advance the result of their 3rd roll. Instead they proceed directly to jail.</p>
+<h2 id="Monopoly-odds"><a href="#Monopoly-odds" class="headerlink" title="Monopoly odds"></a><strong>Monopoly odds</strong></h2><p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
+<center>
+<img src="https://projecteuler.net/project/images/p084_monopoly_board.png" />
+</center>
+
+<p>A player starts on the GO square and adds the scores on two $6$-sided dice to determine the number of squares they advance in a clockwise direction. Without any further rules we would expect to visit each square with equal probability: $2.5\%$. However, landing on G2J (Go To Jail), CC (community chest), and CH (chance) changes this distribution.</p>
+<p>In addition to G2J, and one card from each of CC and CH, that orders the player to go directly to jail, if a player rolls three consecutive doubles, they do not advance the result of their $3$rd roll. Instead they proceed directly to jail.</p>
 <p>At the beginning of the game, the CC and CH cards are shuffled. When a player lands on CC or CH they take a card from the top of the respective pile and, after following the instructions, it is returned to the bottom of the pile. There are sixteen cards in each pile, but for the purpose of this problem we are only concerned with cards that order a movement; any instruction not concerned with movement will be ignored and the player will remain on the CC/CH square.</p>
 <ul>
-<li>Community Chest (2/16 cards):<ol>
+<li>Community Chest ($2/16$ cards):<ol>
 <li>Advance to GO</li>
 <li>Go to JAIL</li>
 </ol>
 </li>
-<li>Chance (10/16 cards)<ol>
+<li>Chance ($10/16$ cards)<ol>
 <li>Advance to GO</li>
 <li>Go to JAIL</li>
 <li>Go to C1</li>
@@ -21332,204 +20905,47 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <li>Go to next R (railway company)</li>
 <li>Go to next R</li>
 <li>Go to next U (utility company)</li>
-<li>Go back 3 squares</li>
+<li>Go back $3$ squares</li>
 </ol>
 </li>
 </ul>
-<p>The heart of this problem concerns the likelihood of visiting a particular square. That is, the probability of finishing at that square after a roll. For this reason it should be clear that, with the exception of G2J for which the probability of finishing on it is zero, the CH squares will have the lowest probabilities, as 5/8 request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between “Just Visiting” and being sent to JAIL, and we shall also ignore the rule about requiring a double to “get out of jail”, assuming that they pay to get out on their next turn.</p>
-<p>By starting at GO and numbering the squares sequentially from 00 to 39 we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.</p>
-<p>Statistically it can be shown that the three most popular squares, in order, are JAIL (6.24%) = Square 10, E3 (3.18%) = Square 24, and GO (3.09%) = Square 00. So these three most popular squares can be listed with the six-digit modal string: 102400.</p>
-<p>If, instead of using two 6-sided dice, two 4-sided dice are used, find the six-digit modal string.</p>
+<p>The heart of this problem concerns the likelihood of visiting a particular square. That is, the probability of finishing at that square after a roll. For this reason it should be clear that, with the exception of G2J for which the probability of finishing on it is zero, the CH squares will have the lowest probabilities, as $5/8$ request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between “Just Visiting” and being sent to JAIL, and we shall also ignore the rule about requiring a double to “get out of jail”, assuming that they pay to get out on their next turn.</p>
+<p>By starting at GO and numbering the squares sequentially from $00$ to $39$ we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.</p>
+<p>Statistically it can be shown that the three most popular squares, in order, are JAIL ($6.24\%$) = Square $10$, E3 ($3.18\%$) = Square $24$, and GO ($3.09\%$) = Square $00$. So these three most popular squares can be listed with the six-digit modal string: $102400$.</p>
+<p>If, instead of using two $6$-sided dice, two $4$-sided dice are used, find the six-digit modal string.</p>
 <hr>
-<p><strong>大富翁几率</strong></p>
-<p><i class=zh>大富翁</i>游戏的标准棋盘大致如下图所示：</p>
-<table>
-<thead>
-<tr>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-<th align="center">&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">GO</td>
-<td align="center">A1</td>
-<td align="center">CC1</td>
-<td align="center">A2</td>
-<td align="center">T1</td>
-<td align="center">R1</td>
-<td align="center">B1</td>
-<td align="center">CH1</td>
-<td align="center">B2</td>
-<td align="center">B3</td>
-<td align="center">JAIL</td>
-</tr>
-<tr>
-<td align="center">H2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C1</td>
-</tr>
-<tr>
-<td align="center">T2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">U1</td>
-</tr>
-<tr>
-<td align="center">H1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C2</td>
-</tr>
-<tr>
-<td align="center">CH3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">C3</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">R2</td>
-</tr>
-<tr>
-<td align="center">G3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D1</td>
-</tr>
-<tr>
-<td align="center">CC3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">CC2</td>
-</tr>
-<tr>
-<td align="center">G2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D2</td>
-</tr>
-<tr>
-<td align="center">G1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">D3</td>
-</tr>
-<tr>
-<td align="center">G2J</td>
-<td align="center">F3</td>
-<td align="center">U2</td>
-<td align="center">F2</td>
-<td align="center">F1</td>
-<td align="center">R3</td>
-<td align="center">E3</td>
-<td align="center">E2</td>
-<td align="center">CH2</td>
-<td align="center">E1</td>
-<td align="center">FP</td>
-</tr>
-</tbody></table>
-<p>玩家从标记有“GO”的方格出发，掷两个六面的骰子并将点数和相加，作为本轮他们前进的步数。如果没有其它规则，那么落在每一格上的概率应该是2.5%。但是，由于“G2J”（入狱）、“CC”（宝箱卡）和“CH”（机会卡）的存在，这个分布会有所改变。</p>
-<p>除了落在“G2J”上，或者在“CC”或“CH”上抽到入狱卡之外，如果玩家连续三次都掷出两个相同的点数，则在第三次时将会直接入狱。</p>
-<p>游戏开始时，“CC”和“CH”所需的卡片将被洗牌打乱。当一个玩家落在“CC”或“CH”上时，他们从宝箱卡和机会卡的牌堆最上方取一张卡并遵循指令行事，并将该卡再放回牌堆的最下方。宝箱卡和机会卡都各有16张，但我们只关心会影响到移动的卡片，其它的卡片我们都将无视它们的效果。</p>
+<h2 id="大富翁几率"><a href="#大富翁几率" class="headerlink" title="大富翁几率"></a><strong>大富翁几率</strong></h2><p><i class=zh>大富翁</i>游戏的标准棋盘大致如下图所示：</p>
+<center>
+<img src="https://projecteuler.net/project/images/p084_monopoly_board.png" />
+</center>
+
+<p>玩家从起点GO出发，掷两个六面的骰子并将点数和相加，作为本轮前进的步数。如果没有其它规则，那么落在每一格上的概率应该是$2.5\%$。但是，由于G2J（入狱）、CC（宝箱卡）和CH（机会卡）的存在，这个分布会有所改变。</p>
+<p>除了落在G2J上，或者在CC或CH上抽到入狱卡之外，如果玩家连续三次都掷出两个相同的点数，则在第三次时将会直接入狱。</p>
+<p>游戏开始时，宝箱卡和机会卡将被洗牌打乱。当一个玩家落在CC或CH上时，他们从宝箱卡和机会卡的牌堆最上方取一张卡，遵循指令行动，并将该卡放回牌堆的最下方。宝箱卡和机会卡都各有$16$张，但我们只关心会移动位置的卡片，其它的卡片我们都将无视它们的效果。</p>
 <ul>
-<li>宝箱卡 (2/16 张卡):<ul>
-<li>回到起点“GO”</li>
-<li>进入监狱“JAIL”</li>
+<li>宝箱卡 ($2/16$ 张卡):<ul>
+<li>回到起点GO</li>
+<li>进入监狱JAIL</li>
 </ul>
 </li>
-<li>机会卡 (10/16 张卡):<ul>
-<li>回到起点“GO”</li>
-<li>进入监狱“JAIL”</li>
-<li>移动到“C1”</li>
-<li>移动到“E3”</li>
-<li>移动到“H2”</li>
-<li>移动到“R1”</li>
-<li>移动到下一个“R”（铁路公司）</li>
-<li>移动到下一个“R”</li>
-<li>移动到下一个“U”（公共服务公司）</li>
+<li>机会卡 ($10/16$ 张卡):<ul>
+<li>回到起点GO</li>
+<li>进入监狱JAIL</li>
+<li>移动到C1</li>
+<li>移动到E3</li>
+<li>移动到H2</li>
+<li>移动到R1</li>
+<li>移动到下一个R（铁路公司）</li>
+<li>移动到下一个R</li>
+<li>移动到下一个U（公共服务公司）</li>
 <li>后退三步</li>
 </ul>
 </li>
 </ul>
-<p>这道题主要考察掷出骰子后停在某个特定方格上的概率。显然，除了停在“G2J”上的可能性为0之外，停在“CH”格的可能性最小，因为有5/8的情况下玩家会移动到另一格。我们不区分是被送进监狱还是恰好落在监狱“JAIL”这一格，而且不考虑需要掷出两个相同的点数才能出狱的要求，而是假定进入监狱的第二轮就会自动出狱。</p>
-<p>从起点“GO”出发，并将方格依次标记00到39，我们可以将这些两位数连接起来表示方格的序列。</p>
-<p>统计学上来说，三个最有可能停下的方格分别是“JAIL”（6.24%）或方格10，E3（3.18%）或方格24以及“GO”（3.09%）或方格00。这三个方格可以用一个六位数字串表示：102400。</p>
-<p>如果我们不用两个六面的骰子而是用两个四面的骰子，求出三个最有可能停下的方格构成的数字串。</p>
+<p>这道题主要考察掷出骰子后停在某个特定方格上的概率。显然，除了停在G2J上的可能性为$0$之外，停在CH格的可能性最小，因为有$5/8$的情况下玩家会移动到另一格。我们不区分是被送进监狱还是恰好移动到监狱这一格，而且不考虑需要掷出两个相同的点数才能出狱的要求，而是假定进入监狱的第二轮就会自动出狱。</p>
+<p>从起点GO开始，将方格依次标记$00$到$39$，我们就可以将这些两位数连接起来表示方格的序列。</p>
+<p>统计学上来说，三个最有可能停下的方格分别是JAIL（$6.24\%$）或方格$10$，E3（$3.18\%$）或方格$24$，以及GO（$3.09\%$）或方格$00$。这三个方格可以用一个六位数字串表示：$102400$。</p>
+<p>假设我们不用两个六面的骰子，而是用两个四面的骰子进行游戏，求出三个最有可能停下的方格所构成的六位数字串。</p>
 <hr>
 ]]></content>
   </entry>
