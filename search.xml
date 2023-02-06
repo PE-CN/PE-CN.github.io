@@ -23238,4 +23238,82 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 814</title>
+    <url>/814/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-814"><a href="#Problem-814" class="headerlink" title="Problem 814"></a><a href="https://projecteuler.net/problem=814" target="_blank" rel="noopener">Problem 814</a></h1><hr>
+<h2 id="Mezzo-forte"><a href="#Mezzo-forte" class="headerlink" title="Mezzo-forte"></a><strong>Mezzo-forte</strong></h2><p>$4n$ people stand in a circle with their heads down. When the bell rings they all raise their heads and either look at the person immediately to their left, the person immediately to their right or the person diametrically opposite. If two people find themselves looking at each other they both scream.</p>
+<p>Define $S(n)$ to be the number of ways that exactly half of the people scream. You are given $S(1) =  48$ and $S(10) \equiv 420121075 \pmod{998244353}$.</p>
+<p>Find $S(10^3)$. Enter your answer modulo $998244353$.</p>
+<hr>
+<h2 id="中强音"><a href="#中强音" class="headerlink" title="中强音"></a><strong>中强音</strong></h2><p>$4n$个人低头站成一圈，当钟声响起时，每个人都抬起头，或者看向紧靠其左侧的人，或者看向紧靠其右侧的人，或者看向其正对面的人。如果两个人恰好对视，则会同时尖叫。</p>
+<p>记$S(n)$为恰好有一半人尖叫的对视方案数量。已知$S(1) =  48$，$S(10) \equiv 420121075 \pmod{998244353}$。</p>
+<p>求$S(10^3)$，并将你的答案对$998244353$取余。</p>
+<p><i class=zh>译注：Mezzo-forte是意大利语音乐术语，表示“中等偏强”。</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 815</title>
+    <url>/815/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-815"><a href="#Problem-815" class="headerlink" title="Problem 815"></a><a href="https://projecteuler.net/problem=815" target="_blank" rel="noopener">Problem 815</a></h1><hr>
+<h2 id="Group-by-Value"><a href="#Group-by-Value" class="headerlink" title="Group by Value"></a><strong>Group by Value</strong></h2><p>A pack of cards contains $4n$ cards with four identical cards of each value. The pack is shuffled and cards are dealt one at a time and placed in piles of equal value. If the card has the same value as any pile it is placed in that pile. If there is no pile of that value then it begins a new pile. When a pile has four cards of the same value it is removed.</p>
+<p>Throughout the process the maximum number of non empty piles is recorded. Let $E(n)$ be its expected value. You are given $E(2) = 1.97142857$ rounded to $8$ decimal places.</p>
+<p>Find $E(60)$. Give your answer rounded to $8$ digits after the decimal point. </p>
+<hr>
+<h2 id="点数分组"><a href="#点数分组" class="headerlink" title="点数分组"></a><strong>点数分组</strong></h2><p>一副共$4n$张牌有$n$种点数，每种点数四张。将这副牌洗牌后，每次打出一张牌，并根据点数加入牌堆：如果已有该点数的牌堆，则将牌加入该堆；如果没有该点数的牌堆，则将该牌单独作为新牌堆。如果某个牌堆集齐了四张牌，则将该牌堆移除。</p>
+<p>记录在上述过程中任意时刻非空牌堆数量的最大值，并记$E(n)$为其期望值。已知$E(2) = 1.97142857$，四舍五入至小数点后$8$位。</p>
+<p>求$E(60)$，并将你的答案四舍五入至小数点后$8$位。 </p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 816</title>
+    <url>/816/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-816"><a href="#Problem-816" class="headerlink" title="Problem 816"></a><a href="https://projecteuler.net/problem=816" target="_blank" rel="noopener">Problem 816</a></h1><hr>
+<h2 id="Shortest-distance-among-points"><a href="#Shortest-distance-among-points" class="headerlink" title="Shortest distance among points"></a><strong>Shortest distance among points</strong></h2><p>We create an array of points $P_n$ in a two dimensional plane using the following random number generator:<br /><br>$s_0=290797$<br /><br>$s_{n+1}=s_n^2 \bmod 50515093$<br /><br>$P_n=(s_{2n},s_{2n+1})$</p>
+<p>Let $d(k)$ be the shortest distance of any two (distinct) points among $P_0, \cdots, P_{k - 1}$.<br /><br>E.g. $d(14)=546446.466846479$</p>
+<p>Find $d(2000000)$. Give your answer rounded to $9$ places after the decimal point.</p>
+<hr>
+<h2 id="随机点集最短距离"><a href="#随机点集最短距离" class="headerlink" title="随机点集最短距离"></a><strong>随机点集最短距离</strong></h2><p>使用下列随机数生成器生成二维随机点列$P_n$：<br /><br>$s_0=290797$<br /><br>$s_{n+1}=s_n^2 \bmod 50515093$<br /><br>$P_n=(s_{2n},s_{2n+1})$</p>
+<p>记$d(k)$为$P_0, \cdots, P_{k - 1}$中任意（不同的）两点间最短距离。<br /><br>已知$d(14)=546446.466846479$。</p>
+<p>求$d(2000000)$，并将你的答案四舍五入至小数点后$9$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 818</title>
+    <url>/818/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-818"><a href="#Problem-818" class="headerlink" title="Problem 818"></a><a href="https://projecteuler.net/problem=818" target="_blank" rel="noopener">Problem 818</a></h1><hr>
+<h2 id="SET"><a href="#SET" class="headerlink" title="SET"></a><strong>SET</strong></h2><p>The SET® card game is played with a pack of $81$ distinct cards. Each card has four features (Shape, Color, Number, Shading). Each feature has three different variants (e.g. Color can be red, purple, green).</p>
+<p>A <i>SET</i> consists of three different cards such that each feature is either the same on each card or different on each card.</p>
+<p>For a collection $C_n$ of $n$ cards, let $S(C_n)$ denote the number of <i>SET</i>s in $C_n$. Then define $F(n) = \sum\limits_{C_n} S(C_n)^4$ where $C_n$ ranges through all collections of $n$ cards (among the $81$ cards). You are given $F(3) = 1080$ and $F(6) = 159690960$.</p>
+<p>Find $F(12)$.</p>
+<p>Note: SET is a registered trademark of Cannei, LLC. All rights reserved. Used with permission from PlayMonster, LLC.</p>
+<hr>
+<h2 id="神奇形色牌"><a href="#神奇形色牌" class="headerlink" title="神奇形色牌"></a><strong>神奇形色牌</strong></h2><p>神奇形色牌（SET®）由$81$张不同的牌组成。每张牌有四个特征：形状、颜色、数字、阴影。每个特征有三种可能，例如颜色可以是红、黄、绿之一。</p>
+<p>一个<i class=zh>组合</i>由三张牌构成，且对于任意特征，要么三张牌完全相同，要么三张牌完全不同。</p>
+<p>考虑由$n$张牌组成的特定牌组$C_n$，记$S(C_n)$为这些牌可以组成的<i class=zh>组合</i>的数目。再记$F(n) = \sum\limits_{C_n} S(C_n)^4$，其中$C_n$遍历所有从$81$张牌中取出$n$张所能组成的牌组。已知$F(3) = 1080$，$F(6) = 159690960$。</p>
+<p>求$F(12)$。</p>
+<p>注：神奇形色牌(SET®)是Cannei有限公司的注册商标，保留所有权利；由PlayMonster有限公司授权使用。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 817</title>
+    <url>/817/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-817"><a href="#Problem-817" class="headerlink" title="Problem 817"></a><a href="https://projecteuler.net/problem=817" target="_blank" rel="noopener">Problem 817</a></h1><hr>
+<h2 id="Digits-in-Squares"><a href="#Digits-in-Squares" class="headerlink" title="Digits in Squares"></a><strong>Digits in Squares</strong></h2><p>Define $m = M(n, d)$ to be the smallest positive integer such that when $m^2$ is written in base $n$ it includes the base $n$ digit $d$. For example, $M(10,7) = 24$ because if all the squares are written out in base $10$ the first time the digit $7$ occurs is in $24^2 = 576$. $M(11,10) = 19$ as $19^2 = 361=2A9_{11}$.</p>
+<p>Find $\displaystyle \sum_{d = 1}^{10^5}M(p, p - d)$ where $p = 10^9 + 7$.</p>
+<hr>
+<h2 id="平方中的数字"><a href="#平方中的数字" class="headerlink" title="平方中的数字"></a><strong>平方中的数字</strong></h2><p>考虑所有$n$进制表示包含数字$d$的平方数$m^2$，并记其算术平方根的最小值为$m = M(n, d)$。例如，$M(10,7) = 24$，因为$10$进制下最小的包含数字$7$的平方数是$25^2=576$。类似可得$M(11,10) = 19$，因为$19^2 = 361=2A9_{11}$。</p>
+<p>求$\displaystyle \sum_{d = 1}^{10^5}M(p, p - d)$，其中$p = 10^9 + 7$。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
