@@ -23316,4 +23316,130 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 819</title>
+    <url>/819/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-819"><a href="#Problem-819" class="headerlink" title="Problem 819"></a><a href="https://projecteuler.net/problem=819" target="_blank" rel="noopener">Problem 819</a></h1><hr>
+<h2 id="Iterative-Sampling"><a href="#Iterative-Sampling" class="headerlink" title="Iterative Sampling"></a><strong>Iterative Sampling</strong></h2><p>Given an $n$-tuple of numbers another $n$-tuple is created where each element of the new $n$-tuple is chosen randomly from the numbers in the previous $n$-tuple. For example, given $(2,2,3)$ the probability that $2$ occurs in the first position in the next $3$-tuple is $2/3$. The probability of getting all $2$’s would be $8/27$ while the probability of getting the same $3$-tuple (in any order) would be $4/9$.</p>
+<p>Let $E(n)$ be the expected number of steps starting with $(1,2,\ldots,n)$ and ending with all numbers being the same.</p>
+<p>You are given $E(3) = 27/7$ and $E(5) = 468125/60701 \approx 7.711982$ rounded to $6$ digits after the decimal place.</p>
+<p>Find $E(10^3)$. Give the answer rounded to $6$ digits after the decimal place.</p>
+<hr>
+<h2 id="迭代抽样"><a href="#迭代抽样" class="headerlink" title="迭代抽样"></a><strong>迭代抽样</strong></h2><p>给定一个$n$元数组，考虑从中随机抽样得到的新$n$元数组。例如，当原数组是$(2,2,3)$时，新数组的第一位有$2/3$的概率是$2$，有$8/27$的概率全都是$2$，有$4/9$的概率获得原数组（不计顺序）。</p>
+<p>从数组$(1,2,\ldots,n)$出发，不断随机抽样直至数组中所有的数都相同，记所需要的步数的期望为$E(n)$。</p>
+<p>已知$E(3) = 27/7$，$E(5) = 468125/60701 \approx 7.711982$，保留小数点后$6$位。</p>
+<p>求$E(10^3)$，并将你的答案保留小数点后$6$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 820</title>
+    <url>/820/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-820"><a href="#Problem-820" class="headerlink" title="Problem 820"></a><a href="https://projecteuler.net/problem=820" target="_blank" rel="noopener">Problem 820</a></h1><hr>
+<h2 id="N-th-digit-of-Reciprocals"><a href="#N-th-digit-of-Reciprocals" class="headerlink" title="$N$th digit of Reciprocals"></a><strong>$N$<sup>th</sup> digit of Reciprocals</strong></h2><p>Let $d_n(x)$ be the $n$<sup>th</sup> decimal digit of the fractional part of $x$, or $0$ if the fractional part has fewer than $n$ digits.</p>
+<p>For example:</p>
+<ul>
+<li>$d_7 \left( 1 \right) = d_7 \left( \frac 1 2 \right) = d_7 \left( \frac 1 4 \right) = d_7 \left( \frac 1 5 \right) = 0$</li>
+<li>$d_7 \left( \frac 1 3 \right) = 3$ since $\frac 1 3 = 0.333333{\color{red}3}333\ldots$</li>
+<li>$d_7 \left( \frac 1 6 \right) = 6$ since $\frac 1 6 = 0.166666{\color{red}6}666\ldots$</li>
+<li>$d_7 \left( \frac 1 7 \right) = 1$ since $\frac 1 7 = 0.142857{\color{red}1}428\ldots$</li>
+</ul>
+<p>Let $\displaystyle  S(n) = \sum_{k=1}^n d_n \left( \frac 1 k \right)$.</p>
+<p>You are given:</p>
+<ul>
+<li>$S(7) = 0 + 0 + 3 + 0 + 0 + 6 + 1 = 10$</li>
+<li>$S(100) = 418$</li>
+</ul>
+<p>Find $S(10^7)$.</p>
+<hr>
+<h2 id="倒数的第-N-位数字"><a href="#倒数的第-N-位数字" class="headerlink" title="倒数的第$N$位数字"></a><strong>倒数的第$N$位数字</strong></h2><p>记$d_n(x)$为$x$的小数点后第$n$位数字；若其小数部分不满$n$位则记为$0$。</p>
+<p>例如：</p>
+<ul>
+<li>$d_7 \left( 1 \right) = d_7 \left( \frac 1 2 \right) = d_7 \left( \frac 1 4 \right) = d_7 \left( \frac 1 5 \right) = 0$</li>
+<li>$d_7 \left( \frac 1 3 \right) = 3$，因为$\frac 1 3 = 0.333333{\color{red}3}333\ldots$</li>
+<li>$d_7 \left( \frac 1 6 \right) = 6$，因为$\frac 1 6 = 0.166666{\color{red}6}666\ldots$</li>
+<li>$d_7 \left( \frac 1 7 \right) = 1$，因为$\frac 1 7 = 0.142857{\color{red}1}428\ldots$</li>
+</ul>
+<p>记$\displaystyle  S(n) = \sum_{k=1}^n d_n \left( \frac 1 k \right)$。</p>
+<p>已知：</p>
+<ul>
+<li>$S(7) = 0 + 0 + 3 + 0 + 0 + 6 + 1 = 10$</li>
+<li>$S(100) = 418$</li>
+</ul>
+<p>求$S(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 821</title>
+    <url>/821/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-821"><a href="#Problem-821" class="headerlink" title="Problem 821"></a><a href="https://projecteuler.net/problem=821" target="_blank" rel="noopener">Problem 821</a></h1><hr>
+<h2 id="123-Separable"><a href="#123-Separable" class="headerlink" title="$123$-Separable"></a><strong>$123$-Separable</strong></h2><p>A set, $S$, of integers is called <i>$123$-separable</i> if $S$, $2S$ and $3S$ are disjoint. Here $2S$ and $3S$ are obtained by multiplying all the elements in $S$ by $2$ and $3$ respectively.</p>
+<p>Define $F(n)$ to be the maximum number of elements of<br>$$(S\cup 2S \cup 3S)\cap \{1,2,3,\ldots,n\}$$<br>where $S$ ranges over all $123$-separable sets.</p>
+<p>For example, $F(6) = 5$ can be achieved with either $S = \{1,4,5\}$ or $S = \{1,5,6\}$.<br /><br>You are also given $F(20) = 19$.</p>
+<p>Find $F(10^{16})$.</p>
+<hr>
+<h2 id="123-可分离集合"><a href="#123-可分离集合" class="headerlink" title="$123$可分离集合"></a><strong>$123$可分离集合</strong></h2><p>若整数集合$S$满足$S$、$2S$和$3S$互不相交，则称其为<i class=zh>$123$可分离集合</i>。其中，$2S$和$3S$分别指将$S$中的所有元素乘以$2$或$3$所构成的集合。</p>
+<p>考虑所有$123$可分离集合$S$，定义$F(n)$为集合<br>$$(S\cup 2S \cup 3S)\cap \{1,2,3,\ldots,n\}$$<br>中元素的最大数目。</p>
+<p>例如，$F(6) = 5$，对应的集合为$S = \{1,4,5\}$或$S = \{1,5,6\}$。<br /><br>已知$F(20) = 19$。</p>
+<p>求$F(10^{16})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 822</title>
+    <url>/822/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-822"><a href="#Problem-822" class="headerlink" title="Problem 822"></a><a href="https://projecteuler.net/problem=822" target="_blank" rel="noopener">Problem 822</a></h1><hr>
+<h2 id="Square-the-Smallest"><a href="#Square-the-Smallest" class="headerlink" title="Square the Smallest"></a><strong>Square the Smallest</strong></h2><p>A list initially contains the numbers $2, 3, \dots, n$.<br /><br>At each round, the smallest number in the list is replaced by its square. If there is more than one such number, then only one of them is replaced.</p>
+<p>For example, below are the first three rounds for $n = 5$:<br>$$[2, 3, 4, 5] \xrightarrow{(1)} [4, 3, 4, 5] \xrightarrow{(2)} [4, 9, 4, 5] \xrightarrow{(3)} [16, 9, 4, 5].$$</p>
+<p>Let $S(n, m)$ be the sum of all numbers in the list after $m$ rounds.</p>
+<p>For example, $S(5, 3) = 16 + 9 + 4 + 5 = 34$. Also $S(10, 100) \equiv 845339386 \pmod{1234567891}$.</p>
+<p>Find $S(10^4, 10^{16})$. Give your answer modulo $1234567891$.</p>
+<hr>
+<h2 id="平方最小数"><a href="#平方最小数" class="headerlink" title="平方最小数"></a><strong>平方最小数</strong></h2><p>考虑初始数列$2, 3, \dots, n$。<br /><br>在每一轮中，将数列中的最小值替换为其平方。如果有多个最小值，则只替换一个。</p>
+<p>例如，当$n=5$时，前三轮的操作如下：<br>$$[2, 3, 4, 5] \xrightarrow{(1)} [4, 3, 4, 5] \xrightarrow{(2)} [4, 9, 4, 5] \xrightarrow{(3)} [16, 9, 4, 5]$$</p>
+<p>记$S(n, m)$为进行$m$轮后数列中所有数之和。</p>
+<p>例如，$S(5, 3) = 16 + 9 + 4 + 5 = 34$。已知$S(10, 100) \equiv 845339386 \pmod{1234567891}$。</p>
+<p>求$S(10^4, 10^{16})$，并将你的答案对$1234567891$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 823</title>
+    <url>/823/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-823"><a href="#Problem-823" class="headerlink" title="Problem 823"></a><a href="https://projecteuler.net/problem=823" target="_blank" rel="noopener">Problem 823</a></h1><hr>
+<h2 id="Factor-Shuffle"><a href="#Factor-Shuffle" class="headerlink" title="Factor Shuffle"></a><strong>Factor Shuffle</strong></h2><p>A list initially contains the numbers $2, 3, \dots, n$.<br /><br>At each round, every number in the list is divided by its smallest prime factor. Then the product of these smallest prime factors is added to the list as a new number. Finally, all numbers that become $1$ are removed from the list.</p>
+<p>For example, below are the first three rounds for $n = 5$:<br>$$[2, 3, 4, 5] \xrightarrow{(1)} [2, 60] \xrightarrow{(2)} [30, 4] \xrightarrow{(3)} [15, 2, 4].$$<br>Let $S(n, m)$ be the sum of all numbers in the list after $m$ rounds.<br /><br>For example, $S(5, 3) = 15 + 2 + 4 = 21$. Also $S(10, 100) = 257$.</p>
+<p>Find $S(10^4, 10^{16})$. Give your answer modulo $1234567891$.</p>
+<hr>
+<h2 id="因数重排"><a href="#因数重排" class="headerlink" title="因数重排"></a><strong>因数重排</strong></h2><p>考虑初始数列$2, 3, \dots, n$。<br /><br>在每一轮中，将数列中的每个数都除以其最小的质因数，再将这些质因数的乘积加入数列，最后将所有的$1$从数列中移除。</p>
+<p>例如，当$n=5$时，前三轮的操作如下：<br>$$[2, 3, 4, 5] \xrightarrow{(1)} [2, 60] \xrightarrow{(2)} [30, 4] \xrightarrow{(3)} [15, 2, 4]$$<br>记$S(n, m)$为进行$m$轮后数列中所有数之和。<br /><br>例如，$S(5, 3) = 15 + 2 + 4 = 21$。已知$S(10, 100) = 257$。</p>
+<p>求$S(10^4, 10^{16})$，并将你的答案对$1234567891$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 824</title>
+    <url>/824/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-824"><a href="#Problem-824" class="headerlink" title="Problem 824"></a><a href="https://projecteuler.net/problem=824" target="_blank" rel="noopener">Problem 824</a></h1><hr>
+<h2 id="Chess-Sliders"><a href="#Chess-Sliders" class="headerlink" title="Chess Sliders"></a><strong>Chess Sliders</strong></h2><p>A <i>Slider</i> is a chess piece that can move one square left or right.</p>
+<p>This problem uses a cylindrical chess board where the left hand edge of the board is connected to the right hand edge. This means that a Slider that is on the left hand edge of the chess board can move to the right hand edge of the same row and vice versa.</p>
+<p>Let $L(N,K)$ be the number of ways $K$ non-attacking Sliders can be placed on an $N \times N$ cylindrical chess-board.</p>
+<p>For example, $L(2,2)=4$ and $L(6,12)=4204761$.</p>
+<p>Find $L(10^9,10^{15}) \bmod \left(10^7+19\right)^2$.</p>
+<hr>
+<h2 id="滑块"><a href="#滑块" class="headerlink" title="滑块"></a><strong>滑块</strong></h2><p>有一种新的国际象棋棋子<i class=zh>滑块</i>，每次可以向左或向右移动一格。</p>
+<p>考虑一个圆柱形棋盘，其左侧边界和右侧边界相连。也就是说，一个位于棋盘最左侧的滑块可以移动一步到达同一行的最右侧，反之亦然。</p>
+<p>记$L(N,K)$为在$N \times N$的圆柱形棋盘上摆放$K$个互不攻击的滑块的方案数。</p>
+<p>例如，$L(2,2)=4$，$L(6,12)=4204761$。</p>
+<p>求$L(10^9,10^{15}) \bmod \left(10^7+19\right)^2$。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
