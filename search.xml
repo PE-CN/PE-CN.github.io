@@ -23442,4 +23442,146 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 825</title>
+    <url>/825/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-825"><a href="#Problem-825" class="headerlink" title="Problem 825"></a><a href="https://projecteuler.net/problem=825" target="_blank" rel="noopener">Problem 825</a></h1><hr>
+<h2 id="Chasing-Game"><a href="#Chasing-Game" class="headerlink" title="Chasing Game"></a><strong>Chasing Game</strong></h2><p>Two cars are on a circular track of total length $2n$, facing the same direction, initially distance $n$ apart.<br /><br>They move in turn. At each turn, the moving car will advance a distance of $1$, $2$ or $3$, with equal probabilities.<br /><br>The chase ends when the moving car reaches or goes beyond the position of the other car. The moving car is declared the winner.</p>
+<p>Let $S(n)$ be the difference between the winning probabilities of the two cars.<br /><br>For example, when $n = 2$, the winning probabilities of the two cars are $\frac 9 {11}$ and $\frac 2 {11}$, and thus $S(2) = \frac 7 {11}$.</p>
+<p>Let $\displaystyle T(N) = \sum_{n = 2}^N S(n)$.</p>
+<p>You are given that $T(10) = 2.38235282$ rounded to $8$ digits after the decimal point.</p>
+<p>Find $T(10^{14})$, rounded to $8$ digits after the decimal point.</p>
+<hr>
+<h2 id="追逐游戏"><a href="#追逐游戏" class="headerlink" title="追逐游戏"></a><strong>追逐游戏</strong></h2><p>在长度为$2n$的环形赛道上有两辆汽车沿相同方向前进，初始距离为$n$。<br /><br>两辆汽车轮流行动，每次行动时会以相等概率随机向前移动距离$1$、$2$或$3$。<br /><br>当其中一辆汽车追上或超过另一辆汽车时，游戏结束，前者获胜。</p>
+<p>记$S(n)$为两车获胜概率之差。<br /><br>例如，当$n = 2$时，两车获胜的概率分别是$\frac 9 {11}$和$\frac 2 {11}$，因此$S(2) = \frac 7 {11}$。</p>
+<p>记$\displaystyle T(N) = \sum_{n = 2}^N S(n)$。</p>
+<p>已知$T(10) = 2.38235282$，四舍五入至小数点后$8$位。</p>
+<p>求$T(10^{14})$，并将你的答案四舍五入至小数点后$8$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 826</title>
+    <url>/826/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-826"><a href="#Problem-826" class="headerlink" title="Problem 826"></a><a href="https://projecteuler.net/problem=826" target="_blank" rel="noopener">Problem 826</a></h1><hr>
+<h2 id="Birds-on-a-Wire"><a href="#Birds-on-a-Wire" class="headerlink" title="Birds on a Wire"></a><strong>Birds on a Wire</strong></h2><p>Consider a wire of length $1$ unit between two posts. Every morning $n$ birds land on it randomly with every point on the wire equally likely to host a bird. The interval from each bird to its closest neighbour is then painted.</p>
+<p>Define $F(n)$ to be the expected length of the wire that is painted. You are given $F(3) = 0.5$.</p>
+<p>Find the average of $F(n)$ where $n$ ranges through all odd prime less than a million. Give your answer rounded to $10$ places after the decimal point.</p>
+<hr>
+<h2 id="电线上的小鸟"><a href="#电线上的小鸟" class="headerlink" title="电线上的小鸟"></a><strong>电线上的小鸟</strong></h2><p>两根电线杆之间有长为$1$的电线。每天早上，$n$只小鸟均匀随机地落在这段电线上。将每只小鸟和其最近邻居之间的电线染上颜色。</p>
+<p>记$F(n)$为被染色电线的总长度的期望值。已知$F(3) = 0.5$。</p>
+<p>当$n$取遍所有小于一百万的奇素数时，求所有$F(n)$的平均值。将你的答案四舍五入至小数点后$10$位。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 827</title>
+    <url>/827/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-827"><a href="#Problem-827" class="headerlink" title="Problem 827"></a><a href="https://projecteuler.net/problem=827" target="_blank" rel="noopener">Problem 827</a></h1><hr>
+<h2 id="Pythagorean-Triple-Occurrence"><a href="#Pythagorean-Triple-Occurrence" class="headerlink" title="Pythagorean Triple Occurrence"></a><strong>Pythagorean Triple Occurrence</strong></h2><p>Define $Q(n)$ to be the smallest number that occurs in exactly $n$ <b>Pythagorean triples</b> $(a,b,c)$ where $a \lt b \lt c$.</p>
+<p>For example, $15$ is the smallest number occurring in exactly $5$ Pythagorean triples:<br>$$(9,12,\mathbf{15})\quad (8,\mathbf{15},17)\quad (\mathbf{15},20,25)\quad (\mathbf{15},36,39)\quad (\mathbf{15},112,113)$$<br>and so $Q(5) = 15$.</p>
+<p>You are also given $Q(10)=48$ and $Q(10^3)=8064000$.</p>
+<p>Find $\displaystyle \sum_{k=1}^{18} Q(10^k)$. Give your answer modulo $409120391$.</p>
+<hr>
+<h2 id="毕达哥拉斯三元组频数"><a href="#毕达哥拉斯三元组频数" class="headerlink" title="毕达哥拉斯三元组频数"></a><strong>毕达哥拉斯三元组频数</strong></h2><p>记$Q(n)$为最小的、恰好出现在$n$个<b>毕达哥拉斯三元组</b>$(a,b,c)$中的数，其中$a \lt b \lt c$。</p>
+<p>例如，$15$是最小的、恰好出现在$5$个毕达哥拉斯三元组中的数：<br>$$(9,12,\mathbf{15})\quad (8,\mathbf{15},17)\quad (\mathbf{15},20,25)\quad (\mathbf{15},36,39)\quad (\mathbf{15},112,113)$$<br>因此$Q(5) = 15$。</p>
+<p>已知$Q(10)=48$，$Q(10^3)=8064000$。</p>
+<p>求$\displaystyle \sum_{k=1}^{18} Q(10^k)$，并将你的答案对$409120391$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 828</title>
+    <url>/828/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-828"><a href="#Problem-828" class="headerlink" title="Problem 828"></a><a href="https://projecteuler.net/problem=828" target="_blank" rel="noopener">Problem 828</a></h1><hr>
+<h2 id="Numbers-Challenge"><a href="#Numbers-Challenge" class="headerlink" title="Numbers Challenge"></a><strong>Numbers Challenge</strong></h2><p>It is a common recreational problem to make a target number using a selection of other numbers. In this problem you will be given six numbers and a target number.</p>
+<p>For example, given the six numbers $2$, $3$, $4$, $6$, $7$, $25$, and a target of $211$, one possible solution is:<br>$$211 = (3+6)\times 25 − (4\times7)\div 2$$<br>This uses all six numbers. However, it is not necessary to do so. Another solution that does not use the $7$ is:<br>$$211 = (25−2)\times (6+3) + 4$$</p>
+<p>Define the <i>score</i> of a solution to be the sum of the numbers used. In the above example problem, the two given solutions have scores $47$ and $40$ respectively. It turns out that this problem has no solutions with score less than $40$.</p>
+<p>When combining numbers, the following rules must be observed:</p>
+<ul>
+<li>Each available number may be used at most once.</li>
+<li>Only the four basic arithmetic operations are permitted: $+$, $-$, $\times$, $\div$.</li>
+<li>All intermediate values must be positive integers, so for example $(3\div 2)$ is never permitted as a subexpression (even if the final answer is an integer).</li>
+</ul>
+<p>The attached file <a href="project/resources/p828_number_challenges.txt">number-challenges.txt</a> contains $200$ problems, one per line in the format:<br>$$211:2,3,4,6,7,25$$<br>where the number before the colon is the target and the remaining comma-separated numbers are those available to be used.</p>
+<p>Numbering the problems $1$, $2$, …, $200$, we let $s_n$ be the minimum score of the solution to the $n$th problem. For example, $s_1=40$, as the first problem in the file is the example given above. Note that not all problems have a solution; in such cases we take $s_n=0$.</p>
+<p>Find $\displaystyle\sum_{n=1}^{200} 3^n s_n$. Give your answer modulo $1005075251$.</p>
+<hr>
+<h2 id="凑数挑战"><a href="#凑数挑战" class="headerlink" title="凑数挑战"></a><strong>凑数挑战</strong></h2><p>从一些数出发，经过运算得到某个目标数，是一种常见的数学趣题。在本题中，每道题都有六个起始数和一个目标数。</p>
+<p>例如，给定起始数$2$、$3$、$4$、$6$、$7$、$25$和目标数$211$，其中一个解是：<br>$$211 = (3+6)\times 25 − (4\times7)\div 2$$<br>这个解用到了所有六个起始数，但这并不是必须的。另一个没有用到$7$的解是：<br>$$211 = (25−2)\times (6+3) + 4$$</p>
+<p>记一个解的<i class=zh>得分</i>为所有用到的起始数之和。在如上的例子中，两个解的得分分别是$47$和$40$，而且这道题不存在得分低于$40$的解。</p>
+<p>对于运算过程，我们作出如下规定：</p>
+<ul>
+<li>每个起始数至多被使用一次。</li>
+<li>只能使用四则运算：$+$、$-$、$\times$、$\div$。</li>
+<li>所有中间结果必须是整数，因此如$(3\div 2)$之类的数不能作为中间结果（即使最终结果是整数）。</li>
+</ul>
+<p>在文本文件<a href="project/resources/p828_number_challenges.txt">number-challenges.txt</a> 中包含有$200$个此类趣题，每行一个，其格式为：<br>$$211:2,3,4,6,7,25$$<br>其中，冒号前的数是目标数，冒号后用逗号隔开的是起始数。</p>
+<p>将这些题目编号为$1$、$2$、……、$200$，并记$s_n$为第$n$题的最小得分。例如，第一题就是上述例题，因此$s_1=40$。有些题可能无解，此时记$s_n=0$。</p>
+<p>求$\displaystyle\sum_{n=1}^{200} 3^n s_n$，并将你的答案对$1005075251$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 829</title>
+    <url>/829/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-829"><a href="#Problem-829" class="headerlink" title="Problem 829"></a><a href="https://projecteuler.net/problem=829" target="_blank" rel="noopener">Problem 829</a></h1><hr>
+<h2 id="Integral-Fusion"><a href="#Integral-Fusion" class="headerlink" title="Integral Fusion"></a><strong>Integral Fusion</strong></h2><p>Given any integer $n&gt;1$ a <i>binary factor tree</i> $T(n)$ is defined to be:</p>
+<ul>
+<li>A tree with the single node $n$ when $n$ is prime.</li>
+<li>A binary tree that has root node $n$, left subtree $T(a)$ and right subtree $T(b)$, when $n$ is not prime. Here $a$ and $b$ are positive integers such that $n = ab$, $a\le b$ and $b-a$ is the smallest.</li>
+</ul>
+<p>For example $T(20)$:</p>
+<cemter>
+<img src="https://projecteuler.net/project/images/p829_example1.jpg" alt="p829_example1.jpg" />
+</center>
+
+<p>We define $M(n)$ to be the smallest number that has a factor tree identical in shape to the factor tree for $n!!$, the <b>double factorial</b> of $n$.</p>
+<p>For example, consider $9!! = 9\times 7\times 5\times 3\times 1 = 945$. The factor tree for $945$ is shown below together with the factor tree for $72$ which is the smallest number that has a factor tree of the same shape. Hence $M(9) = 72$.</p>
+<center>
+<img src="https://projecteuler.net/project/images/p829_example2.jpg" alt="p829_example2.jpg" />
+</center>
+
+<p>Find $\displaystyle\sum_{n=2}^{31} M(n)$.</p>
+<hr>
+<h2 id="整数合成"><a href="#整数合成" class="headerlink" title="整数合成"></a><strong>整数合成</strong></h2><p>给定任意整数$n&gt;1$，定义其对应的<i class=zh>二叉因子树</i> $T(n)$如下：</p>
+<ul>
+<li>若$n$是质数，则该树只有一个单独的结点$n$。</li>
+<li>若$n$不是质数，则该树有根结点$n$、左子树$T(a)$和右子树$T(b)$，其中$a$和$b$都是正整数，且满足$n=ab$，$a\le b$，$b-a$取得最小值。</li>
+</ul>
+<p>例如，$T(20)$如下图所示:</p>
+<cemter>
+<img src="https://projecteuler.net/project/images/p829_example1.jpg" alt="p829_example1.jpg" />
+</center>
+
+<p>记$M(n)$为二叉因子树和$n!!$的二叉因子树形状相同的最小正整数，其中$n!!$表示$n$的<b>双阶乘</b>。</p>
+<p>例如，$9!! = 9\times 7\times 5\times 3\times 1 = 945$。如下图所示，$945$和$72$的二叉因子树形状相同，且$72$是满足该条件的最小整数，因此$M(9) = 72$。</p>
+<center>
+<img src="https://projecteuler.net/project/images/p829_example2.jpg" alt="p829_example2.jpg" />
+</center>
+
+<p>求$\displaystyle\sum_{n=2}^{31} M(n)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 830</title>
+    <url>/830/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-830"><a href="#Problem-830" class="headerlink" title="Problem 830"></a><a href="https://projecteuler.net/problem=830" target="_blank" rel="noopener">Problem 830</a></h1><hr>
+<h2 id="Binomials-and-Powers"><a href="#Binomials-and-Powers" class="headerlink" title="Binomials and Powers"></a><strong>Binomials and Powers</strong></h2><p>Let $\displaystyle S(n)=\sum\limits_{k=0}^{n}\binom{n}{k}k^n$.</p>
+<p>You are given, $S(10)=142469423360$.</p>
+<p>Find $S(10^{18})$. Submit your answer modulo $83^3 89^3 97^3$.</p>
+<hr>
+<h2 id="二项式和幂"><a href="#二项式和幂" class="headerlink" title="二项式和幂"></a><strong>二项式和幂</strong></h2><p>记$\displaystyle S(n)=\sum\limits_{k=0}^{n}\binom{n}{k}k^n$。</p>
+<p>已知$S(10)=142469423360$。</p>
+<p>求$S(10^{18})$，并将你的答案对$83^3 89^3 97^3$取余。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
