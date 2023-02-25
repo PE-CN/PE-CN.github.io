@@ -18,20 +18,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 90 Cube digit pairs Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positio">
+  <meta name="description" content="Problem 90 Cube digit pairsEach of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different posi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 90">
 <meta property="og:url" content="http://yoursite.com/90/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 90 Cube digit pairs Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positio">
+<meta property="og:description" content="Problem 90 Cube digit pairsEach of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different posi">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://projecteuler.net/project/images/p090.gif">
-<meta property="og:image" content="https://projecteuler.net/project/images/p090.gif">
+<meta property="og:image" content="https://projecteuler.net/project/images/p090.png">
+<meta property="og:image" content="https://projecteuler.net/project/images/p090.png">
 <meta property="article:published_time" content="2005-03-04T23:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-07T15:29:20.000Z">
+<meta property="article:modified_time" content="2023-02-25T22:44:07.607Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://projecteuler.net/project/images/p090.gif">
+<meta name="twitter:image" content="https://projecteuler.net/project/images/p090.png">
 
 <link rel="canonical" href="http://yoursite.com/90/">
 
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-07 11:29:20" itemprop="dateModified" datetime="2015-10-07T11:29:20-04:00">2015-10-07</time>
+                <time title="更新时间：2023-02-25 17:44:07" itemprop="dateModified" datetime="2023-02-25T17:44:07-05:00">2023-02-25</time>
               </span>
 
           
@@ -230,31 +230,33 @@
       
         <hr>
 <h1 id="Problem-90"><a href="#Problem-90" class="headerlink" title="Problem 90"></a><a href="https://projecteuler.net/problem=90" target="_blank" rel="noopener">Problem 90</a></h1><hr>
-<p><strong>Cube digit pairs</strong></p>
-<p>Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of 2-digit numbers.</p>
-<p>For example, the square number 64 could be formed:</p>
-<center><img src="https://projecteuler.net/project/images/p090.gif" alt=""></center>
+<h2 id="Cube-digit-pairs"><a href="#Cube-digit-pairs" class="headerlink" title="Cube digit pairs"></a><strong>Cube digit pairs</strong></h2><p>Each of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of $2$-digit numbers.</p>
+<p>For example, the square number $64$ could be formed:</p>
+<center><img src="https://projecteuler.net/project/images/p090.png" alt=""></center>
 
-<p>In fact, by carefully choosing the digits on both cubes it is possible to display all of the square numbers below one-hundred: 01, 04, 09, 16, 25, 36, 49, 64, and 81.</p>
-<p>For example, one way this can be achieved is by placing {0, 5, 6, 7, 8, 9} on one cube and {1, 2, 3, 4, 8, 9} on the other cube.</p>
-<p>However, for this problem we shall allow the 6 or 9 to be turned upside-down so that an arrangement like {0, 5, 6, 7, 8, 9} and {1, 2, 3, 4, 6, 7} allows for all nine square numbers to be displayed; otherwise it would be impossible to obtain 09.</p>
+<p>In fact, by carefully choosing the digits on both cubes it is possible to display all of the square numbers below one-hundred: $01$, $04$, $09$, $16$, $25$, $36$, $49$, $64$, and $81$.</p>
+<p>For example, one way this can be achieved is by placing $\{0, 5, 6, 7, 8, 9\}$ on one cube and $\{1, 2, 3, 4, 8, 9\}$ on the other cube.</p>
+<p>However, for this problem we shall allow the $6$ or $9$ to be turned upside-down so that an arrangement like $\{0, 5, 6, 7, 8, 9\}$ and $\{1, 2, 3, 4, 6, 7\}$ allows for all nine square numbers to be displayed; otherwise it would be impossible to obtain $09$.</p>
 <p>In determining a distinct arrangement we are interested in the digits on each cube, not the order.</p>
-<p>{1, 2, 3, 4, 5, 6} is equivalent to {3, 6, 4, 1, 2, 5}<br>{1, 2, 3, 4, 5, 6} is distinct from {1, 2, 3, 4, 5, 9}</p>
-<p>But because we are allowing 6 and 9 to be reversed, the two distinct sets in the last example both represent the extended set {1, 2, 3, 4, 5, 6, 9} for the purpose of forming 2-digit numbers.</p>
+<blockquote>
+<p>$\{1, 2, 3, 4, 5, 6\}$ is equivalent to $\{3, 6, 4, 1, 2, 5\}$ <br /><br>$\{1, 2, 3, 4, 5, 6\}$ is distinct from $\{1, 2, 3, 4, 5, 9\}$</p>
+</blockquote>
+<p>But because we are allowing $6$ and $9$ to be reversed, the two distinct sets in the last example both represent the extended set $\{1, 2, 3, 4, 5, 6, 9\}$ for the purpose of forming $2$-digit numbers.</p>
 <p>How many distinct arrangements of the two cubes allow for all of the square numbers to be displayed?</p>
 <hr>
-<p><strong>立方体数字对</strong></p>
-<p>在一个立方体的六个面上分别标上不同的数字（从0到9），对另一个立方体也如法炮制。将这两个立方体按不同的方向并排摆放，我们可以得到各种各样的两位数。</p>
-<p>例如，平方数64可以通过这样摆放获得：</p>
-<center><img src="https://projecteuler.net/project/images/p090.gif" alt=""></center>
+<h2 id="立方体数字对"><a href="#立方体数字对" class="headerlink" title="立方体数字对"></a><strong>立方体数字对</strong></h2><p>考虑两个立方体，每个立方体的六个面上标有六个不同的、$0$至$9$之间的数字。将这两个立方体并排摆放，我们就可以得到一系列两位数。</p>
+<p>例如，平方数$64$可以通过这样摆放获得：</p>
+<center><img src="https://projecteuler.net/project/images/p090.png" alt=""></center>
 
-<p>事实上，通过仔细地选择两个立方体上的数字，我们可以摆放出所有小于100的平方数：01、04、09、16、25、36、49、64和81。</p>
-<p>例如，其中一种方式就是在一个立方体上标上{0, 5, 6, 7, 8, 9}，在另一个立方体上标上{1, 2, 3, 4, 8, 9}。</p>
-<p>在这个问题中，我们允许将标有6或9的面颠倒过来互相表示，只有这样，如{0, 5, 6, 7, 8, 9}和{1, 2, 3, 4, 6, 7}这样本来无法表示09的标法，才能够摆放出全部九个平方数。</p>
+<p>事实上，通过精心选择两个立方体上的数字，我们可以摆放出所有小于$100$的平方数：$01$、$04$、$09$、$16$、$25$、$36$、$49$、$64$和$81$。</p>
+<p>例如，其中一种方式是，在一个立方体上标上$\{0,5, 6, 7, 8, 9\}$，在另一个立方体上标上$\{1, 2, 3, 4, 8, 9\}$。</p>
+<p>在本题中，我们允许将标有$6$或$9$的面颠倒过来互相表示，只有这样，如$\{0, 5, 6, 7, 8, 9\}$和$\{1, 2, 3, 4, 6, 7\}$这样本来无法表示$09$的标法，才能够摆放出全部九个平方数。</p>
 <p>在考虑什么是不同的标法时，我们关注的是立方体上有哪些数字，而不关心它们的顺序。</p>
-<p>{1, 2, 3, 4, 5, 6}等价于{3, 6, 4, 1, 2, 5}<br>{1, 2, 3, 4, 5, 6}不同于{1, 2, 3, 4, 5, 9}</p>
-<p>但因为我们允许在摆放两位数时将6和9颠倒过来互相表示，这个例子中的两个不同的集合都可以代表拓展集{1, 2, 3, 4, 5, 6, 9}。</p>
-<p>对这两个立方体有多少中不同的标法可以摆放出所有的平方数？</p>
+<blockquote>
+<p>$\{1, 2, 3, 4, 5, 6\}$等价于$\{3, 6, 4, 1, 2, 5\}$ <br /><br>$\{1, 2, 3, 4, 5, 6\}$不同于$\{1, 2, 3, 4, 5, 9\}$</p>
+</blockquote>
+<p>但因为我们允许将$6$和$9$颠倒过来互相表示，后一个例子中的两种不同标法都可以拓展为$\{1, 2, 3, 4, 5, 6, 9\}$。</p>
+<p>对这两个立方体，有多少种不同的标法，可以摆放出所有九个平方数？</p>
 <hr>
 
     </div>
@@ -337,7 +339,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-90"><span class="nav-text">Problem 90</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-90"><span class="nav-text">Problem 90</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cube-digit-pairs"><span class="nav-text">Cube digit pairs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#立方体数字对"><span class="nav-text">立方体数字对</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

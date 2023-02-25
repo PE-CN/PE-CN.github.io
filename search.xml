@@ -22604,21 +22604,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/86/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-86"><a href="#Problem-86" class="headerlink" title="Problem 86"></a><a href="https://projecteuler.net/problem=86" target="_blank" rel="noopener">Problem 86</a></h1><hr>
-<p><strong>Cuboid route</strong></p>
-<p>A spider, S, sits in one corner of a cuboid room, measuring 6 by 5 by 3, and a fly, F, sits in the opposite corner. By travelling on the surfaces of the room the shortest “straight line” distance from S to F is 10 and the path is shown on the diagram.</p>
-<center><img src="https://projecteuler.net/project/images/p086.gif" alt=""></center>
+<h2 id="Cuboid-route"><a href="#Cuboid-route" class="headerlink" title="Cuboid route"></a><strong>Cuboid route</strong></h2><p>A spider, S, sits in one corner of a cuboid room, measuring $6$ by $5$ by $3$, and a fly, F, sits in the opposite corner. By travelling on the surfaces of the room the shortest “straight line” distance from S to F is $10$ and the path is shown on the diagram.</p>
+<center><img src="https://projecteuler.net/project/images/p086.png" alt=""></center>
 
 <p>However, there are up to three “shortest” path candidates for any given cuboid and the shortest route doesn’t always have integer length.</p>
-<p>It can be shown that there are exactly 2060 distinct cuboids, ignoring rotations, with integer dimensions, up to a maximum size of M by M by M, for which the shortest route has integer length when M = 100. This is the least value of M for which the number of solutions first exceeds two thousand; the number of solutions when M = 99 is 1975.</p>
-<p>Find the least value of M such that the number of solutions first exceeds one million.</p>
+<p>It can be shown that there are exactly $2060$ distinct cuboids, ignoring rotations, with integer dimensions, up to a maximum size of $M$ by $M$ by $M$, for which the shortest route has integer length when $M = 100$. This is the least value of $M$ for which the number of solutions first exceeds two thousand; the number of solutions when $M = 99$ is $1975$.</p>
+<p>Find the least value of $M$ such that the number of solutions first exceeds one million.</p>
 <hr>
-<p><strong>长方体路径</strong></p>
-<p>蜘蛛S位于一个6乘5乘3大小的长方体屋子的一角，而苍蝇F则恰好位于其对角。沿着屋子的表面，从S到F的最短“直线”距离是10，路径如下图所示：</p>
-<center><img src="https://projecteuler.net/project/images/p086.gif" alt=""></center>
+<h2 id="长方体路径"><a href="#长方体路径" class="headerlink" title="长方体路径"></a><strong>长方体路径</strong></h2><p>蜘蛛S位于一个大小为$6 \times 5 \times 3$的长方体房间的一角，而苍蝇F则恰好位于其对角。沿着房间的墙面，从S到F的最短“直线”距离是$10$，路径如下图所示：</p>
+<center><img src="https://projecteuler.net/project/images/p086.png" alt=""></center>
 
-<p>然而，对于任意长方体，“最短”路径实际上一共有三种可能；而且，最短路径的长度也并不一定为整数。</p>
-<p>当M=100时，若不考虑旋转，所有长、宽、高均不超过M且为整数的长方体中，对角的最短距离是整数的恰好有2060个；这是使得该数目超过两千的最小M值；当M=99时，该数目为1975。</p>
-<p>找出使得该数目超过一百万的最小M值。</p>
+<p>对于任意长方体房间，对角顶点间的“最短”路径总是有三种可能的方案；此外，最短路径的长度也并不一定为整数。</p>
+<p>当$M=100$时，若不考虑旋转，在所有长、宽、高均不超过$M$且为整数的长方体中，对角顶点之间的最短距离是整数的恰好有$2060$个。$M=100$也是使得满足条件的长方体数目超过两千的最小值：当$M=99$时，该数目为$1975$。</p>
+<p>求使得满足条件的长方体数目超过一百万的最小$M$值。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22717,23 +22715,21 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/88/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-88"><a href="#Problem-88" class="headerlink" title="Problem 88"></a><a href="https://projecteuler.net/problem=88" target="_blank" rel="noopener">Problem 88</a></h1><hr>
-<p><strong>Product-sum numbers</strong></p>
-<p>A natural number, N, that can be written as the sum and product of a given set of at least two natural numbers, {a<sub>1</sub>, a<sub>2</sub>, … , a<sub>k</sub>} is called a product-sum number: N = a<sub>1</sub> + a<sub>2</sub> + … + a<sub>k</sub> = a<sub>1</sub> × a<sub>2</sub> × … × a<sub>k</sub>.</p>
-<p>For example, 6 = 1 + 2 + 3 = 1 × 2 × 3.</p>
-<p>For a given set of size, k, we shall call the smallest N with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, k = 2, 3, 4, 5, and 6 are as follows.</p>
-<p>k=2: 4 = 2 × 2 = 2 + 2<br>k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3<br>k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4<br>k=5: 8 = 1 × 1 × 2 × 2 × 2  = 1 + 1 + 2 + 2 + 2<br>k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6</p>
-<p>Hence for 2≤k≤6, the sum of all the minimal product-sum numbers is 4+6+8+12 = 30; note that 8 is only counted once in the sum.</p>
-<p>In fact, as the complete set of minimal product-sum numbers for 2≤k≤12 is {4, 6, 8, 12, 15, 16}, the sum is 61.</p>
-<p>What is the sum of all the minimal product-sum numbers for 2≤k≤12000?</p>
+<h2 id="Product-sum-numbers"><a href="#Product-sum-numbers" class="headerlink" title="Product-sum numbers"></a><strong>Product-sum numbers</strong></h2><p>A natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number: $N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$.</p>
+<p>For example, $6 = 1 + 2 + 3 = 1 \times 2 \times 3$.</p>
+<p>For a given set of size, $k$, we shall call the smallest $N$ with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, $k = 2$, $3$, $4$, $5$, and $6$ are as follows.</p>
+<p>$$<br>\begin{aligned}<br>k=2&amp;: 4 = 2 \times 2 = 2 + 2 \\<br>k=3&amp;: 6 = 1 \times 2 \times 3 = 1 + 2 + 3 \\<br>k=4&amp;: 8 = 1 \times 1 \times 2 \times 4 = 1 + 1 + 2 + 4 \\<br>k=5&amp;: 8 = 1 \times 1 \times 2 \times 2 \times 2  = 1 + 1 + 2 + 2 + 2 \\<br>k=6&amp;: 12 = 1 \times 1 \times 1 \times 1 \times 2 \times 6 = 1 + 1 + 1 + 1 + 2 + 6<br>\end{aligned}<br>$$</p>
+<p>Hence for $2\le k\le 6$, the sum of all the minimal product-sum numbers is $4+6+8+12 = 30$; note that $8$ is only counted once in the sum.</p>
+<p>In fact, as the complete set of minimal product-sum numbers for $2 \le k\le 12$ is $\{4, 6, 8, 12, 15, 16\}$, the sum is $61$.</p>
+<p>What is the sum of all the minimal product-sum numbers for $2 \le k \le 12000$?</p>
 <hr>
-<p><strong>积和数</strong></p>
-<p>若自然数N能够同时表示成一组至少两个自然数{a<sub>1</sub>, a<sub>2</sub>, … , a<sub>k</sub>}的积和和，也即N = a<sub>1</sub> + a<sub>2</sub> + … + a<sub>k</sub> = a<sub>1</sub> × a<sub>2</sub> × … × a<sub>k</sub>，则N被称为积和数。</p>
-<p>例如，6是积和数，因为6 = 1 + 2 + 3 = 1 × 2 × 3。</p>
-<p>给定集合的规模k，我们称满足上述性质的最小N值为最小积和数。当k = 2、3、4、5、6时，最小积和数如下所示：</p>
-<p>k=2: 4 = 2 × 2 = 2 + 2<br>k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3<br>k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4<br>k=5: 8 = 1 × 1 × 2 × 2 × 2  = 1 + 1 + 2 + 2 + 2<br>k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6</p>
-<p>因此，对于2≤k≤6，所有的最小积和数的和为4+6+8+12 = 30；注意8只被计算了一次。</p>
-<p>已知对于2≤k≤12，所有最小积和数构成的集合是{4, 6, 8, 12, 15, 16}，这些数的和是61。</p>
-<p>对于2≤k≤12000，所有最小积和数的和是多少？</p>
+<h2 id="积和数"><a href="#积和数" class="headerlink" title="积和数"></a><strong>积和数</strong></h2><p>若自然数$N$能够同时表示成一组至少两个自然数$\{a_1,a_2,\ldots,a_k\}$的积与和，也即$N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$，则称之为积和数。</p>
+<p>例如，$6$是积和数，因为$6 = 1 + 2 + 3 = 1 \times 2 \times 3$。</p>
+<p>给定这一组自然数的数目$k$，满足上述性质的最小$N$值被称为最小积和数。当$k = 2$、$3$、$4$、$5$、$6$时，最小积和数如下所示：</p>
+<p>$$<br>\begin{aligned}<br>k=2&amp;: 4 = 2 \times 2 = 2 + 2 \\<br>k=3&amp;: 6 = 1 \times 2 \times 3 = 1 + 2 + 3 \\<br>k=4&amp;: 8 = 1 \times 1 \times 2 \times 4 = 1 + 1 + 2 + 4 \\<br>k=5&amp;: 8 = 1 \times 1 \times 2 \times 2 \times 2  = 1 + 1 + 2 + 2 + 2 \\<br>k=6&amp;: 12 = 1 \times 1 \times 1 \times 1 \times 2 \times 6 = 1 + 1 + 1 + 1 + 2 + 6<br>\end{aligned}<br>$$</p>
+<p>因此，对于$2 \le k\le 6$，所有的最小积和数之和为$4+6+8+12 = 30$；注意$8$只被计算了一次。</p>
+<p>已知对于$2 \le k\le 12$，所有最小积和数构成的集合是$\{4, 6, 8, 12, 15, 16\}$，这些数之和是$61$。</p>
+<p>对于$2 \le k \le 12000$，所有最小积和数之和是多少？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22759,31 +22755,33 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/90/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-90"><a href="#Problem-90" class="headerlink" title="Problem 90"></a><a href="https://projecteuler.net/problem=90" target="_blank" rel="noopener">Problem 90</a></h1><hr>
-<p><strong>Cube digit pairs</strong></p>
-<p>Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of 2-digit numbers.</p>
-<p>For example, the square number 64 could be formed:</p>
-<center><img src="https://projecteuler.net/project/images/p090.gif" alt=""></center>
+<h2 id="Cube-digit-pairs"><a href="#Cube-digit-pairs" class="headerlink" title="Cube digit pairs"></a><strong>Cube digit pairs</strong></h2><p>Each of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of $2$-digit numbers.</p>
+<p>For example, the square number $64$ could be formed:</p>
+<center><img src="https://projecteuler.net/project/images/p090.png" alt=""></center>
 
-<p>In fact, by carefully choosing the digits on both cubes it is possible to display all of the square numbers below one-hundred: 01, 04, 09, 16, 25, 36, 49, 64, and 81.</p>
-<p>For example, one way this can be achieved is by placing {0, 5, 6, 7, 8, 9} on one cube and {1, 2, 3, 4, 8, 9} on the other cube.</p>
-<p>However, for this problem we shall allow the 6 or 9 to be turned upside-down so that an arrangement like {0, 5, 6, 7, 8, 9} and {1, 2, 3, 4, 6, 7} allows for all nine square numbers to be displayed; otherwise it would be impossible to obtain 09.</p>
+<p>In fact, by carefully choosing the digits on both cubes it is possible to display all of the square numbers below one-hundred: $01$, $04$, $09$, $16$, $25$, $36$, $49$, $64$, and $81$.</p>
+<p>For example, one way this can be achieved is by placing $\{0, 5, 6, 7, 8, 9\}$ on one cube and $\{1, 2, 3, 4, 8, 9\}$ on the other cube.</p>
+<p>However, for this problem we shall allow the $6$ or $9$ to be turned upside-down so that an arrangement like $\{0, 5, 6, 7, 8, 9\}$ and $\{1, 2, 3, 4, 6, 7\}$ allows for all nine square numbers to be displayed; otherwise it would be impossible to obtain $09$.</p>
 <p>In determining a distinct arrangement we are interested in the digits on each cube, not the order.</p>
-<p>{1, 2, 3, 4, 5, 6} is equivalent to {3, 6, 4, 1, 2, 5}<br>{1, 2, 3, 4, 5, 6} is distinct from {1, 2, 3, 4, 5, 9}</p>
-<p>But because we are allowing 6 and 9 to be reversed, the two distinct sets in the last example both represent the extended set {1, 2, 3, 4, 5, 6, 9} for the purpose of forming 2-digit numbers.</p>
+<blockquote>
+<p>$\{1, 2, 3, 4, 5, 6\}$ is equivalent to $\{3, 6, 4, 1, 2, 5\}$ <br /><br>$\{1, 2, 3, 4, 5, 6\}$ is distinct from $\{1, 2, 3, 4, 5, 9\}$</p>
+</blockquote>
+<p>But because we are allowing $6$ and $9$ to be reversed, the two distinct sets in the last example both represent the extended set $\{1, 2, 3, 4, 5, 6, 9\}$ for the purpose of forming $2$-digit numbers.</p>
 <p>How many distinct arrangements of the two cubes allow for all of the square numbers to be displayed?</p>
 <hr>
-<p><strong>立方体数字对</strong></p>
-<p>在一个立方体的六个面上分别标上不同的数字（从0到9），对另一个立方体也如法炮制。将这两个立方体按不同的方向并排摆放，我们可以得到各种各样的两位数。</p>
-<p>例如，平方数64可以通过这样摆放获得：</p>
-<center><img src="https://projecteuler.net/project/images/p090.gif" alt=""></center>
+<h2 id="立方体数字对"><a href="#立方体数字对" class="headerlink" title="立方体数字对"></a><strong>立方体数字对</strong></h2><p>考虑两个立方体，每个立方体的六个面上标有六个不同的、$0$至$9$之间的数字。将这两个立方体并排摆放，我们就可以得到一系列两位数。</p>
+<p>例如，平方数$64$可以通过这样摆放获得：</p>
+<center><img src="https://projecteuler.net/project/images/p090.png" alt=""></center>
 
-<p>事实上，通过仔细地选择两个立方体上的数字，我们可以摆放出所有小于100的平方数：01、04、09、16、25、36、49、64和81。</p>
-<p>例如，其中一种方式就是在一个立方体上标上{0, 5, 6, 7, 8, 9}，在另一个立方体上标上{1, 2, 3, 4, 8, 9}。</p>
-<p>在这个问题中，我们允许将标有6或9的面颠倒过来互相表示，只有这样，如{0, 5, 6, 7, 8, 9}和{1, 2, 3, 4, 6, 7}这样本来无法表示09的标法，才能够摆放出全部九个平方数。</p>
+<p>事实上，通过精心选择两个立方体上的数字，我们可以摆放出所有小于$100$的平方数：$01$、$04$、$09$、$16$、$25$、$36$、$49$、$64$和$81$。</p>
+<p>例如，其中一种方式是，在一个立方体上标上$\{0,5, 6, 7, 8, 9\}$，在另一个立方体上标上$\{1, 2, 3, 4, 8, 9\}$。</p>
+<p>在本题中，我们允许将标有$6$或$9$的面颠倒过来互相表示，只有这样，如$\{0, 5, 6, 7, 8, 9\}$和$\{1, 2, 3, 4, 6, 7\}$这样本来无法表示$09$的标法，才能够摆放出全部九个平方数。</p>
 <p>在考虑什么是不同的标法时，我们关注的是立方体上有哪些数字，而不关心它们的顺序。</p>
-<p>{1, 2, 3, 4, 5, 6}等价于{3, 6, 4, 1, 2, 5}<br>{1, 2, 3, 4, 5, 6}不同于{1, 2, 3, 4, 5, 9}</p>
-<p>但因为我们允许在摆放两位数时将6和9颠倒过来互相表示，这个例子中的两个不同的集合都可以代表拓展集{1, 2, 3, 4, 5, 6, 9}。</p>
-<p>对这两个立方体有多少中不同的标法可以摆放出所有的平方数？</p>
+<blockquote>
+<p>$\{1, 2, 3, 4, 5, 6\}$等价于$\{3, 6, 4, 1, 2, 5\}$ <br /><br>$\{1, 2, 3, 4, 5, 6\}$不同于$\{1, 2, 3, 4, 5, 9\}$</p>
+</blockquote>
+<p>但因为我们允许将$6$和$9$颠倒过来互相表示，后一个例子中的两种不同标法都可以拓展为$\{1, 2, 3, 4, 5, 6, 9\}$。</p>
+<p>对这两个立方体，有多少种不同的标法，可以摆放出所有九个平方数？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22792,15 +22790,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/87/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-87"><a href="#Problem-87" class="headerlink" title="Problem 87"></a><a href="https://projecteuler.net/problem=87" target="_blank" rel="noopener">Problem 87</a></h1><hr>
-<p><strong>Prime power triples</strong></p>
-<p>The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is 28. In fact, there are exactly four numbers below fifty that can be expressed in such a way:</p>
-<p>28 = 2<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>33 = 3<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>49 = 5<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>47 = 2<sup>2</sup> + 3<sup>3</sup> + 2<sup>4</sup></p>
+<h2 id="Prime-power-triples"><a href="#Prime-power-triples" class="headerlink" title="Prime power triples"></a><strong>Prime power triples</strong></h2><p>The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $28$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:</p>
+<p>$$<br>\begin{aligned}<br>28 &amp;= 2^2+2^3+2^4 \\<br>33 &amp;= 3^2+2^3+2^4 \\<br>49 &amp;= 5^2+2^3+2^4 \\<br>47 &amp;= 2^2+3^3+2^4<br>\end{aligned}<br>$$</p>
 <p>How many numbers below fifty million can be expressed as the sum of a prime square, prime cube, and prime fourth power?</p>
 <hr>
-<p><strong>素数幂三元组</strong></p>
-<p>最小的可以表示为一个素数的平方，加上一个素数的立方，再加上一个素数的四次方的数是28。实际上，在小于50的数中，一共有4个数满足这一性质：</p>
-<p>28 = 2<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>33 = 3<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>49 = 5<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>47 = 2<sup>2</sup> + 3<sup>3</sup> + 2<sup>4</sup></p>
-<p>有多少个小于五千万的数，可以表示为一个素数的平方，加上一个素数的立方，再加上一个素数的四次方？</p>
+<h2 id="素数幂三元组"><a href="#素数幂三元组" class="headerlink" title="素数幂三元组"></a><strong>素数幂三元组</strong></h2><p>最小的、可以表示为一个素数的平方、一个素数的立方和一个素数的四次方之和的数是$28$。实际上，在小于$50$的数中，一共有$4$个数满足这一性质：</p>
+<p>$$<br>\begin{aligned}<br>28 &amp;= 2^2+2^3+2^4 \\<br>33 &amp;= 3^2+2^3+2^4 \\<br>49 &amp;= 5^2+2^3+2^4 \\<br>47 &amp;= 2^2+3^3+2^4<br>\end{aligned}<br>$$</p>
+<p>在小于五千万的数中，有多少个数满足上述性质？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22878,22 +22874,28 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/89/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-89"><a href="#Problem-89" class="headerlink" title="Problem 89"></a><a href="https://projecteuler.net/problem=89" target="_blank" rel="noopener">Problem 89</a></h1><hr>
-<p><strong>Roman numerals</strong></p>
-<p>For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a “best” way of writing a particular number.</p>
+<h2 id="Roman-numerals"><a href="#Roman-numerals" class="headerlink" title="Roman numerals"></a><strong>Roman numerals</strong></h2><p>For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a “best” way of writing a particular number.</p>
 <p>For example, it would appear that there are at least six ways of writing the number sixteen:</p>
-<p><span style="font-family:courier new,monospace;">IIIIIIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VVIIIIII</span><br><span style="font-family:courier new,monospace;">XIIIIII</span><br><span style="font-family:courier new,monospace;">VVVI</span><br><span style="font-family:courier new,monospace;">XVI</span></p>
+<blockquote>
+<span style="font-family:courier new,monospace;">IIIIIIIIIIIIIIII</span><br />
+<span style="font-family:courier new,monospace;">VIIIIIIIIIII</span><br />
+<span style="font-family:courier new,monospace;">VVIIIIII</span><br />
+<span style="font-family:courier new,monospace;">XIIIIII</span><br />
+<span style="font-family:courier new,monospace;">VVVI</span><br />
+<span style="font-family:courier new,monospace;">XVI</span>
+</blockquote>
+
 <p>However, according to the rules only <span style="font-family:courier new,monospace;">XIIIIII</span> and <span style="font-family:courier new,monospace;">XVI</span> are valid, and the last example is considered to be the most efficient, as it uses the least number of numerals.</p>
 <p>The 11K text file, <a href="https://projecteuler.net/project/resources/p089_roman.txt" target="_blank" rel="noopener">roman.txt</a> (right click and ‘Save Link/Target As…’), contains one thousand numbers written in valid, but not necessarily minimal, Roman numerals; see <a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">About… Roman Numerals</a> for the definitive rules for this problem.</p>
 <p>Find the number of characters saved by writing each of these in their minimal form.</p>
 <p>Note: You can assume that all the Roman numerals in the file contain no more than four consecutive identical units.</p>
 <hr>
-<p><strong>罗马数字</strong></p>
-<p>要正确地用罗马数字表达一个数，必须遵循一些基本规则。尽管符合规则的写法有时会多于一种，但对每个数来说总是存在一种“最好的”写法。</p>
-<p>例如，数16就至少有六种写法：</p>
+<h2 id="罗马数字"><a href="#罗马数字" class="headerlink" title="罗马数字"></a><strong>罗马数字</strong></h2><p>要正确地用罗马数字表达一个数，必须遵循一些基本规则。尽管符合规则的写法有时会多于一种，但对每个数来说总是存在一种“最好的”写法。</p>
+<p>例如，至少有六种写法可以表达十六这个数：</p>
 <p><span style="font-family:courier new,monospace;">IIIIIIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VVIIIIII</span><br><span style="font-family:courier new,monospace;">XIIIIII</span><br><span style="font-family:courier new,monospace;">VVVI</span><br><span style="font-family:courier new,monospace;">XVI</span></p>
 <p>然而，根据规则，只有<span style="font-family:courier new,monospace;">XIIIIII</span>和<span style="font-family:courier new,monospace;">XVI</span>是合理的写法，而后一种因为使用了最少的数字而被认为是最有效的写法。</p>
-<p>在这个11K的文本文件<a href="https://projecteuler.net/project/resources/p089_roman.txt" target="_blank" rel="noopener">roman.txt</a> （右击并选择“目标另存为……”）中包含了一千个合理的罗马数字写法，但并不都是最有效的写法；有关罗马数字的明确规则，可以参考<a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">关于罗马数字</a>。</p>
-<p>求出将这些数都写成最有效的写法所节省的字符数。</p>
+<p>在这个11K的文本文件<a href="https://projecteuler.net/project/resources/p089_roman.txt" target="_blank" rel="noopener">roman.txt</a> （右击并选择“目标另存为……”）中包含了一千个合理的罗马数字写法，但并不都是最有效的写法；有关罗马数字的明确规则，可以参考<a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">“关于罗马数字”</a>。</p>
+<p>如果将这些数都写成最有效的写法，求所能节省的字符数。</p>
 <p>注意：你可以假定文件中的所有罗马数字写法都不包含连续超过四个相同字符。</p>
 <hr>
 ]]></content>

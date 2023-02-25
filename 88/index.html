@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 88 Product-sum numbers A natural number, N, that can be written as the sum and product of a given set of at least two natural numbers, {a1, a2, … , ak} is called a product-sum number: N &#x3D; a1">
+  <meta name="description" content="Problem 88 Product-sum numbersA natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 88">
 <meta property="og:url" content="http://yoursite.com/88/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 88 Product-sum numbers A natural number, N, that can be written as the sum and product of a given set of at least two natural numbers, {a1, a2, … , ak} is called a product-sum number: N &#x3D; a1">
+<meta property="og:description" content="Problem 88 Product-sum numbersA natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2005-02-04T23:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-07T15:30:46.000Z">
+<meta property="article:modified_time" content="2023-02-25T22:22:48.760Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-07 11:30:46" itemprop="dateModified" datetime="2015-10-07T11:30:46-04:00">2015-10-07</time>
+                <time title="更新时间：2023-02-25 17:22:48" itemprop="dateModified" datetime="2023-02-25T17:22:48-05:00">2023-02-25</time>
               </span>
 
           
@@ -227,23 +227,21 @@
       
         <hr>
 <h1 id="Problem-88"><a href="#Problem-88" class="headerlink" title="Problem 88"></a><a href="https://projecteuler.net/problem=88" target="_blank" rel="noopener">Problem 88</a></h1><hr>
-<p><strong>Product-sum numbers</strong></p>
-<p>A natural number, N, that can be written as the sum and product of a given set of at least two natural numbers, {a<sub>1</sub>, a<sub>2</sub>, … , a<sub>k</sub>} is called a product-sum number: N = a<sub>1</sub> + a<sub>2</sub> + … + a<sub>k</sub> = a<sub>1</sub> × a<sub>2</sub> × … × a<sub>k</sub>.</p>
-<p>For example, 6 = 1 + 2 + 3 = 1 × 2 × 3.</p>
-<p>For a given set of size, k, we shall call the smallest N with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, k = 2, 3, 4, 5, and 6 are as follows.</p>
-<p>k=2: 4 = 2 × 2 = 2 + 2<br>k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3<br>k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4<br>k=5: 8 = 1 × 1 × 2 × 2 × 2  = 1 + 1 + 2 + 2 + 2<br>k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6</p>
-<p>Hence for 2≤k≤6, the sum of all the minimal product-sum numbers is 4+6+8+12 = 30; note that 8 is only counted once in the sum.</p>
-<p>In fact, as the complete set of minimal product-sum numbers for 2≤k≤12 is {4, 6, 8, 12, 15, 16}, the sum is 61.</p>
-<p>What is the sum of all the minimal product-sum numbers for 2≤k≤12000?</p>
+<h2 id="Product-sum-numbers"><a href="#Product-sum-numbers" class="headerlink" title="Product-sum numbers"></a><strong>Product-sum numbers</strong></h2><p>A natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number: $N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$.</p>
+<p>For example, $6 = 1 + 2 + 3 = 1 \times 2 \times 3$.</p>
+<p>For a given set of size, $k$, we shall call the smallest $N$ with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, $k = 2$, $3$, $4$, $5$, and $6$ are as follows.</p>
+<p>$$<br>\begin{aligned}<br>k=2&amp;: 4 = 2 \times 2 = 2 + 2 \\<br>k=3&amp;: 6 = 1 \times 2 \times 3 = 1 + 2 + 3 \\<br>k=4&amp;: 8 = 1 \times 1 \times 2 \times 4 = 1 + 1 + 2 + 4 \\<br>k=5&amp;: 8 = 1 \times 1 \times 2 \times 2 \times 2  = 1 + 1 + 2 + 2 + 2 \\<br>k=6&amp;: 12 = 1 \times 1 \times 1 \times 1 \times 2 \times 6 = 1 + 1 + 1 + 1 + 2 + 6<br>\end{aligned}<br>$$</p>
+<p>Hence for $2\le k\le 6$, the sum of all the minimal product-sum numbers is $4+6+8+12 = 30$; note that $8$ is only counted once in the sum.</p>
+<p>In fact, as the complete set of minimal product-sum numbers for $2 \le k\le 12$ is $\{4, 6, 8, 12, 15, 16\}$, the sum is $61$.</p>
+<p>What is the sum of all the minimal product-sum numbers for $2 \le k \le 12000$?</p>
 <hr>
-<p><strong>积和数</strong></p>
-<p>若自然数N能够同时表示成一组至少两个自然数{a<sub>1</sub>, a<sub>2</sub>, … , a<sub>k</sub>}的积和和，也即N = a<sub>1</sub> + a<sub>2</sub> + … + a<sub>k</sub> = a<sub>1</sub> × a<sub>2</sub> × … × a<sub>k</sub>，则N被称为积和数。</p>
-<p>例如，6是积和数，因为6 = 1 + 2 + 3 = 1 × 2 × 3。</p>
-<p>给定集合的规模k，我们称满足上述性质的最小N值为最小积和数。当k = 2、3、4、5、6时，最小积和数如下所示：</p>
-<p>k=2: 4 = 2 × 2 = 2 + 2<br>k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3<br>k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4<br>k=5: 8 = 1 × 1 × 2 × 2 × 2  = 1 + 1 + 2 + 2 + 2<br>k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6</p>
-<p>因此，对于2≤k≤6，所有的最小积和数的和为4+6+8+12 = 30；注意8只被计算了一次。</p>
-<p>已知对于2≤k≤12，所有最小积和数构成的集合是{4, 6, 8, 12, 15, 16}，这些数的和是61。</p>
-<p>对于2≤k≤12000，所有最小积和数的和是多少？</p>
+<h2 id="积和数"><a href="#积和数" class="headerlink" title="积和数"></a><strong>积和数</strong></h2><p>若自然数$N$能够同时表示成一组至少两个自然数$\{a_1,a_2,\ldots,a_k\}$的积与和，也即$N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$，则称之为积和数。</p>
+<p>例如，$6$是积和数，因为$6 = 1 + 2 + 3 = 1 \times 2 \times 3$。</p>
+<p>给定这一组自然数的数目$k$，满足上述性质的最小$N$值被称为最小积和数。当$k = 2$、$3$、$4$、$5$、$6$时，最小积和数如下所示：</p>
+<p>$$<br>\begin{aligned}<br>k=2&amp;: 4 = 2 \times 2 = 2 + 2 \\<br>k=3&amp;: 6 = 1 \times 2 \times 3 = 1 + 2 + 3 \\<br>k=4&amp;: 8 = 1 \times 1 \times 2 \times 4 = 1 + 1 + 2 + 4 \\<br>k=5&amp;: 8 = 1 \times 1 \times 2 \times 2 \times 2  = 1 + 1 + 2 + 2 + 2 \\<br>k=6&amp;: 12 = 1 \times 1 \times 1 \times 1 \times 2 \times 6 = 1 + 1 + 1 + 1 + 2 + 6<br>\end{aligned}<br>$$</p>
+<p>因此，对于$2 \le k\le 6$，所有的最小积和数之和为$4+6+8+12 = 30$；注意$8$只被计算了一次。</p>
+<p>已知对于$2 \le k\le 12$，所有最小积和数构成的集合是$\{4, 6, 8, 12, 15, 16\}$，这些数之和是$61$。</p>
+<p>对于$2 \le k \le 12000$，所有最小积和数之和是多少？</p>
 <hr>
 
     </div>
@@ -326,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-88"><span class="nav-text">Problem 88</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-88"><span class="nav-text">Problem 88</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Product-sum-numbers"><span class="nav-text">Product-sum numbers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#积和数"><span class="nav-text">积和数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
