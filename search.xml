@@ -8671,7 +8671,7 @@ A(9, 2), B(2, -9), C(-6, 7)
 <p>An infinite sequence of real numbers $a(n)$ is defined for all integers $n$ as follows:</p>
 <center><img src="https://projecteuler.net/project/images/p330_formula.gif"></center>
 
-<p>For example,<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>with $e = 2.7182818\ldots$ being Euler’s constant.</p>
+<p>For example,<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{e-1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>with $e = 2.7182818\ldots$ being Euler’s constant.</p>
 <p>It can be shown that $a(n)$ is of the form $\frac{A(n)e+B(n)}{n!}$ for integers $A(n)$ and $B(n)$.<br>For example $a(10) = \frac{328161643 e − 652694486}{10!}$.</p>
 <p>Find $A(10^9) + B(10^9)$ and give your answer mod $77\ 777\ 777$.</p>
 <hr>
@@ -8679,7 +8679,7 @@ A(9, 2), B(2, -9), C(-6, 7)
 <p>无穷实数序列$a(n)$按如下方式定义:</p>
 <center><img src="https://projecteuler.net/project/images/p330_formula.gif"></center>
 
-<p>例如，<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>其中$e = 2.7182818\ldots$是欧拉常数。</p>
+<p>例如，<br>$$a(0)=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=e-1$$<br>$$a(1)=\frac{e-1}{1!}+\frac{1}{2!}+\frac{1}{3!}+…=2e-3$$<br>$$a(2)=\frac{2e-3}{1!}+\frac{e-1}{2!}+\frac{1}{3!}+…=\frac{7}{2}e-6$$<br>其中$e = 2.7182818\ldots$是欧拉常数。</p>
 <p>可以发现$a(n)$总是可以表达为$\frac{A(n)e+B(n)}{n!}$的形式，其中$A(n)$和$B(n)$均为整数。<br>例如$a(10) = \frac{328161643 e − 652694486}{10!}$。</p>
 <p>求$A(10^9) + B(10^9)$，并将你的答案模$77\ 777\ 777$取余。</p>
 <hr>
@@ -22805,19 +22805,17 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/92/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-92"><a href="#Problem-92" class="headerlink" title="Problem 92"></a><a href="https://projecteuler.net/problem=92" target="_blank" rel="noopener">Problem 92</a></h1><hr>
-<p><strong>Square digit chains</strong></p>
-<p>A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.</p>
+<h2 id="Square-digit-chains"><a href="#Square-digit-chains" class="headerlink" title="Square digit chains"></a><strong>Square digit chains</strong></h2><p>A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.</p>
 <p>For example,</p>
-<p>44 → 32 → 13 → 10 → <strong>1</strong> → <strong>1</strong><br>85 → <strong>89</strong> → 145 → 42 → 20 → 4 → 16 → 37 → 58 → <strong>89</strong></p>
-<p>Therefore any chain that arrives at 1 or 89 will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.</p>
-<p>How many starting numbers below ten million will arrive at 89?</p>
+<p>$$<br>\begin{aligned}<br>&amp; 44 \rightarrow 32 \rightarrow 13 \rightarrow 10 \rightarrow \textbf{1} \rightarrow \textbf{1}\\<br>&amp; 85 \rightarrow \textbf{89} \rightarrow 145 \rightarrow 42 \rightarrow 20 \rightarrow 4 \rightarrow 16 \rightarrow 37 \rightarrow 58 \rightarrow \textbf{89}<br>\end{aligned}<br>$$</p>
+<p>Therefore any chain that arrives at $1$ or $89$ will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at $1$ or $89$.</p>
+<p>How many starting numbers below ten million will arrive at $89$?</p>
 <hr>
-<p><strong>平方数字链</strong></p>
-<p>将一个数的所有数字的平方相加得到一个新的数，不断重复直到新的数已经出现过为止，这构成了一条数字链。</p>
-<p>例如，</p>
-<p>44 → 32 → 13 → 10 → <strong>1</strong> → <strong>1</strong><br>85 → <strong>89</strong> → 145 → 42 → 20 → 4 → 16 → 37 → 58 → <strong>89</strong></p>
-<p>可见，任何一个到达1或89的数字链都会陷入无尽的循环。更令人惊奇的是，从任意数开始，最终都会到达1或89。</p>
-<p>有多少个小于一千万的数最终会到达89？</p>
+<h2 id="平方数链"><a href="#平方数链" class="headerlink" title="平方数链"></a><strong>平方数链</strong></h2><p>从任意一个数开始，不断取其各位数字的平方和，直到出现重复，就得到了一条数链。</p>
+<p>例如：</p>
+<p>$$<br>\begin{aligned}<br>&amp; 44 \rightarrow 32 \rightarrow 13 \rightarrow 10 \rightarrow \textbf{1} \rightarrow \textbf{1}\\<br>&amp; 85 \rightarrow \textbf{89} \rightarrow 145 \rightarrow 42 \rightarrow 20 \rightarrow 4 \rightarrow 16 \rightarrow 37 \rightarrow 58 \rightarrow \textbf{89}<br>\end{aligned}<br>$$</p>
+<p>如上所示，只要数链中出现$1$或$89$，之后就会进入循环。最令人惊奇的是，从<i class=zh>任意</i>一个数开始，最终都必定会到达$1$或$89$。</p>
+<p>从任意小于一千万的数开始，有多少个最终会到达$89$？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22826,23 +22824,21 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/91/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-91"><a href="#Problem-91" class="headerlink" title="Problem 91"></a><a href="https://projecteuler.net/problem=91" target="_blank" rel="noopener">Problem 91</a></h1><hr>
-<p><strong>Right triangles with integer coordinates</strong></p>
-<p>The points P (x<sub>1</sub>, y<sub>1</sub>) and Q (x<sub>2</sub>, y<sub>2</sub>) are plotted at integer co-ordinates and are joined to the origin, O(0,0), to form ΔOPQ.</p>
-<center><img src="https://projecteuler.net/project/images/p091_1.gif" alt=""></center>
+<h2 id="Right-triangles-with-integer-coordinates"><a href="#Right-triangles-with-integer-coordinates" class="headerlink" title="Right triangles with integer coordinates"></a><strong>Right triangles with integer coordinates</strong></h2><p>The points $P(x_1,y_1)$ and $Q(x_2,y_2)$ are plotted at integer co-ordinates and are joined to the origin, $O(0,0)$, to form $\triangle OPQ$.</p>
+<center><img src="https://projecteuler.net/project/images/p091_1.png" alt=""></center>
 
-<p>There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between 0 and 2 inclusive; that is,0 ≤ x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub> ≤ 2.</p>
-<center><img src="https://projecteuler.net/project/images/p091_2.gif" alt=""></center>
+<p>There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between $0$ and $2$ inclusive; that is, $0 \le x_1, y_1, x_2, y_2 \le 2$.</p>
+<center><img src="https://projecteuler.net/project/images/p091_2.png" alt=""></center>
 
-<p>Given that 0 ≤ x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub> ≤ 50, how many right triangles can be formed?</p>
+<p>Given that $0 \le x_1, y_1, x_2, y_2 \le 50$, how many right triangles can be formed?</p>
 <hr>
-<p><strong>格点直角三角形</strong></p>
-<p>点P(x<sub>1</sub>, y<sub>1</sub>)和点Q(x<sub>2</sub>, y<sub>2</sub>)都是格点，并与原点O(0,0)构成ΔOPQ。</p>
-<center><img src="https://projecteuler.net/project/images/p091_1.gif" alt=""></center>
+<h2 id="格点直角三角形"><a href="#格点直角三角形" class="headerlink" title="格点直角三角形"></a><strong>格点直角三角形</strong></h2><p>考虑格点$P(x_1,y_1)$和$Q(x_2,y_2)$与原点$O(0,0)$相连构成的三角形$\triangle OPQ$。</p>
+<center><img src="https://projecteuler.net/project/images/p091_1.png" alt=""></center>
 
-<p>当点P和点Q的所有坐标都在0到2之间，也就是说0 ≤ x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub> ≤ 2时，恰好能构造出14个直角三角形。</p>
-<center><img src="https://projecteuler.net/project/images/p091_2.gif" alt=""></center>
+<p>当点$P$和点$Q$的坐标在$0$到$2$之间，也即$0 \le x_1, y_1, x_2, y_2 \le 2$时，恰好能构造出$14$个直角三角形。</p>
+<center><img src="https://projecteuler.net/project/images/p091_2.png" alt=""></center>
 
-<p>如果0 ≤ x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub> ≤ 50，能构造出多少个直角三角形？</p>
+<p>若$0 \le x_1, y_1, x_2, y_2 \le 50$，能构造出多少个直角三角形？</p>
 <hr>
 ]]></content>
   </entry>
@@ -22851,21 +22847,15 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/93/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-93"><a href="#Problem-93" class="headerlink" title="Problem 93"></a><a href="https://projecteuler.net/problem=93" target="_blank" rel="noopener">Problem 93</a></h1><hr>
-<p><strong>Arithmetic expressions</strong></p>
-<p>By using each of the digits from the set, {1, 2, 3, 4}, exactly once, and making use of the four arithmetic operations (+, −, *, /) and brackets/parentheses, it is possible to form different positive integer targets.</p>
-<p>For example,</p>
-<p>8 = (4 * (1 + 3)) / 2<br>14 = 4 * (3 + 1 / 2)<br>19 = 4 * (2 + 3) − 1<br>36 = 3 * 4 * (2 + 1)</p>
-<p>Note that concatenations of the digits, like 12 + 34, are not allowed.</p>
-<p>Using the set, {1, 2, 3, 4}, it is possible to obtain thirty-one different target numbers of which 36 is the maximum, and each of the numbers 1 to 28 can be obtained before encountering the first non-expressible number.</p>
-<p>Find the set of four distinct digits, a &lt; b &lt; c &lt; d, for which the longest set of consecutive positive integers, 1 to n, can be obtained, giving your answer as a string: abcd.</p>
+<h2 id="Arithmetic-expressions"><a href="#Arithmetic-expressions" class="headerlink" title="Arithmetic expressions"></a><strong>Arithmetic expressions</strong></h2><p>By using each of the digits from the set, $\{1, 2, 3, 4\}$, exactly once, and making use of the four arithmetic operations $(+, -, \times, /)$ and brackets/parentheses, it is possible to form different positive integer targets.</p>
+<p>For example,<br>$$<br>\begin{aligned}<br>8  &amp; = (4 \times (1 + 3)) / 2 \\<br>14 &amp; = 4 \times (3 + 1 / 2)   \\<br>19 &amp; = 4 \times (2 + 3) − 1   \\<br>36 &amp; = 3 \times 4 \times (2 + 1)<br>\end{aligned}<br>$$<br>Note that concatenations of the digits, like $12 + 34$, are not allowed.</p>
+<p>Using the set, $\{1, 2, 3, 4\}$, it is possible to obtain thirty-one different target numbers of which $36$ is the maximum, and each of the numbers $1$ to $28$ can be obtained before encountering the first non-expressible number.</p>
+<p>Find the set of four distinct digits, $a&lt;b&lt;c&lt;d$, for which the longest set of consecutive positive integers, $1$ to $n$, can be obtained, giving your answer as a string: $abcd$.</p>
 <hr>
-<p><strong>算术表达式</strong></p>
-<p>使用集合{1, 2, 3, 4}中每个数字恰好一次以及(+, −, *, /)四则运算和括号，可以得到不同的正整数。</p>
-<p>例如，</p>
-<p>8 = (4 * (1 + 3)) / 2<br>14 = 4 * (3 + 1 / 2)<br>19 = 4 * (2 + 3) − 1<br>36 = 3 * 4 * (2 + 1)</p>
-<p>注意不允许直接把数字连起来，如12 + 34。</p>
-<p>使用集合{1, 2, 3, 4}，可以得到31个不同的数，其中最大值是36，以及1到28之间所有的数。</p>
-<p>若使用包含有四个不同数字a &lt; b &lt; c &lt; d的集合可以得到从1到n之间所有的数，求其中使得n最大的集合，并将你的答案写成字符串：abcd。</p>
+<h2 id="算术表达式"><a href="#算术表达式" class="headerlink" title="算术表达式"></a><strong>算术表达式</strong></h2><p>使用集合$\{1, 2, 3, 4\}$中每个数字恰好一次，再加上四则运算$(+, -, \times, /)$和括号，可以表示许多不同的整数。</p>
+<p>例如：<br>$$<br>\begin{aligned}<br>8  &amp; = (4 \times (1 + 3)) / 2 \\<br>14 &amp; = 4 \times (3 + 1 / 2)   \\<br>19 &amp; = 4 \times (2 + 3) − 1   \\<br>36 &amp; = 3 \times 4 \times (2 + 1)<br>\end{aligned}<br>$$<br>注意不允许把数字连起来使用，比如$12 + 34$。</p>
+<p>使用集合$\{1, 2, 3, 4\}$，可以表示出$31$个不同的数，其中最大值是$36$，并且可以连续表示$1$至$28$之间的所有数。</p>
+<p>考虑所有四个不同数字$a&lt;b&lt;c&lt;d$构成的集合，求其中可以从$1$开始连续表示最多个正整数的集合，并以字符串$abcd$的形式给出你的答案。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22905,15 +22895,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/94/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-94"><a href="#Problem-94" class="headerlink" title="Problem 94"></a><a href="https://projecteuler.net/problem=94" target="_blank" rel="noopener">Problem 94</a></h1><hr>
-<p><strong>Almost equilateral triangles</strong></p>
-<p>It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the <i>almost equilateral triangle</i> 5-5-6 has an area of 12 square units.</p>
+<h2 id="Almost-equilateral-triangles"><a href="#Almost-equilateral-triangles" class="headerlink" title="Almost equilateral triangles"></a><strong>Almost equilateral triangles</strong></h2><p>It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the <i>almost equilateral triangle</i> $5-5-6$ has an area of $12$ square units.</p>
 <p>We shall define an <i>almost equilateral triangle</i> to be a triangle for which two sides are equal and the third differs by no more than one unit.</p>
-<p>Find the sum of the perimeters of all <i>almost equilateral triangles</i> with integral side lengths and area and whose perimeters do not exceed one billion (1,000,000,000).</p>
+<p>Find the sum of the perimeters of all <i>almost equilateral triangles</i> with integral side lengths and area and whose perimeters do not exceed one billion $(1,000,000,000)$.</p>
 <hr>
-<p><strong>几乎等边的三角形</strong></p>
-<p>可以证明，不存在边长为整数的等边三角形其面积也是整数。但是，存在<i class=zh>几乎等边的三角形</i> 5-5-6，其面积恰好为12。</p>
-<p>我们定义<i class=zh>几乎等边的三角形</i>是有两条边一样长，且第三边与这两边最多相差1的三角形。</p>
-<p>对于所有边长和面积均为整数且周长不超过十亿(1,000,000,000)的三角形，求其中<i class=zh>几乎等边的三角形</i>的周长之和。</p>
+<h2 id="几乎等边的三角形"><a href="#几乎等边的三角形" class="headerlink" title="几乎等边的三角形"></a><strong>几乎等边的三角形</strong></h2><p>容易证明，不存在边长和面积均为整数的等边三角形。但是，存在三边长$5-5-6$均为整数的<i class=zh>几乎等边的三角形</i> ，其面积$12$同样为整数。</p>
+<p>定义<i class=zh>几乎等边的三角形</i>为有两条边一样长且第三边长与这两边最多相差$1$的三角形。</p>
+<p>考虑所有边长和面积均为整数、周长不超过十亿$(1,000,000,000)$、<i class=zh>几乎等边的三角形</i>，求其周长之和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22958,23 +22946,19 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/95/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-95"><a href="#Problem-95" class="headerlink" title="Problem 95"></a><a href="https://projecteuler.net/problem=95" target="_blank" rel="noopener">Problem 95</a></h1><hr>
-<p><strong>Amicable chains</strong></p>
-<p>The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of 28 are 1, 2, 4, 7, and 14. As the sum of these divisors is equal to 28, we call it a perfect number.</p>
-<p>Interestingly the sum of the proper divisors of 220 is 284 and the sum of the proper divisors of 284 is 220, forming a chain of two numbers. For this reason, 220 and 284 are called an amicable pair.</p>
-<p>Perhaps less well known are longer chains. For example, starting with 12496, we form a chain of five numbers:</p>
-<center>12496 → 14288 → 15472 → 14536 → 14264 (→ 12496 → ...)</center>
-
+<h2 id="Amicable-chains"><a href="#Amicable-chains" class="headerlink" title="Amicable chains"></a><strong>Amicable chains</strong></h2><p>The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of $28$ are $1$, $2$, $4$, $7$, and $14$. As the sum of these divisors is equal to $28$, we call it a perfect number.</p>
+<p>Interestingly the sum of the proper divisors of $220$ is $284$ and the sum of the proper divisors of $284$ is $220$, forming a chain of two numbers. For this reason, $220$ and $284$ are called an amicable pair.</p>
+<p>Perhaps less well known are longer chains. For example, starting with $12496$, we form a chain of five numbers:</p>
+<p>$$ 12496 \rightarrow 14288 \rightarrow 15472 \rightarrow 14536 \rightarrow 14264 (\rightarrow 12496 \rightarrow \ldots)$$</p>
 <p>Since this chain returns to its starting point, it is called an amicable chain.</p>
 <p>Find the smallest member of the longest amicable chain with no element exceeding one million.</p>
 <hr>
-<p><strong>亲和数链</strong></p>
-<p>一个数除了本身之外的因数称为真因数。例如，28的真因数是1、2、4、7和14。这些真因数的和恰好为28，因此我们称28是完全数。</p>
-<p>有趣的是，220的真因数之和是284，同时284的真因数之和是220，构成了一个长度为2的链，我们也称之为亲和数对。</p>
-<p>有一些更长的序列并不太为人所知。例如，从12496出发，可以构成一个长度为5的链：</p>
-<center>12496 → 14288 → 15472 → 14536 → 14264 (→ 12496 → ...)</center>
-
-<p>由于这条链最后又回到了起点，我们称之为亲和数链。</p>
-<p>找出所有元素都不超过一百万的亲和数链中最长的那条，并给出其中最小的那个数。</p>
+<h2 id="亲和数链"><a href="#亲和数链" class="headerlink" title="亲和数链"></a><strong>亲和数链</strong></h2><p>一个数除了其本身之外的因数称为真因数。例如，$28$的真因数有$1$、$2$、$4$、$7$、$14$。这些真因数的和恰好为$28$，因此我们称$28$是完全数。</p>
+<p>有趣的是，$220$的真因数之和是$284$，同时$284$的真因数之和是$220$，构成了一个长度为$2$的链，我们称之为亲和数对。</p>
+<p>不怎么为人所知的是，存在满足类似性质但更长的序列。例如，从$12496$出发，可以构成一个长度为$5$的链：</p>
+<p>$$ 12496 \rightarrow 14288 \rightarrow 15472 \rightarrow 14536 \rightarrow 14264 (\rightarrow 12496 \rightarrow \ldots)$$</p>
+<p>这条链最后又回到了起点，我们称之为亲和数链。</p>
+<p>找出最长的、所有元素都不超过一百万的亲和数链，并给出其中最小的数。</p>
 <hr>
 ]]></content>
   </entry>
