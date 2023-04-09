@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 101 Optimum polynomial If we are presented with the first k terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial func">
+  <meta name="description" content="Problem 101 Optimum polynomialIf we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial fun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 101">
 <meta property="og:url" content="http://yoursite.com/101/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 101 Optimum polynomial If we are presented with the first k terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial func">
+<meta property="og:description" content="Problem 101 Optimum polynomialIf we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial fun">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2005-07-29T22:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-10T16:21:52.000Z">
+<meta property="article:modified_time" content="2023-04-09T19:54:33.154Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-10 12:21:52" itemprop="dateModified" datetime="2015-10-10T12:21:52-04:00">2015-10-10</time>
+                <time title="更新时间：2023-04-09 15:54:33" itemprop="dateModified" datetime="2023-04-09T15:54:33-04:00">2023-04-09</time>
               </span>
 
           
@@ -227,80 +227,32 @@
       
         <hr>
 <h1 id="Problem-101"><a href="#Problem-101" class="headerlink" title="Problem 101"></a><a href="https://projecteuler.net/problem=101" target="_blank" rel="noopener">Problem 101</a></h1><hr>
-<p><strong>Optimum polynomial</strong></p>
-<p>If we are presented with the first k terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
-<p>As an example, let us consider the sequence of cube numbers. This is defined by the generating function,<br>u<sub>n</sub> = n<sup>3</sup>: 1, 8, 27, 64, 125, 216, …</p>
-<p>Suppose we were only given the first two terms of this sequence. Working on the principle that “simple is best” we should assume a linear relationship and predict the next term to be 15 (common difference 7). Even if we were presented with the first three terms, by the same principle of simplicity, a quadratic relationship should be assumed.</p>
-<p>We shall define OP(k, n) to be the n<sup>th</sup> term of the optimum polynomial generating function for the first k terms of a sequence. It should be clear that OP(k, n) will accurately generate the terms of the sequence for n ≤ k, and potentially the <i>first incorrect term</i> (FIT) will be OP(k, k+1); in which case we shall call it a <i>bad OP</i> (BOP).</p>
-<p>As a basis, if we were only given the first term of sequence, it would be most sensible to assume constancy; that is, for n ≥ 2, OP(1, n) = u<sub>1</sub>.</p>
+<h2 id="Optimum-polynomial"><a href="#Optimum-polynomial" class="headerlink" title="Optimum polynomial"></a><strong>Optimum polynomial</strong></h2><p>If we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
+<p>As an example, let us consider the sequence of cube numbers. This is defined by the generating function, </p>
+<p>$$u_n = n^3: 1, 8, 27, 64, 125, 216, \ldots$$</p>
+<p>Suppose we were only given the first two terms of this sequence. Working on the principle that “simple is best” we should assume a linear relationship and predict the next term to be $15$ (common difference $7$). Even if we were presented with the first three terms, by the same principle of simplicity, a quadratic relationship should be assumed.</p>
+<p>We shall define $\text{OP}(k, n)$ to be the $n$<sup>th</sup> term of the optimum polynomial generating function for the first $k$ terms of a sequence. It should be clear that $\text{OP}(k, n)$ will accurately generate the terms of the sequence for $n \le k$, and potentially the <i>first incorrect term</i> (FIT) will be $\text{OP}(k, k+1)$; in which case we shall call it a <i>bad OP</i> (BOP).</p>
+<p>As a basis, if we were only given the first term of sequence, it would be most sensible to assume constancy; that is, for $n \ge 2$, $\text{OP}(1, n) = u_1$.</p>
 <p>Hence we obtain the following OPs for the cubic sequence:</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OP(1, n) = 1</td>
-<td>1, <span style="color:red;"><strong>1</strong></span>, 1, 1, …</td>
-</tr>
-<tr>
-<td>OP(2, n) = 7n−6</td>
-<td>1, 8, <span style="color:red;"><strong>15</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(3, n) = 6n<sup>2</sup>−11n+6</td>
-<td>1, 8, 27, <span style="color:red;"><strong>58</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(4, n) = n<sup>3</sup></td>
-<td>1, 8, 27, 64, 125, …</td>
-</tr>
-</tbody></table>
-<p>Clearly no BOPs exist for k ≥ 4.</p>
-<p>By considering the sum of FITs generated by the BOPs (indicated in <span style="color:red;"><strong>red</strong></span> above), we obtain 1 + 15 + 58 = 74.</p>
+<p>$$\begin{aligned}<br>&amp;\text{OP}(1,n)=1 &amp;&amp;1, \mathbf{\color{red}1}, 1, 1, \ldots\\<br>&amp;\text{OP}(2,n)=7n-6 &amp;&amp;1, 8, \mathbf{\color{red}15}, \ldots\\<br>&amp;\text{OP}(3,n)=6n^2-11n+6 &amp;&amp;1, 8, 27,\mathbf{\color{red}58}, \ldots\\<br>&amp;\text{OP}(4,n)=n^3 &amp;&amp;1, 8, 27, 64, 125, \ldots<br>\end{aligned}$$</p>
+<p>Clearly no BOPs exist for $k \ge 4$.</p>
+<p>By considering the sum of FITs generated by the BOPs (indicated in ${\color{red}\textbf{red}}$ above), we obtain $1 + 15 + 58 = 74$.</p>
 <p>Consider the following tenth degree polynomial generating function:</p>
-<center>u<sub>n</sub> = 1 − n + n<sup>2</sup> − n<sup>3</sup> + n<sup>4</sup> − n<sup>5</sup> + n<sup>6</sup> − n<sup>7</sup> + n<sup>8</sup> − n<sup>9</sup> + n<sup>10</sup></center>
-
+<p>$$u_n = 1-n+n^2-n^3+n^4-n^5+n^6-n^7+n^8-n^9+n^{10}$$</p>
 <p>Find the sum of FITs for the BOPs.</p>
 <hr>
-<p><strong>最优多项式</strong></p>
-<p>如果我们知道了一个数列的前k项，我们仍无法确定地给出下一项的值，因为有无穷个多项式生成函数都有可能是这个数列的模型。</p>
-<p>例如，让我们考虑立方数的序列，它可以用如下函数生成，<br>u<sub>n</sub> = n<sup>3</sup>: 1, 8, 27, 64, 125, 216, …</p>
-<p>如果我们只知道数列的前两项，秉承“简单至上”的原则，我们应当假定这个数列遵循线性关系，并且预测下一项为15（公差为7）。即使我们知道了数列的前三项，根据同样的原则，我们也应当首先假定数列遵循二次函数关系。</p>
-<p>给定数列的前k项，定义OP(k, n)是由最优多项式生成函数给出的第n项的值。显然OP(k, n)可以精确地给出n ≤ k的那些项，而可能的<i>第一个不正确项</i>（First Incorrect Term，简记为FIT）将会是OP(k, k+1)；如果事实的确如此，我们称这个多项式为<i>坏最优多项式</i>（Bad OP，简记为BOP）。</p>
-<p>在最基本的情况下，如果我们只得到了数列的第一项，我们应当假定数列为常数，也就是说，对于n ≥ 2，OP(1, n) = u<sub>1</sub>。</p>
-<p>由此，我们得到了立方数列的最优多项式如下：</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OP(1, n) = 1</td>
-<td>1, <span style="color:red;"><strong>1</strong></span>, 1, 1, …</td>
-</tr>
-<tr>
-<td>OP(2, n) = 7n−6</td>
-<td>1, 8, <span style="color:red;"><strong>15</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(3, n) = 6n<sup>2</sup>−11n+6</td>
-<td>1, 8, 27, <span style="color:red;"><strong>58</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(4, n) = n<sup>3</sup></td>
-<td>1, 8, 27, 64, 125, …</td>
-</tr>
-</tbody></table>
-<p>显然，当k ≥ 4时不存在坏最优多项式。</p>
-<p>所有坏最优多项式的第一个不正确项（用<span style="color:red;"><strong>红色</strong></span>标示的数）之和为1 + 15 + 58 = 74。</p>
-<p>考虑下面这个十阶多项式生成函数：</p>
-<center>u<sub>n</sub> = 1 − n + n<sup>2</sup> − n<sup>3</sup> + n<sup>4</sup> − n<sup>5</sup> + n<sup>6</sup> − n<sup>7</sup> + n<sup>8</sup> − n<sup>9</sup> + n<sup>10</sup></center>
-
+<h2 id="最优多项式"><a href="#最优多项式" class="headerlink" title="最优多项式"></a><strong>最优多项式</strong></h2><p>给定一个数列的前$k$项，我们并不能确定其下一项的值，因为描述这个数列已知项的多项式生成函数有无数种可能。</p>
+<p>例如，考虑如下的立方数数列：</p>
+<p>$$u_n = n^3: 1, 8, 27, 64, 125, 216, \ldots$$</p>
+<p>如果我们只知道数列的前两项，根据“简单优先”的原则，我们应当猜测数列由某个一次函数生成（也即数列为等差数列），其下一项为$15$（公差为$7$）。如果我们只知道数列的前三项，根据同样的原则，我们应当猜测数列由某个二次函数生成。</p>
+<p>类似地，给定数列的前$k$项，我们可以猜测数列由某个最优多项式函数生成，并定义$\text{OP}(k, n)$是由这个函数给出的第$n$项的值。显然，若$n\le k$，$\text{OP}(k, n)$可以准确地给出这些已知项的值，而<i class=zh>第一个不正确项</i>最早可能出现在$\text{OP}(k, k+1)$，此时称这个最优多项式为<i class=zh>坏最优多项式</i>。</p>
+<p>特别地，如果我们只知道数列的第一项，我们应当猜测数列为常数，也就是说，对于$n \ge 2$，$\text{OP}(1, n) = u_1$。</p>
+<p>对于立方数数列，给定不同项数时的最优多项式如下所示：</p>
+<p>$$\begin{aligned}<br>&amp;\text{OP}(1,n)=1 &amp;&amp;1, \mathbf{\color{red}1}, 1, 1, \ldots\\<br>&amp;\text{OP}(2,n)=7n-6 &amp;&amp;1, 8, \mathbf{\color{red}15}, \ldots\\<br>&amp;\text{OP}(3,n)=6n^2-11n+6 &amp;&amp;1, 8, 27,\mathbf{\color{red}58}, \ldots\\<br>&amp;\text{OP}(4,n)=n^3 &amp;&amp;1, 8, 27, 64, 125, \ldots<br>\end{aligned}$$</p>
+<p>显然，当$k \ge 4$时，不会有坏最优多项式。</p>
+<p>所有坏最优多项式的第一个不正确项（用${\color{red}\textbf{红色}}$标示的数）之和为$1 + 15 + 58 = 74$。</p>
+<p>考虑下面这个十阶多项式函数生成的数列：</p>
+<p>$$u_n = 1-n+n^2-n^3+n^4-n^5+n^6-n^7+n^8-n^9+n^{10}$$</p>
 <p>求其所有坏最优多项式的第一个不正确项之和。</p>
 <hr>
 
@@ -384,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-101"><span class="nav-text">Problem 101</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-101"><span class="nav-text">Problem 101</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimum-polynomial"><span class="nav-text">Optimum polynomial</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最优多项式"><span class="nav-text">最优多项式</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

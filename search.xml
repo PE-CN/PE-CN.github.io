@@ -38,22 +38,22 @@
 <li>If $B$ contains more elements than $C$ then $S(B)&gt;S(C)$.</li>
 </ol>
 <p>If $S(A)$ is minimised for a given $n$, we shall call it an optimum special sum set. The first five optimum special sum sets are given below.</p>
-<p>$n = 1: \{1\}$<br>$n = 2: \{1, 2\}$<br>$n = 3: \{2, 3, 4\}$<br>$n = 4: \{3, 5, 6, 7\}$<br>$n = 5: \{6, 9, 11, 12, 13\}$</p>
+<p>$$\begin{aligned}<br>n = 1:&amp; \{1\} \\<br>n = 2:&amp; \{1, 2\} \\<br>n = 3:&amp; \{2, 3, 4\} \\<br>n = 4:&amp; \{3, 5, 6, 7\} \\<br>n = 5:&amp; \{6, 9, 11, 12, 13\}<br>\end{aligned}$$</p>
 <p>It <i>seems</i> that for a given optimum set, $A = \{a_1, a_2, … , a_n\}$, the next optimum set is of the form $B = \{b, a_1+b, a_2+b, … ,a_n+b\}$, where $b$ is the “middle” element on the previous row.</p>
 <p>By applying this “rule” we would expect the optimum set for $n = 6$ to be $A = \{11, 17, 20, 22, 23, 24\}$, with $S(A) = 117$. However, this is not the optimum set, as we have merely applied an algorithm to provide a near optimum set. The optimum set for $n = 6$ is $A = \{11, 18, 19, 20, 22, 25\}$, with $S(A) = 115$ and corresponding set string: $111819202225$.</p>
 <p>Given that $A$ is an optimum special sum set for $n = 7$, find its set string.</p>
 <p>NOTE: This problem is related to <a href="/105">Problem 105</a> and <a href="/106">Problem 106</a>.</p>
 <hr>
-<h2 id="特殊的子集和：最优解"><a href="#特殊的子集和：最优解" class="headerlink" title="特殊的子集和：最优解"></a><strong>特殊的子集和：最优解</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若任取$A$的任意两个非空且不相交的子集$B$和$C$都满足下列条件，我们称$A$是一个特殊的和集：</p>
+<h2 id="特殊的子集和：最优解"><a href="#特殊的子集和：最优解" class="headerlink" title="特殊的子集和：最优解"></a><strong>特殊的子集和：最优解</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若从$A$中任取两个非空且不相交的子集$B$和$C$始终满足下列条件，则称$A$是一个特殊和集：</p>
 <ol>
-<li>$S(B)\neq S(C)$；也就是说，任意子集的和不相同。</li>
+<li>$S(B)\neq S(C)$；也就是说，任意子集的和都不相同。</li>
 <li>如果$B$中的元素比$C$多，则$S(B)&gt;S(C)$。</li>
 </ol>
-<p>对于给定的$n$，我们称使得$S(A)$最小的集合$A$为最优特殊和集。前$5$个最优特殊和集如下所示。</p>
-<p>$n = 1: \{1\}$<br>$n = 2: \{1, 2\}$<br>$n = 3: \{2, 3, 4\}$<br>$n = 4: \{3, 5, 6, 7\}$<br>$n = 5: \{6, 9, 11, 12, 13\}$</p>
-<p><i class=zh>似乎</i>对于一个给定的最优特殊和集$A = \{a_1, a_2, … , a_n\}$，下一个最优特殊和集将是$B = \{b, a_1+b, a_2+b, … ,a_n+b\}$的形式，其中$b$是集合$A$“正中间”的元素。</p>
-<p>应用这条“规则”，我们猜测对于$n = 6$的最优特殊和集将是$A = \{11, 17, 20, 22, 23, 24\}$，相应的$S(A) = 117$。然而，事实并非如此，我们的方法仅仅只能找出近似最优特殊和集。对于$n = 6$，最优特殊和集是$A = \{11, 18, 19, 20, 22, 25\}$，相应的$S(A) = 115$，对应的集合数字串是：$111819202225$。</p>
-<p>若集合$A$是$n = 7$时的最优特殊和集，求其对应的集合数字串。</p>
+<p>对于给定的$n$，称使得$S(A)$最小的集合$A$为最优特殊和集。前$5$个最优特殊和集如下所示。</p>
+<p>$$\begin{aligned}<br>n = 1:&amp; \{1\} \\<br>n = 2:&amp; \{1, 2\} \\<br>n = 3:&amp; \{2, 3, 4\} \\<br>n = 4:&amp; \{3, 5, 6, 7\} \\<br>n = 5:&amp; \{6, 9, 11, 12, 13\}<br>\end{aligned}$$</p>
+<p><i class=zh>似乎</i>对于一个给定的最优特殊和集$A = \{a_1, a_2, … , a_n\}$，下一个最优特殊和集将是$B = \{b, a_1+b, a_2+b, … ,a_n+b\}$，其中$b$是位于集合$A$“中间”位置的元素。</p>
+<p>应用这条“规则”，我们猜测对于$n = 6$的最优特殊和集将是$A = \{11, 17, 20, 22, 23, 24\}$，相应的$S(A) = 117$。然而事实并非如此，上述“规则”仅仅只能给出近似最优解。对于$n = 6$，最优特殊和集是$A = \{11, 18, 19, 20, 22, 25\}$，其相应的$S(A) = 115$，并可以表示为数字字符串：$111819202225$。</p>
+<p>求$n = 7$时的最优特殊和集$A$，并给出其数字字符串表示。</p>
 <p>注意：此题和<a href="/105">第105题</a>及<a href="/106">第106题</a>有关。</p>
 <hr>
 ]]></content>
@@ -78,22 +78,18 @@
     <url>/102/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-102"><a href="#Problem-102" class="headerlink" title="Problem 102"></a><a href="https://projecteuler.net/problem=102" target="_blank" rel="noopener">Problem 102</a></h1><hr>
-<p><strong>Triangle containment</strong></p>
-<p>Three distinct points are plotted at random on a Cartesian plane, for which -1000 ≤ x, y ≤ 1000, such that a triangle is formed.</p>
+<h2 id="Triangle-containment"><a href="#Triangle-containment" class="headerlink" title="Triangle containment"></a><strong>Triangle containment</strong></h2><p>Three distinct points are plotted at random on a Cartesian plane, for which $-1000 \le x, y \le 1000$, such that a triangle is formed.</p>
 <p>Consider the following two triangles:</p>
-<center>A(-340,495), B(-153,-910), C(835,-947)</center><center>X(-175,41), Y(-421,-714), Z(574,-645)</center>
-
-<p>It can be verified that triangle ABC contains the origin, whereas triangle XYZ does not.</p>
+<p>$$A(-340,495), B(-153,-910), C(835,-947)$$<br>$$X(-175,41), Y(-421,-714), Z(574,-645)$$</p>
+<p>It can be verified that triangle $ABC$ contains the origin, whereas triangle $XYZ$ does not.</p>
 <p>Using <a href="https://projecteuler.net/project/resources/p102_triangles.txt" target="_blank" rel="noopener">triangles.txt</a> (right click and ‘Save Link/Target As…’), a 27K text file containing the co-ordinates of one thousand “random” triangles, find the number of triangles for which the interior contains the origin.</p>
 <p>NOTE: The first two examples in the file represent the triangles in the example given above.</p>
 <hr>
-<p><strong>包含原点的三角形</strong></p>
-<p>从笛卡尔平面中随机选择三个不同的点，其坐标均满足-1000 ≤ x, y ≤ 1000，这三个点构成一个三角形。</p>
-<p>考虑下面两个三角形：</p>
-<center>A(-340,495), B(-153,-910), C(835,-947)</center><center>X(-175,41), Y(-421,-714), Z(574,-645)</center>
-
-<p>可以验证三角形ABC包含原点，而三角形XYZ不包含原点。</p>
-<p>在27K的文本文件<a href="https://projecteuler.net/project/resources/p102_triangles.txt" target="_blank" rel="noopener">triangles.txt</a>（右击并选择“目标另存为……”）中包含了一千个“随机”三角形的坐标，找出其中包含原点在其内部的三角形的数量。</p>
+<h2 id="包含原点的三角形"><a href="#包含原点的三角形" class="headerlink" title="包含原点的三角形"></a><strong>包含原点的三角形</strong></h2><p>在平面直角坐标系中选择三个不同的点，其坐标均满足$-1000 \le x, y \le 1000$，并以这三个点为顶点构成三角形。</p>
+<p>考虑如下两个三角形：</p>
+<p>$$A(-340,495), B(-153,-910), C(835,-947)$$<br>$$X(-175,41), Y(-421,-714), Z(574,-645)$$</p>
+<p>可以验证三角形$ABC$包含原点，而三角形$XYZ$不包含原点。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p102_triangles.txt" target="_blank" rel="noopener">triangles.txt</a>中包含了一千个“随机”三角形的坐标，求其中包含原点在其内部的三角形的数目。</p>
 <p>注意：文件中的前两个三角形就是上述样例。</p>
 <hr>
 ]]></content>
@@ -112,13 +108,13 @@
 <p>Using <a href="https://projecteuler.net/project/resources/p105_sets.txt" target="_blank" rel="noopener">sets.txt</a> (right click and “Save Link/Target As…”), a 4K text file with one-hundred sets containing seven to twelve elements (the two examples given above are the first two sets in the file), identify all the special sum sets, $A_1, A_2, \ldots , A_k$, and find the value of $S(A_1) + S(A_2) +\ldots + S(A_k)$.</p>
 <p>NOTE: This problem is related to <a href="/103">Problem 103</a> and <a href="/106">Problem 106</a>.</p>
 <hr>
-<h2 id="特殊的子集和：检验"><a href="#特殊的子集和：检验" class="headerlink" title="特殊的子集和：检验"></a><strong>特殊的子集和：检验</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若任取$A$的任意两个非空且不相交的子集$B$和$C$都满足下列条件，我们称$A$是一个特殊的和集：</p>
+<h2 id="特殊的子集和：检验"><a href="#特殊的子集和：检验" class="headerlink" title="特殊的子集和：检验"></a><strong>特殊的子集和：检验</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若从$A$中任取两个非空且不相交的子集$B$和$C$始终满足下列条件，则称$A$是一个特殊和集：</p>
 <ol>
-<li>$S(B) \neq S(C)$；也就是说，任意子集的和不相同。</li>
-<li>如果$B$中的元素比$C$多，则$S(B) &gt; S(C)$。</li>
+<li>$S(B)\neq S(C)$；也就是说，任意子集的和都不相同。</li>
+<li>如果$B$中的元素比$C$多，则$S(B)&gt;S(C)$。</li>
 </ol>
-<p>例如，$\{81, 88, 75, 42, 87, 84, 86, 65\}$不是一个特殊和集，因为$65 + 87 + 88 = 75 + 81 + 84$，而$\{157, 150, 164, 119, 79, 159, 161, 139, 158\}$满足上述规则，且相应的$S(A) = 1286$。</p>
-<p>在4K的文本文件<a href="https://projecteuler.net/project/resources/p105_sets.txt" target="_blank" rel="noopener">sets.txt</a>（右击并选择“目标另存为……”）中包含了一百组包含七至十二个元素的集合（文档中的前两个例子就是上述样例），找出其中所有的特殊和集$A_1, A_2, \ldots, A_k$，并求$S(A_1) + S(A_2) + \ldots + S(A_k)$的值。</p>
+<p>例如，$\{81, 88, 75, 42, 87, 84, 86, 65\}$不是一个特殊和集，因为$65 + 87 + 88 = 75 + 81 + 84$；而$\{157, 150, 164, 119, 79, 159, 161, 139, 158\}$满足上述规则，相应的$S(A) = 1286$。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p105_sets.txt" target="_blank" rel="noopener">sets.txt</a>中有一百组包含七至十二个元素的集合（文档中的前两个集合就是上述样例），找出其中所有的特殊和集$A_1, A_2, \ldots, A_k$，并求$S(A_1) + S(A_2) + \ldots + S(A_k)$的值。</p>
 <p>注意：此题和<a href="/103">第103题</a>及<a href="/106">第106题</a>有关。</p>
 <hr>
 ]]></content>
@@ -128,80 +124,32 @@
     <url>/101/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-101"><a href="#Problem-101" class="headerlink" title="Problem 101"></a><a href="https://projecteuler.net/problem=101" target="_blank" rel="noopener">Problem 101</a></h1><hr>
-<p><strong>Optimum polynomial</strong></p>
-<p>If we are presented with the first k terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
-<p>As an example, let us consider the sequence of cube numbers. This is defined by the generating function,<br>u<sub>n</sub> = n<sup>3</sup>: 1, 8, 27, 64, 125, 216, …</p>
-<p>Suppose we were only given the first two terms of this sequence. Working on the principle that “simple is best” we should assume a linear relationship and predict the next term to be 15 (common difference 7). Even if we were presented with the first three terms, by the same principle of simplicity, a quadratic relationship should be assumed.</p>
-<p>We shall define OP(k, n) to be the n<sup>th</sup> term of the optimum polynomial generating function for the first k terms of a sequence. It should be clear that OP(k, n) will accurately generate the terms of the sequence for n ≤ k, and potentially the <i>first incorrect term</i> (FIT) will be OP(k, k+1); in which case we shall call it a <i>bad OP</i> (BOP).</p>
-<p>As a basis, if we were only given the first term of sequence, it would be most sensible to assume constancy; that is, for n ≥ 2, OP(1, n) = u<sub>1</sub>.</p>
+<h2 id="Optimum-polynomial"><a href="#Optimum-polynomial" class="headerlink" title="Optimum polynomial"></a><strong>Optimum polynomial</strong></h2><p>If we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
+<p>As an example, let us consider the sequence of cube numbers. This is defined by the generating function, </p>
+<p>$$u_n = n^3: 1, 8, 27, 64, 125, 216, \ldots$$</p>
+<p>Suppose we were only given the first two terms of this sequence. Working on the principle that “simple is best” we should assume a linear relationship and predict the next term to be $15$ (common difference $7$). Even if we were presented with the first three terms, by the same principle of simplicity, a quadratic relationship should be assumed.</p>
+<p>We shall define $\text{OP}(k, n)$ to be the $n$<sup>th</sup> term of the optimum polynomial generating function for the first $k$ terms of a sequence. It should be clear that $\text{OP}(k, n)$ will accurately generate the terms of the sequence for $n \le k$, and potentially the <i>first incorrect term</i> (FIT) will be $\text{OP}(k, k+1)$; in which case we shall call it a <i>bad OP</i> (BOP).</p>
+<p>As a basis, if we were only given the first term of sequence, it would be most sensible to assume constancy; that is, for $n \ge 2$, $\text{OP}(1, n) = u_1$.</p>
 <p>Hence we obtain the following OPs for the cubic sequence:</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OP(1, n) = 1</td>
-<td>1, <span style="color:red;"><strong>1</strong></span>, 1, 1, …</td>
-</tr>
-<tr>
-<td>OP(2, n) = 7n−6</td>
-<td>1, 8, <span style="color:red;"><strong>15</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(3, n) = 6n<sup>2</sup>−11n+6</td>
-<td>1, 8, 27, <span style="color:red;"><strong>58</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(4, n) = n<sup>3</sup></td>
-<td>1, 8, 27, 64, 125, …</td>
-</tr>
-</tbody></table>
-<p>Clearly no BOPs exist for k ≥ 4.</p>
-<p>By considering the sum of FITs generated by the BOPs (indicated in <span style="color:red;"><strong>red</strong></span> above), we obtain 1 + 15 + 58 = 74.</p>
+<p>$$\begin{aligned}<br>&amp;\text{OP}(1,n)=1 &amp;&amp;1, \mathbf{\color{red}1}, 1, 1, \ldots\\<br>&amp;\text{OP}(2,n)=7n-6 &amp;&amp;1, 8, \mathbf{\color{red}15}, \ldots\\<br>&amp;\text{OP}(3,n)=6n^2-11n+6 &amp;&amp;1, 8, 27,\mathbf{\color{red}58}, \ldots\\<br>&amp;\text{OP}(4,n)=n^3 &amp;&amp;1, 8, 27, 64, 125, \ldots<br>\end{aligned}$$</p>
+<p>Clearly no BOPs exist for $k \ge 4$.</p>
+<p>By considering the sum of FITs generated by the BOPs (indicated in ${\color{red}\textbf{red}}$ above), we obtain $1 + 15 + 58 = 74$.</p>
 <p>Consider the following tenth degree polynomial generating function:</p>
-<center>u<sub>n</sub> = 1 − n + n<sup>2</sup> − n<sup>3</sup> + n<sup>4</sup> − n<sup>5</sup> + n<sup>6</sup> − n<sup>7</sup> + n<sup>8</sup> − n<sup>9</sup> + n<sup>10</sup></center>
-
+<p>$$u_n = 1-n+n^2-n^3+n^4-n^5+n^6-n^7+n^8-n^9+n^{10}$$</p>
 <p>Find the sum of FITs for the BOPs.</p>
 <hr>
-<p><strong>最优多项式</strong></p>
-<p>如果我们知道了一个数列的前k项，我们仍无法确定地给出下一项的值，因为有无穷个多项式生成函数都有可能是这个数列的模型。</p>
-<p>例如，让我们考虑立方数的序列，它可以用如下函数生成，<br>u<sub>n</sub> = n<sup>3</sup>: 1, 8, 27, 64, 125, 216, …</p>
-<p>如果我们只知道数列的前两项，秉承“简单至上”的原则，我们应当假定这个数列遵循线性关系，并且预测下一项为15（公差为7）。即使我们知道了数列的前三项，根据同样的原则，我们也应当首先假定数列遵循二次函数关系。</p>
-<p>给定数列的前k项，定义OP(k, n)是由最优多项式生成函数给出的第n项的值。显然OP(k, n)可以精确地给出n ≤ k的那些项，而可能的<i>第一个不正确项</i>（First Incorrect Term，简记为FIT）将会是OP(k, k+1)；如果事实的确如此，我们称这个多项式为<i>坏最优多项式</i>（Bad OP，简记为BOP）。</p>
-<p>在最基本的情况下，如果我们只得到了数列的第一项，我们应当假定数列为常数，也就是说，对于n ≥ 2，OP(1, n) = u<sub>1</sub>。</p>
-<p>由此，我们得到了立方数列的最优多项式如下：</p>
-<table>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OP(1, n) = 1</td>
-<td>1, <span style="color:red;"><strong>1</strong></span>, 1, 1, …</td>
-</tr>
-<tr>
-<td>OP(2, n) = 7n−6</td>
-<td>1, 8, <span style="color:red;"><strong>15</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(3, n) = 6n<sup>2</sup>−11n+6</td>
-<td>1, 8, 27, <span style="color:red;"><strong>58</strong></span>, …</td>
-</tr>
-<tr>
-<td>OP(4, n) = n<sup>3</sup></td>
-<td>1, 8, 27, 64, 125, …</td>
-</tr>
-</tbody></table>
-<p>显然，当k ≥ 4时不存在坏最优多项式。</p>
-<p>所有坏最优多项式的第一个不正确项（用<span style="color:red;"><strong>红色</strong></span>标示的数）之和为1 + 15 + 58 = 74。</p>
-<p>考虑下面这个十阶多项式生成函数：</p>
-<center>u<sub>n</sub> = 1 − n + n<sup>2</sup> − n<sup>3</sup> + n<sup>4</sup> − n<sup>5</sup> + n<sup>6</sup> − n<sup>7</sup> + n<sup>8</sup> − n<sup>9</sup> + n<sup>10</sup></center>
-
+<h2 id="最优多项式"><a href="#最优多项式" class="headerlink" title="最优多项式"></a><strong>最优多项式</strong></h2><p>给定一个数列的前$k$项，我们并不能确定其下一项的值，因为描述这个数列已知项的多项式生成函数有无数种可能。</p>
+<p>例如，考虑如下的立方数数列：</p>
+<p>$$u_n = n^3: 1, 8, 27, 64, 125, 216, \ldots$$</p>
+<p>如果我们只知道数列的前两项，根据“简单优先”的原则，我们应当猜测数列由某个一次函数生成（也即数列为等差数列），其下一项为$15$（公差为$7$）。如果我们只知道数列的前三项，根据同样的原则，我们应当猜测数列由某个二次函数生成。</p>
+<p>类似地，给定数列的前$k$项，我们可以猜测数列由某个最优多项式函数生成，并定义$\text{OP}(k, n)$是由这个函数给出的第$n$项的值。显然，若$n\le k$，$\text{OP}(k, n)$可以准确地给出这些已知项的值，而<i class=zh>第一个不正确项</i>最早可能出现在$\text{OP}(k, k+1)$，此时称这个最优多项式为<i class=zh>坏最优多项式</i>。</p>
+<p>特别地，如果我们只知道数列的第一项，我们应当猜测数列为常数，也就是说，对于$n \ge 2$，$\text{OP}(1, n) = u_1$。</p>
+<p>对于立方数数列，给定不同项数时的最优多项式如下所示：</p>
+<p>$$\begin{aligned}<br>&amp;\text{OP}(1,n)=1 &amp;&amp;1, \mathbf{\color{red}1}, 1, 1, \ldots\\<br>&amp;\text{OP}(2,n)=7n-6 &amp;&amp;1, 8, \mathbf{\color{red}15}, \ldots\\<br>&amp;\text{OP}(3,n)=6n^2-11n+6 &amp;&amp;1, 8, 27,\mathbf{\color{red}58}, \ldots\\<br>&amp;\text{OP}(4,n)=n^3 &amp;&amp;1, 8, 27, 64, 125, \ldots<br>\end{aligned}$$</p>
+<p>显然，当$k \ge 4$时，不会有坏最优多项式。</p>
+<p>所有坏最优多项式的第一个不正确项（用${\color{red}\textbf{红色}}$标示的数）之和为$1 + 15 + 58 = 74$。</p>
+<p>考虑下面这个十阶多项式函数生成的数列：</p>
+<p>$$u_n = 1-n+n^2-n^3+n^4-n^5+n^6-n^7+n^8-n^9+n^{10}$$</p>
 <p>求其所有坏最优多项式的第一个不正确项之和。</p>
 <hr>
 ]]></content>
@@ -211,17 +159,13 @@
     <url>/104/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-104"><a href="#Problem-104" class="headerlink" title="Problem 104"></a><a href="https://projecteuler.net/problem=104" target="_blank" rel="noopener">Problem 104</a></h1><hr>
-<h2 id="Pandigital-Fibonacci-ends"><a href="#Pandigital-Fibonacci-ends" class="headerlink" title="Pandigital Fibonacci ends"></a><strong>Pandigital Fibonacci ends</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:</p>
-<center>F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>, where F<sub>1</sub> = 1 and F<sub>2</sub> = 1.</center>
-
-<p>It turns out that F<sub>541</sub>, which contains 113 digits, is the first Fibonacci number for which the last nine digits are 1-9 pandigital (contain all the digits 1 to 9, but not necessarily in order). And F<sub>2749</sub>, which contains 575 digits, is the first Fibonacci number for which the first nine digits are 1-9 pandigital.</p>
-<p>Given that F<sub>k</sub> is the first Fibonacci number for which the first nine digits AND the last nine digits are 1-9 pandigital, find k.</p>
+<h2 id="Pandigital-Fibonacci-ends"><a href="#Pandigital-Fibonacci-ends" class="headerlink" title="Pandigital Fibonacci ends"></a><strong>Pandigital Fibonacci ends</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n=F_{n-1}+F_{n-2}$, where $F_1=1$ and $F_2=1$.</p>
+<p>It turns out that $F_{541}$, which contains $113$ digits, is the first Fibonacci number for which the last nine digits are $1$-$9$ pandigital (contain all the digits $1$ to $9$, but not necessarily in order). And $F_{2749}$, which contains $575$ digits, is the first Fibonacci number for which the first nine digits are $1$-$9$ pandigital.</p>
+<p>Given that $F_k$ is the first Fibonacci number for which the first nine digits AND the last nine digits are $1$-$9$ pandigital, find $k$.</p>
 <hr>
-<h2 id="两端为全数字的斐波那契数"><a href="#两端为全数字的斐波那契数" class="headerlink" title="两端为全数字的斐波那契数"></a><strong>两端为全数字的斐波那契数</strong></h2><p>斐波那契数列由如下递归关系生成：</p>
-<center>F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>，其中F<sub>1</sub> = 1且F<sub>2</sub> = 1。</center>
-
-<p>可以发现，包含有113位数字的F<sub>541</sub>是第一个后9位数字是1至9全数字（包含1至9所有的数字，但不一定按照从小到大的顺序）的斐波那契数，而包含有575位数字的F<sub>2749</sub>是第一个前9位数字是1至9全数字的斐波那契数。</p>
-<p>若F<sub>k</sub>是第一个前9位数字和后9位数字都是1至9全数字的斐波那契数，求k。</p>
+<h2 id="两端全数字的斐波那契数"><a href="#两端全数字的斐波那契数" class="headerlink" title="两端全数字的斐波那契数"></a><strong>两端全数字的斐波那契数</strong></h2><p>斐波那契数列由如下递归关系生成：<br>$F_n=F_{n-1}+F_{n-2}$，其中$F_1=1$，且$F_2=1$。</p>
+<p>包含有$113$位数字的$F_{541}$是第一个最后$9$位数字是$1$至$9$全数字（包含$1$至$9$所有的数字，但不一定按照顺序）的斐波那契数，而包含有$575$位数字的$F_{2749}$是第一个前$9$位数字是$1$至$9$全数字的斐波那契数。</p>
+<p>若$F_k$是第一个前$9$位数字和后$9$位数字都是$1$至$9$全数字的斐波那契数，求$k$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -579,7 +523,7 @@
 <p>然而，我们其实可以优化这个网络，移除其中的一些边，同时仍然保证每个顶点之间都是连通的。节省重量最多的网络如下图所示，其总重量为93，相比原来的网络节省了243 ? 93 = 150。</p>
 <center><img src="https://projecteuler.net/project/images/p107_2.gif" width="385" height="288" alt=""></center>
 
-<p>在这个6K的文本文件<a href="https://projecteuler.net/project/resources/p107_network.txt" target="_blank" rel="noopener">network.txt</a>（右击并选择“目标另存为……”）中存放了一个包含有40个顶点的网络的连通矩阵。移除其中冗余的边，同时仍然保证每个顶点之间都是连通的，求最多能节省的重量。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p107_network.txt" target="_blank" rel="noopener">network.txt</a>中存放了一个包含有40个顶点的网络的连通矩阵。移除其中冗余的边，同时仍然保证每个顶点之间都是连通的，求最多能节省的重量。</p>
 <hr>
 ]]></content>
   </entry>
@@ -5352,7 +5296,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <p>For example, when the list is sorted into alphabetical order, COLIN, which is worth $3 + 15 + 12 + 9 + 14 = 53$, is the $938$th name in the list. So, COLIN would obtain a score of $938 \times 53 = 49714$.</p>
 <p>What is the total of all the name scores in the file?</p>
 <hr>
-<h2 id="英文名得分"><a href="#英文名得分" class="headerlink" title="英文名得分"></a><strong>英文名得分</strong></h2><p>在文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>（右击并选择“目标另存为……”）中有五千多个英文名。首先将这些英文名按照字母序排序，然后计算出每个英文名的字母价值，乘以它在按字母序排序后的位置，得到的就是这个英文名的得分。</p>
+<h2 id="英文名得分"><a href="#英文名得分" class="headerlink" title="英文名得分"></a><strong>英文名得分</strong></h2><p>在文本文件<a href="https://projecteuler.net/project/resources/p022_names.txt" target="_blank" rel="noopener">names.txt</a>中有五千多个英文名。首先将这些英文名按照字母序排序，然后计算出每个英文名的字母价值，乘以它在按字母序排序后的位置，得到的就是这个英文名的得分。</p>
 <p>例如，按照字母序排序后，位于第$938$位的名字是COLIN，它的字母价值是$3 + 15 + 12 + 9 + 14 = 53$。因此，COLIN这个英文名的得分是$938 \times 53 = 49714$。</p>
 <p>上述文本文件中，所有英文名的得分之和是多少？</p>
 <hr>
@@ -11317,7 +11261,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="编码三角形数"><a href="#编码三角形数" class="headerlink" title="编码三角形数"></a><strong>编码三角形数</strong></h2><p>三角形数序列的第$n$项由公式$t_n=n (n+1)/2$给出。前十个三角形数是：</p>
 <p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots$$</p>
 <p>将一个单词的每个字母分别转化为其在字母表中的顺序并相加，所得结果即为这个单词的价值。例如，单词SKY的价值是$19 + 11 + 25 = 55 = t_{10}$。如果一个单词的价值是一个三角形数，称这个单词为三角形单词。</p>
-<p>在这个16K的文本文件<a href="https://projecteuler.net/project/resources/p042_words.txt" target="_blank" rel="noopener">words.txt</a> （右击并选择“目标另存为……”）中包含有将近两千个常用英文单词，其中有多少个三角形单词？</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p042_words.txt" target="_blank" rel="noopener">words.txt</a>中包含有将近两千个常用英文单词，其中有多少个三角形单词？</p>
 <hr>
 ]]></content>
   </entry>
@@ -11459,7 +11403,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <center><img src="https://projecteuler.net/project/images/p424_kakuro1.gif"></center>
 
 <p>上述是一个数和游戏的题板，右侧是它的解答。（数和游戏的规则可以在很多网站上找到，其它相关的信息也可以在<a href="http://krazydad.com/" target="_blank">krazydad.com</a>上找到，这个网站的作者提供了这道谜题。）</p>
-<p>这个文本文档（<a href="https://projecteuler.net/project/resources/p424_kakuro200.txt" target="_blank" rel="noopener">kakuro200.txt</a>）中包含了200个这样的谜题的描述，其中有5x5和6x6两种大小。文件中的第一个谜题就是上面给出的这个样例，它的代码如下所示：</p>
+<p>文本文件<a href="https://projecteuler.net/project/resources/p424_kakuro200.txt" target="_blank" rel="noopener">kakuro200.txt</a>中包含了200个这样的谜题的描述，其中有5x5和6x6两种大小。文件中的第一个谜题就是上面给出的这个样例，它的代码如下所示：</p>
 <p>6,X,X,(vCC),(vI),X,X,X,(hH),B,O,(vCA),(vJE),X,(hFE,vD),O,O,O,O,(hA),O,I,(hJC,vB),O,O,(hJC),H,O,O,O,X,X,X,(hJE),O,O,X</p>
 <p>第一个字符是一个数字，表示了这个谜题题版的大小，要么是6（表示5x5题板）要么是7（表示6x6题板），随后跟着一个逗号（,）。多余的最上行和最下列是用来提供信息的。</p>
 <p>每一个的信息随后逐个被表示出来，并用逗号分割，按照从上往下，从左往右的顺序。<br>X = 灰色方格，不要求填数字。<br>O（大写字母） = 空白方格，要求填一个数字。<br>A = 大写字母A至J，等待用对应的数字进行替换。<br>( ) = 加密过的和的位置。横行的和用小写字母“h”开头，竖列的和用小写字母“v”开头，随后是一个或两个大写字母，表示这一行或一列的和是一位或两位数。对于两位数，第一个大写字母是十位数而第二个大写字母是个位。如果一个方格既要指示横行的和又要指示竖列的和，第一个永远是横行的和，而且两者必然在同一个括号内用逗号分开，例如(hFE,vD)。每一组这样的括号也必然跟随着一个逗号。</p>
@@ -15331,7 +15275,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <td align="center">&nbsp;</td>
 </tr>
 </tbody></table>
-<p>在这个文本文件<a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="noopener">poker.txt</a>中，包含有两名玩家进行一千局扑克游戏的手牌。每一行包含有10张牌（均用一个空格隔开）：前5张牌属于玩家1，后5张牌属于玩家2。你可以假定所有的手牌都是有效的（没有无效的字符或是重复的牌），每个玩家的手牌不一定按顺序排列，且每一局都有确定的赢家。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p054_poker.txt" target="_blank" rel="noopener">poker.txt</a>中，包含有两名玩家进行一千局扑克游戏的手牌。每一行包含有10张牌（均用一个空格隔开）：前5张牌属于玩家1，后5张牌属于玩家2。你可以假定所有的手牌都是有效的（没有无效的字符或是重复的牌），每个玩家的手牌不一定按顺序排列，且每一局都有确定的赢家。</p>
 <p>其中有多少局玩家1获胜？</p>
 <hr>
 ]]></content>
@@ -16605,7 +16549,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>一种现代加密方法是将一个文本文档中的字符先转化为ASCII码，然后将其与一个根据密钥确定的值进行异或操作。使用异或进行加密的好处在于，只需对密文使用相同的密钥再加密一次就能得到明文，例如，$65$ XOR $42 = 107$，而$107$ XOR $42 = 65$。</p>
 <p>为了使加密难以破解，密钥应当和明文一样长，由随机的字节构成。用户会把加密过的信息和密钥放置在不同的地方，解密时二者缺一不可。</p>
 <p>不幸的是，这种方法对大多数人来说并不实用，因此一个略有改进的方法是使用一个口令作为密钥。口令的长度很有可能比信息要短，这时候就循环重复使用这个口令进行加密。这种方法需要达到一种平衡，一方面口令要足够长才能保证安全，另一方面需要充分短以方便记忆。</p>
-<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文档<a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a>（右击并选择“目标另存为……”）中包含了加密后的ASCII码，并且已知明文包含的都是常见的英文单词。解密这条消息并求出原文的ASCII码之和。</p>
+<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文件<a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a>中包含了加密后的ASCII码，并且已知明文包含的都是常见的英文单词。解密这条消息并求出原文的ASCII码之和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -18959,7 +18903,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="最大路径和-II"><a href="#最大路径和-II" class="headerlink" title="最大路径和 II"></a><strong>最大路径和 II</strong></h2><p>从下面展示的三角形的顶端出发，不断移动到在下一行与其相邻的元素，能够得到的最大路径和是$23$。</p>
 <p>$$<br>\begin{aligned}<br>&amp;{\color{red}3}\\<br>{\color{red}7}&amp;\ \ 4\\<br>2\ \ &amp;{\color{red}4}\ \ 6\\<br>8\ \ 5&amp;\ \ {\color{red}9}\ \ 3\\<br>\end{aligned}<br>$$</p>
 <p>如上图，最大路径和为$3 + 7 + 4 + 9 = 23$。</p>
-<p>在这个15K的文本文件[triangle.txt] (<a href="https://projecteuler.net/project/resources/p067_triangle.txt)（右击并选择“目标另存为……”）中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。" target="_blank" rel="noopener">https://projecteuler.net/project/resources/p067_triangle.txt)（右击并选择“目标另存为……”）中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。</a></p>
+<p>在文本文件[triangle.txt] (<a href="https://projecteuler.net/project/resources/p067_triangle.txt)中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。" target="_blank" rel="noopener">https://projecteuler.net/project/resources/p067_triangle.txt)中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。</a></p>
 <p><strong>注意：</strong>这是<a href="/18">第18题</a>的强化版。由于总路径一共有$2^{99}$条，穷举每条路经来解决这个问题是不可能的！即使你每秒钟能够检查一万亿（$10^{12}$）条路径，全部检查完也需要两千万年。存在一个非常高效的算法能解决这个问题。;o)</p>
 <hr>
 ]]></content>
@@ -19202,7 +19146,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="求解-mathcal-I-方程"><a href="#求解-mathcal-I-方程" class="headerlink" title="求解$\mathcal{I}$-方程"></a><strong>求解$\mathcal{I}$-方程</strong></h2><p>定义算子$\mathcal{I}$为函数<br>$$\mathcal{I}(x,y) = (1+x+y)^2+y-x$$<br>而$\mathcal{I}$-表达式为仅由变量和应用$\mathcal{I}$算子于变量所构成的算术表达式。变量名可以包含一个或多个字母。例如，如下三个表达式$x$、$\mathcal{I}(x,y)$和$\mathcal{I}(\mathcal{I}(x,ab),x)$都是$\mathcal{I}$-表达式。</p>
 <p>若对于两个$\mathcal{I}$-表达式$e_1$和$e_2$，方程$e_1=e_2$有非负整数解，则记$e_1$和$e_2$的最小共值为所有上述方程的非负整数解下$e_1$和$e_2$所能取得的最小值。如果该方程没有非负整数解，则记$e_1$和$e_2$的最小共值为$0$。例如，考虑下面这三个$\mathcal{I}$-表达式：<br>$$\begin{array}{l}A = \mathcal{I}(x,\mathcal{I}(z,t))\<br>B = \mathcal{I}(\mathcal{I}(y,z),y)\<br>C = \mathcal{I}(\mathcal{I}(x,z),y)\end{array}$$<br>$A$和$B$的最小共值为$23$，在$x=3, y=1, z=t=0$时取得；而$A=C$没有非负整数解，因此$A$和$C$的最小共值为$0$。${A,B,C}$中任意两对表达式的最小共值之和为$26$。</p>
-<p>在如下的文本文件<a href="https://projecteuler.net/project/resources/p674_i_expressions.txt" target="_blank" rel="noopener">I-expressions.txt</a>所包含的所有$\mathcal{I}$-表达式中，求任意两对表达式的最小共值之和（注意$(e_1,e_2)$和$(e_2,e_1)$是相同的一对表达式），并给出其最后九位数字作为你的答案。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p674_i_expressions.txt" target="_blank" rel="noopener">I-expressions.txt</a>所包含的所有$\mathcal{I}$-表达式中，求任意两对表达式的最小共值之和（注意$(e_1,e_2)$和$(e_2,e_1)$是相同的一对表达式），并给出其最后九位数字作为你的答案。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22448,7 +22392,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="路径和：两个方向"><a href="#路径和：两个方向" class="headerlink" title="路径和：两个方向"></a><strong>路径和：两个方向</strong></h2><p>在如下的$5 \times 5$矩阵中，从左上方到右下方<strong>始终只向右或向下移动</strong>的最小路径和为$2427$，由标注红色的路径给出。</p>
 <p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; 234 &amp; 103 &amp; 18\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; \color{red}{746} &amp; \color{red}{422} &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80 \times 80$的矩阵，求从该矩阵的左上方到右下方始终只向右或向下移动的最小路径和。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>中包含了一个$80 \times 80$的矩阵，求从该矩阵的左上方到右下方始终只向右或向下移动的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22572,7 +22516,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="路径和：三个方向"><a href="#路径和：三个方向" class="headerlink" title="路径和：三个方向"></a><strong>路径和：三个方向</strong></h2><p>注意：本题是<a href="/81">第81题</a>的升级版。</p>
 <p>在如下的$5\times 5$矩阵中，从最左栏任意一格出发，始终只向右、向上或向下移动，到最右栏任意一格结束的最小路径和为$994$，由标注红色的路径给出。</p>
 <p>$$<br>\begin{pmatrix}<br>131 &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; 746 &amp; 422 &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; 121 &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; 37 &amp; 331<br>\end{pmatrix}<br>$$</p>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80\times80$的矩阵，求从该矩阵的最左栏到最右栏的最小路径和。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>中包含了一个$80\times80$的矩阵，求从该矩阵的最左栏到最右栏的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22631,7 +22575,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="路径和：四个方向"><a href="#路径和：四个方向" class="headerlink" title="路径和：四个方向"></a><strong>路径和：四个方向</strong></h2><p>注意：这是<a href="/81">第81题</a>的究极升级版。</p>
 <p>在如下的$5\times 5$矩阵中，从左上角到右下角任意地向上、向下、向左或向右移动的最小路径和为$2297$，由标注红色的路径给出。</p>
 <p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; \color{red}{150}\\<br>630 &amp; 803 &amp; 746 &amp; \color{red}{422} &amp; \color{red}{111}\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
-<p>在这个31K的文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>（右击并选择“目标另存为……”）中包含了一个$80\times80$的矩阵，求从该矩阵的左上角到右下角任意地向上、向下、向左或向右移动的最小路径和。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p081_matrix.txt" target="_blank" rel="noopener">matrix.txt</a>中包含了一个$80\times80$的矩阵，求从该矩阵的左上角到右下角任意地向上、向下、向左或向右移动的最小路径和。</p>
 <hr>
 ]]></content>
   </entry>
@@ -22882,7 +22826,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>例如，至少有六种写法可以表达十六这个数：</p>
 <p><span style="font-family:courier new,monospace;">IIIIIIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VIIIIIIIIIII</span><br><span style="font-family:courier new,monospace;">VVIIIIII</span><br><span style="font-family:courier new,monospace;">XIIIIII</span><br><span style="font-family:courier new,monospace;">VVVI</span><br><span style="font-family:courier new,monospace;">XVI</span></p>
 <p>然而，根据规则，只有<span style="font-family:courier new,monospace;">XIIIIII</span>和<span style="font-family:courier new,monospace;">XVI</span>是合理的写法，而后一种因为使用了最少的数字而被认为是最有效的写法。</p>
-<p>在这个11K的文本文件<a href="https://projecteuler.net/project/resources/p089_roman.txt" target="_blank" rel="noopener">roman.txt</a> （右击并选择“目标另存为……”）中包含了一千个合理的罗马数字写法，但并不都是最有效的写法；有关罗马数字的明确规则，可以参考<a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">“关于罗马数字”</a>。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p089_roman.txt" target="_blank" rel="noopener">roman.txt</a>中包含了一千个合理的罗马数字写法，但并不都是最有效的写法；有关罗马数字的明确规则，可以参考<a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">“关于罗马数字”</a>。</p>
 <p>如果将这些数都写成最有效的写法，求所能节省的字符数。</p>
 <p>注意：你可以假定文件中的所有罗马数字写法都不包含连续超过四个相同字符。</p>
 <hr>
@@ -22914,7 +22858,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>NOTE: All anagrams formed must be contained in the given text file.</p>
 <hr>
 <h2 id="重排平方数"><a href="#重排平方数" class="headerlink" title="重排平方数"></a><strong>重排平方数</strong></h2><p>将单词CARE中的四个字母依次赋值为$1$、$2$、$9$、$6$，可以得到一个平方数：$1296 = 36^2$。神奇的是，使用同样的赋值规则，重排后的单词RACE同样对应于平方数：$9216 = 96^2$。我们因此称CARE和RACE为重排平方单词对，并且要求类似的单词对不允许有前导零，且不允许给不同字母赋相同的值。</p>
-<p>在这个16K的文本文件<a href="https://projecteuler.net/project/resources/p098_words.txt" target="_blank" rel="noopener">words.txt</a>（右击并选择“目标另存为……”）中包含了将近两千个常用英文单词，找出其中所有的重排平方单词对（一个回文单词不视为它自己的重排）。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p098_words.txt" target="_blank" rel="noopener">words.txt</a>中包含了将近两千个常用英文单词，找出其中所有的重排平方单词对（一个回文单词不视为它自己的重排）。</p>
 <p>在这些单词对中，通过赋值所能得到的最大平方数是多少？</p>
 <p>注意：所有的重排单词必须出现在给定的文本文件中。</p>
 <hr>
@@ -22968,7 +22912,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="最大的幂"><a href="#最大的幂" class="headerlink" title="最大的幂"></a><strong>最大的幂</strong></h2><p>比较$2^{11}$和$3^7$并不困难，因为任何计算器都能验证 $2^{11} = 2048 &lt; 3^7 = 2187$。</p>
 <p>然而，想要验证$632382^{518061}&gt;519432^{525806}$就会变得非常困难，因为这两个数都包含有超过三百万位数字。</p>
-<p>在22K的文本文件<a href="https://projecteuler.net/project/resources/p099_base_exp.txt" target="_blank" rel="noopener">base_exp.txt</a>（右击并选择“目标另存为……”）中有一千行，每一行有一对底数和指数。求这其中哪一行给出的幂的数值最大。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p099_base_exp.txt" target="_blank" rel="noopener">base_exp.txt</a>中有一千行，每一行有一对底数和指数。求这其中哪一行给出的幂的数值最大。</p>
 <p>注意：文件的前两行就是上述两个例子。</p>
 <hr>
 ]]></content>
@@ -22998,7 +22942,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 
 
 <p>一个构造精良的数独谜题应该有唯一解，且能够通过逻辑推断来解决，尽管有时需要通过“猜测并检验”来排除一些选项（对于这一点目前仍有争议）。寻找答案时的复杂程度决定了题目的难度；如上这个谜题被认为是<i class=zh>简单</i>的谜题，因为解决该题只需要直接的演绎推理即可。</p>
-<p>在这个6K的文本文件<a href="https://projecteuler.net/project/resources/p096_sudoku.txt" target="_blank" rel="noopener">sudoku.txt</a>（右击并选择“目标另存为……”）中包含有五十个不同难度的数独谜题，但保证它们都只有唯一解（文件中的第一个谜题就是上述样例）。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p096_sudoku.txt" target="_blank" rel="noopener">sudoku.txt</a>中包含有五十个不同难度的数独谜题，但保证它们都只有唯一解（文件中的第一个谜题就是上述样例）。</p>
 <p>解开这五十个谜题，找出每个谜题解答左上角的三个数字所构成的三位数，并求这些数的和；比如，上述样例解答对应的三位数就是$483$。</p>
 <hr>
 ]]></content>
@@ -23272,7 +23216,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <li>Only the four basic arithmetic operations are permitted: $+$, $-$, $\times$, $\div$.</li>
 <li>All intermediate values must be positive integers, so for example $(3\div 2)$ is never permitted as a subexpression (even if the final answer is an integer).</li>
 </ul>
-<p>The attached file <a href="project/resources/p828_number_challenges.txt">number-challenges.txt</a> contains $200$ problems, one per line in the format:<br>$$211:2,3,4,6,7,25$$<br>where the number before the colon is the target and the remaining comma-separated numbers are those available to be used.</p>
+<p>The attached file <a href="https://projecteuler.net/project/resources/p828_number_challenges.txt" target="_blank" rel="noopener">number-challenges.txt</a> contains $200$ problems, one per line in the format:<br>$$211:2,3,4,6,7,25$$<br>where the number before the colon is the target and the remaining comma-separated numbers are those available to be used.</p>
 <p>Numbering the problems $1$, $2$, …, $200$, we let $s_n$ be the minimum score of the solution to the $n$th problem. For example, $s_1=40$, as the first problem in the file is the example given above. Note that not all problems have a solution; in such cases we take $s_n=0$.</p>
 <p>Find $\displaystyle\sum_{n=1}^{200} 3^n s_n$. Give your answer modulo $1005075251$.</p>
 <hr>
@@ -23285,7 +23229,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <li>只能使用四则运算：$+$、$-$、$\times$、$\div$。</li>
 <li>所有中间结果必须是整数，因此如$(3\div 2)$之类的数不能作为中间结果（即使最终结果是整数）。</li>
 </ul>
-<p>在文本文件<a href="project/resources/p828_number_challenges.txt">number-challenges.txt</a> 中包含有$200$个此类趣题，每行一个，其格式为：<br>$$211:2,3,4,6,7,25$$<br>其中，冒号前的数是目标数，冒号后用逗号隔开的是起始数。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p828_number_challenges.txt" target="_blank" rel="noopener">number-challenges.txt</a>中包含有$200$个此类趣题，每行一个，其格式为：<br>$$211:2,3,4,6,7,25$$<br>其中，冒号前的数是目标数，冒号后用逗号隔开的是起始数。</p>
 <p>将这些题目编号为$1$、$2$、……、$200$，并记$s_n$为第$n$题的最小得分。例如，第一题就是上述例题，因此$s_1=40$。有些题可能无解，此时记$s_n=0$。</p>
 <p>求$\displaystyle\sum_{n=1}^{200} 3^n s_n$，并将你的答案对$1005075251$取余。</p>
 <hr>

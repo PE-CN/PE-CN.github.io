@@ -26,7 +26,7 @@
 <meta property="og:description" content="Problem 103 Special subset sums: optimumLet $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2005-08-26T22:00:00.000Z">
-<meta property="article:modified_time" content="2020-09-21T00:19:46.077Z">
+<meta property="article:modified_time" content="2023-04-09T20:15:22.594Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2020-09-20 20:19:46" itemprop="dateModified" datetime="2020-09-20T20:19:46-04:00">2020-09-20</time>
+                <time title="更新时间：2023-04-09 16:15:22" itemprop="dateModified" datetime="2023-04-09T16:15:22-04:00">2023-04-09</time>
               </span>
 
           
@@ -233,22 +233,22 @@
 <li>If $B$ contains more elements than $C$ then $S(B)&gt;S(C)$.</li>
 </ol>
 <p>If $S(A)$ is minimised for a given $n$, we shall call it an optimum special sum set. The first five optimum special sum sets are given below.</p>
-<p>$n = 1: \{1\}$<br>$n = 2: \{1, 2\}$<br>$n = 3: \{2, 3, 4\}$<br>$n = 4: \{3, 5, 6, 7\}$<br>$n = 5: \{6, 9, 11, 12, 13\}$</p>
+<p>$$\begin{aligned}<br>n = 1:&amp; \{1\} \\<br>n = 2:&amp; \{1, 2\} \\<br>n = 3:&amp; \{2, 3, 4\} \\<br>n = 4:&amp; \{3, 5, 6, 7\} \\<br>n = 5:&amp; \{6, 9, 11, 12, 13\}<br>\end{aligned}$$</p>
 <p>It <i>seems</i> that for a given optimum set, $A = \{a_1, a_2, … , a_n\}$, the next optimum set is of the form $B = \{b, a_1+b, a_2+b, … ,a_n+b\}$, where $b$ is the “middle” element on the previous row.</p>
 <p>By applying this “rule” we would expect the optimum set for $n = 6$ to be $A = \{11, 17, 20, 22, 23, 24\}$, with $S(A) = 117$. However, this is not the optimum set, as we have merely applied an algorithm to provide a near optimum set. The optimum set for $n = 6$ is $A = \{11, 18, 19, 20, 22, 25\}$, with $S(A) = 115$ and corresponding set string: $111819202225$.</p>
 <p>Given that $A$ is an optimum special sum set for $n = 7$, find its set string.</p>
 <p>NOTE: This problem is related to <a href="/105">Problem 105</a> and <a href="/106">Problem 106</a>.</p>
 <hr>
-<h2 id="特殊的子集和：最优解"><a href="#特殊的子集和：最优解" class="headerlink" title="特殊的子集和：最优解"></a><strong>特殊的子集和：最优解</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若任取$A$的任意两个非空且不相交的子集$B$和$C$都满足下列条件，我们称$A$是一个特殊的和集：</p>
+<h2 id="特殊的子集和：最优解"><a href="#特殊的子集和：最优解" class="headerlink" title="特殊的子集和：最优解"></a><strong>特殊的子集和：最优解</strong></h2><p>记$S(A)$是大小为$n$的集合$A$中所有元素的和。若从$A$中任取两个非空且不相交的子集$B$和$C$始终满足下列条件，则称$A$是一个特殊和集：</p>
 <ol>
-<li>$S(B)\neq S(C)$；也就是说，任意子集的和不相同。</li>
+<li>$S(B)\neq S(C)$；也就是说，任意子集的和都不相同。</li>
 <li>如果$B$中的元素比$C$多，则$S(B)&gt;S(C)$。</li>
 </ol>
-<p>对于给定的$n$，我们称使得$S(A)$最小的集合$A$为最优特殊和集。前$5$个最优特殊和集如下所示。</p>
-<p>$n = 1: \{1\}$<br>$n = 2: \{1, 2\}$<br>$n = 3: \{2, 3, 4\}$<br>$n = 4: \{3, 5, 6, 7\}$<br>$n = 5: \{6, 9, 11, 12, 13\}$</p>
-<p><i class=zh>似乎</i>对于一个给定的最优特殊和集$A = \{a_1, a_2, … , a_n\}$，下一个最优特殊和集将是$B = \{b, a_1+b, a_2+b, … ,a_n+b\}$的形式，其中$b$是集合$A$“正中间”的元素。</p>
-<p>应用这条“规则”，我们猜测对于$n = 6$的最优特殊和集将是$A = \{11, 17, 20, 22, 23, 24\}$，相应的$S(A) = 117$。然而，事实并非如此，我们的方法仅仅只能找出近似最优特殊和集。对于$n = 6$，最优特殊和集是$A = \{11, 18, 19, 20, 22, 25\}$，相应的$S(A) = 115$，对应的集合数字串是：$111819202225$。</p>
-<p>若集合$A$是$n = 7$时的最优特殊和集，求其对应的集合数字串。</p>
+<p>对于给定的$n$，称使得$S(A)$最小的集合$A$为最优特殊和集。前$5$个最优特殊和集如下所示。</p>
+<p>$$\begin{aligned}<br>n = 1:&amp; \{1\} \\<br>n = 2:&amp; \{1, 2\} \\<br>n = 3:&amp; \{2, 3, 4\} \\<br>n = 4:&amp; \{3, 5, 6, 7\} \\<br>n = 5:&amp; \{6, 9, 11, 12, 13\}<br>\end{aligned}$$</p>
+<p><i class=zh>似乎</i>对于一个给定的最优特殊和集$A = \{a_1, a_2, … , a_n\}$，下一个最优特殊和集将是$B = \{b, a_1+b, a_2+b, … ,a_n+b\}$，其中$b$是位于集合$A$“中间”位置的元素。</p>
+<p>应用这条“规则”，我们猜测对于$n = 6$的最优特殊和集将是$A = \{11, 17, 20, 22, 23, 24\}$，相应的$S(A) = 117$。然而事实并非如此，上述“规则”仅仅只能给出近似最优解。对于$n = 6$，最优特殊和集是$A = \{11, 18, 19, 20, 22, 25\}$，其相应的$S(A) = 115$，并可以表示为数字字符串：$111819202225$。</p>
+<p>求$n = 7$时的最优特殊和集$A$，并给出其数字字符串表示。</p>
 <p>注意：此题和<a href="/105">第105题</a>及<a href="/106">第106题</a>有关。</p>
 <hr>
 
