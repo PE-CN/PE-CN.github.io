@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 539 Odd elimination Start from an ordered list of all integers from 1 to n. Going from left to right, remove the first number and every other number afterward until the end of the list. Repea">
+  <meta name="description" content="Problem 539 Odd eliminationStart from an ordered list of all integers from $1$ to $n$. Going from left to right, remove the first number and every other number afterward until the end of the list. Re">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 539">
 <meta property="og:url" content="http://yoursite.com/539/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 539 Odd elimination Start from an ordered list of all integers from 1 to n. Going from left to right, remove the first number and every other number afterward until the end of the list. Repea">
+<meta property="og:description" content="Problem 539 Odd eliminationStart from an ordered list of all integers from $1$ to $n$. Going from left to right, remove the first number and every other number afterward until the end of the list. Re">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-12-20T09:00:00.000Z">
-<meta property="article:modified_time" content="2016-01-21T07:59:50.000Z">
+<meta property="article:modified_time" content="2023-05-19T00:03:32.380Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2016-01-21 02:59:50" itemprop="dateModified" datetime="2016-01-21T02:59:50-05:00">2016-01-21</time>
+                <time title="更新时间：2023-05-18 20:03:32" itemprop="dateModified" datetime="2023-05-18T20:03:32-04:00">2023-05-18</time>
               </span>
 
           
@@ -227,17 +227,27 @@
       
         <hr>
 <h1 id="Problem-539"><a href="#Problem-539" class="headerlink" title="Problem 539"></a><a href="https://projecteuler.net/problem=539" target="_blank" rel="noopener">Problem 539</a></h1><hr>
-<p><strong>Odd elimination</strong></p>
-<p>Start from an ordered list of all integers from 1 to n. Going from left to right, remove the first number and every other number afterward until the end of the list. Repeat the procedure from right to left, removing the right most number and every other number from the numbers left. Continue removing every other numbers, alternating left to right and right to left, until a single number remains.</p>
-<p>Starting with n = 9, we have:<br><u>1</u> 2 <u>3</u> 4 <u>5</u> 6 <u>7</u> 8 <u>9</u><br>2 <u>4</u> 6 <u>8</u> <u>2</u> 6<br>6</p>
-<p>Let P(n) be the last number left starting with a list of length n.<br>Let $\displaystyle S(n) = \sum_{k=1}^n P(k)$<br>You are given P(1)=1, P(9) = 6, P(1000)=510, S(1000)=268271.</p>
-<p>Find S(10<sup>18</sup>) mod 987654321.</p>
+<h2 id="Odd-elimination"><a href="#Odd-elimination" class="headerlink" title="Odd elimination"></a><strong>Odd elimination</strong></h2><p>Start from an ordered list of all integers from $1$ to $n$. Going from left to right, remove the first number and every other number afterward until the end of the list. Repeat the procedure from right to left, removing the right most number and every other number from the numbers left. Continue removing every other numbers, alternating left to right and right to left, until a single number remains.</p>
+<p>Starting with $n = 9$, we have:</p>
+<p>$\underline{1}\ 2\ \underline{3}\ 4\ \underline{5}\ 6\ \underline{7}\ 8\ \underline{9}$</p>
+<p>$2\ \underline{4}\ 6\ \underline{8}$</p>
+<p>$\underline{2}\ 6$</p>
+<p>$6$</p>
+<p>Let $P(n)$ be the last number left starting with a list of length $n$.</p>
+<p>Let $\displaystyle S(n) = \sum_{k=1}^n P(k)$.</p>
+<p>You are given $P(1)=1$, $P(9) = 6$, $P(1000)=510$, $S(1000)=268271$.</p>
+<p>Find $S(10^{18})\bmod{987654321}$.</p>
 <hr>
-<p><strong>奇数位消除</strong></p>
-<p>从1至n组成的有序数列开始，从左往右，消除所有奇数位上的数；然后重复这一过程，直到只剩下一个数。</p>
-<p>初始时若n = 9，我们有：<br><u>1</u> 2 <u>3</u> 4 <u>5</u> 6 <u>7</u> 8 <u>9</u><br>2 <u>4</u> 6 <u>8</u><br><u>2</u> 6<br>6</p>
-<p>记P(n)为初始数列长度为n时最后剩下的数字。<br>令$\displaystyle S(n) = \sum_{k=1}^n P(k)$<br>已知P(1)=1，P(9) = 6，P(1000)=510，S(1000)=268271。</p>
-<p>求S(10<sup>18</sup>) mod 987654321。</p>
+<h2 id="奇数位消除"><a href="#奇数位消除" class="headerlink" title="奇数位消除"></a><strong>奇数位消除</strong></h2><p>考虑由$1$至$n$之间全体整数组成的有序数列。先从左往右，消除所有从左数起奇数位上的数，再从右往左，消除所有从右数起奇数位上的数；不断重复这一过程，直到只剩下一个数。</p>
+<p>例如，若一开始$n = 9$，则有：</p>
+<p>$\underline{1}\ 2\ \underline{3}\ 4\ \underline{5}\ 6\ \underline{7}\ 8\ \underline{9}$</p>
+<p>$2\ \underline{4}\ 6\ \underline{8}$</p>
+<p>$\underline{2}\ 6$</p>
+<p>$6$</p>
+<p>记$P(n)$为初始数列长度为$n$时最后剩下的数。</p>
+<p>令$\displaystyle S(n) = \sum_{k=1}^n P(k)$。</p>
+<p>已知$P(1)=1$，$P(9) = 6$，$P(1000)=510$，$S(1000)=268271$。</p>
+<p>求$S(10^{18}) \bmod{987654321}$。</p>
 <hr>
 
     </div>
@@ -320,7 +330,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-539"><span class="nav-text">Problem 539</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-539"><span class="nav-text">Problem 539</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Odd-elimination"><span class="nav-text">Odd elimination</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#奇数位消除"><span class="nav-text">奇数位消除</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

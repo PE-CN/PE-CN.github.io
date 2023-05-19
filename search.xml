@@ -9099,23 +9099,6 @@ A(9, 2), B(2, -9), C(-6, 7)
 ]]></content>
   </entry>
   <entry>
-    <title>Problem 342</title>
-    <url>/342/</url>
-    <content><![CDATA[<hr>
-<h1 id="Problem-342"><a href="#Problem-342" class="headerlink" title="Problem 342"></a><a href="https://projecteuler.net/problem=342" target="_blank" rel="noopener">Problem 342</a></h1><hr>
-<p><strong>The totient of a square is a cube</strong></p>
-<p>Consider the number 50.<br>50<sup>2</sup> = 2500 = 2<sup>2</sup> × 5<sup>4</sup>, so φ(2500) = 2 × 4 × 5<sup>3</sup> = 8 × 5<sup>3</sup> = 2<sup>3</sup> × 5<sup>3</sup>. <sup>1</sup><br>So 2500 is a square and  φ(2500) is a cube.</p>
-<p>Find the sum of all numbers n, 1 &lt; n &lt; 10<sup>10</sup> such that φ(n<sup>2</sup>) is a cube.</p>
-<p><sup>1</sup> φ denotes <b>Euler’s totient function</b>.</p>
-<hr>
-<p><strong>平方数的总计函数为立方数</strong></p>
-<p>考虑数50。<br>50<sup>2</sup> = 2500 = 2<sup>2</sup> × 5<sup>4</sup>，因此φ(2500) = 2 × 4 × 5<sup>3</sup> = 8 × 5<sup>3</sup> = 2<sup>3</sup> × 5<sup>3</sup>。<sup>1</sup><br>所以2500是一个平方数，而φ(2500)是一个立方数。</p>
-<p>有些数1 &lt; n &lt; 10<sup>10</sup>满足φ(n<sup>2</sup>)为立方数，求所有这类数的数目。</p>
-<p><sup>1</sup> φ表示<b>欧拉总计函数</b>。</p>
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>Problem 345</title>
     <url>/345/</url>
     <content><![CDATA[<hr>
@@ -15011,17 +14994,27 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/539/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-539"><a href="#Problem-539" class="headerlink" title="Problem 539"></a><a href="https://projecteuler.net/problem=539" target="_blank" rel="noopener">Problem 539</a></h1><hr>
-<p><strong>Odd elimination</strong></p>
-<p>Start from an ordered list of all integers from 1 to n. Going from left to right, remove the first number and every other number afterward until the end of the list. Repeat the procedure from right to left, removing the right most number and every other number from the numbers left. Continue removing every other numbers, alternating left to right and right to left, until a single number remains.</p>
-<p>Starting with n = 9, we have:<br><u>1</u> 2 <u>3</u> 4 <u>5</u> 6 <u>7</u> 8 <u>9</u><br>2 <u>4</u> 6 <u>8</u> <u>2</u> 6<br>6</p>
-<p>Let P(n) be the last number left starting with a list of length n.<br>Let $\displaystyle S(n) = \sum_{k=1}^n P(k)$<br>You are given P(1)=1, P(9) = 6, P(1000)=510, S(1000)=268271.</p>
-<p>Find S(10<sup>18</sup>) mod 987654321.</p>
+<h2 id="Odd-elimination"><a href="#Odd-elimination" class="headerlink" title="Odd elimination"></a><strong>Odd elimination</strong></h2><p>Start from an ordered list of all integers from $1$ to $n$. Going from left to right, remove the first number and every other number afterward until the end of the list. Repeat the procedure from right to left, removing the right most number and every other number from the numbers left. Continue removing every other numbers, alternating left to right and right to left, until a single number remains.</p>
+<p>Starting with $n = 9$, we have:</p>
+<p>$\underline{1}\ 2\ \underline{3}\ 4\ \underline{5}\ 6\ \underline{7}\ 8\ \underline{9}$</p>
+<p>$2\ \underline{4}\ 6\ \underline{8}$</p>
+<p>$\underline{2}\ 6$</p>
+<p>$6$</p>
+<p>Let $P(n)$ be the last number left starting with a list of length $n$.</p>
+<p>Let $\displaystyle S(n) = \sum_{k=1}^n P(k)$.</p>
+<p>You are given $P(1)=1$, $P(9) = 6$, $P(1000)=510$, $S(1000)=268271$.</p>
+<p>Find $S(10^{18})\bmod{987654321}$.</p>
 <hr>
-<p><strong>奇数位消除</strong></p>
-<p>从1至n组成的有序数列开始，从左往右，消除所有奇数位上的数；然后重复这一过程，直到只剩下一个数。</p>
-<p>初始时若n = 9，我们有：<br><u>1</u> 2 <u>3</u> 4 <u>5</u> 6 <u>7</u> 8 <u>9</u><br>2 <u>4</u> 6 <u>8</u><br><u>2</u> 6<br>6</p>
-<p>记P(n)为初始数列长度为n时最后剩下的数字。<br>令$\displaystyle S(n) = \sum_{k=1}^n P(k)$<br>已知P(1)=1，P(9) = 6，P(1000)=510，S(1000)=268271。</p>
-<p>求S(10<sup>18</sup>) mod 987654321。</p>
+<h2 id="奇数位消除"><a href="#奇数位消除" class="headerlink" title="奇数位消除"></a><strong>奇数位消除</strong></h2><p>考虑由$1$至$n$之间全体整数组成的有序数列。先从左往右，消除所有从左数起奇数位上的数，再从右往左，消除所有从右数起奇数位上的数；不断重复这一过程，直到只剩下一个数。</p>
+<p>例如，若一开始$n = 9$，则有：</p>
+<p>$\underline{1}\ 2\ \underline{3}\ 4\ \underline{5}\ 6\ \underline{7}\ 8\ \underline{9}$</p>
+<p>$2\ \underline{4}\ 6\ \underline{8}$</p>
+<p>$\underline{2}\ 6$</p>
+<p>$6$</p>
+<p>记$P(n)$为初始数列长度为$n$时最后剩下的数。</p>
+<p>令$\displaystyle S(n) = \sum_{k=1}^n P(k)$。</p>
+<p>已知$P(1)=1$，$P(9) = 6$，$P(1000)=510$，$S(1000)=268271$。</p>
+<p>求$S(10^{18}) \bmod{987654321}$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -15328,12 +15321,12 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <content><![CDATA[<hr>
 <h1 id="Problem-546"><a href="#Problem-546" class="headerlink" title="Problem 546"></a><a href="https://projecteuler.net/problem=546" target="_blank" rel="noopener">Problem 546</a></h1><hr>
 <p><strong>The Floor’s Revenge</strong></p>
-<p>Define $f_k(n)=\sum^{n}_{i=0}f_k(\lfloor \frac{i}{k} \rloor)$ where $f_k(0)=1$ and $\lfloor x \rfloor$ denotes the floor function.</p>
+<p>Define $f_k(n)=\sum^{n}_{i=0}f_k(\lfloor \frac{i}{k} \rfloor)$ where $f_k(0)=1$ and $\lfloor x \rfloor$ denotes the floor function.</p>
 <p>For example, f<sub>5</sub>(10) = 18, f<sub>7</sub>(100) = 1003, and f<sub>2</sub>(10<sup>3</sup>) = 264830889564.</p>
 <p>Find $(\sum^{10}_{k=2}f_k(10^{14})) \text{ mod } (10^9+7)$.</p>
 <hr>
 <p><strong>地板的复仇</strong></p>
-<p>记$f_k(n)=\sum^{n}_{i=0}f_k(\lfloor \frac{i}{k} \rloor)$，其中$f_k(0)=1$ ，$\lfloor x \rfloor$表示地板函数（下取整函数）。</p>
+<p>记$f_k(n)=\sum^{n}_{i=0}f_k(\lfloor \frac{i}{k} \rfloor)$，其中$f_k(0)=1$ ，$\lfloor x \rfloor$表示地板函数（下取整函数）。</p>
 <p>例如，f<sub>5</sub>(10) = 18，f<sub>7</sub>(100) = 1003，以及f<sub>2</sub>(10<sup>3</sup>) = 264830889564。</p>
 <p>求$(\sum^{10}_{k=2}f_k(10^{14})) \text{ mod } (10^9+7)$。</p>
 <hr>
@@ -17616,12 +17609,12 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="Two-heads-are-better-than-one"><a href="#Two-heads-are-better-than-one" class="headerlink" title="Two heads are better than one"></a><strong>Two heads are better than one</strong></h2><p>An unbiased coin is tossed repeatedly until two consecutive heads are obtained. Suppose these occur on the $(M−1)$ th and $M$th toss.<br>Let $P(n)$ be the probability that $M$ is divisible by $n$. For example, the outcomes HH, HTHH, and THTTHH all count towards $P(2)$, but THH and HTTHH do not.</p>
 <p>You are given that $P(2)=\frac{3}{5}$ and $P(3)=\frac{9}{31}$. Indeed, it can be shown that $P(n)$ is always a rational number.</p>
 <p>For a prime $p$ and a fully reduced fraction $\frac{a}{b}$, define $Q(\frac{a}{b},p)$ to be the smallest positive $q$ for which $a\equiv bq\pmod p$.<br>For example $Q(P(2),109)=Q(\frac{3}{5},109)=66$, because $5\cdot66=330\equiv 3\pmod{109}$ and $66$ is the smallest positive such number.<br>Similarly $Q(P(3),109)=46$.</p>
-<p>Find $Q(P(1018),1000000009)$.</p>
+<p>Find $Q(P(10^{18}),1\ 000\ 000\ 009)$.</p>
 <hr>
 <h2 id="一个不少，两个正好"><a href="#一个不少，两个正好" class="headerlink" title="一个不少，两个正好"></a><strong>一个不少，两个正好</strong></h2><p>不断抛掷一枚标准硬币，直到连续两次抛出正面，记此时已经抛掷的次数为$M$。<br>令$P(n)$表示$M$被$n$整除的概率。比方说，在计算$P(2)$时，如“正正”、“正反正正”或是“反正反反正正”这样的抛掷结果都要算入，而“反正正”或“正反反正正”就不算。</p>
 <p>已知$P(2)=\frac 3 5$ 和 $P(3)=\frac{9}{31}$。实际上，可以证明$P(n)$总是有理数。</p>
 <p>对于素数$p$和最简分数$\frac a b$，记 $Q(\frac{a}{b},p)$ 为满足$a\equiv bq\pmod p$ 的最小正整数$q$。<br>例如，$Q(P(2),109)=Q(\frac{3}{5},109)=66$， 这是因为$5\cdot66=330\equiv 3 \pmod{109}$且$66$是满足上式的最小正整数；同理可得$Q(P(3),109)=46$。</p>
-<p>求$Q(P(1018),1000000009)$。</p>
+<p>求$Q(P(10^{18}),1\ 000\ 000\ 009)$。</p>
 <p>（注：标题为我国1971年“四五计划”时期提出的计生政策口号）</p>
 <hr>
 ]]></content>
@@ -20019,10 +20012,10 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="关灯"><a href="#关灯" class="headerlink" title="关灯"></a><strong>关灯</strong></h2><p>考虑一个$w\times h$的格阵，其中每一格有开或关两种状态。当某一格被选中时，这一格以及相邻格的状态会发生变化，若原本是开则变为关，若原本是关则变为开。下图展示了原本所有格均为开状态（表示为白色）的格阵在选中了一个角上的格、一个边上的格和一个中间的格后的情景。</p>
 <p><img src="https://projecteuler.net/project/images/p707_LightsOutPic.jpg" alt="关灯"></p>
-<p>从任意其实状态出发，并不是总能够将所有格变为关状态。如果能够做到，则称相应的起始状态为可解的。</p>
+<p>从任意起始状态出发，并不是总能够将所有格变为关状态。如果能够做到，则称相应的起始状态为可解的。</p>
 <p>记$F(w,h)$为$w\times h$格阵下可解起始状态的数目。已知$F(1,2)=2$，$F(3,3) = 512$，$F(4,4) = 4096$，$F(7,11) \equiv 270016253 \pmod{1\ 000\ 000\ 007}$。</p>
 <p>考虑斐波那契数列$f_1=f_2 = 1$，$f_n=f_{n-1}+f_{n-2}, n \ge 3$，并记<br>$$ S(w,n) = \sum_{k=1}^n F(w,f_k)$$<br>已知$S(3,3) = 32$，$S(4,5) = 1052960$，$S(5,7) \equiv 346547294 \pmod{1\ 000\ 000\ 007}$。</p>
-<p>求$S(199,199)$并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<p>求$S(199,199)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20668,7 +20661,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="递增子序列"><a href="#递增子序列" class="headerlink" title="递增子序列"></a><strong>递增子序列</strong></h2><p>对于任意$i \ge 1$，序列$a_i$满足$a_i=153^i \bmod 10\ 000\ 019$。<br>该序列的一开始几项为：$153, 23409, 3581577, 7980255, 976697, 9434375, \dots$</p>
 <p>考虑该序列长度为$4$的递增子序列。只看上面列出的几项，这样的子序列包括：<br>$153, 23409, 3581577, 7980255$<br>$153, 23409, 3581577, 9434375$<br>$153, 23409, 7980255, 9434375$<br>$153, 23409, 976697, 9434375$<br>$153, 3581577, 7980255, 9434375$<br>$23409, 3581577, 7980255, 9434375$</p>
-<p>记$S(n)$为序列$a_i$的前$n$项中所包含的此类子序列的数目。因此$S(6)=94513710$。<br>已知$S(100)=4465488724217$。</p>
+<p>记$S(n)$为序列$a_i$的前$n$项中，此类子序列的各项之和。因此$S(6)=94513710$。<br>已知$S(100)=4465488724217$。</p>
 <p>求$S(10^6)$并对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 ]]></content>
@@ -23290,6 +23283,23 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <h2 id="二项式和幂"><a href="#二项式和幂" class="headerlink" title="二项式和幂"></a><strong>二项式和幂</strong></h2><p>记$\displaystyle S(n)=\sum\limits_{k=0}^{n}\binom{n}{k}k^n$。</p>
 <p>已知$S(10)=142469423360$。</p>
 <p>求$S(10^{18})$，并将你的答案对$83^3 89^3 97^3$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 342</title>
+    <url>/342/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-342"><a href="#Problem-342" class="headerlink" title="Problem 342"></a><a href="https://projecteuler.net/problem=342" target="_blank" rel="noopener">Problem 342</a></h1><hr>
+<p><strong>The totient of a square is a cube</strong></p>
+<p>Consider the number 50.<br>50<sup>2</sup> = 2500 = 2<sup>2</sup> × 5<sup>4</sup>, so φ(2500) = 2 × 4 × 5<sup>3</sup> = 8 × 5<sup>3</sup> = 2<sup>3</sup> × 5<sup>3</sup>. <sup>1</sup><br>So 2500 is a square and  φ(2500) is a cube.</p>
+<p>Find the sum of all numbers n, 1 &lt; n &lt; 10<sup>10</sup> such that φ(n<sup>2</sup>) is a cube.</p>
+<p><sup>1</sup> φ denotes <b>Euler’s totient function</b>.</p>
+<hr>
+<p><strong>平方数的总计函数为立方数</strong></p>
+<p>考虑数50。<br>50<sup>2</sup> = 2500 = 2<sup>2</sup> × 5<sup>4</sup>，因此φ(2500) = 2 × 4 × 5<sup>3</sup> = 8 × 5<sup>3</sup> = 2<sup>3</sup> × 5<sup>3</sup>。<sup>1</sup><br>所以2500是一个平方数，而φ(2500)是一个立方数。</p>
+<p>有些数1 &lt; n &lt; 10<sup>10</sup>满足φ(n<sup>2</sup>)为立方数，求所有这类数的和。</p>
+<p><sup>1</sup> φ表示<b>欧拉总计函数</b>。</p>
 <hr>
 ]]></content>
   </entry>

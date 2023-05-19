@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://projecteuler.net/project/images/p707_LightsOutPic.jpg">
 <meta property="og:image" content="https://projecteuler.net/project/images/p707_LightsOutPic.jpg">
 <meta property="article:published_time" content="2020-03-22T14:00:00.000Z">
-<meta property="article:modified_time" content="2020-11-20T05:32:09.703Z">
+<meta property="article:modified_time" content="2023-05-18T22:35:01.387Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://projecteuler.net/project/images/p707_LightsOutPic.jpg">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2020-11-20 00:32:09" itemprop="dateModified" datetime="2020-11-20T00:32:09-05:00">2020-11-20</time>
+                <time title="更新时间：2023-05-18 18:35:01" itemprop="dateModified" datetime="2023-05-18T18:35:01-04:00">2023-05-18</time>
               </span>
 
           
@@ -239,10 +239,10 @@
 <hr>
 <h2 id="关灯"><a href="#关灯" class="headerlink" title="关灯"></a><strong>关灯</strong></h2><p>考虑一个$w\times h$的格阵，其中每一格有开或关两种状态。当某一格被选中时，这一格以及相邻格的状态会发生变化，若原本是开则变为关，若原本是关则变为开。下图展示了原本所有格均为开状态（表示为白色）的格阵在选中了一个角上的格、一个边上的格和一个中间的格后的情景。</p>
 <p><img src="https://projecteuler.net/project/images/p707_LightsOutPic.jpg" alt="关灯"></p>
-<p>从任意其实状态出发，并不是总能够将所有格变为关状态。如果能够做到，则称相应的起始状态为可解的。</p>
+<p>从任意起始状态出发，并不是总能够将所有格变为关状态。如果能够做到，则称相应的起始状态为可解的。</p>
 <p>记$F(w,h)$为$w\times h$格阵下可解起始状态的数目。已知$F(1,2)=2$，$F(3,3) = 512$，$F(4,4) = 4096$，$F(7,11) \equiv 270016253 \pmod{1\ 000\ 000\ 007}$。</p>
 <p>考虑斐波那契数列$f_1=f_2 = 1$，$f_n=f_{n-1}+f_{n-2}, n \ge 3$，并记<br>$$ S(w,n) = \sum_{k=1}^n F(w,f_k)$$<br>已知$S(3,3) = 32$，$S(4,5) = 1052960$，$S(5,7) \equiv 346547294 \pmod{1\ 000\ 000\ 007}$。</p>
-<p>求$S(199,199)$并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<p>求$S(199,199)$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
 
     </div>
