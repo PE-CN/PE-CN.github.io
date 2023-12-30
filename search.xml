@@ -1401,17 +1401,15 @@
     <url>/129/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-129"><a href="#Problem-129" class="headerlink" title="Problem 129"></a><a href="https://projecteuler.net/problem=129" target="_blank" rel="noopener">Problem 129</a></h1><hr>
-<p><strong>Repunit divisibility</strong></p>
-<p>A number consisting entirely of ones is called a repunit. We shall define R(k) to be a repunit of length k; for example, R(6) = 111111.</p>
-<p>Given that n is a positive integer and GCD(n, 10) = 1, it can be shown that there always exists a value, k, for which R(k) is divisible by n, and let A(n) be the least such value of k; for example, A(7) = 6 and A(41) = 5.</p>
-<p>The least value of n for which A(n) first exceeds ten is 17.</p>
-<p>Find the least value of n for which A(n) first exceeds one-million.</p>
+<h2 id="Repunit-divisibility"><a href="#Repunit-divisibility" class="headerlink" title="Repunit divisibility"></a><strong>Repunit divisibility</strong></h2><p>A number consisting entirely of ones is called a repunit. We shall define $R(k)$ to be a repunit of length $k$; for example, $R(6) = 111111$.</p>
+<p>Given that $n$ is a positive integer and $\text{GCD}(n, 10) = 1$, it can be shown that there always exists a value, $k$, for which $R(k)$ is divisible by $n$, and let $A(n)$ be the least such value of $k$; for example, $A(7) = 6$ and $A(41) = 5$.</p>
+<p>The least value of $n$ for which $A(n)$ first exceeds ten is $17$.</p>
+<p>Find the least value of $n$ for which $A(n)$ first exceeds one-million.</p>
 <hr>
-<p><strong>循环单位数整除性</strong></p>
-<p>只包含数字1的数被称为循环单位数，我们定义R(k)是长为k的循环单位数，例如，R(6) = 111111。</p>
-<p>如果n是一个整数，且GCD(n, 10) = 1，可以验证总存在k使得R(k)能够被n整除，并且记A(n)是这些k中最小的一个。例如，A(7) = 6，而A(41) = 5。</p>
-<p>使得A(n)第一次超过十的n是17。</p>
-<p>求使得A(n)第一次超过一千万的n。</p>
+<h2 id="循环单位数整除性"><a href="#循环单位数整除性" class="headerlink" title="循环单位数整除性"></a><strong>循环单位数整除性</strong></h2><p>只包含数字$1$的数被称为循环单位数。定义$R(k)$是长度为$k$的循环单位数，例如，$R(6) = 111111$。</p>
+<p>如果$n$是一个整数，且$GCD(n, 10) = 1$，可以验证总存在$k$使得$R(k)$能够被$n$整除，并记$A(n)$为这些$k$中最小的一个。例如，$A(7) = 6$，$A(41) = 5$。</p>
+<p>最小的、满足$A(n)$大于十的$n$为$17$。</p>
+<p>求最小的、满足$A(n)$大于一百万的$n$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -23300,6 +23298,98 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>考虑数50。<br>50<sup>2</sup> = 2500 = 2<sup>2</sup> × 5<sup>4</sup>，因此φ(2500) = 2 × 4 × 5<sup>3</sup> = 8 × 5<sup>3</sup> = 2<sup>3</sup> × 5<sup>3</sup>。<sup>1</sup><br>所以2500是一个平方数，而φ(2500)是一个立方数。</p>
 <p>有些数1 &lt; n &lt; 10<sup>10</sup>满足φ(n<sup>2</sup>)为立方数，求所有这类数的和。</p>
 <p><sup>1</sup> φ表示<b>欧拉总计函数</b>。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 831</title>
+    <url>/831/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-831"><a href="#Problem-831" class="headerlink" title="Problem 831"></a><a href="https://projecteuler.net/problem=831" target="_blank" rel="noopener">Problem 831</a></h1><hr>
+<h2 id="Triple-Product"><a href="#Triple-Product" class="headerlink" title="Triple Product"></a><strong>Triple Product</strong></h2><p>Let $g(m)$ be the integer defined by the following double sum of products of binomial coefficients:</p>
+<p>$$\sum_{j=0}^m\sum_{i = 0}^j (-1)^{j-i}\binom mj \binom ji \binom{j+5+6i}{j+5}.$$</p>
+<p>You are given that $g(10) = 127278262644918$.<br /><br>Its first (most significant) five digits are $12727$.<br /><br>Find the first ten digits of $g(142857)$ when written in base $7$.</p>
+<hr>
+<h2 id="三个二项式系数的乘积"><a href="#三个二项式系数的乘积" class="headerlink" title="三个二项式系数的乘积"></a><strong>三个二项式系数的乘积</strong></h2><p>记$g(m)$为如下表达式（对一系列二项式系数的乘积进行双重求和）所定义的整数：</p>
+<p>$$\sum_{j=0}^m\sum_{i = 0}^j (-1)^{j-i}\binom mj \binom ji \binom{j+5+6i}{j+5}.$$</p>
+<p>已知$g(10) = 127278262644918$。<br /><br>它的前五位数字是$12727$。<br /><br>求$g(142857)$的$7$进制表示的前十位数字。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 833</title>
+    <url>/833/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-833"><a href="#Problem-833" class="headerlink" title="Problem 833"></a><a href="https://projecteuler.net/problem=833" target="_blank" rel="noopener">Problem 833</a></h1><hr>
+<h2 id="Square-Triangle-Products"><a href="#Square-Triangle-Products" class="headerlink" title="Square Triangle Products"></a><strong>Square Triangle Products</strong></h2><p>Triangle numbers $T_k$ are integers of the form $k(k+1)/2$.<br /><br>A few triangle numbers happen to be perfect squares like $T_1=1$ and $T_8=36$, but more can be found when considering the product of two triangle numbers. For example, $T_2 \cdot T_{24}=3 \cdot 300=30^2$.</p>
+<p>Let $S(n)$ be the sum of $c$ for all integers triples $(a, b, c)$ with $0\lt c \le n$, $c^2=T_a \cdot T_b$ and $0&lt;a&lt;b$. For example, $S(100)= \sqrt{T_1 T_8}+\sqrt{T_2 T_{24}}+\sqrt{T_1 T_{49}}+\sqrt{T_3 T_{48}}=6+30+35+84=155$.</p>
+<p>You are given $S(10^5)=1479802$ and $S(10^9)=241614948794$.</p>
+<p>Find $S(10^{35})$. Give your answer modulo $136101521$.</p>
+<hr>
+<h2 id="恰为平方数的三角形数乘积"><a href="#恰为平方数的三角形数乘积" class="headerlink" title="恰为平方数的三角形数乘积"></a><strong>恰为平方数的三角形数乘积</strong></h2><p>三角形数$T_k$是指能表达为$k(k+1)/2$的整数。<br /><br>有些三角形数恰好就是完全平方数，比如$T_1=1$和$T_8=36$。如果考虑两个三角形数的乘积，那么可以找到更多的完全平方数。例如，$T_2 \cdot T_{24}=3 \cdot 300=30^2$。</p>
+<p>考虑所有同时满足$0 \lt c \le n$、$c^2=T_a \cdot T_b$和$0&lt;a&lt;b$的整数三元组$(a,b,c)$，并记$S(n)$为所有此类三元组中整数$c$之和。例如，$S(100)= \sqrt{T_1 T_8}+\sqrt{T_2 T_{24}}+\sqrt{T_1 T_{49}}+\sqrt{T_3 T_{48}}=6+30+35+84=155$。</p>
+<p>已知$S(10^5)=1479802$，$S(10^9)=241614948794$。</p>
+<p>求$S(10^{35})$，并将你的答案对$136101521$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 832</title>
+    <url>/832/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-832"><a href="#Problem-832" class="headerlink" title="Problem 832"></a><a href="https://projecteuler.net/problem=832" target="_blank" rel="noopener">Problem 832</a></h1><hr>
+<h2 id="Mex-Sequence"><a href="#Mex-Sequence" class="headerlink" title="Mex Sequence"></a><strong>Mex Sequence</strong></h2><p>In this problem $\oplus$ is used to represent the bitwise <strong>exclusive or</strong> of two numbers.<br>Starting with blank paper repeatedly do the following:</p>
+<ol>
+<li>Write down the smallest positive integer $a$ which is currently not on the paper;</li>
+<li>Find the smallest positive integer $b$ such that neither $b$ nor $(a \oplus b)$ is currently on the paper. Then write down both $b$ and $(a \oplus b)$.</li>
+</ol>
+<p>After the first round ${1,2,3}$ will be written on the paper. In the second round $a=4$ and because $(4 \oplus 5)$, $(4 \oplus 6)$ and $(4 \oplus 7)$ are all already written $b$ must be $8$.</p>
+<p>After $n$ rounds there will be $3n$ numbers on the paper. Their sum is denoted by $M(n)$.<br /><br>For example, $M(10) = 642$ and $M(1000) = 5432148$.</p>
+<p>Find $M(10^{18})$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="最小排除值序列"><a href="#最小排除值序列" class="headerlink" title="最小排除值序列"></a><strong>最小排除值序列</strong></h2><p>在本题中，符号$\oplus$被用于表示两个数的按位<strong>异或</strong>。<br>请拿一张空白的纸，并不断重复如下操作：</p>
+<ol>
+<li>写下最小的、未被写在纸上的正整数$a$；</li>
+<li>求最小的、使得$b$和$(a \oplus b)$都未被写在纸上的正整数$b$，并将$b$和$(a \oplus b)$都写在纸上。</li>
+</ol>
+<p>经过第一轮操作，${1,2,3}$将被写在纸上。在第二轮中$a=4$，同时因为$(4 \oplus 5)$、$(4 \oplus 6)$和$(4 \oplus 7)$都已经写在纸上了，因此$b$只能是$8$。</p>
+<p>经过$n$轮操作，纸上将会有$3n$个数，记这些数之和为$M(n)$。<br /><br>例如，$M(10) = 642$，$M(1000) = 5432148$。</p>
+<p>求$M(10^{18})$，并将你的答案对$1\ 000\ 000\ 007$取余。</p>
+<p><i class=zh>译注：原标题中的“Mex”是“Minimum Excluded Value”的简写，因此翻译为“最小排除值”。</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 834</title>
+    <url>/834/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-834"><a href="#Problem-834" class="headerlink" title="Problem 834"></a><a href="https://projecteuler.net/problem=834" target="_blank" rel="noopener">Problem 834</a></h1><hr>
+<h2 id="Add-and-Divide"><a href="#Add-and-Divide" class="headerlink" title="Add and Divide"></a><strong>Add and Divide</strong></h2><p>A sequence is created by starting with a positive integer $n$ and incrementing by $(n+m)$ at the $m$th step. If $n=10$, the resulting sequence will be $21,33,46,60,75,91,108,126,\ldots$.</p>
+<p>Let $S(n)$ be the set of indices $m$, for which the $m$th term in the sequence is divisible by $(n+m)$.<br /><br>For example, $S(10)={5,8,20,35,80}$.</p>
+<p>Define $T(n)$ to be the sum of the indices in $S(n)$. For example, $T(10) = 148$ and $T(10^2)=21828$.</p>
+<p>Let $\displaystyle U(N)=\sum_{n=3}^{N}T(n)$. You are given, $U(10^2)=612572$.</p>
+<p>Find $U(1234567)$.</p>
+<hr>
+<h2 id="相加与整除"><a href="#相加与整除" class="headerlink" title="相加与整除"></a><strong>相加与整除</strong></h2><p>构造如下数列：选择任意正整数$n$，在第$m$步时给当前的整数增加$(n+m)$并作为数列的第$m$项。例如，若$n=10$，则构造的数列为$21,33,46,60,75,91,108,126,\ldots$</p>
+<p>集合$S(n)$包含所有满足下列条件的下标$m$：数列的第$m$项能够被$(n+m)$整除。<br /><br>例如，$S(10)={5,8,20,35,80}$。</p>
+<p>记$T(n)$为$S(n)$中所有下标之和。例如，$T(10) = 148$，$T(10^2)=21828$。</p>
+<p>记$\displaystyle U(N)=\sum_{n=3}^{N}T(n)$。已知$U(10^2)=612572$。</p>
+<p>求$U(1234567)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 835</title>
+    <url>/835/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-835"><a href="#Problem-835" class="headerlink" title="Problem 835"></a><a href="https://projecteuler.net/problem=835" target="_blank" rel="noopener">Problem 835</a></h1><hr>
+<h2 id="Supernatural-Triangles"><a href="#Supernatural-Triangles" class="headerlink" title="Supernatural Triangles"></a><strong>Supernatural Triangles</strong></h2><p>A <strong>Pythagorean triangle</strong> is called <em>supernatural</em> if two of its three sides are consecutive integers.</p>
+<p>Let $S(N)$ be the sum of the perimeters of all distinct supernatural triangles with perimeters less than or equal to $N$.<br /><br>For example, $S(100) = 258$ and $S(10000) = 172004$.</p>
+<p>Find $S(10^{10^{10}})$. Give your answer modulo $1234567891$.</p>
+<hr>
+<h2 id="超自然三角形"><a href="#超自然三角形" class="headerlink" title="超自然三角形"></a><strong>超自然三角形</strong></h2><p>若一个<strong>毕达哥拉斯三角形</strong>（<i class=zh>译注：三边长均为正整数的直角三角形</i>）的三边中有两边长是连续整数，则称其为<i class=zh>超自然三角形</i>。</p>
+<p>考虑所有不同的、周长小于等于$N$的超自然三角形，记其周长之和为$S(N)$。<br /><br>例如，$S(100) = 258$，$S(10000) = 172004$。</p>
+<p>求$S(10^{10^{10}})$，并将你的答案对$1234567891$取余。</p>
 <hr>
 ]]></content>
   </entry>
