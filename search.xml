@@ -23393,4 +23393,214 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 836</title>
+    <url>/836/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-836"><a href="#Problem-836" class="headerlink" title="Problem 836"></a><a href="https://projecteuler.net/problem=836" target="_blank" rel="noopener">Problem 836</a></h1><hr>
+<h2 id="A-Bold-Proposition"><a href="#A-Bold-Proposition" class="headerlink" title="A Bold Proposition"></a><strong>A Bold Proposition</strong></h2><p>Let $A$ be an <strong>affine plane</strong> over a <strong>radically integral local field</strong> $F$ with residual characteristic $p$.</p>
+<p>We consider an <strong>open oriented line section</strong> $U$ of $A$ with normalized Haar measure $m$.</p>
+<p>Define $f(m, p)$ as the maximal possible discriminant of the <strong>jacobian</strong> associated to the <strong>orthogonal kernel embedding</strong> of $U$ into $A$.</p>
+<p>Find $f(20230401, 57)$. Give as your answer the concatenation of the first letters of each bolded word.</p>
+<hr>
+<h2 id="加粗的命题"><a href="#加粗的命题" class="headerlink" title="加粗的命题"></a><strong>加粗的命题</strong></h2><p>考虑<strong>仿射平面(affine plane)</strong>$A$，定义在<strong>根式积分局部域(radically integral local field)</strong>$F$上，其剩余特征值为$p$。</p>
+<p>考虑$A$的一个<strong>开有向直线截面(open oriented line section)</strong>$U$，其正规化哈尔测度为$m$。</p>
+<p>定义$f(m, p)$为特定<strong>雅各比矩阵(jacobian)</strong>的判别式的最大值，该矩阵对应于$U$对$A$的<strong>正交核嵌入(orthogonal kernel embedding)</strong>。</p>
+<p>求$f(20230401, 57)$，并将本文中所有加粗单词的首字母连起来作为你的答案。</p>
+<p><i class=zh>译注：愚人节快乐！</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 837</title>
+    <url>/837/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-837"><a href="#Problem-837" class="headerlink" title="Problem 837"></a><a href="https://projecteuler.net/problem=837" target="_blank" rel="noopener">Problem 837</a></h1><hr>
+<h2 id="Amidakuji"><a href="#Amidakuji" class="headerlink" title="Amidakuji"></a><strong>Amidakuji</strong></h2><p><a href="https://en.wikipedia.org/wiki/Amidakuji" target="_blank" rel="noopener">Amidakuji</a> (Japanese: 阿弥陀籤) is a method for producing a random permutation of a set of objects.</p>
+<p>In the beginning, a number of parallel vertical lines are drawn, one for each object. Then a specified number of horizontal rungs are added, each lower than any previous rungs. Each rung is drawn as a line segment spanning a randomly select pair of adjacent vertical lines.</p>
+<p>For example, the following diagram depicts an Amidakuji with three objects ($A$, $B$, $C$) and six rungs:</p>
+<div style="text-align:center;">
+<img src="https://projecteuler.net/resources/images/0837_amidakuji.png" alt="0837_amidakuji.png">
+</div>
+
+<p>The coloured lines in the diagram illustrate how to form the permutation. For each object, starting from the top of its vertical line, trace downwards but follow any rung encountered along the way, and record which vertical we end up on. In this example, the resulting permutation happens to be the identity: $A\mapsto A$, $B\mapsto B$, $C\mapsto C$.</p>
+<p>Let $a(m, n)$ be the number of different three-object Amidakujis that have $m$ rungs between $A$ and $B$, and $n$ rungs between $B$ and $C$, and whose outcome is the identity permutation. For example, $a(3, 3) = 2$, because the Amidakuji shown above and its mirror image are the only ones with the required property.</p>
+<p>You are also given that $a(123, 321) \equiv 172633303 \pmod{1234567891}$.</p>
+<p>Find $a(123456789, 987654321)$. Give your answer modulo $1234567891$.</p>
+<hr>
+<h2 id="阿弥陀签"><a href="#阿弥陀签" class="headerlink" title="阿弥陀签"></a><strong>阿弥陀签</strong></h2><p><a href="https://en.wikipedia.org/wiki/Amidakuji" target="_blank" rel="noopener">阿弥陀签</a>是一种对物品进行随机重排的方法。</p>
+<p>首先，对每一个待排列的物品绘制一条竖线。然后，在这些竖线间自上向下随机地绘制一些横档，每个横档连接任意两条相邻的竖线。</p>
+<p>例如，下图绘制了对三个物品（$A$、$B$、$C$）进行重排的阿弥陀签，其中有六个横档：</p>
+<div style="text-align:center;">
+<img src="https://projecteuler.net/resources/images/0837_amidakuji.png" alt="0837_amidakuji.png">
+</div>
+
+<p>图中的彩色折线展示了如何决定最终的重排结果。对于每个物品，首先从其对应的竖线顶端出发向下移动，每当遇到横档时则必须沿横档移动到另一竖线，直至抵达竖线底端。在这个例子中，最终的重排结果恰好保持不变：$A\mapsto A$，$B\mapsto B$，$C\mapsto C$。</p>
+<p>考虑所有不同的、对三个物品进行重排的阿弥陀签，记$a(m,n)$为其中在竖线$A$与竖线$B$之间有$m$个横档、在竖线$B$与竖线$C$之间有$n$个横档且最终重排结果不变的阿弥陀签的数量。例如，$a(3, 3) = 2$，对应的阿弥陀签为上图所展示的这种以及其左右翻转的镜像。</p>
+<p>已知$a(123, 321) \equiv 172633303 \pmod{1234567891}$。</p>
+<p>求$a(123456789, 987654321)$，并将你的答案对$1234567891$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 838</title>
+    <url>/838/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-838"><a href="#Problem-838" class="headerlink" title="Problem 838"></a><a href="https://projecteuler.net/problem=838" target="_blank" rel="noopener">Problem 838</a></h1><hr>
+<h2 id="Not-Coprime"><a href="#Not-Coprime" class="headerlink" title="Not Coprime"></a><strong>Not Coprime</strong></h2><p>Let $f(N)$ be the smallest positive integer that is not coprime to any positive integer $n \le N$ whose least significant digit is $3$.</p>
+<p>For example $f(40)$ equals to $897 = 3 \cdot 13 \cdot 23$ since it is not coprime to any of $3,13,23,33$. By taking the <strong><a href="https://en.wikipedia.org/wiki/Natural_logarithm" target="_blank" rel="noopener">natural logarithm</a></strong> (log to base $e$) we obtain $\ln f(40) = \ln 897 \approx 6.799056$ when rounded to six digits after the decimal point.</p>
+<p>You are also given $\ln f(2800) \approx 715.019337$.</p>
+<p>Find $f(10^6)$. Enter its natural logarithm rounded to six digits after the decimal point.</p>
+<hr>
+<h2 id="不互质"><a href="#不互质" class="headerlink" title="不互质"></a><strong>不互质</strong></h2><p>记$f(N)$为最小的、与所有小于等于$N$且末位为$3$的数都不互质的正整数。</p>
+<p>例如，$f(40)$等于$897 = 3 \cdot 13 \cdot 23$，因为它和$3,13,23,33$中的任意一个都不互质。对这个数取<strong><a href="https://en.wikipedia.org/wiki/Natural_logarithm" target="_blank" rel="noopener">自然对数</a></strong>（以$e$为底的对数）并保留六位小数，可得$\ln f(40) = \ln 897 \approx 6.799056$。</p>
+<p>已知$\ln f(2800) \approx 715.019337$。</p>
+<p>求$f(10^6)$，取其自然对数并保留六位小数作为答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 839</title>
+    <url>/839/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-839"><a href="#Problem-839" class="headerlink" title="Problem 839"></a><a href="https://projecteuler.net/problem=839" target="_blank" rel="noopener">Problem 839</a></h1><hr>
+<h2 id="Beans-in-Bowls"><a href="#Beans-in-Bowls" class="headerlink" title="Beans in Bowls"></a><strong>Beans in Bowls</strong></h2><p>The sequence $S_n$ is defined by $S_0 = 290797$ and $S_n = S_{n - 1}^2 \bmod 50515093$ for $n&gt;0$.</p>
+<p>There are $N$ bowls indexed $0,1,\dots ,N-1$. Initially there are $S_n$ beans in bowl $n$.</p>
+<p>At each step, the smallest index $n$ is found such that bowl $n$ has strictly more beans than bowl $n+1$. Then one bean is moved from bowl $n$ to bowl $n+1$.</p>
+<p>Let $B(N)$ be the number of steps needed to sort the bowls into non-descending order.<br /><br>For example, $B(5) = 0$, $B(6) = 14263289$ and $B(100)=3284417556$.</p>
+<p>Find $B(10^7)$.</p>
+<hr>
+<h2 id="碗中豆"><a href="#碗中豆" class="headerlink" title="碗中豆"></a><strong>碗中豆</strong></h2><p>序列$S_n$按如下方式定义：$S_0 = 290797$；对于$n&gt;0$，$S_n = S_{n - 1}^2 \bmod 50515093$。</p>
+<p>有$N$个碗，其编号分别为$0,1,\dots,N-1$。一开始，编号为$n$的碗中放有$S_n$颗豆子。</p>
+<p>接下来的每一步中，先选择编号最小的、豆子数目比后一个碗严格更多的碗$n$，再从碗$n$中移动一颗豆子到碗$n+1$。</p>
+<p>记$B(N)$为将碗中豆子数目调整为非递降序列所需的步数。<br /><br>例如，$B(5) = 0$，$B(6) = 14263289$，$B(100)=3284417556$。</p>
+<p>求$B(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 840</title>
+    <url>/840/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-840"><a href="#Problem-840" class="headerlink" title="Problem 840"></a><a href="https://projecteuler.net/problem=840" target="_blank" rel="noopener">Problem 840</a></h1><hr>
+<h2 id="Sum-of-Products"><a href="#Sum-of-Products" class="headerlink" title="Sum of Products"></a><strong>Sum of Products</strong></h2><p>A <strong>partition</strong> of $n$ is a set of positive integers for which the sum equals $n$.<br /><br>The partitions of $5$ are:<br /><br>$\{5\},\{1,4\},\{2,3\},\{1,1,3\},\{1,2,2\},\{1,1,1,2\}$ and $\{1,1,1,1,1\}$.</p>
+<p>Further we define the function $D(p)$ as:<br>$$<br>\begin{align}<br>D(1) &amp; = 1 \\<br>D(p) &amp; = 1, \text{ for any prime } p \\<br>D(pq) &amp; = D(p)q + pD(q), \text{ for any positive integers } p,q &gt; 1.<br>\end{align}<br>$$</p>
+<p>Now let ${a_1, a_2,\ldots,a_k}$ be a partition of $n$.<br /><br>We assign to this particular partition the value:<br>$$P=\prod_{j=1}^{k}D(a_j). $$</p>
+<p>$G(n)$ is the sum of $P$ for all partitions of $n$.<br /><br>We can verify that $G(10) = 164$.</p>
+<p>We also define:<br>$$S(N)=\sum_{n=1}^{N}G(n).$$<br>You are given $S(10)=396$.<br /><br>Find $S(5\times 10^4) \mod 999676999$.</p>
+<hr>
+<h2 id="乘积之和"><a href="#乘积之和" class="headerlink" title="乘积之和"></a><strong>乘积之和</strong></h2><p>$n$的一个<strong>分拆</strong>是指一组无序且和为$n$的正整数。<br /><br>例如，$5$的分拆包括：<br /><br>$\{5\}$、$\{1,4\}$、$\{2,3\}$、$\{1,1,3\}$、$\{1,2,2\}$、$\{1,1,1,2\}$和$\{1,1,1,1,1\}$。</p>
+<p>进一步定义函数$D(p)$如下：<br>$$<br>\begin{align}<br>D(1) &amp; = 1 \\<br>D(p) &amp; = 1, \text{对于任意质数} p \\<br>D(pq) &amp; = D(p)q + pD(q), \text{对于任意正整数} p,q &gt; 1.<br>\end{align}<br>$$</p>
+<p>考虑$n$的分拆${a_1, a_2,\ldots,a_k}$。<br /><br>这一分拆的得分是：<br>$$P=\prod_{j=1}^{k}D(a_j)$$</p>
+<p>记$G(n)$为$n$的所有分拆的得分$P$之和。<br /><br>可以验证$G(10) = 164$。</p>
+<p>再定义：<br>$$S(N)=\sum_{n=1}^{N}G(n)$$<br>已知$S(10)=396$。<br /><br>求$S(5\times 10^4) \mod 999676999$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 841</title>
+    <url>/841/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-841"><a href="#Problem-841" class="headerlink" title="Problem 841"></a><a href="https://projecteuler.net/problem=841" target="_blank" rel="noopener">Problem 841</a></h1><hr>
+<h2 id="Regular-Star-Polygons"><a href="#Regular-Star-Polygons" class="headerlink" title="Regular Star Polygons"></a><strong>Regular Star Polygons</strong></h2><p>The regular star polygon $\{p/q\}$, for coprime integers $p,q$ with $p &gt; 2q &gt; 0$, is a polygon formed from $p$ edges of equal length and equal internal angles, such that tracing the complete polygon wraps $q$ times around the centre. For example, $\{8/3\}$ is illustrated below:</p>
+<div align="center"><img src="https://projecteuler.net/resources/images/0841_star_polygon_8_3.png" alt="{8/3}" height="250"></div>
+
+
+<p>The edges of a regular star polygon intersect one another, dividing the interior into several regions. Define the <em>alternating shading</em> of a regular star polygon to be a selection of such regions to shade, such that every piece of every edge has a shaded region on one side and an unshaded region on the other, with the exterior of the polygon unshaded. For example, the above image shows the alternating shading (in green) of $\{8/3\}$.</p>
+<p>Let $A(p, q)$ be the area of the alternating shading of $\{p/q\}$, assuming that its inradius is $1$. (The <strong>inradius</strong> of a regular polygon, star or otherwise, is the distance from its centre to the midpoint of any of its edges.) For example, in the diagram above, it can be shown that central shaded octagon has area $8(\sqrt{2}-1)$ and each point’s shaded kite has area $2(\sqrt{2}-1)$, giving $A(8,3) = 24(\sqrt{2}-1) \approx 9.9411254970$.</p>
+<p>You are also given that $A(130021, 50008)\approx 10.9210371479$, rounded to $10$ digits after the decimal point.</p>
+<p>Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence with $F_1=F_2=1$ (so $A(F_{5+1},F_{5-1}) = A(8,3)$). Give your answer rounded to $10$ digits after the decimal point.</p>
+<hr>
+<h2 id="星形正多边形"><a href="#星形正多边形" class="headerlink" title="星形正多边形"></a><strong>星形正多边形</strong></h2><p>对于互质且满足$p&gt;2q&gt;0$的整数对$p,q$，可以绘制星形正多边形$\{p/q\}$。这一多边形有$p$条等长的边和$p$个相等的内角，且沿多边形移动时环绕其中心恰好$q$圈。例如，星形正多边形$\{8/3\}$如下图所示：</p>
+<div align="center"><img src="https://projecteuler.net/resources/images/0841_star_polygon_8_3.png" alt="{8/3}" height="250"></div>
+
+<p>星形正多边形的边可以彼此相交，将其内部分成多个区域。对星形正多边形进行<i class=zh>交替上色</i>，是指对其中一部分区域进行上色，使得每一条边的每一截都恰好只有一侧被上色而另一侧未上色（多边形外部不上色）。例如，上图展示的是对星形正多边形$\{8/3\}$进行交替上色（绿色部分）的结果。</p>
+<p>对内半径为$1$的星形正多边形$\{p/q\}$进行交替上色后，记上色区域的面积为$A(p, q)$。（任意正多边形或星形正多边形的<strong>内半径</strong>是指其中心和任意一条边的中点的距离。）例如，在上图中，正中位置被上色的八边形面积为$8(\sqrt{2}-1)$，每个顶点处被上色的筝形面积为$2(\sqrt{2}-1)$，因此$A(8,3) = 24(\sqrt{2}-1) \approx 9.9411254970$。</p>
+<p>已知$A(130021, 50008)\approx 10.9210371479$，保留$10$位小数。</p>
+<p>求$\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$，其中$F_j$是由$F_1=F_2=1$开始的斐波那契数列的第$j$项（例如，$A(F_{5+1},F_{5-1}) = A(8,3)$），并将你的答案保留$10$位小数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 842</title>
+    <url>/842/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-842"><a href="#Problem-842" class="headerlink" title="Problem 842"></a><a href="https://projecteuler.net/problem=842" target="_blank" rel="noopener">Problem 842</a></h1><hr>
+<h2 id="Irregular-Star-Polygons"><a href="#Irregular-Star-Polygons" class="headerlink" title="Irregular Star Polygons"></a><strong>Irregular Star Polygons</strong></h2><p>Given $n$ equally spaced points on a circle, we define an $n$<em>-star polygon</em> as an $n$-gon having those $n$ points as vertices. Two $n$-star polygons differing by a rotation/reflection are considered <strong>different</strong>.</p>
+<p>For example, there are twelve $5$-star polygons shown below.</p>
+<div style="text-align:center"><img src="https://projecteuler.net/resources/images/0842_5-agons.jpg" alt="0842_5-agons.jpg"></div>
+
+<p>For an $n$-star polygon $S$, let $I(S)$ be the number of its self intersection points.<br /><br>Let $T(n)$ be the sum of $I(S)$ over all $n$-star polygons $S$.<br /><br>For the example above $T(5) = 20$ because in total there are $20$ self intersection points.</p>
+<p>Some star polygons may have intersection points made from more than two lines. These are only counted once. For example, $S$, shown below is one of the sixty $6$-star polygons. This one has $I(S) = 4$.</p>
+<div style="text-align:center"><img src="https://projecteuler.net/resources/images/0842_6-agon.jpg" alt="0842_6-agon.jpg"></div>
+
+<p>You are also given that $T(8) = 14640$.</p>
+<p>Find $\displaystyle \sum_{n = 3}^{60}T(n)$. Give your answer modulo $(10^9 + 7)$.</p>
+<hr>
+<h2 id="不规则星形多边形"><a href="#不规则星形多边形" class="headerlink" title="不规则星形多边形"></a><strong>不规则星形多边形</strong></h2><p>在圆上取$n$个等距离的点，称以这$n$个点为顶点的$n$边形为$n$<i class=zh>星多边形</i>。若两个$n$星多边形可以通过旋转或翻折重合，仍视为<strong>不同的</strong>$n$星多边形。</p>
+<p>例如，共有十二个不同的$5$星多边形，如下图所示：</p>
+<div style="text-align:center"><img src="https://projecteuler.net/resources/images/0842_5-agons.jpg" alt="0842_5-agons.jpg"></div>
+
+<p>对于任意$n$星多边形$S$，记$I(S)$为其各边自交产生的交点数目。<br /><br>记$T(n)$为所有$n$星多边形$S$对应的$I(S)$之和。<br /><br>如上图所示，$T(5) = 20$，因为所有$5$星多边形各边自交共产生$20$个交点。</p>
+<p>有些交点可能由多条边同时相交产生，这样的交点只被计算一次。例如，下图所示是六十种$6$星多边形的其中之一，其对应的$I(S)=4$。</p>
+<div style="text-align:center"><img src="https://projecteuler.net/resources/images/0842_6-agon.jpg" alt="0842_6-agon.jpg"></div>
+
+<p>已知$T(8) = 14640$。</p>
+<p>求$\displaystyle \sum_{n = 3}^{60}T(n)$，并将你的答案对$(10^9 + 7)$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 843</title>
+    <url>/843/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-843"><a href="#Problem-843" class="headerlink" title="Problem 843"></a><a href="https://projecteuler.net/problem=843" target="_blank" rel="noopener">Problem 843</a></h1><hr>
+<h2 id="Periodic-Circles"><a href="#Periodic-Circles" class="headerlink" title="Periodic Circles"></a><strong>Periodic Circles</strong></h2><p>This problem involves an iterative procedure that begins with a circle of $n\ge 3$ integers. At each step every number is simultaneously replaced with the absolute difference of its two neighbours.</p>
+<p>For any initial values, the procedure eventually becomes periodic.</p>
+<p>Let $S(N)$ be the sum of all possible periods for $3\le n \le N$. For example, $S(6) = 6$, because the possible periods for $3\le n \le 6$ are $1, 2, 3$. Specifically, $n=3$ and $n=4$ can each have period $1$ only, while $n=5$ can have period $1$ or $3$, and $n=6$ can have period $1$ or $2$.</p>
+<p>You are also given $S(30) = 20381$.</p>
+<p>Find $S(100)$.</p>
+<hr>
+<h2 id="周期性的环形数列"><a href="#周期性的环形数列" class="headerlink" title="周期性的环形数列"></a><strong>周期性的环形数列</strong></h2><p>从一个包含$n\ge3$个整数的环形数列开始，不断重复以下过程：在每一步中，同时将每一个数替换为与其相邻的两个数之差的绝对值。</p>
+<p>无论初始数列的取值，这一过程最终都会进入周期性的循环。</p>
+<p>记$S(N)$为所有$3\le n \le N$的环形数列可能进入的循环周期之和。例如，$S(6) = 6$，因为对于所有$3 \le n \le 6$的环形数列，其可能进入的循环周期只有$1$、$2$、$3$。具体来说，$n=3$和$n=4$时只会进入周期为$1$的循环，$n=5$时可能进入周期为$1$或$3$的循环，而$n=6$时可能进入周期为$1$或$2$的循环。</p>
+<p>已知$S(30) = 20381$。</p>
+<p>求$S(100)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 844</title>
+    <url>/844/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-844"><a href="#Problem-844" class="headerlink" title="Problem 844"></a><a href="https://projecteuler.net/problem=844" target="_blank" rel="noopener">Problem 844</a></h1><hr>
+<h2 id="k-Markov-Numbers"><a href="#k-Markov-Numbers" class="headerlink" title="$k$-Markov Numbers"></a><strong>$k$-Markov Numbers</strong></h2><p>Consider positive integer solutions to<br>$$a^2+b^2+c^2 = 3abc$$</p>
+<p>For example, $(1,5,13)$ is a solution. We define a $3$-Markov number to be any part of a solution, so $1$, $5$ and $13$ are all $3$-Markov numbers. Adding distinct $3$-Markov numbers $\le 10^3$ would give $2797$.</p>
+<p>Now we define a $k$-Markov number to be a positive integer that is part of a solution to:<br>$$\displaystyle \sum_{i=1}^{k}x_i^2=k\prod_{i=1}^{k}x_i,\quad x_i\text{ are positive integers}$$</p>
+<p>Let $M_k(N)$ be the sum of $k$-Markov numbers $\le N$. Hence $M_3(10^{3})=2797$, also $M_8(10^8) = 131493335$.</p>
+<p>Define $\displaystyle S(K,N)=\sum_{k=3}^{K}M_k(N)$. You are given $S(4, 10^2)=229$ and $S(10, 10^8)=2383369980$.</p>
+<p>Find $S(10^{18}, 10^{18})$. Give your answer modulo $1\ 405\ 695\ 061$.</p>
+<hr>
+<h2 id="k-马尔科夫数"><a href="#k-马尔科夫数" class="headerlink" title="$k$-马尔科夫数"></a><strong>$k$-马尔科夫数</strong></h2><p>考虑如下方程的正整数解：<br>$$a^2+b^2+c^2 = 3abc$$</p>
+<p>例如，其中一组解是$(1,5,13)$。定义$3$-马尔科夫数为上述解中的任意一个数，因此$1$、$5$和$13$都是$3$-马尔科夫数。<br>所有不同的、小于等于$10^3$的$3$-马尔科夫数之和为$2797$。</p>
+<p>进一步定义$k$-马尔科夫数为下列方程的解中的任意一个数：<br>$$\displaystyle \sum_{i=1}^{k}x_i^2=k\prod_{i=1}^{k}x_i,\quad x_i\text{为正整数}$$</p>
+<p>记$M_k(N)$为所有小于等于$N$的$k$-马尔科夫数之和。因此，$M_3(10^{3})=2797$，$M_8(10^8) = 131493335$。</p>
+<p>定义$\displaystyle S(K,N)=\sum_{k=3}^{K}M_k(N)$。已知$S(4, 10^2)=229$，$S(10, 10^8)=2383369980$。</p>
+<p>求$S(10^{18}, 10^{18})$，并将你的答案对$1\ 405\ 695\ 061$取余。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 845</title>
+    <url>/845/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-845"><a href="#Problem-845" class="headerlink" title="Problem 845"></a><a href="https://projecteuler.net/problem=845" target="_blank" rel="noopener">Problem 845</a></h1><hr>
+<h2 id="Prime-Digit-Sum"><a href="#Prime-Digit-Sum" class="headerlink" title="Prime Digit Sum"></a><strong>Prime Digit Sum</strong></h2><p>Let $D(n)$ be the $n$-th positive integer that has the sum of its digits a prime.<br /><br>For example, $D(61) = 157$ and $D(10^8) = 403539364$.</p>
+<p>Find $D(10^{16})$.</p>
+<hr>
+<h2 id="数字和为质数"><a href="#数字和为质数" class="headerlink" title="数字和为质数"></a><strong>数字和为质数</strong></h2><p>记$D(n)$为第$n$个各位数字和为质数的正整数。<br /><br>例如，$D(61) = 157$，$D(10^8) = 403539364$。</p>
+<p>求$D(10^{16})$。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
