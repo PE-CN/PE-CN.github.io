@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -226,7 +226,7 @@
 
       
         <hr>
-<h1 id="Problem-653"><a href="#Problem-653" class="headerlink" title="Problem 653"></a><a href="https://projecteuler.net/problem=653" target="_blank" rel="noopener">Problem 653</a></h1><hr>
+<h1 id="Problem-653"><a href="#Problem-653" class="headerlink" title="Problem 653"></a><a href="https://projecteuler.net/problem=653">Problem 653</a></h1><hr>
 <h2 id="Frictionless-Tube"><a href="#Frictionless-Tube" class="headerlink" title="Frictionless Tube"></a><strong>Frictionless Tube</strong></h2><p>Consider a horizontal frictionless tube with length $L$ millimetres, and a diameter of $20$ millimetres. The east end of the tube is open, while the west end is sealed. The tube contains $N$ marbles of diameter $20$ millimetres at designated starting locations, each one initially moving either westward or eastward with common speed $v$.</p>
 <p>Since there are marbles moving in opposite directions, there are bound to be some collisions. We assume that the collisions are perfectly elastic, so both marbles involved instantly change direction and continue with speed  $v$ away from the collision site. Similarly, if the west-most marble collides with the sealed end of the tube, it instantly changes direction and continues eastward at speed $v$. On the other hand, once a marble reaches the unsealed east end, it exits the tube and has no further interaction with the remaining marbles.</p>
 <p>To obtain the starting positions and initial directions, we use the pseudo-random sequence $r_j$ defined by:<br>$r_1 = 6\ 563\ 116$<br>$r_{j+1}=r^2_j\mod 32\ 745\ 673$<br>The west-most marble is initially positioned with a gap of $(r_1 \mod 1000)+1$ millimetres between it and the sealed end of the tube, measured from the west-most point of the surface of the marble. Then, for $2\le j\le N$, counting from the west, the gap between the $(j-1)$th and $j$th marbles, as measured from their closest points, is given by $(r_j\mod 1000)+1$ millimetres. Furthermore, the $j$th marble is initially moving eastward if $r_j\le 10\ 000\ 000$, and westward if $r_j&gt;10\ 000\ 000$.</p>
@@ -324,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-653"><span class="nav-text">Problem 653</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Frictionless-Tube"><span class="nav-text">Frictionless Tube</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无摩擦管道"><span class="nav-text">无摩擦管道</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-653"><span class="nav-text">Problem 653</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Frictionless-Tube"><span class="nav-text">Frictionless Tube</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E6%91%A9%E6%93%A6%E7%AE%A1%E9%81%93"><span class="nav-text">无摩擦管道</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -347,9 +347,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-title">
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
-        </li>
-        <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
         </li>
         <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
@@ -376,7 +373,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

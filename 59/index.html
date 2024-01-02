@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -226,18 +226,18 @@
 
       
         <hr>
-<h1 id="Problem-59"><a href="#Problem-59" class="headerlink" title="Problem 59"></a><a href="https://projecteuler.net/problem=59" target="_blank" rel="noopener">Problem 59</a></h1><hr>
+<h1 id="Problem-59"><a href="#Problem-59" class="headerlink" title="Problem 59"></a><a href="https://projecteuler.net/problem=59">Problem 59</a></h1><hr>
 <h2 id="XOR-decryption"><a href="#XOR-decryption" class="headerlink" title="XOR decryption"></a><strong>XOR decryption</strong></h2><p>Each character on a computer is assigned a unique code and the preferred standard is ASCII (American Standard Code for Information Interchange). For example, uppercase $A = 65$, asterisk (*) $= 42$, and lowercase $k = 107$.</p>
 <p>A modern encryption method is to take a text file, convert the bytes to ASCII, then XOR each byte with a given value, taken from a secret key. The advantage with the XOR function is that using the same encryption key on the cipher text, restores the plain text; for example, $65$ XOR $42 = 107$, then $107$ XOR $42 = 65$.</p>
 <p>For unbreakable encryption, the key is the same length as the plain text message, and the key is made up of random bytes. The user would keep the encrypted message and the encryption key in different locations, and without both “halves”, it is impossible to decrypt the message.</p>
 <p>Unfortunately, this method is impractical for most users, so the modified method is to use a password as a key. If the password is shorter than the message, which is likely, the key is repeated cyclically throughout the message. The balance for this method is using a sufficiently long password key for security, but short enough to be memorable.</p>
-<p>Your task has been made easy, as the encryption key consists of three lower case characters. Using <a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a> (right click and ‘Save Link/Target As…’), a file containing the encrypted ASCII codes, and the knowledge that the plain text must contain common English words, decrypt the message and find the sum of the ASCII values in the original text.</p>
+<p>Your task has been made easy, as the encryption key consists of three lower case characters. Using <a href="https://projecteuler.net/project/resources/p059_cipher.txt">cipher.txt</a> (right click and ‘Save Link/Target As…’), a file containing the encrypted ASCII codes, and the knowledge that the plain text must contain common English words, decrypt the message and find the sum of the ASCII values in the original text.</p>
 <hr>
 <h2 id="异或解密"><a href="#异或解密" class="headerlink" title="异或解密"></a><strong>异或解密</strong></h2><p>计算机上的每个字符都被指定了一个独特的代码，其中被广泛使用的一种是ASCII码（美国信息交换标准代码）。例如，大写字母$A = 65$，星号（*）$ = 42$，小写字母$k = 107$。</p>
 <p>一种现代加密方法是将一个文本文档中的字符先转化为ASCII码，然后将其与一个根据密钥确定的值进行异或操作。使用异或进行加密的好处在于，只需对密文使用相同的密钥再加密一次就能得到明文，例如，$65$ XOR $42 = 107$，而$107$ XOR $42 = 65$。</p>
 <p>为了使加密难以破解，密钥应当和明文一样长，由随机的字节构成。用户会把加密过的信息和密钥放置在不同的地方，解密时二者缺一不可。</p>
 <p>不幸的是，这种方法对大多数人来说并不实用，因此一个略有改进的方法是使用一个口令作为密钥。口令的长度很有可能比信息要短，这时候就循环重复使用这个口令进行加密。这种方法需要达到一种平衡，一方面口令要足够长才能保证安全，另一方面需要充分短以方便记忆。</p>
-<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文件<a href="https://projecteuler.net/project/resources/p059_cipher.txt" target="_blank" rel="noopener">cipher.txt</a>中包含了加密后的ASCII码，并且已知明文包含的都是常见的英文单词。解密这条消息并求出原文的ASCII码之和。</p>
+<p>你的破解任务要简单得多，因为密钥只由三个小写字母构成。文本文件<a href="https://projecteuler.net/project/resources/p059_cipher.txt">cipher.txt</a>中包含了加密后的ASCII码，并且已知明文包含的都是常见的英文单词。解密这条消息并求出原文的ASCII码之和。</p>
 <hr>
 
     </div>
@@ -320,7 +320,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-59"><span class="nav-text">Problem 59</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XOR-decryption"><span class="nav-text">XOR decryption</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异或解密"><span class="nav-text">异或解密</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-59"><span class="nav-text">Problem 59</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XOR-decryption"><span class="nav-text">XOR decryption</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%82%E6%88%96%E8%A7%A3%E5%AF%86"><span class="nav-text">异或解密</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -343,9 +343,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-title">
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
-        </li>
-        <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
         </li>
         <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
@@ -372,7 +369,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

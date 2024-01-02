@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -226,7 +226,7 @@
 
       
         <hr>
-<h1 id="Problem-663"><a href="#Problem-663" class="headerlink" title="Problem 663"></a><a href="https://projecteuler.net/problem=663" target="_blank" rel="noopener">Problem 663</a></h1><hr>
+<h1 id="Problem-663"><a href="#Problem-663" class="headerlink" title="Problem 663"></a><a href="https://projecteuler.net/problem=663">Problem 663</a></h1><hr>
 <h2 id="Sums-of-subarrays"><a href="#Sums-of-subarrays" class="headerlink" title="Sums of subarrays"></a><strong>Sums of subarrays</strong></h2><p>Let $t_k$ be the <strong>tribonacci numbers</strong> defined as:<br>$\quad t_0 = t_1 = 0$;<br>$\quad t_2 = 1$;<br>$\quad t_k = t_{k-1} + t_{k-2} + t_{k-3}$ for $k \ge 3$.</p>
 <p>For a given integer $n$, let $A_n$ be an array of length $n$ (indexed from 0 to $n-1$), that is initially filled with zeros.<br>The array is changed iteratively by replacing $A_n[(t_{2 i-2} \text{ mod } n)]$ with $A_n[(t_{2 i-2} \text{ mod } n)]+2 (t_{2 i-1} \text{ mod } n)-n+1$ in each step $i$.<br>After each step $i$, define $M_n(i)$ to be $\displaystyle \max{\sum_{j=p}^q A_n[j]: 0\le p\le q&lt;n}$, the maximal sum of any contiguous subarray of $A_n$. </p>
 <p>The first $6$ steps for $n=5$ are illustrated below:<br>Initial state: $, A_5={0,0,0,0,0}$<br>Step $1$: $\quad \Rightarrow A_5={-4,0,0,0,0}$ , $M_5(1)=0$<br>Step $2$: $\quad \Rightarrow A_5={-4, -2, 0, 0, 0}$ , $M_5(2)=0$<br>Step $3$: $\quad \Rightarrow A_5={-4, -2, 4, 0, 0}$ , $M_5(3)=4$<br>Step $4$: $\quad \Rightarrow A_5={-4, -2, 6, 0, 0}$ , $M_5(4)=6$<br>Step $5$: $\quad \Rightarrow A_5={-4, -2, 6, 0, 4}$ , $M_5(5)=10$<br>Step $6$: $\quad \Rightarrow A_5={-4, 2, 6, 0, 4}$ , $M_5(6)=12$</p>
@@ -320,7 +320,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-663"><span class="nav-text">Problem 663</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sums-of-subarrays"><span class="nav-text">Sums of subarrays</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子数组之和"><span class="nav-text">子数组之和</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-663"><span class="nav-text">Problem 663</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sums-of-subarrays"><span class="nav-text">Sums of subarrays</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E6%95%B0%E7%BB%84%E4%B9%8B%E5%92%8C"><span class="nav-text">子数组之和</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -343,9 +343,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-title">
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
-        </li>
-        <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
         </li>
         <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
@@ -372,7 +369,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

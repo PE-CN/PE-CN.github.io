@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -226,14 +226,14 @@
 
       
         <hr>
-<h1 id="Problem-674"><a href="#Problem-674" class="headerlink" title="Problem 674"></a><a href="https://projecteuler.net/problem=674" target="_blank" rel="noopener">Problem 674</a></h1><hr>
+<h1 id="Problem-674"><a href="#Problem-674" class="headerlink" title="Problem 674"></a><a href="https://projecteuler.net/problem=674">Problem 674</a></h1><hr>
 <h2 id="Solving-mathcal-I-equations"><a href="#Solving-mathcal-I-equations" class="headerlink" title="Solving $\mathcal{I}$-equations"></a><strong>Solving $\mathcal{I}$-equations</strong></h2><p>We define the $\mathcal{I}$ operator as the function<br>$$\mathcal{I}(x,y) = (1+x+y)^2+y-x$$<br>and $\mathcal{I}$-expressions as arithmetic expressions built only from variables names and applications of $\mathcal{I}$. A variable name may consist of one or more letters. For example, the three expressions $x$, $\mathcal{I}(x,y)$, and $\mathcal{I}(\mathcal{I}(x,ab),x)$ are all $\mathcal{I}$-expressions.</p>
 <p>For two $\mathcal{I}$-expressions $e_1$ and $e_2$ such that the equation $e_1=e_2$ has a solution in non-negative integers, we define the least simultaneous value of $e_1$ and $e_2$ to be the minimum value taken by $e_1$ and $e_2$ on such a solution. If the equation $e_1=e_2$ has no solution in non-negative integers, we define the least simultaneous value of $e_1$ and $e_2$ to be $0$. For example, consider the following three $\mathcal{I}$-expressions:<br>$$\begin{array}{l}A = \mathcal{I}(x,\mathcal{I}(z,t))\<br>B = \mathcal{I}(\mathcal{I}(y,z),y)\<br>C = \mathcal{I}(\mathcal{I}(x,z),y)\end{array}$$<br>The least simultaneous value of $A$ and $B$ is $23$, attained for $x=3, y=1, z=t=0$. On the other hand, $A=C$ has no solutions in non-negative integers, so the least simultaneous value of $A$ and $C$ is $0$. The total sum of least simultaneous pairs made of $\mathcal{I}$-expressions from ${A,B,C}$ is $26$.</p>
-<p>Find the sum of least simultaneous values of all $\mathcal{I}$-expressions pairs made of distinct expressions from file <a href="https://projecteuler.net/project/resources/p674_i_expressions.txt" target="_blank" rel="noopener">I-expressions.txt</a> (pairs $(e_1,e_2)$ and $(e_2,e_1)$ are considered to be identical). Give the last nine digits of the result as the answer.</p>
+<p>Find the sum of least simultaneous values of all $\mathcal{I}$-expressions pairs made of distinct expressions from file <a href="https://projecteuler.net/project/resources/p674_i_expressions.txt">I-expressions.txt</a> (pairs $(e_1,e_2)$ and $(e_2,e_1)$ are considered to be identical). Give the last nine digits of the result as the answer.</p>
 <hr>
 <h2 id="求解-mathcal-I-方程"><a href="#求解-mathcal-I-方程" class="headerlink" title="求解$\mathcal{I}$-方程"></a><strong>求解$\mathcal{I}$-方程</strong></h2><p>定义算子$\mathcal{I}$为函数<br>$$\mathcal{I}(x,y) = (1+x+y)^2+y-x$$<br>而$\mathcal{I}$-表达式为仅由变量和应用$\mathcal{I}$算子于变量所构成的算术表达式。变量名可以包含一个或多个字母。例如，如下三个表达式$x$、$\mathcal{I}(x,y)$和$\mathcal{I}(\mathcal{I}(x,ab),x)$都是$\mathcal{I}$-表达式。</p>
 <p>若对于两个$\mathcal{I}$-表达式$e_1$和$e_2$，方程$e_1=e_2$有非负整数解，则记$e_1$和$e_2$的最小共值为所有上述方程的非负整数解下$e_1$和$e_2$所能取得的最小值。如果该方程没有非负整数解，则记$e_1$和$e_2$的最小共值为$0$。例如，考虑下面这三个$\mathcal{I}$-表达式：<br>$$\begin{array}{l}A = \mathcal{I}(x,\mathcal{I}(z,t))\<br>B = \mathcal{I}(\mathcal{I}(y,z),y)\<br>C = \mathcal{I}(\mathcal{I}(x,z),y)\end{array}$$<br>$A$和$B$的最小共值为$23$，在$x=3, y=1, z=t=0$时取得；而$A=C$没有非负整数解，因此$A$和$C$的最小共值为$0$。${A,B,C}$中任意两对表达式的最小共值之和为$26$。</p>
-<p>在文本文件<a href="https://projecteuler.net/project/resources/p674_i_expressions.txt" target="_blank" rel="noopener">I-expressions.txt</a>所包含的所有$\mathcal{I}$-表达式中，求任意两对表达式的最小共值之和（注意$(e_1,e_2)$和$(e_2,e_1)$是相同的一对表达式），并给出其最后九位数字作为你的答案。</p>
+<p>在文本文件<a href="https://projecteuler.net/project/resources/p674_i_expressions.txt">I-expressions.txt</a>所包含的所有$\mathcal{I}$-表达式中，求任意两对表达式的最小共值之和（注意$(e_1,e_2)$和$(e_2,e_1)$是相同的一对表达式），并给出其最后九位数字作为你的答案。</p>
 <hr>
 
     </div>
@@ -316,7 +316,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-674"><span class="nav-text">Problem 674</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Solving-mathcal-I-equations"><span class="nav-text">Solving $\mathcal{I}$-equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求解-mathcal-I-方程"><span class="nav-text">求解$\mathcal{I}$-方程</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-674"><span class="nav-text">Problem 674</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Solving-mathcal-I-equations"><span class="nav-text">Solving $\mathcal{I}$-equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%82%E8%A7%A3-mathcal-I-%E6%96%B9%E7%A8%8B"><span class="nav-text">求解$\mathcal{I}$-方程</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -339,9 +339,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-title">
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
-        </li>
-        <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
         </li>
         <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
@@ -368,7 +365,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -226,15 +226,15 @@
 
       
         <hr>
-<h1 id="Problem-610"><a href="#Problem-610" class="headerlink" title="Problem 610"></a><a href="https://projecteuler.net/problem=610" target="_blank" rel="noopener">Problem 610</a></h1><hr>
+<h1 id="Problem-610"><a href="#Problem-610" class="headerlink" title="Problem 610"></a><a href="https://projecteuler.net/problem=610">Problem 610</a></h1><hr>
 <h2 id="Roman-Numerals-II"><a href="#Roman-Numerals-II" class="headerlink" title="Roman Numerals II"></a><strong>Roman Numerals II</strong></h2><p>A random generator produces a sequence of symbols drawn from the set {<span style="font-family:'courier new', monospace;">I</span>, <span style="font-family:'courier new', monospace;">V</span>, <span style="font-family:'courier new', monospace;">X</span>, <span style="font-family:'courier new', monospace;">L</span>, <span style="font-family:'courier new', monospace;">C</span>, <span style="font-family:'courier new', monospace;">D</span>, <span style="font-family:'courier new', monospace;">M</span>, <span style="font-family:'courier new', monospace;">#</span>}. Each item in the sequence is determined by selecting one of these symbols at random, independently of the other items in the sequence. At each step, the seven letters are equally likely to be selected, with probability 14% each, but the <span style="font-family:'courier new', monospace;">#</span> symbol only has a 2% chance of selection.</p>
 <p>We write down the sequence of letters from left to right as they are generated, and we stop at the first occurrence of the <span style="font-family:'courier new', monospace;">#</span> symbol (without writing it). However, we stipulate that what we have written down must always (when non-empty) be a valid Roman numeral representation in minimal form. If appending the next letter would contravene this then we simply skip it and try again with the next symbol generated.</p>
-<p>Please take careful note of <a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">About… Roman Numerals</a> for the definitive rules for this problem on what constitutes a “valid Roman numeral representation” and “minimal form”. For example, the (only) sequence that represents 49 is <span style="font-family:'courier new', monospace;">XLIX</span>. The subtractive combination <span style="font-family:'courier new', monospace;">IL</span> is invalid because of rule (ii), while <span style="font-family:'courier new', monospace;">XXXXIX</span> is valid but not minimal. The rules do not place any restriction on the number of occurrences of <span style="font-family:'courier new', monospace;">M</span>, so all integers have a valid representation. These are the same rules as were used in <a href="https://projecteuler.net/problem=89" target="_blank" rel="noopener">Problem 89</a>, and members are invited to solve that problem first.</p>
+<p>Please take careful note of <a href="https://projecteuler.net/about=roman_numerals">About… Roman Numerals</a> for the definitive rules for this problem on what constitutes a “valid Roman numeral representation” and “minimal form”. For example, the (only) sequence that represents 49 is <span style="font-family:'courier new', monospace;">XLIX</span>. The subtractive combination <span style="font-family:'courier new', monospace;">IL</span> is invalid because of rule (ii), while <span style="font-family:'courier new', monospace;">XXXXIX</span> is valid but not minimal. The rules do not place any restriction on the number of occurrences of <span style="font-family:'courier new', monospace;">M</span>, so all integers have a valid representation. These are the same rules as were used in <a href="https://projecteuler.net/problem=89">Problem 89</a>, and members are invited to solve that problem first.</p>
 <p>Find the expected value of the number represented by what we have written down when we stop. (If nothing is written down then count that as zero.) Give your answer rounded to 8 places after the decimal point.</p>
 <hr>
 <h2 id="罗马数字II"><a href="#罗马数字II" class="headerlink" title="罗马数字II"></a><strong>罗马数字II</strong></h2><p>一个随机生成器从集合{<span style="font-family:'courier new', monospace;">I</span>, <span style="font-family:'courier new', monospace;">V</span>, <span style="font-family:'courier new', monospace;">X</span>, <span style="font-family:'courier new', monospace;">L</span>, <span style="font-family:'courier new', monospace;">C</span>, <span style="font-family:'courier new', monospace;">D</span>, <span style="font-family:'courier new', monospace;">M</span>, <span style="font-family:'courier new', monospace;">#</span>}中生成一个符号序列。序列中的每个符号都是独立于其它符号随机选出的，在每一步中，七个字母都以14%的等概率被选中，而<span style="font-family:'courier new', monospace;">#</span>号则只有2%的概率被选中。</p>
 <p>我们将生成的符号从左到右地写成序列，直到我们首次碰到<span style="font-family:'courier new', monospace;">#</span>号出现（但并不写下）。此外，我们还要求写下的字母序列构成一个合法的最简形式罗马数字表示（除非是空序列）。如果写下下一个字母将会违反规则，我们就跳过它，并尝试下一个生成的符号。</p>
-<p>请仔细阅读<a href="https://projecteuler.net/about=roman_numerals" target="_blank" rel="noopener">关于罗马数字</a>以了解本题中所提及的“合法罗马数字表示”和“最简形式”。例如，表示49的（唯一）合法序列是<span style="font-family:'courier new', monospace;">XLIX</span>。减法组合<span style="font-family:'courier new', monospace;">IL</span>是不合法的，因为它违反了规则(ii)，而<span style="font-family:'courier new', monospace;">XXXXIX</span>是合法的但不是最简形式。规则中并未限制字母<span style="font-family:'courier new', monospace;">M</span>的出现次数，所以所有整数都有一个合法的表示。这些规则同样被用在<a href="/89/">第89题</a>中，欢迎各位先去解决那道更早的问题。</p>
+<p>请仔细阅读<a href="https://projecteuler.net/about=roman_numerals">关于罗马数字</a>以了解本题中所提及的“合法罗马数字表示”和“最简形式”。例如，表示49的（唯一）合法序列是<span style="font-family:'courier new', monospace;">XLIX</span>。减法组合<span style="font-family:'courier new', monospace;">IL</span>是不合法的，因为它违反了规则(ii)，而<span style="font-family:'courier new', monospace;">XXXXIX</span>是合法的但不是最简形式。规则中并未限制字母<span style="font-family:'courier new', monospace;">M</span>的出现次数，所以所有整数都有一个合法的表示。这些规则同样被用在<a href="/89/">第89题</a>中，欢迎各位先去解决那道更早的问题。</p>
 <p>找出当我们停止时所表示的数的期望值。（当什么都没写下时视为0。）将答案四舍五入至小数点后8位。</p>
 <hr>
 
@@ -318,7 +318,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-610"><span class="nav-text">Problem 610</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Roman-Numerals-II"><span class="nav-text">Roman Numerals II</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#罗马数字II"><span class="nav-text">罗马数字II</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-610"><span class="nav-text">Problem 610</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Roman-Numerals-II"><span class="nav-text">Roman Numerals II</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97II"><span class="nav-text">罗马数字II</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -341,9 +341,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-title">
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
-        </li>
-        <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
         </li>
         <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
@@ -370,7 +367,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

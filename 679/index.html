@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 7.0.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
 
@@ -18,12 +18,12 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 679 FREEFAREALet $S$ be the set consisting of the four letters${\texttt{A&#39;},\texttt{E’},\texttt{F&#39;},\texttt{R’}}$.For $n\ge 0$, let $S^*(n)$ denote the set of words of length $n$ cons">
+  <meta name="description" content="Problem 679 FREEFAREALet $S$ be the set consisting of the four letters${\texttt{A&#39;&#125;,\texttt&#123;E’},\texttt{F&#39;&#125;,\texttt&#123;R’}}$.For $n\ge 0$, let $S^*(n)$ denote the set of word">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 679">
 <meta property="og:url" content="http://yoursite.com/679/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 679 FREEFAREALet $S$ be the set consisting of the four letters${\texttt{A&#39;},\texttt{E’},\texttt{F&#39;},\texttt{R’}}$.For $n\ge 0$, let $S^*(n)$ denote the set of words of length $n$ cons">
+<meta property="og:description" content="Problem 679 FREEFAREALet $S$ be the set consisting of the four letters${\texttt{A&#39;&#125;,\texttt&#123;E’},\texttt{F&#39;&#125;,\texttt&#123;R’}}$.For $n\ge 0$, let $S^*(n)$ denote the set of word">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-09-15T05:00:00.000Z">
 <meta property="article:modified_time" content="2020-10-27T20:15:12.770Z">
@@ -226,14 +226,14 @@
 
       
         <hr>
-<h1 id="Problem-679"><a href="#Problem-679" class="headerlink" title="Problem 679"></a><a href="https://projecteuler.net/problem=679" target="_blank" rel="noopener">Problem 679</a></h1><hr>
-<h2 id="FREEFAREA"><a href="#FREEFAREA" class="headerlink" title="FREEFAREA"></a><strong>FREEFAREA</strong></h2><p>Let $S$ be the set consisting of the four letters<br>${\texttt{<code>A&#39;},\texttt{</code>E’},\texttt{<code>F&#39;},\texttt{</code>R’}}$.<br>For $n\ge 0$, let $S^*(n)$ denote the set of words of length $n$ consisting of letters belonging to $S$.<br>We designate the words $\texttt{FREE}, \texttt{FARE}, \texttt{AREA}, \texttt{REEF}$ as <i>keywords</i>.</p>
+<h1 id="Problem-679"><a href="#Problem-679" class="headerlink" title="Problem 679"></a><a href="https://projecteuler.net/problem=679">Problem 679</a></h1><hr>
+<h2 id="FREEFAREA"><a href="#FREEFAREA" class="headerlink" title="FREEFAREA"></a><strong>FREEFAREA</strong></h2><p>Let $S$ be the set consisting of the four letters<br>${\texttt{<code>A&#39;&#125;,\texttt&#123;</code>E’},\texttt{<code>F&#39;&#125;,\texttt&#123;</code>R’}}$.<br>For $n\ge 0$, let $S^*(n)$ denote the set of words of length $n$ consisting of letters belonging to $S$.<br>We designate the words $\texttt{FREE}, \texttt{FARE}, \texttt{AREA}, \texttt{REEF}$ as <i>keywords</i>.</p>
 <p>Let $f(n)$ be the number of words in $S^*(n)$ that contains all four keywords exactly once.</p>
 <p>This first happens for $n=9$, and indeed there is a unique 9 lettered word that contain each of the keywords once: $\texttt{FREEFAREA}$<br>So, $f(9)=1$.</p>
 <p>You are also given that $f(15)=72863$.</p>
 <p>Find $f(30)$.</p>
 <hr>
-<h2 id="FREEFAREA-1"><a href="#FREEFAREA-1" class="headerlink" title="FREEFAREA"></a><strong>FREEFAREA</strong></h2><p>记$S$为包含四个字母的集合${\texttt{<code>A&#39;},\texttt{</code>E’},\texttt{<code>F&#39;},\texttt{</code>R’}}$。<br>对于$n\ge 0$，记$S^*(n)$为仅包含$S$中的字母且长度为$n$的字符串所组成的集合。<br>我们选择$\texttt{FREE}, \texttt{FARE}, \texttt{AREA}, \texttt{REEF}$作为<i class=zh>关键词</i>。</p>
+<h2 id="FREEFAREA-1"><a href="#FREEFAREA-1" class="headerlink" title="FREEFAREA"></a><strong>FREEFAREA</strong></h2><p>记$S$为包含四个字母的集合${\texttt{<code>A&#39;&#125;,\texttt&#123;</code>E’},\texttt{<code>F&#39;&#125;,\texttt&#123;</code>R’}}$。<br>对于$n\ge 0$，记$S^*(n)$为仅包含$S$中的字母且长度为$n$的字符串所组成的集合。<br>我们选择$\texttt{FREE}, \texttt{FARE}, \texttt{AREA}, \texttt{REEF}$作为<i class=zh>关键词</i>。</p>
 <p>记$f(n)$为$S^*(n)$中恰好包含四个关键词各一次的字符串数目。</p>
 <p>在$n=9$时首次出现满足要求的字符串，且唯一的拥有$9$个字母的此类字符串是$\texttt{FREEFAREA}$。<br>因此$f(9)=1$。</p>
 <p>已知$f(15)=72863$。</p>
@@ -345,9 +345,6 @@
           <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
         </li>
         <li class="links-of-blogroll-title">
-          <a href="http://jakwings.is-programmer.com/Project_Euler" title="http:&#x2F;&#x2F;jakwings.is-programmer.com&#x2F;Project_Euler" rel="noopener" target="_blank">饮水思源汉化</a>
-        </li>
-        <li class="links-of-blogroll-title">
           <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
         </li>
     </ul>
@@ -372,7 +369,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>
