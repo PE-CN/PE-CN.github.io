@@ -6145,9 +6145,8 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <url>/253/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-253"><a href="#Problem-253" class="headerlink" title="Problem 253"></a><a href="https://projecteuler.net/problem=253">Problem 253</a></h1><hr>
-<p><strong>Tidying up</strong></p>
-<p>A small child has a “number caterpillar” consisting of forty jigsaw pieces, each with one number on it, which, when connected together in a line, reveal the numbers 1 to 40 in order.</p>
-<p>Every night, the child’s father has to pick up the pieces of the caterpillar that have been scattered across the play room. He picks up the pieces at random and places them in the correct order. As the caterpillar is built up in this way, it forms distinct segments that gradually merge together. The number of segments starts at zero (no pieces placed), generally increases up to about eleven or twelve, then tends to drop again before finishing at a single segment (all pieces placed).</p>
+<h2 id="Tidying-Up-A"><a href="#Tidying-Up-A" class="headerlink" title="Tidying Up A"></a><strong>Tidying Up A</strong></h2><p>A small child has a “number caterpillar” consisting of forty jigsaw pieces, each with one number on it, which, when connected together in a line, reveal the numbers $1$ to $40$ in order.</p>
+<p>Every night, the child’s father has to pick up the pieces of the caterpillar that have been scattered across the play room. He picks up the pieces at random and places them in the correct order.<br>As the caterpillar is built up in this way, it forms distinct segments that gradually merge together.<br>The number of segments starts at zero (no pieces placed), generally increases up to about eleven or twelve, then tends to drop again before finishing at a single segment (all pieces placed).</p>
 <p>For example:</p>
 <table>
 <thead>
@@ -6157,74 +6156,73 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">12</td>
-<td align="center">1</td>
+<td align="center">$12$</td>
+<td align="center">$1$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">2</td>
+<td align="center">$4$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">29</td>
-<td align="center">3</td>
+<td align="center">$29$</td>
+<td align="center">$3$</td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">4</td>
+<td align="center">$6$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">34</td>
-<td align="center">5</td>
+<td align="center">$34$</td>
+<td align="center">$5$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">4</td>
+<td align="center">$5$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">35</td>
-<td align="center">4</td>
+<td align="center">$35$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">…</td>
-<td align="center">…</td>
+<td align="center">$\ldots$</td>
+<td align="center">$\ldots$</td>
 </tr>
 </tbody></table>
-<p>Let M be the maximum number of segments encountered during a random tidy-up of the caterpillar.<br>For a caterpillar of ten pieces, the number of possibilities for each M is</p>
+<p>Let $M$ be the maximum number of segments encountered during a random tidy-up of the caterpillar.<br /><br>For a caterpillar of ten pieces, the number of possibilities for each $M$ is</p>
 <table>
 <thead>
 <tr>
-<th align="center"><strong>M</strong></th>
+<th align="center"><strong>$M$</strong></th>
 <th align="center"><strong>Possibilities</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">1</td>
-<td align="center">512</td>
+<td align="center">$1$</td>
+<td align="center">$512$</td>
 </tr>
 <tr>
-<td align="center">2</td>
-<td align="center">250912</td>
+<td align="center">$2$</td>
+<td align="center">$250912$</td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">1815264</td>
+<td align="center">$3$</td>
+<td align="center">$1815264$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">1418112</td>
+<td align="center">$4$</td>
+<td align="center">$1418112$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">144000</td>
+<td align="center">$5$</td>
+<td align="center">$144000$</td>
 </tr>
 </tbody></table>
-<p>so the most likely value of M is 3 and the average value is <sup>385643</sup>⁄<sub>113400</sub> = 3.400732, rounded to six decimal places.</p>
-<p>The most likely value of M for a forty-piece caterpillar is 11; but what is the average value of M?</p>
+<p>so the most likely value of $M$ is $3$ and the average value is $385643/113400 = 3.400732$, rounded to six decimal places.</p>
+<p>The most likely value of $M$ for a forty-piece caterpillar is $11$; but what is the average value of $M$?</p>
 <p>Give your answer rounded to six decimal places.</p>
 <hr>
-<p><strong>清理</strong></p>
-<p>小朋友有一个“数字毛毛虫”玩具，包含有40片拼板，分别标号；如果把它们都拼起来，将会组成一条直线，且按照1到40顺序排列。</p>
-<p>每天晚上，小朋友的爸爸都要把玩具房里撒了一地的毛毛虫拼板捡起来。他捡的时候是完全随机的，捡起来之后，再按照正确的顺序拼好。这样一来，毛毛虫拼板将会构成分离的片段，并且不断合并直到组成完整的毛毛虫。片段数从0开始（没有捡起任何一块拼板），不断上升到大约11或12，然后再次下降，直到最终只有一段（所有的拼板都组合起来了）。</p>
+<h2 id="清理（一）"><a href="#清理（一）" class="headerlink" title="清理（一）"></a><strong>清理（一）</strong></h2><p>小朋友有一个“数字毛毛虫”玩具，包含有$40$片拼板，分别标有编号；如果把它们都拼起来，将会组成一条直线，且按照$1$到$40$顺序排列。</p>
+<p>每天晚上，小朋友的爸爸都要把玩具房里撒了一地的毛毛虫拼板捡起来。他捡的时候是完全随机的，捡起来之后，再按照正确的顺序拼好。<br>这样一来，毛毛虫拼板将会构成分离的片段，并且不断合并直到组成完整的毛毛虫。<br>片段数从$0$开始（没有捡起任何一块拼板），不断上升到大约$11$或$12$，然后再次下降，直到最终只有一段（所有的拼板都组合起来了）。</p>
 <p>例如：</p>
 <table>
 <thead>
@@ -6234,70 +6232,69 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">12</td>
-<td align="center">1</td>
+<td align="center">$12$</td>
+<td align="center">$1$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">2</td>
+<td align="center">$4$</td>
+<td align="center">$2$</td>
 </tr>
 <tr>
-<td align="center">29</td>
-<td align="center">3</td>
+<td align="center">$29$</td>
+<td align="center">$3$</td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">4</td>
+<td align="center">$6$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">34</td>
-<td align="center">5</td>
+<td align="center">$34$</td>
+<td align="center">$5$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">4</td>
+<td align="center">$5$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">35</td>
-<td align="center">4</td>
+<td align="center">$35$</td>
+<td align="center">$4$</td>
 </tr>
 <tr>
-<td align="center">…</td>
-<td align="center">…</td>
+<td align="center">$\ldots$</td>
+<td align="center">$\ldots$</td>
 </tr>
 </tbody></table>
-<p>记M是这个随机地清理毛毛虫过程中遇到的最大片段数。<br>若毛毛虫分成10片，出现不同M的可能情况数分别是：</p>
+<p>记$M$为随机清理毛毛虫拼板的过程中最大的片段数。<br /><br>若毛毛虫拼板共有十片，出现不同$M$的可能情况数分别是：</p>
 <table>
 <thead>
 <tr>
-<th align="center"><strong>M</strong></th>
+<th align="center"><strong>$M$</strong></th>
 <th align="center"><strong>可能情况</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">1</td>
-<td align="center">512</td>
+<td align="center">$1$</td>
+<td align="center">$512$</td>
 </tr>
 <tr>
-<td align="center">2</td>
-<td align="center">250912</td>
+<td align="center">$2$</td>
+<td align="center">$250912$</td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">1815264</td>
+<td align="center">$3$</td>
+<td align="center">$1815264$</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">1418112</td>
+<td align="center">$4$</td>
+<td align="center">$1418112$</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">144000</td>
+<td align="center">$5$</td>
+<td align="center">$144000$</td>
 </tr>
 </tbody></table>
-<p>因此，最可能出现的M值为3，M的平均值为<sup>385643</sup>⁄<sub>113400</sub> = 3.400732，此处四舍五入到六位小数。</p>
-<p>当毛毛虫共有40片时，最可能出现的M值为11；那么M的平均值是多少？</p>
-<p>将你的答案四舍五入到六位小数。</p>
+<p>因此，最可能出现的$M$值为$3$，$M$的平均值为$385643/113400 = 3.400732$，保留六位小数。</p>
+<p>若毛毛虫拼板共有四十片，最可能出现的$M$值为$11$；那么$M$的平均值是多少？将你的答案保留六位小数。</p>
 <hr>
 ]]></content>
   </entry>
@@ -6453,33 +6450,31 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <url>/260/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-260"><a href="#Problem-260" class="headerlink" title="Problem 260"></a><a href="https://projecteuler.net/problem=260">Problem 260</a></h1><hr>
-<p><strong>Stone Game</strong></p>
-<p>A game is played with three piles of stones and two players.<br>At her turn, a player removes one or more stones from the piles. However, if she takes stones from more than one pile, she must remove the same number of stones from each of the selected piles.</p>
-<p>In other words, the player chooses some N&gt;0 and removes:</p>
+<h2 id="Stone-Game"><a href="#Stone-Game" class="headerlink" title="Stone Game"></a><strong>Stone Game</strong></h2><p>A game is played with three piles of stones and two players.<br>On each player’s turn, the player may remove one or more stones from the piles. However, if the player takes stones from more than one pile, she must remove the same number of stones from each of the selected piles.</p>
+<p>In other words, the player chooses some $N&gt;0$ and removes:</p>
 <ul>
-<li>N stones from any single pile; or</li>
-<li>N stones from each of any two piles (2N total); or</li>
-<li>N stones from each of the three piles (3N total).</li>
+<li>$N$ stones from any single pile; or</li>
+<li>$N$ stones from each of any two piles ($2N$ total); or</li>
+<li>$N$ stones from each of the three piles ($3N$ total).</li>
 </ul>
 <p>The player taking the last stone(s) wins the game.</p>
-<p>A <em>winning configuration</em> is one where the first player can force a win.<br>For example, (0,0,13), (0,11,11) and (5,5,5) are winning configurations because the first player can immediately remove all stones.</p>
-<p>A <em>losing configuration</em> is one where the second player can force a win, no matter what the first player does.<br>For example, (0,1,2) and (1,3,3) are losing configurations: any legal move leaves a winning configuration for the second player.</p>
-<p>Consider all  losing configurations (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) where x<sub>i</sub> ≤ y<sub>i</sub> ≤ z<sub>i</sub> ≤ 100.<br>We can verify that Σ(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) = 173895 for these.</p>
-<p>Find Σ(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) where (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) ranges over the losing configurations with x<sub>i</sub> ≤ y<sub>i</sub> ≤ z<sub>i</sub> ≤ 1000.</p>
+<p>A <em>winning configuration</em> is one where the first player can force a win.<br>For example, $(0,0,13)$, $(0,11,11)$ and $(5,5,5)$ are winning configurations because the first player can immediately remove all stones.</p>
+<p>A <em>losing configuration</em> is one where the second player can force a win, no matter what the first player does.<br>For example, $(0,1,2)$ and $(1,3,3)$ are losing configurations: any legal move leaves a winning configuration for the second player.</p>
+<p>Consider all  losing configurations $(x_i,y_i,z_i)$ where $x_i\le y_i\le z_i\le 100$.<br /><br>We can verify that $\sum(x_i+y_i+z_i) = 173895$ for these.</p>
+<p>Find $\sum(x_i+y_i+z_i)$ where $(x_i,y_i,z_i)$ ranges over the losing configurations with $x_i\le y_i\le z_i\le 1000$.</p>
 <hr>
-<p><strong>取石子游戏</strong></p>
-<p>取石子游戏需要两名玩家和三堆石子。<br>每一名玩家在自己的回合可以从堆中取走一个或多个石子。然而，如果她从多个堆中取石子，从其中每个堆所取的石子数目必须一致。</p>
-<p>也就是说，每一名玩家选择一个数N&gt;0，然后移走：</p>
+<h2 id="取石子游戏（一）"><a href="#取石子游戏（一）" class="headerlink" title="取石子游戏（一）"></a><strong>取石子游戏（一）</strong></h2><p>取石子游戏需要两名玩家和三堆石子。<br>每一名玩家在自己的回合可以从堆中取走一个或多个石子。然而，如果玩家从多个堆中取石子，从其中每个堆所取的石子数目必须一致。</p>
+<p>也就是说，每一名玩家选择一个数$N&gt;0$，然后移走：</p>
 <ul>
-<li>一个堆中的N个石子；或</li>
-<li>两个堆中各N个石子（共2N个）；或</li>
-<li>三个堆中各N个石子（共3N个）。</li>
+<li>一个堆中的$N$个石子；或</li>
+<li>两个堆中各$N$个石子（共$2N$个）；或</li>
+<li>三个堆中各$N$个石子（共$3N$个）。</li>
 </ul>
 <p>拿走所有石子的玩家赢得游戏。</p>
-<p>所谓<em>必胜态</em>，指的是先手玩家必胜的石子分布。<br>例如，(0,0,13)、(0,11,11)和(5,5,5)是必胜态，因为先手玩家可以立刻取走所有的石子。</p>
-<p>所谓<em>必败态</em>，指的是无论先手玩家如何操作，后手玩家必胜的石子分布。<br>例如，(0,1,2)和(1,3,3)是必败态：先手玩家任何符合规则的取法都会给后手玩家留下必胜态。</p>
-<p>考虑所有满足x<sub>i</sub> ≤ y<sub>i</sub> ≤ z<sub>i</sub> ≤ 100的必败态(x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>)。<br>我们可以验证，对于所有这些必败态，Σ(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) = 173895。</p>
-<p>考虑所有满足x<sub>i</sub> ≤ y<sub>i</sub> ≤ z<sub>i</sub> ≤ 1000的必败态(x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>)，求Σ(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>)。</p>
+<p>所谓<i class=zh>必胜态</i>，指的是先手玩家必胜的石子分布。<br>例如，$(0,0,13)$、$(0,11,11)$和$(5,5,5)$是必胜态，因为先手玩家可以立刻取走所有的石子。</p>
+<p>所谓<i class=zh>必败态</i>，指的是无论先手玩家如何操作，后手玩家必胜的石子分布。<br>例如，$(0,1,2)$和$(1,3,3)$是必败态：先手玩家任何符合规则的取法都会给后手玩家留下必胜态。</p>
+<p>考虑所有满足$x_i\le y_i\le z_i\le 100$的必败态$(x_i,y_i,z_i)$。<br>可以验证，对于所有这些必败态，$\sum(x_i+y_i+z_i) = 173895$。</p>
+<p>考虑所有满足$x_i\le y_i\le z_i\le 1000$的必败态$(x_i,y_i,z_i)$，求$\sum(x_i+y_i+z_i)$。</p>
 <hr>
 ]]></content>
   </entry>
@@ -8503,23 +8498,22 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/325/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-325"><a href="#Problem-325" class="headerlink" title="Problem 325"></a><a href="https://projecteuler.net/problem=325">Problem 325</a></h1><hr>
-<p><strong>Stone Game II</strong></p>
-<p>A game is played with two piles of stones and two players. At her turn, a player removes a number of stones from the larger pile. The number of stones she removes must be a positive multiple of the number of stones in the smaller pile.</p>
-<p>E.g., let the ordered pair(6,14) describe a configuration with 6 stones in the smaller pile and 14 stones in the larger pile, then the first player can remove 6 or 12 stones from the larger pile.</p>
+<h2 id="Stone-Game-II"><a href="#Stone-Game-II" class="headerlink" title="Stone Game II"></a><strong>Stone Game II</strong></h2><p>A game is played with two piles of stones and two players.<br>On each player’s turn, the player may remove a number of stones from the larger pile.<br>The number of removed must be a positive multiple of the number of stones in the smaller pile.</p>
+<p>E.g., let the ordered pair $(6,14)$ describe a configuration with $6$ stones in the smaller pile and $14$ stones in the larger pile, then the first player can remove $6$ or $12$ stones from the larger pile.</p>
 <p>The player taking all the stones from a pile wins the game.</p>
-<p>A <i>winning configuration</i> is one where the first player can force a win. For example, (1,5), (2,6) and (3,12) are winning configurations because the first player can immediately remove all stones in the second pile.</p>
-<p>A <i>losing configuration</i> is one where the second player can force a win, no matter what the first player does. For example, (2,3) and (3,4) are losing configurations: any legal move leaves a winning configuration for the second player.</p>
-<p>Define S(N) as the sum of (x<sub>i</sub>+y<sub>i</sub>) for all losing configurations (x<sub>i</sub>,y<sub>i</sub>), 0 &lt; x<sub>i</sub> &lt; y<sub>i</sub> ≤ N. We can verify that S(10) = 211 and S(10<sup>4</sup>) = 230312207313.</p>
-<p>Find S(10<sup>16</sup>) mod 7<sup>10</sup>.</p>
+<p>A <i>winning configuration</i> is one where the first player can force a win. For example, $(1,5)$, $(2,6)$ and $(3,12)$ are winning configurations because the first player can immediately remove all stones in the second pile.</p>
+<p>A <i>losing configuration</i> is one where the second player can force a win, no matter what the first player does. For example, $(2,3)$ and $(3,4)$ are losing configurations: any legal move leaves a winning configuration for the second player.</p>
+<p>Define $S(N)$ as the sum of $(x_i+y_i)$ for all losing configurations $(x_i,y_i)$, $0 &lt; x_i &lt; y_i \le N$. <br /><br>We can verify that $S(10) = 211$ and $S(10^4) = 230312207313$.</p>
+<p>Find $S(10^{16}) \bmod 7^{10}$.</p>
 <hr>
-<p><strong>取石子游戏II</strong></p>
-<p>两名玩家正在用两堆石子玩游戏。每一轮，玩家从较大的堆中取走一定数目的石子，这个数目必须是较小的堆中石子数目的正整数倍。</p>
-<p>例如，用有序对(6,14)表示游戏中较小的堆有6枚石子，较大的堆有14枚石子，先手玩家可以从较大的堆中取走6枚或12枚石子。</p>
+<h2 id="取石子游戏（二）"><a href="#取石子游戏（二）" class="headerlink" title="取石子游戏（二）"></a><strong>取石子游戏（二）</strong></h2><p>两名玩家正在用两堆石子玩游戏。<br>每一轮，玩家可以从较大的堆中取走一定数量的石子。<br>移走石子的数量必须是较小的堆中石子数量的正整数倍。</p>
+<p>例如，用有序对$(6,14)$表示游戏中较小的堆有$6$枚石子，较大的堆有$14$枚石子，先手玩家可以从较大的堆中取走$6$枚或$12$枚石子。</p>
 <p>从某一堆中取走所有石头的玩家赢得游戏。</p>
-<p>所谓<i>必胜态</i>指先手玩家必胜的状态。例如(1,5)、(2,6)和(3,12)都是必胜态，因为先手玩家可以立即取走第二个堆中的所有石子。</p>
-<p>所谓<i>必败态</i>指无论先手玩家如何操作，后手玩家都必胜的状态。例如，(2,3)和(3,4)都是必败态：先手玩家的任意合法操作都会给后手玩家留下必胜态。</p>
-<p>对于所有0 &lt; x<sub>i</sub> &lt; y<sub>i</sub> ≤ N的必败态(x<sub>i</sub>,y<sub>i</sub>)，记S(N)为(x<sub>i</sub>+y<sub>i</sub>)的和。我们可以验证S(10) = 211以及S(10<sup>4</sup>) = 230312207313。</p>
-<p>求S(10<sup>16</sup>) mod 7<sup>10</sup>。</p>
+<p>所谓<i class=zh>必胜态</i>指先手玩家必胜的状态。例如$(1,5)$、$(2,6)$和$(3,12)$都是必胜态，因为先手玩家可以立即取走第二个堆中的所有石子。</p>
+<p>所谓<i class=zh>必败态</i>指无论先手玩家如何操作，后手玩家都必胜的状态。例如，$(2,3)$和$(3,4)$都是必败态：先手玩家的任意合法操作都会给后手玩家留下必胜态。</p>
+<p>对于所有$0 &lt; x_i &lt; y_i \le N$的必败态$(x_i,y_i)$，记$S(N)$为$(x_i+y_i)$的和。<br /><br>可以验证$S(10) = 211$，$S(10^4) = 230312207313$。</p>
+<p>求$S(10^{16}) \bmod 7^{10}$。</p>
+<p><i class=zh>译注：“取石子游戏（一）”参见第<a href="/260">260</a>题。</i></p>
 <hr>
 ]]></content>
   </entry>
@@ -9775,19 +9769,18 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/366/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-366"><a href="#Problem-366" class="headerlink" title="Problem 366"></a><a href="https://projecteuler.net/problem=366">Problem 366</a></h1><hr>
-<p><strong>Stone Game III</strong></p>
-<p>Two players, Anton and Bernhard, are playing the following game.<br>There is one pile of n stones.<br>The first player may remove any positive number of stones, but not the whole pile.<br>Thereafter, each player may remove at most twice the number of stones his opponent took on the previous move.<br>The player who removes the last stone wins.</p>
-<p>E.g. n=5<br>If the first player takes anything more than one stone the next player will be able to take all remaining stones.<br>If the first player takes one stone, leaving four, his opponent will take also one stone, leaving three stones.<br>The first player cannot take all three because he may take at most 2x1=2 stones. So let’s say he takes also one stone, leaving 2. The second player can take the two remaining stones and wins.<br>So 5 is a losing position for the first player.<br>For some winning positions there is more than one possible move for the first player.<br>E.g. when n=17 the first player can remove one or four stones.</p>
-<p>Let M(n) be the maximum number of stones the first player can take from a winning position <i>at his first turn</i> and M(n)=0 for any other position.</p>
-<p>∑M(n) for n≤100 is 728.</p>
-<p>Find ∑M(n) for n≤10<sup>18</sup>. Give your answer modulo 10<sup>8</sup>.</p>
+<h2 id="Stone-Game-III"><a href="#Stone-Game-III" class="headerlink" title="Stone Game III"></a><strong>Stone Game III</strong></h2><p>Two players, Anton and Bernhard, are playing the following game.<br>There is one pile of $n$ stones.<br /><br>The first player may remove any positive number of stones, but not the whole pile.<br>Thereafter, each player may remove at most twice the number of stones his opponent took on the previous move.<br>The player who removes the last stone wins.</p>
+<p>E.g. $n=5$<br /><br>If the first player takes anything more than one stone the next player will be able to take all remaining stones.<br>If the first player takes one stone, leaving four, his opponent will take also one stone, leaving three stones.<br>The first player cannot take all three because he may take at most $2\times 1=2$ stones. So let’s say he takes also one stone, leaving $2$. The second player can take the two remaining stones and wins.<br /><br>So $5$ is a losing position for the first player.<br /><br>For some winning positions there is more than one possible move for the first player.<br>E.g. when $n=17$ the first player can remove one or four stones.</p>
+<p>Let $M(n)$ be the maximum number of stones the first player can take from a winning position <i>at his first turn</i> and $M(n)=0$ for any other position.</p>
+<p>$\sum M(n)$ for $n\le 100$ is $728$.</p>
+<p>Find $\sum M(n)$ for $n\le 10^{18}$. Give your answer modulo $10^8$.</p>
 <hr>
-<p><strong>取石子游戏III</strong></p>
-<p>两名玩家安东和伯恩哈德正在玩下面这个游戏。<br>有一堆共n枚石子。<br>先手玩家可以从堆中取走任意正数枚石子，但不能全部拿走。<br>此后，每名玩家可以从堆中取走的石子数目最多是其对手上一轮取走石子数目的两倍。<br>取走最后一枚石子的玩家获胜。</p>
-<p>例如，若n=5<br>如果先手玩家取走多于一枚石子，后手玩家总能取走剩下的全部石子。<br>如果先手玩家取走一枚石子，他的对手将同样取走一枚石子，留下三枚石子。<br>先手玩家不能取走全部三枚石子，因为他最多只能取走2x1=2枚石子。我们不妨认为他又取走一枚石子，留下2枚。后手玩家可以取走剩下两枚石子并获胜。<br>因此5是先手玩家的必败态。<br>在某些必胜态时，先手玩家可能有不止一种可行操作。<br>例如，若n=17，先手玩家可以先取走一枚或四枚石子。</p>
-<p>对于先手玩家的必胜态，记M(n)为先手玩家<i>第一轮</i>最多取走的石子数目；对于必败态，记M(n)=0。</p>
-<p>对于n≤100，∑M(n)为728。</p>
-<p>对于n≤10<sup>18</sup>，求∑M(n)，并将其除以10<sup>8</sup>取余作为你的答案。</p>
+<h2 id="取石子游戏（三）"><a href="#取石子游戏（三）" class="headerlink" title="取石子游戏（三）"></a><strong>取石子游戏（三）</strong></h2><p>两名玩家安东和伯恩哈德正在玩下面这个游戏。<br>有一堆共$n$枚石子。<br /><br>先手玩家可以从堆中取走任意正数枚石子，但不能全部拿走。<br>此后，每名玩家可以从堆中取走的石子数目最多是其对手上一轮取走石子数目的两倍。<br>取走最后一枚石子的玩家获胜。</p>
+<p>例如，若$n=5$<br /><br>如果先手玩家取走多于一枚石子，后手玩家总能取走剩下的全部石子。如果先手玩家取走一枚石子，他的对手将同样取走一枚石子，留下三枚石子。<br>先手玩家不能取走全部三枚石子，因为他最多只能取走$2 \times 1 = 2$枚石子。若他又取走一枚石子，留下两枚。后手玩家可以取走剩下两枚石子并获胜。<br /><br>因此$5$是先手玩家的必败态。<br /><br>在某些必胜态时，先手玩家可能有不止一种可行操作。<br>例如，若$n=17$，先手玩家可以先取走一枚或四枚石子。</p>
+<p>对于先手玩家的必胜态，记$M(n)$为先手玩家<i class=zh>第一轮</i>最多取走的石子数目；对于必败态，记$M(n)=0$。</p>
+<p>对于所有$n\le 100$，$\sum M(n)$为$728$。</p>
+<p>对于所有$n\le 10^{18}$，求$\sum M(n)$，并将其对$10^8$取余作为你的答案。</p>
+<p><i class=zh>译注：“取石子游戏（二）”参见第<a href="/325">325</a>题。</i></p>
 <hr>
 ]]></content>
   </entry>
@@ -23808,6 +23801,359 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>然而，想要验证$632382^{518061}&gt;519432^{525806}$就会变得非常困难，因为这两个数都包含有超过三百万位数字。</p>
 <p>在文本文件<a href="https://projecteuler.net/project/resources/p099_base_exp.txt">base_exp.txt</a>中有一千行，每一行有一对底数和指数。求这其中哪一行给出的幂的数值最大。</p>
 <p>注意：文件的前两行就是上述两个例子。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 859</title>
+    <url>/859/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-859"><a href="#Problem-859" class="headerlink" title="Problem 859"></a><a href="https://projecteuler.net/problem=859">Problem 859</a></h1><hr>
+<h2 id="Cookie-Game"><a href="#Cookie-Game" class="headerlink" title="Cookie Game"></a><strong>Cookie Game</strong></h2><p>Odd and Even are playing a game with $N$ cookies.</p>
+<p>The game begins with the $N$ cookies divided into one or more piles, not necessarily of the same size. They then make moves in turn, starting with Odd.<br /><br>Odd’s turn: Odd may choose any pile with an <b>odd</b> number of cookies, eat one and divide the remaining (if any) into two equal piles.<br>Even’s turn: Even may choose any pile with an <b>even</b> number of cookies, eat two of them and divide the remaining (if any) into two equal piles.<br>The player that does not have a valid move loses the game.</p>
+<p>Let $C(N)$ be the number of ways that $N$ cookies can be divided so that Even has a winning strategy.<br /><br>For example, $C(5) = 2$ because there are two winning configurations for Even: a single pile containing all five cookies; three piles containing one, two and two cookies.<br /><br>You are also given $C(16) = 64$.</p>
+<p>Find $C(300)$.</p>
+<hr>
+<h2 id="饼干游戏"><a href="#饼干游戏" class="headerlink" title="饼干游戏"></a><strong>饼干游戏</strong></h2><p>小奇和小偶在玩一个游戏，需要用到$N$块饼干。</p>
+<p>游戏开始时，将$N$块饼干分成若干堆，每一堆的数量不必相同。两人轮流行动，由小奇先开始。<br /><br>轮到小奇时：小奇可以任选一堆有<b>奇数</b>块的饼干，吃掉一块，并将剩下的饼干（若有）分成相等的两堆。<br>轮到小偶时：小偶可以任选一堆有<b>偶数</b>块的饼干，吃掉两块，并将剩下的饼干（若有）分成相等的两堆。<br>首先无法行动的玩家输掉游戏。</p>
+<p>记$C(N)$为小偶有必胜策略的初始局面的数目。<br /><br>例如，$C(5) = 2$，对应的两种初始局面是：所有五块饼干划分为一堆，或者划分为三堆，分别包含一、二、二块饼干。<br /><br>已知$C(16) = 64$。</p>
+<p>求$C(300)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 856</title>
+    <url>/856/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-856"><a href="#Problem-856" class="headerlink" title="Problem 856"></a><a href="https://projecteuler.net/problem=856">Problem 856</a></h1><hr>
+<h2 id="Waiting-for-a-Pair"><a href="#Waiting-for-a-Pair" class="headerlink" title="Waiting for a Pair"></a><strong>Waiting for a Pair</strong></h2><p>A standard $52$-card deck comprises $13$ ranks in four suits. A <i>pair</i> is a set of two cards of the same rank.</p>
+<p>Cards are drawn, without replacement, from a well shuffled $52$-card deck waiting for consecutive cards that form a pair. For example, the probability of finding a pair in the first two draws is $1/17$.</p>
+<p>Cards are drawn until either such a pair is found or the pack is exhausted waiting for one. In the latter case we say that all $52$ cards were drawn.</p>
+<p>Find the expected number of cards that were drawn. Give your answer rounded to eight places after the decimal point.</p>
+<hr>
+<h2 id="等待对子"><a href="#等待对子" class="headerlink" title="等待对子"></a><strong>等待对子</strong></h2><p>一副标准的$52$张扑克牌由四个花色各$13$个点数的牌组成。<i class=zh>对子</i>是指两张点数相同的牌。</p>
+<p>从一副洗好的扑克牌中无放回地抽牌，目标是连续抽出的两张牌组成对子。例如，前两次抽牌就恰好抽出对子的概率是$1/17$。</p>
+<p>持续抽牌直到抽出对子或所有的牌都已抽完，在后一种情况下抽牌数记为$52$。</p>
+<p>求停止抽牌时抽牌数的期望值，并四舍五入保留八位小数作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 858</title>
+    <url>/858/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-858"><a href="#Problem-858" class="headerlink" title="Problem 858"></a><a href="https://projecteuler.net/problem=858">Problem 858</a></h1><hr>
+<h2 id="LCM"><a href="#LCM" class="headerlink" title="LCM"></a><strong>LCM</strong></h2><p>Define $G(N) = \sum_S \operatorname{lcm}(S)$ where $S$ ranges through all subsets of ${1, \dots, N}$ and $\operatorname{lcm}$ denotes the lowest common multiple. Note that the $\operatorname{lcm}$ of the empty set is $1$.</p>
+<p>You are given $G(5) = 528$ and $G(20) = 8463108648960$.</p>
+<p>Find $G(800)$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a><strong>最小公倍数</strong></h2><p>定义$G(N) = \sum_S \operatorname{lcm}(S)$，其中$S$取遍${1, \dots, N}$的所有子集，$\operatorname{lcm}$表示最小公倍数。注意对空集取$\operatorname{lcm}$的结果为$1$。</p>
+<p>已知$G(5) = 528$，$G(20) = 8463108648960$。</p>
+<p>求$G(800)$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 857</title>
+    <url>/857/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-857"><a href="#Problem-857" class="headerlink" title="Problem 857"></a><a href="https://projecteuler.net/problem=857">Problem 857</a></h1><hr>
+<h2 id="Beautiful-Graphs"><a href="#Beautiful-Graphs" class="headerlink" title="Beautiful Graphs"></a><strong>Beautiful Graphs</strong></h2><p>A graph is made up of vertices and coloured edges. Between every two distinct vertices there must be exactly one of the following:</p>
+<ul>
+<li>A red directed edge one way, and a blue directed edge the other way </li>
+<li>A green undirected edge</li>
+<li>A brown undirected edge</li>
+</ul>
+<p>Such a graph is called <i>beautiful</i> if </p>
+<ul>
+<li>A cycle of edges contains a red edge <b>if and only if</b> it also contains a blue edge</li>
+<li>No triangle of edges is made up of entirely green or entirely brown edges</li>
+</ul>
+<p>Below are four distinct examples of beautiful graphs on three vertices:</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0857_GoodGraphs.jpg" alt="0857_GoodGraphs.jpg">
+</div>
+
+<p>Below are four examples of graphs that are not beautiful:</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0857_BadGraphs.jpg" alt="0857_BadGraphs.jpg">
+</div>
+
+<p>Let $G(n)$ be the number of beautiful graphs on the labelled vertices: $1,2,\ldots,n$. You are given $G(3)=24$, $G(4)=186$ and $G(15)=12472315010483328$.</p>
+<p>Find $G(10^7)$. Give your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="美丽图"><a href="#美丽图" class="headerlink" title="美丽图"></a><strong>美丽图</strong></h2><p>考虑由顶点和染色的边构成的图，任意两个顶点间必由以下三种情况之一相连：</p>
+<ul>
+<li>一条红色的有向边和一条蓝色的有向边，两者方向相反</li>
+<li>一条绿色的无向边</li>
+<li>一条棕色的无向边</li>
+</ul>
+<p>若进一步满足以下条件，则称之为<i class=zh>美丽图</i>： </p>
+<ul>
+<li>任意环包含红色边<b>当且仅当</b>它也包含蓝色边</li>
+<li>不存在仅由绿色边或仅由棕色边构成的三角形</li>
+</ul>
+<p>如下所示的四张图均为包含三个顶点的美丽图：</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0857_GoodGraphs.jpg" alt="0857_GoodGraphs.jpg">
+</div>
+
+<p>如下所示的四张图均不是美丽图：</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0857_BadGraphs.jpg" alt="0857_BadGraphs.jpg">
+</div>
+
+<p>将顶点依次编号为$1,2,\ldots,n$，记$G(n)$为所有构造在这些顶点上的美丽图的数目。已知$G(3)=24$，$G(4)=186$，$G(15)=12472315010483328$。</p>
+<p>求$G(10^7)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 862</title>
+    <url>/862/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-862"><a href="#Problem-862" class="headerlink" title="Problem 862"></a><a href="https://projecteuler.net/problem=862">Problem 862</a></h1><hr>
+<h2 id="Larger-Digit-Permutation"><a href="#Larger-Digit-Permutation" class="headerlink" title="Larger Digit Permutation"></a><strong>Larger Digit Permutation</strong></h2><p>For a positive integer $n$ define $T(n)$ to be the number of strictly larger integers which can be formed by permuting the digits of $n$.</p>
+<p>Leading zeros are not allowed and so for $n = 2302$ the total list of permutations would be:<br>$$2023,2032,2203,2230,\mathbf{2302},2320,3022,3202,3220$$<br>giving $T(2302)=4$.</p>
+<p>Further define $S(k)$ to be the sum of $T(n)$ for all $k$-digit numbers $n$. You are given $S(3) = 1701$.</p>
+<p>Find $S(12)$.</p>
+<hr>
+<h2 id="更大的数字重排"><a href="#更大的数字重排" class="headerlink" title="更大的数字重排"></a><strong>更大的数字重排</strong></h2><p>对于正整数$n$，定义$T(n)$为对$n$的数字进行重排所能得到的严格大于$n$的整数数量。</p>
+<p>重排不允许有前导零，因此对于$n = 2302$，所有的合法重排包括：<br>$$2023,2032,2203,2230,\mathbf{2302},2320,3022,3202,3220$$<br>因此可得$T(2302)=4$。</p>
+<p>再定义$S(k)$为所有的$k$位整数$n$对应的$T(n)$之和。已知$S(3) = 1701$。</p>
+<p>求$S(12)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 861</title>
+    <url>/861/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-861"><a href="#Problem-861" class="headerlink" title="Problem 861"></a><a href="https://projecteuler.net/problem=861">Problem 861</a></h1><hr>
+<h2 id="Products-of-Bi-Unitary-Divisors"><a href="#Products-of-Bi-Unitary-Divisors" class="headerlink" title="Products of Bi-Unitary Divisors"></a><strong>Products of Bi-Unitary Divisors</strong></h2><p>A <i>unitary divisor</i> of a positive integer $n$ is a divisor $d$ of $n$ such that $\gcd(d,n/d)=1$.</p>
+<p>A <i>bi-unitary divisor</i> of $n$ is a divisor $d$ for which $1$ is the only unitary divisor of $d$ that is also a unitary divisor of $n/d$.</p>
+<p>For example, $2$ is a bi-unitary divisor of $8$, because the unitary divisors of $2$ are $\{1,2\}$, and the unitary divisors of $8/2$ are $\{1,4\}$, with $1$ being the only unitary divisor in common.</p>
+<p>The bi-unitary divisors of $240$ are $\{1,2,3,5,6,8,10,15,16,24,30,40,48,80,120,240\}$.</p>
+<p>Let $P(n)$ be the product of all bi-unitary divisors of $n$. Define $Q_k(N)$ as the number of positive integers $1 &lt; n \leq N$ such that $P(n)=n^k$. For example, $Q_2\left(10^2\right)=51$ and $Q_6\left(10^6\right)=6189$.</p>
+<p>Find $\sum_{k=2}^{10}Q_k\left(10^{12}\right)$.</p>
+<hr>
+<h2 id="双元因数的乘积"><a href="#双元因数的乘积" class="headerlink" title="双元因数的乘积"></a><strong>双元因数的乘积</strong></h2><p>若正整数$n$的因数$d$满足$\gcd(d,n/d)=1$，则称$d$为$n$的<i class=zh>元因数</i>。</p>
+<p>若$1$是$d$和$n/d$唯一的公共元因数，则称$d$为$n$的<i class=zh>双元因数</i>。</p>
+<p>例如，$2$是$8$的双元因数，因为$2$的元因数有$\{1,2\}$，而$8/2$的元因数有$\{1,4\}$，只有$1$是唯一的公共元因数。</p>
+<p>$240$的双元因数有$\{1,2,3,5,6,8,10,15,16,24,30,40,48,80,120,240\}$。</p>
+<p>令$P(n)$为$n$的所有双元因数之积。定义$Q_k(N)$为满足$1 &lt; n \leq N$和$P(n)=n^k$的正整数$n$的数量。例如，$Q_2\left(10^2\right)=51$，$Q_6\left(10^6\right)=6189$。</p>
+<p>求$\sum_{k=2}^{10}Q_k\left(10^{12}\right)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 860</title>
+    <url>/860/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-860"><a href="#Problem-860" class="headerlink" title="Problem 860"></a><a href="https://projecteuler.net/problem=860">Problem 860</a></h1><hr>
+<h2 id="Gold-and-Silver-Coin-Game"><a href="#Gold-and-Silver-Coin-Game" class="headerlink" title="Gold and Silver Coin Game"></a><strong>Gold and Silver Coin Game</strong></h2><p>Gary and Sally play a game using gold and silver coins arranged into a number of vertical stacks, alternating turns. On Gary’s turn he chooses a gold coin and removes it from the game along with any other coins sitting on top. Sally does the same on her turn by removing a silver coin. The first player unable to make a move loses.</p>
+<p>An arrangement is called <i>fair</i> if the person moving first, whether it be Gary or Sally, will lose the game if both play optimally.</p>
+<p>Define $F(n)$ to be the number of fair arrangements of $n$ stacks, all of size $2$. Different orderings of the stacks are to be counted separately, so $F(2) = 4$ due to the following four arrangements:</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0860_diag3.jpg" alt="0860_diag3.jpg">
+</div>
+
+<p>You are also given $F(10) = 63594$.</p>
+<p>Find $F(9898)$. Give your answer modulo $989898989$.</p>
+<hr>
+<h2 id="金银硬币游戏"><a href="#金银硬币游戏" class="headerlink" title="金银硬币游戏"></a><strong>金银硬币游戏</strong></h2><p>盖瑞和萨利在玩一个游戏，游戏开始时有若干堆竖直堆放的金币和银币，两人轮流行动。轮到盖瑞时，他可以任选一枚金币，并将这枚金币和所有堆放在其上方的硬币移出游戏；轮到萨利时则是可以任选一枚银币。首先无法行动的玩家输掉游戏。</p>
+<p>如果一个初始局面使得，无论先行玩家是盖瑞还是萨利，他在采取最优策略的情况下都必败，则称之为<i class=zh>公平</i>初始局面。</p>
+<p>定义$F(n)$为所有包含$n$堆、每堆各$2$枚硬币的公平初始局面的数目。堆的顺序不同时视为不同的初始局面，因此$F(2) = 4$，相应的四种初始局面如下所示：</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0860_diag3.jpg" alt="0860_diag3.jpg">
+</div>
+
+<p>已知$F(10) = 63594$。</p>
+<p>求$F(9898)$，并对$989898989$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 865</title>
+    <url>/865/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-865"><a href="#Problem-865" class="headerlink" title="Problem 865"></a><a href="https://projecteuler.net/problem=865">Problem 865</a></h1><hr>
+<h2 id="Triplicate-Numbers"><a href="#Triplicate-Numbers" class="headerlink" title="Triplicate Numbers"></a><strong>Triplicate Numbers</strong></h2><p>A <i>triplicate number</i> is a positive integer such that, after repeatedly removing three consecutive identical digits from it, all its digits can be removed.</p>
+<p>For example, the integer $122555211$ is a triplicate number:<br>$$122{\color{red}555}211 \rightarrow 1{\color{red}222}11\rightarrow{\color{red}111}\rightarrow.$$<br>On the other hand, neither $663633$ nor $9990$ are triplicate numbers.</p>
+<p>Let $T(n)$ be how many triplicate numbers are less than $10^n$.</p>
+<p>For example, $T(6) = 261$ and $T(30) = 5576195181577716$.</p>
+<p>Find $T(10^4)$. Give your answer modulo $998244353$.</p>
+<hr>
+<h2 id="三消数"><a href="#三消数" class="headerlink" title="三消数"></a><strong>三消数</strong></h2><p>对于任意正整数，不断地从中消除连续三个相同数字，若最终可以将其完全消除，则称之为<i class=zh>三消数</i>。</p>
+<p>例如，整数$122555211$是三消数：<br>$$122{\color{red}555}211 \rightarrow 1{\color{red}222}11\rightarrow{\color{red}111}\rightarrow.$$<br>反之，$663633$和$9990$都不是三消数。</p>
+<p>记$T(n)$为所有小于$10^n$的三消数的数量.</p>
+<p>例如，$T(6) = 261$，$T(30) = 5576195181577716$。</p>
+<p>求$T(10^4)$，并对$998244353$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 864</title>
+    <url>/864/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-864"><a href="#Problem-864" class="headerlink" title="Problem 864"></a><a href="https://projecteuler.net/problem=864">Problem 864</a></h1><hr>
+<h2 id="Square-1-Squarefree"><a href="#Square-1-Squarefree" class="headerlink" title="Square + 1 = Squarefree"></a><strong>Square + 1 = Squarefree</strong></h2><p>Let $C(n)$ be the number of squarefree integers of the form $x^2 + 1$ such that $1 \le x \le n$.</p>
+<p>For example, $C(10) = 9$ and $C(1000) = 895$.</p>
+<p>Find $C(123567101113)$.</p>
+<hr>
+<h2 id="平方数-1-无平方因子数"><a href="#平方数-1-无平方因子数" class="headerlink" title="平方数 + 1 = 无平方因子数"></a><strong>平方数 + 1 = 无平方因子数</strong></h2><p>记$C(n)$为所有形如$x^2 + 1$的无平方因子数的数目，其中$1 \le x \le n$。</p>
+<p>例如，$C(10) = 9$，$C(1000) = 895$。</p>
+<p>求$C(123567101113)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 863</title>
+    <url>/863/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-863"><a href="#Problem-863" class="headerlink" title="Problem 863"></a><a href="https://projecteuler.net/problem=863">Problem 863</a></h1><hr>
+<h2 id="Different-Dice"><a href="#Different-Dice" class="headerlink" title="Different Dice"></a><strong>Different Dice</strong></h2><p>Using only a six-sided fair dice and a five-sided fair dice, we would like to emulate an $n$-sided fair dice.</p>
+<p>For example, one way to emulate a $28$-sided dice is to follow this procedure:</p>
+<ol>
+<li>Roll both dice, obtaining integers $1\le p\le 6$ and $1\le q\le 5$.</li>
+<li>Combine them using $r = 5(p-1) + q$ to obtain an integer $1\le r\le 30$.</li>
+<li>If $r\le 28$, return the value $r$ and stop.</li>
+<li>Otherwise ($r$ being $29$ or $30$), roll both dice again, obtaining integers $1\le s\le 6$ and $1\le t\le 5$.</li>
+<li>Compute $u = 30(r-29) + 5(s-1) + t$ to obtain an integer $1\le u\le 60$.</li>
+<li>If $u&gt;4$, return the value $((u-5)\bmod 28) + 1$ and stop.</li>
+<li>Otherwise (with $1\le u\le 4$), roll the six-sided dice twice, obtaining integers $1\le v\le 6$ and $1\le w\le 6$.</li>
+<li>Compute $x = 36(u-1) + 6(v-1) + w$ to obtain an integer $1\le x\le 144$.</li>
+<li>If $x&gt;4$, return the value $((x-5)\bmod 28) + 1$ and stop.</li>
+<li>Otherwise (with $1\le x\le 4$), assign $u:=x$ and go back to step $7$.</li>
+</ol>
+<p>The expected number of dice rolls in following this procedure is $2.142476$ (rounded to $6$ decimal places). Note that rolling both dice at the same time is still counted as two dice rolls.</p>
+<p>There exist other more complex procedures for emulating a $28$-sided dice that entail a smaller average number of dice rolls. However, the above procedure has the attractive property that the sequence of dice rolled is predetermined: regardless of the outcome, it follows $(D5,D6,D5,D6,D6,D6,D6,\ldots)$, truncated wherever the process stops. In fact, amongst procedures for $n=28$ with this restriction, this one is optimal in the sense of minimising the expected number of rolls needed.</p>
+<p>Different values of $n$ will in general use different predetermined sequences. For example, for $n=8$, the sequence $(D5,D5,D5,\ldots)$ gives an optimal procedure, taking $2.083333\ldots$ dice rolls on average.</p>
+<p>Define $R(n)$ to be the expected number of dice rolls for an optimal procedure for emulating an $n$-sided dice using only a five-sided and a six-sided dice, considering only those procedures where the sequence of dice rolled is predetermined. So, $R(8) \approx 2.083333$ and $R(28) \approx 2.142476$.</p>
+<p>Let $S(n) = \displaystyle\sum_{k=2}^n R(k)$. You are given that $S(30) \approx 56.054622$.</p>
+<p>Find $S(1000)$. Give your answer rounded to $6$ decimal places.</p>
+<hr>
+<h2 id="不同的骰子"><a href="#不同的骰子" class="headerlink" title="不同的骰子"></a><strong>不同的骰子</strong></h2><p>我们尝试用一枚公平的六面骰和一枚公平的五面骰来模拟一枚公平的$n$面骰。</p>
+<p>例如，遵照如下方案，我们可以模拟一枚$28$面骰：</p>
+<ol>
+<li>同时抛掷这两枚骰子，得到整数$1\le p\le 6$和$1\le q\le 5$。</li>
+<li>计算$r = 5(p-1) + q$，得到整数$1\le r\le 30$。</li>
+<li>若$r\le 28$，给出$r$并停止。</li>
+<li>否则（若$r$为$29$或$30$），再次同时抛掷这两枚骰子，得到整数$1\le s\le 6$和$1\le t\le 5$。</li>
+<li>计算$u = 30(r-29) + 5(s-1) + t$，得到整数$1\le u\le 60$。</li>
+<li>若$u&gt;4$，给出$((u-5)\bmod 28) + 1$并停止。</li>
+<li>否则（若$1\le u\le 4$），抛掷六面骰两次，得到$1\le v\le 6$和$1\le w\le 6$。</li>
+<li>计算$x = 36(u-1) + 6(v-1) + w$，得到整数$1\le x\le 144$。</li>
+<li>若$x&gt;4$，给出$((x-5)\bmod 28) + 1$并停止。</li>
+<li>否则（若$1\le x\le 4$），令$u:=x$并回到第$7$步。</li>
+</ol>
+<p>遵照上述方案，抛掷骰子次数的期望为$2.142476$（四舍五入保留$6$位小数）。注意同时抛掷两枚骰子被算作抛掷两次。</p>
+<p>对于模拟$28$面骰的问题，存在更复杂但抛掷次数期望更小的方案。然而，上述方案的特点之一是，无论结果如何，抛掷骰子的序列是事先确定的，在停止前总是遵循$(D5,D6,D5,D6,D6,D6,D6,\ldots)$。事实上，在所有考虑这一额外规则的模拟$28$面骰的方案中，上述方案所需的抛掷次数期望最小。</p>
+<p>对于不同的$n$，事先确定的抛掷序列也会不同。例如，对于$n=8$，最优方案中的抛掷序列为$(D5,D5,D5,\ldots)$，对应抛掷次数的期望为$2.083333\ldots$。</p>
+<p>定义$R(n)$为仅使用一枚五面骰和一枚六面骰，且遵循上述“抛掷序列必须事先确定”的额外规则，以模拟$n$面骰所需的最小期望抛掷次数。因此，$R(8) \approx 2.083333$，$R(28) \approx 2.142476$。</p>
+<p>记$S(n) = \displaystyle\sum_{k=2}^n R(k)$。已知$S(30) \approx 56.054622$。</p>
+<p>求$S(1000)$，并四舍五入保留$6$位小数作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 866</title>
+    <url>/866/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-866"><a href="#Problem-866" class="headerlink" title="Problem 866"></a><a href="https://projecteuler.net/problem=866">Problem 866</a></h1><hr>
+<h2 id="Tidying-Up-B"><a href="#Tidying-Up-B" class="headerlink" title="Tidying Up B"></a><strong>Tidying Up B</strong></h2><p>A small child has a “number caterpillar” consisting of $N$ jigsaw pieces, each with one number on it, which, when connected together in a line, reveal the numbers $1$ to $N$ in order.</p>
+<p>Every night, the child’s father has to pick up the pieces of the caterpillar that have been scattered across the play room. He picks up the pieces at random and places them in the correct order.<br>As the caterpillar is built up in this way, it forms distinct segments that gradually merge together.</p>
+<p>Any time the father places a new piece in its correct position, a segment of length $k$ is formed and he writes down the $k$th hexagonal number $k\cdot(2k-1)$. Once all pieces have been placed and the full caterpillar constructed he calculates the product of all the numbers written down. Interestingly, the expected value of this product is always an integer. For example if $N=4$ then the expected value is $994$.</p>
+<p>Find the expected value of the product for a caterpillar of $N=100$ pieces. Give your answer modulo $987654319$.</p>
+<hr>
+<h2 id="清理（二）"><a href="#清理（二）" class="headerlink" title="清理（二）"></a><strong>清理（二）</strong></h2><p>小朋友有一个“数字毛毛虫”玩具，包含有$N$片拼板，分别标有编号；如果把它们都拼起来，将会组成一条直线，且按照$1$到$N$顺序排列。</p>
+<p>每天晚上，小朋友的爸爸都要把玩具房里撒了一地的毛毛虫拼板捡起来。他捡的时候是完全随机的，捡起来之后，再按照正确的顺序拼好。<br>这样一来，毛毛虫拼板将会构成分离的片段，并且不断合并直到组成完整的毛毛虫。</p>
+<p>爸爸每将一块拼板拼到正确的位置上，就会形成一个长度为$k$的片段，相应地他会写下第$k$个六边形数$k\cdot(2k-1)$。当爸爸完整地拼完毛毛虫后，他会算出写下的所有数的成绩。有趣的是，这一乘积的期望总是整数。例如，若$N=4$，则期望值为$994$。</p>
+<p>若毛毛虫拼板共有$N=100$片，求此时乘积的期望，并对$987654319$取余作为你的答案。</p>
+<p><i class=zh>译注：“清理（一）”参见第<a href="/253">253</a>题。</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 867</title>
+    <url>/867/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-867"><a href="#Problem-867" class="headerlink" title="Problem 867"></a><a href="https://projecteuler.net/problem=867">Problem 867</a></h1><hr>
+<h2 id="Tiling-Dodecagon"><a href="#Tiling-Dodecagon" class="headerlink" title="Tiling Dodecagon"></a><strong>Tiling Dodecagon</strong></h2><p>There are $5$ ways to tile a regular dodecagon of side $1$ with regular polygons of side $1$.</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0867_DodecaDiagram.jpg" alt="0867_DodecaDiagram.jpg">
+</div>
+
+<p>Let $T(n)$ be the number of ways to tile a regular dodecagon of side $n$ with regular polygons of side 1. Then $T(1) = 5$. You are also given $T(2) = 48$.</p>
+<p>Find $T(10)$. Give your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="密铺十二边形"><a href="#密铺十二边形" class="headerlink" title="密铺十二边形"></a><strong>密铺十二边形</strong></h2><p>用边长为$1$的正多边形铺满边长为$1$的正十二边形，有$5$种不同的方案：</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0867_DodecaDiagram.jpg" alt="0867_DodecaDiagram.jpg">
+</div>
+
+<p>记$T(n)$为用边长为$1$的正多边形铺满边长为$n$的正十二边形的方案数，因此$T(1) = 5$，而$T(2) = 48$。</p>
+<p>求$T(10)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 868</title>
+    <url>/868/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-868"><a href="#Problem-868" class="headerlink" title="Problem 868"></a><a href="https://projecteuler.net/problem=868">Problem 868</a></h1><hr>
+<h2 id="Belfry-Maths"><a href="#Belfry-Maths" class="headerlink" title="Belfry Maths"></a><strong>Belfry Maths</strong></h2><p>There is a method that is used by Bell ringers to generate all variations of the order that bells are rung.</p>
+<p>The same method can be used to create all permutations of a set of letters. Consider the letters to be permuted initially in order from smallest to largest. At each step swap the largest letter with the letter on its left or right whichever generates a permutation that has not yet been seen. If neither gives a new permutation then try the next largest letter and so on. This procedure continues until all permutations have been generated.</p>
+<p>For example, $3$ swaps are required to reach the permutation CBA when starting with ABC.<br /><br>The swaps are ABC $\to$ ACB $\to$ CAB $\to$ CBA.<br /><br>Also $59$ swaps are required to reach BELFRY when starting with these letters in alphabetical order.</p>
+<p>Find the number of swaps that are required to reach NOWPICKBELFRYMATHS when starting with these letters in alphabetical order.</p>
+<hr>
+<h2 id="钟楼数学"><a href="#钟楼数学" class="headerlink" title="钟楼数学"></a><strong>钟楼数学</strong></h2><p>敲钟人常常使用一种特别的方法来给出所有可能的敲钟顺序。</p>
+<p>这种方法也可以用于生成一系列字母所有可能的排列。一开始，所有字母按照字典序从小到大排列。接下来的每一步中，先尝试将最大的字母和其左侧或右侧的字母交换以生成一个新的排列；若无法进行，则转而尝试交换次大的字母，依此类推。不断重复上述步骤即可生成所有可能的排列。</p>
+<p>例如，从ABC开始，经过$3$次交换可以得到排列CBA。<br /><br>交换的过程为ABC $\to$ ACB $\to$ CAB $\to$ CBA。<br /><br>类似地，从按字典序排列的初始状态开始，经过$59$次交换，可以得到排列BELFRY。</p>
+<p>求从按字典序排列的初始状态开始，得到排列NOWPICKBELFRYMATHS所需的交换次数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 869</title>
+    <url>/869/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-869"><a href="#Problem-869" class="headerlink" title="Problem 869"></a><a href="https://projecteuler.net/problem=869">Problem 869</a></h1><hr>
+<h2 id="Prime-Guessing"><a href="#Prime-Guessing" class="headerlink" title="Prime Guessing"></a><strong>Prime Guessing</strong></h2><p>A prime is drawn uniformly from all primes not exceeding $N$. The prime is written in binary notation, and a player tries to guess it bit-by-bit starting at the least significant bit. The player scores one point for each bit they guess correctly. Immediately after each guess, the player is informed whether their guess was correct, and also whether it was the last bit in the number - in which case the game is over.</p>
+<p>Let $E(N)$ be the expected number of points assuming that the player always guesses to maximize their score. For example, $E(10)=2$, achievable by always guessing “$1$”. You are also given $E(30)=2.9$.</p>
+<p>Find $E(10^8)$. Give your answer rounded to eight digits after the decimal point.</p>
+<hr>
+<h2 id="猜质数"><a href="#猜质数" class="headerlink" title="猜质数"></a>猜质数</h2><p>均匀随机地选择一个不超过$N$的质数，将其转为二进制表示，并让一名玩家从最低位开始逐位猜测这个质数。玩家每猜对一位数字可得一分；每次猜测之后，玩家可以立即知道猜测是否正确，以及是否是这个质数的最后一位，若是则游戏结束。</p>
+<p>假设玩家总是采取最优策略，记$E(N)$为玩家的期望得分。例如，$E(10)=2$，对应的最优策略是始终猜测”$1$”。此外，还已知$E(30)=2.9$。</p>
+<p>求$E(10^8)$，并四舍五入保留八位小数作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 870</title>
+    <url>/870/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-870"><a href="#Problem-870" class="headerlink" title="Problem 870"></a><a href="https://projecteuler.net/problem=870">Problem 870</a></h1><hr>
+<h2 id="Stone-Game-IV"><a href="#Stone-Game-IV" class="headerlink" title="Stone Game IV"></a><strong>Stone Game IV</strong></h2><p>Two players play a game with a single pile of stones of initial size $n$. They take stones from the pile in turn, according to the following rules which depend on a fixed real number $r&gt;0$:</p>
+<ul>
+<li>In the first turn, the first player may take $k$ stones with $1 \le k &lt; n$.</li>
+<li>If a player takes $m$ stones in a turn, then in the next turn the opponent may take $k$ stones with $1 \le k \le \lfloor r \cdot m \rfloor$.</li>
+</ul>
+<p>Whoever cannot make a legal move loses the game.</p>
+<p>Let $L(r)$ be the set of initial pile sizes $n$ for which the second player has a winning strategy. For example, $L(0.5) = \{1\}$, $L(1) = \{1, 2, 4, 8, 16, \dots\}$, $L(2) = \{1, 2, 3, 5, 8, \dots\}$.</p>
+<p>A real number $q &gt; 0$ is a <i>transition value</i> if $L(s)$ is different from $L(t)$ for all $s &lt; q &lt; t$.<br /><br>Let $T(i)$ be the $i$-th transition value. For example, $T(1) = 1$, $T(2) = 2$, $T(22) \approx 6.3043478261$.</p>
+<p>Find $T(123456)$ and give your answer rounded to $10$ digits after the decimal point.</p>
+<hr>
+<h2 id="取石子游戏（四）"><a href="#取石子游戏（四）" class="headerlink" title="取石子游戏（四）"></a><strong>取石子游戏（四）</strong></h2><p>两位玩家正在玩一个游戏，游戏开始时有一堆共$n$枚石子。两位玩家轮流从堆中取走石子，但必须遵循以下基于固定实数$r&gt;0$的规则：</p>
+<ul>
+<li>在第一轮中，先手玩家可以取走的石子数$k$需满足$1 \le k &lt; n$。</li>
+<li>如果一名玩家在某一轮取走$m$枚石子，则下一轮其对手可以取走的石子数$k$需满足$1 \le k \le \lfloor r \cdot m \rfloor$。</li>
+</ul>
+<p>首先无法行动的玩家输掉游戏。</p>
+<p>记$L(r)$为使得后手玩家有必胜策略的石子数$n$所构成的集合。例如，$L(0.5) = \{1\}$，$L(1) = \{1, 2, 4, 8, 16, \dots\}$，$L(2) = \{1, 2, 3, 5, 8, \dots\}$。</p>
+<p>考虑实数$q&gt;0$，若对于任意$s &lt; q &lt; t$均满足$L(s)$不等于$L(t)$，则称其为<i class=zh>过渡值</i>。<br>记$T(i)$为第$i$个过渡值。例如，$T(1) = 1$，$T(2) = 2$，$T(22) \approx 6.3043478261$。</p>
+<p>求$T(123456)$，并四舍五入保留$10$位小数作为你的答案。</p>
+<p><i class=zh>译注：“取石子游戏（三）”参见第<a href="/366">366</a>题。</i></p>
 <hr>
 ]]></content>
   </entry>

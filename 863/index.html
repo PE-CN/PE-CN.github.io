@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 863 Different DiceUsing only a six-sided fair dice and a five-sided fair dice, we would like to emulate an $n$-sided fair dice. For example, one way to emulate a $28$-sided dice is to follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 863">
+<meta property="og:url" content="http://yoursite.com/863/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 863 Different DiceUsing only a six-sided fair dice and a five-sided fair dice, we would like to emulate an $n$-sided fair dice. For example, one way to emulate a $28$-sided dice is to follow">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-01-03T04:59:05.325Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/863/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 863 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/863/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 863
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="发布时间：2023-11-11 11:00:00" itemprop="dateCreated datePublished" datetime="2023-11-11T11:00:00-05:00">2023-11-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="更新时间：2024-01-02 23:59:05" itemprop="dateModified" datetime="2024-01-02T23:59:05-05:00">2024-01-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-863"><a href="#Problem-863" class="headerlink" title="Problem 863"></a><a href="https://projecteuler.net/problem=863">Problem 863</a></h1><hr>
+<h2 id="Different-Dice"><a href="#Different-Dice" class="headerlink" title="Different Dice"></a><strong>Different Dice</strong></h2><p>Using only a six-sided fair dice and a five-sided fair dice, we would like to emulate an $n$-sided fair dice.</p>
+<p>For example, one way to emulate a $28$-sided dice is to follow this procedure:</p>
+<ol>
+<li>Roll both dice, obtaining integers $1\le p\le 6$ and $1\le q\le 5$.</li>
+<li>Combine them using $r = 5(p-1) + q$ to obtain an integer $1\le r\le 30$.</li>
+<li>If $r\le 28$, return the value $r$ and stop.</li>
+<li>Otherwise ($r$ being $29$ or $30$), roll both dice again, obtaining integers $1\le s\le 6$ and $1\le t\le 5$.</li>
+<li>Compute $u = 30(r-29) + 5(s-1) + t$ to obtain an integer $1\le u\le 60$.</li>
+<li>If $u&gt;4$, return the value $((u-5)\bmod 28) + 1$ and stop.</li>
+<li>Otherwise (with $1\le u\le 4$), roll the six-sided dice twice, obtaining integers $1\le v\le 6$ and $1\le w\le 6$.</li>
+<li>Compute $x = 36(u-1) + 6(v-1) + w$ to obtain an integer $1\le x\le 144$.</li>
+<li>If $x&gt;4$, return the value $((x-5)\bmod 28) + 1$ and stop.</li>
+<li>Otherwise (with $1\le x\le 4$), assign $u:=x$ and go back to step $7$.</li>
+</ol>
+<p>The expected number of dice rolls in following this procedure is $2.142476$ (rounded to $6$ decimal places). Note that rolling both dice at the same time is still counted as two dice rolls.</p>
+<p>There exist other more complex procedures for emulating a $28$-sided dice that entail a smaller average number of dice rolls. However, the above procedure has the attractive property that the sequence of dice rolled is predetermined: regardless of the outcome, it follows $(D5,D6,D5,D6,D6,D6,D6,\ldots)$, truncated wherever the process stops. In fact, amongst procedures for $n=28$ with this restriction, this one is optimal in the sense of minimising the expected number of rolls needed.</p>
+<p>Different values of $n$ will in general use different predetermined sequences. For example, for $n=8$, the sequence $(D5,D5,D5,\ldots)$ gives an optimal procedure, taking $2.083333\ldots$ dice rolls on average.</p>
+<p>Define $R(n)$ to be the expected number of dice rolls for an optimal procedure for emulating an $n$-sided dice using only a five-sided and a six-sided dice, considering only those procedures where the sequence of dice rolled is predetermined. So, $R(8) \approx 2.083333$ and $R(28) \approx 2.142476$.</p>
+<p>Let $S(n) = \displaystyle\sum_{k=2}^n R(k)$. You are given that $S(30) \approx 56.054622$.</p>
+<p>Find $S(1000)$. Give your answer rounded to $6$ decimal places.</p>
+<hr>
+<h2 id="不同的骰子"><a href="#不同的骰子" class="headerlink" title="不同的骰子"></a><strong>不同的骰子</strong></h2><p>我们尝试用一枚公平的六面骰和一枚公平的五面骰来模拟一枚公平的$n$面骰。</p>
+<p>例如，遵照如下方案，我们可以模拟一枚$28$面骰：</p>
+<ol>
+<li>同时抛掷这两枚骰子，得到整数$1\le p\le 6$和$1\le q\le 5$。</li>
+<li>计算$r = 5(p-1) + q$，得到整数$1\le r\le 30$。</li>
+<li>若$r\le 28$，给出$r$并停止。</li>
+<li>否则（若$r$为$29$或$30$），再次同时抛掷这两枚骰子，得到整数$1\le s\le 6$和$1\le t\le 5$。</li>
+<li>计算$u = 30(r-29) + 5(s-1) + t$，得到整数$1\le u\le 60$。</li>
+<li>若$u&gt;4$，给出$((u-5)\bmod 28) + 1$并停止。</li>
+<li>否则（若$1\le u\le 4$），抛掷六面骰两次，得到$1\le v\le 6$和$1\le w\le 6$。</li>
+<li>计算$x = 36(u-1) + 6(v-1) + w$，得到整数$1\le x\le 144$。</li>
+<li>若$x&gt;4$，给出$((x-5)\bmod 28) + 1$并停止。</li>
+<li>否则（若$1\le x\le 4$），令$u:=x$并回到第$7$步。</li>
+</ol>
+<p>遵照上述方案，抛掷骰子次数的期望为$2.142476$（四舍五入保留$6$位小数）。注意同时抛掷两枚骰子被算作抛掷两次。</p>
+<p>对于模拟$28$面骰的问题，存在更复杂但抛掷次数期望更小的方案。然而，上述方案的特点之一是，无论结果如何，抛掷骰子的序列是事先确定的，在停止前总是遵循$(D5,D6,D5,D6,D6,D6,D6,\ldots)$。事实上，在所有考虑这一额外规则的模拟$28$面骰的方案中，上述方案所需的抛掷次数期望最小。</p>
+<p>对于不同的$n$，事先确定的抛掷序列也会不同。例如，对于$n=8$，最优方案中的抛掷序列为$(D5,D5,D5,\ldots)$，对应抛掷次数的期望为$2.083333\ldots$。</p>
+<p>定义$R(n)$为仅使用一枚五面骰和一枚六面骰，且遵循上述“抛掷序列必须事先确定”的额外规则，以模拟$n$面骰所需的最小期望抛掷次数。因此，$R(8) \approx 2.083333$，$R(28) \approx 2.142476$。</p>
+<p>记$S(n) = \displaystyle\sum_{k=2}^n R(k)$。已知$S(30) \approx 56.054622$。</p>
+<p>求$S(1000)$，并四舍五入保留$6$位小数作为你的答案。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/862/" rel="prev" title="Problem 862">
+      <i class="fa fa-chevron-left"></i> Problem 862
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/864/" rel="next" title="Problem 864">
+      Problem 864 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-863"><span class="nav-text">Problem 863</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Different-Dice"><span class="nav-text">Different Dice</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84%E9%AA%B0%E5%AD%90"><span class="nav-text">不同的骰子</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : 'd13561f3331e817715c051c4369570f2',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
