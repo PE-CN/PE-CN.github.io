@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 483 Repeated permutation We define a permutation as an operation that rearranges the order of the elements {1, 2, 3, …, n}. There are n! such permutations, one of which leaves the elements in">
+  <meta name="description" content="Problem 483 Repeated permutationWe define a permutation as an operation that rearranges the order of the elements $\{1, 2, 3, …, n\}$. There are $n!$ such permutations, one of which leaves the elemen">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 483">
 <meta property="og:url" content="http://yoursite.com/483/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 483 Repeated permutation We define a permutation as an operation that rearranges the order of the elements {1, 2, 3, …, n}. There are n! such permutations, one of which leaves the elements in">
+<meta property="og:description" content="Problem 483 Repeated permutationWe define a permutation as an operation that rearranges the order of the elements $\{1, 2, 3, …, n\}$. There are $n!$ such permutations, one of which leaves the elemen">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2014-10-05T14:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-28T02:53:54.000Z">
+<meta property="article:modified_time" content="2024-03-21T23:46:19.738Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-27 22:53:54" itemprop="dateModified" datetime="2015-10-27T22:53:54-04:00">2015-10-27</time>
+                <time title="更新时间：2024-03-21 19:46:19" itemprop="dateModified" datetime="2024-03-21T19:46:19-04:00">2024-03-21</time>
               </span>
 
           
@@ -227,50 +227,47 @@
       
         <hr>
 <h1 id="Problem-483"><a href="#Problem-483" class="headerlink" title="Problem 483"></a><a href="https://projecteuler.net/problem=483">Problem 483</a></h1><hr>
-<p><strong>Repeated permutation</strong></p>
-<p>We define a permutation as an operation that rearranges the order of the elements {1, 2, 3, …, n}. There are n! such permutations, one of which leaves the elements in their initial order. For n = 3 we have 3! = 6 permutations:</p>
+<h2 id="Repeated-permutation"><a href="#Repeated-permutation" class="headerlink" title="Repeated permutation"></a><strong>Repeated permutation</strong></h2><p>We define a <i>permutation</i> as an operation that rearranges the order of the elements $\{1, 2, 3, …, n\}$. There are $n!$ such permutations, one of which leaves the elements in their initial order. For $n = 3$ we have $3! = 6$ permutations:</p>
 <ul>
-<li>P<sub>1</sub> = keep the initial order&nbsp;&nbsp;</li>
-<li>P<sub>2</sub> = exchange the 1<sup>st</sup> and 2<sup>nd</sup> elements&nbsp;&nbsp;</li>
-<li>P<sub>3</sub> = exchange the 1<sup>st</sup> and 3<sup>rd</sup> elements&nbsp;</li>
-<li>P<sub>4</sub> = exchange the 2<sup>nd</sup> and 3<sup>rd</sup> elements&nbsp;</li>
-<li>P<sub>5</sub> = rotate the elements to the right&nbsp;&nbsp;</li>
-<li>P<sub>6</sub> = rotate the elements to the left&nbsp;&nbsp;</li>
+<li>$P_1$ = keep the initial order</li>
+<li>$P_2$ = exchange the 1<sup>st</sup> and 2<sup>nd</sup> elements</li>
+<li>$P_3$ = exchange the 1<sup>st</sup> and 3<sup>rd</sup> elements</li>
+<li>$P_4$ = exchange the 2<sup>nd</sup> and 3<sup>rd</sup> elements</li>
+<li>$P_5$ = rotate the elements to the right</li>
+<li>$P_6$ = rotate the elements to the left</li>
 </ul>
-<p>If we select one of these permutations, and we re-apply the <u>same</u> permutation repeatedly, we eventually restore the initial order.<br>For a permutation P<sub>i</sub>, let f(P<sub>i</sub>) be the number of steps required to restore the initial order by applying the permutation P<sub>i</sub> repeatedly.<br>For n = 3, we obtain:</p>
+<p>If we select one of these permutations, and we re-apply the <u>same</u> permutation repeatedly, we eventually restore the initial order.<br>For a permutation $P_i$, let $f(P_i)$ be the number of steps required to restore the initial order by applying the permutation $P_i$ repeatedly.<br /><br>For $n = 3$, we obtain:</p>
 <ul>
-<li>f(P<sub>1</sub>) = 1 : (1,2,3) → (1,2,3)</li>
-<li>f(P<sub>2</sub>) = 2 : (1,2,3) → (2,1,3) → (1,2,3)</li>
-<li>f(P<sub>3</sub>) = 2 : (1,2,3) → (3,2,1) → (1,2,3)</li>
-<li>f(P<sub>4</sub>) = 2 : (1,2,3) → (1,3,2) → (1,2,3)</li>
-<li>f(P<sub>5</sub>) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)</li>
-<li>f(P<sub>6</sub>) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)</li>
+<li>$f(P_1) = 1 : (1,2,3) → (1,2,3)$</li>
+<li>$f(P_2) = 2 : (1,2,3) → (2,1,3) → (1,2,3)$</li>
+<li>$f(P_3) = 2 : (1,2,3) → (3,2,1) → (1,2,3)$</li>
+<li>$f(P_4) = 2 : (1,2,3) → (1,3,2) → (1,2,3)$</li>
+<li>$f(P_5) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)$</li>
+<li>$f(P_6) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)$</li>
 </ul>
-<p>Let g(n) be the average value of f<sup>2</sup>(P<sub>i</sub>) over all permutations P<sub>i</sub> of length n.</p>
-<p>g(3) = (1<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 3<sup>2</sup> + 3<sup>2</sup>)/3! = 31/6 ≈ 5.166666667e0g(5) = 2081/120 ≈ 1.734166667e1g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3</p>
-<p>Find g(350) and write the answer in scientific notation rounded to 10 significant digits, using a lowercase e to separate mantissa and exponent, as in the examples above.</p>
+<p>Let $g(n)$ be the average value of $f^2(P_i)$ over all permutations $P_i$ of length $n$.<br /><br>$g(3) = (1^2 + 2^2 + 2^2 + 2^2 + 3^2 + 3^2)/3! = 31/6 ≈ 5.166666667e0$<br /><br>$g(5) = 2081/120 ≈ 1.734166667e1$<br /><br>$g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3$</p>
+<p>Find $g(350)$ and write the answer in scientific notation rounded to $10$ significant digits, using a lowercase $e$ to separate mantissa and exponent, as in the examples above.</p>
 <hr>
-<p><strong>重复进行的排列</strong></p>
-<p>我们将改变集合{1, 2, 3, …, n}种元素顺序的操作称为一次排列。一共有 n! 种排列，其中一种就是保持所有元素的位置不变。对于n = 3，我们有如下 3! = 6 种排列：</p>
+<h2 id="重复进行的重排"><a href="#重复进行的重排" class="headerlink" title="重复进行的重排"></a><strong>重复进行的重排</strong></h2><p>将改变序列$\{1, 2, 3, …, n\}$中元素顺序的操作称为<i class=zh>重排</i>。一共有$n!$种重排，其中一种就是保持所有元素的位置不变。对于$n = 3$，有如下$3! = 6$种重排：</p>
 <ul>
-<li>P<sub>1</sub> = 保持顺序不变</li>
-<li>P<sub>2</sub> = 交换第一个和第二个元素</li>
-<li>P<sub>3</sub> = 交换第一个和第三个元素</li>
-<li>P<sub>4</sub> = 交换第二个和第三个元素</li>
-<li>P<sub>5</sub> = 循环右移一位</li>
-<li>P<sub>6</sub> = 循环左移一位</li>
+<li>$P_1$ = 保持顺序不变</li>
+<li>$P_2$ = 交换第一个和第二个元素</li>
+<li>$P_3$ = 交换第一个和第三个元素</li>
+<li>$P_4$ = 交换第二个和第三个元素</li>
+<li>$P_5$ = 循环右移一位</li>
+<li>$P_6$ = 循环左移一位</li>
 </ul>
-<p>如果我们从这些排列中选择一种，并且对排列后的集合重复进行<u>相同</u>的排列，我们最终会回到一开始的顺序。<br>对于任意排列 P<sub>i</sub>，记 f(P<sub>i</sub>) 为回到原始顺序所需要的步数。<br>对于 n = 3，我们有：</p>
+<p>如果从这些重排中选择一种，并且对重排后的序列重复进行<u>相同</u>的重排，最终元素会回到初始顺序。<br>对于任意重排$P_i$，记$f(P_i)$为回到初始顺序所需要的重复次数。<br /><br>对于$n = 3$可以得到：</p>
 <ul>
-<li>f(P<sub>1</sub>) = 1 : (1,2,3) → (1,2,3)</li>
-<li>f(P<sub>2</sub>) = 2 : (1,2,3) → (2,1,3) → (1,2,3)</li>
-<li>f(P<sub>3</sub>) = 2 : (1,2,3) → (3,2,1) → (1,2,3)</li>
-<li>f(P<sub>4</sub>) = 2 : (1,2,3) → (1,3,2) → (1,2,3)</li>
-<li>f(P<sub>5</sub>) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)</li>
-<li>f(P<sub>6</sub>) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)</li>
+<li>$f(P_1) = 1 : (1,2,3) → (1,2,3)$</li>
+<li>$f(P_2) = 2 : (1,2,3) → (2,1,3) → (1,2,3)$</li>
+<li>$f(P_3) = 2 : (1,2,3) → (3,2,1) → (1,2,3)$</li>
+<li>$f(P_4) = 2 : (1,2,3) → (1,3,2) → (1,2,3)$</li>
+<li>$f(P_5) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)$</li>
+<li>$f(P_6) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)$</li>
 </ul>
-<p>对于所有长度为n的排列P<sub>i</sub>，记g(n)为 f<sup>2</sup>(P<sub>i</sub>)的平均值。</p>
-<p>求g(350)并像上述样例那样用精确到十位小数的科学计数法表示，并用小写字母e来分割指数部分。</p>
+<p>对于所有长度为$n$的重排$P_i$，记$g(n)$为$f^2(P_i)$的平均值。<br /><br>$g(3) = (1^2 + 2^2 + 2^2 + 2^2 + 3^2 + 3^2)/3! = 31/6 ≈ 5.166666667e0$<br /><br>$g(5) = 2081/120 ≈ 1.734166667e1$<br /><br>$g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3$</p>
+<p>求$g(350)$，并用四舍五入至$10$位小数的科学计数法表示，用小写字母$e$来分隔尾数和指数，如上述样例所示。</p>
 <hr>
 
     </div>
@@ -353,7 +350,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-483"><span class="nav-text">Problem 483</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-483"><span class="nav-text">Problem 483</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Repeated-permutation"><span class="nav-text">Repeated permutation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E5%A4%8D%E8%BF%9B%E8%A1%8C%E7%9A%84%E9%87%8D%E6%8E%92"><span class="nav-text">重复进行的重排</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

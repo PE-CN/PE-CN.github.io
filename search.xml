@@ -13101,50 +13101,47 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/483/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-483"><a href="#Problem-483" class="headerlink" title="Problem 483"></a><a href="https://projecteuler.net/problem=483">Problem 483</a></h1><hr>
-<p><strong>Repeated permutation</strong></p>
-<p>We define a permutation as an operation that rearranges the order of the elements {1, 2, 3, …, n}. There are n! such permutations, one of which leaves the elements in their initial order. For n = 3 we have 3! = 6 permutations:</p>
+<h2 id="Repeated-permutation"><a href="#Repeated-permutation" class="headerlink" title="Repeated permutation"></a><strong>Repeated permutation</strong></h2><p>We define a <i>permutation</i> as an operation that rearranges the order of the elements $\{1, 2, 3, …, n\}$. There are $n!$ such permutations, one of which leaves the elements in their initial order. For $n = 3$ we have $3! = 6$ permutations:</p>
 <ul>
-<li>P<sub>1</sub> = keep the initial order&nbsp;&nbsp;</li>
-<li>P<sub>2</sub> = exchange the 1<sup>st</sup> and 2<sup>nd</sup> elements&nbsp;&nbsp;</li>
-<li>P<sub>3</sub> = exchange the 1<sup>st</sup> and 3<sup>rd</sup> elements&nbsp;</li>
-<li>P<sub>4</sub> = exchange the 2<sup>nd</sup> and 3<sup>rd</sup> elements&nbsp;</li>
-<li>P<sub>5</sub> = rotate the elements to the right&nbsp;&nbsp;</li>
-<li>P<sub>6</sub> = rotate the elements to the left&nbsp;&nbsp;</li>
+<li>$P_1$ = keep the initial order</li>
+<li>$P_2$ = exchange the 1<sup>st</sup> and 2<sup>nd</sup> elements</li>
+<li>$P_3$ = exchange the 1<sup>st</sup> and 3<sup>rd</sup> elements</li>
+<li>$P_4$ = exchange the 2<sup>nd</sup> and 3<sup>rd</sup> elements</li>
+<li>$P_5$ = rotate the elements to the right</li>
+<li>$P_6$ = rotate the elements to the left</li>
 </ul>
-<p>If we select one of these permutations, and we re-apply the <u>same</u> permutation repeatedly, we eventually restore the initial order.<br>For a permutation P<sub>i</sub>, let f(P<sub>i</sub>) be the number of steps required to restore the initial order by applying the permutation P<sub>i</sub> repeatedly.<br>For n = 3, we obtain:</p>
+<p>If we select one of these permutations, and we re-apply the <u>same</u> permutation repeatedly, we eventually restore the initial order.<br>For a permutation $P_i$, let $f(P_i)$ be the number of steps required to restore the initial order by applying the permutation $P_i$ repeatedly.<br /><br>For $n = 3$, we obtain:</p>
 <ul>
-<li>f(P<sub>1</sub>) = 1 : (1,2,3) → (1,2,3)</li>
-<li>f(P<sub>2</sub>) = 2 : (1,2,3) → (2,1,3) → (1,2,3)</li>
-<li>f(P<sub>3</sub>) = 2 : (1,2,3) → (3,2,1) → (1,2,3)</li>
-<li>f(P<sub>4</sub>) = 2 : (1,2,3) → (1,3,2) → (1,2,3)</li>
-<li>f(P<sub>5</sub>) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)</li>
-<li>f(P<sub>6</sub>) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)</li>
+<li>$f(P_1) = 1 : (1,2,3) → (1,2,3)$</li>
+<li>$f(P_2) = 2 : (1,2,3) → (2,1,3) → (1,2,3)$</li>
+<li>$f(P_3) = 2 : (1,2,3) → (3,2,1) → (1,2,3)$</li>
+<li>$f(P_4) = 2 : (1,2,3) → (1,3,2) → (1,2,3)$</li>
+<li>$f(P_5) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)$</li>
+<li>$f(P_6) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)$</li>
 </ul>
-<p>Let g(n) be the average value of f<sup>2</sup>(P<sub>i</sub>) over all permutations P<sub>i</sub> of length n.</p>
-<p>g(3) = (1<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 3<sup>2</sup> + 3<sup>2</sup>)/3! = 31/6 ≈ 5.166666667e0g(5) = 2081/120 ≈ 1.734166667e1g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3</p>
-<p>Find g(350) and write the answer in scientific notation rounded to 10 significant digits, using a lowercase e to separate mantissa and exponent, as in the examples above.</p>
+<p>Let $g(n)$ be the average value of $f^2(P_i)$ over all permutations $P_i$ of length $n$.<br /><br>$g(3) = (1^2 + 2^2 + 2^2 + 2^2 + 3^2 + 3^2)/3! = 31/6 ≈ 5.166666667e0$<br /><br>$g(5) = 2081/120 ≈ 1.734166667e1$<br /><br>$g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3$</p>
+<p>Find $g(350)$ and write the answer in scientific notation rounded to $10$ significant digits, using a lowercase $e$ to separate mantissa and exponent, as in the examples above.</p>
 <hr>
-<p><strong>重复进行的排列</strong></p>
-<p>我们将改变集合{1, 2, 3, …, n}种元素顺序的操作称为一次排列。一共有 n! 种排列，其中一种就是保持所有元素的位置不变。对于n = 3，我们有如下 3! = 6 种排列：</p>
+<h2 id="重复进行的重排"><a href="#重复进行的重排" class="headerlink" title="重复进行的重排"></a><strong>重复进行的重排</strong></h2><p>将改变序列$\{1, 2, 3, …, n\}$中元素顺序的操作称为<i class=zh>重排</i>。一共有$n!$种重排，其中一种就是保持所有元素的位置不变。对于$n = 3$，有如下$3! = 6$种重排：</p>
 <ul>
-<li>P<sub>1</sub> = 保持顺序不变</li>
-<li>P<sub>2</sub> = 交换第一个和第二个元素</li>
-<li>P<sub>3</sub> = 交换第一个和第三个元素</li>
-<li>P<sub>4</sub> = 交换第二个和第三个元素</li>
-<li>P<sub>5</sub> = 循环右移一位</li>
-<li>P<sub>6</sub> = 循环左移一位</li>
+<li>$P_1$ = 保持顺序不变</li>
+<li>$P_2$ = 交换第一个和第二个元素</li>
+<li>$P_3$ = 交换第一个和第三个元素</li>
+<li>$P_4$ = 交换第二个和第三个元素</li>
+<li>$P_5$ = 循环右移一位</li>
+<li>$P_6$ = 循环左移一位</li>
 </ul>
-<p>如果我们从这些排列中选择一种，并且对排列后的集合重复进行<u>相同</u>的排列，我们最终会回到一开始的顺序。<br>对于任意排列 P<sub>i</sub>，记 f(P<sub>i</sub>) 为回到原始顺序所需要的步数。<br>对于 n = 3，我们有：</p>
+<p>如果从这些重排中选择一种，并且对重排后的序列重复进行<u>相同</u>的重排，最终元素会回到初始顺序。<br>对于任意重排$P_i$，记$f(P_i)$为回到初始顺序所需要的重复次数。<br /><br>对于$n = 3$可以得到：</p>
 <ul>
-<li>f(P<sub>1</sub>) = 1 : (1,2,3) → (1,2,3)</li>
-<li>f(P<sub>2</sub>) = 2 : (1,2,3) → (2,1,3) → (1,2,3)</li>
-<li>f(P<sub>3</sub>) = 2 : (1,2,3) → (3,2,1) → (1,2,3)</li>
-<li>f(P<sub>4</sub>) = 2 : (1,2,3) → (1,3,2) → (1,2,3)</li>
-<li>f(P<sub>5</sub>) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)</li>
-<li>f(P<sub>6</sub>) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)</li>
+<li>$f(P_1) = 1 : (1,2,3) → (1,2,3)$</li>
+<li>$f(P_2) = 2 : (1,2,3) → (2,1,3) → (1,2,3)$</li>
+<li>$f(P_3) = 2 : (1,2,3) → (3,2,1) → (1,2,3)$</li>
+<li>$f(P_4) = 2 : (1,2,3) → (1,3,2) → (1,2,3)$</li>
+<li>$f(P_5) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)$</li>
+<li>$f(P_6) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)$</li>
 </ul>
-<p>对于所有长度为n的排列P<sub>i</sub>，记g(n)为 f<sup>2</sup>(P<sub>i</sub>)的平均值。</p>
-<p>求g(350)并像上述样例那样用精确到十位小数的科学计数法表示，并用小写字母e来分割指数部分。</p>
+<p>对于所有长度为$n$的重排$P_i$，记$g(n)$为$f^2(P_i)$的平均值。<br /><br>$g(3) = (1^2 + 2^2 + 2^2 + 2^2 + 3^2 + 3^2)/3! = 31/6 ≈ 5.166666667e0$<br /><br>$g(5) = 2081/120 ≈ 1.734166667e1$<br /><br>$g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3$</p>
+<p>求$g(350)$，并用四舍五入至$10$位小数的科学计数法表示，用小写字母$e$来分隔尾数和指数，如上述样例所示。</p>
 <hr>
 ]]></content>
   </entry>
@@ -24154,6 +24151,256 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>考虑实数$q&gt;0$，若对于任意$s &lt; q &lt; t$均满足$L(s)$不等于$L(t)$，则称其为<i class=zh>过渡值</i>。<br>记$T(i)$为第$i$个过渡值。例如，$T(1) = 1$，$T(2) = 2$，$T(22) \approx 6.3043478261$。</p>
 <p>求$T(123456)$，并四舍五入保留$10$位小数作为你的答案。</p>
 <p><i class=zh>译注：“取石子游戏（三）”参见第<a href="/366">366</a>题。</i></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 872</title>
+    <url>/872/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-872"><a href="#Problem-872" class="headerlink" title="Problem 872"></a><a href="https://projecteuler.net/problem=872">Problem 872</a></h1><hr>
+<h2 id="Recursive-Tree"><a href="#Recursive-Tree" class="headerlink" title="Recursive Tree"></a><strong>Recursive Tree</strong></h2><p>A sequence of rooted trees $T_n$ is constructed such that $T_n$ has $n$ nodes numbered $1$ to $n$.</p>
+<p>The sequence starts at $T_1$, a tree with a single node as a root with the number $1$.</p>
+<p>For $n &gt; 1$, $T_n$ is constructed from $T_{n-1}$ using the following procedure:</p>
+<ol>
+<li>Trace a path from the root of $T_{n-1}$ to a leaf by following the largest-numbered child at each node.</li>
+<li>Remove all edges along the traced path, disconnecting all nodes along it from their parents.</li>
+<li>Connect all orphaned nodes directly to a new node numbered $n$, which becomes the root of $T_n$.</li>
+</ol>
+<p>For example, the following figure shows $T_6$ and $T_7$. The path traced through $T_6$ during the construction of $T_7$ is coloured red.</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0872_tree.png" alt="0872_tree.png"></div>
+
+<p>Let $f(n, k)$ be the sum of the node numbers along the path connecting the root of $T_n$ to the node $k$, including the root and the node $k$. For example, $f(6, 1) = 6 + 5 + 1 = 12$ and $f(10, 3) = 29$.</p>
+<p>Find $f(10^{17}, 9^{17})$.</p>
+<hr>
+<h2 id="递归树"><a href="#递归树" class="headerlink" title="递归树"></a><strong>递归树</strong></h2><p>递归构造一个有根树序列$T_n$，其中$T_n$有$n$个节点，编号分别为$1$至$n$。</p>
+<p>序列的第一项为$T_1$，这棵树只包含一个编号为$1$的节点作为根节点。</p>
+<p>对于$n&gt;1$，树$T_n$根据下列规则由$T_{n-1}$构造而成：</p>
+<ol>
+<li>从$T_{n-1}$的根节点出发，不断沿编号最大的子节点移动，直至到达叶节点，并记录相应的路径。</li>
+<li>移除路径上的所有边，使路径上的节点与其父节点分离。</li>
+<li>将所有被分离出的节点连接到一个新的、编号为$n$的节点，并将其作为$T_n$的根节点。</li>
+</ol>
+<p>例如，下图展示了$T_6$和$T_7$。$T_6$中用于构造$T_7$的路径被标示为红色。</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0872_tree.png" alt="0872_tree.png"></div>
+
+<p>记$f(n, k)$为$T_n$中连接根节点和编号为$k$的节点的路径上，所有节点（包括路径的两端）的编号和。例如，$f(6, 1) = 6 + 5 + 1 = 12$，$f(10, 3) = 29$。</p>
+<p>求$f(10^{17}, 9^{17})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 871</title>
+    <url>/871/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-871"><a href="#Problem-871" class="headerlink" title="Problem 871"></a><a href="https://projecteuler.net/problem=871">Problem 871</a></h1><hr>
+<h2 id="Drifting-Subsets"><a href="#Drifting-Subsets" class="headerlink" title="Drifting Subsets"></a><strong>Drifting Subsets</strong></h2><p>Let $f$ be a function from a finite set $S$ to itself. A <i>drifting subset</i> for $f$ is a subset $A$ of $S$ such that the number of elements in the union $A \cup f(A)$ is equal to twice the number of elements of $A$.<br /><br>We write $D(f)$ for the maximal number of elements among all drifting subsets for $f$.</p>
+<p>For a positive integer $n$, define $f_n$ as the function from $\{0, 1, \dots, n - 1\}$ to itself sending $x$ to $x^3 + x + 1 \bmod n$.<br /><br>You are given $D(f_5) = 1$ and $D(f_{10}) = 3$.</p>
+<p>Find $\displaystyle\sum_{i = 1}^{100} D(f_{10^5 + i})$.</p>
+<hr>
+<h2 id="漂移子集"><a href="#漂移子集" class="headerlink" title="漂移子集"></a><strong>漂移子集</strong></h2><p>记$f$为从有限集$S$到其本身的函数。若$S$的一个子集$A$满足，并集$A \cup f(A)$的元素数目是$A$的元素数目的两倍，则称$A$为$f$的<i class=zh>漂移子集</i>。<br /><br>记$D(f)$为$f$所有漂移子集的元素数目最大值。</p>
+<p>对于正整数$n$，定义$f_n$为从集合$\{0, 1, \dots, n - 1\}$到其本身的函数，将任意元素$x$映射到$x^3 + x + 1 \bmod n$。<br /><br>已知$D(f_5) = 1$，$D(f_{10}) = 3$。</p>
+<p>求$\displaystyle\sum_{i = 1}^{100} D(f_{10^5 + i})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 873</title>
+    <url>/873/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-873"><a href="#Problem-873" class="headerlink" title="Problem 873"></a><a href="https://projecteuler.net/problem=873">Problem 873</a></h1><hr>
+<h2 id="Words-with-Gaps"><a href="#Words-with-Gaps" class="headerlink" title="Words with Gaps"></a><strong>Words with Gaps</strong></h2><p>Let $W(p,q,r)$ be the number of words that can be formed using the letter A $p$ times, the letter B $q$ times and the letter C $r$ times with the condition that every A is separated from every B by at least two Cs. For example, CACACCBB is a valid word for $W(2,2,4)$ but ACBCACBC is not.</p>
+<p>You are given $W(2,2,4)=32$ and $W(4,4,44)=13908607644$.</p>
+<p>Find $W(10^6,10^7,10^8)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
+<hr>
+<h2 id="带间隔的单词"><a href="#带间隔的单词" class="headerlink" title="带间隔的单词"></a><strong>带间隔的单词</strong></h2><p>记$W(p,q,r)$为由$p$个A、$q$个B和$r$个C构成、且任意A和B之间间隔至少两个C的单词数目。例如，对于$W(2,2,4)$，CACACCBB是一个合法单词，而ACBCACBC不是。</p>
+<p>已知$W(2,2,4)=32$，$W(4,4,44)=13908607644$。</p>
+<p>求$W(10^6,10^7,10^8)$, 并对$1\ 000\ 000\ 007$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 874</title>
+    <url>/874/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-874"><a href="#Problem-874" class="headerlink" title="Problem 874"></a><a href="https://projecteuler.net/problem=874">Problem 874</a></h1><hr>
+<h2 id="Maximal-Prime-Score"><a href="#Maximal-Prime-Score" class="headerlink" title="Maximal Prime Score"></a><strong>Maximal Prime Score</strong></h2><p>Let $p(t)$ denote the $(t+1)$th prime number. So that $p(0) = 2$, $p(1) = 3$, etc.<br /><br>We define the <i>prime score</i> of a list of nonnegative integers $[a_1, \dots, a_n]$ as the sum $\sum_{i = 1}^n p(a_i)$.<br /><br>Let $M(k, n)$ be the maximal prime score among all lists $[a_1, \dots, a_n]$ such that:</p>
+<ul>
+<li>$0 \leq a_i &lt; k$ for each $i$;</li>
+<li>the sum $\sum_{i = 1}^n a_i$ is a multiple of $k$.</li>
+</ul>
+<p>For example, $M(2, 5) = 14$ as $[0, 1, 1, 1, 1]$ attains a maximal prime score of $14$.</p>
+<p>Find $M(7000, p(7000))$.</p>
+<hr>
+<h2 id="最大质数得分"><a href="#最大质数得分" class="headerlink" title="最大质数得分"></a><strong>最大质数得分</strong></h2><p>记$p(t)$为第$(t+1)$个质数，因此$p(0) = 2$，$p(1) = 3$，依此类推。<br /><br>定义非负整数列$[a_1, \dots, a_n]$的<i class=zh>质数得分</i>为$\sum_{i = 1}^n p(a_i)$。<br /><br>考虑所有满足如下条件的非负整数列$[a_1, \dots, a_n]$，记$M(k,n)$为其质数得分的最大值：</p>
+<ul>
+<li>对于所有$i$，$0 \leq a_i &lt; k$；</li>
+<li>数列和$\sum_{i = 1}^n a_i$是$k$的倍数。</li>
+</ul>
+<p>例如，$M(2, 5) = 14$，最大质数得分$14$在数列$[0, 1, 1, 1, 1]$时取得。</p>
+<p>求$M(7000, p(7000))$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 875</title>
+    <url>/875/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-875"><a href="#Problem-875" class="headerlink" title="Problem 875"></a><a href="https://projecteuler.net/problem=875">Problem 875</a></h1><hr>
+<h2 id="Quadruple-Congruence"><a href="#Quadruple-Congruence" class="headerlink" title="Quadruple Congruence"></a><strong>Quadruple Congruence</strong></h2><p>For a positive integer $n$ we define $q(n)$ to be the number of solutions to:</p>
+<p>$$a_1^2+a_2^2+a_3^2+a_4^2 \equiv b_1^2+b_2^2+b_3^2+b_4^2 \pmod n$$</p>
+<p>where $0 \leq a_i, b_i \lt n$. For example, $q(4)= 18432$.</p>
+<p>Define $\displaystyle Q(n)=\sum_{i=1}^{n}q(i)$. You are given $Q(10)=18573381$.</p>
+<p>Find $Q(12345678)$. Give your answer modulo $1001961001$.</p>
+<hr>
+<h2 id="四重同余"><a href="#四重同余" class="headerlink" title="四重同余"></a><strong>四重同余</strong></h2><p>对于正整数$n$，定义$q(n)$为如下同余方程的解的数目：<br>$$a_1^2+a_2^2+a_3^2+a_4^2 \equiv b_1^2+b_2^2+b_3^2+b_4^2 \pmod n$$<br>其中$0 \leq a_i, b_i \lt n$。例如，$q(4)= 18432$。</p>
+<p>定义$\displaystyle Q(n)=\sum_{i=1}^{n}q(i)$。已知$Q(10)=18573381$。</p>
+<p>求$Q(12345678)$，并对$1001961001$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 879</title>
+    <url>/879/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-879"><a href="#Problem-879" class="headerlink" title="Problem 879"></a><a href="https://projecteuler.net/problem=879">Problem 879</a></h1><hr>
+<h2 id="Touch-screen-Password"><a href="#Touch-screen-Password" class="headerlink" title="Touch-screen Password"></a><strong>Touch-screen Password</strong></h2><p>A touch-screen device can be unlocked with a “password” consisting of a sequence of two or more distinct spots that the user selects from a rectangular grid of spots on the screen. The user enters their sequence by touching the first spot, then tracing a straight line segment to the next spot, and so on until the end of the sequence. The user’s finger remains in contact with the screen throughout, and may only move in straight line segments from spot to spot.</p>
+<p>If the finger traces a straight line that passes over an intermediate spot, then that is treated as two line segments with the intermediate spot included in the password sequence. For example, on a $3\times 3$ grid labelled with digits $1$ to $9$ (shown below), tracing $1-9$ is interpreted as $1-5-9$.</p>
+<p>Once a spot has been selected it disappears from the screen. Thereafter, the spot may not be used as an endpoint of future line segments, and it is ignored by any future line segments which happen to pass through it. For example, tracing $1-9-3-7$ (which crosses the $5$ spot twice) will give the password $1-5-9-6-3-7$.</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0879_touchscreen_159637.png" alt="1-5-9-6-3-7 example">
+</div>
+
+<p>There are $389488$ different passwords that can be formed on a $3 \times 3$ grid.</p>
+<p>Find the number of different passwords that can be formed on a $4 \times 4$ grid.</p>
+<hr>
+<h2 id="触屏密码"><a href="#触屏密码" class="headerlink" title="触屏密码"></a><strong>触屏密码</strong></h2><p>触屏设备的解锁“密码”是由用户从屏幕上的长方形点阵中选择两个至多个不同触点组成的序列。用户先触摸第一个触点，然后沿直线移动到第二个触点，依此类推直至完成序列。在这过程中，用户的手指必须始终接触屏幕，且只能沿直线移动。</p>
+<p>如果在手指沿直线移动时经过了一个中间触点，则应当将该中间触点加入序列并视为两段移动。例如，考虑一个大小为$3 \times 3$且标有数字$1$至$9$的点阵（如下所示），序列$1-9$实际上应当视为序列$1-5-9$。</p>
+<p>触点被接触后就会从屏幕上消失，在此之后，既不能作为未来移动时的终点，也不会因为在移动时经过而被作为中间触点再次加入序列。例如，序列$1-9-3-7$（期间会经过触点$5$两次）实际上应当视为序列$1-5-9-6-3-7$。</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0879_touchscreen_159637.png" alt="1-5-9-6-3-7 example">
+</div>
+
+<p>在$3\times 3$的点阵上，一共有$389488$种不同的密码。</p>
+<p>求在$4\times 4$的点阵上，一共有多少种不同的密码？</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 877</title>
+    <url>/877/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-877"><a href="#Problem-877" class="headerlink" title="Problem 877"></a><a href="https://projecteuler.net/problem=877">Problem 877</a></h1><hr>
+<h2 id="XOR-Equation-A"><a href="#XOR-Equation-A" class="headerlink" title="XOR-Equation A"></a><strong>XOR-Equation A</strong></h2><p>We use $x\oplus y$ for the bitwise XOR of $x$ and $y$.<br /><br>Define the <i>XOR-product</i> of $x$ and $y$, denoted by $x \otimes y$, similar to a long multiplication in base $2$, except that the intermediate results are XORed instead of the usual integer addition.</p>
+<p>For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>We consider the equation:<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = 5$$<br>For example, $(a, b) = (3, 6)$ is a solution.</p>
+<p>Let $X(N)$ be the XOR of the $b$ values for all solutions to this equation satisfying $0 \le a \le b \le N$.<br /><br>You are given $X(10)=5$.</p>
+<p>Find $X(10^{18})$.</p>
+<hr>
+<h2 id="异或等式（一）"><a href="#异或等式（一）" class="headerlink" title="异或等式（一）"></a><strong>异或等式（一）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 </p>
+<p>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑等式：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = 5$$<br>例如，$(a, b) = (3, 6)$是上式的一个解。</p>
+<p>考虑所有满足$0 \le a \le b \le N$的上式的解，并记$X(N)$为所有这些解中$b$的取值按位异或的结果。<br /><br>已知$X(10)=5$。</p>
+<p>求$X(10^{18})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 878</title>
+    <url>/878/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-878"><a href="#Problem-878" class="headerlink" title="Problem 878"></a><a href="https://projecteuler.net/problem=878">Problem 878</a></h1><hr>
+<h2 id="XOR-Equation-B"><a href="#XOR-Equation-B" class="headerlink" title="XOR-Equation B"></a><strong>XOR-Equation B</strong></h2><p>We use $x\oplus y$ for the bitwise XOR of $x$ and $y$.<br /><br>Define the <i>XOR-product</i> of $x$ and $y$, denoted by $x \otimes y$, similar to a long multiplication in base $2$, except that the intermediate results are XORed instead of the usual integer addition.<br /><br>For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>We consider the equation:<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = k$$<br>For example, $(a, b) = (3, 6)$ is a solution to this equation for $k=5$.</p>
+<p>Let $G(N,m)$ be the number of solutions to those equations with $k \le m$ and $0 \le a \le b \le N$.</p>
+<p>You are given $G(1000,100)=398$.</p>
+<p>Find $G(10^{17},1\ 000\ 000).$</p>
+<hr>
+<h2 id="异或等式（二）"><a href="#异或等式（二）" class="headerlink" title="异或等式（二）"></a><strong>异或等式（二）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 <br /><br>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑等式：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = k$$<br>例如，$(a, b) = (3, 6)$是上式取$k=5$时的一个解。</p>
+<p>若上式取遍所有$k \le m$，考虑其所有满足$0 \le a \le b \le N$的解，记$G(N,m)$为所有这些解的数目。</p>
+<p>已知$G(1000,100)=398$。</p>
+<p>求$G(10^{17},1\ 000\ 000)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 880</title>
+    <url>/880/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-880"><a href="#Problem-880" class="headerlink" title="Problem 880"></a><a href="https://projecteuler.net/problem=880">Problem 880</a></h1><hr>
+<h2 id="Nested-Radicals"><a href="#Nested-Radicals" class="headerlink" title="Nested Radicals"></a><strong>Nested Radicals</strong></h2><p>$(x,y)$ is called a <i>nested radical pair</i> if $x$ and $y$ are non-zero integers such that $x/y$ is not a cube of a rational number, and there exist integers $a$, $b$ and $c$ such that:<br>$$\sqrt{\sqrt[3]{x}+\sqrt[3]{y}}=\sqrt[3]{a}+\sqrt[3]{b}+\sqrt[3]{c}$$<br>For example, both $(-4,125)$ and $(5,5324)$ are nested radical pairs:<br>$$<br>\begin{aligned}<br>\begin{split}<br>\sqrt{\sqrt[3]{-4}+\sqrt[3]{125}}    &amp; = \sqrt[3]{-1}+\sqrt[3]{2}+\sqrt[3]{4}\\<br>\sqrt{\sqrt[3]{5}+\sqrt[3]{5324}}    &amp; = \sqrt[3]{-2}+\sqrt[3]{20}+\sqrt[3]{25}\\<br>\end{split}<br>\end{aligned}<br>$$<br>Let $H(N)$ be the sum of $|x|+|y|$ for all the nested radical pairs $(x, y)$ where $|x| \leq |y|\leq N$.<br /><br>For example, $H(10^3)=2535$.</p>
+<p>Find $H(10^{15})$. Give your answer modulo $1031^3+2$.</p>
+<hr>
+<h2 id="嵌套根式"><a href="#嵌套根式" class="headerlink" title="嵌套根式"></a><strong>嵌套根式</strong></h2><p>若非零整数$x$和$y$满足，$x/y$不是有理数的立方，且存在满足以下条件的整数$a$、$b$、$c$，则称$(x,y)$为<i class=zh>嵌套根式对</i>：<br>$$\sqrt{\sqrt[3]{x}+\sqrt[3]{y}}=\sqrt[3]{a}+\sqrt[3]{b}+\sqrt[3]{c}$$<br>例如，$(-4,125)$和$(5,5324)$都是嵌套根式对：<br>$$<br>\begin{aligned}<br>\begin{split}<br>\sqrt{\sqrt[3]{-4}+\sqrt[3]{125}}    &amp; = \sqrt[3]{-1}+\sqrt[3]{2}+\sqrt[3]{4}\\<br>\sqrt{\sqrt[3]{5}+\sqrt[3]{5324}}    &amp; = \sqrt[3]{-2}+\sqrt[3]{20}+\sqrt[3]{25}\\<br>\end{split}<br>\end{aligned}<br>$$<br>考虑所有满足$|x| \leq |y|\leq N$的嵌套根式对$(x,y)$，记$H(N)$为所有$|x|+|y|$的和。<br /><br>例如，$H(10^3)=2535$。</p>
+<p>求$H(10^{15})$，并对$1031^3+2$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 876</title>
+    <url>/876/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-876"><a href="#Problem-876" class="headerlink" title="Problem 876"></a><a href="https://projecteuler.net/problem=876">Problem 876</a></h1><hr>
+<h2 id="Triplet-Tricks"><a href="#Triplet-Tricks" class="headerlink" title="Triplet Tricks"></a><strong>Triplet Tricks</strong></h2><p>Starting with three numbers $a, b, c$, at each step do one of the three operations:</p>
+<ul>
+<li>change $a$ to $2(b + c) - a$;</li>
+<li>change $b$ to $2(c + a) - b$;</li>
+<li>change $c$ to $2(a + b) - c$.</li>
+</ul>
+<p>Define $f(a, b, c)$ to be the minimum number of steps required for one number to become zero. If this is not possible then $f(a, b, c)=0$.</p>
+<p>For example, $f(6,10,35)=3$:<br>$$(6,10,35) \to (6,10,-3) \to (8,10,-3) \to (8,0,-3).$$<br>However, $f(6,10,36)=0$ as no series of operations leads to a zero number.</p>
+<p>Also define $F(a, b)=\sum_{c=1}^\infty f(a,b,c)$. You are given $F(6,10)=17$ and $F(36,100)=179$.</p>
+<p>Find $\displaystyle\sum_{k=1}^{18}F(6^k,10^k)$.</p>
+<hr>
+<h2 id="三元戏法"><a href="#三元戏法" class="headerlink" title="三元戏法"></a><strong>三元戏法</strong></h2><p>从三个数$a, b, c$开始，每一步进行以下三种操作之一：</p>
+<ul>
+<li>将$a$替换为$2(b + c) - a$；</li>
+<li>将$b$替换为$2(c + a) - b$；</li>
+<li>将$c$替换为$2(a + b) - c$。</li>
+</ul>
+<p>定义$f(a, b, c)$为使其中一个数变为零所需的最少步数。如果无法做到这一点，则$f(a, b, c)=0$。</p>
+<p>例如，$f(6,10,35)=3$：<br>$$(6,10,35) \to (6,10,-3) \to (8,10,-3) \to (8,0,-3).$$<br>而$f(6,10,36)=0$，因为不存在使得其中一个数变为零的操作序列。</p>
+<p>再定义$F(a, b)=\sum_{c=1}^\infty f(a,b,c)$。已知$F(6,10)=17$，$F(36,100)=179$。</p>
+<p>求$\displaystyle\sum_{k=1}^{18}F(6^k,10^k)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 881</title>
+    <url>/881/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-881"><a href="#Problem-881" class="headerlink" title="Problem 881"></a><a href="https://projecteuler.net/problem=881">Problem 881</a></h1><hr>
+<h2 id="Divisor-Graph-Width"><a href="#Divisor-Graph-Width" class="headerlink" title="Divisor Graph Width"></a><strong>Divisor Graph Width</strong></h2><p>For a positive integer $n$ create a graph using its divisors as vertices. An edge is drawn between two vertices $a &lt; b$ if their quotient $b/a$ is prime. The graph can be arranged into levels where vertex $n$ is at level $0$ and vertices that are a distance $k$ from $n$ are on level $k$. Define $g(n)$ to be the maximum number of vertices in a single level. </p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0881_example45.jpg" alt="0881_example45.jpg">
+</div>
+
+<p>The example above shows that $g(45) = 2$. You are also given $g(5040) = 12$.</p>
+<p>Find the smallest number, $n$, such that $g(n) \ge 10^4$.</p>
+<hr>
+<h2 id="约数图宽度"><a href="#约数图宽度" class="headerlink" title="约数图宽度"></a><strong>约数图宽度</strong></h2><p>对于正整数$n$，以其约数为顶点构造图。若两个顶点$a &lt; b$的商$b/a$是质数，则连接这两个顶点。该图可以分成多层，其中顶点$n$在第$0$层，而距离$n$的距离为$k$的顶点则位于第$k$层。记$g(n)$为该图中任意一层的顶点数的最大值。</p>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0881_example45.jpg" alt="0881_example45.jpg">
+</div>
+
+<p>如上所示可知$g(45) = 2$。已知$g(5040) = 12$。</p>
+<p>求最小的、满足$g(n) \ge 10^4$的$n$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 882</title>
+    <url>/882/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-882"><a href="#Problem-882" class="headerlink" title="Problem 882"></a><a href="https://projecteuler.net/problem=882">Problem 882</a></h1><hr>
+<h2 id="Removing-Bits"><a href="#Removing-Bits" class="headerlink" title="Removing Bits"></a><strong>Removing Bits</strong></h2><p>Dr. One and Dr. Zero are playing the following partisan game.<br>The game begins with one $1$, two $2$’s, three $3$’s, $\ldots$, $n$ $n$’s. Starting with Dr. One, they make moves in turn.<br /><br>Dr. One chooses a number and changes it by removing a $1$ from its binary expansion.<br /><br>Dr. Zero chooses a number and changes it by removing a $0$ from its binary expansion.<br /><br>The player that is unable to move loses.<br>Note that leading zeros are not allowed in any binary expansion; in particular nobody can make a move on the number $0$.</p>
+<p>They soon realize that Dr. Zero can never win the game. In order to make it more interesting, Dr. Zero is allowed to “skip the turn” several times, i.e. passing the turn back to Dr. One without making a move.</p>
+<p>For example, when $n = 2$, Dr. Zero can win the game if allowed to skip $2$ turns. A sample game:<br>$$<br>[1, 2, 2]\xrightarrow{\textrm{Dr. One}}[1, 0, 2]\xrightarrow{\textrm{Dr. Zero}}[1, 0, 1]\xrightarrow{\textrm{Dr. One}}[1, 0, 0]\xrightarrow[\textrm{skip}]{\textrm{Dr. Zero}}<br>[1, 0, 0]\xrightarrow{\textrm{Dr. One}}[0, 0, 0]\xrightarrow[\textrm{skip}]{\textrm{Dr. Zero}}[0, 0, 0].<br>$$<br>Let $S(n)$ be the minimal number of skips needed so that Dr. Zero has a winning strategy.<br /><br>For example, $S(2) = 2$, $S(5) = 17$, $S(10) = 64$.</p>
+<p>Find $S(10^5)$.</p>
+<hr>
+<h2 id="移除比特"><a href="#移除比特" class="headerlink" title="移除比特"></a><strong>移除比特</strong></h2><p>壹博士和零博士正在玩一个游戏。<br>游戏开始时有一个$1$、两个$2$、三个$3$、$\ldots$、和$n$个$n$。壹博士先行，然后双方交替行动。<br /><br>轮到壹博士行动时，壹博士可以选择一个数，并从其二进制表示中移除一个$1$。<br /><br>轮到零博士行动时，零博士可以选择一个数，并从其二进制表示中移除一个$0$。<br /><br>首先无法行动的玩家输掉游戏。<br>注意二进制表示中不允许有前导零；特别地，双方在行动时均不能选择数$0$进行移除。</p>
+<p>他们很快意识到零博士永远不可能获胜。为了让这个游戏更有趣，零博士可以有限次地“跳过回合”，即不进行任何行动并将局面直接转交给壹博士。</p>
+<p>例如，当$n = 2$时，若零博士能跳过$2$个回合就能获胜。一种可能的获胜方式是:<br>$$<br>[1, 2, 2]\xrightarrow{\textrm{壹博士}}[1, 0, 2]\xrightarrow{\textrm{零博士}}[1, 0, 1]\xrightarrow{\textrm{壹博士}}[1, 0, 0]\xrightarrow[\textrm{跳过}]{\textrm{零博士}}<br>[1, 0, 0]\xrightarrow{\textrm{壹博士}}[0, 0, 0]\xrightarrow[\textrm{跳过}]{\textrm{零博士}}[0, 0, 0].<br>$$<br>记$S(n)$为使零博士有必胜策略所需的最小跳过回合数。<br /><br>例如，$S(2) = 2$，$S(5) = 17$，$S(10) = 64$。</p>
+<p>求$S(10^5)$。</p>
 <hr>
 ]]></content>
   </entry>
