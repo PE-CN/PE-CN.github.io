@@ -24404,4 +24404,88 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 883</title>
+    <url>/883/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-883"><a href="#Problem-883" class="headerlink" title="Problem 883"></a><a href="https://projecteuler.net/problem=883">Problem 883</a></h1><hr>
+<h2 id="Remarkable-Triangles"><a href="#Remarkable-Triangles" class="headerlink" title="Remarkable Triangles"></a><strong>Remarkable Triangles</strong></h2><p>In this problem we consider triangles drawn on a <b>hexagonal lattice</b>, where each lattice point in the plane has six neighbouring points equally spaced around it, all distance $1$ away.</p>
+<p>We call a triangle <i>remarkable</i> if</p>
+<ul>
+<li>All three vertices and its <b>incentre</b> lie on lattice points</li>
+<li>At least one of its angles is $60^\circ$</li>
+</ul>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0883_diagram.png" alt="0883_diagram.png">
+</div>
+
+<p>Above are four examples of remarkable triangles, with $60^\circ$ angles illustrated in red. Triangles A and B have inradius $1$; C has inradius $\sqrt{3}$; D has inradius $2$.</p>
+<p>Define $T(r)$ to be the number of remarkable triangles with inradius $\le r$. Rotations and reflections, such as triangles A and B above, are counted separately; however direct translations are not. That is, the same triangle drawn in different positions of the lattice is only counted once.</p>
+<p>You are given $T(0.5)=2$, $T(2)=44$, and $T(10)=1302$.</p>
+<p>Find $T(10^6)$.</p>
+<hr>
+<h2 id="卓越三角形"><a href="#卓越三角形" class="headerlink" title="卓越三角形"></a><strong>卓越三角形</strong></h2><p>本题所考虑的三角形的顶点均在<b>六边形格阵</b>上。六边形格阵是平面上的一种格点阵，其中每个格点周围都有六个相邻的、均匀分布的格点，其距离均为$1$。</p>
+<p>所谓<i class=zh>卓越</i>三角形是满足以下条件的三角形：</p>
+<ul>
+<li>其三个顶点及其<b>内心</b>都落在格点上</li>
+<li>至少一个角为$60^\circ$</li>
+</ul>
+<div style="text-align:center">
+<img src="https://projecteuler.net/resources/images/0883_diagram.png" alt="0883_diagram.png">
+</div>
+
+<p>如上所示是四个卓越三角形，其$60^\circ$的角被标记为红色。三角形A和B的内接圆半径为$1$，C的内接圆半径为$\sqrt{3}$，而D的内接圆半径为$2$。</p>
+<p>记$T(r)$为所有内接圆半径小于等于$r$的卓越三角形的数目。旋转和翻转形成的不同三角形，如上图所示的三角形A和B，在计数时分别计算；而直接平移则不重复计算，也就是说，在格阵不同的位置绘制的完全相同的三角形只计算一次。</p>
+<p>已知$T(0.5)=2$，$T(2)=44$，$T(10)=1302$。</p>
+<p>求$T(10^6)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 885</title>
+    <url>/885/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-885"><a href="#Problem-885" class="headerlink" title="Problem 885"></a><a href="https://projecteuler.net/problem=885">Problem 885</a></h1><hr>
+<h2 id="Sorted-Digits"><a href="#Sorted-Digits" class="headerlink" title="Sorted Digits"></a><strong>Sorted Digits</strong></h2><p>For a positive integer $d$, let $f(d)$ be the number created by sorting the digits of $d$ in ascending order, removing any zeros. For example, $f(3403) = 334$.</p>
+<p>Let $S(n)$ be the sum of $f(d)$ for all positive integers $d$ of $n$ digits or less. You are given $S(1) = 45$ and $S(5) = 1543545675$.</p>
+<p>Find $S(18)$. Give your answer modulo $1123455689$.</p>
+<hr>
+<h2 id="数字排序"><a href="#数字排序" class="headerlink" title="数字排序"></a><strong>数字排序</strong></h2><p>对于正整数$d$，记$f(d)$为将$d$的各位非零数字按升序排序所得的结果。例如，$f(3403) = 334$。</p>
+<p>记$S(n)$为所有至多$n$位的正整数$d$所对应的$f(d)$之和。已知$S(1) = 45$，$S(5) = 1543545675$。</p>
+<p>求$S(18)$，并对$1123455689$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 884</title>
+    <url>/884/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-884"><a href="#Problem-884" class="headerlink" title="Problem 884"></a><a href="https://projecteuler.net/problem=884">Problem 884</a></h1><hr>
+<h2 id="Removing-Cubes"><a href="#Removing-Cubes" class="headerlink" title="Removing Cubes"></a><strong>Removing Cubes</strong></h2><p>Starting from a positive integer $n$, at each step we subtract from $n$ the largest perfect cube not exceeding $n$, until $n$ becomes $0$.<br><br>For example, with $n = 100$ the procedure ends in $4$ steps:<br>$$100 \xrightarrow{-4^3} 36 \xrightarrow{-3^3} 9 \xrightarrow{-2^3} 1 \xrightarrow{-1^3} 0.$$<br>Let $D(n)$ denote the number of steps of the procedure. Thus $D(100) = 4$.</p>
+<p>Let $S(N)$ denote the sum of $D(n)$ for all positive integers $n$ <b>strictly less</b> than $N$.<br><br>For example, $S(100) = 512$.</p>
+<p>Find $S(10^{17})$.</p>
+<hr>
+<h2 id="扣除立方数"><a href="#扣除立方数" class="headerlink" title="扣除立方数"></a><strong>扣除立方数</strong></h2><p>从任意正整数$n$开始，每一步依次扣除不超过$n$的最大立方数，直到$n$变为$0$。<br><br>例如，从$n = 100$开始需要$4$步：<br>$$100 \xrightarrow{-4^3} 36 \xrightarrow{-3^3} 9 \xrightarrow{-2^3} 1 \xrightarrow{-1^3} 0$$<br>记$D(n)$为从$n$开始所需要的步数，因此$D(100) = 4$。</p>
+<p>记$S(N)$为所有<b>严格小于</b>$N$的正整数$n$所对应的$D(n)$之和。<br><br>例如，$S(100) = 512$。</p>
+<p>求$S(10^{17})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 886</title>
+    <url>/886/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-886"><a href="#Problem-886" class="headerlink" title="Problem 886"></a><a href="https://projecteuler.net/problem=886">Problem 886</a></h1><hr>
+<h2 id="Coprime-Permutations"><a href="#Coprime-Permutations" class="headerlink" title="Coprime Permutations"></a><strong>Coprime Permutations</strong></h2><p>A permutation of $\{2,3,\ldots,n\}$ is a rearrangement of these numbers. A <i>coprime permutation</i> is a rearrangement such that all pairs of adjacent numbers are coprime.</p>
+<p>Let $P(n)$ be the number of coprime permutations of $\{2,3,\ldots,n\}$.</p>
+<p>For example, $P(4)=2$ as there are two coprime permutations, $(2,3,4)$ and $(4,3,2)$. You are also given $P(10)=576$.</p>
+<p>Find $P(34)$ and give your answer modulo $83\ 456\ 729$.</p>
+<hr>
+<h2 id="互质重排"><a href="#互质重排" class="headerlink" title="互质重排"></a><strong>互质重排</strong></h2><p>$\{2,3,\ldots,n\}$的重排是将该集合中的所有数重新排列所得的结果，而<i class=zh>互质重排</i>则是相邻两数总是互质的重排。</p>
+<p>记$P(n)$为${2,3,\ldots,n}$所有互质重排的数目。</p>
+<p>例如，$P(4)=2$，即存在两种互质重排，分别是$(2,3,4)$和$(4,3,2)$。此外还已知$P(10)=576$。</p>
+<p>求$P(34)$，并对$83\ 456\ 729$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
