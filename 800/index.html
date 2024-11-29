@@ -25,8 +25,8 @@
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
 <meta property="og:description" content="Problem 800 Hybrid IntegersAn integer of the form $p^q q^p$ with prime numbers $p \neq q$ is called a hybrid-integer.For example, $800 &#x3D; 2^5 5^2$ is a hybrid-integer. We define $C(n)$ to be the numbe">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-29T01:00:00.000Z">
-<meta property="article:modified_time" content="2022-10-16T17:29:07.196Z">
+<meta property="article:published_time" content="2022-05-28T20:00:00.000Z">
+<meta property="article:modified_time" content="2024-11-29T19:09:02.314Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 
@@ -192,6 +192,19 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Project Euler | 欧拉计划">
     </span>
+      <footer class="post-footer">
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/799/" rel="prev" title="Problem 799">
+      <i class="fa fa-chevron-left"></i> Problem 799
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/801/" rel="next" title="Problem 801">
+      Problem 801 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           Problem 800
@@ -204,14 +217,14 @@
               </span>
               <span class="post-meta-item-text">题目发布于</span>
 
-              <time title="发布时间：2022-05-28 21:00:00" itemprop="dateCreated datePublished" datetime="2022-05-28T21:00:00-04:00">2022-05-28</time>
+              <time title="发布时间：2022-05-28 21:00:00" itemprop="dateCreated datePublished" datetime="2022-05-28T21:00:00+01:00">2022-05-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2022-10-16 13:29:07" itemprop="dateModified" datetime="2022-10-16T13:29:07-04:00">2022-10-16</time>
+                <time title="更新时间：2024-11-29 19:09:02" itemprop="dateModified" datetime="2024-11-29T19:09:02+00:00">2024-11-29</time>
               </span>
 
           
@@ -232,7 +245,7 @@
 <p>Find $C(800800^{800800})$.</p>
 <hr>
 <h2 id="混合整数"><a href="#混合整数" class="headerlink" title="混合整数"></a><strong>混合整数</strong></h2><p>若一个整数可以表示为$p^q q^p$的形式，且$p \neq q$均为质数，则称其为<i class=zh>混合整数</i>。<br>例如，$800 = 2^5 5^2$是一个混合整数。</p>
-<p>定义$C(n)$为小于等于$n$的所有混合整数之和。<br /><br>已知$C(800) = 2$和$C(800^{800}) = 10790$。</p>
+<p>定义$C(n)$为小于等于$n$的所有混合整数的数目。<br /><br>已知$C(800) = 2$，$C(800^{800}) = 10790$。</p>
 <p>求$C(800800^{800800})$。</p>
 <hr>
 
