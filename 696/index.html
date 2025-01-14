@@ -25,15 +25,15 @@
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
 <meta property="og:description" content="Problem 696 MahjongThe game of Mahjong is played with tiles belonging to $s$ suits. Each tile also has a number in the range $1\ldots n$, and for each suit&#x2F;number combination there are exactly four i">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://projecteuler.net/project/images/p696_mahjong_1.png">
-<meta property="og:image" content="https://projecteuler.net/project/images/p696_mahjong_2.png">
-<meta property="og:image" content="https://projecteuler.net/project/images/p696_mahjong_1.png">
-<meta property="og:image" content="https://projecteuler.net/project/images/p696_mahjong_2.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0696_mahjong_1.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0696_mahjong_2.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0696_mahjong_1.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0696_mahjong_2.png">
 <meta property="article:published_time" content="2020-01-05T01:00:00.000Z">
-<meta property="article:modified_time" content="2020-11-12T00:09:21.332Z">
+<meta property="article:modified_time" content="2025-01-14T21:12:53.046Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://projecteuler.net/project/images/p696_mahjong_1.png">
+<meta name="twitter:image" content="http://yoursite.com/resources/images/0696_mahjong_1.png">
 
 <link rel="canonical" href="http://yoursite.com/696/">
 
@@ -229,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2020-11-12 00:09:21" itemprop="dateModified" datetime="2020-11-12T00:09:21+00:00">2020-11-12</time>
+                <time title="更新时间：2025-01-14 21:12:53" itemprop="dateModified" datetime="2025-01-14T21:12:53+00:00">2025-01-14</time>
               </span>
 
           
@@ -254,9 +254,9 @@
 <li>A <i>Pair</i> is two identical tiles (same suit and same number)</li>
 </ul>
 <p>For example, here is a winning hand with $n=9$, $s=3$, $t=4$, consisting in this case of two Chows, two Pungs, and one Pair:</p>
-<p><img src="https://projecteuler.net/project/images/p696_mahjong_1.png" alt="A winning Mahjong hand"></p>
+<p><img src="/resources/images/0696_mahjong_1.png" alt="A winning Mahjong hand"></p>
 <p>Note that sometimes the same collection of tiles can be represented as $t$ Triples and one Pair in more than one way. This only counts as one winning hand. For example, this is considered to be the same winning hand as above, because it consists of the same tiles:</p>
-<p><img src="https://projecteuler.net/project/images/p696_mahjong_2.png" alt="Alternative arrangement of the same hand"></p>
+<p><img src="/resources/images/0696_mahjong_2.png" alt="Alternative arrangement of the same hand"></p>
 <p>Let $w(n, s, t)$ be the number of distinct winning hands formed of $t$ Triples and one Pair, where there are $s$ suits available and tiles are numbered up to $n$.</p>
 <p>For example, with a single suit and tiles numbered up to $4$, we have $w(4, 1, 1) = 20$: there are $12$ winning hands consisting of a Pung and a Pair, and another $8$ containing a Chow and a Pair. You are also given that $w(9, 1, 4) = 13259$, $w(9, 3, 4) = 5237550$, and $w(1000, 1000, 5) \equiv 107662178 \pmod{1\ 000\ 000\ 007}$.</p>
 <p>Find $w(10^8, 10^8, 30)$. Give your answer modulo $1\ 000\ 000\ 007$.</p>
@@ -270,9 +270,9 @@
 <li>一<i class=zh>对</i>是指两张花色/数字组合完全相同的牌</li>
 </ul>
 <p>如下所示就是当$n=9$，$s=3$，$t=4$（即标准麻将）时的一手和牌，包括两个顺子、两个刻子和一对：</p>
-<p><img src="https://projecteuler.net/project/images/p696_mahjong_1.png" alt="一手麻将和牌"></p>
+<p><img src="/resources/images/0696_mahjong_1.png" alt="一手麻将和牌"></p>
 <p>注意到，相同的一手麻将牌可以有多种方式表示为$t$组和一对，但这只被算作一手和牌。例如，如下所示就是和上图相同的一手和牌：</p>
-<p><img src="https://projecteuler.net/project/images/p696_mahjong_2.png" alt="同一手和牌的不同表示"></p>
+<p><img src="/resources/images/0696_mahjong_2.png" alt="同一手和牌的不同表示"></p>
 <p>当共有$s$种花色、牌面数字至多为$n$时，记$w(n, s, t)$为所有由$t$组和一对构成的不同和牌的数量。</p>
 <p>例如，如果只有一种花色，且数字至多为$4$，我们有$w(4, 1, 1) = 20$：有$12$手包括一个刻子和一对，还有$8$手包括一个顺子和一对。已知$w(9, 1, 4) = 13259$，$w(9, 3, 4) = 5237550$，$w(1000, 1000, 5) \equiv 107662178 \pmod{1\ 000\ 000\ 007}$。</p>
 <p>求$w(10^8, 10^8, 30)$并将你的答案对$1\ 000\ 000\ 007$取余。</p>
@@ -407,7 +407,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2024</span>
+  <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>

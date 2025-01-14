@@ -25,13 +25,13 @@
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
 <meta property="og:description" content="Problem 363 Bézier Curves A cubic Bézier curve is defined by four points: P0, P1, P2 and P3.   The curve is constructed as follows:On the segments P0P1, P1P2 and P2P3 the points Q0,Q1 and Q2 are draw">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://projecteuler.net/project/images/p363_bezier.png">
-<meta property="og:image" content="https://projecteuler.net/project/images/p363_bezier.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0363_bezier.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0363_bezier.png">
 <meta property="article:published_time" content="2011-12-18T10:00:00.000Z">
-<meta property="article:modified_time" content="2015-10-25T07:09:22.000Z">
+<meta property="article:modified_time" content="2025-01-14T21:04:11.530Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://projecteuler.net/project/images/p363_bezier.png">
+<meta name="twitter:image" content="http://yoursite.com/resources/images/0363_bezier.png">
 
 <link rel="canonical" href="http://yoursite.com/363/">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2015-10-25 07:09:22" itemprop="dateModified" datetime="2015-10-25T07:09:22+00:00">2015-10-25</time>
+                <time title="更新时间：2025-01-14 21:04:11" itemprop="dateModified" datetime="2025-01-14T21:04:11+00:00">2025-01-14</time>
               </span>
 
           
@@ -245,7 +245,7 @@
 <h1 id="Problem-363"><a href="#Problem-363" class="headerlink" title="Problem 363"></a><a href="https://projecteuler.net/problem=363">Problem 363</a></h1><hr>
 <p><strong>Bézier Curves</strong></p>
 <p>A cubic Bézier curve is defined by four points: P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub> and P<sub>3</sub>.</p>
-<center><img src="https://projecteuler.net/project/images/p363_bezier.png"></center>
+<center><img src="/resources/images/0363_bezier.png"></center>
 
 <p>The curve is constructed as follows:<br>On the segments P<sub>0</sub>P<sub>1</sub>, P<sub>1</sub>P<sub>2</sub> and P<sub>2</sub>P<sub>3</sub> the points Q<sub>0</sub>,Q<sub>1</sub> and Q<sub>2</sub> are drawn such that<br>P<sub>0</sub>Q<sub>0</sub> / P<sub>0</sub>P<sub>1</sub> = P<sub>1</sub>Q<sub>1</sub> / P<sub>1</sub>P<sub>2</sub> = P<sub>2</sub>Q<sub>2</sub> / P<sub>2</sub>P<sub>3</sub> = t (t in [0,1]).<br>On the segments Q<sub>0</sub>Q<sub>1</sub> and Q<sub>1</sub>Q<sub>2</sub> the points R<sub>0</sub> and R<sub>1</sub> are drawn such that<br>Q<sub>0</sub>R<sub>0</sub>  / Q<sub>0</sub>Q<sub>1</sub> = Q<sub>1</sub>R<sub>1</sub> / Q<sub>1</sub>Q<sub>2</sub> = t for the same value of t.<br>On the segment R<sub>0</sub>R<sub>1</sub> the point B is drawn such that R<sub>0</sub>B / R<sub>0</sub>R<sub>1</sub> = t for the same value of t.<br>The Bézier curve defined by the points P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> is the locus of B as Q<sub>0</sub> takes all possible positions on the segment P<sub>0</sub>P<sub>1</sub>.<br>(Please note that for all points the value of t is the same.)</p>
 <p>At <a href="http://home.kpn.nl/hklein/bezier/bezier.html" target="_blank">this (external) web address</a> you will find an applet that allows you to drag the points P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub> and P<sub>3</sub> to see what the Bézier curve (green curve) defined by those points looks like. You can also drag the point Q<sub>0</sub> along the segment P<sub>0</sub>P<sub>1</sub>.</p>
@@ -257,7 +257,7 @@
 <hr>
 <p><strong>贝塞尔曲线</strong></p>
 <p>一条立方贝塞尔曲线由四个点确定：P<sub>0</sub>、P<sub>1</sub>、P<sub>2</sub>和P<sub>3</sub>。</p>
-<center><img src="https://projecteuler.net/project/images/p363_bezier.png"></center>
+<center><img src="/resources/images/0363_bezier.png"></center>
 
 <p>曲线的构造方式如下所述：<br>在线段P<sub>0</sub>P<sub>1</sub>、P<sub>1</sub>P<sub>2</sub>和P<sub>2</sub>P<sub>3</sub>上，取点Q<sub>0</sub>、Q<sub>1</sub>和Q<sub>2</sub>，满足<br>P<sub>0</sub>Q<sub>0</sub> / P<sub>0</sub>P<sub>1</sub> = P<sub>1</sub>Q<sub>1</sub> / P<sub>1</sub>P<sub>2</sub> = P<sub>2</sub>Q<sub>2</sub> / P<sub>2</sub>P<sub>3</sub> = t (t 属于 [0,1])。<br>在线段Q<sub>0</sub>Q<sub>1</sub>和Q<sub>1</sub>Q<sub>2</sub>上，取点R<sub>0</sub>和R<sub>1</sub>，满足<br>Q<sub>0</sub>R<sub>0</sub>  / Q<sub>0</sub>Q<sub>1</sub> = Q<sub>1</sub>R<sub>1</sub> / Q<sub>1</sub>Q<sub>2</sub> = t，t的值同上。<br>在线段R<sub>0</sub>R<sub>1</sub>上，取点B，满足R<sub>0</sub>B / R<sub>0</sub>R<sub>1</sub> = t，t的值同上。<br>由点P<sub>0</sub>、P<sub>1</sub>、P<sub>2</sub>、P<sub>3</sub>确定的贝塞尔曲线即为Q<sub>0</sub>在线段P<sub>0</sub>P<sub>1</sub>上取遍所有位置时点B的轨迹。<br>（请注意，对于所有的取点过程，t的值都是相同的。）</p>
 <p>在<a href="http://home.kpn.nl/hklein/bezier/bezier.html" target="_blank">这个（外部链接）网址</a>，你会找到一个应用，允许你拖动点P<sub>0</sub>、P<sub>1</sub>、P<sub>2</sub>和P<sub>3</sub>，以观察由这些点确定的贝塞尔曲线（绿色曲线）的外观。你也可以在线段P<sub>0</sub>P<sub>1</sub>上拖动点Q<sub>0</sub>。</p>
@@ -397,7 +397,7 @@
 <div class="copyright">
   
   &copy; 2001 – 
-  <span itemprop="copyrightYear">2024</span>
+  <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fas fa-calculator"></i>
   </span>
