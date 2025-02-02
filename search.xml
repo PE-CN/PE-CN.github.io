@@ -174,12 +174,12 @@
     <url>/106/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-106"><a href="#Problem-106" class="headerlink" title="Problem 106"></a><a href="https://projecteuler.net/problem=106">Problem 106</a></h1><hr>
-<h2 id="Special-subset-sums-meta-testing"><a href="#Special-subset-sums-meta-testing" class="headerlink" title="Special subset sums: meta-testing"></a><strong>Special subset sums: meta-testing</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
+<h2 id="Special-Subset-Sums-Meta-Testing"><a href="#Special-Subset-Sums-Meta-Testing" class="headerlink" title="Special Subset Sums: Meta-Testing"></a><strong>Special Subset Sums: Meta-Testing</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
 <ol>
 <li>$S(B) \neq S(C)$; that is, sums of subsets cannot be equal.</li>
 <li>If $B$ contains more elements than $C$ then $S(B) &gt; S(C)$.</li>
 </ol>
-<p>For this problem we shall assume that a given set contains n strictly increasing elements and it already satisfies the second rule.</p>
+<p>For this problem we shall assume that a given set contains $n$ strictly increasing elements and it already satisfies the second rule.</p>
 <p>Surprisingly, out of the $25$ possible subset pairs that can be obtained from a set for which $n = 4$, only $1$ of these pairs need to be tested for equality (first rule). Similarly, when $n = 7$, only $70$ out of the $966$ subset pairs need to be tested.</p>
 <p>For $n = 12$, how many of the $261625$ subset pairs that can be obtained need to be tested for equality?</p>
 <p>NOTE: This problem is related to <a href="/103">Problem 103</a> and <a href="/105">Problem 105</a>.</p>
@@ -201,8 +201,7 @@
     <url>/107/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-107"><a href="#Problem-107" class="headerlink" title="Problem 107"></a><a href="https://projecteuler.net/problem=107">Problem 107</a></h1><hr>
-<p><strong>Minimal network</strong></p>
-<p>The following undirected network consists of seven vertices and twelve edges with a total weight of 243.</p>
+<h2 id="Minimal-Network"><a href="#Minimal-Network" class="headerlink" title="Minimal Network"></a><strong>Minimal Network</strong></h2><p>The following undirected network consists of seven vertices and twelve edges with a total weight of $243$.</p>
 <center><img src="/resources/images/0107_1.png" width="381" height="278" alt=""></center>
 
 <p>The same network can be represented by the matrix below.</p>
@@ -210,17 +209,17 @@
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th><strong>A</strong></th>
-<th><strong>B</strong></th>
-<th><strong>C</strong></th>
-<th><strong>D</strong></th>
-<th><strong>E</strong></th>
-<th><strong>F</strong></th>
-<th><strong>G</strong></th>
+<th><strong>$A$</strong></th>
+<th><strong>$B$</strong></th>
+<th><strong>$C$</strong></th>
+<th><strong>$D$</strong></th>
+<th><strong>$E$</strong></th>
+<th><strong>$F$</strong></th>
+<th><strong>$G$</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>A</strong></td>
+<td><strong>$A$</strong></td>
 <td>-</td>
 <td>16</td>
 <td>12</td>
@@ -230,7 +229,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>B</strong></td>
+<td><strong>$B$</strong></td>
 <td>16</td>
 <td>-</td>
 <td>-</td>
@@ -240,7 +239,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>C</strong></td>
+<td><strong>$C$</strong></td>
 <td>12</td>
 <td>-</td>
 <td>-</td>
@@ -250,7 +249,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>D</strong></td>
+<td><strong>$D$</strong></td>
 <td>21</td>
 <td>17</td>
 <td>28</td>
@@ -260,7 +259,7 @@
 <td>23</td>
 </tr>
 <tr>
-<td><strong>E</strong></td>
+<td><strong>$E$</strong></td>
 <td>-</td>
 <td>20</td>
 <td>-</td>
@@ -270,7 +269,7 @@
 <td>11</td>
 </tr>
 <tr>
-<td><strong>F</strong></td>
+<td><strong>$F$</strong></td>
 <td>-</td>
 <td>-</td>
 <td>31</td>
@@ -280,7 +279,7 @@
 <td>27</td>
 </tr>
 <tr>
-<td><strong>G</strong></td>
+<td><strong>$G$</strong></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -290,31 +289,30 @@
 <td>-</td>
 </tr>
 </tbody></table>
-<p>However, it is possible to optimise the network by removing some edges and still ensure that all points on the network remain connected. The network which achieves the maximum saving is shown below. It has a weight of 93, representing a saving of 243 ? 93 = 150 from the original network.</p>
+<p>However, it is possible to optimise the network by removing some edges and still ensure that all points on the network remain connected. The network which achieves the maximum saving is shown below. It has a weight of $93$, representing a saving of $243 - 93 = 150$ from the original network.</p>
 <center><img src="/resources/images/0107_2.png" width="385" height="288" alt=""></center>
 
 <p>Using <a href="https://projecteuler.net/project/resources/p107_network.txt">network.txt</a> (right click and ‘Save Link/Target As…’), a 6K text file containing a network with forty vertices, and given in matrix form, find the maximum saving which can be achieved by removing redundant edges whilst ensuring that the network remains connected.</p>
 <hr>
-<p><strong>最小网络</strong></p>
-<p>下面这个无向网络包含有7个顶点和12条边，其总重量为243。</p>
+<h2 id="最小网络"><a href="#最小网络" class="headerlink" title="最小网络"></a><strong>最小网络</strong></h2><p>如下图所示的无向网络包含有$7$个顶点和$12$条边，其总权重为$243$。</p>
 <center><img src="/resources/images/0107_1.png" width="381" height="278" alt=""></center>
 
-<p>这个网络也可以用矩阵的形式表示如下。</p>
+<p>这个网络也可以表示为如下的邻接矩阵形式：</p>
 <table>
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th><strong>A</strong></th>
-<th><strong>B</strong></th>
-<th><strong>C</strong></th>
-<th><strong>D</strong></th>
-<th><strong>E</strong></th>
-<th><strong>F</strong></th>
-<th><strong>G</strong></th>
+<th><strong>$A$</strong></th>
+<th><strong>$B$</strong></th>
+<th><strong>$C$</strong></th>
+<th><strong>$D$</strong></th>
+<th><strong>$E$</strong></th>
+<th><strong>$F$</strong></th>
+<th><strong>$G$</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>A</strong></td>
+<td><strong>$A$</strong></td>
 <td>-</td>
 <td>16</td>
 <td>12</td>
@@ -324,7 +322,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>B</strong></td>
+<td><strong>$B$</strong></td>
 <td>16</td>
 <td>-</td>
 <td>-</td>
@@ -334,7 +332,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>C</strong></td>
+<td><strong>$C$</strong></td>
 <td>12</td>
 <td>-</td>
 <td>-</td>
@@ -344,7 +342,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><strong>D</strong></td>
+<td><strong>$D$</strong></td>
 <td>21</td>
 <td>17</td>
 <td>28</td>
@@ -354,7 +352,7 @@
 <td>23</td>
 </tr>
 <tr>
-<td><strong>E</strong></td>
+<td><strong>$E$</strong></td>
 <td>-</td>
 <td>20</td>
 <td>-</td>
@@ -364,7 +362,7 @@
 <td>11</td>
 </tr>
 <tr>
-<td><strong>F</strong></td>
+<td><strong>$F$</strong></td>
 <td>-</td>
 <td>-</td>
 <td>31</td>
@@ -374,7 +372,7 @@
 <td>27</td>
 </tr>
 <tr>
-<td><strong>G</strong></td>
+<td><strong>$G$</strong></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -384,10 +382,10 @@
 <td>-</td>
 </tr>
 </tbody></table>
-<p>然而，我们其实可以优化这个网络，移除其中的一些边，同时仍然保证每个顶点之间都是连通的。节省重量最多的网络如下图所示，其总重量为93，相比原来的网络节省了243 ? 93 = 150。</p>
+<p>不过，我们其实可以优化这个网络，移除其中的一些边，同时仍然保证每个顶点之间都是连通的。节省的权重最多的新网络如下图所示，其总权重为$93$，相比原网络节省了$243 - 93 = 150$的权重。</p>
 <center><img src="/resources/images/0107_2.png" width="385" height="288" alt=""></center>
 
-<p>在文本文件<a href="https://projecteuler.net/project/resources/p107_network.txt">network.txt</a>中存放了一个包含有40个顶点的网络的连通矩阵。移除其中冗余的边，同时仍然保证每个顶点之间都是连通的，求最多能节省的重量。</p>
+<p>文本文件<a href="https://projecteuler.net/project/resources/p107_network.txt">network.txt</a>中包含了一个有四十个顶点的网络的邻接矩阵表示。移除其中冗余的边，同时仍然保证每个顶点之间都是连通的，并求出最多能节省多少权重。</p>
 <hr>
 ]]></content>
   </entry>
@@ -396,21 +394,19 @@
     <url>/108/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-108"><a href="#Problem-108" class="headerlink" title="Problem 108"></a><a href="https://projecteuler.net/problem=108">Problem 108</a></h1><hr>
-<p><strong>Diophantine reciprocals I</strong></p>
-<p>In the following equation x, y, and n are positive integers.</p>
+<h2 id="Diophantine-Reciprocals-I"><a href="#Diophantine-Reciprocals-I" class="headerlink" title="Diophantine Reciprocals I"></a><strong>Diophantine Reciprocals I</strong></h2><p>In the following equation $x$, $y$, and $n$ are positive integers.</p>
 <p>$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$</p>
-<p>For n = 4 there are exactly three distinct solutions:</p>
+<p>For $n = 4$ there are exactly three distinct solutions:</p>
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
-<p>What is the least value of n for which the number of distinct solutions exceeds one-thousand?</p>
+<p>What is the least value of $n$ for which the number of distinct solutions exceeds one-thousand?</p>
 <p>NOTE: This problem is an easier version of <a href="/110">Problem 110</a>; it is strongly advised that you solve this one first.</p>
 <hr>
-<p><strong>丢番图倒数I</strong></p>
-<p>在如下方程中，x、y、n均为正整数。</p>
+<h2 id="丢番图倒数（一）"><a href="#丢番图倒数（一）" class="headerlink" title="丢番图倒数（一）"></a><strong>丢番图倒数（一）</strong></h2><p>在如下方程中，$x$、$y$、$n$均为正整数：</p>
 <p>$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$</p>
-<p>对于n = 4，上述方程恰好有3个不同的解：</p>
+<p>对于$n = 4$，上述方程恰好有三个不同的解：</p>
 <p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
-<p>使得不同的解的数目超过1000的最小n值是多少？</p>
-<p>注意：这个问题是<a href="/110">第110题</a>的简单版本；强烈推荐先解决这一题。</p>
+<p>最小的使得不同的解的数目超过$1000$的$n$是多少？</p>
+<p>注意：这个问题是<a href="/110">第110题</a>的简单版本；强烈建议读者先解决这一题。</p>
 <hr>
 ]]></content>
   </entry>
@@ -419,15 +415,14 @@
     <url>/109/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-109"><a href="#Problem-109" class="headerlink" title="Problem 109"></a><a href="https://projecteuler.net/problem=109">Problem 109</a></h1><hr>
-<p><strong>Darts</strong></p>
-<p>In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.</p>
+<h2 id="Darts"><a href="#Darts" class="headerlink" title="Darts"></a><strong>Darts</strong></h2><p>In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.</p>
 <center><img src="/resources/images/0109.png" width="400" height="400" alt=""></center>
 
 <p>The score of a dart is determined by the number of the region that the dart lands in. A dart landing outside the red/green outer ring scores zero. The black and cream regions inside this ring represent single scores. However, the red/green outer ring and middle ring score double and treble scores respectively.</p>
-<p>At the centre of the board are two concentric circles called the bull region, or bulls-eye. The outer bull is worth 25 points and the inner bull is a double, worth 50 points.</p>
-<p>There are many variations of rules but in the most popular game the players will begin with a score 301 or 501 and the first player to reduce their running total to zero is a winner. However, it is normal to play a “doubles out” system, which means that the player must land a double (including the double bulls-eye at the centre of the board) on their final dart to win; any other dart that would reduce their running total to one or lower means the score for that set of three darts is “bust”.</p>
-<p>When a player is able to finish on their current score it is called a “checkout” and the highest checkout is 170: T20 T20 D25 (two treble 20s and double bull).</p>
-<p>There are exactly eleven distinct ways to checkout on a score of 6:</p>
+<p>At the centre of the board are two concentric circles called the bull region, or bulls-eye. The outer bull is worth $25$ points and the inner bull is a double, worth $50$ points.</p>
+<p>There are many variations of rules but in the most popular game the players will begin with a score $301$ or $501$ and the first player to reduce their running total to zero is a winner. However, it is normal to play a “doubles out” system, which means that the player must land a double (including the double bulls-eye at the centre of the board) on their final dart to win; any other dart that would reduce their running total to one or lower means the score for that set of three darts is “bust”.</p>
+<p>When a player is able to finish on their current score it is called a “checkout” and the highest checkout is $170$: $T20$ $T20$ $D25$ (two treble $20$s and double bull).</p>
+<p>There are exactly eleven distinct ways to checkout on a score of $6$:</p>
 <table>
 <thead>
 <tr>
@@ -437,75 +432,74 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">D3</td>
+<td align="center">$D3$</td>
 <td align="center">&nbsp;</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D2</td>
+<td align="center">$D1$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">D2</td>
+<td align="center">$S2$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D2</td>
-<td align="center">D1</td>
+<td align="center">$D2$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S4</td>
-<td align="center">D1</td>
+<td align="center">$S4$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S1</td>
-<td align="center">D2</td>
+<td align="center">$S1$</td>
+<td align="center">$S1$</td>
+<td align="center">$D2$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">T1</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$T1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S3</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$S3$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D1</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$S2$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 </tbody></table>
-<p>Note that D1 D2 is considered <strong>different</strong> to D2 D1 as they finish on different doubles. However, the combination S1 T1 D1 is considered the <strong>same</strong> as T1 S1 D1.</p>
-<p>In addition we shall not include misses in considering combinations; for example, D3 is the <strong>same</strong> as 0 D3 and 0 0 D3.</p>
-<p>Incredibly there are 42336 distinct ways of checking out in total.</p>
-<p>How many distinct ways can a player checkout with a score less than 100?</p>
+<p>Note that $D1$ $D2$ is considered <strong>different</strong> to $D2$ $D1$ as they finish on different doubles. However, the combination $S1$ $T1$ $D1$ is considered the <strong>same</strong> as $T1$ $S1$ $D1$.</p>
+<p>In addition we shall not include misses in considering combinations; for example, $D3$ is the <strong>same</strong> as $0$ $D3$ and $0$ $0$ $D3$.</p>
+<p>Incredibly there are $42336$ distinct ways of checking out in total.</p>
+<p>How many distinct ways can a player checkout with a score less than $100$?</p>
 <hr>
-<p><strong>飞镖</strong></p>
-<p>在飞镖游戏中，玩家需向靶子上投掷三枚飞镖；靶子被分成了二十个相等面积的区域，并分别标上1至20。</p>
+<h2 id="飞镖"><a href="#飞镖" class="headerlink" title="飞镖"></a><strong>飞镖</strong></h2><p>在飞镖游戏中，玩家每一轮需向靶子上投掷三枚飞镖；靶子被分成了二十个相等面积的区域，并分别标上$1$至$20$作为基础分值。</p>
 <center><img src="/resources/images/0109.png" width="400" height="400" alt=""></center>
 
-<p>每一枚飞镖的分数还取决于它的位置。落在外围的红/绿色圈以外时为零分，落在黑/白色区域时为一倍得分，而落在外围和中间的红/绿色圈时分别为两倍和三倍得分。</p>
-<p>在把子的正中心有两个同心圆，被称为靶心。射中靶心外圈得25分，射中靶心内圈则得双倍50分。</p>
-<p>飞镖的规则有许多变种，但最热门的一种是，每个玩家从301分或501分开始，轮流投掷飞镖并减去得分，首先将自己的分数减少到恰好为0的玩家获胜。不过，通常会采用“双倍结束”规则，即玩家在最后一镖必须射中一个双倍区域（包括双倍的靶心内圈）才能判定获胜。若这一轮的得分使得玩家的分数减少到1分或更少，但最后一镖未射中双倍区域，则这一轮的得分“作废”。</p>
-<p>玩家在目前的分数下能够获胜则被称为“结分”。最高的结分为170：T20 T20 D25（两个三倍20分和一个双倍靶心）。</p>
-<p>当玩家分数为6时，恰好有11种结分方式：</p>
+<p>每一枚飞镖的分数还取决于它的位置：落在外围的红/绿色圈以外时为零分，落在黑/白色区域时为一倍得分，而落在外围和中间的红/绿色圈时分别为两倍和三倍得分。</p>
+<p>在靶子的正中心有两个同心圆，被称为靶心。射中靶心外圈得$25$分，射中靶心内圈则得双倍$50$分。</p>
+<p>飞镖的规则有许多变种，但最热门的一种是，每个玩家从$301$分或$501$分开始，轮流投掷飞镖并减去得分，首先将自己的分数减少到恰好为$0$的玩家获胜。不过，通常会采用“双倍结束”规则，即玩家的最后一镖必须射中一个双倍区域（包括双倍的靶心内圈）才能判定获胜。若这一轮的得分使得玩家的分数减少到$1$分或更少，但最后一镖未射中双倍区域，则这一轮的得分“作废”。</p>
+<p>玩家在当前分数下能够获胜则被称为“结分”。最高的结分为$170$：$T20$ $T20$ $D25$（两个三倍$20$分和一个双倍靶心）。</p>
+<p>当玩家分数为$6$时，恰好有$11$种结分方式：</p>
 <table>
 <thead>
 <tr>
@@ -515,65 +509,65 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">D3</td>
+<td align="center">$D3$</td>
 <td align="center">&nbsp;</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D2</td>
+<td align="center">$D1$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">D2</td>
+<td align="center">$S2$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D2</td>
-<td align="center">D1</td>
+<td align="center">$D2$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S4</td>
-<td align="center">D1</td>
+<td align="center">$S4$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S1</td>
-<td align="center">D2</td>
+<td align="center">$S1$</td>
+<td align="center">$S1$</td>
+<td align="center">$D2$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">T1</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$T1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S3</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$S3$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D1</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$S2$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 </tbody></table>
-<p>注意D1 D2被认为是<strong>不同于</strong>D2 D1的结分方式，因为它们最后的双倍不同。不过，组合S1 T1 D1和T1 S1 D1就被认为是<strong>相同的</strong>结分方式。</p>
-<p>另外，我们在计算组合时，我们不考虑脱靶的情况；例如，D3和0 D3以及0 0 D3就是<strong>相同的</strong>结分方式。</p>
-<p>令人惊奇的是一共有42336种不同的结分方式。</p>
-<p>当玩家分数小于100时，一共有多少种不同的结分方式？</p>
+<p>注意$D1$ $D2$被认为是<strong>不同于</strong>$D2$ $D1$的结分方式，因为它们最后的双倍不同。不过，组合$S1$ $T1$ $D1$和$T1$ $S1$ $D1$就被认为是<strong>相同的</strong>结分方式。</p>
+<p>另外，在计算结分方式时，我们不考虑脱靶的情况；例如，$D3$和$0$ $D3$以及$0$ $0$ $D$3就是<strong>相同的</strong>结分方式。</p>
+<p>令人惊奇的是，一共有$42336$种不同的结分方式。</p>
+<p>当玩家当前分数小于$100$时，一共有多少种不同的结分方式？</p>
 <hr>
 ]]></content>
   </entry>
@@ -582,22 +576,16 @@
     <url>/110/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-110"><a href="#Problem-110" class="headerlink" title="Problem 110"></a><a href="https://projecteuler.net/problem=110">Problem 110</a></h1><hr>
-<p><strong>Diophantine reciprocals II</strong></p>
-<p>In the following equation x, y, and n are positive integers.</p>
+<h2 id="Diophantine-Reciprocals-II"><a href="#Diophantine-Reciprocals-II" class="headerlink" title="Diophantine Reciprocals II"></a><strong>Diophantine Reciprocals II</strong></h2><p>In the following equation $x$, $y$, and $n$ are positive integers.</p>
 <p>$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$</p>
-<p>For n = 4 there are exactly three distinct solutions:</p>
-<p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
-<p>It can be verified that when n = 1260 there are 113 distinct solutions and this is the least value of n for which the total number of distinct solutions exceeds one hundred.</p>
-<p>What is the least value of n for which the number of distinct solutions exceeds four million?</p>
+<p>It can be verified that when $n = 1260$ there are $113$ distinct solutions and this is the least value of $n$ for which the total number of distinct solutions exceeds one hundred.</p>
+<p>What is the least value of $n$ for which the number of distinct solutions exceeds four million?</p>
 <p>NOTE: This problem is a much more difficult version of <a href="/108">Problem 108</a> and as it is well beyond the limitations of a brute force approach it requires a clever implementation.</p>
 <hr>
-<p><strong>丢番图倒数II</strong></p>
-<p>在如下方程中，x、y、n均为正整数。</p>
+<h2 id="丢番图倒数（二）"><a href="#丢番图倒数（二）" class="headerlink" title="丢番图倒数（二）"></a><strong>丢番图倒数（二）</strong></h2><p>在如下方程中，$x$、$y$、$n$均为正整数。</p>
 <p>$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$</p>
-<p>对于n = 4，上述方程恰好有3个不同的解：</p>
-<p>$$\frac{1}{5}+\frac{1}{20}=\frac{1}{4}$$ $$\frac{1}{6}+\frac{1}{12}=\frac{1}{4}$$ $$\frac{1}{8}+\frac{1}{8}=\frac{1}{4}$$</p>
-<p>可以验证当n = 1260时，恰好有113种不同的解，这也是不同的解的总数超过一百种的最小n值。</p>
-<p>不同的解的总数超过四百万种的最小n值是多少？</p>
+<p>可以验证当$n = 1260$时，恰好有$113$种不同的解，这也是最小的使得不同的解的数目超过一百的$n$。</p>
+<p>最小的使得不同的解的数目超过四百万的$n$是多少？</p>
 <p>注意：这是<a href="/108">第108题</a>一个极其困难的版本，而且远远超过暴力解法的能力范围，因此需要更加聪明的手段。</p>
 <hr>
 ]]></content>
@@ -3481,14 +3469,14 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 <h1 id="Problem-173"><a href="#Problem-173" class="headerlink" title="Problem 173"></a><a href="https://projecteuler.net/problem=173">Problem 173</a></h1><hr>
 <p><b>Using up to one million tiles how many different “hollow” square laminae can be formed?</b></p>
 <p>We shall define a square lamina to be a square outline with a square “hole” so that the shape possesses vertical and horizontal symmetry. For example, using exactly thirty-two square tiles we can form two different square laminae:</p>
-<center><img src="https://projecteuler.net/project/images/p173_square_laminas.gif" alt=""></center>
+<center><img src="/resources/images/0173_square_laminas.gif"></center>
 
 <p>With one-hundred tiles, and not necessarily using all of the tiles at one time, it is possible to form forty-one different square laminae.</p>
 <p>Using up to one million tiles how many different square laminae can be formed?</p>
 <hr>
 <p><b>使用最多一百万块地砖能拼出多少种不同的“空心”方形基板？</b></p>
 <p>我们定义一个方形基板为一个拥有方形外框，中间有一个方形的“洞”且在水平和竖直方向上均对称的图形。例如，使用恰好32块方形地砖，我们可以拼成两种不同的方形基板：</p>
-<center><img src="https://projecteuler.net/project/images/p173_square_laminas.gif" alt=""></center>
+<center><img src="/resources/images/0173_square_laminas.gif"></center>
 
 <p>使用最多一百块地砖，我们能够拼出41种不同的方形基板。</p>
 <p>使用最多一百万块地砖，能够拼出多少种不同的方形基板？</p>
@@ -23669,7 +23657,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>Further define $S(k)$ to be the sum of $T(n)$ for all $k$-digit numbers $n$. You are given $S(3) = 1701$.</p>
 <p>Find $S(12)$.</p>
 <hr>
-<h2 id="更大的数字重排"><a href="#更大的数字重排" class="headerlink" title="更大的数字重排"></a><strong>更大的数字重排</strong></h2><p>对于正整数$n$，定义$T(n)$为对$n$的数字进行重排所能得到的严格大于$n$的整数数量。</p>
+<h2 id="更大的数字重排（一）"><a href="#更大的数字重排（一）" class="headerlink" title="更大的数字重排（一）"></a><strong>更大的数字重排（一）</strong></h2><p>对于正整数$n$，定义$T(n)$为对$n$的数字进行重排所能得到的严格大于$n$的整数数量。</p>
 <p>重排不允许有前导零，因此对于$n = 2302$，所有的合法重排包括：<br>$$2023,2032,2203,2230,\mathbf{2302},2320,3022,3202,3220$$<br>因此可得$T(2302)=4$。</p>
 <p>再定义$S(k)$为所有的$k$位整数$n$对应的$T(n)$之和。已知$S(3) = 1701$。</p>
 <p>求$S(12)$。</p>
@@ -25163,6 +25151,368 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>令$A(N)$为从$M_{1,1}$（左上角）移动到$M_{N,N}$（右下角）的最小路径和，每一步只能向右或向下移动。</p>
 <p>已知$A(1) = 966774091$，$A(2) = 2388327490$，$A(10) = 13389278727$。</p>
 <p>求$A(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 919</title>
+    <url>/919/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-919"><a href="#Problem-919" class="headerlink" title="Problem 919"></a><a href="https://projecteuler.net/problem=919">Problem 919</a></h1><hr>
+<h2 id="Fortunate-Triangles"><a href="#Fortunate-Triangles" class="headerlink" title="Fortunate Triangles"></a><strong>Fortunate Triangles</strong></h2><p>We call a triangle <i>fortunate</i> if it has integral sides and at least one of its vertices has the property that the distance from it to the triangle’s <b>orthocentre</b> is exactly half the distance from the same vertex to the triangle’s <b>circumcentre</b>.</p>
+<div style="text-align:center">
+<img src="/resources/images/0919_remarkablediagram.jpg" alt="0919_remarkablediagram.jpg">
+</div>
+
+<p>Triangle $ABC$ above is an example of a fortunate triangle with sides $(6,7,8)$. The distance from the vertex $C$ to the circumcentre $O$ is $\approx 4.131182$, while the distance from $C$ to the orthocentre $H$ is half that, at $\approx 2.065591$.</p>
+<p>Define $S(P)$ to be the sum of $a+b+c$ over all fortunate triangles with sides $a\leq b\leq c$ and perimeter not exceeding $P$.</p>
+<p>For example $S(10)=24$, arising from three triangles with sides $(1,2,2)$, $(2,3,4)$, and $(2,4,4)$. You are also given $S(100)=3331$.</p>
+<p>Find $S(10^7)$.</p>
+<hr>
+<h2 id="幸运三角形"><a href="#幸运三角形" class="headerlink" title="幸运三角形"></a><strong>幸运三角形</strong></h2><p><i class=zh>幸运</i>三角形是指具有整数边长且至少有一个顶点满足以下性质的三角形：该顶点到三角形<b>垂心</b>的距离恰好是同一顶点到三角形<b>外心</b>的距离的一半。</p>
+<div style="text-align:center">
+<img src="/resources/images/0919_remarkablediagram.jpg" alt="0919_remarkablediagram.jpg">
+</div>
+
+<p>如上图所示的三角形$ABC$就是一个边长为$(6,7,8)$的幸运三角形。顶点$C$到外心$O$的距离约为$\approx 4.131182$，而$C$到垂心$H$的距离是其一半，约为$\approx 2.065591$。</p>
+<p>定义$S(P)$为所有满足边长$a\leq b\leq c$且周长不超过$P$的幸运三角形的边长和$a+b+c$之和。</p>
+<p>例如，$S(10)=24$，对应三个边长分别为$(1,2,2)$、$(2,3,4)$和$(2,4,4)$的三角形。此外还已知$S(100)=3331$。</p>
+<p>求$S(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 920</title>
+    <url>/920/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-920"><a href="#Problem-920" class="headerlink" title="Problem 920"></a><a href="https://projecteuler.net/problem=920">Problem 920</a></h1><hr>
+<h2 id="Tau-Numbers"><a href="#Tau-Numbers" class="headerlink" title="Tau Numbers"></a><strong>Tau Numbers</strong></h2><p>For a positive integer $n$ we define $\tau(n)$ to be the count of the divisors of $n$. For example, the divisors of $12$ are $\{1,2,3,4,6,12\}$ and so $\tau(12) = 6$.</p>
+<p>A positive integer $n$ is a <b>tau number</b> if it is divisible by $\tau(n)$. For example $\tau(12)=6$ and $6$ divides $12$ so $12$ is a tau number.</p>
+<p>Let $m(k)$ be the smallest tau number $x$ such that $\tau(x) = k$. For example, $m(8) = 24$, $m(12)=60$ and $m(16)=384$.</p>
+<p>Further define $M(n)$ to be the sum of all $m(k)$ whose values do not exceed $10^n$. You are given $M(3) = 3189$.</p>
+<p>Find $M(16)$.</p>
+<hr>
+<h2 id="陶数"><a href="#陶数" class="headerlink" title="陶数"></a><strong>陶数</strong></h2><p>对于正整数$n$，定义$\tau(n)$为$n$的约数个数。例如，$12$的约数为$\{1,2,3,4,6,12\}$，因此$\tau(12) = 6$。</p>
+<p>如果一个正整数$n$能被$\tau(n)$整除，则称之为<b>陶数</b>。例如，$\tau(12)=6$，且$6$能整除$12$，所以$12$是一个陶数。</p>
+<p>记$m(k)$为满足$\tau(x) = k$的最小陶数$x$。例如，$m(8) = 24$，$m(12)=60$，$m(16)=384$。</p>
+<p>另记$M(n)$为所有不超过$10^n$的$m(k)$之和。已知$M(3) = 3189$。</p>
+<p>求$M(16)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 921</title>
+    <url>/921/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-921"><a href="#Problem-921" class="headerlink" title="Problem 921"></a><a href="https://projecteuler.net/problem=921">Problem 921</a></h1><hr>
+<h2 id="Golden-Recurrence"><a href="#Golden-Recurrence" class="headerlink" title="Golden Recurrence"></a><strong>Golden Recurrence</strong></h2><p>Consider the following recurrence relation:<br>$$<br>\begin{aligned}<br>a_0 &amp;= \frac{\sqrt 5 + 1}{2}\\<br>a_{n+1} &amp;= \dfrac{a_n(a_n^4 + 10a_n^2 + 5)}{5a_n^4 + 10a_n^2 + 1}<br>\end{aligned}<br>$$</p>
+<p>Note that $a_0$ is the <b>golden ratio</b>.</p>
+<p>$a_n$ can always be written in the form $\dfrac{p_n\sqrt{5}+1}{q_n}$, where $p_n$ and $q_n$ are positive integers.</p>
+<p>Let $s(n)=p_n^5+q_n^5$. So, $s(0)=1^5+2^5=33$.</p>
+<p>The <b>Fibonacci sequence</b> is defined as: $F_1=1$, $F_2=1$, $F_n=F_{n-1}+F_{n-2}$ for $n \gt 2$.</p>
+<p>Define $\displaystyle S(m)=\sum_{i=2}^{m}s(F_i)$.</p>
+<p>Find $S(1618034)$. Submit your answer modulo $398874989$.</p>
+<hr>
+<h2 id="黄金递推"><a href="#黄金递推" class="headerlink" title="黄金递推"></a><strong>黄金递推</strong></h2><p>考虑以下递推关系：<br>$$<br>\begin{aligned}<br>a_0 &amp;= \frac{\sqrt 5 + 1}{2}\\<br>a_{n+1} &amp;= \dfrac{a_n(a_n^4 + 10a_n^2 + 5)}{5a_n^4 + 10a_n^2 + 1}<br>\end{aligned}<br>$$</p>
+<p>注意到，$a_0$恰好是<b>黄金比例</b>。</p>
+<p>$a_n$总可以写成$\dfrac{p_n\sqrt{5}+1}{q_n}$的形式，其中$p_n$和$q_n$是正整数。</p>
+<p>令$s(n)=p_n^5+q_n^5$。因此，$s(0)=1^5+2^5=33$。</p>
+<p><b>斐波那契数列</b>的定义是：$F_1=1$，$F_2=1$，对于$n &gt; 2$有$F_n=F_{n-1}+F_{n-2}$。</p>
+<p>定义$\displaystyle S(m)=\sum_{i=2}^{m}s(F_i)$。</p>
+<p>求$S(1618034)$，并对$398874989$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 922</title>
+    <url>/922/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-922"><a href="#Problem-922" class="headerlink" title="Problem 922"></a><a href="https://projecteuler.net/problem=922">Problem 922</a></h1><hr>
+<h2 id="Young’s-Game-A"><a href="#Young’s-Game-A" class="headerlink" title="Young’s Game A"></a><strong>Young’s Game A</strong></h2><p>A <b>Young diagram</b> is a finite collection of (equally-sized) squares in a grid-like arrangement of rows and columns, such that</p>
+<ul>
+<li>the left-most squares of all rows are aligned vertically;</li>
+<li>the top squares of all columns are aligned horizontally;</li>
+<li>the rows are non-increasing in size as we move top to bottom;</li>
+<li>the columns are non-increasing in size as we move left to right.</li>
+</ul>
+<p>Two examples of Young diagrams are shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>Two players Right and Down play a game on several Young diagrams, all disconnected from each other. Initially, a token is placed in the top-left square of each diagram. Then they take alternating turns, starting with Right. On Right’s turn, Right selects a token on one diagram and moves it <b>any number of squares</b> to the right. On Down’s turn, Down selects a token on one diagram and moves it <b>any number of squares</b> downwards. A player unable to make a legal move on their turn loses the game.</p>
+<p>For $a,b,k\ge 1$ we define an <i>$(a,b,k)$-staircase</i> to be the Young diagram where the bottom-right frontier consists of $k$ <i>steps</i> of vertical height $a$ and horizontal length $b$. Shown below are four examples of staircases with $(a,b,k)$ respectively $(1,1,4)$, $(5,1,1)$, $(3,3,2)$, $(2,4,3)$.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>Additionally, define the <i>weight</i> of an $(a,b,k)$-staircase to be $a+b+k$.</p>
+<p>Let $R(m, w)$ be the number ways of choosing $m$ staircases, each having weight not exceeding $w$, upon which Right (moving first in the game) will win the game assuming optimal play. Different orderings of the same set of staircases are to be counted separately.</p>
+<p>For example, $R(2, 4)=7$ is illustrated below, with tokens as grey circles drawn in their initial positions.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>You are also given $R(3, 9)=314104$.</p>
+<p>Find $R(8, 64)$ giving your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="杨氏游戏（一）"><a href="#杨氏游戏（一）" class="headerlink" title="杨氏游戏（一）"></a><strong>杨氏游戏（一）</strong></h2><p><b>杨氏图表</b>是指一类有限个（大小相等的）方格组合，这些方格按照网格状排列成行和列，且满足以下条件：</p>
+<ul>
+<li>所有行最左边的方格垂直对齐；</li>
+<li>所有列最上边的方格水平对齐；</li>
+<li>自上而下，行的宽度单调不增；</li>
+<li>自左而右，列的高度单调不增。</li>
+</ul>
+<p>下图展示了两个杨氏图表的例子。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>两位玩家阿右和阿下在若干个相互分离的杨氏图表上玩一个游戏。游戏开始时，在每个图表的左上角方格放置一枚棋子。然后他们轮流行动，阿右先行。在阿右的回合，阿右选择一个图表中的棋子并向右移动<b>任意格</b>。在阿下的回合，阿下选择一个图表中的棋子并向下移动<b>任意格</b>。如果一位玩家在其回合无法进行合法移动，则输掉游戏。</p>
+<p>对于$a,b,k\ge 1$，定义$(a,b,k)$-<i class=zh>阶梯</i>为满足如下条件的杨氏图表：其右下边界由$k$个<i class=zh>台阶</i>组成，每个台阶垂直高度为$a$，水平长度为$b$。下图展示了四个阶梯的例子，它们的$(a,b,k)$值分别为$(1,1,4)$、$(5,1,1)$、$(3,3,2)$、$(2,4,3)$。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>另外，定义$(a,b,k)$-阶梯的<i class=zh>重量</i>为$a+b+k$。</p>
+<p>令$R(m, w)$为选择$m$个阶梯、每个阶梯的重量不超过$w$且在最优操作下阿右（游戏先手方）将获胜的方法数目。相同阶梯集合的不同排列要分别计数。</p>
+<p>例如，下图展示了$R(2, 4)=7$，其中灰色圆圈表示棋子的初始位置。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>已知$R(3, 9)=314104$。</p>
+<p>求$R(8, 64)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 923</title>
+    <url>/923/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-923"><a href="#Problem-923" class="headerlink" title="Problem 923"></a><a href="https://projecteuler.net/problem=923">Problem 923</a></h1><hr>
+<h2 id="Young’s-Game-B"><a href="#Young’s-Game-B" class="headerlink" title="Young’s Game B"></a><strong>Young’s Game B</strong></h2><p>A <b>Young diagram</b> is a finite collection of (equally-sized) squares in a grid-like arrangement of rows and columns, such that</p>
+<ul>
+<li>the left-most squares of all rows are aligned vertically;</li>
+<li>the top squares of all columns are aligned horizontally;</li>
+<li>the rows are non-increasing in size as we move top to bottom;</li>
+<li>the columns are non-increasing in size as we move left to right.</li>
+</ul>
+<p>Two examples of Young diagrams are shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>Two players Right and Down play a game on several Young diagrams, all disconnected from each other. Initially, a token is placed in the top-left square of each diagram. Then they take alternating turns, starting with Right. On Right’s turn, Right selects a token on one diagram and moves it <b>one square</b> to the right. On Down’s turn, Down selects a token on one diagram and moves it <b>one square</b> downwards. A player unable to make a legal move on their turn loses the game.</p>
+<p>For $a,b,k\ge 1$ we define an <i>$(a,b,k)$-staircase</i> to be the Young diagram where the bottom-right frontier consists of $k$ <i>steps</i> of vertical height $a$ and horizontal length $b$. Shown below are four examples of staircases with $(a,b,k)$ respectively $(1,1,4)$, $(5,1,1)$, $(3,3,2)$, $(2,4,3)$.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>Additionally, define the <i>weight</i> of an $(a,b,k)$-staircase to be $a+b+k$.</p>
+<p>Let $S(m, w)$ be the number ways of choosing $m$ staircases, each having weight not exceeding $w$, upon which Right (moving first in the game) will win the game assuming optimal play. Different orderings of the same set of staircases are to be counted separately.</p>
+<p>For example, $S(2, 4)=7$ is illustrated below, with tokens as grey circles drawn in their initial positions.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>You are also given $S(3, 9)=315319$.</p>
+<p>Find $S(8, 64)$ giving your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="杨氏游戏（二）"><a href="#杨氏游戏（二）" class="headerlink" title="杨氏游戏（二）"></a><strong>杨氏游戏（二）</strong></h2><p><b>杨氏图表</b>是指一类有限个（大小相等的）方格组合，这些方格按照网格状排列成行和列，且满足以下条件：</p>
+<ul>
+<li>所有行最左边的方格垂直对齐；</li>
+<li>所有列最上边的方格水平对齐；</li>
+<li>自上而下，行的宽度单调不增；</li>
+<li>自左而右，列的高度单调不增。</li>
+</ul>
+<p>下图展示了两个杨氏图表的例子。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>两位玩家阿右和阿下在若干个相互分离的杨氏图表上玩一个游戏。游戏开始时，在每个图表的左上角方格放置一枚棋子。然后他们轮流行动，阿右先行。在阿右的回合，阿右选择一个图表中的棋子并向右移动<b>一格</b>。在阿下的回合，阿下选择一个图表中的棋子并向下移动<b>一格</b>。如果一位玩家在其回合无法进行合法移动，则输掉游戏。</p>
+<p>对于$a,b,k\ge 1$，定义$(a,b,k)$-<i class=zh>阶梯</i>为满足如下条件的杨氏图表：其右下边界由$k$个<i class=zh>台阶</i>组成，每个台阶垂直高度为$a$，水平长度为$b$。下图展示了四个阶梯的例子，它们的$(a,b,k)$值分别为$(1,1,4)$、$(5,1,1)$、$(3,3,2)$、$(2,4,3)$。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>另外，定义$(a,b,k)$-阶梯的<i class=zh>重量</i>为$a+b+k$。</p>
+<p>令$S(m, w)$为选择$m$个阶梯、每个阶梯的重量不超过$w$且在最优操作下阿右（游戏先手方）将获胜的方法数目。相同阶梯集合的不同排列要分别计数。</p>
+<p>例如，下图展示了$S(2, 4)=7$，其中灰色圆圈表示棋子的初始位置。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>已知$S(3, 9)=315319$。</p>
+<p>求$S(8, 64)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 924</title>
+    <url>/924/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-924"><a href="#Problem-924" class="headerlink" title="Problem 924"></a><a href="https://projecteuler.net/problem=924">Problem 924</a></h1><hr>
+<h2 id="Larger-Digit-Permutation-II"><a href="#Larger-Digit-Permutation-II" class="headerlink" title="Larger Digit Permutation II"></a><strong>Larger Digit Permutation II</strong></h2><p>Let $B(n)$ be the smallest number larger than $n$ that can be formed by rearranging digits of $n$, or $0$ if no such number exists. For example, $B(245) = 254$ and $B(542) = 0$.</p>
+<p>Define $a_0 = 0$ and $a_n = a_{n - 1}^2 + 2$ for $n &gt; 0$.<br>Let $\displaystyle U(N) = \sum_{n = 1}^N B(a_n)$. You are given $U(10) \equiv 543870437 \pmod{10^9+7}$.</p>
+<p>Find $U(10^{16})$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="更大的数字重排（二）"><a href="#更大的数字重排（二）" class="headerlink" title="更大的数字重排（二）"></a><strong>更大的数字重排（二）</strong></h2><p>令$B(n)$为通过重排$n$的数字所能形成的比$n$大的最小数，如果不存在这样的数则为$0$。例如，$B(245) = 254$，$B(542) = 0$。</p>
+<p>定义$a_0 = 0$，且对于$n &gt; 0$有$a_n = a_{n - 1}^2 + 2$。<br>令$\displaystyle U(N) = \sum_{n = 1}^N B(a_n)$。已知$U(10) \equiv 543870437 \pmod{10^9+7}$。</p>
+<p>求$U(10^{16})$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 925</title>
+    <url>/925/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-925"><a href="#Problem-925" class="headerlink" title="Problem 925"></a><a href="https://projecteuler.net/problem=925">Problem 925</a></h1><hr>
+<h2 id="Larger-Digit-Permutation-III"><a href="#Larger-Digit-Permutation-III" class="headerlink" title="Larger Digit Permutation III"></a><strong>Larger Digit Permutation III</strong></h2><p>Let $B(n)$ be the smallest number larger than $n$ that can be formed by rearranging digits of $n$, or $0$ if no such number exists. For example, $B(245) = 254$ and $B(542) = 0$.</p>
+<p>Define $\displaystyle T(N) = \sum_{n=1}^N B(n^2)$. You are given $T(10)=270$ and $T(100)=335316$.</p>
+<p>Find $T(10^{16})$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="更大的数字重排（三）"><a href="#更大的数字重排（三）" class="headerlink" title="更大的数字重排（三）"></a><strong>更大的数字重排（三）</strong></h2><p>令$B(n)$为通过重排$n$的数字所能形成的比$n$大的最小数，如果不存在这样的数则为$0$。例如，$B(245) = 254$，$B(542) = 0$。</p>
+<p>定义$\displaystyle T(N) = \sum_{n=1}^N B(n^2)$。已知$T(10)=270$，$T(100)=335316$。</p>
+<p>求$T(10^{16})$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 926</title>
+    <url>/926/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-926"><a href="#Problem-926" class="headerlink" title="Problem 926"></a><a href="https://projecteuler.net/problem=926">Problem 926</a></h1><hr>
+<h2 id="Total-Roundness"><a href="#Total-Roundness" class="headerlink" title="Total Roundness"></a><strong>Total Roundness</strong></h2><p>A <b>round number</b> is a number that ends with one or more zeros in a given base.</p>
+<p>Let us define the <i>roundness</i> of a number $n$ in base $b$ as the number of zeros at the end of the base $b$ representation of $n$.<br/><br>For example, $20$ has roundness $2$ in base $2$, because the base $2$ representation of $20$ is $10100$, which ends with $2$ zeros.</p>
+<p>Also define $R(n)$, the <i>total roundness</i> of a number $n$, as the sum of the roundness of $n$ in base $b$ for all $b &gt; 1$.<br/><br>For example, $20$ has roundness $2$ in base $2$ and roundness $1$ in base $4$, $5$, $10$, $20$, hence we get $R(20)=6$.<br/><br>You are also given $R(10!) = 312$.</p>
+<p>Find $R(10\ 000\ 000!)$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="总取整度"><a href="#总取整度" class="headerlink" title="总取整度"></a><strong>总取整度</strong></h2><p><b>取整数</b>是指在给定进制下以一个或多个零结尾的数。</p>
+<p>定义数$n$在进制$b$下的<i class=zh>取整度</i>为$n$在$b$进制表示下末尾零的个数。<br/><br>例如，$20$在$2$进制下的取整度为$2$，因为$20$的$2$进制表示是$10100$，末尾有$2$个零。</p>
+<p>再定义$R(n)$为数$n$的<i class=zh>总取整度</i>，即$n$在所有$b &gt; 1$的进制$b$下的取整度之和。<br/><br>例如，$20$在$2$进制下的取整度为$2$，在$4$、$5$、$10$、$20$进制下的取整度为$1$，因此$R(20)=6$。<br/><br>已知$R(10!) = 312$。</p>
+<p>求$R(10\ 000\ 000!)$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 927</title>
+    <url>/927/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-927"><a href="#Problem-927" class="headerlink" title="Problem 927"></a><a href="https://projecteuler.net/problem=927">Problem 927</a></h1><hr>
+<h2 id="Prime-ary-Tree"><a href="#Prime-ary-Tree" class="headerlink" title="Prime-ary Tree"></a><strong>Prime-ary Tree</strong></h2><p>A full $k$-ary tree is a tree with a single root node, such that every node is either a leaf or has exactly $k$ ordered children. The <b>height</b> of a $k$-ary tree is the number of edges in the longest path from the root to a leaf.</p>
+<p>For instance, there is one full $3$-ary tree of height $0$, one full $3$-ary tree of height $1$, and seven full $3$-ary trees of height $2$. These seven are shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0927_PrimeTrees.jpg" alt="0927_PrimeTrees.jpg">
+</div>
+
+<p>For integers $n$ and $k$ with $n\ge 0$ and $k \ge 2$, define $t_k(n)$ to be the number of full $k$-ary trees of height $n$ or less.<br/><br>Thus, $t_3(0) = 1$, $t_3(1) = 2$, and $t_3(2) = 9$. Also, $t_2(0) = 1$, $t_2(1) = 2$, and $t_2(2) = 5$.</p>
+<p>Define $S_k$ to be the set of positive integers $m$ such that $m$ divides $t_k(n)$ for some integer $n\ge 0$. For instance, the above values show that $1$, $2$, and $5$ are in $S_2$ and $1$, $2$, $3$, and $9$ are in $S_3$.</p>
+<p>Let $S = \bigcap_p S_p$ where the intersection is taken over all primes $p$. Finally, define $R(N)$ to be the sum of all elements of $S$ not exceeding $N$. You are given that $R(20) = 18$ and $R(1000) = 2089$.</p>
+<p>Find $R(10^7)$.</p>
+<hr>
+<h2 id="素数多叉树"><a href="#素数多叉树" class="headerlink" title="素数多叉树"></a><strong>素数多叉树</strong></h2><p>一个完满$k$叉树是一棵具有单一根结点的树，其中每个结点要么是叶结点，要么恰好有$k$个有序子结点。$k$叉树的<b>高度</b>是从根结点到任一叶结点的最长路径上的边数。</p>
+<p>例如，高度为$0$的完满$3$叉树有一棵，高度为$1$的完满$3$叉树有一棵，而高度为$2$的完满$3$叉树有七棵，如下图所示：</p>
+<div style="text-align:center">
+<img src="/resources/images/0927_PrimeTrees.jpg" alt="0927_PrimeTrees.jpg">
+</div>
+
+<p>对于整数$n\ge 0$和$k\ge 2$，定义$t_k(n)$为高度不超过$n$的完满$k$叉树的数量。<br/><br>因此，$t_3(0) = 1$，$t_3(1) = 2$，$t_3(2) = 9$。同时，$t_2(0) = 1$，$t_2(1) = 2$，$t_2(2) = 5$。</p>
+<p>定义$S_k$为能整除任意整数$n\ge 0$对应的$t_k(n)$的正整数$m$的集合。例如，从上面的例子可知，$1$、$2$和$5$属于$S_2$，而$1$、$2$、$3$和$9$属于$S_3$。</p>
+<p>记$S = \bigcap_p S_p$，其中交集取遍所有素数$p$。再定义$R(N)$为$S$中不超过$N$的所有元素之和。已知$R(20) = 18$，$R(1000) = 2089$。</p>
+<p>求$R(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 928</title>
+    <url>/928/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-928"><a href="#Problem-928" class="headerlink" title="Problem 928"></a><a href="https://projecteuler.net/problem=928">Problem 928</a></h1><hr>
+<h2 id="Cribbage"><a href="#Cribbage" class="headerlink" title="Cribbage"></a><strong>Cribbage</strong></h2><p>This problem is based on (but not identical to) the scoring for the card game <a href="https://en.wikipedia.org/wiki/Cribbage">Cribbage</a>.</p>
+<p>Consider a normal pack of $52$ cards. A Hand is a selection of one or more of these cards.</p>
+<p>For each Hand the <i>Hand score</i> is the sum of the values of the cards in the Hand where the value of Aces is $1$ and the value of court cards (Jack, Queen, King) is $10$.</p>
+<p>The <i>Cribbage score</i> is obtained for a Hand by adding together the scores for:</p>
+<ul>
+<li>Pairs. A pair is two cards of the same rank. Every pair is worth $2$ points.</li>
+<li>Runs. A run is a set of at least $3$ cards whose ranks are consecutive, e.g. $9$, $10$, Jack. Note that Ace is never high, so Queen, King, Ace is <b>not</b> a valid run. The number of points for each run is the size of the run. All locally maximum runs are counted. For example, $2$, $3$, $4$, $5$, $7$, $8$, $9$, the two runs of $2$, $3$, $4$, $5$ and $7$, $8$, $9$ are counted but not $2$, $3$, $4$ or $3$, $4$, $5$.</li>
+<li>Fifteens. A fifteen is a combination of cards that has value adding to $15$. Every fifteen is worth $2$ points. For this purpose the value of the cards is the same as in the Hand Score.</li>
+</ul>
+<p>For example, $(5 \spadesuit, 5 \clubsuit, 5 \diamondsuit, K \heartsuit)$ has a Cribbage score of $14$ as there are four ways that fifteen can be made and also three pairs can be made.</p>
+<p>The example $( A \diamondsuit, A \heartsuit, 2 \clubsuit, 3 \heartsuit, 4 \clubsuit, 5 \spadesuit)$ has a Cribbage score of $16$: two runs of five worth $10$ points, two ways of getting fifteen worth $4$ points and one pair worth $2$ points. In this example the Hand score is equal to the Cribbage score.</p>
+<p>Find the number of Hands in a normal pack of cards where the Hand score is equal to the Cribbage score.</p>
+<hr>
+<h2 id="克里比奇纸牌"><a href="#克里比奇纸牌" class="headerlink" title="克里比奇纸牌"></a><strong>克里比奇纸牌</strong></h2><p>本题基于纸牌游戏<a href="https://zh.wikipedia.org/wiki/%E5%85%8B%E9%87%8C%E6%AF%94%E5%A5%87%E7%B4%99%E7%89%8C">克里比奇纸牌</a>的计分规则（但不完全相同）。</p>
+<p>考虑一副标准的$52$张牌扑克；一手牌是指从中选择的一张或多张牌。</p>
+<p>对于每一手牌，其<i class=zh>手牌得分</i>是其牌面点数的总和，其中$A$的点数为$1$，花牌（$J$、$Q$、$K$）的点数为$10$。</p>
+<p>另一方面，一手牌的<i class=zh>克里比奇得分</i>则是将以下得分相加：</p>
+<ul>
+<li>对子：对子是两张相同点数的牌，每个对子值$2$分。</li>
+<li>顺子：顺子是至少$3$张连续点数的牌，例如$9$、$10$、$J$。注意$A$被视为最小的牌，所以$Q$、$K$、$A$<b>不是</b>有效的顺子。每个顺子的得分等于顺子的长度，且计算得分时只考虑最长的顺子。例如，在$2$、$3$、$4$、$5$、$7$、$8$、$9$中，有$2$、$3$、$4$、$5$和$7$、$8$、$9$两个顺子，而不考虑$2$、$3$、$4$或$3$、$4$、$5$。</li>
+<li>十五：十五是牌面点数之和为$15$的任意组合，每个十五值$2$分。这里的牌面点数与手牌得分中的牌面点数相同。</li>
+</ul>
+<p>例如，$(5 \spadesuit, 5 \clubsuit, 5 \diamondsuit, K \heartsuit)$的克里比奇得分为$14$，因为这手牌可以组成四种十五和三种对子。</p>
+<p>再例如，$( A \diamondsuit, A \heartsuit, 2 \clubsuit, 3 \heartsuit, 4 \clubsuit, 5 \spadesuit)$的克里比奇得分为$16$：两种五张的顺子$10$分，两种十五$4$分，一种对子$2$分。在这个例子中，手牌得分恰好等于克里比奇得分。</p>
+<p>在一副标准扑克中，求手牌得分恰好等于克里比奇得分的手牌数目。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 929</title>
+    <url>/929/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-929"><a href="#Problem-929" class="headerlink" title="Problem 929"></a><a href="https://projecteuler.net/problem=929">Problem 929</a></h1><hr>
+<h2 id="Odd-Run-Compositions"><a href="#Odd-Run-Compositions" class="headerlink" title="Odd-Run Compositions"></a><strong>Odd-Run Compositions</strong></h2><p>A <b>composition</b> of $n$ is a sequence of positive integers which sum to $n$. Such a sequence can be split into <i>runs</i>, where a run is a maximal contiguous subsequence of equal terms.</p>
+<p>For example, $2,2,1,1,1,3,2,2$ is a composition of $14$ consisting of four runs:</p>
+<div style="text-align:center">
+$2, 2\quad 1, 1, 1\quad 3 \quad 2, 2$
+</div>
+
+<p>Let $F(n)$ be the number of compositions of $n$ where every run has odd length.</p>
+<p>For example, $F(5)=10$:<br>$$<br>\begin{aligned}<br>&amp; 5 &amp;&amp; 4,1 &amp;&amp; 3,2 &amp;&amp; 2,3 &amp;&amp; 2,1,2\\<br>&amp; 2,1,1,1 &amp;&amp; 1,4 &amp;&amp; 1,3,1 &amp;&amp; 1,1,1,2 &amp;&amp; 1,1,1,1,1<br>\end{aligned}<br>$$<br>Find $F(10^5)$. Give your answer modulo $1111124111$.</p>
+<hr>
+<h2 id="奇数长度分段组成"><a href="#奇数长度分段组成" class="headerlink" title="奇数长度分段组成"></a><strong>奇数长度分段组成</strong></h2><p>$n$的一个<b>组成</b>是一个和为$n$的正整数序列；这一序列可以进一步分成若干<i class=zh>段</i>，每一段是由相等的数构成的最长连续子序列。</p>
+<p>例如，$2,2,1,1,1,3,2,2$是$14$的一个组成，可以分成四段：</p>
+<div style="text-align:center">
+$2, 2\quad 1, 1, 1\quad 3 \quad 2, 2$
+</div>
+
+<p>令$F(n)$为$n$的所有组成中，满足每一段长度都为奇数的组成的数目。</p>
+<p>例如，$F(5)=10$：<br>$$<br>\begin{aligned}<br>&amp; 5 &amp;&amp; 4,1 &amp;&amp; 3,2 &amp;&amp; 2,3 &amp;&amp; 2,1,2\\<br>&amp; 2,1,1,1 &amp;&amp; 1,4 &amp;&amp; 1,3,1 &amp;&amp; 1,1,1,2 &amp;&amp; 1,1,1,1,1<br>\end{aligned}<br>$$<br>求$F(10^5)$，并对$1111124111$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 930</title>
+    <url>/930/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-930"><a href="#Problem-930" class="headerlink" title="Problem 930"></a><a href="https://projecteuler.net/problem=930">Problem 930</a></h1><hr>
+<h2 id="The-Gathering"><a href="#The-Gathering" class="headerlink" title="The Gathering"></a><strong>The Gathering</strong></h2><p>Given $n\ge 2$ bowls arranged in a circle, $m\ge 2$ balls are distributed amongst them.</p>
+<p>Initially the balls are distributed randomly: for each ball, a bowl is chosen equiprobably and independently of the other balls. After this is done, we start the following process:</p>
+<ol>
+<li>Choose one of the $m$ balls equiprobably at random.</li>
+<li>Choose a direction to move - either clockwise or anticlockwise - again equiprobably at random.</li>
+<li>Move the chosen ball to the neighbouring bowl in the chosen direction.</li>
+<li>Return to step $1$.</li>
+</ol>
+<p>This process stops when all the $m$ balls are located in the same bowl. Note that this may be after zero steps, if the balls happen to have been initially distributed all in the same bowl.</p>
+<p>Let $F(n, m)$ be the expected number of times we move a ball before the process stops. For example, $F(2, 2) = \frac{1}{2}$, $F(3, 2) = \frac{4}{3}$, $F(2, 3) = \frac{9}{4}$, and $F(4, 5) = \frac{6875}{24}$.</p>
+<p>Let $G(N, M) = \sum_{n=2}^N \sum_{m=2}^M F(n, m)$. For example, $G(3, 3) = \frac{137}{12}$ and $G(4, 5) = \frac{6277}{12}$. You are also given that $G(6, 6) \approx 1.681521567954e4$ in scientific format with $12$ significant digits after the decimal point.</p>
+<p>Find $G(12, 12)$. Give your answer in scientific format with $12$ significant digits after the decimal point.</p>
+<hr>
+<h2 id="小球聚会"><a href="#小球聚会" class="headerlink" title="小球聚会"></a><strong>小球聚会</strong></h2><p>将$n\ge 2$个碗排成一圈，并向其中放入$m\ge 2$个球。</p>
+<p>一开始，球是随机分布的：对于每个球，等概率且独立地选择一个碗，并将球放入。全部放完之后，我们进行以下操作：</p>
+<ol>
+<li>等概率地从$m$个球中随机选择一个。</li>
+<li>等概率地随机选择一个移动方向：顺时针或逆时针。</li>
+<li>将选中的球移动到所选方向的相邻碗中。</li>
+<li>返回步骤$1$。</li>
+</ol>
+<p>当所有$m$个球都位于同一个碗中时，停止操作。如果球一开始恰好就放在同一个碗中，则不需要进行任何操作，立刻停止。</p>
+<p>令$F(n, m)$为在停止前移动球的期望次数。例如，$F(2, 2) = \frac{1}{2}$，$F(3, 2) = \frac{4}{3}$，$F(2, 3) = \frac{9}{4}$，$F(4, 5) = \frac{6875}{24}$。</p>
+<p>令$G(N, M) = \sum_{n=2}^N \sum_{m=2}^M F(n, m)$。例如，$G(3, 3) = \frac{137}{12}$，$G(4, 5) = \frac{6277}{12}$。已知$G(6, 6) \approx 1.681521567954e4$（以科学计数法表示，小数点后保留$12$位有效数字）。</p>
+<p>求$G(12, 12)$，并以科学计数法表示给出你的答案，小数点后保留$12$位有效数字。</p>
 <hr>
 ]]></content>
   </entry>

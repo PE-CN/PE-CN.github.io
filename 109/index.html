@@ -18,17 +18,17 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Problem 109 Darts In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.   The score of a dart is determined by the">
+  <meta name="description" content="Problem 109 DartsIn the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.   The score of a dart is determined by the">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Problem 109">
 <meta property="og:url" content="http://yoursite.com/109/index.html">
 <meta property="og:site_name" content="Project Euler | 欧拉计划">
-<meta property="og:description" content="Problem 109 Darts In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.   The score of a dart is determined by the">
+<meta property="og:description" content="Problem 109 DartsIn the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.   The score of a dart is determined by the">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/resources/images/0109.png">
 <meta property="og:image" content="http://yoursite.com/resources/images/0109.png">
 <meta property="article:published_time" content="2005-11-18T18:00:00.000Z">
-<meta property="article:modified_time" content="2025-01-14T20:42:44.723Z">
+<meta property="article:modified_time" content="2025-02-02T22:40:25.852Z">
 <meta property="article:author" content="sx349">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/resources/images/0109.png">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">翻译更新于</span>
-                <time title="更新时间：2025-01-14 20:42:44" itemprop="dateModified" datetime="2025-01-14T20:42:44+00:00">2025-01-14</time>
+                <time title="更新时间：2025-02-02 22:40:25" itemprop="dateModified" datetime="2025-02-02T22:40:25+00:00">2025-02-02</time>
               </span>
 
           
@@ -243,15 +243,14 @@
       
         <hr>
 <h1 id="Problem-109"><a href="#Problem-109" class="headerlink" title="Problem 109"></a><a href="https://projecteuler.net/problem=109">Problem 109</a></h1><hr>
-<p><strong>Darts</strong></p>
-<p>In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.</p>
+<h2 id="Darts"><a href="#Darts" class="headerlink" title="Darts"></a><strong>Darts</strong></h2><p>In the game of darts a player throws three darts at a target board which is split into twenty equal sized sections numbered one to twenty.</p>
 <center><img src="/resources/images/0109.png" width="400" height="400" alt=""></center>
 
 <p>The score of a dart is determined by the number of the region that the dart lands in. A dart landing outside the red/green outer ring scores zero. The black and cream regions inside this ring represent single scores. However, the red/green outer ring and middle ring score double and treble scores respectively.</p>
-<p>At the centre of the board are two concentric circles called the bull region, or bulls-eye. The outer bull is worth 25 points and the inner bull is a double, worth 50 points.</p>
-<p>There are many variations of rules but in the most popular game the players will begin with a score 301 or 501 and the first player to reduce their running total to zero is a winner. However, it is normal to play a “doubles out” system, which means that the player must land a double (including the double bulls-eye at the centre of the board) on their final dart to win; any other dart that would reduce their running total to one or lower means the score for that set of three darts is “bust”.</p>
-<p>When a player is able to finish on their current score it is called a “checkout” and the highest checkout is 170: T20 T20 D25 (two treble 20s and double bull).</p>
-<p>There are exactly eleven distinct ways to checkout on a score of 6:</p>
+<p>At the centre of the board are two concentric circles called the bull region, or bulls-eye. The outer bull is worth $25$ points and the inner bull is a double, worth $50$ points.</p>
+<p>There are many variations of rules but in the most popular game the players will begin with a score $301$ or $501$ and the first player to reduce their running total to zero is a winner. However, it is normal to play a “doubles out” system, which means that the player must land a double (including the double bulls-eye at the centre of the board) on their final dart to win; any other dart that would reduce their running total to one or lower means the score for that set of three darts is “bust”.</p>
+<p>When a player is able to finish on their current score it is called a “checkout” and the highest checkout is $170$: $T20$ $T20$ $D25$ (two treble $20$s and double bull).</p>
+<p>There are exactly eleven distinct ways to checkout on a score of $6$:</p>
 <table>
 <thead>
 <tr>
@@ -261,75 +260,74 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">D3</td>
+<td align="center">$D3$</td>
 <td align="center">&nbsp;</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D2</td>
+<td align="center">$D1$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">D2</td>
+<td align="center">$S2$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D2</td>
-<td align="center">D1</td>
+<td align="center">$D2$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S4</td>
-<td align="center">D1</td>
+<td align="center">$S4$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S1</td>
-<td align="center">D2</td>
+<td align="center">$S1$</td>
+<td align="center">$S1$</td>
+<td align="center">$D2$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">T1</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$T1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S3</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$S3$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D1</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$S2$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 </tbody></table>
-<p>Note that D1 D2 is considered <strong>different</strong> to D2 D1 as they finish on different doubles. However, the combination S1 T1 D1 is considered the <strong>same</strong> as T1 S1 D1.</p>
-<p>In addition we shall not include misses in considering combinations; for example, D3 is the <strong>same</strong> as 0 D3 and 0 0 D3.</p>
-<p>Incredibly there are 42336 distinct ways of checking out in total.</p>
-<p>How many distinct ways can a player checkout with a score less than 100?</p>
+<p>Note that $D1$ $D2$ is considered <strong>different</strong> to $D2$ $D1$ as they finish on different doubles. However, the combination $S1$ $T1$ $D1$ is considered the <strong>same</strong> as $T1$ $S1$ $D1$.</p>
+<p>In addition we shall not include misses in considering combinations; for example, $D3$ is the <strong>same</strong> as $0$ $D3$ and $0$ $0$ $D3$.</p>
+<p>Incredibly there are $42336$ distinct ways of checking out in total.</p>
+<p>How many distinct ways can a player checkout with a score less than $100$?</p>
 <hr>
-<p><strong>飞镖</strong></p>
-<p>在飞镖游戏中，玩家需向靶子上投掷三枚飞镖；靶子被分成了二十个相等面积的区域，并分别标上1至20。</p>
+<h2 id="飞镖"><a href="#飞镖" class="headerlink" title="飞镖"></a><strong>飞镖</strong></h2><p>在飞镖游戏中，玩家每一轮需向靶子上投掷三枚飞镖；靶子被分成了二十个相等面积的区域，并分别标上$1$至$20$作为基础分值。</p>
 <center><img src="/resources/images/0109.png" width="400" height="400" alt=""></center>
 
-<p>每一枚飞镖的分数还取决于它的位置。落在外围的红/绿色圈以外时为零分，落在黑/白色区域时为一倍得分，而落在外围和中间的红/绿色圈时分别为两倍和三倍得分。</p>
-<p>在把子的正中心有两个同心圆，被称为靶心。射中靶心外圈得25分，射中靶心内圈则得双倍50分。</p>
-<p>飞镖的规则有许多变种，但最热门的一种是，每个玩家从301分或501分开始，轮流投掷飞镖并减去得分，首先将自己的分数减少到恰好为0的玩家获胜。不过，通常会采用“双倍结束”规则，即玩家在最后一镖必须射中一个双倍区域（包括双倍的靶心内圈）才能判定获胜。若这一轮的得分使得玩家的分数减少到1分或更少，但最后一镖未射中双倍区域，则这一轮的得分“作废”。</p>
-<p>玩家在目前的分数下能够获胜则被称为“结分”。最高的结分为170：T20 T20 D25（两个三倍20分和一个双倍靶心）。</p>
-<p>当玩家分数为6时，恰好有11种结分方式：</p>
+<p>每一枚飞镖的分数还取决于它的位置：落在外围的红/绿色圈以外时为零分，落在黑/白色区域时为一倍得分，而落在外围和中间的红/绿色圈时分别为两倍和三倍得分。</p>
+<p>在靶子的正中心有两个同心圆，被称为靶心。射中靶心外圈得$25$分，射中靶心内圈则得双倍$50$分。</p>
+<p>飞镖的规则有许多变种，但最热门的一种是，每个玩家从$301$分或$501$分开始，轮流投掷飞镖并减去得分，首先将自己的分数减少到恰好为$0$的玩家获胜。不过，通常会采用“双倍结束”规则，即玩家的最后一镖必须射中一个双倍区域（包括双倍的靶心内圈）才能判定获胜。若这一轮的得分使得玩家的分数减少到$1$分或更少，但最后一镖未射中双倍区域，则这一轮的得分“作废”。</p>
+<p>玩家在当前分数下能够获胜则被称为“结分”。最高的结分为$170$：$T20$ $T20$ $D25$（两个三倍$20$分和一个双倍靶心）。</p>
+<p>当玩家分数为$6$时，恰好有$11$种结分方式：</p>
 <table>
 <thead>
 <tr>
@@ -339,65 +337,65 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">D3</td>
+<td align="center">$D3$</td>
 <td align="center">&nbsp;</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D2</td>
+<td align="center">$D1$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">D2</td>
+<td align="center">$S2$</td>
+<td align="center">$D2$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">D2</td>
-<td align="center">D1</td>
+<td align="center">$D2$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S4</td>
-<td align="center">D1</td>
+<td align="center">$S4$</td>
+<td align="center">$D1$</td>
 <td align="center">&nbsp;</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S1</td>
-<td align="center">D2</td>
+<td align="center">$S1$</td>
+<td align="center">$S1$</td>
+<td align="center">$D2$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">T1</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$T1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S1</td>
-<td align="center">S3</td>
-<td align="center">D1</td>
+<td align="center">$S1$</td>
+<td align="center">$S3$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">D1</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">D1</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$D1$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 <tr>
-<td align="center">S2</td>
-<td align="center">S2</td>
-<td align="center">D1</td>
+<td align="center">$S2$</td>
+<td align="center">$S2$</td>
+<td align="center">$D1$</td>
 </tr>
 </tbody></table>
-<p>注意D1 D2被认为是<strong>不同于</strong>D2 D1的结分方式，因为它们最后的双倍不同。不过，组合S1 T1 D1和T1 S1 D1就被认为是<strong>相同的</strong>结分方式。</p>
-<p>另外，我们在计算组合时，我们不考虑脱靶的情况；例如，D3和0 D3以及0 0 D3就是<strong>相同的</strong>结分方式。</p>
-<p>令人惊奇的是一共有42336种不同的结分方式。</p>
-<p>当玩家分数小于100时，一共有多少种不同的结分方式？</p>
+<p>注意$D1$ $D2$被认为是<strong>不同于</strong>$D2$ $D1$的结分方式，因为它们最后的双倍不同。不过，组合$S1$ $T1$ $D1$和$T1$ $S1$ $D1$就被认为是<strong>相同的</strong>结分方式。</p>
+<p>另外，在计算结分方式时，我们不考虑脱靶的情况；例如，$D3$和$0$ $D3$以及$0$ $0$ $D$3就是<strong>相同的</strong>结分方式。</p>
+<p>令人惊奇的是，一共有$42336$种不同的结分方式。</p>
+<p>当玩家当前分数小于$100$时，一共有多少种不同的结分方式？</p>
 <hr>
 
     </div>
@@ -480,7 +478,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-109"><span class="nav-text">Problem 109</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-109"><span class="nav-text">Problem 109</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Darts"><span class="nav-text">Darts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A3%9E%E9%95%96"><span class="nav-text">飞镖</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

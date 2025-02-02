@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lato', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Cambria', 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic|Verdana', Lato, 'Microsoft Yahei Light:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Problem 923 Young’s Game BA Young diagram is a finite collection of (equally-sized) squares in a grid-like arrangement of rows and columns, such that  the left-most squares of all rows are aligned ve">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem 923">
+<meta property="og:url" content="http://yoursite.com/923/index.html">
+<meta property="og:site_name" content="Project Euler | 欧拉计划">
+<meta property="og:description" content="Problem 923 Young’s Game BA Young diagram is a finite collection of (equally-sized) squares in a grid-like arrangement of rows and columns, such that  the left-most squares of all rows are aligned ve">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_diagrams.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_staircases.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_example.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_diagrams.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_staircases.png">
+<meta property="og:image" content="http://yoursite.com/resources/images/0922_youngs_game_example.png">
+<meta property="article:published_time" content="2024-12-21T08:00:01.000Z">
+<meta property="article:modified_time" content="2025-02-02T21:38:37.845Z">
+<meta property="article:author" content="sx349">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/resources/images/0922_youngs_game_diagrams.png">
+
+<link rel="canonical" href="http://yoursite.com/923/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Problem 923 | Project Euler | 欧拉计划</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Project Euler | 欧拉计划</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-problem">
+
+    <a href="/problems" rel="section"><i class="fa fa-tags fa-fw"></i>题目</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/923/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sx349">
+      <meta itemprop="description" content="Project Euler | 欧拉计划 中文翻译站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project Euler | 欧拉计划">
+    </span>
+      <footer class="post-footer">
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/922/" rel="prev" title="Problem 922">
+      <i class="fa fa-chevron-left"></i> Problem 922
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/924/" rel="next" title="Problem 924">
+      Problem 924 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem 923
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">题目发布于</span>
+
+              <time title="发布时间：2024-12-21 08:00:01" itemprop="dateCreated datePublished" datetime="2024-12-21T08:00:01+00:00">2024-12-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">翻译更新于</span>
+                <time title="更新时间：2025-02-02 21:38:37" itemprop="dateModified" datetime="2025-02-02T21:38:37+00:00">2025-02-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<h1 id="Problem-923"><a href="#Problem-923" class="headerlink" title="Problem 923"></a><a href="https://projecteuler.net/problem=923">Problem 923</a></h1><hr>
+<h2 id="Young’s-Game-B"><a href="#Young’s-Game-B" class="headerlink" title="Young’s Game B"></a><strong>Young’s Game B</strong></h2><p>A <b>Young diagram</b> is a finite collection of (equally-sized) squares in a grid-like arrangement of rows and columns, such that</p>
+<ul>
+<li>the left-most squares of all rows are aligned vertically;</li>
+<li>the top squares of all columns are aligned horizontally;</li>
+<li>the rows are non-increasing in size as we move top to bottom;</li>
+<li>the columns are non-increasing in size as we move left to right.</li>
+</ul>
+<p>Two examples of Young diagrams are shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>Two players Right and Down play a game on several Young diagrams, all disconnected from each other. Initially, a token is placed in the top-left square of each diagram. Then they take alternating turns, starting with Right. On Right’s turn, Right selects a token on one diagram and moves it <b>one square</b> to the right. On Down’s turn, Down selects a token on one diagram and moves it <b>one square</b> downwards. A player unable to make a legal move on their turn loses the game.</p>
+<p>For $a,b,k\ge 1$ we define an <i>$(a,b,k)$-staircase</i> to be the Young diagram where the bottom-right frontier consists of $k$ <i>steps</i> of vertical height $a$ and horizontal length $b$. Shown below are four examples of staircases with $(a,b,k)$ respectively $(1,1,4)$, $(5,1,1)$, $(3,3,2)$, $(2,4,3)$.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>Additionally, define the <i>weight</i> of an $(a,b,k)$-staircase to be $a+b+k$.</p>
+<p>Let $S(m, w)$ be the number ways of choosing $m$ staircases, each having weight not exceeding $w$, upon which Right (moving first in the game) will win the game assuming optimal play. Different orderings of the same set of staircases are to be counted separately.</p>
+<p>For example, $S(2, 4)=7$ is illustrated below, with tokens as grey circles drawn in their initial positions.</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>You are also given $S(3, 9)=315319$.</p>
+<p>Find $S(8, 64)$ giving your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="杨氏游戏（二）"><a href="#杨氏游戏（二）" class="headerlink" title="杨氏游戏（二）"></a><strong>杨氏游戏（二）</strong></h2><p><b>杨氏图表</b>是指一类有限个（大小相等的）方格组合，这些方格按照网格状排列成行和列，且满足以下条件：</p>
+<ul>
+<li>所有行最左边的方格垂直对齐；</li>
+<li>所有列最上边的方格水平对齐；</li>
+<li>自上而下，行的宽度单调不增；</li>
+<li>自左而右，列的高度单调不增。</li>
+</ul>
+<p>下图展示了两个杨氏图表的例子。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_diagrams.png" alt="0922_youngs_game_diagrams.png">
+</div>
+
+<p>两位玩家阿右和阿下在若干个相互分离的杨氏图表上玩一个游戏。游戏开始时，在每个图表的左上角方格放置一枚棋子。然后他们轮流行动，阿右先行。在阿右的回合，阿右选择一个图表中的棋子并向右移动<b>一格</b>。在阿下的回合，阿下选择一个图表中的棋子并向下移动<b>一格</b>。如果一位玩家在其回合无法进行合法移动，则输掉游戏。</p>
+<p>对于$a,b,k\ge 1$，定义$(a,b,k)$-<i class=zh>阶梯</i>为满足如下条件的杨氏图表：其右下边界由$k$个<i class=zh>台阶</i>组成，每个台阶垂直高度为$a$，水平长度为$b$。下图展示了四个阶梯的例子，它们的$(a,b,k)$值分别为$(1,1,4)$、$(5,1,1)$、$(3,3,2)$、$(2,4,3)$。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_staircases.png" alt="0922_youngs_game_staircases.png">
+</div>
+
+<p>另外，定义$(a,b,k)$-阶梯的<i class=zh>重量</i>为$a+b+k$。</p>
+<p>令$S(m, w)$为选择$m$个阶梯、每个阶梯的重量不超过$w$且在最优操作下阿右（游戏先手方）将获胜的方法数目。相同阶梯集合的不同排列要分别计数。</p>
+<p>例如，下图展示了$S(2, 4)=7$，其中灰色圆圈表示棋子的初始位置。</p>
+<div style="text-align:center">
+<img src="/resources/images/0922_youngs_game_example.png" alt="0922_youngs_game_example.png">
+</div>
+
+<p>已知$S(3, 9)=315319$。</p>
+<p>求$S(8, 64)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/922/" rel="prev" title="Problem 922">
+      <i class="fa fa-chevron-left"></i> Problem 922
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/924/" rel="next" title="Problem 924">
+      Problem 924 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Problem-923"><span class="nav-text">Problem 923</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Young%E2%80%99s-Game-B"><span class="nav-text">Young’s Game B</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A8%E6%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%88%E4%BA%8C%EF%BC%89"><span class="nav-text">杨氏游戏（二）</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sx349"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Leonhard Euler(1707-1783)</p>
+  <p class="site-description motion-element">Project Euler | 欧拉计划<br>中文翻译站</p>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-title">
+          <a href="https://projecteuler.net/" title="https:&#x2F;&#x2F;projecteuler.net" rel="noopener" target="_blank">Project Euler</a>
+        </li>
+        <li class="links-of-blogroll-title">
+          <a href="http://sx349.github.io/" title="http:&#x2F;&#x2F;sx349.github.io" rel="noopener" target="_blank">译者博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2001 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fas fa-calculator"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Project Euler | 欧拉计划</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+	  title       : document.title.substr(0,29),
+      clientID    : '4ba99a8839c5e7dde683',
+      clientSecret: '3984f7cad409553d6afde8dbc2c08fc425e7bbdc',
+      repo        : 'pe-cn-comments',
+      owner       : 'pe-cn',
+      admin       : ['sx349'],
+      id          : '61f69a96bb977334a83619ab2a928db9',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
