@@ -19,7 +19,7 @@
     <url>/100/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-100"><a href="#Problem-100" class="headerlink" title="Problem 100"></a><a href="https://projecteuler.net/problem=100">Problem 100</a></h1><hr>
-<h2 id="Arranged-probability"><a href="#Arranged-probability" class="headerlink" title="Arranged probability"></a><strong>Arranged probability</strong></h2><p>If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, $P(BB) = (15/21) \times (14/20) = 1/2$.</p>
+<h2 id="Arranged-Probability"><a href="#Arranged-Probability" class="headerlink" title="Arranged Probability"></a><strong>Arranged Probability</strong></h2><p>If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, $P(BB) = (15/21) \times (14/20) = 1/2$.</p>
 <p>The next such arrangement, for which there is exactly $50\%$ chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.</p>
 <p>By finding the first arrangement to contain over $10^{12} = 1,000,000,000,000$ discs in total, determine the number of blue discs that the box would contain.</p>
 <hr>
@@ -34,7 +34,7 @@
     <url>/10/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-10"><a href="#Problem-10" class="headerlink" title="Problem 10"></a><a href="https://projecteuler.net/problem=10">Problem 10</a></h1><hr>
-<h2 id="Summation-of-primes"><a href="#Summation-of-primes" class="headerlink" title="Summation of primes"></a><strong>Summation of primes</strong></h2><p>The sum of the primes below $10$ is $2 + 3 + 5 + 7 = 17$.</p>
+<h2 id="Summation-of-Primes"><a href="#Summation-of-Primes" class="headerlink" title="Summation of Primes"></a><strong>Summation of Primes</strong></h2><p>The sum of the primes below $10$ is $2 + 3 + 5 + 7 = 17$.</p>
 <p>Find the sum of all the primes below two million.</p>
 <hr>
 <h2 id="质数求和"><a href="#质数求和" class="headerlink" title="质数求和"></a><strong>质数求和</strong></h2><p>所有小于$10$的质数的和是$2 + 3 + 5 + 7 = 17$。</p>
@@ -47,7 +47,7 @@
     <url>/101/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-101"><a href="#Problem-101" class="headerlink" title="Problem 101"></a><a href="https://projecteuler.net/problem=101">Problem 101</a></h1><hr>
-<h2 id="Optimum-polynomial"><a href="#Optimum-polynomial" class="headerlink" title="Optimum polynomial"></a><strong>Optimum polynomial</strong></h2><p>If we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
+<h2 id="Optimum-Polynomial"><a href="#Optimum-Polynomial" class="headerlink" title="Optimum Polynomial"></a><strong>Optimum Polynomial</strong></h2><p>If we are presented with the first $k$ terms of a sequence it is impossible to say with certainty the value of the next term, as there are infinitely many polynomial functions that can model the sequence.</p>
 <p>As an example, let us consider the sequence of cube numbers. This is defined by the generating function, </p>
 <p>$$u_n = n^3: 1, 8, 27, 64, 125, 216, \ldots$$</p>
 <p>Suppose we were only given the first two terms of this sequence. Working on the principle that “simple is best” we should assume a linear relationship and predict the next term to be $15$ (common difference $7$). Even if we were presented with the first three terms, by the same principle of simplicity, a quadratic relationship should be assumed.</p>
@@ -82,7 +82,7 @@
     <url>/102/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-102"><a href="#Problem-102" class="headerlink" title="Problem 102"></a><a href="https://projecteuler.net/problem=102">Problem 102</a></h1><hr>
-<h2 id="Triangle-containment"><a href="#Triangle-containment" class="headerlink" title="Triangle containment"></a><strong>Triangle containment</strong></h2><p>Three distinct points are plotted at random on a Cartesian plane, for which $-1000 \le x, y \le 1000$, such that a triangle is formed.</p>
+<h2 id="Triangle-Containment"><a href="#Triangle-Containment" class="headerlink" title="Triangle Containment"></a><strong>Triangle Containment</strong></h2><p>Three distinct points are plotted at random on a Cartesian plane, for which $-1000 \le x, y \le 1000$, such that a triangle is formed.</p>
 <p>Consider the following two triangles:</p>
 <p>$$A(-340,495), B(-153,-910), C(835,-947)$$<br>$$X(-175,41), Y(-421,-714), Z(574,-645)$$</p>
 <p>It can be verified that triangle $ABC$ contains the origin, whereas triangle $XYZ$ does not.</p>
@@ -103,7 +103,7 @@
     <url>/104/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-104"><a href="#Problem-104" class="headerlink" title="Problem 104"></a><a href="https://projecteuler.net/problem=104">Problem 104</a></h1><hr>
-<h2 id="Pandigital-Fibonacci-ends"><a href="#Pandigital-Fibonacci-ends" class="headerlink" title="Pandigital Fibonacci ends"></a><strong>Pandigital Fibonacci ends</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n=F_{n-1}+F_{n-2}$, where $F_1=1$ and $F_2=1$.</p>
+<h2 id="Pandigital-Fibonacci-Ends"><a href="#Pandigital-Fibonacci-Ends" class="headerlink" title="Pandigital Fibonacci Ends"></a><strong>Pandigital Fibonacci Ends</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n=F_{n-1}+F_{n-2}$, where $F_1=1$ and $F_2=1$.</p>
 <p>It turns out that $F_{541}$, which contains $113$ digits, is the first Fibonacci number for which the last nine digits are $1$-$9$ pandigital (contain all the digits $1$ to $9$, but not necessarily in order). And $F_{2749}$, which contains $575$ digits, is the first Fibonacci number for which the first nine digits are $1$-$9$ pandigital.</p>
 <p>Given that $F_k$ is the first Fibonacci number for which the first nine digits AND the last nine digits are $1$-$9$ pandigital, find $k$.</p>
 <hr>
@@ -118,7 +118,7 @@
     <url>/103/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-103"><a href="#Problem-103" class="headerlink" title="Problem 103"></a><a href="https://projecteuler.net/problem=103">Problem 103</a></h1><hr>
-<h2 id="Special-subset-sums-optimum"><a href="#Special-subset-sums-optimum" class="headerlink" title="Special subset sums: optimum"></a><strong>Special subset sums: optimum</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
+<h2 id="Special-Subset-Sums-Optimum"><a href="#Special-Subset-Sums-Optimum" class="headerlink" title="Special Subset Sums: Optimum"></a><strong>Special Subset Sums: Optimum</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
 <ol>
 <li>$S(B) \neq S(C)$; that is, sums of subsets cannot be equal.</li>
 <li>If $B$ contains more elements than $C$ then $S(B)&gt;S(C)$.</li>
@@ -149,7 +149,7 @@
     <url>/105/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-105"><a href="#Problem-105" class="headerlink" title="Problem 105"></a><a href="https://projecteuler.net/problem=105">Problem 105</a></h1><hr>
-<h2 id="Special-subset-sums-testing"><a href="#Special-subset-sums-testing" class="headerlink" title="Special subset sums: testing"></a><strong>Special subset sums: testing</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
+<h2 id="Special-Subset-Sums-Testing"><a href="#Special-Subset-Sums-Testing" class="headerlink" title="Special Subset Sums: Testing"></a><strong>Special Subset Sums: Testing</strong></h2><p>Let $S(A)$ represent the sum of elements in set $A$ of size $n$. We shall call it a special sum set if for any two non-empty disjoint subsets, $B$ and $C$, the following properties are true:</p>
 <ol>
 <li>$S(B)\neq S(C)$; that is, sums of subsets cannot be equal.</li>
 <li>If $B$ contains more elements than $C$ then $S(B) &gt; S(C)$.</li>
@@ -595,7 +595,7 @@
     <url>/11/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-11"><a href="#Problem-11" class="headerlink" title="Problem 11"></a><a href="https://projecteuler.net/problem=11">Problem 11</a></h1><hr>
-<h2 id="Largest-product-in-a-grid"><a href="#Largest-product-in-a-grid" class="headerlink" title="Largest product in a grid"></a><strong>Largest product in a grid</strong></h2><p>In the $20\times 20$ grid below, four numbers along a diagonal line have been marked in red.</p>
+<h2 id="Largest-Product-in-a-Grid"><a href="#Largest-Product-in-a-Grid" class="headerlink" title="Largest Product in a Grid"></a><strong>Largest Product in a Grid</strong></h2><p>In the $20\times 20$ grid below, four numbers along a diagonal line have been marked in red.</p>
 <center style="font-family:'Courier New',monospace;">
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08<br />
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00<br />
@@ -1005,7 +1005,7 @@
     <url>/12/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-12"><a href="#Problem-12" class="headerlink" title="Problem 12"></a><a href="https://projecteuler.net/problem=12">Problem 12</a></h1><hr>
-<h2 id="Highly-divisible-triangular-number"><a href="#Highly-divisible-triangular-number" class="headerlink" title="Highly divisible triangular number"></a><strong>Highly divisible triangular number</strong></h2><p>The sequence of triangle numbers is generated by adding the natural numbers. So the $7$<sup>th</sup> triangle number would be $1 + 2 + 3 + 4 + 5 + 6 + 7 = 28$. The first ten terms would be:</p>
+<h2 id="Highly-Divisible-Triangular-Number"><a href="#Highly-Divisible-Triangular-Number" class="headerlink" title="Highly Divisible Triangular Number"></a><strong>Highly Divisible Triangular Number</strong></h2><p>The sequence of triangle numbers is generated by adding the natural numbers. So the $7$<sup>th</sup> triangle number would be $1 + 2 + 3 + 4 + 5 + 6 + 7 = 28$. The first ten terms would be:</p>
 <p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots $$</p>
 <p>Let us list the factors of the first seven triangle numbers:</p>
 <p>$$\begin{aligned}<br>\bf{1:}\ &amp; 1\\<br>\bf{3:}\ &amp; 1,3\\<br>\bf{6:}\ &amp; 1,2,3,6 \\<br>\bf{10:}\ &amp; 1,2,5,10 \\<br>\bf{15:}\ &amp; 1,3,5,15 \\<br>\bf{21:}\ &amp; 1,3,7,21 \\<br>\bf{28:}\ &amp; 1,2,4,7,14,28 \\<br>\end{aligned}$$</p>
@@ -1464,7 +1464,7 @@
     <url>/13/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-13"><a href="#Problem-13" class="headerlink" title="Problem 13"></a><a href="https://projecteuler.net/problem=13">Problem 13</a></h1><hr>
-<h2 id="Large-sum"><a href="#Large-sum" class="headerlink" title="Large sum"></a><strong>Large sum</strong></h2><p>Work out the first ten digits of the sum of the following one-hundred $50$-digit numbers.</p>
+<h2 id="Large-Sum"><a href="#Large-Sum" class="headerlink" title="Large Sum"></a><strong>Large Sum</strong></h2><p>Work out the first ten digits of the sum of the following one-hundred $50$-digit numbers.</p>
 <center style="font-family:'Courier New',monospace;">
 37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
@@ -1989,7 +1989,7 @@
     <url>/14/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-14"><a href="#Problem-14" class="headerlink" title="Problem 14"></a><a href="https://projecteuler.net/problem=14">Problem 14</a></h1><hr>
-<h2 id="Longest-Collatz-sequence"><a href="#Longest-Collatz-sequence" class="headerlink" title="Longest Collatz sequence"></a><strong>Longest Collatz sequence</strong></h2><p>The following iterative sequence is defined for the set of positive integers:</p>
+<h2 id="Longest-Collatz-Sequence"><a href="#Longest-Collatz-Sequence" class="headerlink" title="Longest Collatz Sequence"></a><strong>Longest Collatz Sequence</strong></h2><p>The following iterative sequence is defined for the set of positive integers:</p>
 <p>$n \rightarrow n/2$ ($n$ is even)<br /><br>$n \rightarrow 3n + 1$ ($n$ is odd)</p>
 <p>Using the rule above and starting with $13$, we generate the following sequence:</p>
 <p>$$13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$$</p>
@@ -2597,7 +2597,7 @@
     <url>/15/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-15"><a href="#Problem-15" class="headerlink" title="Problem 15"></a><a href="https://projecteuler.net/problem=15">Problem 15</a></h1><hr>
-<h2 id="Lattice-paths"><a href="#Lattice-paths" class="headerlink" title="Lattice paths"></a><strong>Lattice paths</strong></h2><p>Starting in the top left corner of a $2\times2$ grid, and only being able to move to the right and down, there are exactly $6$ routes to the bottom right corner.</p>
+<h2 id="Lattice-Paths"><a href="#Lattice-Paths" class="headerlink" title="Lattice Paths"></a><strong>Lattice Paths</strong></h2><p>Starting in the top left corner of a $2\times2$ grid, and only being able to move to the right and down, there are exactly $6$ routes to the bottom right corner.</p>
 <center>
 <img src="/resources/images/0015.png" />
 </center>
@@ -3202,7 +3202,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/16/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-16"><a href="#Problem-16" class="headerlink" title="Problem 16"></a><a href="https://projecteuler.net/problem=16">Problem 16</a></h1><hr>
-<h2 id="Power-digit-sum"><a href="#Power-digit-sum" class="headerlink" title="Power digit sum"></a><strong>Power digit sum</strong></h2><p>$2^{15}=32768$ and the sum of its digits is $3 + 2 + 7 + 6 + 8 = 26$.</p>
+<h2 id="Power-Digit-Sum"><a href="#Power-Digit-Sum" class="headerlink" title="Power Digit Sum"></a><strong>Power Digit Sum</strong></h2><p>$2^{15}=32768$ and the sum of its digits is $3 + 2 + 7 + 6 + 8 = 26$.</p>
 <p>What is the sum of the digits of the number $2^{1000}$?</p>
 <hr>
 <h2 id="幂的数字和"><a href="#幂的数字和" class="headerlink" title="幂的数字和"></a><strong>幂的数字和</strong></h2><p>$2^{15}=32768$，而$32768$的各位数字之和是 $3 + 2 + 7 + 6 + 8 = 26$。</p>
@@ -3412,7 +3412,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/17/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-17"><a href="#Problem-17" class="headerlink" title="Problem 17"></a><a href="https://projecteuler.net/problem=17">Problem 17</a></h1><hr>
-<h2 id="Number-letter-counts"><a href="#Number-letter-counts" class="headerlink" title="Number letter counts"></a><strong>Number letter counts</strong></h2><p>If the numbers $1$ to $5$ are written out in words: one, two, three, four, five, then there are $3 + 3 + 5 + 4 + 4 = 19$ letters used in total.</p>
+<h2 id="Number-Letter-Counts"><a href="#Number-Letter-Counts" class="headerlink" title="Number Letter Counts"></a><strong>Number Letter Counts</strong></h2><p>If the numbers $1$ to $5$ are written out in words: one, two, three, four, five, then there are $3 + 3 + 5 + 4 + 4 = 19$ letters used in total.</p>
 <p>If all the numbers from $1$ to $1000$ (one thousand) inclusive were written out in words, how many letters would be used? </p>
 <p><strong>NOTE:</strong> Do not count spaces or hyphens. For example, $342$ (three hundred and forty-two) contains $23$ letters and $115$ (one hundred and fifteen) contains $20$ letters. The use of “and” when writing out numbers is in compliance with British usage.</p>
 <hr>
@@ -3623,7 +3623,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/18/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-18"><a href="#Problem-18" class="headerlink" title="Problem 18"></a><a href="https://projecteuler.net/problem=18">Problem 18</a></h1><hr>
-<h2 id="Maximum-path-sum-I"><a href="#Maximum-path-sum-I" class="headerlink" title="Maximum path sum I"></a><strong>Maximum path sum I</strong></h2><p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
+<h2 id="Maximum-Path-Sum-I"><a href="#Maximum-Path-Sum-I" class="headerlink" title="Maximum Path Sum I"></a><strong>Maximum Path Sum I</strong></h2><p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
 <center style="font-family:'Courier New',monospace;"><span style="color:#ff0000;"><b>3</b></span><br />
 <span style="color:#ff0000;"><b>7</b></span> 4<br />
 2 <span style="color:#ff0000;"><b>4</b></span> 6<br />
@@ -3652,7 +3652,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
 
 <p><strong>NOTE:</strong> As there are only $16384$ routes, it is possible to solve this problem by trying every route. However, <a href="/67">Problem 67</a>, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)</p>
 <hr>
-<h2 id="最大路径和-I"><a href="#最大路径和-I" class="headerlink" title="最大路径和 I"></a><strong>最大路径和 I</strong></h2><p>从如下数字三角形的顶端出发，不断移动到下一行与其相邻的数直至到达底部，所能得到的最大路径和是$23$。</p>
+<h2 id="最大路径和（一）"><a href="#最大路径和（一）" class="headerlink" title="最大路径和（一）"></a><strong>最大路径和（一）</strong></h2><p>从如下数字三角形的顶端出发，不断移动到下一行与其相邻的数直至到达底部，所能得到的最大路径和是$23$。</p>
 <center style="font-family:'Courier New',monospace;"><span style="color:#ff0000;"><b>3</b></span><br />
 <span style="color:#ff0000;"><b>7</b></span> 4<br />
 2 <span style="color:#ff0000;"><b>4</b></span> 6<br />
@@ -4590,7 +4590,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/2/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-2"><a href="#Problem-2" class="headerlink" title="Problem 2"></a><a href="https://projecteuler.net/problem=2">Problem 2</a></h1><hr>
-<h2 id="Even-Fibonacci-numbers"><a href="#Even-Fibonacci-numbers" class="headerlink" title="Even Fibonacci numbers"></a><strong>Even Fibonacci numbers</strong></h2><p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with $1$ and $2$, the first $10$ terms will be:</p>
+<h2 id="Even-Fibonacci-Numbers"><a href="#Even-Fibonacci-Numbers" class="headerlink" title="Even Fibonacci Numbers"></a><strong>Even Fibonacci Numbers</strong></h2><p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with $1$ and $2$, the first $10$ terms will be:</p>
 <p>$$1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots$$</p>
 <p>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
 <hr>
@@ -4605,7 +4605,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/20/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-20"><a href="#Problem-20" class="headerlink" title="Problem 20"></a><a href="https://projecteuler.net/problem=20">Problem 20</a></h1><hr>
-<h2 id="Factorial-digit-sum"><a href="#Factorial-digit-sum" class="headerlink" title="Factorial digit sum"></a><strong>Factorial digit sum</strong></h2><p>$n!$ means $n \times (n − 1) \times … \times 3 \times 2 \times 1$.</p>
+<h2 id="Factorial-Digit-Sum"><a href="#Factorial-Digit-Sum" class="headerlink" title="Factorial Digit Sum"></a><strong>Factorial Digit Sum</strong></h2><p>$n!$ means $n \times (n − 1) \times … \times 3 \times 2 \times 1$.</p>
 <p>For example, $10! = 10 \times 9 \times … \times 3 \times 2 \times 1 = 3628800$, and the sum of the digits in the number $10!$ is $3 + 6 + 2 + 8 + 8 + 0 + 0 = 27$.</p>
 <p>Find the sum of the digits in the number $100!$.</p>
 <hr>
@@ -4943,7 +4943,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/21/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-21"><a href="#Problem-21" class="headerlink" title="Problem 21"></a><a href="https://projecteuler.net/problem=21">Problem 21</a></h1><hr>
-<h2 id="Amicable-numbers"><a href="#Amicable-numbers" class="headerlink" title="Amicable numbers"></a><strong>Amicable numbers</strong></h2><p>Let $d(n)$ be defined as the sum of proper divisors of $n$ (numbers less than $n$ which divide evenly into $n$).<br /><br>If $d(a) = b$ and $d(b) = a$, where $a \neq b$, then $a$ and $b$ are an amicable pair and each of $a$ and $b$ are called amicable numbers.</p>
+<h2 id="Amicable-Numbers"><a href="#Amicable-Numbers" class="headerlink" title="Amicable Numbers"></a><strong>Amicable Numbers</strong></h2><p>Let $d(n)$ be defined as the sum of proper divisors of $n$ (numbers less than $n$ which divide evenly into $n$).<br /><br>If $d(a) = b$ and $d(b) = a$, where $a \neq b$, then $a$ and $b$ are an amicable pair and each of $a$ and $b$ are called amicable numbers.</p>
 <p>For example, the proper divisors of $220$ are $1$, $2$, $4$, $5$, $10$, $11$, $20$, $22$, $44$, $55$ and $110$; therefore $d(220) = 284$. The proper divisors of $284$ are $1$, $2$, $4$, $71$ and $142$; so $d(284) = 220$.</p>
 <p>Evaluate the sum of all the amicable numbers under $10000$.</p>
 <hr>
@@ -5170,7 +5170,7 @@ s<sub>7</sub>&nbsp; s<sub>8</sub>&nbsp; s<sub>9</sub>&nbsp; s<sub>10</sub>
     <url>/22/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-22"><a href="#Problem-22" class="headerlink" title="Problem 22"></a><a href="https://projecteuler.net/problem=22">Problem 22</a></h1><hr>
-<h2 id="Names-score"><a href="#Names-score" class="headerlink" title="Names score"></a><strong>Names score</strong></h2><p>Using <a href="https://projecteuler.net/project/resources/p022_names.txt">names.txt</a>(right click and ‘Save Link/Target As…’), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.</p>
+<h2 id="Names-Scores"><a href="#Names-Scores" class="headerlink" title="Names Scores"></a><strong>Names Scores</strong></h2><p>Using <a href="https://projecteuler.net/project/resources/p022_names.txt">names.txt</a>(right click and ‘Save Link/Target As…’), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.</p>
 <p>For example, when the list is sorted into alphabetical order, COLIN, which is worth $3 + 15 + 12 + 9 + 14 = 53$, is the $938$th name in the list. So, COLIN would obtain a score of $938 \times 53 = 49714$.</p>
 <p>What is the total of all the name scores in the file?</p>
 <hr>
@@ -5369,7 +5369,7 @@ $y_k= \text{sin(}\frac{2k-1}{n} \times 180^\circ \text{)}$
     <url>/23/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-23"><a href="#Problem-23" class="headerlink" title="Problem 23"></a><a href="https://projecteuler.net/problem=23">Problem 23</a></h1><hr>
-<h2 id="Non-abundant-sums"><a href="#Non-abundant-sums" class="headerlink" title="Non-abundant sums"></a><strong>Non-abundant sums</strong></h2><p>A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of $28$ would be $1 + 2 + 4 + 7 + 14 = 28$, which means that $28$ is a perfect number.</p>
+<h2 id="Non-Abundant-Sums"><a href="#Non-Abundant-Sums" class="headerlink" title="Non-Abundant Sums"></a><strong>Non-Abundant Sums</strong></h2><p>A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of $28$ would be $1 + 2 + 4 + 7 + 14 = 28$, which means that $28$ is a perfect number.</p>
 <p>A number $n$ is called deficient if the sum of its proper divisors is less than $n$ and it is called abundant if this sum exceeds $n$.</p>
 <p>As $12$ is the smallest abundant number, $1 + 2 + 3 + 4 + 6 = 16$, the smallest number that can be written as the sum of two abundant numbers is $24$. By mathematical analysis, it can be shown that all integers greater than $28123$ can be written as the sum of two abundant numbers. However, this upper limit cannot be reduced any further by analysis even though it is known that the greatest number that cannot be expressed as the sum of two abundant numbers is less than this limit.</p>
 <p>Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.</p>
@@ -5738,7 +5738,7 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
     <url>/24/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-24"><a href="#Problem-24" class="headerlink" title="Problem 24"></a><a href="https://projecteuler.net/problem=24">Problem 24</a></h1><hr>
-<h2 id="Lexicographic-permutations"><a href="#Lexicographic-permutations" class="headerlink" title="Lexicographic permutations"></a><strong>Lexicographic permutations</strong></h2><p>A permutation is an ordered arrangement of objects. For example, $3124$ is one possible permutation of the digits $1$, $2$, $3$ and $4$. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of $0$, $1$ and $2$ are:</p>
+<h2 id="Lexicographic-Permutations"><a href="#Lexicographic-Permutations" class="headerlink" title="Lexicographic Permutations"></a><strong>Lexicographic Permutations</strong></h2><p>A permutation is an ordered arrangement of objects. For example, $3124$ is one possible permutation of the digits $1$, $2$, $3$ and $4$. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of $0$, $1$ and $2$ are:</p>
 <p>$$012 \quad 021 \quad 102 \quad 120 \quad 201 \quad 210$$</p>
 <p>What is the millionth lexicographic permutation of the digits $0$, $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$ and $9$?</p>
 <hr>
@@ -6025,7 +6025,7 @@ $s\_{n+1}=s\_n^2 \text{ mod }20300713$
     <url>/25/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-25"><a href="#Problem-25" class="headerlink" title="Problem 25"></a><a href="https://projecteuler.net/problem=25">Problem 25</a></h1><hr>
-<h2 id="1000-digit-Fibonacci-number"><a href="#1000-digit-Fibonacci-number" class="headerlink" title="$1000$-digit Fibonacci number"></a><strong>$1000$-digit Fibonacci number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n = F_{n-1} + F_{n-2}$, where $F_1 = 1$ and $F_2 = 1$.</p>
+<h2 id="1000-digit-Fibonacci-Number"><a href="#1000-digit-Fibonacci-Number" class="headerlink" title="$1000$-digit Fibonacci Number"></a><strong>$1000$-digit Fibonacci Number</strong></h2><p>The Fibonacci sequence is defined by the recurrence relation:<br>$F_n = F_{n-1} + F_{n-2}$, where $F_1 = 1$ and $F_2 = 1$.</p>
 <p>Hence the first 12 terms will be:<br>$$\begin{aligned}<br>F_1&amp;=1\\<br>F_2&amp;=1\\<br>F_3&amp;=2\\<br>F_4&amp;=3\\<br>F_5&amp;=5\\<br>F_6&amp;=8\\<br>F_7&amp;=13\\<br>F_8&amp;=21\\<br>F_9&amp;=34\\<br>F_{10}&amp;=55\\<br>F_{11}&amp;=89\\<br>F_{12}&amp;=144\\<br>\end{aligned}$$</p>
 <p>The $12$th term, $F_{12}$, is the first term to contain three digits.</p>
 <p>What is the first term in the Fibonacci sequence to contain $1000$ digits?</p>
@@ -6441,7 +6441,7 @@ $T\_n=\text{(}S\_n \text{ mod } 2000 \text{)}-1000$
     <url>/26/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-26"><a href="#Problem-26" class="headerlink" title="Problem 26"></a><a href="https://projecteuler.net/problem=26">Problem 26</a></h1><hr>
-<h2 id="Reciprocal-cycles"><a href="#Reciprocal-cycles" class="headerlink" title="Reciprocal cycles"></a><strong>Reciprocal cycles</strong></h2><p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
+<h2 id="Reciprocal-Cycles"><a href="#Reciprocal-Cycles" class="headerlink" title="Reciprocal Cycles"></a><strong>Reciprocal Cycles</strong></h2><p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
 <p>$$\begin{aligned}<br>1/2 &amp;= 0.5\\<br>1/3 &amp;= 0.(3)\\<br>1/4 &amp;= 0.25\\<br>1/5 &amp;= 0.2\\<br>1/6 &amp;= 0.1(6)\\<br>1/7 &amp;= 0.(142857)\\<br>1/8 &amp;= 0.125\\<br>1/9 &amp;= 0.(1)\\<br>1/10 &amp;= 0.1\\<br>\end{aligned}$$</p>
 <p>Where $0.1(6)$ means $0.166666\ldots$, and has a $1$-digit recurring cycle. It can be seen that $1/7$ has a $6$-digit recurring cycle.</p>
 <p>Find the value of $d&lt;1000$ for which $1/d$ contains the longest recurring cycle in its decimal fraction part.</p>
@@ -6752,7 +6752,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/27/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-27"><a href="#Problem-27" class="headerlink" title="Problem 27"></a><a href="https://projecteuler.net/problem=27">Problem 27</a></h1><hr>
-<h2 id="Quadratic-primes"><a href="#Quadratic-primes" class="headerlink" title="Quadratic primes"></a><strong>Quadratic primes</strong></h2><p>Euler discovered the remarkable quadratic formula:</p>
+<h2 id="Quadratic-Primes"><a href="#Quadratic-Primes" class="headerlink" title="Quadratic Primes"></a><strong>Quadratic Primes</strong></h2><p>Euler discovered the remarkable quadratic formula:</p>
 <p>$$n^2 + n + 41$$</p>
 <p>It turns out that the formula will produce $40$ primes for the consecutive integer values $0 \le n \le 39$. However, when $n = 40$, $40^2 + 40 + 41 = 40(40 + 1) + 41$ is divisible by $41$, and certainly when $n = 41$, $41^2 + 41 + 41$ is clearly divisible by $41$.</p>
 <p>The incredible formula $n^2 - 79n + 1601$ was discovered, which produces $80$ primes for the consecutive values $0 \le n \le 79$. The product of the coefficients, $−79$ and $1601$, is $−126479$.</p>
@@ -6992,7 +6992,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/28/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-28"><a href="#Problem-28" class="headerlink" title="Problem 28"></a><a href="https://projecteuler.net/problem=28">Problem 28</a></h1><hr>
-<h2 id="Number-spiral-diagonals"><a href="#Number-spiral-diagonals" class="headerlink" title="Number spiral diagonals"></a><strong>Number spiral diagonals</strong></h2><p>Starting with the number $1$ and moving to the right in a clockwise direction, a $5$ by $5$ spiral is formed as follows:</p>
+<h2 id="Number-Spiral-Diagonals"><a href="#Number-Spiral-Diagonals" class="headerlink" title="Number Spiral Diagonals"></a><strong>Number Spiral Diagonals</strong></h2><p>Starting with the number $1$ and moving to the right in a clockwise direction, a $5$ by $5$ spiral is formed as follows:</p>
 <center style="font-family: 'Lucida Consolas', 'Consolas', 'Courier New', monospace">
 <span style="color:red"><b>21</b></span> 22 23 24 <span style="color:red"><b>25</b></span><br />
 20 &nbsp;<span style="color:red"><b>7</b></span> &nbsp;8  <span style="color:red"><b>&nbsp;9</b></span> 10<br />
@@ -7249,7 +7249,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/29/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-29"><a href="#Problem-29" class="headerlink" title="Problem 29"></a><a href="https://projecteuler.net/problem=29">Problem 29</a></h1><hr>
-<h2 id="Distinct-powers"><a href="#Distinct-powers" class="headerlink" title="Distinct powers"></a><strong>Distinct powers</strong></h2><p>Consider all integer combinations of $a^b$ for $2 \le a \le 5$ and $2 \le b \le 5$:</p>
+<h2 id="Distinct-Powers"><a href="#Distinct-Powers" class="headerlink" title="Distinct Powers"></a><strong>Distinct Powers</strong></h2><p>Consider all integer combinations of $a^b$ for $2 \le a \le 5$ and $2 \le b \le 5$:</p>
 <p>$$\begin{aligned}<br>&amp; 2^2=4, 2^3=8, 2^4=16, 2^5=32\\<br>&amp; 3^2=9, 3^3=27, 3^4=81, 3^5=243\\<br>&amp; 4^2=16, 4^3=64, 4^4=256, 4^5=1024\\<br>&amp; 5^2=25, 5^3=125, 5^4=625, 5^5=3125\\<br>\end{aligned}$$</p>
 <p>If they are then placed in numerical order, with any repeats removed, we get the following sequence of $15$ distinct terms:</p>
 <p>$$4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125$$</p>
@@ -7675,7 +7675,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/3/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-3"><a href="#Problem-3" class="headerlink" title="Problem 3"></a><a href="https://projecteuler.net/problem=3">Problem 3</a></h1><hr>
-<h2 id="Largest-prime-factor"><a href="#Largest-prime-factor" class="headerlink" title="Largest prime factor"></a><strong>Largest prime factor</strong></h2><p>The prime factors of $13195$ are $5$, $7$, $13$ and $29$.</p>
+<h2 id="Largest-Prime-Factor"><a href="#Largest-Prime-Factor" class="headerlink" title="Largest Prime Factor"></a><strong>Largest Prime Factor</strong></h2><p>The prime factors of $13195$ are $5$, $7$, $13$ and $29$.</p>
 <p>What is the largest prime factor of the number $600851475143$?</p>
 <hr>
 <h2 id="最大质因数"><a href="#最大质因数" class="headerlink" title="最大质因数"></a><strong>最大质因数</strong></h2><p>$13195$的质因数包括$5$、$7$、$13$和$29$。</p>
@@ -7688,7 +7688,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/30/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-30"><a href="#Problem-30" class="headerlink" title="Problem 30"></a><a href="https://projecteuler.net/problem=30">Problem 30</a></h1><hr>
-<h2 id="Digit-fifth-powers"><a href="#Digit-fifth-powers" class="headerlink" title="Digit fifth powers"></a><strong>Digit fifth powers</strong></h2><p>Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:<br>$$1634=1^4+6^4+3^4+4^4$$<br>$$8208=8^4+2^4+0^4+8^4$$<br>$$9474=9^4+4^4+7^4+4^4$$</p>
+<h2 id="Digit-Fifth-Powers"><a href="#Digit-Fifth-Powers" class="headerlink" title="Digit Fifth Powers"></a><strong>Digit Fifth Powers</strong></h2><p>Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:<br>$$1634=1^4+6^4+3^4+4^4$$<br>$$8208=8^4+2^4+0^4+8^4$$<br>$$9474=9^4+4^4+7^4+4^4$$</p>
 <p>As $1 = 1^4$ is not a sum it is not included.</p>
 <p>The sum of these numbers is $1634 + 8208 + 9474 = 19316$.</p>
 <p>Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.</p>
@@ -7969,7 +7969,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/31/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-31"><a href="#Problem-31" class="headerlink" title="Problem 31"></a><a href="https://projecteuler.net/problem=31">Problem 31</a></h1><hr>
-<h2 id="Coin-sums"><a href="#Coin-sums" class="headerlink" title="Coin sums"></a><strong>Coin sums</strong></h2><p>In the United Kingdom the currency is made up of pound ($\it\unicode{xA3}$) and pence ($p$). There are eight coins in general circulation:<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p).$$</p>
+<h2 id="Coin-Sums"><a href="#Coin-Sums" class="headerlink" title="Coin Sums"></a><strong>Coin Sums</strong></h2><p>In the United Kingdom the currency is made up of pound ($\it\unicode{xA3}$) and pence ($p$). There are eight coins in general circulation:<br>$$1p, 2p, 5p, 10p, 20p, 50p, {\it\unicode{xA3}}1(100p), {\it\unicode{xA3}}2(200p).$$</p>
 <p>It is possible to make ${\it\unicode{xA3}}2$ in the following way:<br>$$1\times {\it\unicode{xA3}}1+ 1\times 50p + 2 \times 20 p+1\times 5p+ 1\times 2p+3\times 1p$$</p>
 <p>How many different ways can ${\it\unicode{xA3}}2$ be made using any number of coins?</p>
 <hr>
@@ -8363,7 +8363,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/32/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-32"><a href="#Problem-32" class="headerlink" title="Problem 32"></a><a href="https://projecteuler.net/problem=32">Problem 32</a></h1><hr>
-<h2 id="Pandigital-products"><a href="#Pandigital-products" class="headerlink" title="Pandigital products"></a><strong>Pandigital products</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through $5$ pandigital.</p>
+<h2 id="Pandigital-Products"><a href="#Pandigital-Products" class="headerlink" title="Pandigital Products"></a><strong>Pandigital Products</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through $5$ pandigital.</p>
 <p>The product $7254$ is unusual, as the identity, $39\times186 = 7254$, containing multiplicand, multiplier, and product is $1$ through $9$ pandigital.</p>
 <p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a $1$ through $9$ pandigital.</p>
 <p>HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.</p>
@@ -8630,7 +8630,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/33/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-33"><a href="#Problem-33" class="headerlink" title="Problem 33"></a><a href="https://projecteuler.net/problem=33">Problem 33</a></h1><hr>
-<h2 id="Digit-cancelling-fractions"><a href="#Digit-cancelling-fractions" class="headerlink" title="Digit cancelling fractions"></a><strong>Digit cancelling fractions</strong></h2><p>The fraction $49/98$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $49/98=4/8$, which is correct, is obtained by cancelling the $9$s.</p>
+<h2 id="Digit-Cancelling-Fractions"><a href="#Digit-Cancelling-Fractions" class="headerlink" title="Digit Cancelling Fractions"></a><strong>Digit Cancelling Fractions</strong></h2><p>The fraction $49/98$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $49/98=4/8$, which is correct, is obtained by cancelling the $9$s.</p>
 <p>We shall consider fractions like, $30/50=3/5$, to be trivial examples.</p>
 <p>There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.</p>
 <p>If the product of these four fractions is given in its lowest common terms, find the value of the denominator.</p>
@@ -8897,7 +8897,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/34/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-34"><a href="#Problem-34" class="headerlink" title="Problem 34"></a><a href="https://projecteuler.net/problem=34">Problem 34</a></h1><hr>
-<h2 id="Digit-factorials"><a href="#Digit-factorials" class="headerlink" title="Digit factorials"></a><strong>Digit factorials</strong></h2><p>$145$ is a curious number, as $1! + 4! + 5! = 1 + 24 + 120 = 145$.</p>
+<h2 id="Digit-Factorials"><a href="#Digit-Factorials" class="headerlink" title="Digit Factorials"></a><strong>Digit Factorials</strong></h2><p>$145$ is a curious number, as $1! + 4! + 5! = 1 + 24 + 120 = 145$.</p>
 <p>Find the sum of all numbers which are equal to the sum of the factorial of their digits.</p>
 <p>Note: as $1! = 1$ and $2! = 2$ are not sums they are not included.</p>
 <hr>
@@ -9246,7 +9246,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/35/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-35"><a href="#Problem-35" class="headerlink" title="Problem 35"></a><a href="https://projecteuler.net/problem=35">Problem 35</a></h1><hr>
-<h2 id="Circular-primes"><a href="#Circular-primes" class="headerlink" title="Circular primes"></a><strong>Circular primes</strong></h2><p>The number, $197$, is called a circular prime because all rotations of the digits: $197$, $971$, and $719$, are themselves prime.</p>
+<h2 id="Circular-Primes"><a href="#Circular-Primes" class="headerlink" title="Circular Primes"></a><strong>Circular Primes</strong></h2><p>The number, $197$, is called a circular prime because all rotations of the digits: $197$, $971$, and $719$, are themselves prime.</p>
 <p>There are thirteen such primes below $100$: $2$, $3$, $5$, $7$, $11$, $13$, $17$, $31$, $37$, $71$, $73$, $79$, and $97$.</p>
 <p>How many circular primes are there below one million?</p>
 <hr>
@@ -9515,7 +9515,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/36/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-36"><a href="#Problem-36" class="headerlink" title="Problem 36"></a><a href="https://projecteuler.net/problem=36">Problem 36</a></h1><hr>
-<h2 id="Double-base-palindromes"><a href="#Double-base-palindromes" class="headerlink" title="Double-base palindromes"></a><strong>Double-base palindromes</strong></h2><p>The decimal number, $585 = 1001001001_2$ (binary), is palindromic in both bases.</p>
+<h2 id="Double-base-Palindromes"><a href="#Double-base-Palindromes" class="headerlink" title="Double-base Palindromes"></a><strong>Double-base Palindromes</strong></h2><p>The decimal number, $585 = 1001001001_2$ (binary), is palindromic in both bases.</p>
 <p>Find the sum of all numbers, less than one million, which are palindromic in base $10$ and base $2$.</p>
 <p>(Please note that the palindromic number, in either base, may not include leading zeros.)</p>
 <hr>
@@ -9839,7 +9839,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/37/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-37"><a href="#Problem-37" class="headerlink" title="Problem 37"></a><a href="https://projecteuler.net/problem=37">Problem 37</a></h1><hr>
-<h2 id="Truncatable-primes"><a href="#Truncatable-primes" class="headerlink" title="Truncatable primes"></a><strong>Truncatable primes</strong></h2><p>The number $3797$ has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: $3797$, $797$, $97$, and $7$. Similarly we can work from right to left: $3797$, $379$, $37$, and $3$.</p>
+<h2 id="Truncatable-Primes"><a href="#Truncatable-Primes" class="headerlink" title="Truncatable Primes"></a><strong>Truncatable Primes</strong></h2><p>The number $3797$ has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: $3797$, $797$, $97$, and $7$. Similarly we can work from right to left: $3797$, $379$, $37$, and $3$.</p>
 <p>Find the sum of the only eleven primes that are both truncatable from left to right and right to left.</p>
 <p>NOTE: $2$, $3$, $5$, and $7$ are not considered to be truncatable primes.</p>
 <hr>
@@ -10068,7 +10068,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/38/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-38"><a href="#Problem-38" class="headerlink" title="Problem 38"></a><a href="https://projecteuler.net/problem=38">Problem 38</a></h1><hr>
-<h2 id="Pandigital-multiples"><a href="#Pandigital-multiples" class="headerlink" title="Pandigital multiples"></a><strong>Pandigital multiples</strong></h2><p>Take the number $192$ and multiply it by each of $1$, $2$, and $3$:</p>
+<h2 id="Pandigital-Multiples"><a href="#Pandigital-Multiples" class="headerlink" title="Pandigital Multiples"></a><strong>Pandigital Multiples</strong></h2><p>Take the number $192$ and multiply it by each of $1$, $2$, and $3$:</p>
 <blockquote>
 <p>$192 × 1 = 192$<br /><br>$192 × 2 = 384$<br /><br>$192 × 3 = 576$</p>
 </blockquote>
@@ -10425,7 +10425,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/39/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-39"><a href="#Problem-39" class="headerlink" title="Problem 39"></a><a href="https://projecteuler.net/problem=39">Problem 39</a></h1><hr>
-<h2 id="Integer-right-triangles"><a href="#Integer-right-triangles" class="headerlink" title="Integer right triangles"></a><strong>Integer right triangles</strong></h2><p>If $p$ is the perimeter of a right angle triangle with integral length sides, $\{a,b,c\}$, there are exactly three solutions for $p = 120$.</p>
+<h2 id="Integer-Right-Triangles"><a href="#Integer-Right-Triangles" class="headerlink" title="Integer Right Triangles"></a><strong>Integer Right Triangles</strong></h2><p>If $p$ is the perimeter of a right angle triangle with integral length sides, $\{a,b,c\}$, there are exactly three solutions for $p = 120$.</p>
 <p>$$\{20,48,52\}, \{24,45,51\}, \{30,40,50\}$$</p>
 <p>For which value of $p \le 1000$, is the number of solutions maximised?</p>
 <hr>
@@ -10679,7 +10679,7 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/4/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-4"><a href="#Problem-4" class="headerlink" title="Problem 4"></a><a href="https://projecteuler.net/problem=4">Problem 4</a></h1><hr>
-<h2 id="Largest-palindrome-product"><a href="#Largest-palindrome-product" class="headerlink" title="Largest palindrome product"></a><strong>Largest palindrome product</strong></h2><p>A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009 = 91 \times 99$.</p>
+<h2 id="Largest-Palindrome-Product"><a href="#Largest-Palindrome-Product" class="headerlink" title="Largest Palindrome Product"></a><strong>Largest Palindrome Product</strong></h2><p>A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009 = 91 \times 99$.</p>
 <p>Find the largest palindrome made from the product of two $3$-digit numbers.</p>
 <hr>
 <h2 id="最大回文乘积"><a href="#最大回文乘积" class="headerlink" title="最大回文乘积"></a><strong>最大回文乘积</strong></h2><p>回文数是指从前往后读和从后往前读都一样的数。由两个$2$位数相乘得到的回文数中，最大的是 $9009 = 91 \times 99$。</p>
@@ -10721,7 +10721,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/40/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-40"><a href="#Problem-40" class="headerlink" title="Problem 40"></a><a href="https://projecteuler.net/problem=40">Problem 40</a></h1><hr>
-<h2 id="Champernowne’s-constant"><a href="#Champernowne’s-constant" class="headerlink" title="Champernowne’s constant"></a><strong>Champernowne’s constant</strong></h2><p>An irrational decimal fraction is created by concatenating the positive integers:</p>
+<h2 id="Champernowne’s-Constant"><a href="#Champernowne’s-Constant" class="headerlink" title="Champernowne’s Constant"></a><strong>Champernowne’s Constant</strong></h2><p>An irrational decimal fraction is created by concatenating the positive integers:</p>
 <p>$$0.12345678910{\color{red}1}112131415161718192021…$$</p>
 <p>It can be seen that the $12$<sup>th</sup> digit of the fractional part is $1$.</p>
 <p>If $d_n$ represents the $n$<sup>th</sup> digit of the fractional part, find the value of the following expression.</p>
@@ -10986,7 +10986,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/41/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-41"><a href="#Problem-41" class="headerlink" title="Problem 41"></a><a href="https://projecteuler.net/problem=41">Problem 41</a></h1><hr>
-<h2 id="Pandigital-prime"><a href="#Pandigital-prime" class="headerlink" title="Pandigital prime"></a><strong>Pandigital prime</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once. For example, $2143$ is a $4$-digit pandigital and is also prime.</p>
+<h2 id="Pandigital-Prime"><a href="#Pandigital-Prime" class="headerlink" title="Pandigital Prime"></a><strong>Pandigital Prime</strong></h2><p>We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once. For example, $2143$ is a $4$-digit pandigital and is also prime.</p>
 <p>What is the largest $n$-digit pandigital prime that exists?</p>
 <hr>
 <h2 id="全数字素数"><a href="#全数字素数" class="headerlink" title="全数字素数"></a><strong>全数字素数</strong></h2><p>如果一个$n$位数恰好使用了$1$至$n$每个数字各一次，则称为全数字数。例如，$2143$就是一个$4$位全数字数，同时它也是一个素数。</p>
@@ -11231,7 +11231,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/42/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-42"><a href="#Problem-42" class="headerlink" title="Problem 42"></a><a href="https://projecteuler.net/problem=42">Problem 42</a></h1><hr>
-<h2 id="Coded-triangle-numbers"><a href="#Coded-triangle-numbers" class="headerlink" title="Coded triangle numbers"></a><strong>Coded triangle numbers</strong></h2><p>The $n$<sup>th</sup> term of the sequence of triangle numbers is given by, $t_n=n (n+1)/2$; so the first ten triangle numbers are:</p>
+<h2 id="Coded-Triangle-Numbers"><a href="#Coded-Triangle-Numbers" class="headerlink" title="Coded Triangle Numbers"></a><strong>Coded Triangle Numbers</strong></h2><p>The $n$<sup>th</sup> term of the sequence of triangle numbers is given by, $t_n=n (n+1)/2$; so the first ten triangle numbers are:</p>
 <p>$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots$$</p>
 <p>By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is $19 + 11 + 25 = 55 = t_{10}$. If the word value is a triangle number then we shall call the word a triangle word.</p>
 <p>Using <a href="https://projecteuler.net/project/resources/p042_words.txt">words.txt</a>(right click and ‘Save Link/Target As…’), a 16K text file containing nearly two-thousand common English words, how many are triangle words?</p>
@@ -11518,7 +11518,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/43/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-43"><a href="#Problem-43" class="headerlink" title="Problem 43"></a><a href="https://projecteuler.net/problem=43">Problem 43</a></h1><hr>
-<h2 id="Sub-string-divisibility"><a href="#Sub-string-divisibility" class="headerlink" title="Sub-string divisibility"></a><strong>Sub-string divisibility</strong></h2><p>The number, $1406357289$, is a $0$ to $9$ pandigital number because it is made up of each of the digits $0$ to $9$ in some order, but it also has a rather interesting sub-string divisibility property.</p>
+<h2 id="Sub-string-Divisibility"><a href="#Sub-string-Divisibility" class="headerlink" title="Sub-string Divisibility"></a><strong>Sub-string Divisibility</strong></h2><p>The number, $1406357289$, is a $0$ to $9$ pandigital number because it is made up of each of the digits $0$ to $9$ in some order, but it also has a rather interesting sub-string divisibility property.</p>
 <p>Let $d_1$ be the $1$<sup>st</sup> digit, $d_2$ be the $2$<sup>nd</sup> digit, and so on. In this way, we note the following:</p>
 <ul>
 <li>$d_2d_3d_4=406$ is divisible by $2$</li>
@@ -11790,7 +11790,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/44/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-44"><a href="#Problem-44" class="headerlink" title="Problem 44"></a><a href="https://projecteuler.net/problem=44">Problem 44</a></h1><hr>
-<h2 id="Pentagon-numbers"><a href="#Pentagon-numbers" class="headerlink" title="Pentagon numbers"></a><strong>Pentagon numbers</strong></h2><p>Pentagonal numbers are generated by the formula, $P_n=n(3n−1)/2$. The first ten pentagonal numbers are:</p>
+<h2 id="Pentagon-Numbers"><a href="#Pentagon-Numbers" class="headerlink" title="Pentagon Numbers"></a><strong>Pentagon Numbers</strong></h2><p>Pentagonal numbers are generated by the formula, $P_n=n(3n−1)/2$. The first ten pentagonal numbers are:</p>
 <p>$$1, 5, 12, 22, 35, 51, 70, 92, 117, 145, \ldots $$</p>
 <p>It can be seen that $P_4 + P_7 = 22 + 70 = 92 = P_8$. However, their difference, $70 − 22 = 48$, is not pentagonal.</p>
 <p>Find the pair of pentagonal numbers, $P_j$ and $P_k$, for which their sum and difference are pentagonal and $D = |P_k − P_j|$ is minimised; what is the value of $D$?</p>
@@ -12165,7 +12165,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/45/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-45"><a href="#Problem-45" class="headerlink" title="Problem 45"></a><a href="https://projecteuler.net/problem=45">Problem 45</a></h1><hr>
-<h2 id="Triangular-pentagonal-and-hexagonal"><a href="#Triangular-pentagonal-and-hexagonal" class="headerlink" title="Triangular, pentagonal, and hexagonal"></a><strong>Triangular, pentagonal, and hexagonal</strong></h2><p>Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:</p>
+<h2 id="Triangular-Pentagonal-and-Hexagonal"><a href="#Triangular-Pentagonal-and-Hexagonal" class="headerlink" title="Triangular, Pentagonal, and Hexagonal"></a><strong>Triangular, Pentagonal, and Hexagonal</strong></h2><p>Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:</p>
 <p>$$<br>\begin{aligned}<br>&amp;\text{Triangle}   &amp;&amp;  T_n=n(n+1)/2  &amp;&amp; 1, 3, 6,  10, 15, \ldots \\<br>&amp;\text{Pentagonal} &amp;&amp;  P_n=n(3n−1)/2 &amp;&amp; 1, 5, 12, 22, 35, \ldots \\<br>&amp;\text{Hexagonal}  &amp;&amp;  H_n=n(2n−1)   &amp;&amp; 1, 6, 15, 28, 45, \ldots<br>\end{aligned}<br>$$</p>
 <p>It can be verified that $T_{285} = P_{165} = H_{143} = 40755$.</p>
 <p>Find the next triangle number that is also pentagonal and hexagonal.</p>
@@ -12387,7 +12387,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/46/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-46"><a href="#Problem-46" class="headerlink" title="Problem 46"></a><a href="https://projecteuler.net/problem=46">Problem 46</a></h1><hr>
-<h2 id="Goldbach’s-other-conjecture"><a href="#Goldbach’s-other-conjecture" class="headerlink" title="Goldbach’s other conjecture"></a><strong>Goldbach’s other conjecture</strong></h2><p>It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.</p>
+<h2 id="Goldbach’s-Other-Conjecture"><a href="#Goldbach’s-Other-Conjecture" class="headerlink" title="Goldbach’s Other Conjecture"></a><strong>Goldbach’s Other Conjecture</strong></h2><p>It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.</p>
 <blockquote>
 <p>$9  = 7  + 2\times 1^2$ <br /><br>$15 = 7  + 2\times 2^2$ <br /><br>$21 = 3  + 2\times 3^2$ <br /><br>$25 = 7  + 2\times 3^2$ <br /><br>$27 = 19 + 2\times 2^2$ <br /><br>$33 = 31 + 2\times 1^2$ <br /></p>
 </blockquote>
@@ -12736,7 +12736,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/47/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-47"><a href="#Problem-47" class="headerlink" title="Problem 47"></a><a href="https://projecteuler.net/problem=47">Problem 47</a></h1><hr>
-<h2 id="Distinct-primes-factors"><a href="#Distinct-primes-factors" class="headerlink" title="Distinct primes factors"></a><strong>Distinct primes factors</strong></h2><p>The first two consecutive numbers to have two distinct prime factors are:<br>$$<br>\begin{aligned}<br>14 &amp;= 2 × 7 \\<br>15 &amp;= 3 × 5<br>\end{aligned}<br>$$</p>
+<h2 id="Distinct-Primes-Factors"><a href="#Distinct-Primes-Factors" class="headerlink" title="Distinct Primes Factors"></a><strong>Distinct Primes Factors</strong></h2><p>The first two consecutive numbers to have two distinct prime factors are:<br>$$<br>\begin{aligned}<br>14 &amp;= 2 × 7 \\<br>15 &amp;= 3 × 5<br>\end{aligned}<br>$$</p>
 <p>The first three consecutive numbers to have three distinct prime factors are:<br>$$<br>\begin{aligned}<br>644 &amp;= 2^2 × 7 × 23 \\<br>645 &amp;= 3 × 5 × 43   \\<br>646 &amp;= 2 × 17 × 19<br>\end{aligned}<br>$$</p>
 <p>Find the first four consecutive integers to have four distinct prime factors. What is the first of these numbers?</p>
 <hr>
@@ -13025,7 +13025,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/48/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-48"><a href="#Problem-48" class="headerlink" title="Problem 48"></a><a href="https://projecteuler.net/problem=48">Problem 48</a></h1><hr>
-<h2 id="Self-powers"><a href="#Self-powers" class="headerlink" title="Self powers"></a><strong>Self powers</strong></h2><p>The series, $1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$.</p>
+<h2 id="Self-Powers"><a href="#Self-Powers" class="headerlink" title="Self Powers"></a><strong>Self Powers</strong></h2><p>The series, $1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$.</p>
 <p>Find the last ten digits of the series, $1^1+2^2+3^3 +\ldots + 1000^{1000}$.</p>
 <hr>
 <h2 id="自幂"><a href="#自幂" class="headerlink" title="自幂"></a><strong>自幂</strong></h2><p>自幂级数的前十项求和为$1^1+2^2+3^3 +\ldots + 10^{10} = 10405071317$。</p>
@@ -13333,7 +13333,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/49/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-49"><a href="#Problem-49" class="headerlink" title="Problem 49"></a><a href="https://projecteuler.net/problem=49">Problem 49</a></h1><hr>
-<h2 id="Prime-permutations"><a href="#Prime-permutations" class="headerlink" title="Prime permutations"></a><strong>Prime permutations</strong></h2><p>The arithmetic sequence, $1487$, $4817$, $8147$, in which each of the terms increases by $3330$, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the $4$-digit numbers are permutations of one another.</p>
+<h2 id="Prime-Permutations"><a href="#Prime-Permutations" class="headerlink" title="Prime Permutations"></a><strong>Prime Permutations</strong></h2><p>The arithmetic sequence, $1487$, $4817$, $8147$, in which each of the terms increases by $3330$, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the $4$-digit numbers are permutations of one another.</p>
 <p>There are no arithmetic sequences made up of three $1$-, $2$-, or $3$-digit primes, exhibiting this property, but there is one other $4$-digit increasing sequence.</p>
 <p>What $12$-digit number do you form by concatenating the three terms in this sequence?</p>
 <hr>
@@ -13565,7 +13565,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/5/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-5"><a href="#Problem-5" class="headerlink" title="Problem 5"></a><a href="https://projecteuler.net/problem=5">Problem 5</a></h1><hr>
-<h2 id="Smallest-multiple"><a href="#Smallest-multiple" class="headerlink" title="Smallest multiple"></a><strong>Smallest multiple</strong></h2><p>$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.</p>
+<h2 id="Smallest-Multiple"><a href="#Smallest-Multiple" class="headerlink" title="Smallest Multiple"></a><strong>Smallest Multiple</strong></h2><p>$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.</p>
 <p>What is the smallest positive number that is evenly divisible by all of the numbers from $1$ to $20$?</p>
 <hr>
 <h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a><strong>最小公倍数</strong></h2><p>$2520$是最小的能够被$1$到$10$整除的正数。</p>
@@ -13578,7 +13578,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/50/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-50"><a href="#Problem-50" class="headerlink" title="Problem 50"></a><a href="https://projecteuler.net/problem=50">Problem 50</a></h1><hr>
-<h2 id="Consecutive-prime-sum"><a href="#Consecutive-prime-sum" class="headerlink" title="Consecutive prime sum"></a><strong>Consecutive prime sum</strong></h2><p>The prime $41$, can be written as the sum of six consecutive primes:</p>
+<h2 id="Consecutive-Prime-Sum"><a href="#Consecutive-Prime-Sum" class="headerlink" title="Consecutive Prime Sum"></a><strong>Consecutive Prime Sum</strong></h2><p>The prime $41$, can be written as the sum of six consecutive primes:</p>
 <p>$$41 = 2 + 3 + 5 + 7 + 11 + 13$$</p>
 <p>This is the longest sum of consecutive primes that adds to a prime below one-hundred.</p>
 <p>The longest sum of consecutive primes below one-thousand that adds to a prime, contains $21$ terms, and is equal to $953$.</p>
@@ -13826,7 +13826,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/51/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-51"><a href="#Problem-51" class="headerlink" title="Problem 51"></a><a href="https://projecteuler.net/problem=51">Problem 51</a></h1><hr>
-<h2 id="Prime-digit-replacements"><a href="#Prime-digit-replacements" class="headerlink" title="Prime digit replacements"></a><strong>Prime digit replacements</strong></h2><p>By replacing the $1$<sup>st</sup> digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all prime.</p>
+<h2 id="Prime-Digit-Replacements"><a href="#Prime-Digit-Replacements" class="headerlink" title="Prime Digit Replacements"></a><strong>Prime Digit Replacements</strong></h2><p>By replacing the $1$<sup>st</sup> digit of the $2$-digit number $\text{*}3$, it turns out that six of the nine possible values: $13$, $23$, $43$, $53$, $73$, and $83$, are all prime.</p>
 <p>By replacing the $3$<sup>rd</sup> and $4$<sup>th</sup> digits of $56\text{**}3$ with the same digit, this $5$-digit number is the first example having seven primes among the ten generated numbers, yielding the family: $56003$, $56113$, $56333$, $56443$, $56663$, $56773$, and $56993$. Consequently $56003$, being the first member of this family, is the smallest prime with this property.</p>
 <p>Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.</p>
 <hr>
@@ -14094,7 +14094,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/52/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-52"><a href="#Problem-52" class="headerlink" title="Problem 52"></a><a href="https://projecteuler.net/problem=52">Problem 52</a></h1><hr>
-<h2 id="Permuted-multiples"><a href="#Permuted-multiples" class="headerlink" title="Permuted multiples"></a><strong>Permuted multiples</strong></h2><p>It can be seen that the number, $125874$, and its double, $251748$, contain exactly the same digits, but in a different order.</p>
+<h2 id="Permuted-Multiples"><a href="#Permuted-Multiples" class="headerlink" title="Permuted Multiples"></a><strong>Permuted Multiples</strong></h2><p>It can be seen that the number, $125874$, and its double, $251748$, contain exactly the same digits, but in a different order.</p>
 <p>Find the smallest positive integer, $x$, such that $2x$, $3x$, $4x$, $5x$, and $6x$, contain the same digits.</p>
 <hr>
 <h2 id="重排的倍数"><a href="#重排的倍数" class="headerlink" title="重排的倍数"></a><strong>重排的倍数</strong></h2><p>可以看出，$125874$和它的两倍$251748$拥有同样的数字，只是排列顺序不同。</p>
@@ -14724,7 +14724,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/53/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-53"><a href="#Problem-53" class="headerlink" title="Problem 53"></a><a href="https://projecteuler.net/problem=53">Problem 53</a></h1><hr>
-<h2 id="Combinatoric-selections"><a href="#Combinatoric-selections" class="headerlink" title="Combinatoric selections"></a><strong>Combinatoric selections</strong></h2><p>There are exactly ten ways of selecting three from five, $12345$:</p>
+<h2 id="Combinatoric-Selections"><a href="#Combinatoric-Selections" class="headerlink" title="Combinatoric Selections"></a><strong>Combinatoric Selections</strong></h2><p>There are exactly ten ways of selecting three from five, $12345$:</p>
 <p>$$123, 124, 125, 134, 135, 145, 234, 235, 245,\text{ and }345$$</p>
 <p>In combinatorics, we use the notation, $\displaystyle \binom 5 3 = 10$.</p>
 <p>In general, $\displaystyle \binom n r = \frac{n!}{r!(n-r)!}$, where $r \le n$, $n!=n\times(n-1)\times \ldots \times 3\times 2\times1$, and $0!=1$. </p>
@@ -14981,7 +14981,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/54/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-54"><a href="#Problem-54" class="headerlink" title="Problem 54"></a><a href="https://projecteuler.net/problem=54">Problem 54</a></h1><hr>
-<h2 id="Poker-hands"><a href="#Poker-hands" class="headerlink" title="Poker hands"></a><strong>Poker hands</strong></h2><p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
+<h2 id="Poker-Hands"><a href="#Poker-Hands" class="headerlink" title="Poker Hands"></a><strong>Poker Hands</strong></h2><p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
 <ul>
 <li><strong>High Card</strong>: Highest value card.</li>
 <li><strong>One Pair</strong>: Two cards of the same value.</li>
@@ -15385,7 +15385,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/55/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-55"><a href="#Problem-55" class="headerlink" title="Problem 55"></a><a href="https://projecteuler.net/problem=55">Problem 55</a></h1><hr>
-<h2 id="Lychrel-numbers"><a href="#Lychrel-numbers" class="headerlink" title="Lychrel numbers"></a><strong>Lychrel numbers</strong></h2><p>If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.</p>
+<h2 id="Lychrel-Numbers"><a href="#Lychrel-Numbers" class="headerlink" title="Lychrel Numbers"></a><strong>Lychrel Numbers</strong></h2><p>If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.</p>
 <p>Not all numbers produce palindromes so quickly. For example,</p>
 <p>$$<br>\begin{aligned}<br>&amp;349 + 943 = 1292\\<br>&amp;1292 + 2921 = 4213\\<br>&amp;4213 + 3124 = 7337\\<br>\end{aligned}<br>$$</p>
 <p>That is, $349$ took three iterations to arrive at a palindrome.</p>
@@ -15707,7 +15707,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/56/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-56"><a href="#Problem-56" class="headerlink" title="Problem 56"></a><a href="https://projecteuler.net/problem=56">Problem 56</a></h1><hr>
-<h2 id="Powerful-digit-sum"><a href="#Powerful-digit-sum" class="headerlink" title="Powerful digit sum"></a><strong>Powerful digit sum</strong></h2><p>A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only $1$.</p>
+<h2 id="Powerful-Digit-Sum"><a href="#Powerful-Digit-Sum" class="headerlink" title="Powerful Digit Sum"></a><strong>Powerful Digit Sum</strong></h2><p>A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only $1$.</p>
 <p>Considering natural numbers of the form, $a^b$, where $a, b&lt;100$, what is the maximum digital sum?</p>
 <hr>
 <h2 id="幂的数字和"><a href="#幂的数字和" class="headerlink" title="幂的数字和"></a><strong>幂的数字和</strong></h2><p>一古戈尔（$10^{100}$）是一个巨大的数字：一后面跟着一百个零。$100^{100}$则更是无法想像地巨大：一后面跟着两百个零。然而，尽管这两个数如此巨大，各位数字和却都只有$1$。</p>
@@ -15940,7 +15940,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/57/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-57"><a href="#Problem-57" class="headerlink" title="Problem 57"></a><a href="https://projecteuler.net/problem=57">Problem 57</a></h1><hr>
-<h2 id="Square-root-convergents"><a href="#Square-root-convergents" class="headerlink" title="Square root convergents"></a><strong>Square root convergents</strong></h2><p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
+<h2 id="Square-Root-Convergents"><a href="#Square-Root-Convergents" class="headerlink" title="Square Root Convergents"></a><strong>Square Root Convergents</strong></h2><p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
 <p>$$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$$</p>
 <p>By expanding this for the first four iterations, we get:</p>
 <p>$1 + \frac 1 2 = \frac  32 = 1.5$<br /><br>$1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br /><br>$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$</p>
@@ -16178,7 +16178,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/58/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-58"><a href="#Problem-58" class="headerlink" title="Problem 58"></a><a href="https://projecteuler.net/problem=58">Problem 58</a></h1><hr>
-<h2 id="Spiral-primes"><a href="#Spiral-primes" class="headerlink" title="Spiral primes"></a><strong>Spiral primes</strong></h2><p>Starting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed.</p>
+<h2 id="Spiral-Primes"><a href="#Spiral-Primes" class="headerlink" title="Spiral Primes"></a><strong>Spiral Primes</strong></h2><p>Starting with $1$ and spiralling anticlockwise in the following way, a square spiral with side length $7$ is formed.</p>
 <center style="font-family:'Courier New', monospace;"><span style="color:#ff0000;font-family:courier new;"><b>37</b></span> 36 35 34 33 32 <span style="color:#ff0000;font-family:courier new;"><b>31</b></span><br />
 38 <span style="color:#ff0000;font-family:courier new;"><b>17</b></span> 16 15 14 <span style="color:#ff0000;font-family:courier new;"><b>13</b></span> 30<br />
 39 18 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>5</b></span> &nbsp;4 <span style="color:#ff0000;font-family:courier new;">&nbsp;<b>3</b></span> 12 29<br />
@@ -16404,7 +16404,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/59/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-59"><a href="#Problem-59" class="headerlink" title="Problem 59"></a><a href="https://projecteuler.net/problem=59">Problem 59</a></h1><hr>
-<h2 id="XOR-decryption"><a href="#XOR-decryption" class="headerlink" title="XOR decryption"></a><strong>XOR decryption</strong></h2><p>Each character on a computer is assigned a unique code and the preferred standard is ASCII (American Standard Code for Information Interchange). For example, uppercase $A = 65$, asterisk (*) $= 42$, and lowercase $k = 107$.</p>
+<h2 id="XOR-Decryption"><a href="#XOR-Decryption" class="headerlink" title="XOR Decryption"></a><strong>XOR Decryption</strong></h2><p>Each character on a computer is assigned a unique code and the preferred standard is ASCII (American Standard Code for Information Interchange). For example, uppercase $A = 65$, asterisk (*) $= 42$, and lowercase $k = 107$.</p>
 <p>A modern encryption method is to take a text file, convert the bytes to ASCII, then XOR each byte with a given value, taken from a secret key. The advantage with the XOR function is that using the same encryption key on the cipher text, restores the plain text; for example, $65$ XOR $42 = 107$, then $107$ XOR $42 = 65$.</p>
 <p>For unbreakable encryption, the key is the same length as the plain text message, and the key is made up of random bytes. The user would keep the encrypted message and the encryption key in different locations, and without both “halves”, it is impossible to decrypt the message.</p>
 <p>Unfortunately, this method is impractical for most users, so the modified method is to use a password as a key. If the password is shorter than the message, which is likely, the key is repeated cyclically throughout the message. The balance for this method is using a sufficiently long password key for security, but short enough to be memorable.</p>
@@ -16743,7 +16743,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/6/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-6"><a href="#Problem-6" class="headerlink" title="Problem 6"></a><a href="https://projecteuler.net/problem=6">Problem 6</a></h1><hr>
-<h2 id="Sum-square-difference"><a href="#Sum-square-difference" class="headerlink" title="Sum square difference"></a><strong>Sum square difference</strong></h2><p>The sum of the squares of the first ten natural numbers is,</p>
+<h2 id="Sum-Square-Difference"><a href="#Sum-Square-Difference" class="headerlink" title="Sum Square Difference"></a><strong>Sum Square Difference</strong></h2><p>The sum of the squares of the first ten natural numbers is,</p>
 <p>$$1^2+2^2+\ldots +10^2=385$$</p>
 <p>The square of the sum of the first ten natural numbers is,</p>
 <p>$$(1+2+\ldots+10)^2 = 55^2 = 3025$$</p>
@@ -16765,7 +16765,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/60/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-60"><a href="#Problem-60" class="headerlink" title="Problem 60"></a><a href="https://projecteuler.net/problem=60">Problem 60</a></h1><hr>
-<h2 id="Prime-pair-sets"><a href="#Prime-pair-sets" class="headerlink" title="Prime pair sets"></a><strong>Prime pair sets</strong></h2><p>The primes $3$, $7$, $109$, and $673$, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking $7$ and $109$, both $7109$ and $1097$ are prime. The sum of these four primes, $792$, represents the lowest sum for a set of four primes with this property.</p>
+<h2 id="Prime-Pair-Sets"><a href="#Prime-Pair-Sets" class="headerlink" title="Prime Pair Sets"></a><strong>Prime Pair Sets</strong></h2><p>The primes $3$, $7$, $109$, and $673$, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking $7$ and $109$, both $7109$ and $1097$ are prime. The sum of these four primes, $792$, represents the lowest sum for a set of four primes with this property.</p>
 <p>Find the lowest sum for a set of five primes for which any two primes concatenate to produce another prime.</p>
 <hr>
 <h2 id="素数对集合"><a href="#素数对集合" class="headerlink" title="素数对集合"></a><strong>素数对集合</strong></h2><p>$3$、$7$、$109$和$673$是非常特别的一组素数。任取其中的两个并且以任意顺序连接起来，其结果仍然是个素数。例如，选择$7$和$109$，得到$7109$和$1097$均为素数。这四个素数的和是$792$，而且是满足这个性质的一组四个素数的最小和。</p>
@@ -16974,7 +16974,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/61/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-61"><a href="#Problem-61" class="headerlink" title="Problem 61"></a><a href="https://projecteuler.net/problem=61">Problem 61</a></h1><hr>
-<h2 id="Cyclical-figurate-numbers"><a href="#Cyclical-figurate-numbers" class="headerlink" title="Cyclical figurate numbers"></a><strong>Cyclical figurate numbers</strong></h2><p>Triangle, square, pentagonal, hexagonal, heptagonal, and octagonal numbers are all figurate (polygonal) numbers and are generated by the following formulae:</p>
+<h2 id="Cyclical-Figurate-Numbers"><a href="#Cyclical-Figurate-Numbers" class="headerlink" title="Cyclical Figurate Numbers"></a><strong>Cyclical Figurate Numbers</strong></h2><p>Triangle, square, pentagonal, hexagonal, heptagonal, and octagonal numbers are all figurate (polygonal) numbers and are generated by the following formulae:</p>
 <table>
 <thead>
 <tr>
@@ -17268,7 +17268,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/62/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-62"><a href="#Problem-62" class="headerlink" title="Problem 62"></a><a href="https://projecteuler.net/problem=62">Problem 62</a></h1><hr>
-<h2 id="Cubic-permutations"><a href="#Cubic-permutations" class="headerlink" title="Cubic permutations"></a><strong>Cubic permutations</strong></h2><p>The cube, $41063625$ ($345^3$), can be permuted to produce two other cubes: $56623104$ ($384^3$) and $66430125$ ($405^3$). In fact, $41063625$ is the smallest cube which has exactly three permutations of its digits which are also cube.</p>
+<h2 id="Cubic-Permutations"><a href="#Cubic-Permutations" class="headerlink" title="Cubic Permutations"></a><strong>Cubic Permutations</strong></h2><p>The cube, $41063625$ ($345^3$), can be permuted to produce two other cubes: $56623104$ ($384^3$) and $66430125$ ($405^3$). In fact, $41063625$ is the smallest cube which has exactly three permutations of its digits which are also cube.</p>
 <p>Find the smallest cube for which exactly five permutations of its digits are cube.</p>
 <hr>
 <h2 id="立方数重排"><a href="#立方数重排" class="headerlink" title="立方数重排"></a><strong>立方数重排</strong></h2><p>立方数$41063625$（$345^3$）可以重排为另外两个立方数：$56623104$（$384^3$）和$66430125$（$405^3$）。实际上，$41063625$是重排中恰好有三个立方数的最小立方数。</p>
@@ -17593,7 +17593,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/63/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-63"><a href="#Problem-63" class="headerlink" title="Problem 63"></a><a href="https://projecteuler.net/problem=63">Problem 63</a></h1><hr>
-<h2 id="Powerful-digit-counts"><a href="#Powerful-digit-counts" class="headerlink" title="Powerful digit counts"></a><strong>Powerful digit counts</strong></h2><p>The $5$-digit number, $16807=7^5$, is also a fifth power. Similarly, the $9$-digit number,<br>$134217728=8^9$, is a ninth power.</p>
+<h2 id="Powerful-Digit-Counts"><a href="#Powerful-Digit-Counts" class="headerlink" title="Powerful Digit Counts"></a><strong>Powerful Digit Counts</strong></h2><p>The $5$-digit number, $16807=7^5$, is also a fifth power. Similarly, the $9$-digit number,<br>$134217728=8^9$, is a ninth power.</p>
 <p>How many $n$-digit positive integers exist which are also an $n$th power?</p>
 <hr>
 <h2 id="幂次与位数"><a href="#幂次与位数" class="headerlink" title="幂次与位数"></a><strong>幂次与位数</strong></h2><p>五位数$16807=7^5$同时也是一个五次幂。类似地，九位数$134217728=8^9$同时也是九次幂。</p>
@@ -18171,7 +18171,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/64/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-64"><a href="#Problem-64" class="headerlink" title="Problem 64"></a><a href="https://projecteuler.net/problem=64">Problem 64</a></h1><hr>
-<h2 id="Odd-period-square-roots"><a href="#Odd-period-square-roots" class="headerlink" title="Odd period square roots"></a><strong>Odd period square roots</strong></h2><p>All square roots are periodic when written as continued fractions and can be written in the form:</p>
+<h2 id="Odd-Period-Square-Roots"><a href="#Odd-Period-Square-Roots" class="headerlink" title="Odd Period Square Roots"></a><strong>Odd Period Square Roots</strong></h2><p>All square roots are periodic when written as continued fractions and can be written in the form:</p>
 <p>$\quad \quad \sqrt{N}=a_0+\frac{1}{a_1+\frac{1}{a_2+\frac{1}{a_3+…}}}$</p>
 <p>For example, let us consider $\sqrt{23}$:</p>
 <p>$\quad \quad \sqrt{23}=4+\sqrt{23}-4=4+\frac{1}{\frac{1}{\sqrt{23}-4}}=4+\frac{1}{1+\frac{\sqrt{23}-3}{7}}$</p>
@@ -18632,7 +18632,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/66/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-66"><a href="#Problem-66" class="headerlink" title="Problem 66"></a><a href="https://projecteuler.net/problem=66">Problem 66</a></h1><hr>
-<h2 id="Diophantine-equation"><a href="#Diophantine-equation" class="headerlink" title="Diophantine equation"></a><strong>Diophantine equation</strong></h2><p>Consider quadratic Diophantine equations of the form:</p>
+<h2 id="Diophantine-Equation"><a href="#Diophantine-Equation" class="headerlink" title="Diophantine Equation"></a><strong>Diophantine Equation</strong></h2><p>Consider quadratic Diophantine equations of the form:</p>
 <p>$$x^2-Dy^2=1$$</p>
 <p>For example, when $D=13$, the minimal solution in $x$ is $649^2 – 13\times 180^2 = 1$.</p>
 <p>It can be assumed that there are no solutions in positive integers when $D$ is square.</p>
@@ -18927,13 +18927,13 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/67/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-67"><a href="#Problem-67" class="headerlink" title="Problem 67"></a><a href="https://projecteuler.net/problem=67">Problem 67</a></h1><hr>
-<h2 id="Maximum-path-sum-II"><a href="#Maximum-path-sum-II" class="headerlink" title="Maximum path sum II"></a><strong>Maximum path sum II</strong></h2><p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
+<h2 id="Maximum-Path-Sum-II"><a href="#Maximum-Path-Sum-II" class="headerlink" title="Maximum Path Sum II"></a><strong>Maximum Path Sum II</strong></h2><p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
 <p>$$<br>\begin{aligned}<br>&amp;{\color{red}3}\\<br>{\color{red}7}&amp;\ \ 4\\<br>2\ \ &amp;{\color{red}4}\ \ 6\\<br>8\ \ 5&amp;\ \ {\color{red}9}\ \ 3\\<br>\end{aligned}<br>$$</p>
 <p>That is, $3 + 7 + 4 + 9 = 23$.</p>
 <p>Find the maximum total from top to bottom in <a href="https://projecteuler.net/project/resources/p067_triangle.txt">triangle.txt</a>(right click and ‘Save Link/Target As…’), a 15K text file containing a triangle with one-hundred rows.</p>
 <p><strong>NOTE:</strong> This is a much more difficult version of <a href="/18">Problem 18</a>. It is not possible to try every route to solve this problem, as there are $2^{99}$ altogether! If you could check one trillion ($10^{12}$) routes every second it would take over twenty billion years to check them all. There is an efficient algorithm to solve it. ;o)</p>
 <hr>
-<h2 id="最大路径和-II"><a href="#最大路径和-II" class="headerlink" title="最大路径和 II"></a><strong>最大路径和 II</strong></h2><p>从下面展示的三角形的顶端出发，不断移动到在下一行与其相邻的元素，能够得到的最大路径和是$23$。</p>
+<h2 id="最大路径和（二）"><a href="#最大路径和（二）" class="headerlink" title="最大路径和（二）"></a><strong>最大路径和（二）</strong></h2><p>从下面展示的三角形的顶端出发，不断移动到在下一行与其相邻的元素，能够得到的最大路径和是$23$。</p>
 <p>$$<br>\begin{aligned}<br>&amp;{\color{red}3}\\<br>{\color{red}7}&amp;\ \ 4\\<br>2\ \ &amp;{\color{red}4}\ \ 6\\<br>8\ \ 5&amp;\ \ {\color{red}9}\ \ 3\\<br>\end{aligned}<br>$$</p>
 <p>如上图，最大路径和为$3 + 7 + 4 + 9 = 23$。</p>
 <p>在文本文件[triangle.txt] (<a href="https://projecteuler.net/project/resources/p067_triangle.txt)中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。">https://projecteuler.net/project/resources/p067_triangle.txt)中包含了一个一百行的三角形，求从其顶端出发到达底部，所能够得到的最大路径和。</a></p>
@@ -19208,7 +19208,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/68/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-68"><a href="#Problem-68" class="headerlink" title="Problem 68"></a><a href="https://projecteuler.net/problem=68">Problem 68</a></h1><hr>
-<h2 id="Magic-5-gon-ring"><a href="#Magic-5-gon-ring" class="headerlink" title="Magic 5-gon ring"></a><strong>Magic 5-gon ring</strong></h2><p>Consider the following “magic” $3$-gon ring, filled with the numbers $1$ to $6$, and each line adding to nine.</p>
+<h2 id="Magic-5-gon-Ring"><a href="#Magic-5-gon-Ring" class="headerlink" title="Magic 5-gon Ring"></a><strong>Magic 5-gon Ring</strong></h2><p>Consider the following “magic” $3$-gon ring, filled with the numbers $1$ to $6$, and each line adding to nine.</p>
 <center>
 <img src="/resources/images/0068_1.png" />
 </center>
@@ -19499,7 +19499,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/69/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-69"><a href="#Problem-69" class="headerlink" title="Problem 69"></a><a href="https://projecteuler.net/problem=69">Problem 69</a></h1><hr>
-<h2 id="Totient-maximum"><a href="#Totient-maximum" class="headerlink" title="Totient maximum"></a><strong>Totient maximum</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of numbers less than $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
+<h2 id="Totient-Maximum"><a href="#Totient-Maximum" class="headerlink" title="Totient Maximum"></a><strong>Totient Maximum</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of numbers less than $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
 <table>
 <thead>
 <tr>
@@ -19904,10 +19904,10 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/7/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-7"><a href="#Problem-7" class="headerlink" title="Problem 7"></a><a href="https://projecteuler.net/problem=7">Problem 7</a></h1><hr>
-<h2 id="10001-st-prime"><a href="#10001-st-prime" class="headerlink" title="$10001$st prime"></a><strong>$10001$st prime</strong></h2><p>By listing the first six prime numbers: $2$, $3$, $5$, $7$, $11$, and $13$, we can see that the $6$th prime is $13$.</p>
+<h2 id="10-001-st-Prime"><a href="#10-001-st-Prime" class="headerlink" title="$10\ 001$st Prime"></a><strong>$10\ 001$st Prime</strong></h2><p>By listing the first six prime numbers: $2$, $3$, $5$, $7$, $11$, and $13$, we can see that the $6$th prime is $13$.</p>
 <p>What is the $10\ 001$st prime number?</p>
 <hr>
-<h2 id="第-10001-个质数"><a href="#第-10001-个质数" class="headerlink" title="第$10001$个质数"></a><strong>第$10001$个质数</strong></h2><p>前$6$个质数分别是$2$、$3$、$5$、$7$、$11$和$13$。</p>
+<h2 id="第-10-001-个质数"><a href="#第-10-001-个质数" class="headerlink" title="第$10\ 001$个质数"></a><strong>第$10\ 001$个质数</strong></h2><p>前$6$个质数分别是$2$、$3$、$5$、$7$、$11$和$13$。</p>
 <p>第$10\ 001$个质数是多少？</p>
 <hr>
 ]]></content>
@@ -19917,7 +19917,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/70/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-70"><a href="#Problem-70" class="headerlink" title="Problem 70"></a><a href="https://projecteuler.net/problem=70">Problem 70</a></h1><hr>
-<h2 id="Totient-permutation"><a href="#Totient-permutation" class="headerlink" title="Totient permutation"></a><strong>Totient permutation</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
+<h2 id="Totient-Permutation"><a href="#Totient-Permutation" class="headerlink" title="Totient Permutation"></a><strong>Totient Permutation</strong></h2><p>Euler’s Totient function, $\varphi(n)$ [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to $n$ which are relatively prime to $n$. For example, as $1$, $2$, $4$, $5$, $7$, and $8$, are all less than nine and relatively prime to nine, $\varphi(9)=6$.</p>
 <p>The number $1$ is considered to be relatively prime to every positive number, so $\varphi(1)=1$.</p>
 <p>Interestingly, $\varphi(87109)=79180$, and it can be seen that $87109$ is a permutation of $79180$.</p>
 <p>Find the value of $n$, $1&lt;n&lt;10^7$, for which $\varphi(n)$ is a permutation of $n$ and the ratio $n/\varphi(n)$ produces a minimum.</p>
@@ -20144,7 +20144,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/71/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-71"><a href="#Problem-71" class="headerlink" title="Problem 71"></a><a href="https://projecteuler.net/problem=71">Problem 71</a></h1><hr>
-<h2 id="Ordered-fractions"><a href="#Ordered-fractions" class="headerlink" title="Ordered fractions"></a><strong>Ordered fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<h2 id="Ordered-Fractions"><a href="#Ordered-Fractions" class="headerlink" title="Ordered Fractions"></a><strong>Ordered Fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
 <p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
 <p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, \textbf{2/5}, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
 <p>It can be seen that $2/5$ is the fraction immediately to the left of $3/7$.</p>
@@ -20363,7 +20363,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/72/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-72"><a href="#Problem-72" class="headerlink" title="Problem 72"></a><a href="https://projecteuler.net/problem=72">Problem 72</a></h1><hr>
-<h2 id="Counting-fractions"><a href="#Counting-fractions" class="headerlink" title="Counting fractions"></a><strong>Counting fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<h2 id="Counting-Fractions"><a href="#Counting-Fractions" class="headerlink" title="Counting Fractions"></a><strong>Counting Fractions</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
 <p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
 <p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
 <p>It can be seen that there are $21$ elements in this set.</p>
@@ -20596,7 +20596,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/73/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-73"><a href="#Problem-73" class="headerlink" title="Problem 73"></a><a href="https://projecteuler.net/problem=73">Problem 73</a></h1><hr>
-<h2 id="Counting-fractions-in-a-range"><a href="#Counting-fractions-in-a-range" class="headerlink" title="Counting fractions in a range"></a><strong>Counting fractions in a range</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
+<h2 id="Counting-Fractions-in-a-Range"><a href="#Counting-Fractions-in-a-Range" class="headerlink" title="Counting Fractions in a Range"></a><strong>Counting Fractions in a Range</strong></h2><p>Consider the fraction, $n/d$, where $n$ and $d$ are positive integers. If $n &lt; d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.</p>
 <p>If we list the set of reduced proper fractions for $d \le 8$ in ascending order of size, we get:</p>
 <p>$$1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, \textbf{3/8, 2/5, 3/7}, 1/2,$$<br>$$4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8$$</p>
 <p>It can be seen that there are $3$ fractions between $1/3$ and $1/2$.</p>
@@ -20835,7 +20835,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/74/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-74"><a href="#Problem-74" class="headerlink" title="Problem 74"></a><a href="https://projecteuler.net/problem=74">Problem 74</a></h1><hr>
-<h2 id="Digit-factorial-chains"><a href="#Digit-factorial-chains" class="headerlink" title="Digit factorial chains"></a><strong>Digit factorial chains</strong></h2><p>The number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$:</p>
+<h2 id="Digit-Factorial-Chains"><a href="#Digit-Factorial-Chains" class="headerlink" title="Digit Factorial Chains"></a><strong>Digit Factorial Chains</strong></h2><p>The number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$:</p>
 <p>$$1! + 4! + 5! = 1 + 24 + 120 = 145$$</p>
 <p>Perhaps less well known is $169$, in that it produces the longest chain of numbers that link back to $169$; it turns out that there are only three such loops that exist:</p>
 <p>$$\begin{aligned}<br>&amp;169 \rightarrow 363601 \rightarrow 1454 \rightarrow 169\\<br>&amp;871 \rightarrow 45361 \rightarrow 871\\<br>&amp;872 \rightarrow 45362 \rightarrow 872\\<br>\end{aligned}$$</p>
@@ -21052,7 +21052,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/75/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-75"><a href="#Problem-75" class="headerlink" title="Problem 75"></a><a href="https://projecteuler.net/problem=75">Problem 75</a></h1><hr>
-<h2 id="Singular-integer-right-triangles"><a href="#Singular-integer-right-triangles" class="headerlink" title="Singular integer right triangles"></a><strong>Singular integer right triangles</strong></h2><p>It turns out that $12$ cm is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.</p>
+<h2 id="Singular-Integer-Right-Triangles"><a href="#Singular-Integer-Right-Triangles" class="headerlink" title="Singular Integer Right Triangles"></a><strong>Singular Integer Right Triangles</strong></h2><p>It turns out that $12$ cm is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.</p>
 <blockquote>
 <p><strong>$12$ cm</strong>: $(3,4,5)$<br /><br><strong>$24$ cm</strong>: $(6,8,10)$<br /><br><strong>$30$ cm</strong>: $(5,12,13)$<br /><br><strong>$36$ cm</strong>: $(9,12,15)$<br /><br><strong>$40$ cm</strong>: $(8,15,17)$<br /><br><strong>$48$ cm</strong>: $(12,16,20)$<br /></p>
 </blockquote>
@@ -21268,7 +21268,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/76/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-76"><a href="#Problem-76" class="headerlink" title="Problem 76"></a><a href="https://projecteuler.net/problem=76">Problem 76</a></h1><hr>
-<h2 id="Counting-summations"><a href="#Counting-summations" class="headerlink" title="Counting summations"></a><strong>Counting summations</strong></h2><p>It is possible to write five as a sum in exactly six different ways:</p>
+<h2 id="Counting-Summations"><a href="#Counting-Summations" class="headerlink" title="Counting Summations"></a><strong>Counting Summations</strong></h2><p>It is possible to write five as a sum in exactly six different ways:</p>
 <p>$$<br>\begin{aligned}<br>&amp;4 + 1\\<br>&amp;3 + 2\\<br>&amp;3 + 1 + 1\\<br>&amp;2 + 2 + 1\\<br>&amp;2 + 1 + 1 + 1\\<br>&amp;1 + 1 + 1 + 1 + 1<br>\end{aligned}<br>$$</p>
 <p>How many different ways can one hundred be written as a sum of at least two positive integers?</p>
 <hr>
@@ -21473,7 +21473,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/77/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-77"><a href="#Problem-77" class="headerlink" title="Problem 77"></a><a href="https://projecteuler.net/problem=77">Problem 77</a></h1><hr>
-<h2 id="Prime-summations"><a href="#Prime-summations" class="headerlink" title="Prime summations"></a><strong>Prime summations</strong></h2><p>It is possible to write ten as the sum of primes in exactly five different ways:</p>
+<h2 id="Prime-Summations"><a href="#Prime-Summations" class="headerlink" title="Prime Summations"></a><strong>Prime Summations</strong></h2><p>It is possible to write ten as the sum of primes in exactly five different ways:</p>
 <p>$$<br>\begin{aligned}<br>&amp;7 + 3\\<br>&amp;5 + 5\\<br>&amp;5 + 3 + 2\\<br>&amp;3 + 3 + 2 + 2\\<br>&amp;2 + 2 + 2 + 2 + 2<br>\end{aligned}<br>$$</p>
 <p>What is the first value which can be written as the sum of primes in over five thousand different ways?</p>
 <hr>
@@ -21699,7 +21699,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/78/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-78"><a href="#Problem-78" class="headerlink" title="Problem 78"></a><a href="https://projecteuler.net/problem=78">Problem 78</a></h1><hr>
-<h2 id="Coin-partitions"><a href="#Coin-partitions" class="headerlink" title="Coin partitions"></a><strong>Coin partitions</strong></h2><p>Let $p(n)$ represent the number of different ways in which $n$ coins can be separated into piles. For example, five coins can separated into piles in exactly seven different ways, so $p(5)=7$.</p>
+<h2 id="Coin-Partitions"><a href="#Coin-Partitions" class="headerlink" title="Coin Partitions"></a><strong>Coin Partitions</strong></h2><p>Let $p(n)$ represent the number of different ways in which $n$ coins can be separated into piles. For example, five coins can separated into piles in exactly seven different ways, so $p(5)=7$.</p>
 <p>$$<br>\begin{aligned}<br>&amp;\text{OOOOO}\\<br>&amp;\text{OOOO   O}\\<br>&amp;\text{OOO   OO}\\<br>&amp;\text{OOO   O   O}\\<br>&amp;\text{OO   OO   O}\\<br>&amp;\text{OO   O   O   O}\\<br>&amp;\text{O   O   O   O   O}<br>\end{aligned}<br>$$</p>
 <p>Find the least value of $n$ for which $p(n)$ is divisible by one million.</p>
 <hr>
@@ -21924,7 +21924,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/79/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-79"><a href="#Problem-79" class="headerlink" title="Problem 79"></a><a href="https://projecteuler.net/problem=79">Problem 79</a></h1><hr>
-<h2 id="Passcode-derivation"><a href="#Passcode-derivation" class="headerlink" title="Passcode derivation"></a><strong>Passcode derivation</strong></h2><p>A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was $531278$, they may ask for the $2$nd, $3$rd, and $5$th characters; the expected reply would be: $317$.</p>
+<h2 id="Passcode-Derivation"><a href="#Passcode-Derivation" class="headerlink" title="Passcode Derivation"></a><strong>Passcode Derivation</strong></h2><p>A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was $531278$, they may ask for the $2$nd, $3$rd, and $5$th characters; the expected reply would be: $317$.</p>
 <p>The text file, <a href="https://projecteuler.net/project/resources/p079_keylog.txt">keylog.txt</a>, contains fifty successful login attempts.</p>
 <p>Given that the three characters are always asked for in order, analyse the file so as to determine the shortest possible secret passcode of unknown length.</p>
 <hr>
@@ -22147,7 +22147,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/8/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-8"><a href="#Problem-8" class="headerlink" title="Problem 8"></a><a href="https://projecteuler.net/problem=8">Problem 8</a></h1><hr>
-<h2 id="Largest-product-in-a-series"><a href="#Largest-product-in-a-series" class="headerlink" title="Largest product in a series"></a><strong>Largest product in a series</strong></h2><p>The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times  9 = 5832$.</p>
+<h2 id="Largest-Product-in-a-Series"><a href="#Largest-Product-in-a-Series" class="headerlink" title="Largest Product in a Series"></a><strong>Largest Product in a Series</strong></h2><p>The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times  9 = 5832$.</p>
 <center style="font-family:'Courier New',monospace">
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -22206,7 +22206,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/80/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-80"><a href="#Problem-80" class="headerlink" title="Problem 80"></a><a href="https://projecteuler.net/problem=80">Problem 80</a></h1><hr>
-<h2 id="Square-root-digital-expansion"><a href="#Square-root-digital-expansion" class="headerlink" title="Square root digital expansion"></a><strong>Square root digital expansion</strong></h2><p>It is well known that if the square root of a natural number is not an integer, then it is irrational. The decimal expansion of such square roots is infinite without any repeating pattern at all.</p>
+<h2 id="Square-Root-Digital-Expansion"><a href="#Square-Root-Digital-Expansion" class="headerlink" title="Square Root Digital Expansion"></a><strong>Square Root Digital Expansion</strong></h2><p>It is well known that if the square root of a natural number is not an integer, then it is irrational. The decimal expansion of such square roots is infinite without any repeating pattern at all.</p>
 <p>The square root of two is $1.41421356237309504880\ldots$, and the digital sum of the first one hundred decimal digits is $475$.</p>
 <p>For the first one hundred natural numbers, find the total of the digital sums of the first one hundred decimal digits for all the irrational square roots.</p>
 <hr>
@@ -22409,7 +22409,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/81/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-81"><a href="#Problem-81" class="headerlink" title="Problem 81"></a><a href="https://projecteuler.net/problem=81">Problem 81</a></h1><hr>
-<h2 id="Path-sum-two-ways"><a href="#Path-sum-two-ways" class="headerlink" title="Path sum: two ways"></a><strong>Path sum: two ways</strong></h2><p>In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by <strong>only moving to the right and down</strong>, is indicated in bold red and is equal to $2427$.</p>
+<h2 id="Path-Sum-Two-Ways"><a href="#Path-Sum-Two-Ways" class="headerlink" title="Path Sum: Two Ways"></a><strong>Path Sum: Two Ways</strong></h2><p>In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by <strong>only moving to the right and down</strong>, is indicated in bold red and is equal to $2427$.</p>
 <p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; 234 &amp; 103 &amp; 18\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; \color{red}{746} &amp; \color{red}{422} &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
 <p>Find the minimal path sum from the top left to the bottom right by only moving right and down in <a href="https://projecteuler.net/project/resources/p081_matrix.txt">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
 <hr>
@@ -22590,7 +22590,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/82/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-82"><a href="#Problem-82" class="headerlink" title="Problem 82"></a><a href="https://projecteuler.net/problem=82">Problem 82</a></h1><hr>
-<h2 id="Path-sum-three-ways"><a href="#Path-sum-three-ways" class="headerlink" title="Path sum: three ways"></a><strong>Path sum: three ways</strong></h2><p>NOTE: This problem is a more challenging version of <a href="/81">Problem 81</a>.</p>
+<h2 id="Path-Sum-Three-Ways"><a href="#Path-Sum-Three-Ways" class="headerlink" title="Path Sum: Three Ways"></a><strong>Path Sum: Three Ways</strong></h2><p>NOTE: This problem is a more challenging version of <a href="/81">Problem 81</a>.</p>
 <p>The minimal path sum in the $5$ by $5$ matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to $994$.</p>
 <p>$$<br>\begin{pmatrix}<br>131 &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; 150\\<br>630 &amp; 803 &amp; 746 &amp; 422 &amp; 111\\<br>537 &amp; 699 &amp; 497 &amp; 121 &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; 37 &amp; 331<br>\end{pmatrix}<br>$$</p>
 <p>Find the minimal path sum from the left column to the right column in <a href="https://projecteuler.net/project/resources/p081_matrix.txt">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
@@ -22843,7 +22843,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/83/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-83"><a href="#Problem-83" class="headerlink" title="Problem 83"></a><a href="https://projecteuler.net/problem=83">Problem 83</a></h1><hr>
-<h2 id="Path-sum-four-ways"><a href="#Path-sum-four-ways" class="headerlink" title="Path sum: four ways"></a><strong>Path sum: four ways</strong></h2><p>NOTE: This problem is a significantly more challenging version of <a href="/81">Problem 81</a>.</p>
+<h2 id="Path-Sum-Four-Ways"><a href="#Path-Sum-Four-Ways" class="headerlink" title="Path Sum: Four Ways"></a><strong>Path Sum: Four Ways</strong></h2><p>NOTE: This problem is a significantly more challenging version of <a href="/81">Problem 81</a>.</p>
 <p>In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to $2297$.</p>
 <p>$$<br>\begin{pmatrix}<br>\color{red}{131} &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\<br>\color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; \color{red}{150}\\<br>630 &amp; 803 &amp; 746 &amp; \color{red}{422} &amp; \color{red}{111}\\<br>537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\<br>805 &amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331}<br>\end{pmatrix}<br>$$</p>
 <p>Find the minimal path sum from the top left to the bottom right by moving left, right, up, and down in <a href="https://projecteuler.net/project/resources/p081_matrix.txt">matrix.txt</a> (right click and “Save Link/Target As…”), a 31K text file containing a $80$ by $80$ matrix.</p>
@@ -23071,7 +23071,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/84/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-84"><a href="#Problem-84" class="headerlink" title="Problem 84"></a><a href="https://projecteuler.net/problem=84">Problem 84</a></h1><hr>
-<h2 id="Monopoly-odds"><a href="#Monopoly-odds" class="headerlink" title="Monopoly odds"></a><strong>Monopoly odds</strong></h2><p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
+<h2 id="Monopoly-Odds"><a href="#Monopoly-Odds" class="headerlink" title="Monopoly Odds"></a><strong>Monopoly Odds</strong></h2><p>In the game, <i>Monopoly</i>, the standard board is set up in the following way:</p>
 <center>
 <img src="/resources/images/0084_monopoly_board.png" />
 </center>
@@ -23342,7 +23342,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/85/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-85"><a href="#Problem-85" class="headerlink" title="Problem 85"></a><a href="https://projecteuler.net/problem=85">Problem 85</a></h1><hr>
-<h2 id="Counting-rectangles"><a href="#Counting-rectangles" class="headerlink" title="Counting rectangles"></a><strong>Counting rectangles</strong></h2><p>By counting carefully it can be seen that a rectangular grid measuring $3$ by $2$ contains eighteen rectangles:</p>
+<h2 id="Counting-Rectangles"><a href="#Counting-Rectangles" class="headerlink" title="Counting Rectangles"></a><strong>Counting Rectangles</strong></h2><p>By counting carefully it can be seen that a rectangular grid measuring $3$ by $2$ contains eighteen rectangles:</p>
 <center>
 <img src="/resources/images/0085.png" />
 </center>
@@ -23583,7 +23583,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/86/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-86"><a href="#Problem-86" class="headerlink" title="Problem 86"></a><a href="https://projecteuler.net/problem=86">Problem 86</a></h1><hr>
-<h2 id="Cuboid-route"><a href="#Cuboid-route" class="headerlink" title="Cuboid route"></a><strong>Cuboid route</strong></h2><p>A spider, S, sits in one corner of a cuboid room, measuring $6$ by $5$ by $3$, and a fly, F, sits in the opposite corner. By travelling on the surfaces of the room the shortest “straight line” distance from S to F is $10$ and the path is shown on the diagram.</p>
+<h2 id="Cuboid-Route"><a href="#Cuboid-Route" class="headerlink" title="Cuboid Route"></a><strong>Cuboid Route</strong></h2><p>A spider, S, sits in one corner of a cuboid room, measuring $6$ by $5$ by $3$, and a fly, F, sits in the opposite corner. By travelling on the surfaces of the room the shortest “straight line” distance from S to F is $10$ and the path is shown on the diagram.</p>
 <center><img src="/resources/images/0086.png" alt=""></center>
 
 <p>However, there are up to three “shortest” path candidates for any given cuboid and the shortest route doesn’t always have integer length.</p>
@@ -23825,7 +23825,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/87/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-87"><a href="#Problem-87" class="headerlink" title="Problem 87"></a><a href="https://projecteuler.net/problem=87">Problem 87</a></h1><hr>
-<h2 id="Prime-power-triples"><a href="#Prime-power-triples" class="headerlink" title="Prime power triples"></a><strong>Prime power triples</strong></h2><p>The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $28$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:</p>
+<h2 id="Prime-Power-Triples"><a href="#Prime-Power-Triples" class="headerlink" title="Prime Power Triples"></a><strong>Prime Power Triples</strong></h2><p>The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $28$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:</p>
 <p>$$<br>\begin{aligned}<br>28 &amp;= 2^2+2^3+2^4 \\<br>33 &amp;= 3^2+2^3+2^4 \\<br>49 &amp;= 5^2+2^3+2^4 \\<br>47 &amp;= 2^2+3^3+2^4<br>\end{aligned}<br>$$</p>
 <p>How many numbers below fifty million can be expressed as the sum of a prime square, prime cube, and prime fourth power?</p>
 <hr>
@@ -24065,7 +24065,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/88/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-88"><a href="#Problem-88" class="headerlink" title="Problem 88"></a><a href="https://projecteuler.net/problem=88">Problem 88</a></h1><hr>
-<h2 id="Product-sum-numbers"><a href="#Product-sum-numbers" class="headerlink" title="Product-sum numbers"></a><strong>Product-sum numbers</strong></h2><p>A natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number: $N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$.</p>
+<h2 id="Product-sum-Numbers"><a href="#Product-sum-Numbers" class="headerlink" title="Product-sum Numbers"></a><strong>Product-sum Numbers</strong></h2><p>A natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, $\{a_1,a_2,\ldots,a_k\}$ is called a product-sum number: $N = a_1 + a_2 + \ldots + a_k = a_1 \times a_2 \times \ldots \times a_k$.</p>
 <p>For example, $6 = 1 + 2 + 3 = 1 \times 2 \times 3$.</p>
 <p>For a given set of size, $k$, we shall call the smallest $N$ with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, $k = 2$, $3$, $4$, $5$, and $6$ are as follows.</p>
 <p>$$<br>\begin{aligned}<br>k=2&amp;: 4 = 2 \times 2 = 2 + 2 \\<br>k=3&amp;: 6 = 1 \times 2 \times 3 = 1 + 2 + 3 \\<br>k=4&amp;: 8 = 1 \times 1 \times 2 \times 4 = 1 + 1 + 2 + 4 \\<br>k=5&amp;: 8 = 1 \times 1 \times 2 \times 2 \times 2  = 1 + 1 + 2 + 2 + 2 \\<br>k=6&amp;: 12 = 1 \times 1 \times 1 \times 1 \times 2 \times 6 = 1 + 1 + 1 + 1 + 2 + 6<br>\end{aligned}<br>$$</p>
@@ -24276,7 +24276,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/89/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-89"><a href="#Problem-89" class="headerlink" title="Problem 89"></a><a href="https://projecteuler.net/problem=89">Problem 89</a></h1><hr>
-<h2 id="Roman-numerals"><a href="#Roman-numerals" class="headerlink" title="Roman numerals"></a><strong>Roman numerals</strong></h2><p>For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a “best” way of writing a particular number.</p>
+<h2 id="Roman-Numerals"><a href="#Roman-Numerals" class="headerlink" title="Roman Numerals"></a><strong>Roman Numerals</strong></h2><p>For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a “best” way of writing a particular number.</p>
 <p>For example, it would appear that there are at least six ways of writing the number sixteen:</p>
 <blockquote>
 <span style="font-family:courier new,monospace;">IIIIIIIIIIIIIIII</span><br />
@@ -24507,7 +24507,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/9/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-9"><a href="#Problem-9" class="headerlink" title="Problem 9"></a><a href="https://projecteuler.net/problem=9">Problem 9</a></h1><hr>
-<h2 id="Special-Pythagorean-triplet"><a href="#Special-Pythagorean-triplet" class="headerlink" title="Special Pythagorean triplet"></a><strong>Special Pythagorean triplet</strong></h2><p>A Pythagorean triplet is a set of three natural numbers, $a&lt;b&lt;c$, for which,</p>
+<h2 id="Special-Pythagorean-Triplet"><a href="#Special-Pythagorean-Triplet" class="headerlink" title="Special Pythagorean Triplet"></a><strong>Special Pythagorean Triplet</strong></h2><p>A Pythagorean triplet is a set of three natural numbers, $a&lt;b&lt;c$, for which,</p>
 <p>$$a^2+b^2=c^2$$</p>
 <p>For example, $3^2+4^2=9+16=25=5^2$.</p>
 <p>There exists exactly one Pythagorean triplet for which $a + b + c = 1000$. Find the product $abc$.</p>
@@ -24524,7 +24524,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/90/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-90"><a href="#Problem-90" class="headerlink" title="Problem 90"></a><a href="https://projecteuler.net/problem=90">Problem 90</a></h1><hr>
-<h2 id="Cube-digit-pairs"><a href="#Cube-digit-pairs" class="headerlink" title="Cube digit pairs"></a><strong>Cube digit pairs</strong></h2><p>Each of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of $2$-digit numbers.</p>
+<h2 id="Cube-Digit-Pairs"><a href="#Cube-Digit-Pairs" class="headerlink" title="Cube Digit Pairs"></a><strong>Cube Digit Pairs</strong></h2><p>Each of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of $2$-digit numbers.</p>
 <p>For example, the square number $64$ could be formed:</p>
 <center><img src="/resources/images/0090.png" alt=""></center>
 
@@ -24603,7 +24603,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/91/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-91"><a href="#Problem-91" class="headerlink" title="Problem 91"></a><a href="https://projecteuler.net/problem=91">Problem 91</a></h1><hr>
-<h2 id="Right-triangles-with-integer-coordinates"><a href="#Right-triangles-with-integer-coordinates" class="headerlink" title="Right triangles with integer coordinates"></a><strong>Right triangles with integer coordinates</strong></h2><p>The points $P(x_1,y_1)$ and $Q(x_2,y_2)$ are plotted at integer co-ordinates and are joined to the origin, $O(0,0)$, to form $\triangle OPQ$.</p>
+<h2 id="Right-Triangles-with-Integer-Coordinates"><a href="#Right-Triangles-with-Integer-Coordinates" class="headerlink" title="Right Triangles with Integer Coordinates"></a><strong>Right Triangles with Integer Coordinates</strong></h2><p>The points $P(x_1,y_1)$ and $Q(x_2,y_2)$ are plotted at integer co-ordinates and are joined to the origin, $O(0,0)$, to form $\triangle OPQ$.</p>
 <center><img src="/resources/images/0091_1.png" alt=""></center>
 
 <p>There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between $0$ and $2$ inclusive; that is, $0 \le x_1, y_1, x_2, y_2 \le 2$.</p>
@@ -24626,7 +24626,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/92/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-92"><a href="#Problem-92" class="headerlink" title="Problem 92"></a><a href="https://projecteuler.net/problem=92">Problem 92</a></h1><hr>
-<h2 id="Square-digit-chains"><a href="#Square-digit-chains" class="headerlink" title="Square digit chains"></a><strong>Square digit chains</strong></h2><p>A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.</p>
+<h2 id="Square-Digit-Chains"><a href="#Square-Digit-Chains" class="headerlink" title="Square Digit Chains"></a><strong>Square Digit Chains</strong></h2><p>A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.</p>
 <p>For example,</p>
 <p>$$<br>\begin{aligned}<br>&amp; 44 \rightarrow 32 \rightarrow 13 \rightarrow 10 \rightarrow \textbf{1} \rightarrow \textbf{1}\\<br>&amp; 85 \rightarrow \textbf{89} \rightarrow 145 \rightarrow 42 \rightarrow 20 \rightarrow 4 \rightarrow 16 \rightarrow 37 \rightarrow 58 \rightarrow \textbf{89}<br>\end{aligned}<br>$$</p>
 <p>Therefore any chain that arrives at $1$ or $89$ will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at $1$ or $89$.</p>
@@ -24645,7 +24645,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/93/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-93"><a href="#Problem-93" class="headerlink" title="Problem 93"></a><a href="https://projecteuler.net/problem=93">Problem 93</a></h1><hr>
-<h2 id="Arithmetic-expressions"><a href="#Arithmetic-expressions" class="headerlink" title="Arithmetic expressions"></a><strong>Arithmetic expressions</strong></h2><p>By using each of the digits from the set, $\{1, 2, 3, 4\}$, exactly once, and making use of the four arithmetic operations $(+, -, \times, /)$ and brackets/parentheses, it is possible to form different positive integer targets.</p>
+<h2 id="Arithmetic-Expressions"><a href="#Arithmetic-Expressions" class="headerlink" title="Arithmetic Expressions"></a><strong>Arithmetic Expressions</strong></h2><p>By using each of the digits from the set, $\{1, 2, 3, 4\}$, exactly once, and making use of the four arithmetic operations $(+, -, \times, /)$ and brackets/parentheses, it is possible to form different positive integer targets.</p>
 <p>For example,<br>$$<br>\begin{aligned}<br>8  &amp; = (4 \times (1 + 3)) / 2 \\<br>14 &amp; = 4 \times (3 + 1 / 2)   \\<br>19 &amp; = 4 \times (2 + 3) − 1   \\<br>36 &amp; = 3 \times 4 \times (2 + 1)<br>\end{aligned}<br>$$<br>Note that concatenations of the digits, like $12 + 34$, are not allowed.</p>
 <p>Using the set, $\{1, 2, 3, 4\}$, it is possible to obtain thirty-one different target numbers of which $36$ is the maximum, and each of the numbers $1$ to $28$ can be obtained before encountering the first non-expressible number.</p>
 <p>Find the set of four distinct digits, $a&lt;b&lt;c&lt;d$, for which the longest set of consecutive positive integers, $1$ to $n$, can be obtained, giving your answer as a string: $abcd$.</p>
@@ -24662,7 +24662,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/94/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-94"><a href="#Problem-94" class="headerlink" title="Problem 94"></a><a href="https://projecteuler.net/problem=94">Problem 94</a></h1><hr>
-<h2 id="Almost-equilateral-triangles"><a href="#Almost-equilateral-triangles" class="headerlink" title="Almost equilateral triangles"></a><strong>Almost equilateral triangles</strong></h2><p>It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the <i>almost equilateral triangle</i> $5-5-6$ has an area of $12$ square units.</p>
+<h2 id="Almost-Equilateral-Triangles"><a href="#Almost-Equilateral-Triangles" class="headerlink" title="Almost Equilateral Triangles"></a><strong>Almost Equilateral Triangles</strong></h2><p>It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the <i>almost equilateral triangle</i> $5-5-6$ has an area of $12$ square units.</p>
 <p>We shall define an <i>almost equilateral triangle</i> to be a triangle for which two sides are equal and the third differs by no more than one unit.</p>
 <p>Find the sum of the perimeters of all <i>almost equilateral triangles</i> with integral side lengths and area and whose perimeters do not exceed one billion $(1,000,000,000)$.</p>
 <hr>
@@ -24677,7 +24677,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/95/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-95"><a href="#Problem-95" class="headerlink" title="Problem 95"></a><a href="https://projecteuler.net/problem=95">Problem 95</a></h1><hr>
-<h2 id="Amicable-chains"><a href="#Amicable-chains" class="headerlink" title="Amicable chains"></a><strong>Amicable chains</strong></h2><p>The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of $28$ are $1$, $2$, $4$, $7$, and $14$. As the sum of these divisors is equal to $28$, we call it a perfect number.</p>
+<h2 id="Amicable-Chains"><a href="#Amicable-Chains" class="headerlink" title="Amicable Chains"></a><strong>Amicable Chains</strong></h2><p>The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of $28$ are $1$, $2$, $4$, $7$, and $14$. As the sum of these divisors is equal to $28$, we call it a perfect number.</p>
 <p>Interestingly the sum of the proper divisors of $220$ is $284$ and the sum of the proper divisors of $284$ is $220$, forming a chain of two numbers. For this reason, $220$ and $284$ are called an amicable pair.</p>
 <p>Perhaps less well known are longer chains. For example, starting with $12496$, we form a chain of five numbers:</p>
 <p>$$ 12496 \rightarrow 14288 \rightarrow 15472 \rightarrow 14536 \rightarrow 14264 (\rightarrow 12496 \rightarrow \ldots)$$</p>
@@ -24728,7 +24728,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/97/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-97"><a href="#Problem-97" class="headerlink" title="Problem 97"></a><a href="https://projecteuler.net/problem=97">Problem 97</a></h1><hr>
-<h2 id="Large-non-Mersenne-prime"><a href="#Large-non-Mersenne-prime" class="headerlink" title="Large non-Mersenne prime"></a><strong>Large non-Mersenne prime</strong></h2><p>The first known prime found to exceed one million digits was discovered in $1999$, and is a Mersenne prime of the form $2^{6972593}−1$; it contains exactly $2,098,960$ digits. Subsequently other Mersenne primes, of the form $2^p−1$, have been found which contain more digits.</p>
+<h2 id="Large-Non-Mersenne-Prime"><a href="#Large-Non-Mersenne-Prime" class="headerlink" title="Large Non-Mersenne Prime"></a><strong>Large Non-Mersenne Prime</strong></h2><p>The first known prime found to exceed one million digits was discovered in $1999$, and is a Mersenne prime of the form $2^{6972593}−1$; it contains exactly $2,098,960$ digits. Subsequently other Mersenne primes, of the form $2^p−1$, have been found which contain more digits.</p>
 <p>However, in $2004$ there was found a massive non-Mersenne prime which contains $2,357,207$ digits: $28433 \times 2^{7830457}+1$.</p>
 <p>Find the last ten digits of this prime number.</p>
 <hr>
@@ -24743,7 +24743,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/98/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-98"><a href="#Problem-98" class="headerlink" title="Problem 98"></a><a href="https://projecteuler.net/problem=98">Problem 98</a></h1><hr>
-<h2 id="Anagramic-squares"><a href="#Anagramic-squares" class="headerlink" title="Anagramic squares"></a><strong>Anagramic squares</strong></h2><p>By replacing each of the letters in the word CARE with $1$, $2$, $9$, and $6$ respectively, we form a square number: $1296 = 36^2$. What is remarkable is that, by using the same digital substitutions, the anagram, RACE, also forms a square number: $9216 = 96^2$. We shall call CARE (and RACE) a square anagram word pair and specify further that leading zeroes are not permitted, neither may a different letter have the same digital value as another letter.</p>
+<h2 id="Anagramic-Squares"><a href="#Anagramic-Squares" class="headerlink" title="Anagramic Squares"></a><strong>Anagramic Squares</strong></h2><p>By replacing each of the letters in the word CARE with $1$, $2$, $9$, and $6$ respectively, we form a square number: $1296 = 36^2$. What is remarkable is that, by using the same digital substitutions, the anagram, RACE, also forms a square number: $9216 = 96^2$. We shall call CARE (and RACE) a square anagram word pair and specify further that leading zeroes are not permitted, neither may a different letter have the same digital value as another letter.</p>
 <p>Using <a href="https://projecteuler.net/project/resources/p098_words.txt">words.txt</a> (right click and ‘Save Link/Target As…’), a 16K text file containing nearly two-thousand common English words, find all the square anagram word pairs (a palindromic word is NOT considered to be an anagram of itself).</p>
 <p>What is the largest square number formed by any member of such a pair?</p>
 <p>NOTE: All anagrams formed must be contained in the given text file.</p>
@@ -24760,7 +24760,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <url>/99/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-99"><a href="#Problem-99" class="headerlink" title="Problem 99"></a><a href="https://projecteuler.net/problem=99">Problem 99</a></h1><hr>
-<h2 id="Largest-exponential"><a href="#Largest-exponential" class="headerlink" title="Largest exponential"></a><strong>Largest exponential</strong></h2><p>Comparing two numbers written in index form like $2^{11}$ and $3^7$ is not difficult, as any calculator would confirm that $2^{11} = 2048 &lt; 3^7 = 2187$.</p>
+<h2 id="Largest-Exponential"><a href="#Largest-Exponential" class="headerlink" title="Largest Exponential"></a><strong>Largest Exponential</strong></h2><p>Comparing two numbers written in index form like $2^{11}$ and $3^7$ is not difficult, as any calculator would confirm that $2^{11} = 2048 &lt; 3^7 = 2187$.</p>
 <p>However, confirming that $632382^{518061}&gt; 519432^{525806}$ would be much more difficult, as both numbers contain over three million digits.</p>
 <p>Using <a href="https://projecteuler.net/project/resources/p099_base_exp.txt">base_exp.txt</a>(right click and ‘Save Link/Target As…’), a $22$K text file containing one thousand lines with a base/exponent pair on each line, determine which line number has the greatest numerical value.</p>
 <p>NOTE: The first two lines in the file represent the numbers in the example given above.</p>
@@ -25422,6 +25422,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>定义$S_k$为能整除任意整数$n\ge 0$对应的$t_k(n)$的正整数$m$的集合。例如，从上面的例子可知，$1$、$2$和$5$属于$S_2$，而$1$、$2$、$3$和$9$属于$S_3$。</p>
 <p>记$S = \bigcap_p S_p$，其中交集取遍所有素数$p$。再定义$R(N)$为$S$中不超过$N$的所有元素之和。已知$R(20) = 18$，$R(1000) = 2089$。</p>
 <p>求$R(10^7)$。</p>
+<p><i class=zh>译注：原文的</i>Full $k$-ary Tree<i class=zh>直译为“满</i>$k$<i class=zh>叉树”；然而，在中文网络中，“满二叉树”的概念其实对应于英文中的</i>Perfect Binary Tree<i class=zh>，或“完美二叉树”。为示区别，这里参考网络资料将其翻译为“完满</i>$k$<i class=zh>叉树”。</i> </p>
 <hr>
 ]]></content>
   </entry>
@@ -25513,6 +25514,138 @@ $2, 2\quad 1, 1, 1\quad 3 \quad 2, 2$
 <p>令$F(n, m)$为在停止前移动球的期望次数。例如，$F(2, 2) = \frac{1}{2}$，$F(3, 2) = \frac{4}{3}$，$F(2, 3) = \frac{9}{4}$，$F(4, 5) = \frac{6875}{24}$。</p>
 <p>令$G(N, M) = \sum_{n=2}^N \sum_{m=2}^M F(n, m)$。例如，$G(3, 3) = \frac{137}{12}$，$G(4, 5) = \frac{6277}{12}$。已知$G(6, 6) \approx 1.681521567954e4$（以科学计数法表示，小数点后保留$12$位有效数字）。</p>
 <p>求$G(12, 12)$，并以科学计数法表示给出你的答案，小数点后保留$12$位有效数字。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 934</title>
+    <url>/934/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-934"><a href="#Problem-934" class="headerlink" title="Problem 934"></a><a href="https://projecteuler.net/problem=934">Problem 934</a></h1><hr>
+<h2 id="Unlucky-Primes"><a href="#Unlucky-Primes" class="headerlink" title="Unlucky Primes"></a><strong>Unlucky Primes</strong></h2><p>We define the <em>unlucky prime</em> of a number $n$, denoted $u(n)$, as the smallest prime number $p$ such that the remainder of $n$ divided by $p$ (i.e. $n \bmod p$) is not a multiple of seven.<br/><br>For example, $u(14) = 3$, $u(147) = 2$ and $u(1470) = 13$.</p>
+<p>Let $U(N)$ be the sum $\sum_{n = 1}^N u(n)$.<br/><br>You are given $U(1470) = 4293$.</p>
+<p>Find $U(10^{17})$.</p>
+<hr>
+<h2 id="不幸素数"><a href="#不幸素数" class="headerlink" title="不幸素数"></a><strong>不幸素数</strong></h2><p>定义数$n$对应的<i class=zh>不幸素数</i>$u(n)$为最小的、使得$n$除以$p$的余数（即$n \bmod p$）不是$7$的倍数的素数$p$。<br/><br>例如，$u(14) = 3$，$u(147) = 2$，$u(1470) = 13$。</p>
+<p>记$U(N)$为求和$\sum_{n = 1}^N u(n)$。<br/><br>已知$U(1470) = 4293$。</p>
+<p>求$U(10^{17})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 932</title>
+    <url>/932/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-932"><a href="#Problem-932" class="headerlink" title="Problem 932"></a><a href="https://projecteuler.net/problem=932">Problem 932</a></h1><hr>
+<h2 id="2025"><a href="#2025" class="headerlink" title="$2025$"></a><strong>$2025$</strong></h2><p>For the year $2025$:</p>
+<p>$$2025 = (20 + 25)^2$$</p>
+<p>Given positive integers $a$ and $b$, the concatenation $ab$ we call a $2025$-number if $ab = (a+b)^2$.<br/><br>Other examples are $3025$ and $81$.<br/><br>Note $9801$ is not a $2025$-number because the concatenation of $98$ and $1$ is $981$.</p>
+<p>Let $T(n)$ be the sum of all $2025$-numbers with $n$ digits or less. You are given $T(4) = 5131$.</p>
+<p>Find $T(16)$.</p>
+<hr>
+<h2 id="2025-1"><a href="#2025-1" class="headerlink" title="$2025$"></a><strong>$2025$</strong></h2><p>今年的年份$2025$满足</p>
+<p>$$2025 = (20 + 25)^2$$</p>
+<p>给定正整数$a$和$b$，如果将其连接后满足等式$ab = (a+b)^2$，则称$ab$为$2025$数。<br/><br>其它的例子有$3025$和$81$。<br/><br>注意$9801$不是$2025$数，因为$98$和$1$连接后是$981$。</p>
+<p>令$T(n)$为所有不超过$n$位的$2025$数之和。已知$T(4) = 5131$。</p>
+<p>求$T(16)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 936</title>
+    <url>/936/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-936"><a href="#Problem-936" class="headerlink" title="Problem 936"></a><a href="https://projecteuler.net/problem=936">Problem 936</a></h1><hr>
+<h2 id="Peerless-Trees"><a href="#Peerless-Trees" class="headerlink" title="Peerless Trees"></a><strong>Peerless Trees</strong></h2><p>A <em>peerless tree</em> is a tree with no edge between two vertices of the same degree. Let $P(n)$ be the number of peerless trees on $n$ unlabelled vertices.</p>
+<p>There are six of these trees on seven unlabelled vertices, $P(7)=6$, shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0936_diagram.jpg" alt="0936_diagram.jpg">
+</div>
+
+<p>Define $\displaystyle S(N) = \sum_{n=3}^N P(n)$. You are given $S(10) = 74$.</p>
+<p>Find $S(50)$.</p>
+<hr>
+<h2 id="无同树"><a href="#无同树" class="headerlink" title="无同树"></a><strong>无同树</strong></h2><p><i class=zh>无同树</i>是指没有连接相同度数顶点的边的树。记$P(n)$为包含$n$个无标记顶点的无同树的数量。</p>
+<p>包含七个无标记顶点的无同树有六棵，即$P(7)=6$，如下图所示。</p>
+<div style="text-align:center">
+<img src="/resources/images/0936_diagram.jpg" alt="0936_diagram.jpg">
+</div>
+
+<p>定义$\displaystyle S(N) = \sum_{n=3}^N P(n)$。已知$S(10) = 74$。</p>
+<p>求$S(50)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 931</title>
+    <url>/931/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-931"><a href="#Problem-931" class="headerlink" title="Problem 931"></a><a href="https://projecteuler.net/problem=931">Problem 931</a></h1><hr>
+<h2 id="Totient-Graph"><a href="#Totient-Graph" class="headerlink" title="Totient Graph"></a><strong>Totient Graph</strong></h2><p>For a positive integer $n$ construct a graph using all the divisors of $n$ as the vertices. An edge is drawn between $a$ and $b$ if $a$ is divisible by $b$ and $a/b$ is prime, and is given weight $\phi(a)-\phi(b)$, where $\phi$ is the Euler totient function.<br/><br>Define $t(n)$ to be the total weight of this graph.<br/><br>The example below shows that $t(45) = 52$:</p>
+<div style="text-align:center">
+<img src="/resources/images/0931_totientgraph.png" alt="0931_totientgraph.png">
+</div>
+
+<p>Let $T(N)=\displaystyle\sum_{n=1}^{N} t(n)$. You are given $T(10)=26$ and $T(10^2)=5282$.</p>
+<p>Find $T(10^{12})$. Give your answer modulo $715827883$.</p>
+<hr>
+<h2 id="欧拉函数图"><a href="#欧拉函数图" class="headerlink" title="欧拉函数图"></a><strong>欧拉函数图</strong></h2><p>对于正整数$n$，以$n$的所有因数为顶点构造图。若$a$能被$b$整除，且$a/b$是素数，则在$a$和$b$对应的顶点之间作一条边，该边的权重为$\phi(a)-\phi(b)$，其中$\phi$表示欧拉函数。<br/><br>定义$t(n)$为该图的总权重。<br/><br>下图展示了$t(45) = 52$：</p>
+<div style="text-align:center">
+<img src="/resources/images/0931_totientgraph.png" alt="0931_totientgraph.png">
+</div>
+
+<p>令$T(N)=\displaystyle\sum_{n=1}^{N} t(n)$。已知$T(10)=26$，$T(10^2)=5282$。</p>
+<p>求$T(10^{12})$，并对$715827883$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 933</title>
+    <url>/933/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-933"><a href="#Problem-933" class="headerlink" title="Problem 933"></a><a href="https://projecteuler.net/problem=933">Problem 933</a></h1><hr>
+<h2 id="Paper-Cutting"><a href="#Paper-Cutting" class="headerlink" title="Paper Cutting"></a><strong>Paper Cutting</strong></h2><p>Starting with one piece of integer-sized rectangle paper, two players make moves in turn.<br>A valid move consists of choosing one piece of paper and cutting it <strong>both</strong> horizontally and vertically, so that it becomes four pieces of smaller rectangle papers, all of which are integer-sized.<br>The player that does not have a valid move loses the game.</p>
+<p>Let $C(w, h)$ be the number of winning moves for the first player, when the original paper has size $w \times h$. For example, $C(5,3)=4$, with the four winning moves shown below.</p>
+<div style="text-align:center">
+<img src="/resources/images/0933_PaperCutting3.jpg" alt="0933_PaperCutting2.jpg">
+</div>
+
+<p>Also write $\displaystyle D(W, H) = \sum_{w = 2}^W\sum_{h = 2}^H C(w, h)$. You are given that $D(12, 123) = 327398$.</p>
+<p>Find $D(123, 1234567)$.</p>
+<hr>
+<h2 id="纸张切割"><a href="#纸张切割" class="headerlink" title="纸张切割"></a><strong>纸张切割</strong></h2><p>两名玩家在用一张长宽均为整数的矩形纸张玩游戏，两人轮流行动。<br>在该游戏中，一步有效行动是指，任选一张纸并将其<strong>同时</strong>水平和垂直切割成四张较小的、长宽均为整数的矩形纸张。<br>无法进行有效行动的玩家输掉游戏。</p>
+<p>记$C(w, h)$为当初始纸张尺寸为$w \times h$时，先手玩家必胜的行动数目。例如，$C(5,3)=4$，下图展示了四种先手必胜行动。</p>
+<div style="text-align:center">
+<img src="/resources/images/0933_PaperCutting3.jpg" alt="0933_PaperCutting2.jpg">
+</div>
+
+<p>同时记$\displaystyle D(W, H) = \sum_{w = 2}^W\sum_{h = 2}^H C(w, h)$。已知$D(12, 123) = 327398$。</p>
+<p>求$D(123, 1234567)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 935</title>
+    <url>/935/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-935"><a href="#Problem-935" class="headerlink" title="Problem 935"></a><a href="https://projecteuler.net/problem=935">Problem 935</a></h1><hr>
+<h2 id="Rolling-Square"><a href="#Rolling-Square" class="headerlink" title="Rolling Square"></a><strong>Rolling Square</strong></h2><p>A square of side length $b&lt;1$ is rolling around the inside of a larger square of side length $1$, always touching the larger square but without sliding.<br/><br>Initially the two squares share a common corner. At each step, the small square rotates clockwise about a corner that touches the large square, until another of its corners touches the large square. Here is an illustration of the first three steps for $b = \frac{5}{13}$.</p>
+<div style="text-align:center">
+<img src="/resources/images/0935_rolling.png" alt="0935_rolling.png">
+</div>
+
+<p>For some values of $b$, the small square may return to its initial position after several steps. For example, when $b = \frac{1}{2}$, this happens in $4$ steps; and for $b = \frac{5}{13}$ it happens in $24$ steps.</p>
+<p>Let $F(N)$ be the number of different values of $b$ for which the small square first returns to its initial position within at most $N$ steps. For example, $F(6) = 4$, with the corresponding $b$ values:<br>$$\frac{1}{2},\quad 2 - \sqrt{2},\quad 2 + \sqrt{2} - \sqrt{2 + 4\sqrt{2}},\quad  8 - 5\sqrt{2} + 4\sqrt{3} - 3\sqrt{6},$$<br>the first three in $4$ steps and the last one in $6$ steps. Note that it does not matter whether the small square returns to its original <strong>orientation</strong>.<br>Also $F(100) = 805$.</p>
+<p>Find $F(10^8)$.</p>
+<hr>
+<h2 id="翻滚的正方形"><a href="#翻滚的正方形" class="headerlink" title="翻滚的正方形"></a><strong>翻滚的正方形</strong></h2><p>一个边长为$b&lt;1$的小正方形在边长为$1$的大正方形内部以始终接触大正方形且不滑动的方式翻滚。<br/><br>一开始，这两个正方形在一个角上重合。此后每一步，小正方形围绕其接触大正方形的一个角顺时针旋转，直到它的另一个角接触到大正方形。如下图所示是$b = \frac{5}{13}$时前三步的示意图。</p>
+<div style="text-align:center">
+<img src="/resources/images/0935_rolling.png" alt="0935_rolling.png">
+</div>
+
+<p>对于$b$的某些取值，小正方形可能在若干步后回到其初始位置。例如，当$b = \frac{1}{2}$时，需要$4$步；而对于$b = \frac{5}{13}$，则需要$24$步。</p>
+<p>令$F(N)$为使小正方形在最多$N$步内首次回到其初始位置的$b$的不同取值的数目。例如，$F(6) = 4$，对应的 $b$ 值为：<br>$$\frac{1}{2},\quad 2 - \sqrt{2},\quad 2 + \sqrt{2} - \sqrt{2 + 4\sqrt{2}},\quad  8 - 5\sqrt{2} + 4\sqrt{3} - 3\sqrt{6},$$<br>其中，前三个需要$4$步，最后一个需要$6$步。注意这里并不要求小正方形回到其初始<strong>方向</strong>。<br>此外，$F(100) = 805$。</p>
+<p>求$F(10^8)$。</p>
 <hr>
 ]]></content>
   </entry>
