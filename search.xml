@@ -25649,4 +25649,274 @@ $2, 2\quad 1, 1, 1\quad 3 \quad 2, 2$
 <hr>
 ]]></content>
   </entry>
+  <entry>
+    <title>Problem 937</title>
+    <url>/937/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-937"><a href="#Problem-937" class="headerlink" title="Problem 937"></a><a href="https://projecteuler.net/problem=937">Problem 937</a></h1><hr>
+<h2 id="Equiproduct-Partition"><a href="#Equiproduct-Partition" class="headerlink" title="Equiproduct Partition"></a><strong>Equiproduct Partition</strong></h2><p>Let $\theta=\sqrt{-2}$.</p>
+<p>Define $T$ to be the set of numbers of the form $a+b\theta$, where $a$ and $b$ are integers and either $a\gt 0$, or $a=0$ and $b\gt 0$. For a set $S \subseteq T$ and element $z \in T$, define $p(S,z)$ to be the number of ways of choosing two distinct elements from $S$ with product either $z$ or $-z$.</p>
+<p>For example if $S=\{1,2,4\}$ and $z=4$, there is only one valid pair of elements with product $\pm4$, namely $1$ and $4$. Thus, in this case $p(S,z)=1$.</p>
+<p>For another example, if $S=\{1,\theta,1+\theta,2-\theta\}$ and $z=2-\theta$, we have $1\cdot(2-\theta)=z$ and $\theta\cdot(1+\theta)=-z$, giving $p(S,z)=2$.</p>
+<p>Let $A$ and $B$ be two sets satisfying the following conditions:</p>
+<ul>
+<li>$1 \in A$</li>
+<li>$A \cap B = \emptyset$</li>
+<li>$A \cup B = T$</li>
+<li>$p(A,z) = p(B,z)$ for all $z\in T$</li>
+</ul>
+<p>Remarkably, these four conditions uniquely determine the sets $A$ and $B$.</p>
+<p>Let $F_n$ be the set of the first $n$ factorials: $F_n=\{1!,2!,\dots,n!\}$, and define $G(n)$ to be the sum of all elements of $F_n\cap A$.</p>
+<p>You are given $G(4) = 25$, $G(7) = 745$, and $G(100) \equiv 709772949 \pmod{10^9+7}$.</p>
+<p>Find $G(10^8)$ and give your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="等积划分"><a href="#等积划分" class="headerlink" title="等积划分"></a><strong>等积划分</strong></h2><p>令$\theta=\sqrt{-2}$。</p>
+<p>定义$T$为形如$a+b\theta$的数所构成的集合，其中$a$和$b$均为整数，且满足$a\gt 0$，或$a=0$且$b\gt 0$。对于集合$S \subseteq T$和元素$z \in T$，定义$p(S,z)$为从$S$中选择两个不同元素且它们的乘积为$z$或$-z$的方法数。</p>
+<p>例如，如果$S=\{1,2,4\}$且$z=4$，只有一个合法元素对（$1$和$4$）的乘积为$\pm4$，因此$p(S,z)=1$。</p>
+<p>再例如，如果$S=\{1,\theta,1+\theta,2-\theta\}$且$z=2-\theta$，则有$1\cdot(2-\theta)=z$和$\theta\cdot(1+\theta)=-z$，因此$p(S,z)=2$。</p>
+<p>记$A$和$B$是满足以下条件的两个集合：</p>
+<ul>
+<li>$1 \in A$</li>
+<li>$A \cap B = \emptyset$</li>
+<li>$A \cup B = T$</li>
+<li>对于所有$z\in T$，有$p(A,z) = p(B,z)$</li>
+</ul>
+<p>值得注意的是，这四个条件唯一确定了集合$A$和$B$。</p>
+<p>令$F_n$为前$n$个阶乘的集合：$F_n=\{1!,2!,\dots,n!\}$，并定义$G(n)$为$F_n\cap A$中所有元素的和。</p>
+<p>已知$G(4) = 25$，$G(7) = 745$，以及$G(100) \equiv 709772949 \pmod{10^9+7}$。</p>
+<p>求$G(10^8)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 938</title>
+    <url>/938/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-938"><a href="#Problem-938" class="headerlink" title="Problem 938"></a><a href="https://projecteuler.net/problem=938">Problem 938</a></h1><hr>
+<h2 id="Exhausting-a-Colour"><a href="#Exhausting-a-Colour" class="headerlink" title="Exhausting a Colour"></a><strong>Exhausting a Colour</strong></h2><p>A deck of cards contains $R$ red cards and $B$ black cards.<br/><br>A card is chosen uniformly randomly from the deck and removed. A second card is then chosen uniformly randomly from the cards remaining and removed.</p>
+<ul>
+<li>If both cards are red, they are discarded.</li>
+<li>If both cards are black, they are both put back in the deck.</li>
+<li>If they are different colours, the red card is put back in the deck and the black card is discarded.</li>
+</ul>
+<p>Play ends when all the remaining cards in the deck are the same colour and let $P(R,B)$ be the probability that this colour is black. </p>
+<p>You are given $P(2,2) = 0.4666666667$, $P(10,9) = 0.4118903397$ and $P(34,25) = 0.3665688069$.</p>
+<p>Find $P(24690,12345)$. Give your answer with $10$ digits after the decimal point.</p>
+<hr>
+<h2 id="耗尽同色牌"><a href="#耗尽同色牌" class="headerlink" title="耗尽同色牌"></a><strong>耗尽同色牌</strong></h2><p>考虑一副包含$R$张红牌和$B$张黑牌的牌组。<br/><br>从牌组中均匀随机地选择并抽出一张牌，然后从剩余的牌中均匀随机地选择并抽出另一张牌。</p>
+<ul>
+<li>如果两张牌都是红色，则丢弃这两张牌。</li>
+<li>如果两张牌都是黑色，则放回这两张牌。</li>
+<li>如果它们的颜色不同，则放回红牌并丢弃黑牌。</li>
+</ul>
+<p>当牌组中所有剩余的牌都是同一种颜色时，游戏结束，并记$P(R,B)$为此时剩余牌的颜色均为黑色的概率。</p>
+<p>已知$P(2,2) = 0.4666666667$，$P(10,9) = 0.4118903397$，$P(34,25) = 0.3665688069$。</p>
+<p>求$P(24690,12345)$，并保留$10$位小数作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 939</title>
+    <url>/939/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-939"><a href="#Problem-939" class="headerlink" title="Problem 939"></a><a href="https://projecteuler.net/problem=939">Problem 939</a></h1><hr>
+<h2 id="Partisan-Nim"><a href="#Partisan-Nim" class="headerlink" title="Partisan Nim"></a><strong>Partisan Nim</strong></h2><p>Two players A and B are playing a variant of Nim.<br>At the beginning, there are several piles of stones. Each pile is either at the side of A or at the side of B. The piles are unordered.</p>
+<p>They make moves in turn. At a player’s turn, the player can</p>
+<ul>
+<li>either choose a pile on the opponent’s side and remove one stone from that pile;</li>
+<li>or choose a pile on their own side and remove the whole pile.</li>
+</ul>
+<p>The winner is the player who removes the last stone.</p>
+<p>Let $E(N)$ be the number of initial settings with at most $N$ stones such that, whoever plays first, A always has a winning strategy.</p>
+<p>For example $E(4) = 9$; the settings are:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Nr.</th>
+<th align="center">Piles at the side of A</th>
+<th align="center">Piles at the side of B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">$4$</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">$1, 3$</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">$2, 2$</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">$1, 1, 2$</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">$3$</td>
+<td align="center">$1$</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">$1, 2$</td>
+<td align="center">$1$</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">$2$</td>
+<td align="center">$1, 1$</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">$3$</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">$2$</td>
+<td align="center">none</td>
+</tr>
+</tbody></table>
+<p>Find $E(5000) \bmod 1234567891$.</p>
+<hr>
+<h2 id="偏心的取石子游戏"><a href="#偏心的取石子游戏" class="headerlink" title="偏心的取石子游戏"></a><strong>偏心的取石子游戏</strong></h2><p>两名玩家A和B正在玩一种变体取石子游戏。<br>游戏开始时，有数堆石子，每一堆石子要么属于A，要么属于B；石子堆之间是无序的。</p>
+<p>两名玩家轮流行动。轮到任一玩家时，该玩家可以</p>
+<ul>
+<li>选择属于对手的一堆石子，并从中移除一枚石子；或者</li>
+<li>选择属于自己的一堆石子，并移除整堆。</li>
+</ul>
+<p>移除最后一枚石子的玩家获胜。</p>
+<p>令$E(N)$为最多有$N$枚石子，且无论谁先行动A总是有必胜策略的初始局面数量。</p>
+<p>例如，$E(4) = 9$，这些初始局面分别是：</p>
+<table>
+<thead>
+<tr>
+<th align="center">编号</th>
+<th align="center">属于A的石子堆</th>
+<th align="center">属于B的石子堆</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">$4$</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">$1, 3$</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">$2, 2$</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">$1, 1, 2$</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">$3$</td>
+<td align="center">$1$</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">$1, 2$</td>
+<td align="center">$1$</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">$2$</td>
+<td align="center">$1, 1$</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">$3$</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">$2$</td>
+<td align="center">无</td>
+</tr>
+</tbody></table>
+<p>求$E(5000) \bmod 1234567891$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 941</title>
+    <url>/941/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-941"><a href="#Problem-941" class="headerlink" title="Problem 941"></a><a href="https://projecteuler.net/problem=941">Problem 941</a></h1><hr>
+<h2 id="de-Bruijn’s-Combination-Lock"><a href="#de-Bruijn’s-Combination-Lock" class="headerlink" title="de Bruijn’s Combination Lock"></a><strong>de Bruijn’s Combination Lock</strong></h2><p>de Bruijn has a digital combination lock with $k$ buttons numbered $0$ to $k-1$ where $k \le 10$.<br/><br>The lock opens when the last $n$ buttons pressed match the preset combination.</p>
+<p>Unfortunately he has forgotten the combination. He creates a sequence of these digits which contains every possible combination of length $n$. Then by pressing the buttons in this order he is sure to open the lock.</p>
+<p>Consider all sequences of shortest possible length that contains every possible combination of the digits.<br>Denote by $C(k, n)$ the lexicographically smallest of these.</p>
+<p>For example, $C(3,2)=0010211220$.</p>
+<p>Define the sequence $a_n$ by $a_0=0$ and<br>$$a_n=(920461 a_{n-1}+800217387569)\bmod 10^{12} \text{ for }\  n &gt; 0$$<br>Interpret each $a_n$ as a $12$-digit combination, adding leading zeros for any $a_n$ with less than $12$ digits.</p>
+<p>Given a positive integer $N$, we are interested in the order the combinations $a_1,\dots,a_N$ appear in $C(10,12)$. </p>
+<p>Denote by $p_n$ the <em>place</em>, numbered $1,\dots,N$, in which $a_n$ appears out of $a_1,\dots,a_N$. Define $\displaystyle F(N)=\sum_{n=1}^Np_na_n$.</p>
+<p>For example, the combination $a_1=800217387569$ is entered before $a_2=696996536878$. Therefore:<br>$$F(2)=1\cdot800217387569 + 2\cdot696996536878 = 2194210461325$$<br>You are also given $F(10)=32698850376317$.</p>
+<p>Find $F(10^7)$. Give your answer modulo $1234567891$.</p>
+<hr>
+<h2 id="德布鲁因的组合锁"><a href="#德布鲁因的组合锁" class="headerlink" title="德布鲁因的组合锁"></a><strong>德布鲁因的组合锁</strong></h2><p>德布鲁因有一个数字组合锁，锁上有$k$个按钮，编号从$0$到$k-1$，其中$k \le 10$。<br/><br>只有最后按下的$n$个按钮与预设的密码组合相匹配时，锁才会被打开。</p>
+<p>不巧的是，他忘记了密码组合。相反，他构造了一个包含所有长度为$n$的密码组合的数字序列，只需按照这个序列按下按钮，他确信能够打开锁。</p>
+<p>考虑所有包含全部密码组合且长度最短的序列。<br>用$C(k, n)$表示这些序列中字典序最小的一个。</p>
+<p>例如，$C(3, 2) = 0010211220$。</p>
+<p>定义序列$a_n$，其中$a_0=0$且<br>$$a_n=(920461 a_{n-1}+800217387569)\bmod 10^{12} \text{ for }\  n &gt; 0$$<br>每个$a_n$可以视为一个$12$位数字的密码组合，若$a_n$少于$12$位数字则添加前导零。</p>
+<p>给定正整数$N$，我们感兴趣的是密码组合$a_1,\dots,a_N$在$C(10,12)$中出现的顺序。<br/><br>记$a_n$在$a_1,\dots,a_N$中出现的顺序或<i class=zh>位置</i>为$p_n$，也即$p_n$的取值为$1,\dots,N$。定义$\displaystyle F(N)=\sum_{n=1}^Np_na_n$。</p>
+<p>例如，密码组合$a_1=800217387569$在$a_2=696996536878$之前出现，因此：<br>$$F(2)=1\cdot800217387569 + 2\cdot696996536878 = 2194210461325$$<br>已知$F(10)=32698850376317$。</p>
+<p>求$F(10^7)$，并对$1234567891$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 940</title>
+    <url>/940/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-940"><a href="#Problem-940" class="headerlink" title="Problem 940"></a><a href="https://projecteuler.net/problem=940">Problem 940</a></h1><hr>
+<h2 id="Two-Dimensional-Recurrence"><a href="#Two-Dimensional-Recurrence" class="headerlink" title="Two-Dimensional Recurrence"></a><strong>Two-Dimensional Recurrence</strong></h2><p>The <strong>Fibonacci sequence</strong> $(f_i)$ is the unique sequence such that</p>
+<ul>
+<li>$f_0=0$</li>
+<li>$f_1=1$</li>
+<li>$f_{i+1}=f_i+f_{i-1}$</li>
+</ul>
+<p>Similarly, there is a unique function $A(m,n)$ such that</p>
+<ul>
+<li>$A(0,0)=0$</li>
+<li>$A(0,1)=1$</li>
+<li>$A(m+1,n)=A(m,n+1)+A(m,n)$</li>
+<li>$A(m+1,n+1)=2A(m+1,n)+A(m,n)$</li>
+</ul>
+<p>Define $S(k)=\displaystyle\sum_{i=2}^k\sum_{j=2}^k A(f_i,f_j)$. For example<br>$$<br>\begin{aligned}<br>S(3)&amp;=A(1,1)+A(1,2)+A(2,1)+A(2,2)\\<br>&amp;=2+5+7+16\\<br>&amp;=30<br>\end{aligned}<br>$$</p>
+<p>You are also given $S(5)=10396$.</p>
+<p>Find $S(50)$, giving your answer modulo $1123581313$.</p>
+<hr>
+<h2 id="二维递归"><a href="#二维递归" class="headerlink" title="二维递归"></a><strong>二维递归</strong></h2><p><strong>斐波那契数列</strong>$(f_i)$是指满足以下条件的唯一数列：</p>
+<ul>
+<li>$f_0=0$</li>
+<li>$f_1=1$</li>
+<li>$f_{i+1}=f_i+f_{i-1}$</li>
+</ul>
+<p>类似地，存在唯一的函数$A(m,n)$满足：</p>
+<ul>
+<li>$A(0,0)=0$</li>
+<li>$A(0,1)=1$</li>
+<li>$A(m+1,n)=A(m,n+1)+A(m,n)$</li>
+<li>$A(m+1,n+1)=2A(m+1,n)+A(m,n)$</li>
+</ul>
+<p>定义$S(k)=\displaystyle\sum_{i=2}^k\sum_{j=2}^k A(f_i,f_j)$。例如：<br>$$<br>\begin{aligned}<br>S(3)&amp;=A(1,1)+A(1,2)+A(2,1)+A(2,2)\\<br>&amp;=2+5+7+16\\<br>&amp;=30<br>\end{aligned}<br>$$</p>
+<p>已知$S(5)=10396$。</p>
+<p>求$S(50)$，并对$1123581313$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
 </search>
