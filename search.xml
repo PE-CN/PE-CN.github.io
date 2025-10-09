@@ -7370,17 +7370,15 @@ A(9, 2), B(2, -9), C(-6, 7)
     <url>/296/</url>
     <content><![CDATA[<hr>
 <h1 id="Problem-296"><a href="#Problem-296" class="headerlink" title="Problem 296"></a><a href="https://projecteuler.net/problem=296">Problem 296</a></h1><hr>
-<p><strong>Angular Bisector and Tangent</strong></p>
-<p>Given is an integer sided triangle ABC with BC ≤ AC ≤ AB.<br>k is the angular bisector of angle ACB. m is the tangent at C to the circumscribed circle of ABC. n is a line parallel to m through B.<br>The intersection of n and k is called E.</p>
-<center><img src="/resources/images/0296_bisector.gif"></center>
+<h2 id="Angular-Bisector-and-Tangent"><a href="#Angular-Bisector-and-Tangent" class="headerlink" title="Angular Bisector and Tangent"></a><strong>Angular Bisector and Tangent</strong></h2><p>Given is an integer sided triangle $ABC$ with $BC \le AC \le AB$.<br/><br>$k$ is the angular bisector of angle $ACB$.<br/><br>$m$ is the tangent at $C$ to the circumscribed circle of $ABC$.<br/><br>$n$ is a line parallel to $m$ through $B$.<br/><br>The intersection of $n$ and $k$ is called $E$.</p>
+<div style="text-align:center"><img src="/resources/images/0296_bisector.gif" alt="0296_bisector.gif"></div>
 
-<p>How many triangles ABC with a perimeter not exceeding 100 000 exist such that BE has integral length?</p>
+<p>How many triangles $ABC$ with a perimeter not exceeding $100\ 000$ exist such that $BE$ has integral length?</p>
 <hr>
-<p><strong>角平分线和切线</strong></p>
-<p>给定整数边三角形ABC，其三边满足BC ≤ AC ≤ AB。<br>k是角ACB的角平分线。m是ABC的外接圆在点C处的切线。n是过点B平行于m的直线。<br>n和k的交点记为E。</p>
-<center><img src="/resources/images/0296_bisector.gif"></center>
+<h2 id="角平分线与切线（一）"><a href="#角平分线与切线（一）" class="headerlink" title="角平分线与切线（一）"></a><strong>角平分线与切线（一）</strong></h2><p>给定一个各边长均为整数且满足$BC \le AC \le AB$的三角形$ABC$：<br/><br>$k$是角$ACB$的角平分线。<br/><br>$m$是$ABC$外接圆在$C$点的切线。<br/><br>$n$是过$B$点平行于$m$的直线。<br/><br>$n$和$k$的交点记为$E$。</p>
+<div style="text-align:center"><img src="/resources/images/0296_bisector.gif" alt="0296_bisector.gif"></div>
 
-<p>有多少个周长不超过100 000的三角形ABC使得BE的长为整数？</p>
+<p>有多少个周长不超过$100\ 000$且$BE$的长度是整数的三角形$ABC$？</p>
 <hr>
 ]]></content>
   </entry>
@@ -12007,7 +12005,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
     <content><![CDATA[<hr>
 <h1 id="Problem-444"><a href="#Problem-444" class="headerlink" title="Problem 444"></a><a href="https://projecteuler.net/problem=444">Problem 444</a></h1><hr>
 <p><strong>The Roundtable Lottery</strong></p>
-<p>A group of p people decide to sit down at a round table and play a lottery-ticket trading game. Each person starts off with a randomly-assigned, unscratched lottery ticket. Each ticket, when scratched, reveals a whole-pound prize ranging anywhere from £1 to £p, with no two tickets alike. The goal of the game is for each person to maximize his ticket winnings upon leaving the game.</p>
+<p>A group of $p$ people decide to sit down at a round table and play a lottery-ticket trading game. Each person starts off with a randomly-assigned, unscratched lottery ticket. Each ticket, when scratched, reveals a whole-pound prize ranging anywhere from £1 to £$p$, with no two tickets alike. The goal of the game is for each person to maximize his ticket winnings upon leaving the game.</p>
 <p>An arbitrary person is chosen to be the first player. Going around the table, each player has only one of two options:</p>
 <ol>
 <li>The player can scratch his ticket and reveal its worth to everyone at the table.</li>
@@ -12015,12 +12013,12 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </ol>
 <p>The game ends once all tickets have been scratched. All players still remaining at the table must leave with their currently-held tickets.</p>
 <p>Assume that each player uses the optimal strategy for maximizing the expected value of his ticket winnings. </p>
-<p>Let E(p) represent the expected number of players left at the table when the game ends in a game consisting of p players (e.g. E(111)&nbsp;=&nbsp;5.2912 when rounded to 5 significant digits).</p>
-<p>Let S<sub>1</sub>(N) = <img style="vertical-align:middle" src="https://projecteuler.net/project/images/p444_sum.png"> E(p)<br>Let S<sub>k</sub>(N) = <img style="vertical-align:middle" src="https://projecteuler.net/project/images/p444_sum.png"> S<sub>k-1</sub>(p) for k &gt; 1</p>
-<p>Find S<sub>20</sub>(10<sup>14</sup>) and write the answer in scientific notation rounded to 10 significant digits. Use a lowercase e to separate mantissa and exponent (e.g. S<sub>3</sub>(100) = 5.983679014e5).</p>
+<p>Let $E(p)$ represent the expected number of players left at the table when the game ends in a game consisting of p players (e.g. $E(111) = 5.2912$ when rounded to 5 significant digits).</p>
+<p>Let $S_1(N) = \sum_{p=1}^N E(p)$.<br>Let $S_k(N) = \sum_{p=1}^N S_{k-1}(p)$ for $k &gt; 1$.</p>
+<p>Find $S_{20}(10^{14})$ and write the answer in scientific notation rounded to 10 significant digits. Use a lowercase e to separate mantissa and exponent (e.g. $S_3(100) = 5.983679014e5$).</p>
 <hr>
 <p><strong>圆桌彩票</strong></p>
-<p>一群共p个人决定围绕圆桌坐下玩一个彩票交易游戏。每个人在开始游戏时有一张随机分配的、未刮开的彩票，彩票刮开之后就会显示从£1至£p的一个随机整数数额，但没有两张彩票的数额相同。每个玩家进行游戏的目标是在离开游戏时最大化他的彩票收益。</p>
+<p>一群共 $p$ 个人决定围绕圆桌坐下玩一个彩票交易游戏。每个人在开始游戏时有一张随机分配的、未刮开的彩票，彩票刮开之后就会显示从£1至£$p$ 的一个随机整数数额，但没有两张彩票的数额相同。每个玩家进行游戏的目标是在离开游戏时最大化他的彩票收益。</p>
 <p>随机选择一个人作为第一个玩家，然后游戏绕着圆桌一次进行，每个玩家有两个选项：</p>
 <ol>
 <li>玩家可以刮开他的彩票，把彩票上的数额展示给所有人看。</li>
@@ -12028,9 +12026,9 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 </ol>
 <p>当所有彩票都已经刮开时，游戏结束。所有仍在场上的玩家必须拿着目前持有的彩票离开游戏。</p>
 <p>假定所有玩家使用最优策略以最大化他的彩票收益。</p>
-<p>对于由p个玩家进行的游戏，记E(p)是当游戏结束时还在圆桌上的人数期望值（例如E(111)&nbsp;=&nbsp;5.2912，保留5位小数）。</p>
-<p>记S<sub>1</sub>(N) = <img style="vertical-align:middle" src="https://projecteuler.net/project/images/p444_sum.png"> E(p)<br>记S<sub>k</sub>(N) = <img style="vertical-align:middle" src="https://projecteuler.net/project/images/p444_sum.png"> S<sub>k-1</sub>(p)对于k &gt; 1</p>
-<p>求S<sub>20</sub>(10<sup>14</sup>)，并保留10位有效数字，用小写字母e分隔尾数和指数（例如，S<sub>3</sub>(100) = 5.983679014e5）。</p>
+<p>对于由p个玩家进行的游戏，记 $E(p)$ 是当游戏结束时还在圆桌上的人数期望值（例如 $E(111) = 5.2912$ ，保留5位小数）。</p>
+<p>记 $S_1(N) = \sum_{p=1}^N E(p)$<br>记 $S_k(N) = \sum_{p=1}^N S_{k-1}(p)$ for $k &gt; 1$</p>
+<p>求 $S_{20}(10^{14})$ ，并保留10位有效数字，用小写字母e分隔尾数和指数（例如，$S_3(100) = 5.983679014e5$ ）。</p>
 <hr>
 ]]></content>
   </entry>
@@ -20045,7 +20043,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <hr>
 <h2 id="整除列的逆序对数"><a href="#整除列的逆序对数" class="headerlink" title="整除列的逆序对数"></a><strong>整除列的逆序对数</strong></h2><p>一个数字序列的<i class=zh>逆序对数</i>是指通过交换相邻数字对序列进行排序时所需的步数。<br>例如，序列$34214$的逆序对数为$5$：$34214 \to 32414 \to 23414 \to 23144 \to 21344 \to12344$。</p>
 <p>将数字序列中的每个数字替换为其约数，得到的新序列称为其<i class=zh>整除列</i>。<br>例如，序列$332$有$8$个整除列：${332,331,312,311,132,131,112,111}$。</p>
-<p>记$G(N)$为连接所有小于$N$的质数所构成的序列（不包含前导零）。例如，$G(20) = 235711131719$。</p>
+<p>记$G(N)$为连接所有小于$N$的质数所构成的序列（不包含任何零）。例如，$G(20) = 235711131719$。</p>
 <p>记$F(N)$为$G(N)$的所有整除列的逆序对数之和。<br>已知$F(20) = 3312$，$F(50) = 338079744$。</p>
 <p>求$F(10^8)$并将你的答案对$1\ 000\ 000\ 007$取余。</p>
 <hr>
@@ -20297,7 +20295,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>有向图中的一个<strong>强连通分支</strong>是指满足以下两条性质的非空结点集$M$：</p>
 <ul>
 <li>$M$中的任意两个结点之间都是强连通的。</li>
-<li>$M$是极大的，这意味着不存在$M$之内的结点和$M$之外的结点之间是</li>
+<li>$M$是极大的，这意味着不存在$M$之内的结点和$M$之外的结点之间是强连通的。</li>
 </ul>
 <p>共有$2^H\times 2^W$种绘制有向直线的方式，每种方式确定了一张有向图$\mathcal{G}$。记$S(\mathcal{G})$为$\mathcal{G}$中强连通分支的数目。</p>
 <p>下图展示了$H=3$、$W=4$时的一张有向图，这张图有四个不同的强连通分支（用不同颜色表示）。</p>
@@ -24009,8 +24007,8 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>Let $X(N)$ be the XOR of the $b$ values for all solutions to this equation satisfying $0 \le a \le b \le N$.<br /><br>You are given $X(10)=5$.</p>
 <p>Find $X(10^{18})$.</p>
 <hr>
-<h2 id="异或等式（一）"><a href="#异或等式（一）" class="headerlink" title="异或等式（一）"></a><strong>异或等式（一）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 </p>
-<p>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑等式：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = 5$$<br>例如，$(a, b) = (3, 6)$是上式的一个解。</p>
+<h2 id="异或方程（一）"><a href="#异或方程（一）" class="headerlink" title="异或方程（一）"></a><strong>异或方程（一）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 </p>
+<p>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑方程：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = 5$$<br>例如，$(a, b) = (3, 6)$是上式的一个解。</p>
 <p>考虑所有满足$0 \le a \le b \le N$的上式的解，并记$X(N)$为所有这些解中$b$的取值按位异或的结果。<br /><br>已知$X(10)=5$。</p>
 <p>求$X(10^{18})$。</p>
 <hr>
@@ -24026,7 +24024,7 @@ If it happens that the conjecture is false, then the accepted answer to this pro
 <p>You are given $G(1000,100)=398$.</p>
 <p>Find $G(10^{17},1\ 000\ 000).$</p>
 <hr>
-<h2 id="异或等式（二）"><a href="#异或等式（二）" class="headerlink" title="异或等式（二）"></a><strong>异或等式（二）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 <br /><br>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑等式：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = k$$<br>例如，$(a, b) = (3, 6)$是上式取$k=5$时的一个解。</p>
+<h2 id="异或方程（二）"><a href="#异或方程（二）" class="headerlink" title="异或方程（二）"></a><strong>异或方程（二）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 <br /><br>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑方程：<br>$$(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = k$$<br>例如，$(a, b) = (3, 6)$是上式取$k=5$时的一个解。</p>
 <p>若上式取遍所有$k \le m$，考虑其所有满足$0 \le a \le b \le N$的解，记$G(N,m)$为所有这些解的数目。</p>
 <p>已知$G(1000,100)=398$。</p>
 <p>求$G(10^{17},1\ 000\ 000)$。</p>
@@ -25916,6 +25914,460 @@ $2, 2\quad 1, 1, 1\quad 3 \quad 2, 2$
 <p>定义$S(k)=\displaystyle\sum_{i=2}^k\sum_{j=2}^k A(f_i,f_j)$。例如：<br>$$<br>\begin{aligned}<br>S(3)&amp;=A(1,1)+A(1,2)+A(2,1)+A(2,2)\\<br>&amp;=2+5+7+16\\<br>&amp;=30<br>\end{aligned}<br>$$</p>
 <p>已知$S(5)=10396$。</p>
 <p>求$S(50)$，并对$1123581313$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 942</title>
+    <url>/942/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-942"><a href="#Problem-942" class="headerlink" title="Problem 942"></a><a href="https://projecteuler.net/problem=942">Problem 942</a></h1><hr>
+<h2 id="Mersenne’s-Square-Root"><a href="#Mersenne’s-Square-Root" class="headerlink" title="Mersenne’s Square Root"></a><strong>Mersenne’s Square Root</strong></h2><p>Given a natural number $q$, let $p = 2^q - 1$ be the $q$-th <strong>Mersenne number</strong>.</p>
+<p>Let $R(q)$ be the minimal square root of $q$ modulo $p$, if one exists. In other words, $R(q)$ is the smallest positive integer $x$ such that $x^2 - q$ is divisible by $p$.</p>
+<p>For example, $R(5)=6$ and $R(17)=47569$.</p>
+<p>Find $R(74\ 207\ 281)$. Give your answer modulo $10^9 + 7$.</p>
+<p>Note: $2^{74207281}-1$ is prime.</p>
+<hr>
+<h2 id="梅森平方根"><a href="#梅森平方根" class="headerlink" title="梅森平方根"></a><strong>梅森平方根</strong></h2><p>对于给定自然数$q$，记$p = 2^q - 1$为第$q$个<strong>梅森数</strong>。</p>
+<p>记$R(q)$为$q$在模$p$同余意义下的最小平方根（若存在）。换句话说，$R(q)$是满足$x^2 - q$能被$p$整除的最小正整数$x$。</p>
+<p>例如，$R(5)=6$，$R(17)=47569$。</p>
+<p>求$R(74\ 207\ 281)$，并对$10^9 + 7$取余作为你的答案。</p>
+<p>注意：$2^{74207281}-1$是质数。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 944</title>
+    <url>/944/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-944"><a href="#Problem-944" class="headerlink" title="Problem 944"></a><a href="https://projecteuler.net/problem=944">Problem 944</a></h1><hr>
+<h2 id="Sum-of-Elevisors"><a href="#Sum-of-Elevisors" class="headerlink" title="Sum of Elevisors"></a><strong>Sum of Elevisors</strong></h2><p>Given a set $E$ of positive integers, an element $x$ of $E$ is called an <em>element divisor (elevisor)</em> of $E$ if $x$ divides <strong>another</strong> element of $E$.</p>
+<p>The sum of all elevisors of $E$ is denoted $\operatorname{sev}(E)$.<br /><br>For example, $\operatorname{sev}(\{1, 2, 5, 6\}) = 1 + 2 = 3$.</p>
+<p>Let $S(n)$ be the sum of $\operatorname{sev}(E)$ for all subsets $E$ of $\{1, 2, \dots, n\}$.<br/><br>You are given $S(10) = 4927$.</p>
+<p>Find $S(10^{14}) \bmod 1234567891$.</p>
+<hr>
+<h2 id="元素因数之和"><a href="#元素因数之和" class="headerlink" title="元素因数之和"></a><strong>元素因数之和</strong></h2><p>给定正整数集合$E$，如果$E$的一个元素$x$能整除$E$的<strong>另一个</strong>元素，则称$x$为$E$的<i class=zh>元素因数</i>。</p>
+<p>$E$的所有元素因数之和记作$\operatorname{sev}(E)$。<br /><br>例如，$\operatorname{sev}(\{1, 2, 5, 6\}) = 1 + 2 = 3$。</p>
+<p>记$S(n)$为$\{1, 2, \dots, n\}$的所有子集$E$对应的$\operatorname{sev}(E)$之和。<br/><br>已知$S(10) = 4927$。</p>
+<p>求$S(10^{14}) \bmod 1234567891$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 943</title>
+    <url>/943/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-943"><a href="#Problem-943" class="headerlink" title="Problem 943"></a><a href="https://projecteuler.net/problem=943">Problem 943</a></h1><hr>
+<h2 id="Self-Describing-Sequences"><a href="#Self-Describing-Sequences" class="headerlink" title="Self Describing Sequences"></a><strong>Self Describing Sequences</strong></h2><p>Given two unequal positive integers $a$ and $b$, we define a self-describing sequence consisting of alternating runs of $a$s and $b$s. The first element is $a$ and the sequence of run lengths is the original sequence.</p>
+<p>For $a=2, b=3$, the sequence is:<br>$$2, 2, 3, 3, 2, 2, 2, 3, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 3, 2, 2, 2, 3, 3, 3,\ldots$$<br>The sequence begins with <strong>two</strong> $2$s and <strong>two</strong> $3$s, then <strong>three</strong> $2$s and <strong>three</strong> $3$s, so the run lengths $2, 2, 3, 3, \ldots$ are given by the original sequence.</p>
+<p>Let $T(a, b, N)$ be the sum of the first $N$ elements of the sequence. You are given $T(2,3,10) = 25$, $T(4,2,10^4) = 30004$, $T(5,8,10^6) = 6499871$.</p>
+<p>Find $\sum T(a, b, 22332223332233)$ for $2 \le a \le 223$, $2 \le b \le 223$ and $a \neq b$. Give your answer modulo $2233222333$.</p>
+<hr>
+<h2 id="自描述数列"><a href="#自描述数列" class="headerlink" title="自描述数列"></a><strong>自描述数列</strong></h2><p>给定两个不相等的正整数$a$和$b$，定义由$a$和$b$交替组成的自描述数列如下：该数列的第一个元素是$a$，且描述每一段相同整数数目的数列就是原数列本身。</p>
+<p>对于$a=2, b=3$，该数列为：<br>$$2, 2, 3, 3, 2, 2, 2, 3, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 3, 2, 2, 2, 3, 3, 3,\ldots$$<br>该数列以<strong>两</strong>个$2$和<strong>两</strong>个$3$开始，然后是<strong>三</strong>个$2$和<strong>三</strong>个$3$，因此描述每一段相同整数数目的数列$2, 2, 3, 3, \ldots$恰好就是原数列。</p>
+<p>记$T(a, b, N)$为该数列前$N$个元素的和。已知$T(2,3,10) = 25$，$T(4,2,10^4) = 30004$，$T(5,8,10^6) = 6499871$。</p>
+<p>对于所有$2 \le a \le 223$、$2 \le b \le 223$且$a \neq b$，求$\sum T(a, b, 22332223332233)$，并对$2233222333$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 945</title>
+    <url>/945/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-945"><a href="#Problem-945" class="headerlink" title="Problem 945"></a><a href="https://projecteuler.net/problem=945">Problem 945</a></h1><hr>
+<h2 id="XOR-Equation-C"><a href="#XOR-Equation-C" class="headerlink" title="XOR-Equation C"></a><strong>XOR-Equation C</strong></h2><p>We use $x\oplus y$ for the bitwise XOR of $x$ and $y$.<br /><br>Define the <i>XOR-product</i> of $x$ and $y$, denoted by $x \otimes y$, similar to a long multiplication in base $2$, except that the intermediate results are XORed instead of the usual integer addition.<br /><br>For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>We consider the equation:<br>$$\begin{aligned}<br>(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = c \otimes c<br>\end{aligned}$$<br>For example, $(a, b, c) = (1, 2, 1)$ is a solution to this equation, and so is $(1, 8, 13)$.</p>
+<p>Let $F(N)$ be the number of solutions to this equation satisfying $0 \le a \le b \le N$. You are given $F(10)=21$.</p>
+<p>Find $F(10^7)$.</p>
+<hr>
+<h2 id="异或方程（三）"><a href="#异或方程（三）" class="headerlink" title="异或方程（三）"></a><strong>异或方程（三）</strong></h2><p>用$x\oplus y$表示$x$和$y$按位异或的结果。<br /><br>考虑$x$和$y$的$2$进制长乘法，但将中间结果的相加替换为按位异或，定义其结果为$x$和$y$的<i class=zh>异或积</i>，并记作$x \otimes y$。 <br /><br>例如，$7 \otimes 3 = 9$，或在$2$进制下，$111_2 \otimes 11_2 = 1001_2$：<br>$$<br>\begin{aligned}<br>\phantom{\otimes 111} 111_2 \\<br>\otimes \phantom{1111} 11_2 \\<br>\hline<br>\phantom{\otimes 111} 111_2 \\<br>\oplus \phantom{11} 111_2  \phantom{9} \\<br>\hline<br>\phantom{\otimes 11} 1001_2 \\<br>\end{aligned}<br>$$<br>考虑方程：<br>$$\begin{aligned}<br>(a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = c \otimes c<br>\end{aligned}$$<br>例如，$(a, b, c) = (1, 2, 1)$是该方程的一个解，$(1, 8, 13)$则是另外一个解。</p>
+<p>记$F(N)$为满足$0 \le a \le b \le N$的该方程解的数量。已知$F(10)=21$。</p>
+<p>求$F(10^7)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 946</title>
+    <url>/946/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-946"><a href="#Problem-946" class="headerlink" title="Problem 946"></a><a href="https://projecteuler.net/problem=946">Problem 946</a></h1><hr>
+<h2 id="Continued-Fraction-Fraction"><a href="#Continued-Fraction-Fraction" class="headerlink" title="Continued Fraction Fraction"></a><strong>Continued Fraction Fraction</strong></h2><p>Given the representation of a continued fraction<br>$$ a_0+ \cfrac{1}{a_1+ \cfrac{1}{a_2+\cfrac{1}{a_3+\ddots}}}= [a_0;a_1,a_2,a_3,\ldots] $$</p>
+<p>$\alpha$ is a real number with continued fraction representation:<br>$\alpha = [2;1,1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,\ldots]$<br>where the number of $1$’s between each of the $2$’s are consecutive prime numbers.</p>
+<p>$\beta$ is another real number defined as<br>$$\beta = \frac{2\alpha+3}{3\alpha+2}$$</p>
+<p>The first ten coefficients of the continued fraction of $\beta$ are $[0;1,5,6,16,9,1,10,16,11]$ with sum $75$.</p>
+<p>Find the sum of the first $10^8$ coefficients of the continued fraction of $\beta$.</p>
+<hr>
+<h2 id="连分数的分数"><a href="#连分数的分数" class="headerlink" title="连分数的分数"></a><strong>连分数的分数</strong></h2><p>任意连分数可以表示为<br>$$ a_0+ \cfrac{1}{a_1+ \cfrac{1}{a_2+\cfrac{1}{a_3+\ddots}}}= [a_0;a_1,a_2,a_3,\ldots] $$</p>
+<p>$\alpha$是一个实数，其连分数表示为：<br>$\alpha = [2;1,1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,\ldots]$<br>其中每两个$2$之间的$1$的数目是连续的质数。</p>
+<p>$\beta$是另一个实数，定义为：<br>$$\beta = \frac{2\alpha+3}{3\alpha+2}$$</p>
+<p>$\beta$的连分数表示的前十个系数是$[0;1,5,6,16,9,1,10,16,11]$，其和为$75$。</p>
+<p>求$\beta$的连分数表示的前$10^8$个系数之和。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 947</title>
+    <url>/947/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-947"><a href="#Problem-947" class="headerlink" title="Problem 947"></a><a href="https://projecteuler.net/problem=947">Problem 947</a></h1><hr>
+<h2 id="Fibonacci-Residues"><a href="#Fibonacci-Residues" class="headerlink" title="Fibonacci Residues"></a><strong>Fibonacci Residues</strong></h2><p>The $(a,b,m)$-sequence, where $0 \leq a,b \lt m$, is defined as</p>
+<p>$$\begin{aligned}<br>g(0)&amp;=a\\<br>g(1)&amp;=b\\<br>g(n)&amp;= \big(g(n-1) + g(n-2)\big) \bmod m<br>\end{aligned}$$</p>
+<p>All $(a,b,m)$-sequences are periodic with period denoted by $p(a,b,m)$.<br /><br>The first few terms of the $(0,1,8)$-sequence are $(0,1,1,2,3,5,0,5,5,2,7,1,0,1,1,2,\ldots )$ and so $p(0,1,8)=12$.</p>
+<p>Let $\displaystyle s(m)=\sum_{a=0}^{m-1}\sum_{b=0}^{m-1} p(a,b,m)^2$. For example, $s(3)=513$ and $s(10)=225820$.</p>
+<p>Define $\displaystyle S(M)=\sum_{m=1}^{M}s(m)$. You are given, $S(3)=542$ and $S(10)=310897$.</p>
+<p>Find $S(10^6)$. Give your answer modulo $999\ 99\ 893$.</p>
+<hr>
+<h2 id="斐波那契余数"><a href="#斐波那契余数" class="headerlink" title="斐波那契余数"></a><strong>斐波那契余数</strong></h2><p>对于$0 \leq a,b \lt m$，定义$(a,b,m)$-数列如下：</p>
+<p>$$\begin{aligned}<br>g(0)&amp;=a\\<br>g(1)&amp;=b\\<br>g(n)&amp;= \big(g(n-1) + g(n-2)\big) \bmod m<br>\end{aligned}$$</p>
+<p>所有$(a,b,m)$-数列都是周期性的，其周期记为$p(a,b,m)$。<br /><br>例如，$(0,1,8)$-数列的前几项为$(0,1,1,2,3,5,0,5,5,2,7,1,0,1,1,2,\ldots )$，因此$p(0,1,8)=12$。</p>
+<p>记$\displaystyle s(m)=\sum_{a=0}^{m-1}\sum_{b=0}^{m-1} p(a,b,m)^2$。例如，$s(3)=513$，$s(10)=225820$。</p>
+<p>定义$\displaystyle S(M)=\sum_{m=1}^{M}s(m)$。已知$S(3)=542$，$S(10)=310897$。</p>
+<p>求$S(10^6)$，并对$999\ 999\ 893$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 949</title>
+    <url>/949/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-949"><a href="#Problem-949" class="headerlink" title="Problem 949"></a><a href="https://projecteuler.net/problem=949">Problem 949</a></h1><hr>
+<h2 id="Left-vs-Right-II"><a href="#Left-vs-Right-II" class="headerlink" title="Left vs Right II"></a><strong>Left vs Right II</strong></h2><p>Left and Right play a game with a number of words, each consisting of L’s and R’s, alternating turns. On Left’s turn, <strong>for each word</strong>, Left can remove any number of letters (possibly zero), but not all the letters, from the left side of the word. However, at least one letter must be removed from at least one word. Right does the same on Right’s turn except that Right removes letters from the right side of each word. The game continues until each word is reduced to a single letter. If there are more L’s than R’s remaining then Left wins; otherwise if there are more R’s than L’s then Right wins. In this problem we only consider games with an odd number of words, thus making ties impossible.</p>
+<p>Let $G(n, k)$ be the number of ways of choosing $k$ words of length $n$, for which Right has a winning strategy when Left plays first. Different orderings of the same set of words are to be counted separately.</p>
+<p>It can be seen that $G(2, 3)=14$ due to the following solutions (and their reorderings):<br>$$\begin{aligned}<br>(\texttt{LL},\texttt{RR},\texttt{RR})&amp;:3\text{ orderings}\\<br>(\texttt{LR},\texttt{LR},\texttt{LR})&amp;:1\text{ ordering}\\<br>(\texttt{LR},\texttt{LR},\texttt{RR})&amp;:3\text{ orderings}\\<br>(\texttt{LR},\texttt{RR},\texttt{RR})&amp;:3\text{ orderings}\\<br>(\texttt{RL},\texttt{RR},\texttt{RR})&amp;:3\text{ orderings}\\<br>(\texttt{RR},\texttt{RR},\texttt{RR})&amp;:1\text{ ordering}<br>\end{aligned}<br>$$You are also given $G(4, 3)=496$ and $G(8, 5)=26359197010$.</p>
+<p>Find $G(20, 7)$ giving your answer modulo $1001001011$.</p>
+<hr>
+<h2 id="小左对小右（二）"><a href="#小左对小右（二）" class="headerlink" title="小左对小右（二）"></a><strong>小左对小右（二）</strong></h2><p>小左和小右在用若干个由字母L和R组成的单词玩游戏，两人轮流行动。在小左的回合中，小左可以从<strong>每个单词</strong>的左侧移除任意个字母（可以为零），但不能移除所有字母，且必须从至少一个单词中移除一个字母；小右则类似地从单词的右侧移除字母。游戏持续进行，直到每个单词都只剩下一个字母：如果剩余的字母L比字母R更多，则小左获胜；反之如果剩余的字母R比字母L多，则小右获胜。本题假设单词数目总是奇数个，因此不可能出现平局。</p>
+<p>记$G(n, k)$为游戏开始时有$k$个长度为$n$的单词且当小左先行动时小右有必胜策略的局面数；由相同单词的不同排列构成的局面分别计数。</p>
+<p>已知$G(2, 3)=14$，包括如下的几种局面（包括其不同排列）：<br>$$\begin{aligned}<br>(\texttt{LL},\texttt{RR},\texttt{RR})&amp;:3\text{种排列}\\<br>(\texttt{LR},\texttt{LR},\texttt{LR})&amp;:1\text{种排列}\\<br>(\texttt{LR},\texttt{LR},\texttt{RR})&amp;:3\text{种排列}\\<br>(\texttt{LR},\texttt{RR},\texttt{RR})&amp;:3\text{种排列}\\<br>(\texttt{RL},\texttt{RR},\texttt{RR})&amp;:3\text{种排列}\\<br>(\texttt{RR},\texttt{RR},\texttt{RR})&amp;:1\text{种排列}<br>\end{aligned}$$<br>此外还已知$G(4, 3)=496$，$G(8, 5)=26359197010$。</p>
+<p>求$G(20, 7)$，并对$1001001011$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 948</title>
+    <url>/948/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-948"><a href="#Problem-948" class="headerlink" title="Problem 948"></a><a href="https://projecteuler.net/problem=948">Problem 948</a></h1><hr>
+<h2 id="Left-vs-Right"><a href="#Left-vs-Right" class="headerlink" title="Left vs Right"></a><strong>Left vs Right</strong></h2><p>Left and Right play a game with a word consisting of L’s and R’s, alternating turns. On Left’s turn, Left can remove any positive number of letters, but not all the letters, from the left side of the word. Right does the same on Right’s turn except that Right removes letters from the right side. The game continues until only one letter remains: if it is an ‘L’ then Left wins; if it is an ‘R’ then Right wins.</p>
+<p>Let $F(n)$ be the number of words of length $n$ where the player moving first, whether it’s Left or Right, will win the game if both play optimally.</p>
+<p>You are given $F(3)=4$ and $F(8)=181$.</p>
+<p>Find $F(60)$.</p>
+<hr>
+<h2 id="小左对小右（一）"><a href="#小左对小右（一）" class="headerlink" title="小左对小右（一）"></a><strong>小左对小右（一）</strong></h2><p>小左和小右在用一个由字母L和R组成的单词玩游戏，两人轮流行动。在小左的回合中，小左可以从单词的左侧移除任意正数个字母，但不能移除所有字母；小右则类似地从单词的右侧移除字母。游戏持续进行，直到只剩下一个字母：如果该字母是L则小左获胜；如果是R则小右获胜。</p>
+<p>记$F(n)$为长度为$n$且在双方均采取最优策略时先手玩家（无论是小左还是小右）必胜的单词数量。</p>
+<p>已知$F(3)=4$，$F(8)=181$。</p>
+<p>求$F(60)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 950</title>
+    <url>/950/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-950"><a href="#Problem-950" class="headerlink" title="Problem 950"></a><a href="https://projecteuler.net/problem=950">Problem 950</a></h1><hr>
+<h2 id="Pirate-Treasure"><a href="#Pirate-Treasure" class="headerlink" title="Pirate Treasure"></a><strong>Pirate Treasure</strong></h2><p>A band of pirates has come into a hoard of treasure, and must decide how to distribute it amongst themselves. The treasure consists of identical, indivisible gold coins.</p>
+<p>According to pirate law, the distribution of treasure must proceed as follows:</p>
+<ol>
+<li>The most senior pirate proposes a distribution of the coins.</li>
+<li>All pirates, including the most senior, vote on whether to accept the distribution.</li>
+<li>If at least half of the pirates vote to accept, the distribution stands.</li>
+<li>Otherwise, the most senior pirate must walk the plank, and the process resumes from step 1 with the next most senior pirate proposing another distribution.</li>
+</ol>
+<p>The <i>happiness</i> of a pirate is equal to $-\infty$ if he doesn’t survive; otherwise, it is equal to $c + p\cdot w$, where $c$ is the number of coins that pirate receives in the distribution, $w$ is the total number of pirates who were made to walk the plank, and $p$ is the <i>bloodthirstiness</i> of the pirate.</p>
+<p>The pirates have a number of characteristics:</p>
+<ul>
+<li>Greed: to maximise their happiness.</li>
+<li>Ruthlessness: incapable of cooperation, making promises or maintaining any kind of reputation.</li>
+<li>Shrewdness: perfectly rational and logical.</li>
+</ul>
+<p>Consider the happiness $c(n,C,p) + p\cdot w(n,C,p)$ of the most senior surviving pirate in the situation where $n$ pirates, all with equal bloodthirstiness $p$, have found $C$ coins. For example, $c(5,5,\frac{1}{10}) = 3$ and $w(5,5,\frac{1}{10})=0$ because it can be shown that if the most senior pirate proposes a distribution of $3,0,1,0,1$ coins to the pirates (in decreasing order of seniority), the three pirates receiving coins will all vote to accept. On the other hand, $c(5,1,\frac{1}{10}) = 0$ and $w(5,1,\frac{1}{10}) = 1$: the most senior pirate cannot survive with any proposal, and then the second most senior pirate must give the only coin to another pirate in order to survive.</p>
+<p>Define $\displaystyle T(N,C,p) = \sum_{n=1}^N \left( c(n,C,p) + w(n,C,p) \right)$. You are given that $T(30,3,\frac{1}{\sqrt{3}}) = 190$, $T(50,3,\frac{1}{\sqrt{31}}) = 385$, and $T(10^3, 101, \frac{1}{\sqrt{101}}) = 142427$.</p>
+<p>Find $\displaystyle \sum_{k=1}^6 T(10^{16},10^k+1,\tfrac{1}{\sqrt{10^k+1}})$. Give the last $9$ digits as your answer.</p>
+<hr>
+<h2 id="海盗宝藏"><a href="#海盗宝藏" class="headerlink" title="海盗宝藏"></a><strong>海盗宝藏</strong></h2><p>一群海盗找到了一堆宝藏，需要决定如何进行分配。这些宝藏由完全相同且不可分割的金币组成。</p>
+<p>根据海盗法则，宝藏分配必须按照以下流程进行：</p>
+<ol>
+<li>资历最深的海盗提出一个金币分配方案。</li>
+<li>所有海盗，包括资历最深的海盗，共同投票决定是否接受该分配方案。</li>
+<li>如果至少一半的海盗投票同意，则该分配方案生效。</li>
+<li>否则，资历最高的海盗将被迫走跳板投海，然后回到第1步，由资历次深的海盗提出另一个分配方案。</li>
+</ol>
+<p>如果一个海盗无法存活，其<i class=zh>幸福度</i>是$-\infty$，否则则是$c + p\cdot w$，其中$c$是该海盗在最终生效的分配方案中获得的金币数量，$w$是被迫走跳板投海的海盗数量，$p$则是该海盗的<i class=zh>嗜血度</i>。</p>
+<p>海盗们有以下特征：</p>
+<ul>
+<li>贪婪：总是最大化他们的幸福度。</li>
+<li>无情：无法合作、做出承诺或维持任何形式的声誉。</li>
+<li>精明：完全理性和有逻辑。</li>
+</ul>
+<p>考虑在$n$个（嗜血度均为$p$的）海盗发现了$C$个金币的情况下，幸存海盗中资历最深者的幸福度$c(n,C,p) + p\cdot w(n,C,p)$。例如，$c(5,5,\frac{1}{10}) = 3$且$w(5,5,\frac{1}{10})=0$，这是因为可以证明，如果资历最深的海盗提出将$3,0,1,0,1$个金币分配给海盗们（按资历递减顺序），则获得金币的三个海盗都会投票接受这个方案。另一方面，$c(5,1,\frac{1}{10}) = 0$且$w(5,1,\frac{1}{10}) = 1$：资历最深的海盗无论提出任何提案都无法存活，而资历次深的海盗为了存活必须将唯一的金币给另一个海盗。</p>
+<p>定义$\displaystyle T(N,C,p) = \sum_{n=1}^N \left( c(n,C,p) + w(n,C,p) \right)$。已知$T(30,3,\frac{1}{\sqrt{3}}) = 190$，$T(50,3,\frac{1}{\sqrt{31}}) = 385$，$T(10^3, 101, \frac{1}{\sqrt{101}}) = 142427$。</p>
+<p>求$\displaystyle \sum_{k=1}^6 T(10^{16},10^k+1,\tfrac{1}{\sqrt{10^k+1}})$，并将其最后$9$位数字作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 952</title>
+    <url>/952/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-952"><a href="#Problem-952" class="headerlink" title="Problem 952"></a><a href="https://projecteuler.net/problem=952">Problem 952</a></h1><hr>
+<h2 id="Order-Modulo-Factorial"><a href="#Order-Modulo-Factorial" class="headerlink" title="Order Modulo Factorial"></a><strong>Order Modulo Factorial</strong></h2><p>Given a prime $p$ and a positive integer $n \lt p$, let $R(p, n)$ be the <strong>multiplicative order</strong> of $p$ modulo $n!$.<br/><br>In other words, $R(p, n)$ is the minimal positive integer $r$ such that<br>$$p^r \equiv 1 \pmod{n!}$$<br>For example, $R(7, 4) = 2$ and $R(10^9 + 7, 12) = 17280$.</p>
+<p>Find $R(10^9 + 7, 10^7)$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="模阶乘的阶"><a href="#模阶乘的阶" class="headerlink" title="模阶乘的阶"></a><strong>模阶乘的阶</strong></h2><p>给定质数$p$和正整数$n \lt p$，记$R(p, n)$为$p$模$n!$的<strong>阶</strong>。<br>换句话说，$R(p, n)$是满足下式的最小正整数$r$：<br>$$p^r \equiv 1 \pmod{n!}$$<br>例如，$R(7, 4) = 2$，$R(10^9 + 7, 12) = 17280$。</p>
+<p>求$R(10^9 + 7, 10^7)$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 951</title>
+    <url>/951/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-951"><a href="#Problem-951" class="headerlink" title="Problem 951"></a><a href="https://projecteuler.net/problem=951">Problem 951</a></h1><hr>
+<h2 id="A-Game-of-Chance"><a href="#A-Game-of-Chance" class="headerlink" title="A Game of Chance"></a><strong>A Game of Chance</strong></h2><p>Two players play a game using a deck of $2n$ cards: $n$ red and $n$ black. Initially the deck is shuffled into one of the $\binom{2n}{n}$ possible starting configurations. Play then proceeds, alternating turns, where a player follows two steps on each turn:</p>
+<ol>
+<li>Remove the top card from the deck, taking note of its colour.</li>
+<li>If there is a next card and it is the same colour as the previous card they toss a fair coin. If the coin lands on heads they remove that card as well; otherwise leave it on top of the deck.</li>
+</ol>
+<p>The player who removes the final card from the deck wins the game.</p>
+<p>Some starting configurations give an advantage to one of the players; while some starting configurations are <strong>fair</strong>, in which both players have exactly $50\%$ chance to win the game. For example, if $n=2$ there are four starting configurations which are fair: RRBB, BBRR, RBBR, BRRB. The remaining two, RBRB and BRBR, result in a guaranteed win for the second player.</p>
+<p>Define $F(n)$ to be the number of starting configurations which are fair. Therefore $F(2)=4$. You are also given $F(8)=11892$.</p>
+<p>Find $F(26)$.</p>
+<hr>
+<h2 id="机会游戏"><a href="#机会游戏" class="headerlink" title="机会游戏"></a><strong>机会游戏</strong></h2><p>两位玩家使用一副包含$2n$张牌的牌组进行游戏，其中包括$n$张红牌和$n$张黑牌。游戏开始前，牌组被洗成$\binom{2n}{n}$种可能的初始局面之一；之后两位玩家轮流行动，每位玩家在其回合中进行以下两个步骤：</p>
+<ol>
+<li>从牌组顶部移除一张牌，并记下其颜色。</li>
+<li>如果牌组中还有牌，且当前牌组顶部的牌与刚才被移除的牌颜色相同，则抛掷一枚公平硬币：如果硬币正面朝上，则移除当前牌组顶部的牌；否则将其留在牌组顶部。</li>
+</ol>
+<p>从牌组中移除最后一张牌的玩家获胜。</p>
+<p>有一些初始局面对其中一位玩家有利，而另一些初始配置则是<i class=zh>公平的</i>，即两位玩家都有恰好$50\%$的机会获胜。例如，当$n=2$时，有四种初始局面是公平的：RRBB、BBRR、RBBR、BRRB；在剩下的两种局面RBRB和BRBR下，后手玩家必胜。</p>
+<p>定义$F(n)$为公平的初始局面数量，因此$F(2)=4$；此外已知$F(8)=11892$。</p>
+<p>求$F(26)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 953</title>
+    <url>/953/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-953"><a href="#Problem-953" class="headerlink" title="Problem 953"></a><a href="https://projecteuler.net/problem=953">Problem 953</a></h1><hr>
+<h2 id="Factorisation-Nim"><a href="#Factorisation-Nim" class="headerlink" title="Factorisation Nim"></a><strong>Factorisation Nim</strong></h2><p>In the classical game of <strong>Nim</strong> two players take turns removing stones from piles. A player may remove any positive number of stones from a single pile. If there are no remaining stones, the next player to move loses.</p>
+<p>In Factorisation Nim the initial position of the game is chosen according to the prime factorisation of a given natural number $n$ by setting a pile for each prime factor, including multiplicity. For example, if $n=12=2 \times 2 \times 3$ the game starts with three piles: two piles with two stones and one pile with three stones.</p>
+<p>It can be verified that the first player to move loses for $n=1$ and for $n=70$, assuming both players play optimally.</p>
+<p>Let $S(N)$ be the sum of $n$ for $1 \le n \le N$ such that the first player to move loses, assuming both players play optimally. You are given $S(10) = 14$ and $S(100) = 455$.</p>
+<p>Find $S(10^{14})$. Give your answer modulo $10^9 + 7$.</p>
+<hr>
+<h2 id="因数分解取石子游戏"><a href="#因数分解取石子游戏" class="headerlink" title="因数分解取石子游戏"></a><strong>因数分解取石子游戏</strong></h2><p>在经典的<strong>取石子游戏</strong>中，两位玩家轮流从一堆石子中移除石子，每次玩家可以从一个堆中移除任意正数枚石子，首先无法移除石子的玩家输掉游戏。</p>
+<p>在因数分解取石子游戏中，游戏的初始局面由给定自然数$n$的质因数分解决定，每个质因数（允许重复）设一个堆。例如，对于$n=12=2 \times 2 \times 3$，游戏开始时有三个堆：两个堆有两枚石子，一个堆有三枚石子。</p>
+<p>可以验证，若两位玩家均采取最优策略，对于$n=1$或$n=70$，先手玩家必败。</p>
+<p>记$S(N)$为所有满足$1 \le n \le N$且在两名玩家均采取最优策略时先手玩家必败的$n$之和。已知$S(10) = 14$，$S(100) = 455$。</p>
+<p>求$S(10^{14})$，并对$10^9 + 7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 955</title>
+    <url>/955/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-955"><a href="#Problem-955" class="headerlink" title="Problem 955"></a><a href="https://projecteuler.net/problem=955">Problem 955</a></h1><hr>
+<h2 id="Finding-Triangles"><a href="#Finding-Triangles" class="headerlink" title="Finding Triangles"></a><strong>Finding Triangles</strong></h2><p>A sequence $(a_n)_{n \ge 0}$ starts with $a_0 = 3$ and for each $n \ge 0$,</p>
+<ul>
+<li>if $a_n$ is a <strong>triangle number</strong>, then $a_{n + 1} = a_n + 1$;</li>
+<li>otherwise, $a_{n + 1} = 2a_n - a_{n - 1} + 1$.</li>
+</ul>
+<p>A triangle number is a number of the form $m(m + 1)/ 2$ for some integer $m$.</p>
+<p>The sequence begins:<br>$${\color{red}3}, 4, {\color{red}6}, 7, 9, 12, 16, {\color{red}21}, 22, 24, 27, 31, {\color{red}36}, 37, 39, 42, \dots$$<br>where triangle numbers are marked red.</p>
+<p>The $10$th triangle number in the sequence is $a_{2964} = 1439056$.<br /><br>Find the index $n$ such that $a_n$ is the $70$th triangle number in the sequence.</p>
+<hr>
+<h2 id="寻找三角形数"><a href="#寻找三角形数" class="headerlink" title="寻找三角形数"></a><strong>寻找三角形数</strong></h2><p>数列$(a_n)_{n \ge 0}$从$a_0 = 3$开始，且对于每个$n \ge 0$：</p>
+<ul>
+<li>如果$a_n$是一个<strong>三角形数</strong>，那么$a_{n + 1} = a_n + 1$；</li>
+<li>否则，$a_{n + 1} = 2a_n - a_{n - 1} + 1$。</li>
+</ul>
+<p>三角形数是形如$m(m + 1)/ 2$的数，其中$m$为整数。</p>
+<p>该数列的前几项为：<br>$${\color{red}3}, 4, {\color{red}6}, 7, 9, 12, 16, {\color{red}21}, 22, 24, 27, 31, {\color{red}36}, 37, 39, 42, \dots$$<br>其中的三角形数被标记为红色。</p>
+<p>数列中第$10$个三角形数是$a_{2964} = 1439056$。<br /><br>求数列中第$70$个三角形数的下标$n$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 956</title>
+    <url>/956/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-956"><a href="#Problem-956" class="headerlink" title="Problem 956"></a><a href="https://projecteuler.net/problem=956">Problem 956</a></h1><hr>
+<h2 id="Super-Duper-Sum"><a href="#Super-Duper-Sum" class="headerlink" title="Super Duper Sum"></a><strong>Super Duper Sum</strong></h2><p>The total number of prime factors of $n$, counted with multiplicity, is denoted $\Omega(n)$.<br/><br>For example, $\Omega(12)=3$, counting the factor $2$ twice, and the factor $3$ once.</p>
+<p>Define $D(n, m)$ to be the sum of all divisors $d$ of $n$ where $\Omega(d)$ is divisible by $m$. <br/><br>For example, $D(24, 3)=1+8+12=21$.</p>
+<p>The <strong>superfactorial</strong> of $n$, often written as $n\$$, is defined as the product of the first $n$ factorials:<br>$$n\$=1!\times 2! \times\cdots\times n!$$<br>The <strong>superduperfactorial</strong> of $n$, we write as $n\bigstar$, is defined as the product of the first $n$ superfactorials:<br>$$n\bigstar=1\$ \times 2\$ \times\cdots\times n\$ $$</p>
+<p>You are given $D(6\bigstar, 6)=6368195719791280$.</p>
+<p>Find $D(1\ 000\bigstar, 1\ 000)$. Give your answer modulo $999\ 999\ 001$.</p>
+<hr>
+<h2 id="超级无敌和"><a href="#超级无敌和" class="headerlink" title="超级无敌和"></a><strong>超级无敌和</strong></h2><p>记$n$的质因数数目（包括重复）为$\Omega(n)$。<br/><br>例如，$\Omega(12)=3$，包括两个质因数$2$和一个质因数$3$。</p>
+<p>定义$D(n, m)$为$n$的所有满足$\Omega(d)$能被$m$整除的因数$d$之和。<br/><br>例如，$D(24, 3)=1+8+12=21$。</p>
+<p>$n$的<strong>超级阶乘</strong>，通常记作$n\$$，定义为前$n$个阶乘的乘积：<br>$$n\$=1!\times 2! \times\cdots\times n!$$<br>$n$的<strong>超级无敌阶乘</strong>，我们记作$n\bigstar$，定义为前$n$个超级阶乘的乘积：<br>$$n\bigstar=1\$ \times 2\$ \times\cdots\times n\$ $$</p>
+<p>已知$D(6\bigstar, 6)=6368195719791280$。</p>
+<p>求$D(1\ 000\bigstar, 1\ 000)$，并对$999\ 999\ 001$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 958</title>
+    <url>/958/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-958"><a href="#Problem-958" class="headerlink" title="Problem 958"></a><a href="https://projecteuler.net/problem=958">Problem 958</a></h1><hr>
+<h2 id="Euclid’s-Labour"><a href="#Euclid’s-Labour" class="headerlink" title="Euclid’s Labour"></a><strong>Euclid’s Labour</strong></h2><p>The <strong>Euclidean algorithm</strong> can be used to find the <strong>greatest common divisor</strong> of two positive integers. At each step of the algorithm the smaller number is subtracted from the larger one. The algorithm terminates when the numbers are equal, which is then the greatest common divisor of the original numbers.</p>
+<p>For two numbers $n$ and $m$, let $d(n, m)$ be the number of subtraction steps used by the Euclidean algorithm for computing the greatest common divisor of $n$ and $m$.</p>
+<p>For a number $n$, let $f(n)$ be the positive number $m$ coprime to $n$ that minimizes $d(n, m)$. If more than one number attains the minimum, the minimal $m$ is chosen.</p>
+<p>For example, at least four steps are needed for computing the GCD of $7$ and any positive number $m$ coprime to $7$. This number of steps is obtained by $m=2,3,4,5$, yielding $f(7)=2$. You are also given $f(89)=34$ and $f(8191) = 1856$.</p>
+<p>Find $f(10^{12}+39)$.</p>
+<hr>
+<h2 id="欧几里得的劳作"><a href="#欧几里得的劳作" class="headerlink" title="欧几里得的劳作"></a><strong>欧几里得的劳作</strong></h2><p><strong>欧几里得算法</strong>可以用于求两个正整数的<strong>最大公约数</strong>。算法的每一步都从较大的数中减去较小的数，直至两数相等为止，此时即得到初始两数的最大公约数。</p>
+<p>对于两个正整数$n$和$m$，记$d(n, m)$为用欧几里得算法计算$n$和$m$的最大公约数时进行的减法次数。</p>
+<p>对于正整数$n$，记$f(n)$为与$n$互质且使得$d(n, m)$最小的正整数$m$。如果有多个$m$能取得最小值，则选择最小的$m$。</p>
+<p>例如，对于$7$和任意与$7$互质的正整数$m$，计算最大公约数至少需要进行四次减法，该最小值可由$m=2,3,4,5$取得，因此$f(7)=2$。此外已知$f(89)=34$，$f(8191) = 1856$。</p>
+<p>求$f(10^{12}+39)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 957</title>
+    <url>/957/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-957"><a href="#Problem-957" class="headerlink" title="Problem 957"></a><a href="https://projecteuler.net/problem=957">Problem 957</a></h1><hr>
+<h2 id="Point-Genesis"><a href="#Point-Genesis" class="headerlink" title="Point Genesis"></a><strong>Point Genesis</strong></h2><p>There is a plane on which all points are initially white, except three red points and two blue points.<br>On each day, every line passing through a red point and a blue point is constructed. Then every white point, where two different such lines meet, turns blue.</p>
+<p>Let $g(n)$ be the maximal possible number of blue points after $n$ days.</p>
+<p>For example, $g(1)=8$ and $g(2)=28$.</p>
+<p>Find $g(16)$.</p>
+<hr>
+<h2 id="点·创世纪"><a href="#点·创世纪" class="headerlink" title="点·创世纪"></a><strong>点·创世纪</strong></h2><p>起初，平面上所有的点都是白色的，除了三个红点和两个蓝点。<br>每一天，所有经过一个红点和一个蓝点的直线被构造出来。然后，任意两条不同的这样的直线相交处的白点变为蓝色。</p>
+<p>记$g(n)$为$n$天后蓝点数量的最大可能值。</p>
+<p>例如，$g(1)=8$，$g(2)=28$。</p>
+<p>求$g(16)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 959</title>
+    <url>/959/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-959"><a href="#Problem-959" class="headerlink" title="Problem 959"></a><a href="https://projecteuler.net/problem=959">Problem 959</a></h1><hr>
+<h2 id="Asymmetric-Random-Walk"><a href="#Asymmetric-Random-Walk" class="headerlink" title="Asymmetric Random Walk"></a><strong>Asymmetric Random Walk</strong></h2><p>A frog is placed on the number line. Every step the frog jumps either $a$ units to the left or $b$ units to the right, both with $1/2$ probability.</p>
+<p>Define $f(a, b)$ as the limit $\lim_{n \to \infty} \frac{c_n}n$ where $c_n$ is the expected number of unique numbers visited in the first $n$ steps. You are given $f(1, 1) = 0$ and $f(1, 2) \approx 0.427050983$.</p>
+<p>Find $f(89, 97)$. Give your answer rounded to nine digits after the decimal point.</p>
+<hr>
+<h2 id="非对称随机游走"><a href="#非对称随机游走" class="headerlink" title="非对称随机游走"></a><strong>非对称随机游走</strong></h2><p>一只青蛙被放置在数轴上；每一步，青蛙要么向左跳$a$个单位，要么向右跳$b$个单位，两种情况的概率均为$1/2$。</p>
+<p>定义$f(a, b)$为极限$\lim_{n \to \infty} \frac{c_n}n$，其中$c_n$是前$n$步中青蛙落过的不同整数的期望数量。已知$f(1, 1) = 0$，$f(1, 2) \approx 0.427050983$。</p>
+<p>求$f(89, 97)$，并四舍五入到小数点后九位作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 960</title>
+    <url>/960/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-960"><a href="#Problem-960" class="headerlink" title="Problem 960"></a><a href="https://projecteuler.net/problem=960">Problem 960</a></h1><hr>
+<h2 id="Stone-Game-Solitaire"><a href="#Stone-Game-Solitaire" class="headerlink" title="Stone Game Solitaire"></a><strong>Stone Game Solitaire</strong></h2><p>There are $n$ distinct piles of stones, each of size $n-1$. Starting with an initial score of $0$, the following procedure is repeated:</p>
+<ol>
+<li>Choose any two piles and remove exactly $n$ stones in total from the two piles.</li>
+<li>If the number of stones removed from the two piles were $a$ and $b$, add $\min(a,b)$ to the score.</li>
+</ol>
+<p>If all piles are eventually emptied, the current score is confirmed as final. However, if one gets “stuck” and cannot empty all piles, the current score is discarded, resulting in a final score of $0$.</p>
+<p>Three example sequences of turns are illustrated below for $n=4$, with each tuple representing pile sizes as one proceeds, and with additions to the score indicated above the arrows.<br>$$<br>\begin{aligned}<br>&amp;(3,3,3,3)\xrightarrow{+1}(0,3,2,3)\xrightarrow{+1}(0,3,1,0)\xrightarrow{+1}(0,0,0,0)&amp;:\quad\text{final score }=3\\<br>&amp;(3,3,3,3)\xrightarrow{+1}(3,0,3,2)\xrightarrow{+2}(1,0,3,0)\xrightarrow{+1}(0,0,0,0)&amp;:\quad\text{final score }=4\\<br>&amp;(3,3,3,3)\xrightarrow{+2}(1,3,1,3)\xrightarrow{+1}(1,2,1,0)\rightarrow\text{stuck!}&amp;:\quad\text{final score }=0<br>\end{aligned}<br>$$</p>
+<p>Define $F(n)$ to be the sum of the final scores achieved for every sequence of turns which successfully empty all piles.</p>
+<p>You are given $F(3)=12$, $F(4)=360$, and $F(8)=16785941760$.</p>
+<p>Find $F(100)$. Give your answer modulo $10^9+7$.</p>
+<hr>
+<h2 id="石子纸牌游戏"><a href="#石子纸牌游戏" class="headerlink" title="石子纸牌游戏"></a><strong>石子纸牌游戏</strong></h2><p>有$n$个不同的石堆，每堆有$n-1$枚石子。从初始分数$0$开始，玩家重复以下过程:<ol><li>选择任意两个石堆，从这两个堆中总共移除恰好$n$枚石子。</li><li>如果从这两个堆中移除的石子数分别为$a$和$b$，将$\min(a,b)$加入分数。</li></ol></p>
+<p>如果最终全部石堆都被清空，则当前分数即为玩家的最终分数。然而，如果玩家在某一时刻被”卡住”并且无法清空所有石堆，则当前分数清零，玩家的最终分数也为$0$。</p>
+<p>下图展示了$n=4$时三种可能的进程，其中每个元组表示进程中各堆剩余的石子数量，箭头上方标注了每一步的得分：<br>$$<br>\begin{aligned}<br>&amp;(3,3,3,3)\xrightarrow{+1}(0,3,2,3)\xrightarrow{+1}(0,3,1,0)\xrightarrow{+1}(0,0,0,0)&amp;:\quad\text{最终分数}=3\\<br>&amp;(3,3,3,3)\xrightarrow{+1}(3,0,3,2)\xrightarrow{+2}(1,0,3,0)\xrightarrow{+1}(0,0,0,0)&amp;:\quad\text{最终分数}=4\\<br>&amp;(3,3,3,3)\xrightarrow{+2}(1,3,1,3)\xrightarrow{+1}(1,2,1,0)\rightarrow\text{卡住了!}&amp;:\quad\text{最终分数}=0<br>\end{aligned}<br>$$</p>
+<p>定义$F(n)$为所有成功清空全部石堆的进程所获得的最终分数之和。</p>
+<p>已知$F(3)=12$，$F(4)=360$，$F(8)=16785941760$。</p>
+<p>求$F(100)$，并对$10^9+7$取余作为你的答案。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 961</title>
+    <url>/961/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-961"><a href="#Problem-961" class="headerlink" title="Problem 961"></a><a href="https://projecteuler.net/problem=961">Problem 961</a></h1><hr>
+<h2 id="Removing-Digits"><a href="#Removing-Digits" class="headerlink" title="Removing Digits"></a><strong>Removing Digits</strong></h2><p>This game starts with a positive integer. Two players take turns to remove a single digit from that integer. After the digit is removed any resulting leading zeros are removed.</p>
+<p>For example, removing a digit from $105$ results in either $5$, $10$ or $15$.</p>
+<p>The winner is the person who removes the last nonzero digit.</p>
+<p>Define $W(N)$ to be how many positive integers less than $N$ for which the first player can guarantee a win given optimal play. You are given $W(100) = 18$ and $W(10^4) = 1656$.</p>
+<p>Find $W(10^{18})$.</p>
+<hr>
+<h2 id="删除数字"><a href="#删除数字" class="headerlink" title="删除数字"></a><strong>删除数字</strong></h2><p>两位玩家轮流从一个正整数中删除一个数字；每次删除之后产生的前导零也会一并被删除。</p>
+<p>例如，从$105$中删除一个数字会得到$5$、$10$或$15$。</p>
+<p>删除最后一个非零数字的玩家获胜。</p>
+<p>定义$W(N)$为小于$N$且双方均采用最优策略时先手玩家必胜的正整数数量。已知$W(100) = 18$，$W(10^4) = 1656$。</p>
+<p>求$W(10^{18})$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 962</title>
+    <url>/962/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-962"><a href="#Problem-962" class="headerlink" title="Problem 962"></a><a href="https://projecteuler.net/problem=962">Problem 962</a></h1><hr>
+<h2 id="Angular-Bisector-and-Tangent-2"><a href="#Angular-Bisector-and-Tangent-2" class="headerlink" title="Angular Bisector and Tangent 2"></a><strong>Angular Bisector and Tangent 2</strong></h2><p>Given is an integer sided triangle $ABC$ with $BC \le AC \le AB$.<br/><br>$k$ is the angular bisector of angle $ACB$.<br/><br>$m$ is the tangent at $C$ to the circumscribed circle of $ABC$.<br/><br>$n$ is a line parallel to $m$ through $B$.<br/><br>The intersection of $n$ and $k$ is called $E$.</p>
+<div style="text-align:center"><img src="/resources/images/0296_bisector.gif" alt="0296_bisector.gif"></div>
+
+<p>How many triangles $ABC$ with a perimeter not exceeding $1\ 000\ 000$ exist such that $CE$ has integral length?</p>
+<p><strong>Note</strong>: This problem is a more difficult version of <a href="https://projecteuler.net/problem=296">Problem 296</a>. Please pay close attention to the differences between the two statements.</p>
+<hr>
+<h2 id="角平分线与切线（二）"><a href="#角平分线与切线（二）" class="headerlink" title="角平分线与切线（二）"></a><strong>角平分线与切线（二）</strong></h2><p>给定一个各边长均为整数且满足$BC \le AC \le AB$的三角形$ABC$：<br/><br>$k$是角$ACB$的角平分线。<br/><br>$m$是$ABC$外接圆在$C$点的切线。<br/><br>$n$是过$B$点平行于$m$的直线。<br/><br>$n$和$k$的交点记为$E$。</p>
+<div style="text-align:center"><img src="/resources/images/0296_bisector.gif" alt="0296_bisector.gif"></div>
+
+<p>有多少个周长不超过$1\ 000\ 000$且$CE$的长度是整数的三角形$ABC$？</p>
+<p><strong>注</strong>：本题是<a href="/296">第296题</a>的更难版本；请特别注意两个问题陈述之间的差异。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 963</title>
+    <url>/963/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-963"><a href="#Problem-963" class="headerlink" title="Problem 963"></a><a href="https://projecteuler.net/problem=963">Problem 963</a></h1><hr>
+<h2 id="Removing-Trits"><a href="#Removing-Trits" class="headerlink" title="Removing Trits"></a><strong>Removing Trits</strong></h2><p><strong>NOTE</strong>: This problem is related to <a href="https://projecteuler.net/problem=882">Problem 882</a>. It is recommended to solve that problem before doing this one.</p>
+<p>Two players are playing a game. When the game starts, each player holds a paper with two positive integers written on it.<br>They make moves in turn. At a player’s turn, the player can do one of the following:</p>
+<ul>
+<li>pick a number on the player’s own paper and change it by removing a $0$ from its <strong>ternary expansion</strong> (base-$3$ expansion);</li>
+<li>pick a number on the opponent’s paper and change it by removing a $1$ from its ternary expansion;</li>
+<li>pick a number on either paper and change it by removing a $2$ from its ternary expansion.</li>
+</ul>
+<p>The player that is unable to make a move loses.<br>Leading zeros are not allowed in any ternary expansion; in particular nobody can make a move on the number $0$.</p>
+<p>An initial setting is called <i>fair</i> if whichever player moves first will lose the game if both play optimally.</p>
+<p>For example, if initially the integers on the paper of the first player are $1, 5$ and those on the paper of the second player are $2, 4$, then this is a fair initial setting, which we can denote as $(1, 5 \mid 2, 4)$.<br /><br>Note that the order of the two integers on a paper does not matter, but the order of the two papers matter.<br>Thus $(5, 1 \mid 4, 2)$ is considered the same as $(1, 5 \mid 2, 4)$, while $(2, 4 \mid 1, 5)$ is a different initial setting.</p>
+<p>Let $F(N)$ be the number of fair initial settings where each initial number does not exceed $N$.<br /><br>For example, $F(5) = 21$.</p>
+<p>Find $F(10^5)$.</p>
+<hr>
+<h2 id="移除三进制位"><a href="#移除三进制位" class="headerlink" title="移除三进制位"></a><strong>移除三进制位</strong></h2><p><strong>注</strong>：本题与<a href="/882">第882题</a>相关；建议在尝试本题之前先解决后者。</p>
+<p>两位玩家正在玩一个游戏；游戏开始时，每位玩家手中都拿着一张纸，上面写有两个正整数。<br>两位玩家轮流行动，轮到某位玩家行动的回合，该玩家可以执行以下操作之一：</p>
+<ul>
+<li>选择自己纸上的一个数，并从其<strong>三进制表示</strong>中移除一个$0$；</li>
+<li>选择对手纸上的一个数，并从其三进制表示中移除一个$1$；</li>
+<li>选择任意一张纸上的一个数，并从其三进制表示中移除一个$2$。</li>
+</ul>
+<p>首先无法行动的玩家落败。<br>任何三进制表示中都不允许有前导零；特别地，玩家不能对$0$进行操作。</p>
+<p>如果某个初始局面满足，在双方都采取最优策略时先手必败，则称其为<i class=zh>公平的</i>。</p>
+<p>例如，如果一位玩家纸上的整数最初是$1, 5$，另一位玩家纸上的整数是$2, 4$，那么这是一个公平的初始局面，我们可以将其表示为$(1, 5 \mid 2, 4)$。<br /><br>注意，调换一张纸上的两个整数的顺序被视为相同局面，但调换两张纸的顺序被视为不同局面。<br>因此$(5, 1 \mid 4, 2)$被视为与$(1, 5 \mid 2, 4)$相同，而$(2, 4 \mid 1, 5)$则被视为一个不同的初始局面。</p>
+<p>令$F(N)$为所有初始整数都不超过$N$的公平初始局面的数量。<br /><br>例如，$F(5) = 21$。</p>
+<p>求$F(10^5)$。</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Problem 954</title>
+    <url>/954/</url>
+    <content><![CDATA[<hr>
+<h1 id="Problem-954"><a href="#Problem-954" class="headerlink" title="Problem 954"></a><a href="https://projecteuler.net/problem=954">Problem 954</a></h1><hr>
+<h2 id="Heptaphobia"><a href="#Heptaphobia" class="headerlink" title="Heptaphobia"></a><strong>Heptaphobia</strong></h2><p>A positive integer is called <em>heptaphobic</em> if it is not divisible by seven and no number divisible by seven can be produced by swapping two of its digits. Note that leading zeros are not allowed before or after the swap.</p>
+<p>For example, $17$ and $1305$ are heptaphobic, but $14$ and $132$ are not because $14$ and $231$ are divisible by seven.</p>
+<p>Let $C(N)$ count heptaphobic numbers smaller than $N$. You are given $C(100) = 74$ and $C(10^4) = 3737$.</p>
+<p>Find $C(10^{13})$.</p>
+<hr>
+<h2 id="恐七数"><a href="#恐七数" class="headerlink" title="恐七数"></a><strong>恐七数</strong></h2><p>如果一个正整数本身不能被$7$整除，且交换它的任意两个数字后也无法被$7$整除，则称其为<i class=zh>恐七数</i>。注意在交换前后都不允许有前导零。</p>
+<p>例如，$17$和$1305$是恐七数，而$14$和$132$则不是，因为$14$和$231$能被$7$整除。</p>
+<p>记$C(N)$为小于$N$的恐七数的数目。已知$C(100) = 74$，$C(10^4) = 3737$。</p>
+<p>求$C(10^{13})$。</p>
 <hr>
 ]]></content>
   </entry>
