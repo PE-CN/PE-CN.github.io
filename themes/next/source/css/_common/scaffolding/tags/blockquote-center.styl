@@ -1,0 +1,56 @@
+// Blockquote with all children centered.
+
+// blockquote-center icon
+$blockquoteCenterIcon = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDM0aDZsNC04di0xMmgtMTJ2MTJoNnptMTYgMGg2bDQtOHYtMTJoLTEydjEyaDZ6Ii8+PHBhdGggZD0iTTAgMGg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+"
+
+.blockquote-center {
+  border-left: none;
+  margin: 40px 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+
+  &::before, &::after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 24px;
+    opacity: 0.2;
+    background: url($blockquoteCenterIcon) no-repeat;
+    background-position: 0 -7px;
+    background-size: 24px 24px;
+  }
+  &::before {
+    top: -20px;
+    border-top: 1px solid $grey-light;
+  }
+  &::after {
+    bottom: -20px;
+    border-bottom: 1px solid $grey-light;
+    background-position: 100% 7px;
+  }
+  
+  .fa {
+    display: block;
+    opacity: .6;
+    position: absolute;
+    width: 100%;
+  }
+
+  .fa-quote-left {
+    border-top: 1px solid $grey-light;
+    text-align: left;
+    top: -20px;
+  }
+
+  .fa-quote-right {
+    border-bottom: 1px solid $grey-light;
+    text-align: right;
+    bottom: -20px;
+  }
+
+  p, div {
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+# 翻译
+nim: 取石子游戏
+pan-digital: 全数字（的）
+prime: 质数 （为了与“prime factorization/质因数分解”对应，不翻译成“素数”）
+factor：因数（理由同上）
+divisor: 约数（为了与“greatest common divisor/最大公约数”对应）
+modulo / mod X: 对X取余
+find： 求
+natural number：数（避免自然数是否包含0的讨论）
+digit: 数字
+mantissa：（科学计数法中的）尾数
+！待改 Euler totient function：欧拉函数
+！待改 give your answer ... : 并...作为你的答案 
+！待改 rounded to ... ：四舍五入保留...     
+？存疑 grid：网格？格阵？
+？存疑 permutation: 重排？排列？置换？
+
+# 格式
+图片居中：使用<div style="text-align:center"> ... </div>
+汉字斜体：使用<i class=zh> ... </i> （实际效果为楷体）
+数字格式保持一致：阿拉伯数字-->（保留），英文表达-->中文表达
+Mathjax与Markdown冲突：部分反斜杠需复写。例如，换行符\\应写作\\\\，大括号\{...\}应写作\\\{...\\\}
+！待改 图片链接：PE官网更改了部分图片链接，需更新；另外考虑是否本地化存储这些图片。
+！待改 标题序列号：部分题目成系列出现，此时中文标题用（一）、（二）、（三）等依次表示
+
+
+
