@@ -7,3 +7,6 @@ public/
 .deploy*/
 _multiconfig.yml
 token.txt
+.env
+scripts/__pycache__/
+pyproject.toml
