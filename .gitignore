@@ -10,3 +10,5 @@ token.txt
 .env
 scripts/__pycache__/
 pyproject.toml
+*.py
+*.csv
